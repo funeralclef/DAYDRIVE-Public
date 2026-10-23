@@ -1,0 +1,29 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="IntelligentScheduler.Desktop.EdgeHandleWindow"
+        Width="36" Height="150" CanResize="False" ShowInTaskbar="False" ShowActivated="False"
+        Topmost="True" WindowDecorations="None" Background="Transparent"
+        TransparencyLevelHint="Transparent" WindowStartupLocation="Manual"
+        Classes.reduceMotion="{Binding ReduceMotion}"
+        Classes.motion="{Binding !ReduceMotion}"
+        IsLive="{Binding IsPetalLive}">
+  <!-- The input window stays fixed while the visible capsule changes width. It includes the
+       screen-side gap so either mouse button can reach the control at the screen edge. -->
+  <Border x:Name="Reach" Background="{StaticResource ShellInputSurface}"
+          PointerPressed="Reach_OnPointerPressed">
+    <!-- The capsule floats inside its input window. The transparent right margin remains
+         clickable all the way to the screen edge, in both idle and stopwatch states. -->
+    <Border x:Name="Petal" Classes="edgePetal" Width="10" Margin="0,0,6,0"
+            HorizontalAlignment="Right" VerticalAlignment="Center" CornerRadius="5">
+      <!-- Hours, minutes and seconds share a bold weight; colour keeps the groups distinct. -->
+      <StackPanel x:Name="Readout" VerticalAlignment="Center" HorizontalAlignment="Center"
+                  IsVisible="False" ClipToBounds="False">
+        <TextBlock Text="{Binding PetalHours}" Classes="petalDigits quiet" />
+        <TextBlock Text="{Binding PetalMinutes}" Classes="petalDigits"
+                   Classes.held="{Binding IsPetalPaused}" />
+        <TextBlock Text="{Binding PetalSeconds}" Classes="petalDigits quiet"
+                   Classes.held="{Binding IsPetalPaused}" />
+      </StackPanel>
+    </Border>
+  </Border>
+</Window>

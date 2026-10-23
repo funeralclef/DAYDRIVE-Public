@@ -1,0 +1,59 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:icons="using:IntelligentScheduler.Desktop.Controls"
+        x:Class="IntelligentScheduler.Desktop.PetalRailWindow"
+        Width="60" Height="100" CanResize="False" ShowInTaskbar="False" ShowActivated="False"
+        Topmost="True" WindowDecorations="None" Background="Transparent"
+        TransparencyLevelHint="Transparent" WindowStartupLocation="Manual"
+        Classes.reduceMotion="{Binding ReduceMotion}"
+        Classes.motion="{Binding !ReduceMotion}">
+  <!-- The petal's controls, standing beside it rather than inside it — which is exactly where
+       the quick widget keeps the same three, and they are the same three: one rail exists in
+       this application and this is it, moved next to whichever surface is currently nearest to
+       hand. Inside the petal they would have made a sliver into a panel; here the petal stays a
+       sliver and the keys arrive next to it.
+
+       The window is a fixed size and a fixed place, wide enough for the widest arrangement the
+       rail can take, and it is never resized: the seats appear and disappear inside it as the
+       session changes, so a stopwatch that has just been started does not move the key that the
+       hand is still on. -->
+  <Border x:Name="RailCard" Classes="petalRailCard">
+    <!-- Each control is its own round key. The seat is the circle; the button inside it is the
+         light that comes on when the pointer arrives. -->
+    <Grid Background="{StaticResource ShellInputSurface}" Margin="0,0,-9,0" HorizontalAlignment="Right" VerticalAlignment="Center">
+    <StackPanel Spacing="7" Margin="0,0,9,0">
+      <!-- One slot for "set it going", whichever of the two that means. -->
+      <Border Classes="peekRailSeat" IsVisible="{Binding CanStartTracking}"
+              Classes.on="{Binding CanStartTracking}">
+        <Button Classes="peekRailButton start" Command="{Binding StartEventCommand}"
+                ToolTip.Tip="{DynamicResource L.TrackStart}" ToolTip.Placement="Left">
+          <icons:AnimatedIcon Data="{StaticResource IconPlay}" Motion="Play" Width="14" Height="14" />
+        </Button>
+      </Border>
+      <Border Classes="peekRailSeat" IsVisible="{Binding CanResumeSession}"
+              Classes.on="{Binding CanResumeSession}">
+        <Button Classes="peekRailButton start" Command="{Binding ResumeEventCommand}"
+                ToolTip.Tip="{DynamicResource L.TrackResume}" ToolTip.Placement="Left">
+          <icons:AnimatedIcon Data="{StaticResource IconPlay}" Motion="Play" Width="14" Height="14" />
+        </Button>
+      </Border>
+      <Border Classes="peekRailSeat" IsVisible="{Binding CanPauseSession}"
+              Classes.on="{Binding CanPauseSession}">
+        <Button Classes="peekRailButton pause" Command="{Binding PauseEventCommand}"
+                ToolTip.Tip="{DynamicResource L.TrackPause}" ToolTip.Placement="Left">
+          <icons:AnimatedIcon Motion="Pause" Width="14" Height="14" />
+        </Button>
+      </Border>
+      <!-- Stopping records nothing on its own; it holds the clock and raises the one question,
+           which is asked where there is room to answer it. -->
+      <Border Classes="peekRailSeat" IsVisible="{Binding IsSessionOpen}"
+              Classes.on="{Binding IsSessionOpen}">
+        <Button Classes="peekRailButton stop" Command="{Binding StopEventCommand}"
+                ToolTip.Tip="{DynamicResource L.TrackStop}" ToolTip.Placement="Left">
+          <icons:AnimatedIcon Data="{StaticResource IconStop}" Motion="Stop" Width="14" Height="14" />
+        </Button>
+      </Border>
+    </StackPanel>
+    </Grid>
+  </Border>
+</Window>

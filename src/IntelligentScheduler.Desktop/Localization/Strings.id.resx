@@ -1,0 +1,2093 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="AppName" xml:space="preserve">
+    <value>DAYDRIVE</value>
+  </data>
+  <data name="StatusReady" xml:space="preserve">
+    <value>Siap</value>
+  </data>
+  <data name="NavPlan" xml:space="preserve">
+    <value>Rencana</value>
+  </data>
+  <data name="NavTasks" xml:space="preserve">
+    <value>Tugas</value>
+  </data>
+  <data name="NavAssistant" xml:space="preserve">
+    <value>Asisten</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>Pengaturan</value>
+  </data>
+  <data name="Hide" xml:space="preserve">
+    <value>Sembunyikan panel</value>
+  </data>
+  <data name="PlanTitle" xml:space="preserve">
+    <value>Harimu</value>
+  </data>
+  <data name="PlanSubtitle" xml:space="preserve">
+    <value>Acara tetap berada di tempatnya; tugas menyesuaikan di sekitarnya</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Berikutnya</value>
+  </data>
+  <data name="Adjust" xml:space="preserve">
+    <value>Sesuaikan</value>
+  </data>
+  <data name="Schedule" xml:space="preserve">
+    <value>Jadwal</value>
+  </data>
+  <data name="Calendar" xml:space="preserve">
+    <value>Kalender</value>
+  </data>
+  <data name="AddEvent" xml:space="preserve">
+    <value>Tambah acara</value>
+  </data>
+  <data name="EventTitle" xml:space="preserve">
+    <value>Apa yang terjadi?</value>
+  </data>
+  <data name="SaveChanges" xml:space="preserve">
+    <value>Simpan perubahan</value>
+  </data>
+  <data name="TasksTitle" xml:space="preserve">
+    <value>Tugas</value>
+  </data>
+  <data name="TasksSubtitle" xml:space="preserve">
+    <value>Daftar tugas terfokus yang menyesuaikan diri dengan harimu</value>
+  </data>
+  <data name="EditTask" xml:space="preserve">
+    <value>Edit tugas</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Simpan</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Batal</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Hapus</value>
+  </data>
+  <data name="QuickTaskPlaceholder" xml:space="preserve">
+    <value>Tambahkan tugas dengan bahasa alami…</value>
+  </data>
+  <data name="AssistantTitle" xml:space="preserve">
+    <value>Asisten</value>
+  </data>
+  <data name="AssistantIntro" xml:space="preserve">
+    <value>Saya bisa mengubah niat menjadi hari yang realistis. Tulis secara alami.</value>
+  </data>
+  <data name="AssistantPrivacy" xml:space="preserve">
+    <value>lokal atau melalui AI yang Anda pilih</value>
+  </data>
+  <data name="AssistantPlaceholder" xml:space="preserve">
+    <value>Misalnya: buat jadwal besok lebih longgar</value>
+  </data>
+  <data name="Ask" xml:space="preserve">
+    <value>Tanyakan</value>
+  </data>
+  <data name="SettingsTitle" xml:space="preserve">
+    <value>Pengaturan</value>
+  </data>
+  <data name="SettingsSubtitle" xml:space="preserve">
+    <value>Perubahan disimpan secara otomatis</value>
+  </data>
+  <data name="General" xml:space="preserve">
+    <value>Umum</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>Bahasa</value>
+  </data>
+  <data name="StartHidden" xml:space="preserve">
+    <value>Mulai tersembunyi</value>
+  </data>
+  <data name="KeepOnTop" xml:space="preserve">
+    <value>Tetap di atas jendela lain</value>
+  </data>
+  <data name="Appearance" xml:space="preserve">
+    <value>Tampilan</value>
+  </data>
+  <data name="Design" xml:space="preserve">
+    <value>Desain</value>
+  </data>
+  <data name="ColorSource" xml:space="preserve">
+    <value>Sumber aksen</value>
+  </data>
+  <data name="Accent" xml:space="preserve">
+    <value>Aksen</value>
+  </data>
+  <data name="Background" xml:space="preserve">
+    <value>Latar belakang</value>
+  </data>
+  <data name="ThemeMode" xml:space="preserve">
+    <value>Mode</value>
+  </data>
+  <data name="ThemeModeDark" xml:space="preserve">
+    <value>Gelap</value>
+  </data>
+  <data name="ThemeModeLight" xml:space="preserve">
+    <value>Terang</value>
+  </data>
+  <data name="ThemePreviewTitle" xml:space="preserve">
+    <value>MARELIAN</value>
+  </data>
+  <data name="ThemePreviewHint" xml:space="preserve">
+    <value>Mode terang dan gelap menyimpan warna dan bentuk secara terpisah.</value>
+  </data>
+  <data name="ColorCustomization" xml:space="preserve">
+    <value>Warna Anda</value>
+  </data>
+  <data name="ColorCustomizationHint" xml:space="preserve">
+    <value>Kosongkan kolom untuk warna otomatis. Klik contoh warna untuk memilih warna.</value>
+  </data>
+  <data name="ColorPickerHint" xml:space="preserve">
+    <value>Seret untuk memilih</value>
+  </data>
+  <data name="ResetThemeColors" xml:space="preserve">
+    <value>Reset mode ini</value>
+  </data>
+  <data name="Transparency" xml:space="preserve">
+    <value>Transparansi dan blur</value>
+  </data>
+  <data name="ReduceMotion" xml:space="preserve">
+    <value>Nonaktifkan animasi antarmuka</value>
+  </data>
+  <data name="Behavior" xml:space="preserve">
+    <value>Perilaku</value>
+  </data>
+  <data name="PanelReveal" xml:space="preserve">
+    <value>Tampilkan panel</value>
+  </data>
+  <data name="PinOpen" xml:space="preserve">
+    <value>Jangan sembunyikan otomatis</value>
+  </data>
+  <data name="AiConnection" xml:space="preserve">
+    <value>Koneksi AI</value>
+  </data>
+  <data name="Provider" xml:space="preserve">
+    <value>Penyedia</value>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>Alamat</value>
+  </data>
+  <data name="Model" xml:space="preserve">
+    <value>Model</value>
+  </data>
+  <data name="ApiKey" xml:space="preserve">
+    <value>Kunci API (terenkripsi di perangkat ini)</value>
+  </data>
+  <data name="ApiKeyPlaceholder" xml:space="preserve">
+    <value>Biarkan kosong untuk mempertahankan kunci yang tersimpan</value>
+  </data>
+  <data name="RemoveKey" xml:space="preserve">
+    <value>Hapus kunci yang tersimpan</value>
+  </data>
+  <data name="TestConnection" xml:space="preserve">
+    <value>Simpan dan uji koneksi</value>
+  </data>
+  <data name="SettingsSaved" xml:space="preserve">
+    <value>Tersimpan</value>
+  </data>
+  <data name="SettingsSaving" xml:space="preserve">
+    <value>Menyimpan…</value>
+  </data>
+  <data name="SettingsError" xml:space="preserve">
+    <value>Tidak dapat menyimpan pengaturan</value>
+  </data>
+  <data name="FreeDay" xml:space="preserve">
+    <value>Hari kosong</value>
+  </data>
+  <data name="EmptyPlan" xml:space="preserve">
+    <value>Paket Anda kosong</value>
+  </data>
+  <data name="EmptyPlanHint" xml:space="preserve">
+    <value>Tambahkan tugas dalam satu baris</value>
+  </data>
+  <data name="MinutesShort" xml:space="preserve">
+    <value>menit</value>
+  </data>
+  <data name="EventKind" xml:space="preserve">
+    <value>Acara</value>
+  </data>
+  <data name="TaskKind" xml:space="preserve">
+    <value>Tugas</value>
+  </data>
+  <data name="DoneKind" xml:space="preserve">
+    <value>Selesai</value>
+  </data>
+  <data name="Focus" xml:space="preserve">
+    <value>Fokus</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>Tambah</value>
+  </data>
+  <data name="Added" xml:space="preserve">
+    <value>Ditambahkan</value>
+  </data>
+  <data name="SuggestedByAssistant" xml:space="preserve">
+    <value>Disarankan oleh asisten</value>
+  </data>
+  <data name="Priority" xml:space="preserve">
+    <value>prioritas</value>
+  </data>
+  <data name="OptionCustom">
+    <value>Kustom</value>
+  </data>
+  <data name="OptionPreset">
+    <value>Preset</value>
+  </data>
+  <data name="OptionSystemAccent">
+    <value>Aksen sistem</value>
+  </data>
+  <data name="OptionWallpaper">
+    <value>Latar belakang desktop</value>
+  </data>
+  <data name="OptionHover">
+    <value>Saat disorot</value>
+  </data>
+  <data name="OptionClick">
+    <value>Saat diklik</value>
+  </data>
+  <data name="TaskAdded">
+    <value>Tugas ditambahkan</value>
+  </data>
+  <data name="TaskRestored">
+    <value>Tugas dipulihkan</value>
+  </data>
+  <data name="TaskUpdated">
+    <value>Tugas diperbarui</value>
+  </data>
+  <data name="TaskDeleted">
+    <value>Tugas dihapus</value>
+  </data>
+  <data name="BlockCompleted">
+    <value>Blok fokus selesai</value>
+  </data>
+  <data name="EventAdded">
+    <value>Acara ditambahkan</value>
+  </data>
+  <data name="EventUpdated">
+    <value>Acara diperbarui</value>
+  </data>
+  <data name="EventDeleted">
+    <value>Acara dihapus</value>
+  </data>
+  <data name="Thinking">
+    <value>Sedang berpikir…</value>
+  </data>
+  <data name="SecondsShort">
+    <value>d</value>
+  </data>
+  <data name="ReplyReady">
+    <value>Balasan siap</value>
+  </data>
+  <data name="ReviewSuggestions">
+    <value>Tinjau saran sebelum menambahkan</value>
+  </data>
+  <data name="RequestCancelled">
+    <value>Permintaan dibatalkan</value>
+  </data>
+  <data name="ReplyFailed">
+    <value>Tidak dapat memperoleh balasan: {0}</value>
+  </data>
+  <data name="ConnectionError">
+    <value>Kesalahan koneksi</value>
+  </data>
+  <data name="SuggestionAdded">
+    <value>Saran ditambahkan</value>
+  </data>
+  <data name="OpenApp">
+    <value>Buka DAYDRIVE</value>
+  </data>
+  <data name="QuickAdd">
+    <value>Tambah cepat</value>
+  </data>
+  <data name="Exit">
+    <value>Keluar</value>
+  </data>
+  <data name="CalendarToday">
+    <value>Hari ini</value>
+  </data>
+  <data name="ComposerTask">
+    <value>Tugas</value>
+  </data>
+  <data name="ComposerAgent">
+    <value>Agen</value>
+  </data>
+  <data name="NewEvent">
+    <value>Acara baru</value>
+  </data>
+  <data name="Date">
+    <value>Tanggal</value>
+  </data>
+  <data name="Time">
+    <value>Waktu</value>
+  </data>
+  <data name="Duration">
+    <value>Durasi</value>
+  </data>
+  <data name="NoDeadline">
+    <value>Tanpa tenggat waktu</value>
+  </data>
+  <data name="InvalidInput">
+    <value>Periksa tanggal, waktu, dan angka yang dimasukkan</value>
+  </data>
+  <data name="ActiveTasks">
+    <value>Tugas-tugas</value>
+  </data>
+  <data name="NoAgenda">
+    <value>Tidak ada yang dijadwalkan untuk hari ini</value>
+  </data>
+  <data name="DueDate">
+    <value>Tanggal jatuh tempo</value>
+  </data>
+  <data name="PriorityLabel">
+    <value>Prioritas</value>
+  </data>
+  <data name="AgentConversation">
+    <value>Percakapan</value>
+  </data>
+  <data name="Send">
+    <value>Kirim</value>
+  </data>
+  <data name="TimeFrom">
+    <value>Dari</value>
+  </data>
+  <data name="TimeTo">
+    <value>Kepada</value>
+  </data>
+  <data name="WeekNavigationHint">
+    <value>Gulir atau seret untuk mengubah minggu</value>
+  </data>
+  <data name="Attachment">
+    <value>Lampiran</value>
+  </data>
+  <data name="Attach">
+    <value>Lampirkan file</value>
+  </data>
+  <data name="ChooseDate">
+    <value>Pilih tanggal</value>
+  </data>
+  <data name="EditEvent">
+    <value>Edit acara</value>
+  </data>
+  <data name="Confirm">
+    <value>Konfirmasi</value>
+  </data>
+  <data name="ConfirmChanges">
+    <value>Terapkan perubahan ini?</value>
+  </data>
+  <data name="ConfirmDeleteEvent">
+    <value>Hapus acara ini?</value>
+  </data>
+  <data name="ConfirmDeleteTask">
+    <value>Hapus tugas ini?</value>
+  </data>
+  <data name="DragToCreateHint">
+    <value>Seret di waktu kosong untuk membuat acara</value>
+  </data>
+  <data name="DaySummaryFormat">
+    <value>{0} item hari ini · {1} menit direncanakan</value>
+  </data>
+  <data name="Use24HourClock">
+    <value>Gunakan waktu 24 jam</value>
+  </data>
+  <data name="ChooseStartTime">
+    <value>Waktu mulai</value>
+  </data>
+  <data name="ChooseEndTime">
+    <value>Waktu selesai</value>
+  </data>
+  <data name="TimePickerHint">
+    <value>Langkah 5 menit</value>
+  </data>
+  <data name="TransparencyIntensity">
+    <value>Intensitas transparansi</value>
+  </data>
+  <data name="ChooseTime">
+    <value>Pilih waktu</value>
+  </data>
+  <data name="Hours">
+    <value>Jam</value>
+  </data>
+  <data name="Minutes">
+    <value>Menit</value>
+  </data>
+  <data name="EventTitleRequired">
+    <value>Masukkan judul acara</value>
+  </data>
+  <data name="EventDateTimeRequired">
+    <value>Pilih tanggal, waktu mulai, dan waktu selesai</value>
+  </data>
+  <data name="EventTimeRangeRequired">
+    <value>Waktu mulai dan waktu selesai tidak boleh sama</value>
+  </data>
+  <data name="EventSaveFailed">
+    <value>Gagal menyimpan acara. Coba lagi.</value>
+  </data>
+  <data name="AttachDialogTitle">
+    <value>Lampirkan file</value>
+  </data>
+  <data name="McpArgumentsPlaceholder">
+    <value>Argumen server MCP</value>
+  </data>
+  <data name="McpToolPlaceholder">
+    <value>Nama alat MCP</value>
+  </data>
+  <data name="ScheduledBlock">
+    <value>Blok terjadwal</value>
+  </data>
+  <data name="StartingSoon">
+    <value>Akan segera dimulai</value>
+  </data>
+  <data name="StartsInMinutes">
+    <value>{0} dimulai dalam {1} menit.</value>
+  </data>
+  <data name="StartupFailed">
+    <value>DAYDRIVE tidak dapat dimulai</value>
+  </data>
+  <data name="CrashLogSaved">
+    <value>Rincian telah disimpan ke daydrive-crash.log di folder data aplikasi.</value>
+  </data>
+  <data name="OptionProviderLocal">
+    <value>Model lokal (GGUF)</value>
+  </data>
+  <data name="OptionProviderOpenAi">
+    <value>API khusus</value>
+  </data>
+  <data name="OptionTransportHttp">
+    <value>Server HTTP</value>
+  </data>
+  <data name="OptionTransportStdio">
+    <value>Perintah lokal (stdio)</value>
+  </data>
+  <data name="ScrollToAdjust">
+    <value>Gulir untuk menyesuaikan</value>
+  </data>
+  <data name="NewTask">
+    <value>Tugas baru</value>
+  </data>
+  <data name="AddTask">
+    <value>Tambah tugas</value>
+  </data>
+  <data name="TaskTitle">
+    <value>Apa yang perlu dilakukan?</value>
+  </data>
+  <data name="EmptyPlanTaskHint">
+    <value>Buat tugas atau acara</value>
+  </data>
+  <data name="LaunchAtStartup">
+    <value>Luncurkan saat startup sistem</value>
+  </data>
+  <data name="AutostartFailed">
+    <value>Tidak dapat mengubah pengaturan startup sistem</value>
+  </data>
+  <data name="PriorityLow">
+    <value>Rendah</value>
+  </data>
+  <data name="PriorityNormal">
+    <value>Normal</value>
+  </data>
+  <data name="PriorityHigh">
+    <value>Tinggi</value>
+  </data>
+  <data name="PriorityUrgent">
+    <value>Mendesak</value>
+  </data>
+  <data name="PreferredAny">
+    <value>Kapan saja</value>
+  </data>
+  <data name="PreferredMorning">
+    <value>Pagi</value>
+  </data>
+  <data name="PreferredAfternoon">
+    <value>Sore</value>
+  </data>
+  <data name="PreferredEvening">
+    <value>Malam</value>
+  </data>
+  <data name="Notes">
+    <value>Catatan</value>
+  </data>
+  <data name="NotesPlaceholder">
+    <value>Konteks atau langkah berikutnya</value>
+  </data>
+  <data name="AdvancedPlanning">
+    <value>Opsi perencanaan</value>
+  </data>
+  <data name="EarliestStart">
+    <value>Mulai tidak lebih awal dari</value>
+  </data>
+  <data name="AnyDate">
+    <value>Tidak ada batasan</value>
+  </data>
+  <data name="PreferredTime">
+    <value>Waktu yang disukai</value>
+  </data>
+  <data name="SplitTask">
+    <value>Izinkan pembagian menjadi blok</value>
+  </data>
+  <data name="MinBlock">
+    <value>Blok minimum, min</value>
+  </data>
+  <data name="MaxSplits">
+    <value>Maksimum blok</value>
+  </data>
+  <data name="ManageTaskBlock">
+    <value>Blok tugas</value>
+  </data>
+  <data name="PlannedInterval">
+    <value>Interval yang direncanakan</value>
+  </data>
+  <data name="CompletedMinutes">
+    <value>Selesai, min</value>
+  </data>
+  <data name="CompleteWork">
+    <value>Selesaikan</value>
+  </data>
+  <data name="OpenTask">
+    <value>Tugas terbuka</value>
+  </data>
+  <data name="NotToday">
+    <value>Tidak hari ini</value>
+  </data>
+  <data name="Unschedule">
+    <value>Batalkan penjadwalan</value>
+  </data>
+  <data name="LockTime">
+    <value>Kunci waktu ini</value>
+  </data>
+  <data name="ConfirmTaskBlockChange">
+    <value>Simpan interval baru dan opsi blok?</value>
+  </data>
+  <data name="ConfirmTaskBlockComplete">
+    <value>Catat waktu penyelesaian yang dimasukkan?</value>
+  </data>
+  <data name="ConfirmTaskBlockUnschedule">
+    <value>Hapus blok ini dari jadwal? Tugas akan tetap ada.</value>
+  </data>
+  <data name="ConfirmTaskBlockNotToday">
+    <value>Simpan tugas ini di luar jadwal untuk hari ini?</value>
+  </data>
+  <data name="TaskBlockMinutesInvalid">
+    <value>Masukkan dari 1 menit hingga durasi blok</value>
+  </data>
+  <data name="TaskBlockMoved">
+    <value>Blok tugas dipindahkan dan dikunci</value>
+  </data>
+  <data name="TaskBlockUpdated">
+    <value>Opsi blok disimpan</value>
+  </data>
+  <data name="TaskBlockUnscheduled">
+    <value>Blok dihapus dari jadwal</value>
+  </data>
+  <data name="TaskBlockDeferred">
+    <value>Tugas ditunda ke hari lain</value>
+  </data>
+  <data name="TaskBlockPartiallyCompleted">
+    <value>Pekerjaan sebagian dicatat; sisanya akan kembali ke rencana</value>
+  </data>
+  <data name="TaskBlockConflict">
+    <value>Interval ini tumpang tindih dengan acara atau blok lain</value>
+  </data>
+  <data name="LocalModelIntro">
+    <value>Pilih satu model. DAYDRIVE mengunduh GGUF dan llama.cpp, kemudian menjalankan semuanya hanya di perangkat ini.</value>
+  </data>
+  <data name="LocalModelRoleLite">
+    <value>Parsing perintah cepat dan penangkapan tugas</value>
+  </data>
+  <data name="LocalModelRoleBalanced">
+    <value>Perencanaan sehari-hari dan asisten — direkomendasikan</value>
+  </data>
+  <data name="LocalModelRoleSmart">
+    <value>Analisis mingguan dan permintaan agen kompleks</value>
+  </data>
+  <data name="Recommended">
+    <value>Direkomendasikan</value>
+  </data>
+  <data name="LocalEngine">
+    <value>Mesin lokal</value>
+  </data>
+  <data name="DownloadModel">
+    <value>Unduh</value>
+  </data>
+  <data name="DownloadVisionSupport">
+    <value>Tambahkan visi</value>
+  </data>
+  <data name="StartModel">
+    <value>Mulai</value>
+  </data>
+  <data name="StopModel">
+    <value>Berhenti</value>
+  </data>
+  <data name="VisionSupport">
+    <value>Input gambar</value>
+  </data>
+  <data name="VisionSupportHint" xml:space="preserve"><value>Memungkinkan model membaca gambar terlampir. Model membutuhkan file kedua – proyektor visi – yang diunduh bersamaan dengan model.</value></data>
+  <data name="IdleSleep">
+    <value>Melepaskan memori saat tidak aktif</value>
+  </data>
+  <data name="IdleFiveMinutes">
+    <value>Setelah 5 menit</value>
+  </data>
+  <data name="IdleTenMinutes">
+    <value>Setelah 10 menit</value>
+  </data>
+  <data name="IdleThirtyMinutes">
+    <value>Setelah 30 menit</value>
+  </data>
+  <data name="IdleNever">
+    <value>Tidak pernah otomatis</value>
+  </data>
+  <data name="LocalModelArchitectureHint">
+    <value>AI menerima tugas tak terjadwal dan event tetap sebagai konteks hanya-baca. Model ini tidak memiliki akses database dan tidak pernah memesan waktu secara otomatis.</value>
+  </data>
+  <data name="DownloadingEngine">
+    <value>Mengunduh llama.cpp...</value>
+  </data>
+  <data name="ExtractingEngine">
+    <value>Memasang llama.cpp...</value>
+  </data>
+  <data name="DownloadingModel">
+    <value>Mengunduh model GGUF...</value>
+  </data>
+  <data name="DownloadingVision">
+    <value>Mengunduh proyektor visi...</value>
+  </data>
+  <data name="StartingLocalModel">
+    <value>Memuat model ke dalam memori…</value>
+  </data>
+  <data name="LocalModelRunning">
+    <value>Berjalan secara lokal</value>
+  </data>
+  <data name="LocalModelSleeping">
+    <value>Tidur — mulai lagi saat diminta</value>
+  </data>
+  <data name="LocalModelStopped">
+    <value>Dihentikan — mulai secara otomatis saat diperlukan</value>
+  </data>
+  <data name="LocalModelNotInstalled">
+    <value>Belum diunduh</value>
+  </data>
+  <data name="LocalModelInstalled">
+    <value>Model lokal siap</value>
+  </data>
+  <data name="LocalModelDeleted">
+    <value>Model lokal dihapus</value>
+  </data>
+  <data name="LocalModelError">
+    <value>Kesalahan model lokal</value>
+  </data>
+  <data name="DownloadCancelled">
+    <value>Pengunduhan dijeda; dapat dilanjutkan nanti</value>
+  </data>
+  <data name="QuickPromptPlan">
+    <value>Rencanakan hariku</value>
+  </data>
+  <data name="QuickPromptToday">
+    <value>Apa yang direncanakan untuk hari ini?</value>
+  </data>
+  <data name="QuickPromptTask">
+    <value>Buat tugas untuk malam ini</value>
+  </data>
+  <data name="SwitchModelConfirmTitle">
+    <value>Ganti Model</value>
+  </data>
+  <data name="SwitchModelConfirmText">
+    <value>Model "{0}" sedang berjalan. Hentikan dan ganti dengan "{1}"?</value>
+  </data>
+  <data name="SwitchAndStart">
+    <value>Hentikan dan mulai</value>
+  </data>
+  <data name="SwitchOnly">
+    <value>Hanya ganti</value>
+  </data>
+  <data name="StopAndSwitch">
+    <value>Hentikan dan ganti</value>
+  </data>
+  <data name="KeepRunning">
+    <value>Tetap di latar belakang</value>
+  </data>
+  <data name="SwitchProviderConfirmText">
+    <value>Model lokal "{0}" sedang berjalan. Hentikan sebelum beralih ke {1}?</value>
+  </data>
+  <data name="ItemsCountOne">
+    <value>{0} item</value>
+  </data>
+  <data name="ItemsCountFew">
+    <value>{0} item</value>
+  </data>
+  <data name="ItemsCountMany">
+    <value>{0} item</value>
+  </data>
+  <data name="UnscheduledTasks">
+    <value>Tidak terjadwal</value>
+  </data>
+  <data name="CurrentEvent">
+    <value>Acara saat ini</value>
+  </data>
+  <data name="NextEvent">
+    <value>Acara berikutnya</value>
+  </data>
+  <data name="NoEventsTitle">
+    <value>Tidak ada acara yang dijadwalkan</value>
+  </data>
+  <data name="NoEventsHint">
+    <value>Buat acara untuk memesan waktu</value>
+  </data>
+  <data name="NoEventsForDay">
+    <value>Tidak ada acara yang dijadwalkan untuk hari ini</value>
+  </data>
+  <data name="EventDaySummaryFormat">
+    <value>{0} acara · {1} menit terpakai</value>
+  </data>
+  <data name="EndingSoon">
+    <value>Segera berakhir</value>
+  </data>
+  <data name="EndsInMinutes">
+    <value>{0} berakhir dalam {1} menit.</value>
+  </data>
+  <data name="EventCategory" xml:space="preserve">
+    <value>Kategori</value>
+  </data>
+  <data name="EventPriority" xml:space="preserve">
+    <value>Prioritas</value>
+  </data>
+  <data name="EventRepeat" xml:space="preserve">
+    <value>Ulangi</value>
+  </data>
+  <data name="EventCategoryGeneral" xml:space="preserve">
+    <value>Umum</value>
+  </data>
+  <data name="EventCategoryWork" xml:space="preserve">
+    <value>Kerja</value>
+  </data>
+  <data name="EventCategoryPersonal" xml:space="preserve">
+    <value>Pribadi</value>
+  </data>
+  <data name="EventCategoryStudy" xml:space="preserve">
+    <value>Belajar</value>
+  </data>
+  <data name="EventCategoryHealth" xml:space="preserve">
+    <value>Kesehatan</value>
+  </data>
+  <data name="EventCategorySocial" xml:space="preserve">
+    <value>Sosial</value>
+  </data>
+  <data name="EventCategoryErrands" xml:space="preserve">
+    <value>Urusan</value>
+  </data>
+  <data name="EventCategoryTravel" xml:space="preserve">
+    <value>Perjalanan</value>
+  </data>
+  <data name="EventCategoryRest" xml:space="preserve">
+    <value>Istirahat</value>
+  </data>
+  <data name="EventPriorityNormal" xml:space="preserve">
+    <value>Normal</value>
+  </data>
+  <data name="EventPriorityHigh" xml:space="preserve">
+    <value>Tinggi</value>
+  </data>
+  <data name="EventPriorityCritical" xml:space="preserve">
+    <value>Kritis</value>
+  </data>
+  <data name="RepeatNever" xml:space="preserve">
+    <value>Tidak ulangi</value>
+  </data>
+  <data name="RepeatDaily" xml:space="preserve">
+    <value>Setiap hari</value>
+  </data>
+  <data name="RepeatWeekdays" xml:space="preserve">
+    <value>Hari kerja</value>
+  </data>
+  <data name="RepeatWeekly" xml:space="preserve">
+    <value>Setiap minggu</value>
+  </data>
+  <data name="RepeatMonthly" xml:space="preserve">
+    <value>Setiap bulan</value>
+  </data>
+  <data name="ScopeOccurrence" xml:space="preserve">
+    <value>Hanya acara ini</value>
+  </data>
+  <data name="ScopeFollowing" xml:space="preserve">
+    <value>Ini dan berikutnya</value>
+  </data>
+  <data name="ScopeSeries" xml:space="preserve">
+    <value>Seluruh rangkaian</value>
+  </data>
+  <data name="DayActions" xml:space="preserve">
+    <value>Tindakan harian</value>
+  </data>
+  <data name="CopyToTomorrow" xml:space="preserve">
+    <value>Salin ke besok</value>
+  </data>
+  <data name="CopyToNextWeek" xml:space="preserve">
+    <value>Salin ke minggu depan</value>
+  </data>
+  <data name="Copy" xml:space="preserve">
+    <value>Salin</value>
+  </data>
+  <data name="CopyDayConfirmation" xml:space="preserve">
+    <value>Salin jadwal ini ke {0}?</value>
+  </data>
+  <data name="CopyDayCompleted" xml:space="preserve">
+    <value>Acara yang disalin: {0}</value>
+  </data>
+  <data name="CopyEventConfirmation" xml:space="preserve">
+    <value>Salin “{0}” ke {1}?</value>
+  </data>
+  <data name="ClearDay" xml:space="preserve">
+    <value>Kosongkan hari ini</value>
+  </data>
+  <data name="CopySchedule" xml:space="preserve">
+    <value>Salin jadwal</value>
+  </data>
+  <data name="DayActionsShort" xml:space="preserve">
+    <value>Rencana harian</value>
+  </data>
+  <data name="CopyToDate" xml:space="preserve">
+    <value>Pilih tanggal lain</value>
+  </data>
+  <data name="DayPlanning" xml:space="preserve">
+    <value>Perencanaan harian</value>
+  </data>
+  <data name="EventCopied" xml:space="preserve">
+    <value>Acara disalin ke {0}</value>
+  </data>
+  <data name="DayPlanningHint" xml:space="preserve">
+    <value>Salin atau kosongkan acara yang dijadwalkan</value>
+  </data>
+  <data name="ClearDayConfirmation" xml:space="preserve">
+    <value>Hapus semua acara pada {0}?</value>
+  </data>
+  <data name="CopyEvent" xml:space="preserve">
+    <value>Salin acara</value>
+  </data>
+  <data name="ClearDayCompleted" xml:space="preserve">
+    <value>Acara yang dihapus: {0}</value>
+  </data>
+  <data name="ShiftEarlier" xml:space="preserve">
+    <value>Lebih awal</value>
+  </data>
+  <data name="EventActions" xml:space="preserve">
+    <value>Tindakan acara</value>
+  </data>
+  <data name="ShiftLater" xml:space="preserve">
+    <value>Nanti</value>
+  </data>
+  <data name="Shift" xml:space="preserve">
+    <value>Geser</value>
+  </data>
+  <data name="ShiftDayConfirmation" xml:space="preserve">
+    <value>Geser semua acara pada {0} sebesar {1}?</value>
+  </data>
+  <data name="ShiftSchedule" xml:space="preserve">
+    <value>Geser jadwal</value>
+  </data>
+  <data name="ShiftDayCompleted" xml:space="preserve">
+    <value>Acara yang digeser: {0}</value>
+  </data>
+  <data name="ShiftDayAmountRequired" xml:space="preserve">
+    <value>Masukkan durasi geser</value>
+  </data>
+  <data name="AiActionCopyDay" xml:space="preserve">
+    <value>Salin jadwal hari</value>
+  </data>
+  <data name="AiActionDeleteEvent" xml:space="preserve">
+    <value>Hapus acara</value>
+  </data>
+  <data name="AiActionUpdateEvent" xml:space="preserve">
+    <value>Perbarui acara</value>
+  </data>
+  <data name="AiActionTargetMissing" xml:space="preserve">
+    <value>Acara atau tugas yang diminta tidak ada lagi.</value>
+  </data>
+  <data name="AiActionShiftDay" xml:space="preserve">
+    <value>Geser jadwal hari</value>
+  </data>
+  <data name="AiActionInvalid" xml:space="preserve">
+    <value>Tindakan asisten kehilangan informasi yang diperlukan.</value>
+  </data>
+  <data name="ShareExternalContextHint" xml:space="preserve">
+    <value>Memungkinkan penyedia API atau MCP menerima percakapan dan detail kalender terbaru. Mati secara default.</value>
+  </data>
+  <data name="AiActionCreateTask" xml:space="preserve">
+    <value>Buat tugas yang belum dijadwalkan</value>
+  </data>
+  <data name="AiAccessConfirmAll" xml:space="preserve">
+    <value>Konfirmasi setiap tindakan</value>
+  </data>
+  <data name="AiActionUpdateTask" xml:space="preserve">
+    <value>Perbarui tugas yang belum dijadwalkan</value>
+  </data>
+  <data name="AiAccessFull" xml:space="preserve">
+    <value>Akses jadwal penuh</value>
+  </data>
+  <data name="AiAccessAutoSafe" xml:space="preserve">
+    <value>Terapkan tindakan aman secara otomatis</value>
+  </data>
+  <data name="AiActionFailed" xml:space="preserve">
+    <value>Tidak dapat diterapkan</value>
+  </data>
+  <data name="AiActionApplied" xml:space="preserve">
+    <value>Diterapkan</value>
+  </data>
+  <data name="AiActionCreateEvent" xml:space="preserve">
+    <value>Buat acara</value>
+  </data>
+  <data name="AiActionDismissed" xml:space="preserve">
+    <value>Dihapus</value>
+  </data>
+  <data name="ShareExternalContext" xml:space="preserve">
+    <value>Bagikan konteks jadwal dengan AI eksternal</value>
+  </data>
+  <data name="AiAccessHint" xml:space="preserve"><value>Apa yang dapat diubah asisten tanpa menanyakan Anda terlebih dahulu.</value></data>
+  <data name="AiActionDeleteTask" xml:space="preserve">
+    <value>Hapus tugas yang tidak dijadwalkan</value>
+  </data>
+  <data name="AiAccess" xml:space="preserve">
+    <value>Izin AI</value>
+  </data>
+  <data name="ClearConversation" xml:space="preserve">
+    <value>Bersihkan percakapan</value>
+  </data>
+  <data name="Dismiss" xml:space="preserve">
+    <value>Buang</value>
+  </data>
+  <data name="AiActionReady" xml:space="preserve">
+    <value>Tindakan siap untuk ditinjau</value>
+  </data>
+  <data name="AiAccessConfirmAllHint" xml:space="preserve">
+    <value>Setiap perubahan jadwal menunggu konfirmasi Anda.</value>
+  </data>
+  <data name="AiAccessAutoSafeHint" xml:space="preserve">
+    <value>Pembuatan dan pengeditan dapat berjalan otomatis; penghapusan dan perubahan seharian memerlukan konfirmasi.</value>
+  </data>
+  <data name="AiAccessFullHint" xml:space="preserve">
+    <value>Asisten dapat menerapkan setiap perubahan jadwal, termasuk penghapusan dan operasi hari massal.</value>
+  </data>
+  <data name="AiActionCopyEvent" xml:space="preserve">
+    <value>Salin acara</value>
+  </data>
+  <data name="ChatNewChat" xml:space="preserve">
+    <value>Obrolan baru</value>
+  </data>
+  <data name="ChatExpand" xml:space="preserve">
+    <value>Buka tampilan lebar</value>
+  </data>
+  <data name="ChatCollapse" xml:space="preserve">
+    <value>Kembali ke tampilan ringkas</value>
+  </data>
+  <data name="ChatHistory" xml:space="preserve">
+    <value>Riwayat</value>
+  </data>
+  <data name="ChatSearchPlaceholder" xml:space="preserve">
+    <value>Cari percakapan</value>
+  </data>
+  <data name="ChatNoConversations" xml:space="preserve">
+    <value>Belum ada percakapan yang disimpan</value>
+  </data>
+  <data name="ChatNoSearchResults" xml:space="preserve">
+    <value>Tidak ada yang cocok dengan pencarian itu</value>
+  </data>
+  <data name="ChatPin" xml:space="preserve">
+    <value>Sematkan</value>
+  </data>
+  <data name="ChatUnpin" xml:space="preserve">
+    <value>Hapus sematan</value>
+  </data>
+  <data name="ChatDeleteConversation" xml:space="preserve">
+    <value>Hapus percakapan</value>
+  </data>
+  <data name="ChatDeleteConfirm" xml:space="preserve">
+    <value>Hapus percakapan ini secara permanen?</value>
+  </data>
+  <data name="ChatGroupToday" xml:space="preserve">
+    <value>Hari ini</value>
+  </data>
+  <data name="ChatGroupYesterday" xml:space="preserve">
+    <value>Kemarin</value>
+  </data>
+  <data name="ChatGroupWeek" xml:space="preserve">
+    <value>7 hari sebelumnya</value>
+  </data>
+  <data name="ChatGroupOlder" xml:space="preserve">
+    <value>Sebelumnya</value>
+  </data>
+  <data name="ChatMessageCount" xml:space="preserve">
+    <value>{0} pesan</value>
+  </data>
+  <data name="ChatCopy" xml:space="preserve">
+    <value>Salin</value>
+  </data>
+  <data name="ChatCopied" xml:space="preserve">
+    <value>Disalin</value>
+  </data>
+  <data name="ChatRetry" xml:space="preserve">
+    <value>Tanyakan lagi</value>
+  </data>
+  <data name="ChatStop" xml:space="preserve">
+    <value>Berhenti</value>
+  </data>
+  <data name="ChatToolActivity" xml:space="preserve">
+    <value>Apa yang saya lakukan</value>
+  </data>
+  <data name="ChatToolApplied" xml:space="preserve">
+    <value>diterapkan</value>
+  </data>
+  <data name="ChatToolProposed" xml:space="preserve">
+    <value>diusulkan</value>
+  </data>
+  <data name="ChatToolFailed" xml:space="preserve">
+    <value>gagal</value>
+  </data>
+  <data name="StageConnecting" xml:space="preserve">
+    <value>Menghubungkan…</value>
+  </data>
+  <data name="StageThinking" xml:space="preserve">
+    <value>Sedang berpikir…</value>
+  </data>
+  <data name="StageWriting" xml:space="preserve">
+    <value>Sedang menulis…</value>
+  </data>
+  <data name="StageToolSchedule" xml:space="preserve">
+    <value>Membaca kalender Anda…</value>
+  </data>
+  <data name="StageToolTasks" xml:space="preserve">
+    <value>Membaca tugas Anda…</value>
+  </data>
+  <data name="StageToolSlots" xml:space="preserve">
+    <value>Mencari waktu luang…</value>
+  </data>
+  <data name="StageToolAnalytics" xml:space="preserve">
+    <value>Membaca statistik Anda…</value>
+  </data>
+  <data name="StageToolMemory" xml:space="preserve">
+    <value>Memperbarui memori…</value>
+  </data>
+  <data name="StageToolWrite" xml:space="preserve">
+    <value>Mempersiapkan perubahan…</value>
+  </data>
+  <data name="StageToolExternal" xml:space="preserve">
+    <value>Memanggil alat MCP…</value>
+  </data>
+  <data name="ChatMemory" xml:space="preserve">
+    <value>Memori</value>
+  </data>
+  <data name="ChatMemoryHint" xml:space="preserve">
+    <value>Fakta yang disimpan asisten antara percakapan. Disimpan hanya di komputer ini.</value>
+  </data>
+  <data name="ChatMemoryEmpty" xml:space="preserve">
+    <value>Belum ada yang disimpan. Asisten menambahkan catatan saat Anda berbicara.</value>
+  </data>
+  <data name="ChatMemoryAdd" xml:space="preserve">
+    <value>Tambah catatan</value>
+  </data>
+  <data name="ChatMemoryKeyPlaceholder" xml:space="preserve">
+    <value>Kunci singkat, misalnya deep-work-window</value>
+  </data>
+  <data name="ChatMemoryValuePlaceholder" xml:space="preserve">
+    <value>Apa yang harus diingat?</value>
+  </data>
+  <data name="ChatMemoryClear" xml:space="preserve">
+    <value>Lupakan semuanya</value>
+  </data>
+  <data name="ChatMemoryClearConfirm" xml:space="preserve">
+    <value>Hapus semua catatan yang tersimpan?</value>
+  </data>
+  <data name="ChatMemoryFromAssistant" xml:space="preserve">
+    <value>disimpan oleh asisten</value>
+  </data>
+  <data name="ChatMemoryFromUser" xml:space="preserve">
+    <value>ditambahkan oleh Anda</value>
+  </data>
+  <data name="ChatSuggestions" xml:space="preserve">
+    <value>Coba tanya</value>
+  </data>
+  <data name="ChatIntroTitle" xml:space="preserve">
+    <value>Mulai dari mana?</value>
+  </data>
+  <data name="ChatComposerHint" xml:space="preserve">
+    <value>Enter mengirim · Shift+Enter baris baru</value>
+  </data>
+  <data name="SuggestPlanTomorrow" xml:space="preserve">
+    <value>Rencanakan besok berdasarkan apa yang sudah dipesan</value>
+  </data>
+  <data name="SuggestFreeTime" xml:space="preserve">
+    <value>Di mana saya punya dua jam luang minggu ini?</value>
+  </data>
+  <data name="SuggestOverdue" xml:space="preserve">
+    <value>Apa yang sudah lewat tenggatnya dan apa yang harus saya hentikan?</value>
+  </data>
+  <data name="SuggestBalance" xml:space="preserve">
+    <value>Apakah minggu saya seimbang?</value>
+  </data>
+  <data name="SuggestBusyDay" xml:space="preserve">
+    <value>Hari ini terlihat padat — apa yang bisa dipindahkan?</value>
+  </data>
+  <data name="SuggestEmptyDay" xml:space="preserve">
+    <value>Tidak ada yang direncanakan — bantu saya menyusun hari</value>
+  </data>
+  <data name="SuggestFollowUp" xml:space="preserve">
+    <value>Lanjutkan: {0}</value>
+  </data>
+  <data name="SuggestReview" xml:space="preserve">
+    <value>Tinjau minggu lalu dan beri tahu saya apa yang berubah</value>
+  </data>
+  <data name="AiMemoryEnabled" xml:space="preserve">
+    <value>Biarkan asisten mengingat fakta tentang saya</value>
+  </data>
+  <data name="AiMemoryHint" xml:space="preserve">
+    <value>Catatan tetap di basis data lokal dan hanya dikirim ke model eksternal ketika berbagi konteks diaktifkan.</value>
+  </data>
+  <data name="McpToolsEnabled" xml:space="preserve">
+    <value>Berikan alat server MCP kepada model yang dipilih</value>
+  </data>
+  <data name="McpToolsHint" xml:space="preserve">
+    <value>Ini adalah cara modern menggunakan MCP: model terus melakukan penalaran dan hanya mendapatkan kemampuan tambahan. Memilih MCP sebagai penyedia membuat server menjawab sendiri melalui satu alat jembatan.</value>
+  </data>
+  <data name="ShowTools" xml:space="preserve">
+    <value>Tampilkan alat yang tersedia</value>
+  </data>
+  <data name="ToolsAvailable" xml:space="preserve">
+    <value>Alat yang dapat dipanggil model</value>
+  </data>
+  <data name="ToolBuiltIn" xml:space="preserve">
+    <value>bawaan</value>
+  </data>
+  <data name="Analytics" xml:space="preserve">
+    <value>Analitik</value>
+  </data>
+  <data name="AnalyticsSubtitle" xml:space="preserve">
+    <value>Statistik yang jelas berdasarkan riwayat Anda</value>
+  </data>
+  <data name="RangeWeek" xml:space="preserve">
+    <value>Minggu</value>
+  </data>
+  <data name="RangeMonth" xml:space="preserve">
+    <value>Bulan</value>
+  </data>
+  <data name="RangeQuarter" xml:space="preserve">
+    <value>3 bulan</value>
+  </data>
+  <data name="MetricScheduled" xml:space="preserve">
+    <value>Dijadwalkan</value>
+  </data>
+  <data name="MetricFocus" xml:space="preserve">
+    <value>Waktu fokus</value>
+  </data>
+  <data name="MetricCompletion" xml:space="preserve">
+    <value>Penyelesaian</value>
+  </data>
+  <data name="MetricAccuracy" xml:space="preserve">
+    <value>Akurasi rencana</value>
+  </data>
+  <data name="MetricOnTime" xml:space="preserve">
+    <value>Dimulai tepat waktu</value>
+  </data>
+  <data name="MetricLoad" xml:space="preserve">
+    <value>Beban</value>
+  </data>
+  <data name="MetricStreak" xml:space="preserve">
+    <value>Rangkaian aktif</value>
+  </data>
+  <data name="MetricOverdue" xml:space="preserve">
+    <value>Tugas yang terlambat</value>
+  </data>
+  <data name="MetricDays" xml:space="preserve">
+    <value>{0} h</value>
+  </data>
+  <data name="MetricHours" xml:space="preserve">
+    <value>{0:0.#} j</value>
+  </data>
+  <data name="MetricNoSample" xml:space="preserve">
+    <value>data tidak cukup</value>
+  </data>
+  <data name="MetricVsPrevious" xml:space="preserve">
+    <value>dibandingkan periode sebelumnya</value>
+  </data>
+  <data name="ChartDailyLoad" xml:space="preserve">
+    <value>Hari demi hari</value>
+  </data>
+  <data name="ChartCategories" xml:space="preserve">
+    <value>Kemana waktu pergi</value>
+  </data>
+  <data name="ChartHours" xml:space="preserve">
+    <value>Jam-jam dalam sehari</value>
+  </data>
+  <data name="ChartWeekdays" xml:space="preserve">
+    <value>Berdasarkan hari kerja</value>
+  </data>
+  <data name="ChartScheduledLegend" xml:space="preserve">
+    <value>Dijadwalkan</value>
+  </data>
+  <data name="ChartCompletedLegend" xml:space="preserve">
+    <value>Selesai</value>
+  </data>
+  <data name="AnalyticsEmpty" xml:space="preserve">
+    <value>Belum ada riwayat yang cukup. Rencanakan beberapa hari dan selesaikan beberapa sesi — angkanya akan muncul dengan sendirinya.</value>
+  </data>
+  <data name="AnalyticsInsights" xml:space="preserve">
+    <value>Apa yang ditunjukkan data</value>
+  </data>
+  <data name="AnalyticsAskAi" xml:space="preserve">
+    <value>Diskusikan ini dengan asisten</value>
+  </data>
+  <data name="AnalyticsAskAiPrompt" xml:space="preserve">
+    <value>Lihat statistik saya selama {0} hari terakhir dan beri tahu saya apa yang harus diubah.</value>
+  </data>
+  <data name="AnalyticsAskAiPeriodPrompt" xml:space="preserve">
+    <value>Lihat statistik saya dari {0} hingga {1} dan beri tahu saya apa yang harus diubah.</value>
+  </data>
+  <data name="InsightSample" xml:space="preserve">
+    <value>{0} pengamatan · kepercayaan {1}%</value>
+  </data>
+  <data name="InsightEstimationBiasOver" xml:space="preserve">
+    <value>Sesi berlangsung sekitar {0}% lebih lama dari yang direncanakan</value>
+  </data>
+  <data name="InsightEstimationBiasUnder" xml:space="preserve">
+    <value>Sesi selesai sekitar {0}% lebih cepat dari yang direncanakan</value>
+  </data>
+  <data name="InsightStrongTimeOfDay" xml:space="preserve">
+    <value>{0} menangani {1}% dari pekerjaan yang sudah selesai</value>
+  </data>
+  <data name="InsightScheduleFriction" xml:space="preserve">
+    <value>{0} dari {1} blok harus dipindahkan</value>
+  </data>
+  <data name="InsightStartDelay" xml:space="preserve">
+    <value>{0} dari {1} sesi dilewatkan</value>
+  </data>
+  <data name="InsightOverload" xml:space="preserve">
+    <value>Kalender mengambil {0}% dari waktu bangun Anda</value>
+  </data>
+  <data name="InsightUnderuse" xml:space="preserve">
+    <value>Hanya {0}% dari waktu yang tersedia yang direncanakan</value>
+  </data>
+  <data name="InsightCategoryDominance" xml:space="preserve">
+    <value>{0} mengambil {1}% dari waktu terjadwal Anda</value>
+  </data>
+  <data name="InsightConsistency" xml:space="preserve">
+    <value>Beban Anda tetap sekitar {0} jam per hari</value>
+  </data>
+  <data name="PartOfDayMorning" xml:space="preserve">
+    <value>Pagi</value>
+  </data>
+  <data name="PartOfDayAfternoon" xml:space="preserve">
+    <value>Siang</value>
+  </data>
+  <data name="PartOfDayEvening" xml:space="preserve">
+    <value>Malam</value>
+  </data>
+  <data name="CategoryFocus" xml:space="preserve">
+    <value>Fokus</value>
+  </data>
+  <data name="NowLabel" xml:space="preserve">
+    <value>Sekarang</value>
+  </data>
+  <data name="StartsIn" xml:space="preserve">
+    <value>dalam {0}</value>
+  </data>
+  <data name="EndsIn" xml:space="preserve">
+    <value>{0} tersisa</value>
+  </data>
+  <data name="DurationHoursMinutes" xml:space="preserve">
+    <value>{0} jam {1} menit</value>
+  </data>
+  <data name="DurationMinutes" xml:space="preserve">
+    <value>{0} menit</value>
+  </data>
+  <data name="OverdueBadge" xml:space="preserve">
+    <value>terlambat</value>
+  </data>
+  <data name="TodayBadge" xml:space="preserve">
+    <value>hari ini</value>
+  </data>
+  <data name="TomorrowBadge" xml:space="preserve">
+    <value>besok</value>
+  </data>
+  <data name="DayLoadLabel" xml:space="preserve">
+    <value>{0} sibuk</value>
+  </data>
+  <data name="ChatToolRead" xml:space="preserve">
+    <value>baca</value>
+  </data>
+  <data name="MetricPeakHour" xml:space="preserve">
+    <value>Jam sibuk</value>
+  </data>
+  <data name="MemoryCategoryGeneral" xml:space="preserve">
+    <value>Umum</value>
+  </data>
+  <data name="MemoryCategoryPreference" xml:space="preserve">
+    <value>Preferensi</value>
+  </data>
+  <data name="MemoryCategoryRoutine" xml:space="preserve">
+    <value>Rutinitas</value>
+  </data>
+  <data name="MemoryCategoryConstraint" xml:space="preserve">
+    <value>Keterbatasan</value>
+  </data>
+  <data name="MemoryCategoryGoal" xml:space="preserve">
+    <value>Tujuan</value>
+  </data>
+  <data name="MemoryCategoryContext" xml:space="preserve">
+    <value>Konteks</value>
+  </data>
+  <data name="LocalModelRoleGeneral" xml:space="preserve">
+    <value>Agen serbaguna</value>
+  </data>
+  <data name="LocalModelRoleReasoning" xml:space="preserve">
+    <value>Penalaran dan jawaban cepat</value>
+  </data>
+  <data name="LocalModelRoleToolUse" xml:space="preserve">
+    <value>Dekompisi dan penggunaan alat</value>
+  </data>
+  <data name="LocalModelRoleCustom" xml:space="preserve">
+    <value>File GGUF milik Anda sendiri</value>
+  </data>
+  <data name="ExperimentalBadge" xml:space="preserve">
+    <value>lanjutan</value>
+  </data>
+  <data name="CustomModelTitle" xml:space="preserve">
+    <value>Model milik Anda sendiri</value>
+  </data>
+  <data name="CustomModelHint" xml:space="preserve"><value>Tunjuk GGUF di disk dan digunakan apa adanya: tidak ada yang diunduh, tidak ada yang disalin. Dua file terpisah mungkin terlibat, dan mereka tidak dapat dipertukarkan.</value></data>
+  <data name="CustomModelBadge" xml:space="preserve">
+    <value>kustom</value>
+  </data>
+  <data name="CustomModelNotChosen" xml:space="preserve">
+    <value>Tidak ada file yang dipilih</value>
+  </data>
+  <data name="PickModelFile" xml:space="preserve">
+    <value>Pilih GGUF</value>
+  </data>
+  <data name="PickProjectorFile" xml:space="preserve">
+    <value>Pilih proyektor</value>
+  </data>
+  <data name="ClearCustomModel" xml:space="preserve">
+    <value>Hapus</value>
+  </data>
+  <data name="CustomModelDialogTitle" xml:space="preserve">
+    <value>Pilih file model GGUF</value>
+  </data>
+  <data name="ModelParameters" xml:space="preserve">
+    <value>Parameter model</value>
+  </data>
+  <data name="ParamOff" xml:space="preserve">
+    <value>mati</value>
+  </data>
+  <data name="ParamMinutes" xml:space="preserve">
+    <value>{0} menit</value>
+  </data>
+  <data name="ParamTemperature" xml:space="preserve">
+    <value>Suhu</value>
+  </data>
+  <data name="ParamTemperatureHint" xml:space="preserve"><value>Seberapa banyak model memvariasikan pilihan kata. Rendah menjaga tanggal, waktu, dan judul secara literal, sesuai kebutuhan penjadwalan; tinggi lebih hidup dan kurang tepat. 0,3 adalah default.</value></data>
+  <data name="ParamMaxTokens" xml:space="preserve">
+    <value>Batas jawaban</value>
+  </data>
+  <data name="ParamMaxTokensHint" xml:space="preserve"><value>Balasan tunggal terpanjang, dalam token – kira-kira tiga per empat kata setiap token. Terlalu rendah dan rencana panjang dipotong di tengah kalimat; terlalu tinggi tidak mengeluarkan biaya kecuali model benar-benar menulis sebanyak itu. 4000 cocok untuk rencana sehari penuh.</value></data>
+  <data name="ParamTopP" xml:space="preserve">
+    <value>Top-p</value>
+  </data>
+  <data name="ParamTopPHint" xml:space="preserve"><value>Batas kedua yang lebih kasar untuk hal yang sama: di bawah 1,00 model hanya boleh memilih dari kata-kata yang paling mungkin. Biarkan pada 1,00 dan gunakan suhu sebagai gantinya – pada 1,00 batas ini sepenuhnya diabaikan dalam permintaan.</value></data>
+  <data name="ParamToolIterations" xml:space="preserve">
+    <value>Langkah-langkah alat</value>
+  </data>
+  <data name="ParamToolIterationsHint" xml:space="preserve"><value>Berapa kali asisten dapat mencari sesuatu, bertindak, dan berpikir lagi sebelum harus menjawab. Setiap langkah adalah satu perjalanan bolak-balik. Rendah lebih cepat tetapi menyerah pada hal-hal yang berlapis; 12 mencakup perencanaan akhir minggu dari awal hingga akhir.</value></data>
+  <data name="ParamHistory" xml:space="preserve">
+    <value>Kedalaman sejarah</value>
+  </data>
+  <data name="ParamHistoryHint" xml:space="preserve"><value>Berapa banyak pesan sebelumnya dikirim lagi agar asisten mengingat alur percakapan. Semua yang terjadi sebelum itu terlupakan dalam percakapan. Lebih banyak konteks menghabiskan token dan sedikit waktu di setiap pesan.</value></data>
+  <data name="ParamTimeout" xml:space="preserve">
+    <value>Batas waktu permintaan</value>
+  </data>
+  <data name="ParamTimeoutHint" xml:space="preserve"><value>Berapa lama menunggu satu jawaban sebelum menyerah. Ini adalah jaring pengaman, bukan pengaturan kecepatan – menaikkannya tidak pernah membuat apa pun lebih lambat, dan menurunkannya hanya mengubah jawaban yang lambat menjadi tidak ada jawaban.</value></data>
+  <data name="ParamExtraInstructions" xml:space="preserve">
+    <value>Instruksi tambahan</value>
+  </data>
+  <data name="ParamExtraInstructionsPlaceholder" xml:space="preserve"><value>Misalnya: jawab secara singkat; jangan pernah memesan apapun sebelum pukul 10:00; sebut pekerjaan mendalam sebagai "fokus".</value></data>
+  <data name="ResetParameters" xml:space="preserve">
+    <value>Atur ulang ke default</value>
+  </data>
+  <data name="LocalRuntimeSection" xml:space="preserve">
+    <value>Mesin lokal</value>
+  </data>
+  <data name="ParamContext" xml:space="preserve">
+    <value>Jendela konteks</value>
+  </data>
+  <data name="ParamContextHint" xml:space="preserve">
+    <value>Token yang disimpan llama-server dalam memori. Lebih kecil lebih cepat dan ringan.</value>
+  </data>
+  <data name="ParamThreads" xml:space="preserve">
+    <value>Thread</value>
+  </data>
+  <data name="ParamThreadsHint" xml:space="preserve">
+    <value>0 membiarkan llama.cpp yang memutuskan. Menetapkan jumlah core fisik biasanya lebih cepat.</value>
+  </data>
+  <data name="HideTools" xml:space="preserve">
+    <value>Sembunyikan</value>
+  </data>
+  <data name="TrackSection" xml:space="preserve">
+    <value>Bagaimana hasilnya?</value>
+  </data>
+  <data name="TrackStart" xml:space="preserve">
+    <value>Mulai</value>
+  </data>
+  <data name="TrackDone" xml:space="preserve">
+    <value>Selesai</value>
+  </data>
+  <data name="TrackPartial" xml:space="preserve">
+    <value>Sebagian</value>
+  </data>
+  <data name="TrackSkip" xml:space="preserve">
+    <value>Dilewati</value>
+  </data>
+  <data name="TrackUndo" xml:space="preserve">
+    <value>Batalkan</value>
+  </data>
+  <data name="TrackedStarted" xml:space="preserve">
+    <value>dimulai pada {0}</value>
+  </data>
+  <data name="TrackedDone" xml:space="preserve">
+    <value>selesai · {0}</value>
+  </data>
+  <data name="TrackedPartial" xml:space="preserve">
+    <value>sebagian · {0}</value>
+  </data>
+  <data name="TrackedSkipped" xml:space="preserve">
+    <value>dilewati</value>
+  </data>
+  <data name="TrackHint" xml:space="preserve">
+    <value>Tandai acara agar penyelesaian, akurasi rencana, dan ketepatan waktu dapat dihitung dalam analitik.</value>
+  </data>
+  <data name="PeekNothingToday" xml:space="preserve">
+    <value>Tidak ada jadwal</value>
+  </data>
+  <data name="PeekOpen" xml:space="preserve">
+    <value>Buka DAYDRIVE</value>
+  </data>
+  <data name="PeekBusyToday" xml:space="preserve">
+    <value>{0} hari ini</value>
+  </data>
+  <data name="PeekOverdue" xml:space="preserve">
+    <value>{0} terlambat</value>
+  </data>
+  <data name="DurationLabelShort" xml:space="preserve">
+    <value>Menit</value>
+  </data>
+  <data name="FinishedEvent" xml:space="preserve">
+    <value>Baru saja selesai</value>
+  </data>
+  <data name="SettingsTabAssistant" xml:space="preserve">
+    <value>Koneksi AI</value>
+  </data>
+  <data name="SettingsTabModels" xml:space="preserve">
+    <value>AI Lokal</value>
+  </data>
+  <data name="VisualPalette" xml:space="preserve">
+    <value>Palet visual</value>
+  </data>
+  <data name="VisualPaletteHint" xml:space="preserve">
+    <value>Mengontrol warna yang digunakan oleh bagan, kategori, dan penanda prioritas.</value>
+  </data>
+  <data name="PaletteVibrant" xml:space="preserve">
+    <value>Cerah</value>
+  </data>
+  <data name="PaletteAccent" xml:space="preserve">
+    <value>Nada aksen</value>
+  </data>
+  <data name="PaletteMonochrome" xml:space="preserve">
+    <value>Monokrom</value>
+  </data>
+  <data name="PalettePastel" xml:space="preserve">
+    <value>Pastel</value>
+  </data>
+  <data name="PaletteEarth" xml:space="preserve">
+    <value>Bumi</value>
+  </data>
+  <data name="PaletteNeon" xml:space="preserve">
+    <value>Neon</value>
+  </data>
+  <data name="PaletteColorBlind" xml:space="preserve">
+    <value>Aksesibel</value>
+  </data>
+  <data name="RamLabel" xml:space="preserve">
+    <value>RAM</value>
+  </data>
+  <data name="CpuLabel" xml:space="preserve">
+    <value>CPU</value>
+  </data>
+  <data name="MetricPercentagePoints" xml:space="preserve">
+    <value>{0:0} pp</value>
+  </data>
+  <data name="InterfaceFont" xml:space="preserve"><value>Font antarmuka</value></data>
+  <data name="InterfaceFontHint" xml:space="preserve"><value>Pilih font Cyrillic bawaan atau tambahkan file TTF atau OTF Anda sendiri.</value></data>
+  <data name="FontPreview" xml:space="preserve"><value>Aa 0123 · Fokus tenang</value></data>
+  <data name="AddCustomFont" xml:space="preserve"><value>Tambahkan font kustom</value></data>
+  <data name="FontPickerTitle" xml:space="preserve"><value>Pilih file font</value></data>
+  <data name="FontAdded" xml:space="preserve"><value>Font “{0}” telah ditambahkan.</value></data>
+  <data name="FontInvalid" xml:space="preserve"><value>File font ini tidak bisa dibaca.</value></data>
+  <data name="CustomFontLabel" xml:space="preserve"><value>{0} · kustom</value></data>
+  <data name="FontSystem" xml:space="preserve"><value>Sistem</value></data>
+  <data name="ActivityTimer" xml:space="preserve"><value>Pengatur waktu aktivitas</value></data>
+  <data name="AiConnectionIntro" xml:space="preserve"><value>Pilih siapa yang menjawab asisten: model di perangkat ini, API yang kompatibel, atau server MCP.</value></data>
+  <data name="LocalAiTitle" xml:space="preserve"><value>AI Lokal</value></data>
+  <data name="LocalAiConnectionHint" xml:space="preserve"><value>Model berjalan di perangkat ini. Unduhan, file, dan mesin lokal dikelola di AI Lokal.</value></data>
+  <data name="OpenLocalAi" xml:space="preserve"><value>Buka</value></data>
+  <data name="ApiConnectionTitle" xml:space="preserve"><value>Koneksi API</value></data>
+  <data name="ApiConnectionHint" xml:space="preserve"><value>Hubungkan API HTTP yang kompatibel dengan OpenAI. Kunci dienkripsi di perangkat ini.</value></data>
+  <data name="McpConnectionTitle" xml:space="preserve"><value>Server MCP</value></data>
+  <data name="McpConnectionHint" xml:space="preserve"><value>Gunakan MCP sebagai penyedia ketika server itu sendiri harus menjawab melalui satu alat jembatan.</value></data>
+  <data name="McpTransport" xml:space="preserve"><value>Transportasi</value></data>
+  <data name="McpCommandLabel" xml:space="preserve"><value>Perintah server</value></data>
+  <data name="McpToolLabel" xml:space="preserve"><value>Alat jembatan</value></data>
+  <data name="AdvancedSettings" xml:space="preserve"><value>Lanjutan</value></data>
+  <data name="AdvancedSettingsHint" xml:space="preserve"><value>Bagaimana model menulis, seberapa jauh ia dapat berjalan sendiri, dan apa yang harus selalu diingat.</value></data>
+  <data name="TrackEventTooltip" xml:space="preserve"><value>Catat apa yang terjadi pada peristiwa ini</value></data>
+  <data name="TrackPartialTooltip" xml:space="preserve"><value>Selesai sebagian — Anda memilih berapa lama sebenarnya prosesnya</value></data>
+  <data name="UnmarkedEvents" xml:space="preserve"><value>{0} tidak ditandai</value></data>
+  <data name="PeekOpenPanel" xml:space="preserve"><value>Buka panel</value></data>
+  <data name="AskAssistant" xml:space="preserve"><value>Tanyakan pada asisten</value></data>
+  <data name="AiProviderLocalSummary" xml:space="preserve"><value>Model berjalan di komputer ini. Tidak ada yang keluar dari perangkat, dan mesin diunduh serta dikelola di bawah.</value></data>
+  <data name="AiProviderApiSummary" xml:space="preserve"><value>Endpoint yang kompatibel dengan OpenAI, termasuk Ollama. Jadwal Anda hanya dikirim setelah Anda mengizinkannya di bawah.</value></data>
+  <data name="AiProviderMcpSummary" xml:space="preserve"><value>Server MCP menjawab melalui satu alat jembatan. Gambar tidak dapat dikirim dengan cara ini.</value></data>
+  <data name="AttachImage" xml:space="preserve"><value>Gambar…</value></data>
+  <data name="AttachDocument" xml:space="preserve"><value>Dokumen…</value></data>
+  <data name="AttachImagesFilter" xml:space="preserve"><value>Gambar</value></data>
+  <data name="AttachDocumentsFilter" xml:space="preserve"><value>Dokumen</value></data>
+  <data name="AttachUnsupported" xml:space="preserve"><value>Format itu tidak dapat dibaca. Gambar: PNG, JPEG, WebP, BMP, GIF. Dokumen: PDF, DOCX dan file teks.</value></data>
+  <data name="AttachTooLarge" xml:space="preserve"><value>File itu lebih dari {0} MB dan tidak dapat dilampirkan.</value></data>
+  <data name="AttachImageNotSupported" xml:space="preserve"><value>Mesin saat ini tidak dapat membaca gambar. Ganti penyedia, atau nyalakan input gambar untuk model lokal.</value></data>
+  <data name="SettingsTabData" xml:space="preserve"><value>Data dan sinkronisasi</value></data>
+  <data name="SettingsTabAbout" xml:space="preserve"><value>Tentang</value></data>
+  <data name="CloudSyncTitle" xml:space="preserve"><value>Sinkronisasi cloud</value></data>
+  <data name="CloudSyncIntro" xml:space="preserve"><value>Menyimpan salinan data Anda di tempat yang bisa diambil komputer Anda yang lain. Tugas, acara, kemajuan, obrolan asisten, dan memorinya disinkronkan; pengaturan tetap terpisah di tiap komputer.</value></data>
+  <data name="CloudDestination" xml:space="preserve"><value>Tujuan</value></data>
+  <data name="CloudProviderOff" xml:space="preserve"><value>Mati</value></data>
+  <data name="CloudProviderFolder" xml:space="preserve"><value>Folder yang disinkronkan</value></data>
+  <data name="CloudFolderHint" xml:space="preserve"><value>Tunjuk pada folder yang sudah disinkronkan oleh klien Google Drive, OneDrive, atau Dropbox Anda. Tidak diperlukan akun atau kunci di sini.</value></data>
+  <data name="CloudFolderPlaceholder" xml:space="preserve"><value>C:\Users\you\Google Drive</value></data>
+  <data name="CloudFolderDialogTitle" xml:space="preserve"><value>Pilih folder yang disinkronkan</value></data>
+  <data name="Browse" xml:space="preserve"><value>Telusuri…</value></data>
+  <data name="CloudGoogleHint" xml:space="preserve"><value>Mengunggah langsung ke folder aplikasi tersembunyi di Drive. Aplikasi ini tidak pernah dapat melihat sisa Drive Anda.</value></data>
+  <data name="CloudGoogleSetupTitle" xml:space="preserve"><value>Pengaturan satu kali</value></data>
+  <data name="CloudGoogleSetupSteps" xml:space="preserve"><value>Cukup sekali, di Google Cloud Console:
+1. Buat proyek dan aktifkan “Google Drive API” di dalamnya.
+2. Di layar izin OAuth pilih Eksternal, lalu tambahkan alamat Google Anda sebagai pengguna uji.
+3. Di Kredensial, buat ID klien OAuth dengan jenis “Aplikasi desktop”.
+4. Tempel ID klien dan rahasia kliennya di bawah, lalu tekan “Hubungkan akun Google”.</value></data>
+  <data name="CloudGoogleConsole" xml:space="preserve"><value>Buka Google Cloud Console</value></data>
+  <data name="CloudGoogleClientId" xml:space="preserve"><value>ID klien OAuth</value></data>
+  <data name="CloudGoogleClientSecret" xml:space="preserve"><value>Rahasia klien OAuth</value></data>
+  <data name="CloudGoogleClientSecretPlaceholder" xml:space="preserve"><value>GOCSPX-…</value></data>
+  <data name="CloudGoogleClientSecretHint" xml:space="preserve"><value>Wajib. Letaknya di sebelah ID klien di Google Cloud Console. Disimpan terenkripsi di komputer ini dan hanya dikirim ke Google.</value></data>
+  <data name="CloudGoogleConnect" xml:space="preserve"><value>Hubungkan akun Google</value></data>
+  <data name="CloudGoogleDisconnect" xml:space="preserve"><value>Putuskan koneksi</value></data>
+  <data name="CloudGoogleWaiting" xml:space="preserve"><value>Selesaikan masuk di browser Anda…</value></data>
+  <data name="CloudGoogleDisconnected" xml:space="preserve"><value>Akun Google terputus. Salinan cloud tetap tidak tersentuh.</value></data>
+  <data name="CloudDeviceName" xml:space="preserve"><value>Komputer ini disebut</value></data>
+  <data name="CloudDeviceNamePlaceholder" xml:space="preserve"><value>Laptop</value></data>
+  <data name="CloudDeviceNameHint" xml:space="preserve"><value>Ditampilkan di samping snapshot sehingga Anda dapat melihat mesin mana yang terakhir mengunggah.</value></data>
+  <data name="CloudAutomatic" xml:space="preserve"><value>Sinkronisasi sendiri</value></data>
+  <data name="CloudAutomaticHint" xml:space="preserve"><value>Memeriksa sebentar setelah peluncuran, setiap lima belas menit, dan sekali lagi saat keluar. Dengan ini mati, hanya tombol yang melakukan sinkronisasi.</value></data>
+  <data name="CloudSyncNow" xml:space="preserve"><value>Sinkronkan sekarang</value></data>
+  <data name="CloudCheck" xml:space="preserve"><value>Periksa cloud</value></data>
+  <data name="CloudSyncRunning" xml:space="preserve"><value>Menyinkronkan…</value></data>
+  <data name="CloudNoSnapshot" xml:space="preserve"><value>Belum ada yang diunggah.</value></data>
+  <data name="CloudSnapshotFormat" xml:space="preserve"><value>disimpan {0}</value></data>
+  <data name="CloudSnapshotDeviceFormat" xml:space="preserve"><value>disimpan {0} dari “{1}”</value></data>
+  <data name="CloudConflictTitle" xml:space="preserve"><value>Kedua salinan berubah</value></data>
+  <data name="CloudConflictHint" xml:space="preserve"><value>Komputer ini dan salinan cloud keduanya telah diedit sejak sinkronisasi terakhir. Penggabungan harus menebak, jadi pilih yang ingin disimpan. Yang lain akan diganti.</value></data>
+  <data name="CloudKeepLocal" xml:space="preserve"><value>Simpan komputer ini</value></data>
+  <data name="CloudKeepCloud" xml:space="preserve"><value>Simpan salinan cloud</value></data>
+  <data name="CloudRestartHint" xml:space="preserve"><value>Salinan yang diunduh siap digunakan dan akan berlaku saat DAYDRIVE restart. Data sebelumnya telah disimpan di folder Backups.</value></data>
+  <data name="LocalData" xml:space="preserve"><value>Di komputer ini</value></data>
+  <data name="LocalDataHint" xml:space="preserve"><value>Semua tersimpan dalam satu database SQLite di sini, beserta cadangan dan file model lokal.</value></data>
+  <data name="OpenDataFolder" xml:space="preserve"><value>Buka folder</value></data>
+  <data name="CouldNotOpenFolder" xml:space="preserve"><value>Folder itu tidak dapat dibuka.</value></data>
+  <data name="CouldNotOpenLink" xml:space="preserve"><value>Browser tidak dapat dibuka untuk {0}</value></data>
+  <data name="AboutVersionFormat" xml:space="preserve"><value>Versi {0}</value></data>
+  <data name="AboutTagline" xml:space="preserve"><value>Perencana dan kalender ringkas yang mengutamakan penyimpanan lokal dan berada di tepi layar Anda.</value></data>
+  <data name="AboutAuthorLabel" xml:space="preserve"><value>Dibuat oleh</value></data>
+  <data name="AboutOpenGitHub" xml:space="preserve"><value>GitHub</value></data>
+  <data name="AboutLinks" xml:space="preserve"><value>Tautan</value></data>
+  <data name="AboutRepository" xml:space="preserve"><value>Kode sumber</value></data>
+  <data name="AboutIssues" xml:space="preserve"><value>Laporkan masalah</value></data>
+  <data name="AboutReleases" xml:space="preserve"><value>Semua rilis</value></data>
+  <data name="UpdatesTitle" xml:space="preserve"><value>Pembaruan</value></data>
+  <data name="GeneralIntro" xml:space="preserve"><value>Bahasa, dan apa yang dilakukan aplikasi saat komputer mulai.</value></data>
+  <data name="AppearanceIntro" xml:space="preserve"><value>Tema, warna dan jenis, dan seberapa banyak desktop yang terlihat.</value></data>
+  <data name="BehaviorIntro" xml:space="preserve"><value>Bagaimana shell dan widget cepat muncul dan menghilang.</value></data>
+  <data name="RemindersIntro" xml:space="preserve"><value>Kartu yang miring keluar dari petal sebelum suatu acara dimulai atau berakhir.</value></data>
+  <data name="UpdatesIntro" xml:space="preserve"><value>Diperiksa sekali sehari di latar belakang. Tidak ada yang mengganggu di sini.</value></data>
+  <data name="UpdateChecking" xml:space="preserve"><value>Memeriksa…</value></data>
+  <data name="UpdateUpToDate" xml:space="preserve"><value>Anda menggunakan versi terbaru.</value></data>
+  <data name="UpdateAvailableFormat" xml:space="preserve"><value>Versi {0} tersedia.</value></data>
+  <data name="UpdateSkippedFormat" xml:space="preserve"><value>Versi {0} tidak akan disebutkan lagi.</value></data>
+  <data name="UpdateSkip" xml:space="preserve"><value>Lewati</value></data>
+  <data name="UpdateOpen" xml:space="preserve"><value>Apa yang baru</value></data>
+  <data name="UpdateCheckEnabled" xml:space="preserve"><value>Ceritakan tentang versi baru</value></data>
+  <data name="UpdateCheckHint" xml:space="preserve"><value>Memeriksa GitHub sekali sehari. Tidak ada yang dikirim tentang Anda, tidak ada yang mengganggu Anda, dan versi yang Anda lewati tidak akan disebutkan lagi.</value></data>
+  <data name="UpdateCheckNow" xml:space="preserve"><value>Periksa sekarang</value></data>
+  <data name="PeekOfPlanned" xml:space="preserve"><value>dari {0} yang direncanakan</value></data>
+  <data name="PeekUntilStart" xml:space="preserve"><value>sampai dimulai</value></data>
+  <data name="PeekAllGood" xml:space="preserve"><value>Semua sesuai rencana</value></data>
+  <data name="PeekNotStarted" xml:space="preserve"><value>belum dimulai</value></data>
+  <data name="PeekOverPlanned" xml:space="preserve"><value>{0} melebihi rencana</value></data>
+  <data name="HandleTooltipPanel" xml:space="preserve"><value>Klik kiri — panel</value></data>
+  <data name="HandleTooltipWidget" xml:space="preserve"><value>Klik kanan — widget</value></data>
+  <data name="WidgetHideDelay" xml:space="preserve"><value>Penundaan sembunyinya widget</value></data>
+  <data name="WidgetHideDelayHint" xml:space="preserve"><value>Berapa lama widget cepat tetap di layar setelah penunjuk meninggalkannya. Buka dengan klik kanan pada pegangan tepi; tombol kiri masih membuka panel.</value></data>
+  <data name="WidgetKeepOpen" xml:space="preserve"><value>Jangan sembunyikan widget secara otomatis</value></data>
+  <data name="WidgetKeepOpenHint" xml:space="preserve"><value>Widget cepat tetap di layar sampai ditutup — tombol kanan pada pegangan tepi, atau pada widget itu sendiri. Pengingat tetap memunculkan dan menutupnya sendiri.</value></data>
+  <data name="MascotColor" xml:space="preserve"><value>Maskot widget</value></data>
+  <data name="MascotColorDynamic" xml:space="preserve"><value>Ikuti warna tema</value></data>
+  <data name="MascotColorHint" xml:space="preserve"><value>Makhluk di samping jam di widget cepat. Itu mengambil warna aksen dari tema saat ini kecuali jika warna dipilih di sini.</value></data>
+  <data name="MascotShow" xml:space="preserve"><value>Tampilkan maskot</value></data>
+  <data name="SelectEvents" xml:space="preserve"><value>Pilih</value></data>
+  <data name="SelectAllEvents" xml:space="preserve"><value>Semua</value></data>
+  <data name="ClearSelectionAction" xml:space="preserve"><value>Bersihkan</value></data>
+  <data name="SelectionNone" xml:space="preserve"><value>Tidak ada yang dipilih</value></data>
+  <data name="SelectionCount" xml:space="preserve"><value>{0} dipilih · {1}</value></data>
+  <data name="SelectionEmptyHint" xml:space="preserve"><value>Tandai acara yang ingin Anda pilih dulu.</value></data>
+  <data name="SelectEventAction" xml:space="preserve"><value>Pilih</value></data>
+  <data name="SelectionExit" xml:space="preserve"><value>Selesai</value></data>
+  <data name="SelectionHint" xml:space="preserve"><value>Tandai acara untuk memindahkan atau menghapusnya bersama-sama.</value></data>
+  <data name="SelectionDeleteConfirm" xml:space="preserve"><value>Hapus {0}?</value></data>
+  <data name="SelectionDeleted" xml:space="preserve"><value>Dihapus: {0}</value></data>
+  <data name="DeleteSelected" xml:space="preserve"><value>Hapus</value></data>
+  <data name="MoveEvent" xml:space="preserve"><value>Pindahkan…</value></data>
+  <data name="MoveSelected" xml:space="preserve"><value>Pindahkan</value></data>
+  <data name="MoveTitle" xml:space="preserve"><value>Pindahkan acara</value></data>
+  <data name="MoveSubjectCount" xml:space="preserve"><value>{0} acara</value></data>
+  <data name="MoveModeTime" xml:space="preserve"><value>Berdasarkan waktu</value></data>
+  <data name="MoveModeDate" xml:space="preserve"><value>Ke tanggal</value></data>
+  <data name="MoveByHowMuch" xml:space="preserve"><value>Pindahkan dengan</value></data>
+  <data name="MoveEarlier" xml:space="preserve"><value>Lebih awal</value></data>
+  <data name="MoveLater" xml:space="preserve"><value>Lebih lama</value></data>
+  <data name="MovePreview" xml:space="preserve"><value>{0} — {1}, {2}</value></data>
+  <data name="MoveNothingToDo" xml:space="preserve"><value>Itu akan membiarkan semuanya tetap di tempatnya.</value></data>
+  <data name="MoveCheck" xml:space="preserve"><value>Periksa dan pindahkan</value></data>
+  <data name="MoveApply" xml:space="preserve"><value>Pindahkan</value></data>
+  <data name="MoveAffects" xml:space="preserve"><value>Ini memengaruhi acara lain</value></data>
+  <data name="MoveNoCollisions" xml:space="preserve"><value>Tidak ada yang lain yang terpengaruh.</value></data>
+  <data name="MoveCollisionSummary" xml:space="preserve"><value>{0} bertumpang tindih</value></data>
+  <data name="MoveConfirmClear" xml:space="preserve"><value>Memindahkan {0}. Tidak ada yang lain yang terpengaruh — {1}</value></data>
+  <data name="MoveConfirmWithCollisions" xml:space="preserve"><value>Memindahkan {0} akan bertumpang tindih dengan {1} acara lain. Tetap pindahkan?</value></data>
+  <data name="MoveCompleted" xml:space="preserve"><value>Dipindahkan: {0}</value></data>
+  <data name="MoveCompletedWithCollisions" xml:space="preserve"><value>Dipindahkan: {0} · bertumpang tindih: {1}</value></data>
+  <data name="CollisionWithExisting" xml:space="preserve"><value>«{0}» akan bertumpang tindih «{1}»</value></data>
+  <data name="CollisionWithinSelection" xml:space="preserve"><value>«{0}» dan «{1}» akan saling bertumpang tindih</value></data>
+  <data name="MoveNudgeMinusHour" xml:space="preserve"><value>−1 jam</value></data>
+  <data name="MoveNudgeMinus15" xml:space="preserve"><value>−15 menit</value></data>
+  <data name="MoveNudgePlus15" xml:space="preserve"><value>+15 menit</value></data>
+  <data name="MoveNudgePlusHour" xml:space="preserve"><value>+1 jam</value></data>
+  <data name="DragEventHint" xml:space="preserve"><value>Seret suatu acara ke jam atau hari lain untuk memindahkannya.</value></data>
+  <data name="DayResultLabel" xml:space="preserve"><value>Hasil hari</value></data>
+  <data name="DaySoFarLabel" xml:space="preserve"><value>Hari ini sejauh ini</value></data>
+  <data name="DayAheadLabel" xml:space="preserve"><value>Hari ke depan</value></data>
+  <data name="DayReviewTitle" xml:space="preserve"><value>{0} dari {1} selesai</value></data>
+  <data name="DayReviewMeta" xml:space="preserve"><value>{0} dari {1} · {2}%</value></data>
+  <data name="DayReviewEmpty" xml:space="preserve"><value>Tidak ada yang direncanakan</value></data>
+  <data name="DayReviewEmptyHint" xml:space="preserve"><value>Hari ini tidak ada acara.</value></data>
+  <data name="DayAheadTitle" xml:space="preserve"><value>{0} · {1}</value></data>
+  <data name="DayChipDone" xml:space="preserve"><value>{0} selesai</value></data>
+  <data name="DayChipPartial" xml:space="preserve"><value>{0} sebagian</value></data>
+  <data name="DayChipSkipped" xml:space="preserve"><value>{0} dilewati</value></data>
+  <data name="DayChipUnmarked" xml:space="preserve"><value>{0} belum ditandai</value></data>
+  <data name="DayChipUpcoming" xml:space="preserve"><value>{0} akan datang</value></data>
+  <data name="PeekUnmarked" xml:space="preserve"><value>{0} belum ditandai</value></data>
+  <data name="PeekSkipped" xml:space="preserve"><value>{0} dilewati</value></data>
+  <data name="PeekPartial" xml:space="preserve"><value>{0} hanya sebagian</value></data>
+  <data name="PeekDayDone" xml:space="preserve"><value>Hari ditutup · {0} selesai</value></data>
+  <data name="PeekDaySummary" xml:space="preserve"><value>{0} dari {1} selesai</value></data>
+  <data name="TrackRunning" xml:space="preserve"><value>Sedang berjalan</value></data>
+  <data name="RangeDetailDays" xml:space="preserve"><value>{0} hari terakhir</value></data>
+  <data name="RangeDetailWeeks" xml:space="preserve"><value>{0} minggu terakhir</value></data>
+  <data name="RangeDetailCalendarWeek" xml:space="preserve"><value>minggu kalender · Sen–Min</value></data>
+  <data name="RangeDetailCalendarMonth" xml:space="preserve"><value>bulan kalender · hari pertama–terakhir</value></data>
+  <data name="RangeDetailCalendarQuarter" xml:space="preserve"><value>3 bulan kalender lengkap</value></data>
+  <data name="RangePickerTooltip" xml:space="preserve"><value>Periode yang ditampilkan</value></data>
+  <data name="AnalyticsCurrentWeek" xml:space="preserve"><value>Minggu ini</value></data>
+  <data name="AnalyticsPreviousWeek" xml:space="preserve"><value>Minggu sebelumnya</value></data>
+  <data name="AnalyticsNextWeek" xml:space="preserve"><value>Minggu depan</value></data>
+  <data name="ChartPerDay" xml:space="preserve"><value>per hari</value></data>
+  <data name="ChartPerWeek" xml:space="preserve"><value>per minggu</value></data>
+  <data name="ChartTotal" xml:space="preserve"><value>total</value></data>
+  <data name="EventsCountOne" xml:space="preserve"><value>{0} acara</value></data>
+  <data name="EventsCountFew" xml:space="preserve"><value>{0} acara</value></data>
+  <data name="EventsCountMany" xml:space="preserve"><value>{0} acara</value></data>
+  <data name="ChartWeeklyLoad" xml:space="preserve"><value>Minggu demi minggu</value></data>
+  <data name="ShiftMoreOptions" xml:space="preserve"><value>Lebih banyak opsi</value></data>
+  <data name="ShiftDays" xml:space="preserve"><value>Hari</value></data>
+  <data name="ShiftOnDate" xml:space="preserve"><value>Pada tanggal</value></data>
+  <data name="ShiftDayDateConfirmation" xml:space="preserve"><value>Pindahkan semua di {0} ke {1}?</value></data>
+  <data name="VisionUnsupported" xml:space="preserve"><value>Model ini tidak memiliki enkoder gambar, jadi input gambar tetap nonaktif. Pilih model yang ditandai “Gambar”.</value></data>
+  <data name="VisionReady" xml:space="preserve"><value>Input gambar sudah siap. Lampirkan gambar dan ajukan pertanyaan tentang itu.</value></data>
+  <data name="VisionNeedsProjector" xml:space="preserve"><value>Proyektor untuk model ini belum diunduh. Gunakan tombol di atas.</value></data>
+  <data name="VisionNeedsCustomProjector" xml:space="preserve"><value>Pilih file mmproj model ini di bawah, atau input gambar tetap mati.</value></data>
+  <data name="VisionBadge" xml:space="preserve"><value>Gambar</value></data>
+  <data name="CustomWeightsTitle" xml:space="preserve"><value>File model · GGUF</value></data>
+  <data name="CustomWeightsHint" xml:space="preserve"><value>Model itu sendiri: semua yang diketahuinya dan semua yang bisa ditulisnya. Wajib.</value></data>
+  <data name="CustomProjectorTitle" xml:space="preserve"><value>Proyektor visi · mmproj</value></data>
+  <data name="CustomProjectorHint" xml:space="preserve"><value>Sebuah file kedua, jauh lebih kecil yang mengubah gambar menjadi sesuatu yang bisa dibaca oleh model di atas. Hanya untuk input gambar, dan hanya file mmproj yang dimiliki oleh model itu saja.</value></data>
+  <data name="CustomFileMissing" xml:space="preserve"><value>Tidak dipilih</value></data>
+  <data name="McpEndpointHint" xml:space="preserve"><value>Alamat server MCP itu sendiri. Dipisahkan dari alamat API: membaca satu sebagai yang lain berarti upaya koneksi yang sia-sia sebelum setiap pesan.</value></data>
+  <data name="AdvancedMcpNotice" xml:space="preserve"><value>Jembatan MCP menjawab sendiri, jadi pengaturan ini tidak diteruskan kepadanya. Beralihlah ke model lokal atau koneksi API untuk menyesuaikan permintaan.</value></data>
+  <data name="ParamGroupSampling" xml:space="preserve"><value>Bagaimana jawaban ditulis</value></data>
+  <data name="ParamGroupBudget" xml:space="preserve"><value>Sejauh mana mungkin</value></data>
+  <data name="ParamGroupStanding" xml:space="preserve"><value>Setiap percakapan</value></data>
+  <data name="AiActionSetTaskStatus" xml:space="preserve"><value>Ubah status tugas</value></data>
+  <data name="AiActionCreateFocusBlock" xml:space="preserve"><value>Cadangkan waktu kerja</value></data>
+  <data name="StageToolSearch" xml:space="preserve"><value>Mencari jadwal…</value></data>
+  <data name="TaskStatusInbox" xml:space="preserve"><value>Kotak masuk</value></data>
+  <data name="TaskStatusReady" xml:space="preserve"><value>Siap</value></data>
+  <data name="TaskStatusScheduled" xml:space="preserve"><value>Dijadwalkan</value></data>
+  <data name="TaskStatusInProgress" xml:space="preserve"><value>Sedang berlangsung</value></data>
+  <data name="TaskStatusDone" xml:space="preserve"><value>Selesai</value></data>
+  <data name="TaskStatusCancelled" xml:space="preserve"><value>Dibatalkan</value></data>
+  <data name="AiAccessConfirmAllShort" xml:space="preserve"><value>Konfirmasi</value></data>
+  <data name="AiAccessAutoSafeShort" xml:space="preserve"><value>Aman otomatis</value></data>
+  <data name="AiAccessFullShort" xml:space="preserve"><value>Penuh</value></data>
+  <data name="SnapStep" xml:space="preserve"><value>{0} menit</value></data>
+  <data name="Reminders" xml:space="preserve"><value>Pengingat</value></data>
+  <data name="NotificationsEnabled" xml:space="preserve"><value>Tampilkan pengingat</value></data>
+  <data name="NotificationsEnabledHint" xml:space="preserve"><value>Sebuah kartu di widget cepat di samping pegangan tepi, sebelum suatu acara dimulai atau berakhir. Tidak ada yang diserahkan ke sistem.</value></data>
+  <data name="NotificationSound" xml:space="preserve"><value>Suara pengingat</value></data>
+  <data name="NotificationSoundHint" xml:space="preserve"><value>Memutar suara notifikasi yang dipilih dalam pengaturan sistem, dengan tenang saat widget sudah terbuka.</value></data>
+  <data name="NotificationsOffHint" xml:space="preserve"><value>Pengingat dimatikan.</value></data>
+  <data name="NotificationDismissAll" xml:space="preserve"><value>Singkirkan semua</value></data>
+  <data name="DoNotDisturb" xml:space="preserve"><value>Jangan ganggu</value></data>
+  <data name="DoNotDisturbUntil" xml:space="preserve"><value>Tenang sampai {0}</value></data>
+  <data name="DoNotDisturbEnd" xml:space="preserve"><value>Akhiri jangan ganggu</value></data>
+  <data name="DoNotDisturbOffHint" xml:space="preserve"><value>Pengingat muncul saat waktunya tiba.</value></data>
+  <data name="DoNotDisturbOffShort" xml:space="preserve"><value>Mati</value></data>
+  <data name="DoNotDisturbUntilResumedHint" xml:space="preserve"><value>Tenang sampai Anda menyalakannya kembali.</value></data>
+  <data name="DoNotDisturbLength" xml:space="preserve"><value>Untuk berapa lama</value></data>
+  <data name="QuietLengthMinutes" xml:space="preserve"><value>{0} menit</value></data>
+  <data name="QuietLengthHours" xml:space="preserve"><value>{0} jam</value></data>
+  <data name="QuietLengthUntilResumed" xml:space="preserve"><value>Sampai saya menyalakannya kembali</value></data>
+  <data name="FocusMode" xml:space="preserve"><value>Mode fokus</value></data>
+  <data name="FocusModeIntro" xml:space="preserve"><value>Selama sebuah gim — atau apa pun yang lain — menguasai seluruh layar, shell menyingkir: ia melepas pintasan yang dipegangnya di seluruh desktop agar tombol sampai ke apa pun yang ada di depan, dan menahan pengingatnya sampai layar kembali menjadi milik Anda.</value></data>
+  <data name="FocusModeManualOnlyHint" xml:space="preserve"><value>Desktop ini tidak memberi tahu apa lagi yang ada di layar, jadi tidak ada yang dikenali sendiri. Di sini mode fokus tetap bekerja bila dinyalakan sendiri.</value></data>
+  <data name="FocusModeAuto" xml:space="preserve"><value>Kenali aplikasi layar penuh</value></data>
+  <data name="FocusModeHold" xml:space="preserve"><value>Biarkan menyala</value></data>
+  <data name="FocusModeHoldHint" xml:space="preserve"><value>Tetap menyala apa pun yang ada di layar, sampai dimatikan lagi. Tidak diingat setelah mulai ulang.</value></data>
+  <data name="FocusModeReleaseShortcuts" xml:space="preserve"><value>Lepaskan pintasan</value></data>
+  <data name="FocusModeReleaseShortcutsHint" xml:space="preserve"><value>Kombinasi yang dipegang aplikasi ini tidak pernah sampai ke gim. Di dalam jendela DAYDRIVE sendiri pintasan tetap bekerja.</value></data>
+  <data name="FocusModeHoldReminders" xml:space="preserve"><value>Tahan pengingat</value></data>
+  <data name="FocusModeHoldRemindersHint" xml:space="preserve"><value>Tidak ada yang digambar di atas layar. Yang sudah jatuh tempo datang sekaligus begitu mode fokus berakhir — tidak ada yang hilang.</value></data>
+  <data name="FocusModeHideHandle" xml:space="preserve"><value>Singkirkan bilah dari tepi layar</value></data>
+  <data name="FocusModeHideHandleHint" xml:space="preserve"><value>Bilah di tepi kanan tidak lagi menerima klik. Ikon di baki sistem tetap membuka antarmuka, dan bilah kembali begitu mode fokus berakhir.</value></data>
+  <data name="FocusModeIdleHint" xml:space="preserve"><value>Tidak ada yang menguasai seluruh layar. Pintasan dipegang dan pengingat sampai.</value></data>
+  <data name="FocusModeOffHint" xml:space="preserve"><value>Shell tetap seperti apa adanya, apa pun yang ada di layar.</value></data>
+  <data name="FocusModeHeldHint" xml:space="preserve"><value>Dinyalakan sendiri.</value></data>
+  <data name="FocusModeAppHint" xml:space="preserve"><value>Layar dipegang {0}.</value></data>
+  <data name="FocusModeAnonHint" xml:space="preserve"><value>Ada yang menguasai seluruh layar.</value></data>
+  <data name="FocusModePresentingHint" xml:space="preserve"><value>Mode presentasi sedang menyala.</value></data>
+  <data name="FocusModeOnShort" xml:space="preserve"><value>Nyala</value></data>
+  <data name="FocusModeHeldTitle" xml:space="preserve"><value>Selagi layar sedang sibuk</value></data>
+  <data name="ShortcutsFocusHeld" xml:space="preserve"><value>Mode fokus melepasnya untuk sementara — ada hal lain yang menguasai seluruh layar. Di dalam jendela DAYDRIVE pintasan tetap bekerja.</value></data>
+  <data name="LocalModelGpu" xml:space="preserve"><value>Gunakan kartu grafis</value></data>
+  <data name="LocalModelGpuOnHint" xml:space="preserve"><value>Versi GPU dari mesin terpasang di samping versi prosesor dan setiap lapisan yang sesuai dialihkan. Model akan dimulai ulang ketika ini berubah.</value></data>
+  <data name="LocalModelGpuOffHint" xml:space="preserve"><value>Model berjalan sepenuhnya di prosesor. Lebih lambat, tetapi meninggalkan kartu untuk hal lainnya.</value></data>
+  <data name="GpuLabel" xml:space="preserve"><value>GPU</value></data>
+  <data name="CpuOnlyLabel" xml:space="preserve"><value>CPU</value></data>
+  <data name="VramLabel" xml:space="preserve"><value>VRAM</value></data>
+  <data name="GpuOffloadDetail" xml:space="preserve"><value>{0} · {1} dari {2} lapisan di kartu</value></data>
+  <data name="CpuOnlyDetail" xml:space="preserve"><value>Berjalan di prosesor</value></data>
+  <data name="ResourceOfTotal" xml:space="preserve"><value>dari total {0} di komputer</value></data>
+  <data name="ResourceNotInUse" xml:space="preserve"><value>tidak digunakan</value></data>
+  <data name="ResourceUnavailable" xml:space="preserve"><value>—</value></data>
+  <data name="StageLoadingModel" xml:space="preserve"><value>Memuat model…</value></data>
+  <data name="TrackPause" xml:space="preserve"><value>Pause</value></data>
+  <data name="TrackResume" xml:space="preserve"><value>Resume</value></data>
+  <data name="TrackStop" xml:space="preserve"><value>Stop</value></data>
+  <data name="TrackPaused" xml:space="preserve"><value>Paused</value></data>
+  <data name="TrackWorked" xml:space="preserve"><value>Worked</value></data>
+  <data name="TrackPausedFor" xml:space="preserve"><value>{0} paused</value></data>
+  <data name="TrackPlanActual" xml:space="preserve"><value>plan {0} · actual {1}</value></data>
+  <data name="TrackOverPlan" xml:space="preserve"><value>{0} over plan</value></data>
+  <data name="TrackUnderPlan" xml:space="preserve"><value>{0} left of the plan</value></data>
+  <data name="TrackedPartialProgress" xml:space="preserve"><value>partly · {0}% · {1}</value></data>
+  <data name="SessionTimerTooltip" xml:space="preserve"><value>Work time. Pauses are counted separately and never added to it.</value></data>
+  <data name="PausePromptTitle" xml:space="preserve"><value>Still on this?</value></data>
+  <data name="PausePromptBody" xml:space="preserve"><value>Paused for {0}.</value></data>
+  <data name="PausePromptResume" xml:space="preserve"><value>Keep going</value></data>
+  <data name="PausePromptFinish" xml:space="preserve"><value>End session</value></data>
+  <data name="SessionResultTitle" xml:space="preserve"><value>How did it go?</value></data>
+  <data name="SessionResultDone" xml:space="preserve"><value>Done</value></data>
+  <data name="SessionResultPartial" xml:space="preserve"><value>Partly</value></data>
+  <data name="SessionResultMissed" xml:space="preserve"><value>Not done</value></data>
+  <data name="SessionMeasured" xml:space="preserve"><value>Worked {0} of {1} planned</value></data>
+  <data name="SessionMeasuredNoPlan" xml:space="preserve"><value>Worked {0}</value></data>
+  <data name="SessionProgressTitle" xml:space="preserve"><value>How far did it get?</value></data>
+  <data name="SessionNextStepTitle" xml:space="preserve"><value>What's left?</value></data>
+  <data name="SessionNextStepPlaceholder" xml:space="preserve"><value>Recheck the last three screens</value></data>
+  <data name="SessionSave" xml:space="preserve"><value>Save</value></data>
+  <data name="SessionLater" xml:space="preserve"><value>Not now</value></data>
+  <data name="NextStepChip" xml:space="preserve"><value>Next: {0}</value></data>
+  <data name="NextStepTooltip" xml:space="preserve"><value>Where to pick this up. Set when the event was left part-done.</value></data>
+  <data name="ChatWrapUp" xml:space="preserve"><value>Day wrap-up</value></data>
+  <data name="WrapUpTitle" xml:space="preserve"><value>Wrap up the day</value></data>
+  <data name="WrapUpHint" xml:space="preserve"><value>Semua yang selesai tanpa hasil — hari ini dan minggu-minggu sebelumnya.</value></data>
+  <data name="WrapUpCount" xml:space="preserve"><value>{0} without a result</value></data>
+  <data name="WrapUpEmpty" xml:space="preserve"><value>Nothing left to answer for</value></data>
+  <data name="WrapUpEmptyHint" xml:space="preserve"><value>Setiap acara yang selesai punya hasil.</value></data>
+  <data name="WrapUpDone" xml:space="preserve"><value>Done</value></data>
+  <data name="WrapUpMove" xml:space="preserve"><value>Move</value></data>
+  <data name="WrapUpSkip" xml:space="preserve"><value>Skip</value></data>
+  <data name="WrapUpMoveTooltip" xml:space="preserve"><value>Move to tomorrow, same time</value></data>
+  <data name="WrapUpAcceptAll" xml:space="preserve"><value>Accept all suggestions</value></data>
+  <data name="WrapUpHadActivity" xml:space="preserve"><value>timer ran {0}</value></data>
+  <data name="WrapUpNeverStarted" xml:space="preserve"><value>never started</value></data>
+  <data name="WrapUpSuggestion" xml:space="preserve"><value>suggested: {0}</value></data>
+  <data name="WrapUpResolvedDone" xml:space="preserve"><value>Marked done</value></data>
+  <data name="WrapUpResolvedSkipped" xml:space="preserve"><value>Skipped</value></data>
+  <data name="WrapUpResolvedMoved" xml:space="preserve"><value>Moved to {0}</value></data>
+  <data name="WrapUpOffer" xml:space="preserve"><value>{0} of today's events have no result yet.</value></data>
+  <data name="WrapUpOpen" xml:space="preserve"><value>Wrap up</value></data>
+  <data name="WrapUpLater" xml:space="preserve"><value>Later</value></data>
+  <data name="WrapUpBadge" xml:space="preserve"><value>{0}</value></data>
+  <data name="BlockerTitle" xml:space="preserve"><value>Moved {0} times now. What is in the way?</value></data>
+  <data name="BlockerNotEnoughTime" xml:space="preserve"><value>Not enough time</value></data>
+  <data name="BlockerTooBig" xml:space="preserve"><value>Too big</value></data>
+  <data name="BlockerUnclearStart" xml:space="preserve"><value>Unclear where to start</value></data>
+  <data name="BlockerNotRelevant" xml:space="preserve"><value>No longer relevant</value></data>
+  <data name="BlockerShorten" xml:space="preserve"><value>Make it shorter</value></data>
+  <data name="BlockerShortenHint" xml:space="preserve"><value>Halve the slot, to {0}.</value></data>
+  <data name="BlockerFirstStep" xml:space="preserve"><value>Give it a first step</value></data>
+  <data name="BlockerDrop" xml:space="preserve"><value>Drop it</value></data>
+  <data name="BlockerDropHint" xml:space="preserve"><value>Take it off the calendar.</value></data>
+  <data name="BlockerNoted" xml:space="preserve"><value>Noted.</value></data>
+  <data name="TrackedPausedAt" xml:space="preserve"><value>paused - {0} worked</value></data>
+  <data name="BlockerEarlier" xml:space="preserve"><value>Move it earlier</value></data>
+  <data name="BlockerEarlierHint" xml:space="preserve"><value>Put it first thing, at {0}, before the day fills up.</value></data>
+  <data name="MonitorPanel" xml:space="preserve"><value>Pemantauan</value></data>
+  <data name="MonitorIdle" xml:space="preserve"><value>Belum dimulai</value></data>
+  <data name="NextStepCardTitle" xml:space="preserve"><value>Yang tersisa</value></data>
+  <data name="NextStepFold" xml:space="preserve"><value>Sembunyikan catatan</value></data>
+  <data name="NextStepUnfold" xml:space="preserve"><value>Tampilkan catatan</value></data>
+  <data name="NextStepCollapse" xml:space="preserve"><value>Ciutkan daftar</value></data>
+  <data name="NextStepExpand" xml:space="preserve"><value>Bentangkan daftar</value></data>
+  <data name="SessionDismiss" xml:space="preserve"><value>Abaikan</value></data>
+  <data name="SessionNextStepAdd" xml:space="preserve"><value>Tambahkan baris ini</value></data>
+  <data name="SessionNextStepAddHint" xml:space="preserve"><value>enter menambah satu lagi</value></data>
+  <data name="SessionNextStepRemove" xml:space="preserve"><value>Hapus dari daftar</value></data>
+  <data name="Shortcuts" xml:space="preserve"><value>Pintasan papan ketik</value></data>
+  <data name="ShortcutsIntro" xml:space="preserve"><value>Berfungsi dari aplikasi mana pun. Tekan kombinasinya untuk mengganti; Escape membatalkan, Backspace mematikan.</value></data>
+  <data name="ShortcutsWindowOnlyIntro" xml:space="preserve"><value>Berfungsi selama jendela DAYDRIVE sedang aktif. Mengambil tombol untuk seluruh desktop untuk saat ini hanya di Windows; di macOS dan Wayland, aturlah di pengaturan sistem atau compositor.</value></data>
+  <data name="ShortcutsReset" xml:space="preserve"><value>Kembalikan ke bawaan</value></data>
+  <data name="ShortcutResetOne" xml:space="preserve"><value>Kembali ke bawaan</value></data>
+  <data name="ShortcutRebind" xml:space="preserve"><value>Tekan untuk mengganti</value></data>
+  <data name="ShortcutPressKeys" xml:space="preserve"><value>Tekan tombolnya…</value></data>
+  <data name="ShortcutClash" xml:space="preserve"><value>Pintasan lain sudah memakai kombinasi ini</value></data>
+  <data name="ShortcutRefused" xml:space="preserve"><value>Program lain memakai tombol ini</value></data>
+  <data name="ShortcutOff" xml:space="preserve"><value>Mati</value></data>
+  <data name="ShortcutToggleShell" xml:space="preserve"><value>Tampilkan atau sembunyikan perencana</value></data>
+  <data name="ShortcutToggleWidget" xml:space="preserve"><value>Tampilkan atau sembunyikan widget cepat</value></data>
+  <data name="ShortcutToggleAssistant" xml:space="preserve"><value>Buka asisten</value></data>
+  <data name="ShortcutStartOrPauseSession" xml:space="preserve"><value>Mulai atau jeda sesi</value></data>
+  <data name="ShortcutStopSession" xml:space="preserve"><value>Hentikan sesi</value></data>
+  <data name="ShortcutToggleDoNotDisturb" xml:space="preserve"><value>Nyalakan atau matikan mode jangan ganggu</value></data>
+  <data name="CloudStateOk" xml:space="preserve"><value>Semua sudah sinkron</value></data>
+  <data name="CloudStateOkHint" xml:space="preserve"><value>Diperiksa {0}. Komputer ini dan cloud memiliki data yang sama.</value></data>
+  <data name="CloudStatePending" xml:space="preserve"><value>Ada perubahan yang belum ada di cloud</value></data>
+  <data name="CloudStatePendingAuto" xml:space="preserve"><value>Perubahan akan terkirim sendiri sekitar pukul {0}, atau tekan “Sinkronkan sekarang”.</value></data>
+  <data name="CloudStatePendingManual" xml:space="preserve"><value>Sinkronisasi otomatis mati, jadi tekan “Sinkronkan sekarang” untuk mengirimnya.</value></data>
+  <data name="CloudStateNever" xml:space="preserve"><value>Belum ada yang disinkronkan</value></data>
+  <data name="CloudStateNeverHint" xml:space="preserve"><value>Tekan “Sinkronkan sekarang” untuk menaruh salinan pertama di cloud.</value></data>
+  <data name="CloudStateSyncing" xml:space="preserve"><value>Menyinkronkan…</value></data>
+  <data name="CloudStateSyncingHint" xml:space="preserve"><value>Membandingkan komputer ini dengan salinan di cloud.</value></data>
+  <data name="CloudStateFailed" xml:space="preserve"><value>Sinkronisasi terakhir gagal</value></data>
+  <data name="CloudStateRetryAuto" xml:space="preserve"><value>Percobaan berikutnya sekitar pukul {0}.</value></data>
+  <data name="CloudStateSetup" xml:space="preserve"><value>Penyiapan belum selesai</value></data>
+  <data name="CloudStateRestart" xml:space="preserve"><value>Salinan dari cloud sudah siap</value></data>
+  <data name="CloudRestartNow" xml:space="preserve"><value>Mulai ulang DAYDRIVE</value></data>
+  <data name="CloudRestartFailed" xml:space="preserve"><value>DAYDRIVE tidak bisa memulai ulang sendiri. Keluar dari ikon baki, lalu buka lagi.</value></data>
+  <data name="CloudFactLastSync" xml:space="preserve"><value>Sinkronisasi terakhir</value></data>
+  <data name="CloudFactCloudCopy" xml:space="preserve"><value>Di cloud</value></data>
+  <data name="CloudFactThisComputer" xml:space="preserve"><value>Komputer ini</value></data>
+  <data name="CloudFactAutomatic" xml:space="preserve"><value>Otomatis</value></data>
+  <data name="CloudFactNever" xml:space="preserve"><value>belum pernah</value></data>
+  <data name="CloudFactRemoteUnknown" xml:space="preserve"><value>belum diperiksa</value></data>
+  <data name="CloudFactLocalClean" xml:space="preserve"><value>tidak ada perubahan baru</value></data>
+  <data name="CloudFactLocalChanged" xml:space="preserve"><value>ada perubahan baru</value></data>
+  <data name="CloudFactLocalChangedSince" xml:space="preserve"><value>ada perubahan baru, terakhir {0}</value></data>
+  <data name="CloudFactScheduleAuto" xml:space="preserve"><value>saat dibuka, tiap 15 menit, dan saat keluar · berikutnya sekitar pukul {0}</value></data>
+  <data name="CloudFactScheduleManual" xml:space="preserve"><value>mati, hanya saat Anda menekan “Sinkronkan sekarang”</value></data>
+  <data name="CloudJournalTitle" xml:space="preserve"><value>Riwayat</value></data>
+  <data name="CloudLogUploaded" xml:space="preserve"><value>Dikirim ke cloud · {0}</value></data>
+  <data name="CloudLogDownloaded" xml:space="preserve"><value>Salinan cloud diunduh</value></data>
+  <data name="CloudLogDownloadedFrom" xml:space="preserve"><value>Salinan dari “{0}” diunduh</value></data>
+  <data name="CloudLogApplied" xml:space="preserve"><value>Salinan unduhan diterapkan</value></data>
+  <data name="CloudLogUpToDate" xml:space="preserve"><value>Diperiksa, tidak ada yang perlu disinkronkan</value></data>
+  <data name="CloudLogConflict" xml:space="preserve"><value>Kedua salinan berubah, menunggu pilihan Anda</value></data>
+  <data name="CloudLogConnected" xml:space="preserve"><value>Akun Google terhubung</value></data>
+  <data name="CloudLogConnectedAs" xml:space="preserve"><value>Terhubung sebagai {0}</value></data>
+  <data name="CloudLogDisconnected" xml:space="preserve"><value>Akun Google diputus</value></data>
+  <data name="CloudLogFailed" xml:space="preserve"><value>Tidak tersinkron: {0}</value></data>
+  <data name="CloudTriggerManual" xml:space="preserve"><value>manual</value></data>
+  <data name="CloudTriggerAutomatic" xml:space="preserve"><value>otomatis</value></data>
+  <data name="CloudTriggerStartup" xml:space="preserve"><value>saat dibuka</value></data>
+  <data name="CloudTriggerExit" xml:space="preserve"><value>saat keluar</value></data>
+  <data name="CloudJustNow" xml:space="preserve"><value>baru saja</value></data>
+  <data name="CloudTodayAt" xml:space="preserve"><value>hari ini pukul {0}</value></data>
+  <data name="CloudYesterdayAt" xml:space="preserve"><value>kemarin pukul {0}</value></data>
+  <data name="CloudDateAt" xml:space="preserve"><value>{0} pukul {1}</value></data>
+  <data name="CloudIssueOff" xml:space="preserve"><value>Pilih tempat sinkronisasi.</value></data>
+  <data name="CloudIssueFolderNotChosen" xml:space="preserve"><value>Pilih folder yang disinkronkan oleh aplikasi cloud Anda.</value></data>
+  <data name="CloudIssueFolderMissing" xml:space="preserve"><value>Folder sinkronisasi tidak ditemukan. Drive-nya mungkin terputus, atau foldernya dipindahkan.</value></data>
+  <data name="CloudIssueFolderNotWritable" xml:space="preserve"><value>DAYDRIVE tidak bisa menulis ke folder sinkronisasi. Periksa izinnya.</value></data>
+  <data name="CloudIssueGoogleClientIdMissing" xml:space="preserve"><value>Tempel ID klien dari Google Cloud Console.</value></data>
+  <data name="CloudIssueGoogleClientSecretMissing" xml:space="preserve"><value>Tempel juga rahasia klien. Google mewajibkannya untuk klien jenis “Aplikasi desktop”.</value></data>
+  <data name="CloudIssueGoogleNotConnected" xml:space="preserve"><value>Tekan “Hubungkan akun Google” untuk menyelesaikan penyiapan.</value></data>
+  <data name="CloudIssueGoogleReconnect" xml:space="preserve"><value>Google tidak lagi menerima proses masuk yang tersimpan: aksesnya dicabut atau kedaluwarsa. Hubungkan akun lagi.</value></data>
+  <data name="CloudIssueGoogleClientRejected" xml:space="preserve"><value>Google menolak ID klien atau rahasianya. Pastikan jenis klien adalah “Aplikasi desktop” dan rahasianya milik klien itu.</value></data>
+  <data name="CloudIssueGoogleDriveApiDisabled" xml:space="preserve"><value>Google Drive API belum diaktifkan di proyek Google Cloud Anda. Aktifkan, tunggu sebentar, lalu coba lagi.</value></data>
+  <data name="CloudIssueGoogleScopeMissing" xml:space="preserve"><value>Akses ke Google Drive tidak diizinkan saat masuk. Hubungkan lagi dan centang kotak Google Drive.</value></data>
+  <data name="CloudIssueSignInCancelled" xml:space="preserve"><value>Proses masuk dibatalkan.</value></data>
+  <data name="CloudIssueSignInTimedOut" xml:space="preserve"><value>Proses masuk tidak selesai dalam 5 menit. Coba lagi.</value></data>
+  <data name="CloudIssueOffline" xml:space="preserve"><value>Cloud tidak dapat dijangkau. Periksa koneksi internet.</value></data>
+  <data name="CloudIssueInterrupted" xml:space="preserve"><value>Sinkronisasi terputus sebelum selesai.</value></data>
+  <data name="CloudIssueBusy" xml:space="preserve"><value>Sinkronisasi sedang berjalan.</value></data>
+  <data name="CloudIssueNothingInCloud" xml:space="preserve"><value>Belum ada apa pun di cloud.</value></data>
+  <data name="CloudIssueNotADatabase" xml:space="preserve"><value>File di cloud bukan data DAYDRIVE. Tidak ada yang diubah.</value></data>
+  <data name="CloudIssueUnexpected" xml:space="preserve"><value>Galat tak terduga: {0}</value></data>
+  <data name="CloudGoogleConnectedNoEmail" xml:space="preserve"><value>Akun Google terhubung</value></data>
+  <data name="CloudGoogleSecretSaved" xml:space="preserve"><value>Rahasia klien tersimpan</value></data>
+  <data name="CloudTrayLabel" xml:space="preserve"><value>Sinkronisasi cloud</value></data>
+  <data name="CloudTrayOk" xml:space="preserve"><value>tersinkron {0}</value></data>
+  <data name="CloudTrayPending" xml:space="preserve"><value>ada perubahan tertunda</value></data>
+  <data name="CloudTraySyncing" xml:space="preserve"><value>menyinkronkan…</value></data>
+  <data name="CloudTrayError" xml:space="preserve"><value>gagal sinkron</value></data>
+  <data name="CloudTrayAttention" xml:space="preserve"><value>perlu tindakan Anda</value></data>
+  <data name="CloudStatusBarFailed" xml:space="preserve"><value>Sinkronisasi cloud gagal: {0}</value></data>
+  <data name="LocalQuantNote" xml:space="preserve"><value>Semua model tersedia dalam Q5_K_M: kualitas hampir penuh dengan ukuran yang sanggup dijalankan komputer biasa.</value></data>
+  <data name="LocalModelLegacyFiles" xml:space="preserve"><value>Unduhan dalam varian yang tidak lagi ditawarkan ({0}) memakan {1}.</value></data>
+  <data name="LocalModelLegacyDelete" xml:space="preserve"><value>Hapus</value></data>
+  <data name="LocalModelLegacyDeleted" xml:space="preserve"><value>File model lama dihapus, {0} dikosongkan.</value></data>
+  <data name="LocalHardwareTitle" xml:space="preserve"><value>Komputer ini</value></data>
+  <data name="LocalHardwareHint" xml:space="preserve"><value>Apa yang ditemukan DAYDRIVE, dan bagaimana model akan dijalankan karenanya.</value></data>
+  <data name="LocalHardwareRescan" xml:space="preserve"><value>Periksa lagi</value></data>
+  <data name="LocalHardwareCpu" xml:space="preserve"><value>Prosesor</value></data>
+  <data name="LocalHardwareMemory" xml:space="preserve"><value>Memori</value></data>
+  <data name="LocalHardwareGpu" xml:space="preserve"><value>Kartu grafis</value></data>
+  <data name="LocalHardwareCpuValue" xml:space="preserve"><value>{0} inti · {1} utas</value></data>
+  <data name="LocalHardwareCpuHybrid" xml:space="preserve"><value>{0} inti performa + {1} inti efisiensi · {2} utas</value></data>
+  <data name="LocalHardwareCpuThreads" xml:space="preserve"><value>{0} utas</value></data>
+  <data name="LocalHardwareMemoryValue" xml:space="preserve"><value>{0} · {1} kosong saat ini</value></data>
+  <data name="LocalHardwareGpuValue" xml:space="preserve"><value>{0} · {1}</value></data>
+  <data name="LocalHardwareGpuFree" xml:space="preserve"><value>{0} · {1}, {2} kosong</value></data>
+  <data name="LocalHardwareGpuIntegrated" xml:space="preserve"><value>hanya grafis bawaan ({0}); tidak dipakai untuk model</value></data>
+  <data name="LocalHardwareGpuNone" xml:space="preserve"><value>tidak ada kartu grafis terpisah</value></data>
+  <data name="LocalHardwareUnknown" xml:space="preserve"><value>tidak dapat dibaca</value></data>
+  <data name="LocalHardwareDetecting" xml:space="preserve"><value>Memeriksa komputer ini…</value></data>
+  <data name="LocalTuneFullGpu" xml:space="preserve"><value>Seluruh model muat di kartu grafis</value></data>
+  <data name="LocalTuneSplit" xml:space="preserve"><value>Sekitar {0}% model ada di kartu grafis, sisanya di prosesor</value></data>
+  <data name="LocalTuneCpu" xml:space="preserve"><value>Kartu grafisnya terlalu kecil untuk membantu, jadi model berjalan di prosesor</value></data>
+  <data name="LocalTuneCpuNoCard" xml:space="preserve"><value>Model berjalan di prosesor</value></data>
+  <data name="LocalTuneSummary" xml:space="preserve"><value>Konteks {0} token · {1} utas · jawaban hingga {2} token · mengingat {3} pesan terakhir</value></data>
+  <data name="LocalTuneWarnMemory" xml:space="preserve"><value>Model butuh sekitar {0}, tetapi hanya sekitar {1} yang kosong. Model akan berjalan lambat dan bisa memperlambat program lain; menutup beberapa program atau memilih model yang lebih kecil akan membantu.</value></data>
+  <data name="LocalTuneManual" xml:space="preserve"><value>Pemilihan otomatis mati: ini hanya rekomendasi, dan nilai di bawah dipakai sebagaimana diatur.</value></data>
+  <data name="LocalAutoTune" xml:space="preserve"><value>Pilih pengaturan ini untuk komputer ini secara otomatis</value></data>
+  <data name="LocalAutoTuneHint" xml:space="preserve"><value>Dihitung ulang setiap kali model atau komputer berubah. Matikan untuk mengatur angkanya sendiri.</value></data>
+  <data name="ParamsForLocal" xml:space="preserve"><value>Nilai ini hanya dipakai model lokal; API punya nilainya sendiri.</value></data>
+  <data name="ParamsForApi" xml:space="preserve"><value>Nilai ini hanya dikirim bersama permintaan ke API; model lokal punya nilainya sendiri.</value></data>
+  <data name="ParamsAutoBudget" xml:space="preserve"><value>Panjang jawaban, riwayat, dan waktu tunggu dipilih untuk komputer ini. Matikan pemilihan otomatis di atas untuk mengubahnya.</value></data>
+  <data name="StepsCountOne" xml:space="preserve"><value>{0} langkah</value></data>
+  <data name="StepsCountFew" xml:space="preserve"><value>{0} langkah</value></data>
+  <data name="StepsCountMany" xml:space="preserve"><value>{0} langkah</value></data>
+  <data name="ProjectProgress" xml:space="preserve"><value>{0} dari {1} selesai · {2} dari {3}</value></data>
+  <data name="ProjectNoStepsYet" xml:space="preserve"><value>Belum ada langkah. Tulis yang pertama di bawah, lalu beri durasi dan hari.</value></data>
+  <data name="ProjectNextChip" xml:space="preserve"><value>berikutnya: {0}</value></data>
+  <data name="StepAfterDeadline" xml:space="preserve"><value>setelah tenggat</value></data>
+  <data name="NewStepPlaceholder" xml:space="preserve"><value>Langkah baru…</value></data>
+  <data name="StepNoDay" xml:space="preserve"><value>Tanpa hari</value></data>
+  <data name="StepSchedule" xml:space="preserve"><value>atur jam</value></data>
+  <data name="StepScheduleTooltip" xml:space="preserve"><value>Masukkan langkah ini ke kalender pada jam tertentu</value></data>
+  <data name="StepScheduleHeading" xml:space="preserve"><value>Waktu untuk langkah proyek</value></data>
+  <data name="StepMoveDay" xml:space="preserve"><value>Pindahkan ke hari lain</value></data>
+  <data name="StepDurationTooltip" xml:space="preserve"><value>Berapa lama langkah ini</value></data>
+  <data name="StepOpenEvent" xml:space="preserve"><value>Tampilkan di hari itu</value></data>
+  <data name="StepDelete" xml:space="preserve"><value>Hapus langkah</value></data>
+  <data name="StepRenameHint" xml:space="preserve"><value>Klik untuk mengganti nama</value></data>
+  <data name="StepToggleDone" xml:space="preserve"><value>Tandai selesai atau batalkan</value></data>
+  <data name="DayStepsTitle" xml:space="preserve"><value>Direncanakan untuk hari itu</value></data>
+  <data name="StepOverdueFrom" xml:space="preserve"><value>rencana {0}</value></data>
+  <data name="StepAddTooltip" xml:space="preserve"><value>Tambah langkah (Enter)</value></data>
+  <data name="ProjectShowFinished" xml:space="preserve"><value>Tampilkan hari yang selesai ({0})</value></data>
+  <data name="ProjectHideFinished" xml:space="preserve"><value>Sembunyikan hari yang selesai</value></data>
+  <data name="DayStepsTitleToday" xml:space="preserve"><value>Direncanakan untuk hari ini</value></data>
+  <data name="StepsTitle" xml:space="preserve"><value>Langkah</value></data>
+  <data name="StepsFold" xml:space="preserve"><value>Sembunyikan langkah</value></data>
+  <data name="StepsChipTooltip" xml:space="preserve"><value>Langkah selesai — tekan untuk menampilkan atau menyembunyikan</value></data>
+  <data name="BreakIntoSteps" xml:space="preserve"><value>Pecah menjadi langkah</value></data>
+  <data name="OpenProject" xml:space="preserve"><value>Buka proyek</value></data>
+  <data name="SittingPlanned" xml:space="preserve"><value>langkah: {0} dari {1}</value></data>
+  <data name="SittingOverflow" xml:space="preserve"><value>langkah: {0} — {1} lebih lama dari acara</value></data>
+  <data name="SittingSeriesHint" xml:space="preserve"><value>Satu daftar untuk setiap pengulangan acara ini; tiap hari dicentang sendiri.</value></data>
+  <data name="SittingLeft" xml:space="preserve"><value>sisa {0}</value></data>
+  <data name="SittingNoStepsYet" xml:space="preserve"><value>Tulis untuk apa waktu ini akan dipakai. Centang langkah sambil jalan — hasil acara tercatat sendiri.</value></data>
+  <data name="SessionSittingHint" xml:space="preserve"><value>Centang di langkah di bawah apa yang sudah selesai — persentasenya mengikuti. Yang tidak dicentang adalah sisanya.</value></data>
+  <data name="CarryHeading" xml:space="preserve"><value>Lanjutkan sisanya</value></data>
+  <data name="CarryToTime" xml:space="preserve"><value>Lanjutkan…</value></data>
+  <data name="CarryToTimeTooltip" xml:space="preserve"><value>Beri sisanya waktu lain</value></data>
+  <data name="CarryToUnscheduled" xml:space="preserve"><value>Ke tidak terjadwal</value></data>
+  <data name="CarryToUnscheduledTooltip" xml:space="preserve"><value>Jadikan sisanya tugas untuk direncanakan per hari</value></data>
+  <data name="StepsCarried" xml:space="preserve"><value>Sisanya dipindahkan ke waktu baru</value></data>
+  <data name="StepsCarriedToUnscheduled" xml:space="preserve"><value>Sisanya kini menjadi tugas di «Tidak terjadwal»</value></data>
+  <data name="StepsRemoved" xml:space="preserve"><value>Tidak ada langkah lagi</value></data>
+  <data name="SittingAnsweredDone" xml:space="preserve"><value>Semua langkah selesai — acara ditandai selesai</value></data>
+  <data name="SittingReopened" xml:space="preserve"><value>Satu langkah dibuka lagi — acara selesai sebagian</value></data>
+  <data name="ProjectFinished" xml:space="preserve"><value>Semua langkah ditandai selesai</value></data>
+  <data name="ConfirmDeleteProjectTask" xml:space="preserve"><value>Hapus tugas beserta semua langkahnya? Acara yang dijadwalkan untuknya tetap di kalender.</value></data>
+  <data name="ConfirmDeleteEventSteps" xml:space="preserve"><value>Hapus acara ini beserta langkahnya?</value></data>
+  <data name="ProjectCategoryTooltip" xml:space="preserve"><value>Warna proyek, yang juga dipakai jam yang dipesan untuk langkahnya</value></data>
+  <data name="WindowedShellHint" xml:space="preserve"><value>Desktop mengatur posisi jendela. DAYDRIVE menampilkan panel dalam satu jendela yang dapat diubah ukurannya; opsi tepi layar dan widget tidak tersedia di sini.</value></data>
+  <data name="LocalHardwareGpuDetected" xml:space="preserve"><value>{0} · memori video tidak tersedia</value></data>
+  <data name="ThemeColorAccent" xml:space="preserve"><value>Aksen</value></data>
+  <data name="ThemeColorBackground" xml:space="preserve"><value>Latar jendela</value></data>
+  <data name="ThemeColorSurface" xml:space="preserve"><value>Panel</value></data>
+  <data name="ThemeColorSurfaceAlt" xml:space="preserve"><value>Kolom dan kartu</value></data>
+  <data name="ThemeColorText" xml:space="preserve"><value>Teks</value></data>
+  <data name="ThemeColorMuted" xml:space="preserve"><value>Teks sekunder</value></data>
+  <data name="ThemeColorStroke" xml:space="preserve"><value>Garis tepi</value></data>
+  <data name="ThemeColorSecondary" xml:space="preserve"><value>Aksen kedua</value></data>
+  <data name="ThemeColorTertiary" xml:space="preserve"><value>Aksen ketiga</value></data>
+  <data name="ThemeColorSelection" xml:space="preserve"><value>Pilihan</value></data>
+  <data name="ThemeColorSuccess" xml:space="preserve"><value>Berhasil</value></data>
+  <data name="ThemeColorWarning" xml:space="preserve"><value>Peringatan</value></data>
+  <data name="ThemeColorDanger" xml:space="preserve"><value>Kesalahan</value></data>
+  <data name="ThemeColorShadow" xml:space="preserve"><value>Bayangan</value></data>
+  <data name="ThemeWindowRadius" xml:space="preserve"><value>Jendela</value></data>
+  <data name="ThemeCardRadius" xml:space="preserve"><value>Kartu</value></data>
+  <data name="ThemeItemRadius" xml:space="preserve"><value>Item daftar</value></data>
+  <data name="ThemeControlRadius" xml:space="preserve"><value>Tombol dan kolom</value></data>
+  <data name="ThemeTextScale" xml:space="preserve"><value>Skala teks</value></data>
+  <data name="ThemeShadowStrength" xml:space="preserve"><value>Kekuatan bayangan</value></data>
+  <data name="ThemeDetails" xml:space="preserve"><value>Warna lainnya</value></data>
+  <data name="ThemeGeometry" xml:space="preserve"><value>Bentuk dan tipografi</value></data>
+  <data name="ThemeColorReset" xml:space="preserve"><value>Warna otomatis</value></data>
+  <data name="ThemeColorInvalid" xml:space="preserve"><value>Masukkan #RRGGBB atau #AARRGGBB.</value></data>
+  <data name="ImportTheme" xml:space="preserve"><value>Impor tema</value></data>
+  <data name="ExportTheme" xml:space="preserve"><value>Ekspor tema</value></data>
+  <data name="ResetAppearance" xml:space="preserve"><value>Reset seluruh tampilan</value></data>
+  <data name="ThemeFileInvalid" xml:space="preserve"><value>Tema tidak dapat dibaca atau disimpan. Periksa format berkas dan akses folder.</value></data>
+  <data name="ThemeImported" xml:space="preserve"><value>Tema diimpor.</value></data>
+  <data name="ThemeExported" xml:space="preserve"><value>Tema diekspor.</value></data>
+</root>

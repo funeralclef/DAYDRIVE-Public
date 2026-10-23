@@ -1,0 +1,74 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:icons="using:IntelligentScheduler.Desktop.Controls"
+        xmlns:vm="using:IntelligentScheduler.Desktop.ViewModels"
+        x:Class="IntelligentScheduler.Desktop.TrayMenuWindow"
+        Title="{DynamicResource L.AppName}" SizeToContent="WidthAndHeight"
+        CanResize="False" ShowInTaskbar="False" Topmost="True"
+        WindowDecorations="None" Background="Transparent"
+        WindowStartupLocation="Manual"
+        TransparencyLevelHint="Transparent">
+
+  <!-- The card is inset inside its window so its shadow has room to fall; clipped at the window
+       edge it reads as a hard-cornered plate under the menu. -->
+  <Border Padding="10">
+    <Border Classes="trayMenuCard">
+      <ItemsControl x:Name="MenuItems">
+        <ItemsControl.ItemsPanel>
+          <ItemsPanelTemplate><StackPanel /></ItemsPanelTemplate>
+        </ItemsControl.ItemsPanel>
+        <ItemsControl.ItemTemplate>
+          <DataTemplate DataType="vm:TrayMenuItemViewModel">
+            <StackPanel>
+              <Border Classes="trayMenuSeparator" IsVisible="{Binding IsSeparator}" />
+              <TextBlock Text="{Binding Label}" Classes="trayMenuCaption" IsVisible="{Binding IsCaption}" />
+
+              <!-- An ordinary line and a line that opens are the same row: the tick sits in the
+                   same column for both, and only the tail differs. -->
+              <Button Classes="trayMenuItem" Classes.open="{Binding IsExpanded}"
+                      IsVisible="{Binding IsClickable}"
+                      Command="{Binding InvokeCommand}"
+                      HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch">
+                <Grid ColumnDefinitions="13,*,Auto,Auto" ColumnSpacing="6">
+                  <icons:AnimatedIcon Data="{StaticResource IconCheck}" Motion="Check" Width="10" Height="10"
+                                      VerticalAlignment="Center" IsVisible="{Binding IsChecked}" />
+                  <TextBlock Grid.Column="1" Text="{Binding Label}" FontSize="{DynamicResource MarelianFont11_5}" VerticalAlignment="Center" />
+                  <TextBlock Grid.Column="2" Text="{Binding Detail}" Classes="trayMenuDetail"
+                             IsVisible="{Binding HasDetail}" VerticalAlignment="Center" />
+                  <icons:AnimatedIcon Grid.Column="3" Data="{StaticResource IconChevronDown}" Width="9" Height="9"
+                                      Classes="trayMenuChevron" IsVisible="{Binding HasSubmenu}"
+                                      VerticalAlignment="Center">
+                    <icons:AnimatedIcon.RenderTransform>
+                      <RotateTransform Angle="{Binding ChevronAngle}" />
+                    </icons:AnimatedIcon.RenderTransform>
+                  </icons:AnimatedIcon>
+                </Grid>
+              </Button>
+
+              <!-- The lines this one opens onto, indented under it rather than in a window of
+                   their own: a second window would need placing and raising all over again. -->
+              <ItemsControl ItemsSource="{Binding Children}" IsVisible="{Binding IsExpanded}"
+                            Classes="trayMenuSubmenu">
+                <ItemsControl.ItemsPanel>
+                  <ItemsPanelTemplate><StackPanel /></ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+                <ItemsControl.ItemTemplate>
+                  <DataTemplate DataType="vm:TrayMenuItemViewModel">
+                    <Button Classes="trayMenuItem trayMenuChild" Command="{Binding InvokeCommand}"
+                            HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch">
+                      <Grid ColumnDefinitions="13,*" ColumnSpacing="6">
+                        <icons:AnimatedIcon Data="{StaticResource IconCheck}" Motion="Check" Width="10" Height="10"
+                                            VerticalAlignment="Center" IsVisible="{Binding IsChecked}" />
+                        <TextBlock Grid.Column="1" Text="{Binding Label}" FontSize="{DynamicResource MarelianFont11_5}" VerticalAlignment="Center" />
+                      </Grid>
+                    </Button>
+                  </DataTemplate>
+                </ItemsControl.ItemTemplate>
+              </ItemsControl>
+            </StackPanel>
+          </DataTemplate>
+        </ItemsControl.ItemTemplate>
+      </ItemsControl>
+    </Border>
+  </Border>
+</Window>

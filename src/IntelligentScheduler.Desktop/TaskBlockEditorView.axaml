@@ -1,0 +1,79 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:icons="using:IntelligentScheduler.Desktop.Controls"
+             x:Class="IntelligentScheduler.Desktop.TaskBlockEditorView">
+  <Border Classes="surface taskBlockEditor" Padding="13,12" Width="396">
+    <StackPanel Spacing="9">
+      <Grid ColumnDefinitions="Auto,*,Auto" ColumnSpacing="9">
+        <Border Width="30" Height="30" CornerRadius="{DynamicResource ShellControlRadius}" Background="{DynamicResource ShellAccentSoft}">
+          <icons:AnimatedIcon Data="{StaticResource IconClock}" Width="16" Foreground="{DynamicResource ShellAccent}" />
+        </Border>
+        <StackPanel Grid.Column="1" Spacing="1" VerticalAlignment="Center">
+          <TextBlock Text="{DynamicResource L.ManageTaskBlock}" Classes="muted" />
+          <TextBlock Text="{Binding TaskBlockTitle}" FontSize="{DynamicResource MarelianFont15}" FontWeight="SemiBold" TextTrimming="CharacterEllipsis" />
+        </StackPanel>
+        <Button Grid.Column="2" Classes="icon quiet mini closeGlyph" Command="{Binding CloseTaskBlockEditorCommand}">
+          <icons:AnimatedIcon Data="{StaticResource IconClose}" Width="14" />
+        </Button>
+      </Grid>
+
+      <TextBlock Text="{DynamicResource L.PlannedInterval}" Classes="label" />
+      <Grid ColumnDefinitions="132,108,108" ColumnSpacing="6" HorizontalAlignment="Center" IsEnabled="{Binding CanEditTaskBlock}">
+        <Button Classes="fieldButton eventDateField" Command="{Binding OpenTaskBlockDateCalendarCommand}">
+          <Grid ColumnDefinitions="Auto,*" ColumnSpacing="6">
+            <icons:AnimatedIcon Data="{StaticResource IconCalendar}" Width="14" />
+            <TextBlock Grid.Column="1" Text="{Binding TaskBlockDateLabel}" TextTrimming="CharacterEllipsis" />
+          </Grid>
+        </Button>
+        <Button Grid.Column="1" Classes="fieldButton timeField" Command="{Binding OpenTaskBlockStartTimePickerCommand}" Content="{Binding TaskBlockStartTimeLabel}" />
+        <Button Grid.Column="2" Classes="fieldButton timeField" Command="{Binding OpenTaskBlockEndTimePickerCommand}" Content="{Binding TaskBlockEndTimeLabel}" />
+      </Grid>
+
+      <CheckBox IsChecked="{Binding TaskBlockIsLocked}" IsEnabled="{Binding CanEditTaskBlock}" Content="{DynamicResource L.LockTime}" />
+
+      <Grid ColumnDefinitions="*,118" ColumnSpacing="8" IsVisible="{Binding CanCompleteTaskBlock}">
+        <StackPanel Spacing="3">
+          <TextBlock Text="{DynamicResource L.CompletedMinutes}" Classes="label" />
+          <TextBox Text="{Binding TaskBlockCompletedMinutesText}" HorizontalContentAlignment="Center" />
+        </StackPanel>
+        <Button Grid.Column="1" Classes="secondary taskBlockAction" Command="{Binding RequestTaskBlockCompleteCommand}" VerticalAlignment="Bottom">
+          <StackPanel Orientation="Horizontal" Spacing="6" HorizontalAlignment="Center">
+            <icons:AnimatedIcon Data="{StaticResource IconCheck}" Width="14" />
+            <TextBlock Text="{DynamicResource L.CompleteWork}" />
+          </StackPanel>
+        </Button>
+      </Grid>
+
+      <Border Background="{DynamicResource ShellAccentSoft}" CornerRadius="{DynamicResource ShellControlRadius}" Padding="9,6" IsVisible="{Binding HasTaskBlockValidationError}">
+        <TextBlock Text="{Binding TaskBlockValidationMessage}" Foreground="{DynamicResource ShellDanger}" FontSize="{DynamicResource MarelianFont11}" TextWrapping="Wrap" TextAlignment="Center" />
+      </Border>
+
+      <Grid ColumnDefinitions="*,*,*" ColumnSpacing="6">
+        <Button Classes="quiet compact taskBlockAction" Command="{Binding OpenTaskFromBlockCommand}">
+          <TextBlock Text="{DynamicResource L.OpenTask}" TextWrapping="Wrap" TextAlignment="Center" />
+        </Button>
+        <Button Grid.Column="1" Classes="quiet compact taskBlockAction" Command="{Binding RequestTaskBlockNotTodayCommand}" IsEnabled="{Binding CanEditTaskBlock}">
+          <TextBlock Text="{DynamicResource L.NotToday}" TextWrapping="Wrap" TextAlignment="Center" />
+        </Button>
+        <Button Grid.Column="2" Classes="quiet danger compact taskBlockAction" Command="{Binding RequestTaskBlockUnscheduleCommand}" IsEnabled="{Binding CanEditTaskBlock}">
+          <TextBlock Text="{DynamicResource L.Unschedule}" TextWrapping="Wrap" TextAlignment="Center" />
+        </Button>
+      </Grid>
+
+      <Grid ColumnDefinitions="92,92" ColumnSpacing="8" HorizontalAlignment="Center" IsVisible="{Binding CanEditTaskBlock}">
+        <Button Width="92" Classes="secondary compactAction" Command="{Binding CloseTaskBlockEditorCommand}" Content="{DynamicResource L.Cancel}" />
+        <Button Grid.Column="1" Width="92" Classes="primary compactAction" Command="{Binding RequestTaskBlockSaveCommand}" Content="{DynamicResource L.Save}" />
+      </Grid>
+
+      <Border Classes="confirmation" IsVisible="{Binding IsTaskBlockConfirmationVisible}">
+        <StackPanel Spacing="8">
+          <TextBlock Text="{Binding TaskBlockConfirmationText}" TextWrapping="Wrap" TextAlignment="Center" />
+          <Grid ColumnDefinitions="84,84" ColumnSpacing="8" HorizontalAlignment="Center">
+            <Button Width="84" Classes="secondary compactAction" Command="{Binding CancelTaskBlockConfirmationCommand}" Content="{DynamicResource L.Cancel}" />
+            <Button Grid.Column="1" Width="84" Classes="primary compactAction" Command="{Binding ConfirmTaskBlockActionCommand}" Content="{DynamicResource L.Confirm}" />
+          </Grid>
+        </StackPanel>
+      </Border>
+    </StackPanel>
+  </Border>
+</UserControl>

@@ -1,0 +1,2093 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="AppName">
+    <value>DAYDRIVE</value>
+  </data>
+  <data name="StatusReady">
+    <value>Готово</value>
+  </data>
+  <data name="NavPlan">
+    <value>План</value>
+  </data>
+  <data name="NavTasks">
+    <value>Завдання</value>
+  </data>
+  <data name="NavAssistant">
+    <value>Асистент</value>
+  </data>
+  <data name="Settings">
+    <value>Налаштування</value>
+  </data>
+  <data name="Hide">
+    <value>Сховати панель</value>
+  </data>
+  <data name="PlanTitle">
+    <value>Ваш день</value>
+  </data>
+  <data name="PlanSubtitle">
+    <value>Фіксовані події залишаються на місці, а завдання підлаштовуються під них</value>
+  </data>
+  <data name="Next">
+    <value>Далі</value>
+  </data>
+  <data name="Adjust">
+    <value>Підлаштувати</value>
+  </data>
+  <data name="Schedule">
+    <value>Розклад</value>
+  </data>
+  <data name="Calendar">
+    <value>Календар</value>
+  </data>
+  <data name="AddEvent">
+    <value>Додати подію</value>
+  </data>
+  <data name="EventTitle">
+    <value>Що відбудеться?</value>
+  </data>
+  <data name="SaveChanges">
+    <value>Зберегти зміни</value>
+  </data>
+  <data name="TasksTitle">
+    <value>Завдання</value>
+  </data>
+  <data name="TasksSubtitle">
+    <value>Зосереджений список, який сам знаходить місце у вашому дні</value>
+  </data>
+  <data name="EditTask">
+    <value>Редагувати завдання</value>
+  </data>
+  <data name="Save">
+    <value>Зберегти</value>
+  </data>
+  <data name="Cancel">
+    <value>Скасувати</value>
+  </data>
+  <data name="Edit">
+    <value>Редагувати</value>
+  </data>
+  <data name="Delete">
+    <value>Видалити</value>
+  </data>
+  <data name="QuickTaskPlaceholder">
+    <value>Додайте завдання звичайною мовою…</value>
+  </data>
+  <data name="AssistantTitle">
+    <value>Асистент</value>
+  </data>
+  <data name="AssistantIntro">
+    <value>Я допоможу перетворити наміри на реалістичний день. Пишіть звичайною мовою.</value>
+  </data>
+  <data name="AssistantPrivacy">
+    <value>локально або через обраний ШІ</value>
+  </data>
+  <data name="AssistantPlaceholder">
+    <value>Наприклад: як розвантажити завтра?</value>
+  </data>
+  <data name="Ask">
+    <value>Запитати</value>
+  </data>
+  <data name="SettingsTitle">
+    <value>Налаштування</value>
+  </data>
+  <data name="SettingsSubtitle">
+    <value>Зміни зберігаються автоматично</value>
+  </data>
+  <data name="General">
+    <value>Загальні</value>
+  </data>
+  <data name="Language">
+    <value>Мова</value>
+  </data>
+  <data name="StartHidden">
+    <value>Запускати у прихованому режимі</value>
+  </data>
+  <data name="KeepOnTop">
+    <value>Поверх інших вікон</value>
+  </data>
+  <data name="Appearance">
+    <value>Вигляд</value>
+  </data>
+  <data name="Design">
+    <value>Дизайн</value>
+  </data>
+  <data name="ColorSource">
+    <value>Джерело акценту</value>
+  </data>
+  <data name="Accent">
+    <value>Акцент</value>
+  </data>
+  <data name="Background">
+    <value>Тло</value>
+  </data>
+  <data name="ThemeMode">
+    <value>Режим</value>
+  </data>
+  <data name="ThemeModeDark">
+    <value>Темний</value>
+  </data>
+  <data name="ThemeModeLight">
+    <value>Світлий</value>
+  </data>
+  <data name="ThemePreviewTitle">
+    <value>MARELIAN</value>
+  </data>
+  <data name="ThemePreviewHint">
+    <value>Світлий і темний режими мають окремі кольори та форму.</value>
+  </data>
+  <data name="ColorCustomization">
+    <value>Власні кольори</value>
+  </data>
+  <data name="ColorCustomizationHint">
+    <value>Залиште поле порожнім для автоматичного кольору. Натисніть зразок, щоб обрати колір.</value>
+  </data>
+  <data name="ColorPickerHint">
+    <value>Оберіть колір</value>
+  </data>
+  <data name="ResetThemeColors">
+    <value>Скинути цей режим</value>
+  </data>
+  <data name="Transparency">
+    <value>Прозорість і розмиття</value>
+  </data>
+  <data name="ReduceMotion">
+    <value>Вимкнути анімації інтерфейсу</value>
+  </data>
+  <data name="Behavior">
+    <value>Поведінка</value>
+  </data>
+  <data name="PanelReveal">
+    <value>Поява панелі</value>
+  </data>
+  <data name="PinOpen">
+    <value>Не приховувати автоматично</value>
+  </data>
+  <data name="AiConnection">
+    <value>Підключення ШІ</value>
+  </data>
+  <data name="Provider">
+    <value>Провайдер</value>
+  </data>
+  <data name="Address">
+    <value>Адреса</value>
+  </data>
+  <data name="Model">
+    <value>Модель</value>
+  </data>
+  <data name="ApiKey">
+    <value>API-ключ (зашифрований на цьому пристрої)</value>
+  </data>
+  <data name="ApiKeyPlaceholder">
+    <value>Залиште порожнім, щоб зберегти поточний ключ</value>
+  </data>
+  <data name="RemoveKey">
+    <value>Видалити збережений ключ</value>
+  </data>
+  <data name="TestConnection">
+    <value>Зберегти й перевірити підключення</value>
+  </data>
+  <data name="SettingsSaved">
+    <value>Збережено</value>
+  </data>
+  <data name="SettingsSaving">
+    <value>Збереження…</value>
+  </data>
+  <data name="SettingsError">
+    <value>Не вдалося зберегти налаштування</value>
+  </data>
+  <data name="FreeDay">
+    <value>Вільний день</value>
+  </data>
+  <data name="EmptyPlan">
+    <value>План поки порожній</value>
+  </data>
+  <data name="EmptyPlanHint">
+    <value>Додайте завдання одним рядком</value>
+  </data>
+  <data name="MinutesShort">
+    <value>хв</value>
+  </data>
+  <data name="EventKind">
+    <value>Подія</value>
+  </data>
+  <data name="TaskKind">
+    <value>Завдання</value>
+  </data>
+  <data name="DoneKind">
+    <value>Готово</value>
+  </data>
+  <data name="Focus">
+    <value>Фокус</value>
+  </data>
+  <data name="Add">
+    <value>Додати</value>
+  </data>
+  <data name="Added">
+    <value>Додано</value>
+  </data>
+  <data name="SuggestedByAssistant">
+    <value>Запропоновано асистентом</value>
+  </data>
+  <data name="Priority">
+    <value>пріоритет</value>
+  </data>
+  <data name="OptionCustom">
+    <value>Власна тема</value>
+  </data>
+  <data name="OptionPreset">
+    <value>Колір теми</value>
+  </data>
+  <data name="OptionSystemAccent">
+    <value>Акцент системи</value>
+  </data>
+  <data name="OptionWallpaper">
+    <value>Тло робочого столу</value>
+  </data>
+  <data name="OptionHover">
+    <value>При наведенні</value>
+  </data>
+  <data name="OptionClick">
+    <value>Після натискання</value>
+  </data>
+  <data name="TaskAdded">
+    <value>Завдання додано</value>
+  </data>
+  <data name="TaskRestored">
+    <value>Завдання повернено</value>
+  </data>
+  <data name="TaskUpdated">
+    <value>Завдання оновлено</value>
+  </data>
+  <data name="TaskDeleted">
+    <value>Завдання видалено</value>
+  </data>
+  <data name="BlockCompleted">
+    <value>Фокус-блок завершено</value>
+  </data>
+  <data name="EventAdded">
+    <value>Подію додано</value>
+  </data>
+  <data name="EventUpdated">
+    <value>Подію оновлено</value>
+  </data>
+  <data name="EventDeleted">
+    <value>Подію видалено</value>
+  </data>
+  <data name="Thinking">
+    <value>Думаю…</value>
+  </data>
+  <data name="SecondsShort">
+    <value>с</value>
+  </data>
+  <data name="ReplyReady">
+    <value>Відповідь готова</value>
+  </data>
+  <data name="ReviewSuggestions">
+    <value>Перевірте пропозиції перед додаванням</value>
+  </data>
+  <data name="RequestCancelled">
+    <value>Запит скасовано</value>
+  </data>
+  <data name="ReplyFailed">
+    <value>Не вдалося отримати відповідь: {0}</value>
+  </data>
+  <data name="ConnectionError">
+    <value>Помилка підключення</value>
+  </data>
+  <data name="SuggestionAdded">
+    <value>Пропозицію додано</value>
+  </data>
+  <data name="OpenApp">
+    <value>Відкрити DAYDRIVE</value>
+  </data>
+  <data name="QuickAdd">
+    <value>Швидке завдання</value>
+  </data>
+  <data name="Exit">
+    <value>Вийти</value>
+  </data>
+  <data name="CalendarToday">
+    <value>Сьогодні</value>
+  </data>
+  <data name="ComposerTask">
+    <value>Завдання</value>
+  </data>
+  <data name="ComposerAgent">
+    <value>Агент</value>
+  </data>
+  <data name="NewEvent">
+    <value>Нова подія</value>
+  </data>
+  <data name="Date">
+    <value>Дата</value>
+  </data>
+  <data name="Time">
+    <value>Час</value>
+  </data>
+  <data name="Duration">
+    <value>Тривалість</value>
+  </data>
+  <data name="NoDeadline">
+    <value>Без терміну</value>
+  </data>
+  <data name="InvalidInput">
+    <value>Перевірте дату, час і числові значення</value>
+  </data>
+  <data name="ActiveTasks">
+    <value>Завдання</value>
+  </data>
+  <data name="NoAgenda">
+    <value>На цей день нічого не заплановано</value>
+  </data>
+  <data name="DueDate">
+    <value>Термін</value>
+  </data>
+  <data name="PriorityLabel">
+    <value>Пріоритет</value>
+  </data>
+  <data name="AgentConversation">
+    <value>Діалог</value>
+  </data>
+  <data name="Send">
+    <value>Надіслати</value>
+  </data>
+  <data name="TimeFrom">
+    <value>Від</value>
+  </data>
+  <data name="TimeTo">
+    <value>До</value>
+  </data>
+  <data name="WeekNavigationHint">
+    <value>Колесо або перетягування змінюють тиждень</value>
+  </data>
+  <data name="Attachment">
+    <value>Вкладення</value>
+  </data>
+  <data name="Attach">
+    <value>Прикріпити файл</value>
+  </data>
+  <data name="ChooseDate">
+    <value>Виберіть дату</value>
+  </data>
+  <data name="EditEvent">
+    <value>Змінити подію</value>
+  </data>
+  <data name="Confirm">
+    <value>Підтвердити</value>
+  </data>
+  <data name="ConfirmChanges">
+    <value>Застосувати ці зміни?</value>
+  </data>
+  <data name="ConfirmDeleteEvent">
+    <value>Видалити цю подію?</value>
+  </data>
+  <data name="ConfirmDeleteTask">
+    <value>Видалити це завдання?</value>
+  </data>
+  <data name="DragToCreateHint">
+    <value>Протягніть по вільному часу, щоб створити подію</value>
+  </data>
+  <data name="DaySummaryFormat">
+    <value>На сьогодні: {0} · Заплановано: {1} хв</value>
+  </data>
+  <data name="Use24HourClock">
+    <value>24-годинний формат часу</value>
+  </data>
+  <data name="ChooseStartTime">
+    <value>Час початку</value>
+  </data>
+  <data name="ChooseEndTime">
+    <value>Час завершення</value>
+  </data>
+  <data name="TimePickerHint">
+    <value>Крок 5 хвилин</value>
+  </data>
+  <data name="TransparencyIntensity">
+    <value>Інтенсивність прозорості</value>
+  </data>
+  <data name="ChooseTime">
+    <value>Виберіть час</value>
+  </data>
+  <data name="Hours">
+    <value>Години</value>
+  </data>
+  <data name="Minutes">
+    <value>Хвилини</value>
+  </data>
+  <data name="EventTitleRequired">
+    <value>Введіть назву події</value>
+  </data>
+  <data name="EventDateTimeRequired">
+    <value>Виберіть дату, час початку та завершення</value>
+  </data>
+  <data name="EventTimeRangeRequired">
+    <value>Час початку та завершення не може збігатися</value>
+  </data>
+  <data name="EventSaveFailed">
+    <value>Не вдалося зберегти подію. Спробуйте ще раз.</value>
+  </data>
+  <data name="AttachDialogTitle">
+    <value>Прикріпити файл</value>
+  </data>
+  <data name="McpArgumentsPlaceholder">
+    <value>Аргументи MCP-сервера</value>
+  </data>
+  <data name="McpToolPlaceholder">
+    <value>Назва інструмента MCP</value>
+  </data>
+  <data name="ScheduledBlock">
+    <value>Запланований блок</value>
+  </data>
+  <data name="StartingSoon">
+    <value>Незабаром почнеться</value>
+  </data>
+  <data name="StartsInMinutes">
+    <value>{0} почнеться через {1} хв.</value>
+  </data>
+  <data name="StartupFailed">
+    <value>Не вдалося запустити DAYDRIVE</value>
+  </data>
+  <data name="CrashLogSaved">
+    <value>Подробиці збережено у daydrive-crash.log у папці даних застосунку.</value>
+  </data>
+  <data name="OptionProviderLocal">
+    <value>Локальна модель (GGUF)</value>
+  </data>
+  <data name="OptionProviderOpenAi">
+    <value>Користувацький API</value>
+  </data>
+  <data name="OptionTransportHttp">
+    <value>HTTP-сервер</value>
+  </data>
+  <data name="OptionTransportStdio">
+    <value>Локальна команда (stdio)</value>
+  </data>
+  <data name="ScrollToAdjust">
+    <value>Прокрутіть для зміни</value>
+  </data>
+  <data name="NewTask">
+    <value>Нове завдання</value>
+  </data>
+  <data name="AddTask">
+    <value>Додати завдання</value>
+  </data>
+  <data name="TaskTitle">
+    <value>Що потрібно зробити?</value>
+  </data>
+  <data name="EmptyPlanTaskHint">
+    <value>Створіть завдання або подію</value>
+  </data>
+  <data name="LaunchAtStartup">
+    <value>Запускати разом із системою</value>
+  </data>
+  <data name="AutostartFailed">
+    <value>Не вдалося змінити системний автозапуск</value>
+  </data>
+  <data name="PriorityLow">
+    <value>Низький</value>
+  </data>
+  <data name="PriorityNormal">
+    <value>Звичайний</value>
+  </data>
+  <data name="PriorityHigh">
+    <value>Високий</value>
+  </data>
+  <data name="PriorityUrgent">
+    <value>Терміновий</value>
+  </data>
+  <data name="PreferredAny">
+    <value>У будь-який час</value>
+  </data>
+  <data name="PreferredMorning">
+    <value>Вранці</value>
+  </data>
+  <data name="PreferredAfternoon">
+    <value>Удень</value>
+  </data>
+  <data name="PreferredEvening">
+    <value>Увечері</value>
+  </data>
+  <data name="Notes">
+    <value>Нотатки</value>
+  </data>
+  <data name="NotesPlaceholder">
+    <value>Контекст або наступний крок</value>
+  </data>
+  <data name="AdvancedPlanning">
+    <value>Параметри планування</value>
+  </data>
+  <data name="EarliestStart">
+    <value>Почати не раніше</value>
+  </data>
+  <data name="AnyDate">
+    <value>Без обмеження</value>
+  </data>
+  <data name="PreferredTime">
+    <value>Бажаний час</value>
+  </data>
+  <data name="SplitTask">
+    <value>Дозволити ділити завдання на блоки</value>
+  </data>
+  <data name="MinBlock">
+    <value>Мінімальний блок, хв.</value>
+  </data>
+  <data name="MaxSplits">
+    <value>Максимум блоків</value>
+  </data>
+  <data name="ManageTaskBlock">
+    <value>Блок завдання</value>
+  </data>
+  <data name="PlannedInterval">
+    <value>Запланований інтервал</value>
+  </data>
+  <data name="CompletedMinutes">
+    <value>Виконано, хв.</value>
+  </data>
+  <data name="CompleteWork">
+    <value>Завершити</value>
+  </data>
+  <data name="OpenTask">
+    <value>Відкрити завдання</value>
+  </data>
+  <data name="NotToday">
+    <value>Не сьогодні</value>
+  </data>
+  <data name="Unschedule">
+    <value>Прибрати з розкладу</value>
+  </data>
+  <data name="LockTime">
+    <value>Закріпити цей час</value>
+  </data>
+  <data name="ConfirmTaskBlockChange">
+    <value>Зберегти новий інтервал і параметри блока?</value>
+  </data>
+  <data name="ConfirmTaskBlockComplete">
+    <value>Записати вказаний виконаний час?</value>
+  </data>
+  <data name="ConfirmTaskBlockUnschedule">
+    <value>Прибрати цей блок із розкладу? Завдання залишиться.</value>
+  </data>
+  <data name="ConfirmTaskBlockNotToday">
+    <value>Прибрати завдання з розкладу на цей день?</value>
+  </data>
+  <data name="TaskBlockMinutesInvalid">
+    <value>Укажіть від 1 хвилини до тривалості блока</value>
+  </data>
+  <data name="TaskBlockMoved">
+    <value>Блок завдання перенесено й закріплено</value>
+  </data>
+  <data name="TaskBlockUpdated">
+    <value>Параметри блока збережено</value>
+  </data>
+  <data name="TaskBlockUnscheduled">
+    <value>Блок прибрано з розкладу</value>
+  </data>
+  <data name="TaskBlockDeferred">
+    <value>Завдання відкладено на інший день</value>
+  </data>
+  <data name="TaskBlockPartiallyCompleted">
+    <value>Частину роботи виконано, залишок повернеться до плану</value>
+  </data>
+  <data name="TaskBlockConflict">
+    <value>Цей інтервал перетинається з іншою подією або блоком</value>
+  </data>
+  <data name="LocalModelIntro">
+    <value>Виберіть одну модель. DAYDRIVE завантажить GGUF і llama.cpp та запускатиме їх лише на цьому пристрої.</value>
+  </data>
+  <data name="LocalModelRoleLite">
+    <value>Швидкий розбір команд і створення завдань</value>
+  </data>
+  <data name="LocalModelRoleBalanced">
+    <value>Щоденне планування й асистент — рекомендовано</value>
+  </data>
+  <data name="LocalModelRoleSmart">
+    <value>Аналіз тижня та складні агентні запити</value>
+  </data>
+  <data name="Recommended">
+    <value>Рекомендовано</value>
+  </data>
+  <data name="LocalEngine">
+    <value>Локальний рушій</value>
+  </data>
+  <data name="DownloadModel">
+    <value>Завантажити</value>
+  </data>
+  <data name="DownloadVisionSupport">
+    <value>Додати зір</value>
+  </data>
+  <data name="StartModel">
+    <value>Запустити</value>
+  </data>
+  <data name="StopModel">
+    <value>Зупинити</value>
+  </data>
+  <data name="VisionSupport">
+    <value>Обробка зображень</value>
+  </data>
+  <data name="VisionSupportHint" xml:space="preserve"><value>Дозволяє моделі розпізнавати прикріплені зображення. Для цього потрібен другий файл — проєктор зображень, який завантажується разом із моделлю.</value></data>
+  <data name="IdleSleep">
+    <value>Звільняти памʼять під час бездіяльності</value>
+  </data>
+  <data name="IdleFiveMinutes">
+    <value>Через 5 хвилин</value>
+  </data>
+  <data name="IdleTenMinutes">
+    <value>Через 10 хвилин</value>
+  </data>
+  <data name="IdleThirtyMinutes">
+    <value>Через 30 хвилин</value>
+  </data>
+  <data name="IdleNever">
+    <value>Не вимикати автоматично</value>
+  </data>
+  <data name="LocalModelArchitectureHint">
+    <value>ШІ отримує незаплановані завдання та фіксовані події лише як контекст для читання. Модель не має доступу до бази даних і не резервує час автоматично.</value>
+  </data>
+  <data name="DownloadingEngine">
+    <value>Завантажується llama.cpp…</value>
+  </data>
+  <data name="ExtractingEngine">
+    <value>Встановлюється llama.cpp…</value>
+  </data>
+  <data name="DownloadingModel">
+    <value>Завантажується модель GGUF…</value>
+  </data>
+  <data name="DownloadingVision">
+    <value>Завантажується проєктор зображень…</value>
+  </data>
+  <data name="StartingLocalModel">
+    <value>Модель завантажується в памʼять…</value>
+  </data>
+  <data name="LocalModelRunning">
+    <value>Працює локально</value>
+  </data>
+  <data name="LocalModelSleeping">
+    <value>Спить — запуститься за наступного запиту</value>
+  </data>
+  <data name="LocalModelStopped">
+    <value>Зупинена — запуститься автоматично за потреби</value>
+  </data>
+  <data name="LocalModelNotInstalled">
+    <value>Не завантажена</value>
+  </data>
+  <data name="LocalModelInstalled">
+    <value>Локальна модель готова</value>
+  </data>
+  <data name="LocalModelDeleted">
+    <value>Локальну модель видалено</value>
+  </data>
+  <data name="LocalModelError">
+    <value>Помилка локальної моделі</value>
+  </data>
+  <data name="DownloadCancelled">
+    <value>Завантаження призупинено — його можна продовжити пізніше</value>
+  </data>
+  <data name="QuickPromptPlan">
+    <value>Сплануй мій день</value>
+  </data>
+  <data name="QuickPromptToday">
+    <value>Що в мене заплановано?</value>
+  </data>
+  <data name="QuickPromptTask">
+    <value>Створи завдання на вечір</value>
+  </data>
+  <data name="SwitchModelConfirmTitle">
+    <value>Перемикання моделі</value>
+  </data>
+  <data name="SwitchModelConfirmText">
+    <value>Модель «{0}» зараз працює. Зупинити її для переходу до «{1}»?</value>
+  </data>
+  <data name="SwitchAndStart">
+    <value>Зупинити та запустити</value>
+  </data>
+  <data name="SwitchOnly">
+    <value>Тільки перемкнути</value>
+  </data>
+  <data name="StopAndSwitch">
+    <value>Зупинити та перемкнути</value>
+  </data>
+  <data name="KeepRunning">
+    <value>Залишити у фоні</value>
+  </data>
+  <data name="SwitchProviderConfirmText">
+    <value>Локальна модель «{0}» зараз працює. Зупинити її перед перемиканням на {1}?</value>
+  </data>
+  <data name="ItemsCountOne">
+    <value>{0} елемент</value>
+  </data>
+  <data name="ItemsCountFew">
+    <value>{0} елементи</value>
+  </data>
+  <data name="ItemsCountMany">
+    <value>{0} елементів</value>
+  </data>
+  <data name="UnscheduledTasks">
+    <value>Незаплановані</value>
+  </data>
+  <data name="CurrentEvent">
+    <value>Поточна подія</value>
+  </data>
+  <data name="NextEvent">
+    <value>Наступна подія</value>
+  </data>
+  <data name="NoEventsTitle">
+    <value>Подій немає</value>
+  </data>
+  <data name="NoEventsHint">
+    <value>Створіть подію, щоб зайняти час</value>
+  </data>
+  <data name="NoEventsForDay">
+    <value>На цей день подій немає</value>
+  </data>
+  <data name="EventDaySummaryFormat">
+    <value>Подій: {0} · Зайнято: {1} хв</value>
+  </data>
+  <data name="EndingSoon">
+    <value>Незабаром завершиться</value>
+  </data>
+  <data name="EndsInMinutes">
+    <value>{0} завершиться через {1} хв.</value>
+  </data>
+  <data name="EventCategory">
+    <value>Категорія</value>
+  </data>
+  <data name="EventPriority">
+    <value>Пріоритет</value>
+  </data>
+  <data name="EventRepeat">
+    <value>Повтор</value>
+  </data>
+  <data name="EventCategoryGeneral">
+    <value>Загальне</value>
+  </data>
+  <data name="EventCategoryWork">
+    <value>Робота</value>
+  </data>
+  <data name="EventCategoryPersonal">
+    <value>Особисте</value>
+  </data>
+  <data name="EventCategoryStudy">
+    <value>Навчання</value>
+  </data>
+  <data name="EventCategoryHealth">
+    <value>Здоров'я</value>
+  </data>
+  <data name="EventCategorySocial">
+    <value>Спілкування</value>
+  </data>
+  <data name="EventCategoryErrands">
+    <value>Справи</value>
+  </data>
+  <data name="EventCategoryTravel">
+    <value>Дорога</value>
+  </data>
+  <data name="EventCategoryRest">
+    <value>Відпочинок</value>
+  </data>
+  <data name="EventPriorityNormal">
+    <value>Звичайний</value>
+  </data>
+  <data name="EventPriorityHigh">
+    <value>Важливий</value>
+  </data>
+  <data name="EventPriorityCritical">
+    <value>Критичний</value>
+  </data>
+  <data name="RepeatNever">
+    <value>Не повторюється</value>
+  </data>
+  <data name="RepeatDaily">
+    <value>Щодня</value>
+  </data>
+  <data name="RepeatWeekdays">
+    <value>У будні</value>
+  </data>
+  <data name="RepeatWeekly">
+    <value>Щотижня</value>
+  </data>
+  <data name="RepeatMonthly">
+    <value>Щомісяця</value>
+  </data>
+  <data name="ScopeOccurrence">
+    <value>Лише ця подія</value>
+  </data>
+  <data name="ScopeFollowing">
+    <value>Ця та наступні</value>
+  </data>
+  <data name="ScopeSeries">
+    <value>Уся серія</value>
+  </data>
+  <data name="DayActions">
+    <value>Дії з днем</value>
+  </data>
+  <data name="CopyToTomorrow">
+    <value>Скопіювати на завтра</value>
+  </data>
+  <data name="CopyToNextWeek">
+    <value>Скопіювати на наступний тиждень</value>
+  </data>
+  <data name="Copy">
+    <value>Копіювати</value>
+  </data>
+  <data name="CopyDayConfirmation">
+    <value>Скопіювати цей розклад на {0}?</value>
+  </data>
+  <data name="CopyDayCompleted">
+    <value>Скопійовано подій: {0}</value>
+  </data>
+  <data name="CopyEventConfirmation" xml:space="preserve">
+    <value>Скопіювати «{0}» на {1}?</value>
+  </data>
+  <data name="ClearDay" xml:space="preserve">
+    <value>Очистити цей день</value>
+  </data>
+  <data name="CopySchedule" xml:space="preserve">
+    <value>Копіювати розклад</value>
+  </data>
+  <data name="DayActionsShort" xml:space="preserve">
+    <value>План дня</value>
+  </data>
+  <data name="CopyToDate" xml:space="preserve">
+    <value>Вибрати іншу дату</value>
+  </data>
+  <data name="DayPlanning" xml:space="preserve">
+    <value>Планування дня</value>
+  </data>
+  <data name="EventCopied" xml:space="preserve">
+    <value>Подію скопійовано на {0}</value>
+  </data>
+  <data name="DayPlanningHint" xml:space="preserve">
+    <value>Копіювання та очищення подій</value>
+  </data>
+  <data name="ClearDayConfirmation" xml:space="preserve">
+    <value>Видалити всі події за {0}?</value>
+  </data>
+  <data name="CopyEvent" xml:space="preserve">
+    <value>Копіювати подію</value>
+  </data>
+  <data name="ClearDayCompleted" xml:space="preserve">
+    <value>Видалено подій: {0}</value>
+  </data>
+  <data name="ShiftEarlier" xml:space="preserve">
+    <value>Раніше</value>
+  </data>
+  <data name="EventActions" xml:space="preserve">
+    <value>Дії з подією</value>
+  </data>
+  <data name="ShiftLater" xml:space="preserve">
+    <value>Пізніше</value>
+  </data>
+  <data name="Shift" xml:space="preserve">
+    <value>Перенести</value>
+  </data>
+  <data name="ShiftDayConfirmation" xml:space="preserve">
+    <value>Перенести всі події за {0} на {1}?</value>
+  </data>
+  <data name="ShiftSchedule" xml:space="preserve">
+    <value>Перенести розклад</value>
+  </data>
+  <data name="ShiftDayCompleted" xml:space="preserve">
+    <value>Перенесено подій: {0}</value>
+  </data>
+  <data name="ShiftDayAmountRequired" xml:space="preserve">
+    <value>Укажіть час перенесення</value>
+  </data>
+  <data name="AiActionCopyDay" xml:space="preserve">
+    <value>Скопіювати розклад дня</value>
+  </data>
+  <data name="AiActionDeleteEvent" xml:space="preserve">
+    <value>Видалити подію</value>
+  </data>
+  <data name="AiActionUpdateEvent" xml:space="preserve">
+    <value>Змінити подію</value>
+  </data>
+  <data name="AiActionTargetMissing" xml:space="preserve">
+    <value>Запитана подія або завдання більше не існує.</value>
+  </data>
+  <data name="AiActionShiftDay" xml:space="preserve">
+    <value>Зсунути розклад дня</value>
+  </data>
+  <data name="AiActionInvalid" xml:space="preserve">
+    <value>У дії ШІ бракує обов’язкових даних.</value>
+  </data>
+  <data name="ShareExternalContextHint" xml:space="preserve">
+    <value>Дозволяє API або MCP отримувати недавній діалог і дані календаря. Типово вимкнено.</value>
+  </data>
+  <data name="AiActionCreateTask" xml:space="preserve">
+    <value>Створити незаплановане завдання</value>
+  </data>
+  <data name="AiAccessConfirmAll" xml:space="preserve">
+    <value>Підтверджувати кожну дію</value>
+  </data>
+  <data name="AiActionUpdateTask" xml:space="preserve">
+    <value>Змінити незаплановане завдання</value>
+  </data>
+  <data name="AiAccessFull" xml:space="preserve">
+    <value>Повний доступ до розкладу</value>
+  </data>
+  <data name="AiAccessAutoSafe" xml:space="preserve">
+    <value>Безпечні дії — автоматично</value>
+  </data>
+  <data name="AiActionFailed" xml:space="preserve">
+    <value>Не вдалося застосувати</value>
+  </data>
+  <data name="AiActionApplied" xml:space="preserve">
+    <value>Застосовано</value>
+  </data>
+  <data name="AiActionCreateEvent" xml:space="preserve">
+    <value>Створити подію</value>
+  </data>
+  <data name="AiActionDismissed" xml:space="preserve">
+    <value>Відхилено</value>
+  </data>
+  <data name="ShareExternalContext" xml:space="preserve">
+    <value>Передавати контекст зовнішньому ШІ</value>
+  </data>
+  <data name="AiAccessHint" xml:space="preserve"><value>Що асистент може змінювати, не питаючи вас заздалегідь.</value></data>
+  <data name="AiActionDeleteTask" xml:space="preserve">
+    <value>Видалити незаплановане завдання</value>
+  </data>
+  <data name="AiAccess" xml:space="preserve">
+    <value>Дозволи ШІ</value>
+  </data>
+  <data name="ClearConversation" xml:space="preserve">
+    <value>Очистити діалог</value>
+  </data>
+  <data name="Dismiss" xml:space="preserve">
+    <value>Відхилити</value>
+  </data>
+  <data name="AiActionReady" xml:space="preserve">
+    <value>Дія очікує перевірки</value>
+  </data>
+  <data name="AiAccessConfirmAllHint" xml:space="preserve">
+    <value>Кожна зміна розкладу чекає на ваше підтвердження.</value>
+  </data>
+  <data name="AiAccessAutoSafeHint" xml:space="preserve">
+    <value>Створення й редагування виконуються автоматично; видалення та операції з усім днем потребують підтвердження.</value>
+  </data>
+  <data name="AiAccessFullHint" xml:space="preserve">
+    <value>ШІ може застосовувати будь-які зміни розкладу, включно з видаленням і масовими операціями дня.</value>
+  </data>
+  <data name="AiActionCopyEvent" xml:space="preserve">
+    <value>Копіювати подію</value>
+  </data>
+  <data name="ChatNewChat" xml:space="preserve">
+    <value>Новий чат</value>
+  </data>
+  <data name="ChatExpand" xml:space="preserve">
+    <value>Відкрити широкий вигляд</value>
+  </data>
+  <data name="ChatCollapse" xml:space="preserve">
+    <value>Повернути компактний вигляд</value>
+  </data>
+  <data name="ChatHistory" xml:space="preserve">
+    <value>Історія</value>
+  </data>
+  <data name="ChatSearchPlaceholder" xml:space="preserve">
+    <value>Пошук у чатах</value>
+  </data>
+  <data name="ChatNoConversations" xml:space="preserve">
+    <value>Збережених чатів ще немає</value>
+  </data>
+  <data name="ChatNoSearchResults" xml:space="preserve">
+    <value>Нічого не знайдено</value>
+  </data>
+  <data name="ChatPin" xml:space="preserve">
+    <value>Закріпити</value>
+  </data>
+  <data name="ChatUnpin" xml:space="preserve">
+    <value>Відкріпити</value>
+  </data>
+  <data name="ChatDeleteConversation" xml:space="preserve">
+    <value>Видалити чат</value>
+  </data>
+  <data name="ChatDeleteConfirm" xml:space="preserve">
+    <value>Видалити цей чат без можливості відновлення?</value>
+  </data>
+  <data name="ChatGroupToday" xml:space="preserve">
+    <value>Сьогодні</value>
+  </data>
+  <data name="ChatGroupYesterday" xml:space="preserve">
+    <value>Вчора</value>
+  </data>
+  <data name="ChatGroupWeek" xml:space="preserve">
+    <value>Останні 7 днів</value>
+  </data>
+  <data name="ChatGroupOlder" xml:space="preserve">
+    <value>Раніше</value>
+  </data>
+  <data name="ChatMessageCount" xml:space="preserve">
+    <value>{0} повід.</value>
+  </data>
+  <data name="ChatCopy" xml:space="preserve">
+    <value>Копіювати</value>
+  </data>
+  <data name="ChatCopied" xml:space="preserve">
+    <value>Скопійовано</value>
+  </data>
+  <data name="ChatRetry" xml:space="preserve">
+    <value>Запитати знову</value>
+  </data>
+  <data name="ChatStop" xml:space="preserve">
+    <value>Зупинити</value>
+  </data>
+  <data name="ChatToolActivity" xml:space="preserve">
+    <value>Що я зробив</value>
+  </data>
+  <data name="ChatToolApplied" xml:space="preserve">
+    <value>виконано</value>
+  </data>
+  <data name="ChatToolProposed" xml:space="preserve">
+    <value>запропоновано</value>
+  </data>
+  <data name="ChatToolFailed" xml:space="preserve">
+    <value>помилка</value>
+  </data>
+  <data name="StageConnecting" xml:space="preserve">
+    <value>Підключаюсь…</value>
+  </data>
+  <data name="StageThinking" xml:space="preserve">
+    <value>Думаю…</value>
+  </data>
+  <data name="StageWriting" xml:space="preserve">
+    <value>Пишу відповідь…</value>
+  </data>
+  <data name="StageToolSchedule" xml:space="preserve">
+    <value>Читаю календар…</value>
+  </data>
+  <data name="StageToolTasks" xml:space="preserve">
+    <value>Читаю завдання…</value>
+  </data>
+  <data name="StageToolSlots" xml:space="preserve">
+    <value>Шукаю вільний час…</value>
+  </data>
+  <data name="StageToolAnalytics" xml:space="preserve">
+    <value>Дивлюсь статистику…</value>
+  </data>
+  <data name="StageToolMemory" xml:space="preserve">
+    <value>Оновлюю пам'ять…</value>
+  </data>
+  <data name="StageToolWrite" xml:space="preserve">
+    <value>Готую зміну…</value>
+  </data>
+  <data name="StageToolExternal" xml:space="preserve">
+    <value>Викликаю MCP-інструмент…</value>
+  </data>
+  <data name="ChatMemory" xml:space="preserve">
+    <value>Пам'ять</value>
+  </data>
+  <data name="ChatMemoryHint" xml:space="preserve">
+    <value>Факти, які асистент пам'ятає між чатами. Зберігаються лише на цьому комп'ютері.</value>
+  </data>
+  <data name="ChatMemoryEmpty" xml:space="preserve">
+    <value>Поки нічого не збережено. Асистент додасть нотатки під час розмови.</value>
+  </data>
+  <data name="ChatMemoryAdd" xml:space="preserve">
+    <value>Додати нотатку</value>
+  </data>
+  <data name="ChatMemoryKeyPlaceholder" xml:space="preserve">
+    <value>Короткий ключ, наприклад deep-work-window</value>
+  </data>
+  <data name="ChatMemoryValuePlaceholder" xml:space="preserve">
+    <value>Що потрібно запам'ятати?</value>
+  </data>
+  <data name="ChatMemoryClear" xml:space="preserve">
+    <value>Забути все</value>
+  </data>
+  <data name="ChatMemoryClearConfirm" xml:space="preserve">
+    <value>Видалити всі збережені нотатки?</value>
+  </data>
+  <data name="ChatMemoryFromAssistant" xml:space="preserve">
+    <value>збережено асистентом</value>
+  </data>
+  <data name="ChatMemoryFromUser" xml:space="preserve">
+    <value>додано вами</value>
+  </data>
+  <data name="ChatSuggestions" xml:space="preserve">
+    <value>Спробуйте запитати</value>
+  </data>
+  <data name="ChatIntroTitle" xml:space="preserve">
+    <value>З чого почнемо?</value>
+  </data>
+  <data name="ChatComposerHint" xml:space="preserve">
+    <value>Enter — надіслати · Shift+Enter — новий рядок</value>
+  </data>
+  <data name="SuggestPlanTomorrow" xml:space="preserve">
+    <value>Сплануй завтра з урахуванням зайнятого часу</value>
+  </data>
+  <data name="SuggestFreeTime" xml:space="preserve">
+    <value>Де цього тижня є дві вільні години?</value>
+  </data>
+  <data name="SuggestOverdue" xml:space="preserve">
+    <value>Що прострочено і від чого відмовитись?</value>
+  </data>
+  <data name="SuggestBalance" xml:space="preserve">
+    <value>Наскільки збалансований мій тиждень?</value>
+  </data>
+  <data name="SuggestBusyDay" xml:space="preserve">
+    <value>Сьогодні щільно — що можна перенести?</value>
+  </data>
+  <data name="SuggestEmptyDay" xml:space="preserve">
+    <value>На день нічого не заплановано — допоможи його скласти</value>
+  </data>
+  <data name="SuggestFollowUp" xml:space="preserve">
+    <value>Продовжити: {0}</value>
+  </data>
+  <data name="SuggestReview" xml:space="preserve">
+    <value>Розбери минулий тиждень і скажи, що змінилося</value>
+  </data>
+  <data name="AiMemoryEnabled" xml:space="preserve">
+    <value>Дозволити асистенту запам'ятовувати факти про мене</value>
+  </data>
+  <data name="AiMemoryHint" xml:space="preserve">
+    <value>Нотатки зберігаються в локальній базі й надсилаються зовнішній моделі лише за увімкненої передачі контексту.</value>
+  </data>
+  <data name="McpToolsEnabled" xml:space="preserve">
+    <value>Дати обраній моделі інструменти MCP-сервера</value>
+  </data>
+  <data name="McpToolsHint" xml:space="preserve">
+    <value>Це сучасний спосіб роботи з MCP: модель продовжує міркувати й просто отримує додаткові можливості. Якщо ж обрати MCP як провайдера, сервер відповідатиме сам через один міст-інструмент.</value>
+  </data>
+  <data name="ShowTools" xml:space="preserve">
+    <value>Показати доступні інструменти</value>
+  </data>
+  <data name="ToolsAvailable" xml:space="preserve">
+    <value>Інструменти, доступні моделі</value>
+  </data>
+  <data name="ToolBuiltIn" xml:space="preserve">
+    <value>вбудований</value>
+  </data>
+  <data name="Analytics" xml:space="preserve">
+    <value>Аналітика</value>
+  </data>
+  <data name="AnalyticsSubtitle" xml:space="preserve">
+    <value>Зрозуміла статистика на основі вашої історії</value>
+  </data>
+  <data name="RangeWeek" xml:space="preserve">
+    <value>Тиждень</value>
+  </data>
+  <data name="RangeMonth" xml:space="preserve">
+    <value>Місяць</value>
+  </data>
+  <data name="RangeQuarter" xml:space="preserve">
+    <value>3 місяці</value>
+  </data>
+  <data name="MetricScheduled" xml:space="preserve">
+    <value>У розкладі</value>
+  </data>
+  <data name="MetricFocus" xml:space="preserve">
+    <value>Фактична робота</value>
+  </data>
+  <data name="MetricCompletion" xml:space="preserve">
+    <value>Завершення</value>
+  </data>
+  <data name="MetricAccuracy" xml:space="preserve">
+    <value>Точність плану</value>
+  </data>
+  <data name="MetricOnTime" xml:space="preserve">
+    <value>Старт вчасно</value>
+  </data>
+  <data name="MetricLoad" xml:space="preserve">
+    <value>Завантаження</value>
+  </data>
+  <data name="MetricStreak" xml:space="preserve">
+    <value>Серія днів</value>
+  </data>
+  <data name="MetricOverdue" xml:space="preserve">
+    <value>Прострочені завдання</value>
+  </data>
+  <data name="MetricDays" xml:space="preserve">
+    <value>{0} дн</value>
+  </data>
+  <data name="MetricHours" xml:space="preserve">
+    <value>{0:0.#} год</value>
+  </data>
+  <data name="MetricNoSample" xml:space="preserve">
+    <value>мало даних</value>
+  </data>
+  <data name="MetricVsPrevious" xml:space="preserve">
+    <value>порівняно з попереднім періодом</value>
+  </data>
+  <data name="ChartDailyLoad" xml:space="preserve">
+    <value>По днях</value>
+  </data>
+  <data name="ChartCategories" xml:space="preserve">
+    <value>Куди йде час</value>
+  </data>
+  <data name="ChartHours" xml:space="preserve">
+    <value>Години доби</value>
+  </data>
+  <data name="ChartWeekdays" xml:space="preserve">
+    <value>За днями тижня</value>
+  </data>
+  <data name="ChartScheduledLegend" xml:space="preserve">
+    <value>Заплановано</value>
+  </data>
+  <data name="ChartCompletedLegend" xml:space="preserve">
+    <value>Виконано</value>
+  </data>
+  <data name="AnalyticsEmpty" xml:space="preserve">
+    <value>Історії поки мало. Заплануйте кілька днів і завершіть пару сесій — цифри з'являться самі.</value>
+  </data>
+  <data name="AnalyticsInsights" xml:space="preserve">
+    <value>Що показують дані</value>
+  </data>
+  <data name="AnalyticsAskAi" xml:space="preserve">
+    <value>Обговорити це з асистентом</value>
+  </data>
+  <data name="AnalyticsAskAiPrompt" xml:space="preserve">
+    <value>Подивись мою статистику за останні {0} днів і скажи, що варто змінити.</value>
+  </data>
+  <data name="AnalyticsAskAiPeriodPrompt" xml:space="preserve">
+    <value>Подивись мою статистику з {0} до {1} і скажи, що варто змінити.</value>
+  </data>
+  <data name="InsightSample" xml:space="preserve">
+    <value>{0} спостережень · надійність {1}%</value>
+  </data>
+  <data name="InsightEstimationBiasOver" xml:space="preserve">
+    <value>Сесії тривають приблизно на {0}% довше плану</value>
+  </data>
+  <data name="InsightEstimationBiasUnder" xml:space="preserve">
+    <value>Сесії закінчуються приблизно на {0}% раніше плану</value>
+  </data>
+  <data name="InsightStrongTimeOfDay" xml:space="preserve">
+    <value>{0} дає {1}% усієї завершеної роботи</value>
+  </data>
+  <data name="InsightScheduleFriction" xml:space="preserve">
+    <value>{0} з {1} блоків довелося переносити</value>
+  </data>
+  <data name="InsightStartDelay" xml:space="preserve">
+    <value>Пропущено сеансів: {0} з {1}</value>
+  </data>
+  <data name="InsightOverload" xml:space="preserve">
+    <value>Календар займає {0}% часу неспання</value>
+  </data>
+  <data name="InsightUnderuse" xml:space="preserve">
+    <value>Заплановано лише {0}% доступного часу</value>
+  </data>
+  <data name="InsightCategoryDominance" xml:space="preserve">
+    <value>{0} займає {1}% запланованого часу</value>
+  </data>
+  <data name="InsightConsistency" xml:space="preserve">
+    <value>Навантаження рівне — близько {0} год на день</value>
+  </data>
+  <data name="PartOfDayMorning" xml:space="preserve">
+    <value>Ранок</value>
+  </data>
+  <data name="PartOfDayAfternoon" xml:space="preserve">
+    <value>День</value>
+  </data>
+  <data name="PartOfDayEvening" xml:space="preserve">
+    <value>Вечір</value>
+  </data>
+  <data name="CategoryFocus" xml:space="preserve">
+    <value>Фокус</value>
+  </data>
+  <data name="NowLabel" xml:space="preserve">
+    <value>Зараз</value>
+  </data>
+  <data name="StartsIn" xml:space="preserve">
+    <value>через {0}</value>
+  </data>
+  <data name="EndsIn" xml:space="preserve">
+    <value>залишилось {0}</value>
+  </data>
+  <data name="DurationHoursMinutes" xml:space="preserve">
+    <value>{0} год {1} хв</value>
+  </data>
+  <data name="DurationMinutes" xml:space="preserve">
+    <value>{0} хв</value>
+  </data>
+  <data name="OverdueBadge" xml:space="preserve">
+    <value>прострочено</value>
+  </data>
+  <data name="TodayBadge" xml:space="preserve">
+    <value>сьогодні</value>
+  </data>
+  <data name="TomorrowBadge" xml:space="preserve">
+    <value>завтра</value>
+  </data>
+  <data name="DayLoadLabel" xml:space="preserve">
+    <value>зайнято {0}</value>
+  </data>
+  <data name="ChatToolRead" xml:space="preserve">
+    <value>прочитано</value>
+  </data>
+  <data name="MetricPeakHour" xml:space="preserve">
+    <value>Пік активності</value>
+  </data>
+  <data name="MemoryCategoryGeneral" xml:space="preserve">
+    <value>Загальне</value>
+  </data>
+  <data name="MemoryCategoryPreference" xml:space="preserve">
+    <value>Уподобання</value>
+  </data>
+  <data name="MemoryCategoryRoutine" xml:space="preserve">
+    <value>Ритм</value>
+  </data>
+  <data name="MemoryCategoryConstraint" xml:space="preserve">
+    <value>Обмеження</value>
+  </data>
+  <data name="MemoryCategoryGoal" xml:space="preserve">
+    <value>Ціль</value>
+  </data>
+  <data name="MemoryCategoryContext" xml:space="preserve">
+    <value>Контекст</value>
+  </data>
+  <data name="LocalModelRoleGeneral" xml:space="preserve">
+    <value>Універсальний агент</value>
+  </data>
+  <data name="LocalModelRoleReasoning" xml:space="preserve">
+    <value>Міркування та швидкі відповіді</value>
+  </data>
+  <data name="LocalModelRoleToolUse" xml:space="preserve">
+    <value>Декомпозиція та робота з інструментами</value>
+  </data>
+  <data name="LocalModelRoleCustom" xml:space="preserve">
+    <value>Ваш власний GGUF</value>
+  </data>
+  <data name="ExperimentalBadge" xml:space="preserve">
+    <value>просунута</value>
+  </data>
+  <data name="CustomModelTitle" xml:space="preserve">
+    <value>Своя модель</value>
+  </data>
+  <data name="CustomModelHint" xml:space="preserve"><value>Вкажіть GGUF на диску — він використовується як є: нічого не завантажується й не копіюється. Файлів може бути два, і вони не взаємозамінні.</value></data>
+  <data name="CustomModelBadge" xml:space="preserve">
+    <value>своя</value>
+  </data>
+  <data name="CustomModelNotChosen" xml:space="preserve">
+    <value>Файл не обрано</value>
+  </data>
+  <data name="PickModelFile" xml:space="preserve">
+    <value>Обрати GGUF</value>
+  </data>
+  <data name="PickProjectorFile" xml:space="preserve">
+    <value>Обрати проєктор</value>
+  </data>
+  <data name="ClearCustomModel" xml:space="preserve">
+    <value>Прибрати</value>
+  </data>
+  <data name="CustomModelDialogTitle" xml:space="preserve">
+    <value>Виберіть файл моделі GGUF</value>
+  </data>
+  <data name="ModelParameters" xml:space="preserve">
+    <value>Параметри моделі</value>
+  </data>
+  <data name="ParamOff" xml:space="preserve">
+    <value>вимк</value>
+  </data>
+  <data name="ParamMinutes" xml:space="preserve">
+    <value>{0} хв</value>
+  </data>
+  <data name="ParamTemperature" xml:space="preserve">
+    <value>Температура</value>
+  </data>
+  <data name="ParamTemperatureHint" xml:space="preserve"><value>Наскільки різноманітними будуть формулювання моделі. За низького значення дати, час і назви залишаються точними — це важливо для розкладу. За високого відповіді жвавіші, але менш точні. Типове значення: 0.3.</value></data>
+  <data name="ParamMaxTokens" xml:space="preserve">
+    <value>Ліміт відповіді</value>
+  </data>
+  <data name="ParamMaxTokensHint" xml:space="preserve"><value>Максимальна довжина однієї відповіді в токенах. Один токен — це приблизно три чверті слова. За надто низького ліміту довгий план обірветься на півслові; високий ліміт нічого не витрачає, доки модель справді не напише стільки тексту. 4000 токенів вистачає на план цілого дня.</value></data>
+  <data name="ParamTopP" xml:space="preserve">
+    <value>Top-p</value>
+  </data>
+  <data name="ParamTopPHint" xml:space="preserve"><value>Друге, грубіше обмеження того самого: нижче 1.00 модель обирає лише з найімовірніших слів. Залиште 1.00 і користуйтеся температурою — при 1.00 параметр узагалі не надсилається.</value></data>
+  <data name="ParamToolIterations" xml:space="preserve">
+    <value>Кроків з інструментами</value>
+  </data>
+  <data name="ParamToolIterationsHint" xml:space="preserve"><value>Скільки разів асистент може щось перевірити, виконати дію й знову подумати, перш ніж відповісти. Кожен крок — один обмін із сервером. Низьке значення пришвидшує прості запити, але його може не вистачити для складних; 12 кроків достатньо, щоб спланувати цілий тиждень.</value></data>
+  <data name="ParamHistory" xml:space="preserve">
+    <value>Глибина історії</value>
+  </data>
+  <data name="ParamHistoryHint" xml:space="preserve"><value>Скільки попередніх повідомлень надсилається знову, щоб асистент памʼятав перебіг розмови. Усе, що раніше, у межах бесіди забувається. Більше контексту — більше токенів і трохи часу на кожне повідомлення.</value></data>
+  <data name="ParamTimeout" xml:space="preserve">
+    <value>Таймаут запиту</value>
+  </data>
+  <data name="ParamTimeoutHint" xml:space="preserve"><value>Скільки чекати одну відповідь, перш ніж від неї відмовитися. Це страховка, а не налаштування швидкості: збільшення нічого не сповільнює, а зменшення лише перетворює повільну відповідь на її відсутність.</value></data>
+  <data name="ParamExtraInstructions" xml:space="preserve">
+    <value>Додаткові інструкції</value>
+  </data>
+  <data name="ParamExtraInstructionsPlaceholder" xml:space="preserve"><value>Наприклад: відповідай стисло; нічого не став раніше 10:00; називай глибоку роботу «фокус».</value></data>
+  <data name="ResetParameters" xml:space="preserve">
+    <value>Скинути до типових</value>
+  </data>
+  <data name="LocalRuntimeSection" xml:space="preserve">
+    <value>Локальний рушій</value>
+  </data>
+  <data name="ParamContext" xml:space="preserve">
+    <value>Вікно контексту</value>
+  </data>
+  <data name="ParamContextHint" xml:space="preserve">
+    <value>Скільки токенів тримає llama-server. Менше — швидше й легше.</value>
+  </data>
+  <data name="ParamThreads" xml:space="preserve">
+    <value>Потоки</value>
+  </data>
+  <data name="ParamThreadsHint" xml:space="preserve">
+    <value>0 — вирішує llama.cpp. Зазвичай швидше вказати кількість фізичних ядер.</value>
+  </data>
+  <data name="HideTools" xml:space="preserve">
+    <value>Сховати</value>
+  </data>
+  <data name="TrackSection" xml:space="preserve">
+    <value>Як пройшло?</value>
+  </data>
+  <data name="TrackStart" xml:space="preserve">
+    <value>Почати</value>
+  </data>
+  <data name="TrackDone" xml:space="preserve">
+    <value>Виконано</value>
+  </data>
+  <data name="TrackPartial" xml:space="preserve">
+    <value>Частково</value>
+  </data>
+  <data name="TrackSkip" xml:space="preserve">
+    <value>Пропущено</value>
+  </data>
+  <data name="TrackUndo" xml:space="preserve">
+    <value>Скасувати</value>
+  </data>
+  <data name="TrackedStarted" xml:space="preserve">
+    <value>почато о {0}</value>
+  </data>
+  <data name="TrackedDone" xml:space="preserve">
+    <value>виконано · {0}</value>
+  </data>
+  <data name="TrackedPartial" xml:space="preserve">
+    <value>частково · {0}</value>
+  </data>
+  <data name="TrackedSkipped" xml:space="preserve">
+    <value>пропущено</value>
+  </data>
+  <data name="TrackHint" xml:space="preserve">
+    <value>Позначайте, як минули події: за цими даними обчислюються виконання, точність плану та своєчасність початку.</value>
+  </data>
+  <data name="PeekNothingToday" xml:space="preserve">
+    <value>Нічого не заплановано</value>
+  </data>
+  <data name="PeekOpen" xml:space="preserve">
+    <value>Відкрити DAYDRIVE</value>
+  </data>
+  <data name="PeekBusyToday" xml:space="preserve">
+    <value>сьогодні {0}</value>
+  </data>
+  <data name="PeekOverdue" xml:space="preserve">
+    <value>прострочено {0}</value>
+  </data>
+  <data name="DurationLabelShort" xml:space="preserve">
+    <value>Хвилин</value>
+  </data>
+  <data name="FinishedEvent" xml:space="preserve">
+    <value>Щойно завершилася</value>
+  </data>
+  <data name="SettingsTabAssistant" xml:space="preserve">
+    <value>Підключення ШІ</value>
+  </data>
+  <data name="SettingsTabModels" xml:space="preserve">
+    <value>Локальний ШІ</value>
+  </data>
+  <data name="VisualPalette" xml:space="preserve">
+    <value>Палітра даних</value>
+  </data>
+  <data name="VisualPaletteHint" xml:space="preserve">
+    <value>Кольори графіків, категорій і маркерів пріоритету.</value>
+  </data>
+  <data name="PaletteVibrant" xml:space="preserve">
+    <value>Яскрава</value>
+  </data>
+  <data name="PaletteAccent" xml:space="preserve">
+    <value>Відтінки акценту</value>
+  </data>
+  <data name="PaletteMonochrome" xml:space="preserve">
+    <value>Монохромна</value>
+  </data>
+  <data name="PalettePastel" xml:space="preserve">
+    <value>Пастельна</value>
+  </data>
+  <data name="PaletteEarth" xml:space="preserve">
+    <value>Земля</value>
+  </data>
+  <data name="PaletteNeon" xml:space="preserve">
+    <value>Неонова</value>
+  </data>
+  <data name="PaletteColorBlind" xml:space="preserve">
+    <value>Доступна</value>
+  </data>
+  <data name="RamLabel" xml:space="preserve">
+    <value>ОЗП</value>
+  </data>
+  <data name="CpuLabel" xml:space="preserve">
+    <value>ЦП</value>
+  </data>
+  <data name="MetricPercentagePoints" xml:space="preserve">
+    <value>{0:0} в.п.</value>
+  </data>
+  <data name="InterfaceFont" xml:space="preserve"><value>Шрифт інтерфейсу</value></data>
+  <data name="InterfaceFontHint" xml:space="preserve"><value>Виберіть вбудований шрифт із кирилицею або додайте власний файл TTF чи OTF.</value></data>
+  <data name="FontPreview" xml:space="preserve"><value>Аа Aa 0123 · Спокійний фокус</value></data>
+  <data name="AddCustomFont" xml:space="preserve"><value>Додати власний шрифт</value></data>
+  <data name="FontPickerTitle" xml:space="preserve"><value>Виберіть файл шрифту</value></data>
+  <data name="FontAdded" xml:space="preserve"><value>Шрифт «{0}» додано.</value></data>
+  <data name="FontInvalid" xml:space="preserve"><value>Не вдалося прочитати цей файл шрифту.</value></data>
+  <data name="CustomFontLabel" xml:space="preserve"><value>{0} · власний</value></data>
+  <data name="FontSystem" xml:space="preserve"><value>Системний</value></data>
+  <data name="ActivityTimer" xml:space="preserve"><value>Таймер активності</value></data>
+  <data name="AiConnectionIntro" xml:space="preserve"><value>Виберіть, хто відповідає в асистенті: модель на цьому пристрої, сумісний API або MCP-сервер.</value></data>
+  <data name="LocalAiTitle" xml:space="preserve"><value>Локальний ШІ</value></data>
+  <data name="LocalAiConnectionHint" xml:space="preserve"><value>Модель працює на цьому пристрої. Завантаження, файли й рушій розміщені в розділі локального ШІ.</value></data>
+  <data name="OpenLocalAi" xml:space="preserve"><value>Відкрити</value></data>
+  <data name="ApiConnectionTitle" xml:space="preserve"><value>Підключення API</value></data>
+  <data name="ApiConnectionHint" xml:space="preserve"><value>Підключіть HTTP API, сумісний з OpenAI. Ключ шифрується на цьому пристрої.</value></data>
+  <data name="McpConnectionTitle" xml:space="preserve"><value>MCP-сервер</value></data>
+  <data name="McpConnectionHint" xml:space="preserve"><value>Виберіть MCP як провайдер, якщо сервер має відповідати сам через один інструмент-міст.</value></data>
+  <data name="McpTransport" xml:space="preserve"><value>Транспорт</value></data>
+  <data name="McpCommandLabel" xml:space="preserve"><value>Команда сервера</value></data>
+  <data name="McpToolLabel" xml:space="preserve"><value>Інструмент-міст</value></data>
+  <data name="AdvancedSettings" xml:space="preserve"><value>Розширені</value></data>
+  <data name="AdvancedSettingsHint" xml:space="preserve"><value>Як модель пише, наскільки далеко може зайти сама і що їй завжди тримати в голові.</value></data>
+  <data name="TrackEventTooltip" xml:space="preserve"><value>Позначити, як минула ця подія</value></data>
+  <data name="TrackPartialTooltip" xml:space="preserve"><value>Зроблено частково — вкажете, скільки часу пішло насправді</value></data>
+  <data name="UnmarkedEvents" xml:space="preserve"><value>{0} без позначки</value></data>
+  <data name="PeekOpenPanel" xml:space="preserve"><value>Відкрити панель</value></data>
+  <data name="AskAssistant" xml:space="preserve"><value>Запитати асистента</value></data>
+  <data name="AiProviderLocalSummary" xml:space="preserve"><value>Модель працює на цьому комп'ютері. Нічого не йде назовні, а рушій завантажується та керується нижче.</value></data>
+  <data name="AiProviderApiSummary" xml:space="preserve"><value>Будь-який API, сумісний з OpenAI, зокрема Ollama. Розклад надсилатиметься лише після вашого дозволу нижче.</value></data>
+  <data name="AiProviderMcpSummary" xml:space="preserve"><value>MCP-сервер відповідає через один інструмент-міст. Зображення так передати не можна.</value></data>
+  <data name="AttachImage" xml:space="preserve"><value>Зображення…</value></data>
+  <data name="AttachDocument" xml:space="preserve"><value>Документ…</value></data>
+  <data name="AttachImagesFilter" xml:space="preserve"><value>Зображення</value></data>
+  <data name="AttachDocumentsFilter" xml:space="preserve"><value>Документи</value></data>
+  <data name="AttachUnsupported" xml:space="preserve"><value>Цей формат прочитати не можна. Зображення: PNG, JPEG, WebP, BMP, GIF. Документи: PDF, DOCX і текстові файли.</value></data>
+  <data name="AttachTooLarge" xml:space="preserve"><value>Файл більший за {0} МБ, прикріпити його не можна.</value></data>
+  <data name="AttachImageNotSupported" xml:space="preserve"><value>Поточний рушій не вміє читати зображення. Змініть провайдера або увімкніть приймання зображень у локальної моделі.</value></data>
+  <data name="SettingsTabData" xml:space="preserve"><value>Дані та синхронізація</value></data>
+  <data name="SettingsTabAbout" xml:space="preserve"><value>Про застосунок</value></data>
+  <data name="CloudSyncTitle" xml:space="preserve"><value>Хмарна синхронізація</value></data>
+  <data name="CloudSyncIntro" xml:space="preserve"><value>Зберігає копію ваших даних там, звідки її заберуть інші ваші комп’ютери. Синхронізуються завдання, події, позначки прогресу, чати асистента та його пам’ять; налаштування в кожного комп’ютера свої.</value></data>
+  <data name="CloudDestination" xml:space="preserve"><value>Куди синхронізувати</value></data>
+  <data name="CloudProviderOff" xml:space="preserve"><value>Вимкнено</value></data>
+  <data name="CloudProviderFolder" xml:space="preserve"><value>Синхронізована тека</value></data>
+  <data name="CloudFolderHint" xml:space="preserve"><value>Вкажіть теку, яку вже синхронізує клієнт Google Drive, OneDrive чи Dropbox. Обліковий запис і ключі не потрібні.</value></data>
+  <data name="CloudFolderPlaceholder" xml:space="preserve"><value>C:\Users\ім’я\Google Drive</value></data>
+  <data name="CloudFolderDialogTitle" xml:space="preserve"><value>Виберіть синхронізовану теку</value></data>
+  <data name="Browse" xml:space="preserve"><value>Огляд…</value></data>
+  <data name="CloudGoogleHint" xml:space="preserve"><value>Завантажує прямо в приховану теку застосунку в Drive. Решти ваших файлів застосунок не бачить.</value></data>
+  <data name="CloudGoogleSetupTitle" xml:space="preserve"><value>Одноразове налаштування</value></data>
+  <data name="CloudGoogleSetupSteps" xml:space="preserve"><value>Один раз у Google Cloud Console:
+1. Створіть проєкт і ввімкніть у ньому «Google Drive API».
+2. На екрані «OAuth consent screen» виберіть External і додайте свою адресу Google до тестових користувачів (Test users).
+3. У розділі «Credentials» створіть OAuth client ID типу «Desktop app».
+4. Вставте нижче його Client ID і Client secret та натисніть «Підключити акаунт Google».</value></data>
+  <data name="CloudGoogleConsole" xml:space="preserve"><value>Відкрити Google Cloud Console</value></data>
+  <data name="CloudGoogleClientId" xml:space="preserve"><value>ID OAuth-клієнта</value></data>
+  <data name="CloudGoogleClientSecret" xml:space="preserve"><value>Секрет OAuth-клієнта</value></data>
+  <data name="CloudGoogleClientSecretPlaceholder" xml:space="preserve"><value>GOCSPX-…</value></data>
+  <data name="CloudGoogleClientSecretHint" xml:space="preserve"><value>Обов’язково. Він розташований поруч із Client ID у Google Cloud Console. Зберігається зашифрованим на цьому комп’ютері й надсилається лише до Google.</value></data>
+  <data name="CloudGoogleConnect" xml:space="preserve"><value>Підключити акаунт Google</value></data>
+  <data name="CloudGoogleDisconnect" xml:space="preserve"><value>Відключити</value></data>
+  <data name="CloudGoogleWaiting" xml:space="preserve"><value>Завершіть вхід у браузері…</value></data>
+  <data name="CloudGoogleDisconnected" xml:space="preserve"><value>Акаунт Google відключено. Копія в хмарі лишилася недоторканою.</value></data>
+  <data name="CloudDeviceName" xml:space="preserve"><value>Ім'я цього комп'ютера</value></data>
+  <data name="CloudDeviceNamePlaceholder" xml:space="preserve"><value>Ноутбук</value></data>
+  <data name="CloudDeviceNameHint" xml:space="preserve"><value>Показується поруч зі знімком, щоб розуміти, яка машина завантажувала востаннє.</value></data>
+  <data name="CloudAutomatic" xml:space="preserve"><value>Синхронізувати самостійно</value></data>
+  <data name="CloudAutomaticHint" xml:space="preserve"><value>Перевіряє невдовзі після запуску, кожні п'ятнадцять хвилин і ще раз під час виходу. Якщо вимкнено, синхронізує лише кнопка.</value></data>
+  <data name="CloudSyncNow" xml:space="preserve"><value>Синхронізувати</value></data>
+  <data name="CloudCheck" xml:space="preserve"><value>Перевірити хмару</value></data>
+  <data name="CloudSyncRunning" xml:space="preserve"><value>Синхронізація…</value></data>
+  <data name="CloudNoSnapshot" xml:space="preserve"><value>Поки нічого не завантажено.</value></data>
+  <data name="CloudSnapshotFormat" xml:space="preserve"><value>збережена {0}</value></data>
+  <data name="CloudSnapshotDeviceFormat" xml:space="preserve"><value>збережена {0} з комп’ютера «{1}»</value></data>
+  <data name="CloudConflictTitle" xml:space="preserve"><value>Змінилися обидві копії</value></data>
+  <data name="CloudConflictHint" xml:space="preserve"><value>І цей комп'ютер, і копія в хмарі змінювалися після останньої синхронізації. Злиття довелося б вгадувати, тож виберіть, яку копію лишити. Другу буде замінено.</value></data>
+  <data name="CloudKeepLocal" xml:space="preserve"><value>Лишити цей комп'ютер</value></data>
+  <data name="CloudKeepCloud" xml:space="preserve"><value>Лишити копію з хмари</value></data>
+  <data name="CloudRestartHint" xml:space="preserve"><value>Завантажена копія готова й застосується після перезапуску DAYDRIVE. Попередні дані збережено в теку Backups.</value></data>
+  <data name="LocalData" xml:space="preserve"><value>На цьому комп'ютері</value></data>
+  <data name="LocalDataHint" xml:space="preserve"><value>Усе лежить в одній базі SQLite тут само, разом із резервними копіями та файлами локальної моделі.</value></data>
+  <data name="OpenDataFolder" xml:space="preserve"><value>Відкрити теку</value></data>
+  <data name="CouldNotOpenFolder" xml:space="preserve"><value>Не вдалося відкрити теку.</value></data>
+  <data name="CouldNotOpenLink" xml:space="preserve"><value>Не вдалося відкрити браузер для {0}</value></data>
+  <data name="AboutVersionFormat" xml:space="preserve"><value>Версія {0}</value></data>
+  <data name="AboutTagline" xml:space="preserve"><value>Компактний планувальник і календар, що зберігає дані локально й завжди під рукою біля краю екрана.</value></data>
+  <data name="AboutAuthorLabel" xml:space="preserve"><value>Розробник</value></data>
+  <data name="AboutOpenGitHub" xml:space="preserve"><value>GitHub</value></data>
+  <data name="AboutLinks" xml:space="preserve"><value>Посилання</value></data>
+  <data name="AboutRepository" xml:space="preserve"><value>Вихідний код</value></data>
+  <data name="AboutIssues" xml:space="preserve"><value>Повідомити про проблему</value></data>
+  <data name="AboutReleases" xml:space="preserve"><value>Усі релізи</value></data>
+  <data name="UpdatesTitle" xml:space="preserve"><value>Оновлення</value></data>
+  <data name="GeneralIntro" xml:space="preserve"><value>Мова й те, що застосунок робить під час запуску комп'ютера.</value></data>
+  <data name="AppearanceIntro" xml:space="preserve"><value>Тема, кольори та шрифт, а також наскільки видно робочий стіл крізь вікна.</value></data>
+  <data name="BehaviorIntro" xml:space="preserve"><value>Як з'являються та зникають панель і швидкий віджет.</value></data>
+  <data name="RemindersIntro" xml:space="preserve"><value>Картки, що висуваються з пелюстки перед початком або кінцем події.</value></data>
+  <data name="UpdatesIntro" xml:space="preserve"><value>Перевірка раз на день у фоні. Ніщо тут не відволікає.</value></data>
+  <data name="UpdateChecking" xml:space="preserve"><value>Перевіряємо…</value></data>
+  <data name="UpdateUpToDate" xml:space="preserve"><value>У вас остання версія.</value></data>
+  <data name="UpdateAvailableFormat" xml:space="preserve"><value>Доступна версія {0}.</value></data>
+  <data name="UpdateSkippedFormat" xml:space="preserve"><value>Про версію {0} більше не нагадаємо.</value></data>
+  <data name="UpdateSkip" xml:space="preserve"><value>Пропустити</value></data>
+  <data name="UpdateOpen" xml:space="preserve"><value>Що нового</value></data>
+  <data name="UpdateCheckEnabled" xml:space="preserve"><value>Повідомляти про нові версії</value></data>
+  <data name="UpdateCheckHint" xml:space="preserve"><value>Раз на добу запитує GitHub. Про вас нічого не надсилається, ніщо вас не перериває, а пропущену версію більше не покажемо.</value></data>
+  <data name="UpdateCheckNow" xml:space="preserve"><value>Перевірити зараз</value></data>
+  <data name="PeekOfPlanned" xml:space="preserve"><value>із {0} за планом</value></data>
+  <data name="PeekUntilStart" xml:space="preserve"><value>до початку</value></data>
+  <data name="PeekAllGood" xml:space="preserve"><value>Усе під контролем</value></data>
+  <data name="PeekNotStarted" xml:space="preserve"><value>ще не розпочато</value></data>
+  <data name="PeekOverPlanned" xml:space="preserve"><value>{0} понад план</value></data>
+  <data name="HandleTooltipPanel" xml:space="preserve"><value>Ліва — панель</value></data>
+  <data name="HandleTooltipWidget" xml:space="preserve"><value>Права — віджет</value></data>
+  <data name="WidgetHideDelay" xml:space="preserve"><value>Затримка зникнення віджета</value></data>
+  <data name="WidgetHideDelayHint" xml:space="preserve"><value>Скільки віджет залишається на екрані після того, як вказівник його покинув. Відкривається правою кнопкою на пелюстці; ліва як і раніше відкриває панель.</value></data>
+  <data name="WidgetKeepOpen" xml:space="preserve"><value>Не ховати віджет автоматично</value></data>
+  <data name="WidgetKeepOpenHint" xml:space="preserve"><value>Швидкий віджет залишається на екрані, доки його не закриють — правою кнопкою на язичку біля краю або на самому віджеті. Нагадування й далі самі його показують і прибирають.</value></data>
+  <data name="MascotColor" xml:space="preserve"><value>Маскот віджета</value></data>
+  <data name="MascotColorDynamic" xml:space="preserve"><value>Слідувати кольору теми</value></data>
+  <data name="MascotColorHint" xml:space="preserve"><value>Створіння поруч із годинником у швидкому віджеті. Воно бере акцентний колір поточної теми, доки тут не обрано власний.</value></data>
+  <data name="MascotShow" xml:space="preserve"><value>Показувати маскота</value></data>
+  <data name="SelectEvents" xml:space="preserve"><value>Вибрати</value></data>
+  <data name="SelectAllEvents" xml:space="preserve"><value>Усі</value></data>
+  <data name="ClearSelectionAction" xml:space="preserve"><value>Зняти</value></data>
+  <data name="SelectionNone" xml:space="preserve"><value>Нічого не вибрано</value></data>
+  <data name="SelectionCount" xml:space="preserve"><value>Вибрано: {0} · {1}</value></data>
+  <data name="SelectionEmptyHint" xml:space="preserve"><value>Спершу позначте потрібні події.</value></data>
+  <data name="SelectEventAction" xml:space="preserve"><value>Виділити</value></data>
+  <data name="SelectionExit" xml:space="preserve"><value>Готово</value></data>
+  <data name="SelectionHint" xml:space="preserve"><value>Позначте події, щоб перенести або видалити їх разом.</value></data>
+  <data name="SelectionDeleteConfirm" xml:space="preserve"><value>Видалити {0}?</value></data>
+  <data name="SelectionDeleted" xml:space="preserve"><value>Видалено: {0}</value></data>
+  <data name="DeleteSelected" xml:space="preserve"><value>Видалити</value></data>
+  <data name="MoveEvent" xml:space="preserve"><value>Перенести…</value></data>
+  <data name="MoveSelected" xml:space="preserve"><value>Перенести</value></data>
+  <data name="MoveTitle" xml:space="preserve"><value>Перенесення подій</value></data>
+  <data name="MoveSubjectCount" xml:space="preserve"><value>Подій: {0}</value></data>
+  <data name="MoveModeTime" xml:space="preserve"><value>На час</value></data>
+  <data name="MoveModeDate" xml:space="preserve"><value>На дату</value></data>
+  <data name="MoveByHowMuch" xml:space="preserve"><value>Зсунути на</value></data>
+  <data name="MoveEarlier" xml:space="preserve"><value>Раніше</value></data>
+  <data name="MoveLater" xml:space="preserve"><value>Пізніше</value></data>
+  <data name="MovePreview" xml:space="preserve"><value>{0} — {1}, {2}</value></data>
+  <data name="MoveNothingToDo" xml:space="preserve"><value>Так нічого не зміниться.</value></data>
+  <data name="MoveCheck" xml:space="preserve"><value>Перевірити й перенести</value></data>
+  <data name="MoveApply" xml:space="preserve"><value>Перенести</value></data>
+  <data name="MoveAffects" xml:space="preserve"><value>Перенесення зачепить інші події</value></data>
+  <data name="MoveNoCollisions" xml:space="preserve"><value>Інші події не зачеплені.</value></data>
+  <data name="MoveCollisionSummary" xml:space="preserve"><value>Перетинів: {0}</value></data>
+  <data name="MoveConfirmClear" xml:space="preserve"><value>Переносимо {0}. Решта не зачеплена — {1}</value></data>
+  <data name="MoveConfirmWithCollisions" xml:space="preserve"><value>Перенесення ({0}) дасть перетини з іншими подіями ({1}). Усе одно перенести?</value></data>
+  <data name="MoveCompleted" xml:space="preserve"><value>Перенесено: {0}</value></data>
+  <data name="MoveCompletedWithCollisions" xml:space="preserve"><value>Перенесено: {0} · перетинів: {1}</value></data>
+  <data name="CollisionWithExisting" xml:space="preserve"><value>«{0}» накладеться на «{1}»</value></data>
+  <data name="CollisionWithinSelection" xml:space="preserve"><value>«{0}» і «{1}» накладуться одна на одну</value></data>
+  <data name="MoveNudgeMinusHour" xml:space="preserve"><value>−1 год</value></data>
+  <data name="MoveNudgeMinus15" xml:space="preserve"><value>−15 хв</value></data>
+  <data name="MoveNudgePlus15" xml:space="preserve"><value>+15 хв</value></data>
+  <data name="MoveNudgePlusHour" xml:space="preserve"><value>+1 год</value></data>
+  <data name="DragEventHint" xml:space="preserve"><value>Перетягніть подію на іншу годину або день, щоб перенести її.</value></data>
+  <data name="DayResultLabel" xml:space="preserve"><value>Підсумок дня</value></data>
+  <data name="DaySoFarLabel" xml:space="preserve"><value>День поки що</value></data>
+  <data name="DayAheadLabel" xml:space="preserve"><value>Попереду</value></data>
+  <data name="DayReviewTitle" xml:space="preserve"><value>Виконано {0} з {1}</value></data>
+  <data name="DayReviewMeta" xml:space="preserve"><value>{0} з {1} · {2}%</value></data>
+  <data name="DayReviewEmpty" xml:space="preserve"><value>Нічого не було заплановано</value></data>
+  <data name="DayReviewEmptyHint" xml:space="preserve"><value>У цьому дні немає подій.</value></data>
+  <data name="DayAheadTitle" xml:space="preserve"><value>{0} · {1}</value></data>
+  <data name="DayChipDone" xml:space="preserve"><value>{0} виконано</value></data>
+  <data name="DayChipPartial" xml:space="preserve"><value>{0} частково</value></data>
+  <data name="DayChipSkipped" xml:space="preserve"><value>{0} пропущено</value></data>
+  <data name="DayChipUnmarked" xml:space="preserve"><value>{0} без позначки</value></data>
+  <data name="DayChipUpcoming" xml:space="preserve"><value>{0} попереду</value></data>
+  <data name="PeekUnmarked" xml:space="preserve"><value>Без позначки: {0}</value></data>
+  <data name="PeekSkipped" xml:space="preserve"><value>Пропущено: {0}</value></data>
+  <data name="PeekPartial" xml:space="preserve"><value>Частково: {0}</value></data>
+  <data name="PeekDayDone" xml:space="preserve"><value>День закрито · {0} виконано</value></data>
+  <data name="PeekDaySummary" xml:space="preserve"><value>Виконано {0} з {1}</value></data>
+  <data name="TrackRunning" xml:space="preserve"><value>Триває</value></data>
+  <data name="RangeDetailDays" xml:space="preserve"><value>останні {0} днів</value></data>
+  <data name="RangeDetailWeeks" xml:space="preserve"><value>останні {0} тижнів</value></data>
+  <data name="RangeDetailCalendarWeek" xml:space="preserve"><value>календарний тиждень · пн–нд</value></data>
+  <data name="RangeDetailCalendarMonth" xml:space="preserve"><value>календарний місяць · від першого до останнього дня</value></data>
+  <data name="RangeDetailCalendarQuarter" xml:space="preserve"><value>3 повні календарні місяці</value></data>
+  <data name="RangePickerTooltip" xml:space="preserve"><value>Відображуваний період</value></data>
+  <data name="AnalyticsCurrentWeek" xml:space="preserve"><value>Поточний тиждень</value></data>
+  <data name="AnalyticsPreviousWeek" xml:space="preserve"><value>Попередній тиждень</value></data>
+  <data name="AnalyticsNextWeek" xml:space="preserve"><value>Наступний тиждень</value></data>
+  <data name="ChartPerDay" xml:space="preserve"><value>за день</value></data>
+  <data name="ChartPerWeek" xml:space="preserve"><value>за тиждень</value></data>
+  <data name="ChartTotal" xml:space="preserve"><value>усього</value></data>
+  <data name="EventsCountOne" xml:space="preserve"><value>{0} подія</value></data>
+  <data name="EventsCountFew" xml:space="preserve"><value>{0} події</value></data>
+  <data name="EventsCountMany" xml:space="preserve"><value>{0} подій</value></data>
+  <data name="ChartWeeklyLoad" xml:space="preserve"><value>По тижнях</value></data>
+  <data name="ShiftMoreOptions" xml:space="preserve"><value>Більше варіантів</value></data>
+  <data name="ShiftDays" xml:space="preserve"><value>Дні</value></data>
+  <data name="ShiftOnDate" xml:space="preserve"><value>На дату</value></data>
+  <data name="ShiftDayDateConfirmation" xml:space="preserve"><value>Перенести всі події {0} на {1}?</value></data>
+  <data name="VisionUnsupported" xml:space="preserve"><value>Ця модель не має кодувальника зображень, тому введення зображень для неї не працює. Оберіть модель із позначкою «Зображення».</value></data>
+  <data name="VisionReady" xml:space="preserve"><value>Введення зображень готове. Прикріпіть картинку й запитайте про неї.</value></data>
+  <data name="VisionNeedsProjector" xml:space="preserve"><value>Проєктор для цієї моделі ще не завантажено. Скористайтеся кнопкою вище.</value></data>
+  <data name="VisionNeedsCustomProjector" xml:space="preserve"><value>Оберіть нижче файл mmproj цієї моделі, інакше введення зображень не працюватиме.</value></data>
+  <data name="VisionBadge" xml:space="preserve"><value>Зображення</value></data>
+  <data name="CustomWeightsTitle" xml:space="preserve"><value>Файл моделі · GGUF</value></data>
+  <data name="CustomWeightsHint" xml:space="preserve"><value>Сама модель: усе, що вона знає, і все, що вона вміє писати. Обовʼязковий файл.</value></data>
+  <data name="CustomProjectorTitle" xml:space="preserve"><value>Проєктор зображень · mmproj</value></data>
+  <data name="CustomProjectorHint" xml:space="preserve"><value>Другий, значно менший файл, що перетворює картинку на те, що модель вище може прочитати. Потрібен лише для зображень і лише той mmproj, який іде саме з цією моделлю.</value></data>
+  <data name="CustomFileMissing" xml:space="preserve"><value>Не обрано</value></data>
+  <data name="McpEndpointHint" xml:space="preserve"><value>Власна адреса MCP-сервера. Вона відокремлена від адреси API: коли одну адресу приймали за іншу, перед кожним повідомленням відбувалася приречена на невдачу спроба з’єднання.</value></data>
+  <data name="AdvancedMcpNotice" xml:space="preserve"><value>MCP-міст відповідає сам, тому нічого з цього до нього не доходить. Щоб налаштовувати запити, перемкніться на локальну модель або API.</value></data>
+  <data name="ParamGroupSampling" xml:space="preserve"><value>Як пишеться відповідь</value></data>
+  <data name="ParamGroupBudget" xml:space="preserve"><value>Наскільки далеко можна зайти</value></data>
+  <data name="ParamGroupStanding" xml:space="preserve"><value>Для кожної розмови</value></data>
+  <data name="AiActionSetTaskStatus" xml:space="preserve"><value>Змінити статус завдання</value></data>
+  <data name="AiActionCreateFocusBlock" xml:space="preserve"><value>Зарезервувати час на роботу</value></data>
+  <data name="StageToolSearch" xml:space="preserve"><value>Шукаю в розкладі…</value></data>
+  <data name="TaskStatusInbox" xml:space="preserve"><value>Вхідні</value></data>
+  <data name="TaskStatusReady" xml:space="preserve"><value>Готове до роботи</value></data>
+  <data name="TaskStatusScheduled" xml:space="preserve"><value>Заплановане</value></data>
+  <data name="TaskStatusInProgress" xml:space="preserve"><value>У роботі</value></data>
+  <data name="TaskStatusDone" xml:space="preserve"><value>Виконане</value></data>
+  <data name="TaskStatusCancelled" xml:space="preserve"><value>Скасоване</value></data>
+  <data name="AiAccessConfirmAllShort" xml:space="preserve"><value>Питати</value></data>
+  <data name="AiAccessAutoSafeShort" xml:space="preserve"><value>Безпечно</value></data>
+  <data name="AiAccessFullShort" xml:space="preserve"><value>Повний</value></data>
+  <data name="SnapStep" xml:space="preserve"><value>{0} хв</value></data>
+  <data name="Reminders" xml:space="preserve"><value>Нагадування</value></data>
+  <data name="NotificationsEnabled" xml:space="preserve"><value>Показувати нагадування</value></data>
+  <data name="NotificationsEnabledHint" xml:space="preserve"><value>Картка у швидкому віджеті біля пелюстки, перед початком або кінцем події. Системі нічого не передається.</value></data>
+  <data name="NotificationSound" xml:space="preserve"><value>Звук нагадування</value></data>
+  <data name="NotificationSoundHint" xml:space="preserve"><value>Лунає сигнал, вибраний у налаштуваннях системи; тихіше, якщо віджет уже відкрито.</value></data>
+  <data name="NotificationsOffHint" xml:space="preserve"><value>Нагадування вимкнені.</value></data>
+  <data name="NotificationDismissAll" xml:space="preserve"><value>Прибрати всі</value></data>
+  <data name="DoNotDisturb" xml:space="preserve"><value>Не турбувати</value></data>
+  <data name="DoNotDisturbUntil" xml:space="preserve"><value>Тиша до {0}</value></data>
+  <data name="DoNotDisturbEnd" xml:space="preserve"><value>Вимкнути режим тиші</value></data>
+  <data name="DoNotDisturbOffHint" xml:space="preserve"><value>Нагадування приходять вчасно.</value></data>
+  <data name="DoNotDisturbOffShort" xml:space="preserve"><value>Вимк.</value></data>
+  <data name="DoNotDisturbUntilResumedHint" xml:space="preserve"><value>Тиша, доки ви не увімкнете знову.</value></data>
+  <data name="DoNotDisturbLength" xml:space="preserve"><value>На який час</value></data>
+  <data name="QuietLengthMinutes" xml:space="preserve"><value>{0} хв</value></data>
+  <data name="QuietLengthHours" xml:space="preserve"><value>{0} год</value></data>
+  <data name="QuietLengthUntilResumed" xml:space="preserve"><value>Поки не увімкну знову</value></data>
+  <data name="FocusMode" xml:space="preserve"><value>Режим фокуса</value></data>
+  <data name="FocusModeIntro" xml:space="preserve"><value>Поки гра — чи будь-що інше — займає весь екран, оболонка відходить убік: відпускає глобальні сполучення клавіш, щоб вони доходили до того, що зараз перед вами, і притримує нагадування, доки екран знову не стане вашим.</value></data>
+  <data name="FocusModeManualOnlyHint" xml:space="preserve"><value>Це середовище не повідомляє, що ще на екрані, тож само воно нічого не помітить. Тут режим фокуса працює, якщо увімкнути його вручну.</value></data>
+  <data name="FocusModeAuto" xml:space="preserve"><value>Помічати повноекранні застосунки</value></data>
+  <data name="FocusModeHold" xml:space="preserve"><value>Тримати увімкненим</value></data>
+  <data name="FocusModeHoldHint" xml:space="preserve"><value>Лишається увімкненим незалежно від того, що на екрані, доки його не вимкнуть. Після перезапуску не зберігається.</value></data>
+  <data name="FocusModeReleaseShortcuts" xml:space="preserve"><value>Відпускати сполучення клавіш</value></data>
+  <data name="FocusModeReleaseShortcutsHint" xml:space="preserve"><value>Сполучення, яке утримує застосунок, гра не отримує взагалі. Усередині вікон DAYDRIVE вони працюють і далі.</value></data>
+  <data name="FocusModeHoldReminders" xml:space="preserve"><value>Притримувати нагадування</value></data>
+  <data name="FocusModeHoldRemindersHint" xml:space="preserve"><value>Поверх екрана нічого не малюється. Усе, що встигло настати, приходить разом, щойно режим фокуса вимкнеться, — нічого не губиться.</value></data>
+  <data name="FocusModeHideHandle" xml:space="preserve"><value>Прибирати смужку з краю екрана</value></data>
+  <data name="FocusModeHideHandleHint" xml:space="preserve"><value>Смужка біля правого краю перестає ловити натискання. Значок у треї так само відкриває оболонку, а смужка повертається, щойно режим фокуса вимкнеться.</value></data>
+  <data name="FocusModeIdleHint" xml:space="preserve"><value>Весь екран зараз ніхто не займає. Сполучення клавіш зайняті, нагадування приходять.</value></data>
+  <data name="FocusModeOffHint" xml:space="preserve"><value>Оболонка поводиться однаково, хай що буде на екрані.</value></data>
+  <data name="FocusModeHeldHint" xml:space="preserve"><value>Увімкнено вручну.</value></data>
+  <data name="FocusModeAppHint" xml:space="preserve"><value>Екран зайнято: {0}.</value></data>
+  <data name="FocusModeAnonHint" xml:space="preserve"><value>Весь екран зайнято іншим застосунком.</value></data>
+  <data name="FocusModePresentingHint" xml:space="preserve"><value>Увімкнено режим презентації.</value></data>
+  <data name="FocusModeOnShort" xml:space="preserve"><value>Увімк.</value></data>
+  <data name="FocusModeHeldTitle" xml:space="preserve"><value>Поки екран був зайнятий</value></data>
+  <data name="ShortcutsFocusHeld" xml:space="preserve"><value>Режим фокуса поки відпустив їх — весь екран зайнято іншим застосунком. Усередині вікон DAYDRIVE вони працюють.</value></data>
+  <data name="LocalModelGpu" xml:space="preserve"><value>Використовувати відеокарту</value></data>
+  <data name="LocalModelGpuOnHint" xml:space="preserve"><value>Поряд із процесорною збіркою рушія встановлюється збірка для відеокарти, і на неї переноситься все, що вміщується. При зміні модель перезапускається.</value></data>
+  <data name="LocalModelGpuOffHint" xml:space="preserve"><value>Модель працює лише на процесорі. Повільніше, зате відеокарта лишається вільною.</value></data>
+  <data name="GpuLabel" xml:space="preserve"><value>GPU</value></data>
+  <data name="CpuOnlyLabel" xml:space="preserve"><value>CPU</value></data>
+  <data name="VramLabel" xml:space="preserve"><value>VRAM</value></data>
+  <data name="GpuOffloadDetail" xml:space="preserve"><value>{0} · {1} з {2} шарів на відеокарті</value></data>
+  <data name="CpuOnlyDetail" xml:space="preserve"><value>Працює на процесорі</value></data>
+  <data name="ResourceOfTotal" xml:space="preserve"><value>з {0} у системі</value></data>
+  <data name="ResourceNotInUse" xml:space="preserve"><value>не використовується</value></data>
+  <data name="ResourceUnavailable" xml:space="preserve"><value>—</value></data>
+  <data name="StageLoadingModel" xml:space="preserve"><value>Завантажую модель…</value></data>
+  <data name="TrackPause" xml:space="preserve"><value>Pause</value></data>
+  <data name="TrackResume" xml:space="preserve"><value>Resume</value></data>
+  <data name="TrackStop" xml:space="preserve"><value>Stop</value></data>
+  <data name="TrackPaused" xml:space="preserve"><value>Paused</value></data>
+  <data name="TrackWorked" xml:space="preserve"><value>Worked</value></data>
+  <data name="TrackPausedFor" xml:space="preserve"><value>{0} paused</value></data>
+  <data name="TrackPlanActual" xml:space="preserve"><value>plan {0} · actual {1}</value></data>
+  <data name="TrackOverPlan" xml:space="preserve"><value>{0} over plan</value></data>
+  <data name="TrackUnderPlan" xml:space="preserve"><value>{0} left of the plan</value></data>
+  <data name="TrackedPartialProgress" xml:space="preserve"><value>partly · {0}% · {1}</value></data>
+  <data name="SessionTimerTooltip" xml:space="preserve"><value>Work time. Pauses are counted separately and never added to it.</value></data>
+  <data name="PausePromptTitle" xml:space="preserve"><value>Still on this?</value></data>
+  <data name="PausePromptBody" xml:space="preserve"><value>Paused for {0}.</value></data>
+  <data name="PausePromptResume" xml:space="preserve"><value>Keep going</value></data>
+  <data name="PausePromptFinish" xml:space="preserve"><value>End session</value></data>
+  <data name="SessionResultTitle" xml:space="preserve"><value>How did it go?</value></data>
+  <data name="SessionResultDone" xml:space="preserve"><value>Done</value></data>
+  <data name="SessionResultPartial" xml:space="preserve"><value>Partly</value></data>
+  <data name="SessionResultMissed" xml:space="preserve"><value>Not done</value></data>
+  <data name="SessionMeasured" xml:space="preserve"><value>Worked {0} of {1} planned</value></data>
+  <data name="SessionMeasuredNoPlan" xml:space="preserve"><value>Worked {0}</value></data>
+  <data name="SessionProgressTitle" xml:space="preserve"><value>How far did it get?</value></data>
+  <data name="SessionNextStepTitle" xml:space="preserve"><value>What's left?</value></data>
+  <data name="SessionNextStepPlaceholder" xml:space="preserve"><value>Recheck the last three screens</value></data>
+  <data name="SessionSave" xml:space="preserve"><value>Save</value></data>
+  <data name="SessionLater" xml:space="preserve"><value>Not now</value></data>
+  <data name="NextStepChip" xml:space="preserve"><value>Next: {0}</value></data>
+  <data name="NextStepTooltip" xml:space="preserve"><value>Where to pick this up. Set when the event was left part-done.</value></data>
+  <data name="ChatWrapUp" xml:space="preserve"><value>Day wrap-up</value></data>
+  <data name="WrapUpTitle" xml:space="preserve"><value>Wrap up the day</value></data>
+  <data name="WrapUpHint" xml:space="preserve"><value>Усе, що завершилося без результату — сьогодні й за минулі тижні.</value></data>
+  <data name="WrapUpCount" xml:space="preserve"><value>{0} without a result</value></data>
+  <data name="WrapUpEmpty" xml:space="preserve"><value>Nothing left to answer for</value></data>
+  <data name="WrapUpEmptyHint" xml:space="preserve"><value>Кожна завершена подія має результат.</value></data>
+  <data name="WrapUpDone" xml:space="preserve"><value>Done</value></data>
+  <data name="WrapUpMove" xml:space="preserve"><value>Move</value></data>
+  <data name="WrapUpSkip" xml:space="preserve"><value>Skip</value></data>
+  <data name="WrapUpMoveTooltip" xml:space="preserve"><value>Move to tomorrow, same time</value></data>
+  <data name="WrapUpAcceptAll" xml:space="preserve"><value>Accept all suggestions</value></data>
+  <data name="WrapUpHadActivity" xml:space="preserve"><value>timer ran {0}</value></data>
+  <data name="WrapUpNeverStarted" xml:space="preserve"><value>never started</value></data>
+  <data name="WrapUpSuggestion" xml:space="preserve"><value>suggested: {0}</value></data>
+  <data name="WrapUpResolvedDone" xml:space="preserve"><value>Marked done</value></data>
+  <data name="WrapUpResolvedSkipped" xml:space="preserve"><value>Skipped</value></data>
+  <data name="WrapUpResolvedMoved" xml:space="preserve"><value>Moved to {0}</value></data>
+  <data name="WrapUpOffer" xml:space="preserve"><value>{0} of today's events have no result yet.</value></data>
+  <data name="WrapUpOpen" xml:space="preserve"><value>Wrap up</value></data>
+  <data name="WrapUpLater" xml:space="preserve"><value>Later</value></data>
+  <data name="WrapUpBadge" xml:space="preserve"><value>{0}</value></data>
+  <data name="BlockerTitle" xml:space="preserve"><value>Moved {0} times now. What is in the way?</value></data>
+  <data name="BlockerNotEnoughTime" xml:space="preserve"><value>Not enough time</value></data>
+  <data name="BlockerTooBig" xml:space="preserve"><value>Too big</value></data>
+  <data name="BlockerUnclearStart" xml:space="preserve"><value>Unclear where to start</value></data>
+  <data name="BlockerNotRelevant" xml:space="preserve"><value>No longer relevant</value></data>
+  <data name="BlockerShorten" xml:space="preserve"><value>Make it shorter</value></data>
+  <data name="BlockerShortenHint" xml:space="preserve"><value>Halve the slot, to {0}.</value></data>
+  <data name="BlockerFirstStep" xml:space="preserve"><value>Give it a first step</value></data>
+  <data name="BlockerDrop" xml:space="preserve"><value>Drop it</value></data>
+  <data name="BlockerDropHint" xml:space="preserve"><value>Take it off the calendar.</value></data>
+  <data name="BlockerNoted" xml:space="preserve"><value>Noted.</value></data>
+  <data name="TrackedPausedAt" xml:space="preserve"><value>paused - {0} worked</value></data>
+  <data name="BlockerEarlier" xml:space="preserve"><value>Move it earlier</value></data>
+  <data name="BlockerEarlierHint" xml:space="preserve"><value>Put it first thing, at {0}, before the day fills up.</value></data>
+  <data name="MonitorPanel" xml:space="preserve"><value>Моніторинг</value></data>
+  <data name="MonitorIdle" xml:space="preserve"><value>Не розпочато</value></data>
+  <data name="NextStepCardTitle" xml:space="preserve"><value>Що залишилось</value></data>
+  <data name="NextStepFold" xml:space="preserve"><value>Згорнути нотатку</value></data>
+  <data name="NextStepUnfold" xml:space="preserve"><value>Показати нотатку</value></data>
+  <data name="NextStepCollapse" xml:space="preserve"><value>Згорнути список</value></data>
+  <data name="NextStepExpand" xml:space="preserve"><value>Розгорнути список</value></data>
+  <data name="SessionDismiss" xml:space="preserve"><value>Відхилити</value></data>
+  <data name="SessionNextStepAdd" xml:space="preserve"><value>Додати рядок</value></data>
+  <data name="SessionNextStepAddHint" xml:space="preserve"><value>enter — ще один</value></data>
+  <data name="SessionNextStepRemove" xml:space="preserve"><value>Прибрати зі списку</value></data>
+  <data name="Shortcuts" xml:space="preserve"><value>Гарячі клавіші</value></data>
+  <data name="ShortcutsIntro" xml:space="preserve"><value>Працюють із будь-якої програми. Натисніть сполучення, щоб перепризначити; Escape скасовує, Backspace вимикає.</value></data>
+  <data name="ShortcutsWindowOnlyIntro" xml:space="preserve"><value>Працюють, поки вікно DAYDRIVE у фокусі. Перехоплення клавіш на всю систему поки лише у Windows; у macOS і Wayland призначте їх у налаштуваннях системи або композитора.</value></data>
+  <data name="ShortcutsReset" xml:space="preserve"><value>Повернути типові значення</value></data>
+  <data name="ShortcutResetOne" xml:space="preserve"><value>Повернути типове</value></data>
+  <data name="ShortcutRebind" xml:space="preserve"><value>Натисніть, щоб перепризначити</value></data>
+  <data name="ShortcutPressKeys" xml:space="preserve"><value>Натисніть клавіші…</value></data>
+  <data name="ShortcutClash" xml:space="preserve"><value>Це сполучення вже зайняте іншою дією</value></data>
+  <data name="ShortcutRefused" xml:space="preserve"><value>Ці клавіші займає інша програма</value></data>
+  <data name="ShortcutOff" xml:space="preserve"><value>Вимк.</value></data>
+  <data name="ShortcutToggleShell" xml:space="preserve"><value>Показати або сховати планувальник</value></data>
+  <data name="ShortcutToggleWidget" xml:space="preserve"><value>Показати або сховати міні-віджет</value></data>
+  <data name="ShortcutToggleAssistant" xml:space="preserve"><value>Відкрити асистента</value></data>
+  <data name="ShortcutStartOrPauseSession" xml:space="preserve"><value>Запустити або призупинити сесію</value></data>
+  <data name="ShortcutStopSession" xml:space="preserve"><value>Зупинити сесію</value></data>
+  <data name="ShortcutToggleDoNotDisturb" xml:space="preserve"><value>Режим «не турбувати»</value></data>
+  <data name="CloudStateOk" xml:space="preserve"><value>Усе синхронізовано</value></data>
+  <data name="CloudStateOkHint" xml:space="preserve"><value>Перевірено {0}. На цьому комп’ютері й у хмарі однакові дані.</value></data>
+  <data name="CloudStatePending" xml:space="preserve"><value>Є зміни, яких ще немає в хмарі</value></data>
+  <data name="CloudStatePendingAuto" xml:space="preserve"><value>Вони надішлються самі близько {0} — або натисніть «Синхронізувати».</value></data>
+  <data name="CloudStatePendingManual" xml:space="preserve"><value>Автосинхронізацію вимкнено — натисніть «Синхронізувати», щоб надіслати їх.</value></data>
+  <data name="CloudStateNever" xml:space="preserve"><value>Ще нічого не синхронізовано</value></data>
+  <data name="CloudStateNeverHint" xml:space="preserve"><value>Натисніть «Синхронізувати», щоб надіслати в хмару першу копію.</value></data>
+  <data name="CloudStateSyncing" xml:space="preserve"><value>Синхронізація…</value></data>
+  <data name="CloudStateSyncingHint" xml:space="preserve"><value>Порівнюємо цей комп’ютер із копією в хмарі.</value></data>
+  <data name="CloudStateFailed" xml:space="preserve"><value>Остання синхронізація не вдалася</value></data>
+  <data name="CloudStateRetryAuto" xml:space="preserve"><value>Наступна спроба близько {0}.</value></data>
+  <data name="CloudStateSetup" xml:space="preserve"><value>Налаштування не завершено</value></data>
+  <data name="CloudStateRestart" xml:space="preserve"><value>Копія з хмари готова</value></data>
+  <data name="CloudRestartNow" xml:space="preserve"><value>Перезапустити DAYDRIVE</value></data>
+  <data name="CloudRestartFailed" xml:space="preserve"><value>DAYDRIVE не зміг перезапуститися сам. Вийдіть через значок у треї та відкрийте його знову.</value></data>
+  <data name="CloudFactLastSync" xml:space="preserve"><value>Остання синхронізація</value></data>
+  <data name="CloudFactCloudCopy" xml:space="preserve"><value>У хмарі</value></data>
+  <data name="CloudFactThisComputer" xml:space="preserve"><value>Цей комп’ютер</value></data>
+  <data name="CloudFactAutomatic" xml:space="preserve"><value>Автоматично</value></data>
+  <data name="CloudFactNever" xml:space="preserve"><value>ще не було</value></data>
+  <data name="CloudFactRemoteUnknown" xml:space="preserve"><value>ще не перевіряли</value></data>
+  <data name="CloudFactLocalClean" xml:space="preserve"><value>нових змін немає</value></data>
+  <data name="CloudFactLocalChanged" xml:space="preserve"><value>є нові зміни</value></data>
+  <data name="CloudFactLocalChangedSince" xml:space="preserve"><value>є нові зміни, остання — {0}</value></data>
+  <data name="CloudFactScheduleAuto" xml:space="preserve"><value>під час запуску, кожні 15 хвилин і під час виходу · наступна близько {0}</value></data>
+  <data name="CloudFactScheduleManual" xml:space="preserve"><value>вимкнено, лише кнопкою «Синхронізувати»</value></data>
+  <data name="CloudJournalTitle" xml:space="preserve"><value>Історія</value></data>
+  <data name="CloudLogUploaded" xml:space="preserve"><value>Надіслано в хмару · {0}</value></data>
+  <data name="CloudLogDownloaded" xml:space="preserve"><value>Завантажено копію з хмари</value></data>
+  <data name="CloudLogDownloadedFrom" xml:space="preserve"><value>Завантажено копію з комп’ютера «{0}»</value></data>
+  <data name="CloudLogApplied" xml:space="preserve"><value>Завантажену копію застосовано</value></data>
+  <data name="CloudLogUpToDate" xml:space="preserve"><value>Перевірено, синхронізувати нічого</value></data>
+  <data name="CloudLogConflict" xml:space="preserve"><value>Змінилися обидві копії — чекаємо на ваш вибір</value></data>
+  <data name="CloudLogConnected" xml:space="preserve"><value>Акаунт Google підключено</value></data>
+  <data name="CloudLogConnectedAs" xml:space="preserve"><value>Підключено: {0}</value></data>
+  <data name="CloudLogDisconnected" xml:space="preserve"><value>Акаунт Google відключено</value></data>
+  <data name="CloudLogFailed" xml:space="preserve"><value>Не синхронізовано: {0}</value></data>
+  <data name="CloudTriggerManual" xml:space="preserve"><value>вручну</value></data>
+  <data name="CloudTriggerAutomatic" xml:space="preserve"><value>автоматично</value></data>
+  <data name="CloudTriggerStartup" xml:space="preserve"><value>під час запуску</value></data>
+  <data name="CloudTriggerExit" xml:space="preserve"><value>під час виходу</value></data>
+  <data name="CloudJustNow" xml:space="preserve"><value>щойно</value></data>
+  <data name="CloudTodayAt" xml:space="preserve"><value>сьогодні о {0}</value></data>
+  <data name="CloudYesterdayAt" xml:space="preserve"><value>учора о {0}</value></data>
+  <data name="CloudDateAt" xml:space="preserve"><value>{0} о {1}</value></data>
+  <data name="CloudIssueOff" xml:space="preserve"><value>Виберіть, куди синхронізувати.</value></data>
+  <data name="CloudIssueFolderNotChosen" xml:space="preserve"><value>Вкажіть папку, яку синхронізує ваш хмарний застосунок.</value></data>
+  <data name="CloudIssueFolderMissing" xml:space="preserve"><value>Папку синхронізації не знайдено. Можливо, диск відключено або папку переміщено.</value></data>
+  <data name="CloudIssueFolderNotWritable" xml:space="preserve"><value>DAYDRIVE не може записати в папку синхронізації. Перевірте права доступу.</value></data>
+  <data name="CloudIssueGoogleClientIdMissing" xml:space="preserve"><value>Вставте Client ID із Google Cloud Console.</value></data>
+  <data name="CloudIssueGoogleClientSecretMissing" xml:space="preserve"><value>Вставте також Client secret — Google вимагає його для клієнтів типу «Desktop app».</value></data>
+  <data name="CloudIssueGoogleNotConnected" xml:space="preserve"><value>Натисніть «Підключити акаунт Google», щоб завершити налаштування.</value></data>
+  <data name="CloudIssueGoogleReconnect" xml:space="preserve"><value>Google більше не приймає збережений вхід: доступ відкликано або він сплив. Підключіть акаунт знову.</value></data>
+  <data name="CloudIssueGoogleClientRejected" xml:space="preserve"><value>Google відхилив Client ID або Client secret. Перевірте, що тип клієнта — «Desktop app» і що секрет саме від цього клієнта.</value></data>
+  <data name="CloudIssueGoogleDriveApiDisabled" xml:space="preserve"><value>У вашому проєкті Google Cloud не ввімкнено Google Drive API. Увімкніть його, зачекайте хвилину та спробуйте знову.</value></data>
+  <data name="CloudIssueGoogleScopeMissing" xml:space="preserve"><value>Під час входу не було дозволено доступ до Google Диска. Підключіться знову й поставте позначку Google Диска.</value></data>
+  <data name="CloudIssueSignInCancelled" xml:space="preserve"><value>Вхід скасовано.</value></data>
+  <data name="CloudIssueSignInTimedOut" xml:space="preserve"><value>Вхід не завершено за 5 хвилин. Спробуйте ще раз.</value></data>
+  <data name="CloudIssueOffline" xml:space="preserve"><value>Не вдалося зв’язатися з хмарою. Перевірте підключення до інтернету.</value></data>
+  <data name="CloudIssueInterrupted" xml:space="preserve"><value>Синхронізацію перервано до завершення.</value></data>
+  <data name="CloudIssueBusy" xml:space="preserve"><value>Синхронізація вже триває.</value></data>
+  <data name="CloudIssueNothingInCloud" xml:space="preserve"><value>У хмарі поки нічого немає.</value></data>
+  <data name="CloudIssueNotADatabase" xml:space="preserve"><value>Файл у хмарі — не дані DAYDRIVE. Нічого не змінено.</value></data>
+  <data name="CloudIssueUnexpected" xml:space="preserve"><value>Непередбачена помилка: {0}</value></data>
+  <data name="CloudGoogleConnectedNoEmail" xml:space="preserve"><value>Акаунт Google підключено</value></data>
+  <data name="CloudGoogleSecretSaved" xml:space="preserve"><value>Client secret збережено</value></data>
+  <data name="CloudTrayLabel" xml:space="preserve"><value>Хмарна синхронізація</value></data>
+  <data name="CloudTrayOk" xml:space="preserve"><value>синхронізовано {0}</value></data>
+  <data name="CloudTrayPending" xml:space="preserve"><value>є зміни</value></data>
+  <data name="CloudTraySyncing" xml:space="preserve"><value>синхронізація…</value></data>
+  <data name="CloudTrayError" xml:space="preserve"><value>помилка синхронізації</value></data>
+  <data name="CloudTrayAttention" xml:space="preserve"><value>потрібне ваше рішення</value></data>
+  <data name="CloudStatusBarFailed" xml:space="preserve"><value>Хмарна синхронізація не вдалася: {0}</value></data>
+  <data name="LocalQuantNote" xml:space="preserve"><value>Усі моделі — у варіанті Q5_K_M: майже повна якість за розміру, з яким упорається звичайний комп’ютер.</value></data>
+  <data name="LocalModelLegacyFiles" xml:space="preserve"><value>Файли старих варіантів моделей ({0}) більше не використовуються й займають {1}.</value></data>
+  <data name="LocalModelLegacyDelete" xml:space="preserve"><value>Видалити</value></data>
+  <data name="LocalModelLegacyDeleted" xml:space="preserve"><value>Старі файли моделей видалено, звільнено {0}.</value></data>
+  <data name="LocalHardwareTitle" xml:space="preserve"><value>Цей комп’ютер</value></data>
+  <data name="LocalHardwareHint" xml:space="preserve"><value>Що DAYDRIVE знайшов у комп’ютері і як через це працюватиме модель.</value></data>
+  <data name="LocalHardwareRescan" xml:space="preserve"><value>Перевірити знову</value></data>
+  <data name="LocalHardwareCpu" xml:space="preserve"><value>Процесор</value></data>
+  <data name="LocalHardwareMemory" xml:space="preserve"><value>Пам’ять</value></data>
+  <data name="LocalHardwareGpu" xml:space="preserve"><value>Відеокарта</value></data>
+  <data name="LocalHardwareCpuValue" xml:space="preserve"><value>ядер: {0} · потоків: {1}</value></data>
+  <data name="LocalHardwareCpuHybrid" xml:space="preserve"><value>продуктивних ядер: {0}, енергоефективних: {1} · потоків: {2}</value></data>
+  <data name="LocalHardwareCpuThreads" xml:space="preserve"><value>потоків: {0}</value></data>
+  <data name="LocalHardwareMemoryValue" xml:space="preserve"><value>{0} · зараз вільно {1}</value></data>
+  <data name="LocalHardwareGpuValue" xml:space="preserve"><value>{0} · {1}</value></data>
+  <data name="LocalHardwareGpuFree" xml:space="preserve"><value>{0} · {1}, вільно {2}</value></data>
+  <data name="LocalHardwareGpuIntegrated" xml:space="preserve"><value>лише вбудована графіка ({0}) — для моделі вона не використовується</value></data>
+  <data name="LocalHardwareGpuNone" xml:space="preserve"><value>окремої відеокарти немає</value></data>
+  <data name="LocalHardwareUnknown" xml:space="preserve"><value>не вдалося визначити</value></data>
+  <data name="LocalHardwareDetecting" xml:space="preserve"><value>Перевіряємо комп’ютер…</value></data>
+  <data name="LocalTuneFullGpu" xml:space="preserve"><value>Модель повністю вміщується у відеокарту</value></data>
+  <data name="LocalTuneSplit" xml:space="preserve"><value>Близько {0}% моделі — на відеокарті, решта — на процесорі</value></data>
+  <data name="LocalTuneCpu" xml:space="preserve"><value>Відеокарта замала, щоб допомогти, тому модель працює на процесорі</value></data>
+  <data name="LocalTuneCpuNoCard" xml:space="preserve"><value>Модель працює на процесорі</value></data>
+  <data name="LocalTuneSummary" xml:space="preserve"><value>Контекст (токени): {0} · потоки: {1} · відповідь: до {2} токенів · у пам’яті останніх повідомлень: {3}</value></data>
+  <data name="LocalTuneWarnMemory" xml:space="preserve"><value>Моделі потрібно близько {0}, а вільно лише близько {1}. Вона працюватиме повільно й може гальмувати інші програми — допоможе закрити зайві програми або вибрати меншу модель.</value></data>
+  <data name="LocalTuneManual" xml:space="preserve"><value>Автопідбір вимкнено: це лише рекомендація, а використовуються значення, задані нижче.</value></data>
+  <data name="LocalAutoTune" xml:space="preserve"><value>Добирати параметри під цей комп’ютер автоматично</value></data>
+  <data name="LocalAutoTuneHint" xml:space="preserve"><value>Перераховується при зміні моделі чи заліза. Вимкніть, щоб задати значення самостійно.</value></data>
+  <data name="ParamsForLocal" xml:space="preserve"><value>Ці значення стосуються лише локальної моделі — в API свої.</value></data>
+  <data name="ParamsForApi" xml:space="preserve"><value>Ці значення надсилаються лише в запитах до API — у локальної моделі свої.</value></data>
+  <data name="ParamsAutoBudget" xml:space="preserve"><value>Довжину відповіді, обсяг історії та час очікування підібрано під цей комп’ютер. Щоб змінити їх, вимкніть автопідбір вище.</value></data>
+  <data name="StepsCountOne" xml:space="preserve"><value>{0} крок</value></data>
+  <data name="StepsCountFew" xml:space="preserve"><value>{0} кроки</value></data>
+  <data name="StepsCountMany" xml:space="preserve"><value>{0} кроків</value></data>
+  <data name="ProjectProgress" xml:space="preserve"><value>Готово {0} з {1} · {2} з {3}</value></data>
+  <data name="ProjectNoStepsYet" xml:space="preserve"><value>Кроків поки немає. Впишіть перший нижче, потім задайте йому тривалість і день.</value></data>
+  <data name="ProjectNextChip" xml:space="preserve"><value>далі: {0}</value></data>
+  <data name="StepAfterDeadline" xml:space="preserve"><value>після терміну</value></data>
+  <data name="NewStepPlaceholder" xml:space="preserve"><value>Новий крок…</value></data>
+  <data name="StepNoDay" xml:space="preserve"><value>Без дня</value></data>
+  <data name="StepSchedule" xml:space="preserve"><value>призначити час</value></data>
+  <data name="StepScheduleTooltip" xml:space="preserve"><value>Поставити крок у розклад на конкретний час</value></data>
+  <data name="StepScheduleHeading" xml:space="preserve"><value>Час для кроку проєкту</value></data>
+  <data name="StepMoveDay" xml:space="preserve"><value>Перенести на інший день</value></data>
+  <data name="StepDurationTooltip" xml:space="preserve"><value>Скільки часу займе крок</value></data>
+  <data name="StepOpenEvent" xml:space="preserve"><value>Показати в дні</value></data>
+  <data name="StepDelete" xml:space="preserve"><value>Видалити крок</value></data>
+  <data name="StepRenameHint" xml:space="preserve"><value>Натисніть, щоб перейменувати</value></data>
+  <data name="StepToggleDone" xml:space="preserve"><value>Позначити виконаним або зняти позначку</value></data>
+  <data name="DayStepsTitle" xml:space="preserve"><value>Заплановано на цей день</value></data>
+  <data name="StepOverdueFrom" xml:space="preserve"><value>план: {0}</value></data>
+  <data name="StepAddTooltip" xml:space="preserve"><value>Додати крок (Enter)</value></data>
+  <data name="ProjectShowFinished" xml:space="preserve"><value>Показати завершені дні ({0})</value></data>
+  <data name="ProjectHideFinished" xml:space="preserve"><value>Сховати завершені дні</value></data>
+  <data name="DayStepsTitleToday" xml:space="preserve"><value>Заплановано на сьогодні</value></data>
+  <data name="StepsTitle" xml:space="preserve"><value>Кроки</value></data>
+  <data name="StepsFold" xml:space="preserve"><value>Згорнути кроки</value></data>
+  <data name="StepsChipTooltip" xml:space="preserve"><value>Виконано кроків — натисніть, щоб показати або сховати</value></data>
+  <data name="BreakIntoSteps" xml:space="preserve"><value>Розбити на кроки</value></data>
+  <data name="OpenProject" xml:space="preserve"><value>Відкрити проєкт</value></data>
+  <data name="SittingPlanned" xml:space="preserve"><value>кроки на {0} з {1}</value></data>
+  <data name="SittingOverflow" xml:space="preserve"><value>кроки на {0} — на {1} довше за подію</value></data>
+  <data name="SittingSeriesHint" xml:space="preserve"><value>Один список на всі повтори події; позначки в кожного дня свої.</value></data>
+  <data name="SittingLeft" xml:space="preserve"><value>залишилось {0}</value></data>
+  <data name="SittingNoStepsYet" xml:space="preserve"><value>Запишіть, на що піде цей час. Позначайте кроки по ходу — підсумок події запишеться сам.</value></data>
+  <data name="SessionSittingHint" xml:space="preserve"><value>Позначте в кроках нижче, що встигли, — відсоток підлаштується сам. Непозначене і є залишок.</value></data>
+  <data name="CarryHeading" xml:space="preserve"><value>Продовжити решту</value></data>
+  <data name="CarryToTime" xml:space="preserve"><value>Продовжити…</value></data>
+  <data name="CarryToTimeTooltip" xml:space="preserve"><value>Призначити решті новий час</value></data>
+  <data name="CarryToUnscheduled" xml:space="preserve"><value>До незапланованих</value></data>
+  <data name="CarryToUnscheduledTooltip" xml:space="preserve"><value>Зробити решту завданням, щоб розпланувати по днях</value></data>
+  <data name="StepsCarried" xml:space="preserve"><value>Решту кроків перенесено на новий час</value></data>
+  <data name="StepsCarriedToUnscheduled" xml:space="preserve"><value>Решта кроків тепер завдання в «Незапланованих»</value></data>
+  <data name="StepsRemoved" xml:space="preserve"><value>Кроків більше немає</value></data>
+  <data name="SittingAnsweredDone" xml:space="preserve"><value>Усі кроки виконано — подію позначено виконаною</value></data>
+  <data name="SittingReopened" xml:space="preserve"><value>Крок знову відкрито — подію виконано частково</value></data>
+  <data name="ProjectFinished" xml:space="preserve"><value>Усі кроки позначено виконаними</value></data>
+  <data name="ConfirmDeleteProjectTask" xml:space="preserve"><value>Видалити завдання разом з усіма кроками? Призначені для них події залишаться в календарі.</value></data>
+  <data name="ConfirmDeleteEventSteps" xml:space="preserve"><value>Видалити подію разом з її кроками?</value></data>
+  <data name="ProjectCategoryTooltip" xml:space="preserve"><value>Колір проєкту — його ж отримують події, призначені для кроків</value></data>
+  <data name="WindowedShellHint" xml:space="preserve"><value>Розташуванням вікна керує стільниця. Панелі DAYDRIVE відкриваються в одному вікні зі змінним розміром; налаштування краю екрана та віджета тут недоступні.</value></data>
+  <data name="LocalHardwareGpuDetected" xml:space="preserve"><value>{0} · обсяг відеопам’яті недоступний</value></data>
+  <data name="ThemeColorAccent" xml:space="preserve"><value>Акцент</value></data>
+  <data name="ThemeColorBackground" xml:space="preserve"><value>Фон вікна</value></data>
+  <data name="ThemeColorSurface" xml:space="preserve"><value>Панелі</value></data>
+  <data name="ThemeColorSurfaceAlt" xml:space="preserve"><value>Поля й картки</value></data>
+  <data name="ThemeColorText" xml:space="preserve"><value>Основний текст</value></data>
+  <data name="ThemeColorMuted" xml:space="preserve"><value>Другорядний текст</value></data>
+  <data name="ThemeColorStroke" xml:space="preserve"><value>Контури</value></data>
+  <data name="ThemeColorSecondary" xml:space="preserve"><value>Другий акцент</value></data>
+  <data name="ThemeColorTertiary" xml:space="preserve"><value>Третій акцент</value></data>
+  <data name="ThemeColorSelection" xml:space="preserve"><value>Виділення</value></data>
+  <data name="ThemeColorSuccess" xml:space="preserve"><value>Успіх</value></data>
+  <data name="ThemeColorWarning" xml:space="preserve"><value>Попередження</value></data>
+  <data name="ThemeColorDanger" xml:space="preserve"><value>Помилка</value></data>
+  <data name="ThemeColorShadow" xml:space="preserve"><value>Тіні</value></data>
+  <data name="ThemeWindowRadius" xml:space="preserve"><value>Вікна</value></data>
+  <data name="ThemeCardRadius" xml:space="preserve"><value>Картки</value></data>
+  <data name="ThemeItemRadius" xml:space="preserve"><value>Елементи списку</value></data>
+  <data name="ThemeControlRadius" xml:space="preserve"><value>Кнопки й поля</value></data>
+  <data name="ThemeTextScale" xml:space="preserve"><value>Масштаб тексту</value></data>
+  <data name="ThemeShadowStrength" xml:space="preserve"><value>Насиченість тіней</value></data>
+  <data name="ThemeDetails" xml:space="preserve"><value>Інші кольори</value></data>
+  <data name="ThemeGeometry" xml:space="preserve"><value>Форма й типографіка</value></data>
+  <data name="ThemeColorReset" xml:space="preserve"><value>Автоматичний колір</value></data>
+  <data name="ThemeColorInvalid" xml:space="preserve"><value>Введіть #RRGGBB або #AARRGGBB.</value></data>
+  <data name="ImportTheme" xml:space="preserve"><value>Імпорт теми</value></data>
+  <data name="ExportTheme" xml:space="preserve"><value>Експорт теми</value></data>
+  <data name="ResetAppearance" xml:space="preserve"><value>Скинути все оформлення</value></data>
+  <data name="ThemeFileInvalid" xml:space="preserve"><value>Не вдалося прочитати або зберегти тему. Перевірте формат файлу та доступ до папки.</value></data>
+  <data name="ThemeImported" xml:space="preserve"><value>Тему імпортовано.</value></data>
+  <data name="ThemeExported" xml:space="preserve"><value>Тему експортовано.</value></data>
+</root>

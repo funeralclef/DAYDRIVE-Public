@@ -1,0 +1,24 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="using:IntelligentScheduler.Desktop"
+        x:Class="IntelligentScheduler.Desktop.AssistantView" Background="Transparent"
+        Classes.reduceMotion="{Binding ReduceMotion}"
+        Classes.motion="{Binding !ReduceMotion}">
+  <!-- The widened assistant, standing where the calendar and the analytics stand: a little
+       narrower than the calendar, a little wider than the report, so the three panels read as
+       one family seen at three sizes rather than three unrelated windows.
+
+       The card is the window's own, and the view inside it gives up the chrome it wears as a
+       sheet — one border and one shadow, not two of each drawn a pixel apart. It keeps the
+       sheet's material rather than taking the shell's: the panels beside it are glanced at and
+       may be glassy, and a conversation is read. The other three let a page of the desktop
+       through their empty half; a paragraph of the assistant's answer read over someone else's
+       paragraph is not a panel, it is two panels. -->
+  <Border Background="{DynamicResource ShellChatPanel}"
+          BorderBrush="{DynamicResource ShellStroke}"
+          BorderThickness="1"
+          CornerRadius="{DynamicResource ShellWindowRadius}"
+          ClipToBounds="True">
+    <local:ChatFlyoutView Classes="chatDocked" />
+  </Border>
+</UserControl>

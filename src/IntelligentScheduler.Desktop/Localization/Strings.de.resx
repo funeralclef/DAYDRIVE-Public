@@ -1,0 +1,2093 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="AppName">
+    <value>DAYDRIVE</value>
+  </data>
+  <data name="StatusReady">
+    <value>Bereit</value>
+  </data>
+  <data name="NavPlan">
+    <value>Plan</value>
+  </data>
+  <data name="NavTasks">
+    <value>Aufgaben</value>
+  </data>
+  <data name="NavAssistant">
+    <value>Assistent</value>
+  </data>
+  <data name="Settings">
+    <value>Einstellungen</value>
+  </data>
+  <data name="Hide">
+    <value>Leiste ausblenden</value>
+  </data>
+  <data name="PlanTitle">
+    <value>Dein Tag</value>
+  </data>
+  <data name="PlanSubtitle">
+    <value>Feste Termine bleiben, Aufgaben passen sich darum herum an</value>
+  </data>
+  <data name="Next">
+    <value>Als Nächstes</value>
+  </data>
+  <data name="Adjust">
+    <value>Anpassen</value>
+  </data>
+  <data name="Schedule">
+    <value>Zeitplan</value>
+  </data>
+  <data name="Calendar">
+    <value>Kalender</value>
+  </data>
+  <data name="AddEvent">
+    <value>Termin hinzufügen</value>
+  </data>
+  <data name="EventTitle">
+    <value>Was findet statt?</value>
+  </data>
+  <data name="SaveChanges">
+    <value>Änderungen speichern</value>
+  </data>
+  <data name="TasksTitle">
+    <value>Aufgaben</value>
+  </data>
+  <data name="TasksSubtitle">
+    <value>Eine fokussierte Liste, die Platz in deinem Tag findet</value>
+  </data>
+  <data name="EditTask">
+    <value>Aufgabe bearbeiten</value>
+  </data>
+  <data name="Save">
+    <value>Speichern</value>
+  </data>
+  <data name="Cancel">
+    <value>Abbrechen</value>
+  </data>
+  <data name="Edit">
+    <value>Bearbeiten</value>
+  </data>
+  <data name="Delete">
+    <value>Löschen</value>
+  </data>
+  <data name="QuickTaskPlaceholder">
+    <value>Aufgabe in natürlicher Sprache hinzufügen…</value>
+  </data>
+  <data name="AssistantTitle">
+    <value>Assistent</value>
+  </data>
+  <data name="AssistantIntro">
+    <value>Ich mache aus Vorhaben einen realistischen Tag. Schreib einfach natürlich.</value>
+  </data>
+  <data name="AssistantPrivacy">
+    <value>lokal oder über die gewählte KI</value>
+  </data>
+  <data name="AssistantPlaceholder">
+    <value>Zum Beispiel: Plane morgen weniger voll</value>
+  </data>
+  <data name="Ask">
+    <value>Fragen</value>
+  </data>
+  <data name="SettingsTitle">
+    <value>Einstellungen</value>
+  </data>
+  <data name="SettingsSubtitle">
+    <value>Änderungen werden automatisch gespeichert</value>
+  </data>
+  <data name="General">
+    <value>Allgemein</value>
+  </data>
+  <data name="Language">
+    <value>Sprache</value>
+  </data>
+  <data name="StartHidden">
+    <value>Ausgeblendet starten</value>
+  </data>
+  <data name="KeepOnTop">
+    <value>Über anderen Fenstern halten</value>
+  </data>
+  <data name="Appearance">
+    <value>Darstellung</value>
+  </data>
+  <data name="Design">
+    <value>Design</value>
+  </data>
+  <data name="ColorSource">
+    <value>Akzentquelle</value>
+  </data>
+  <data name="Accent">
+    <value>Akzent</value>
+  </data>
+  <data name="Background">
+    <value>Hintergrund</value>
+  </data>
+  <data name="ThemeMode">
+    <value>Modus</value>
+  </data>
+  <data name="ThemeModeDark">
+    <value>Dunkel</value>
+  </data>
+  <data name="ThemeModeLight">
+    <value>Hell</value>
+  </data>
+  <data name="ThemePreviewTitle">
+    <value>MARELIAN</value>
+  </data>
+  <data name="ThemePreviewHint">
+    <value>Heller und dunkler Modus speichern Farben und Formen getrennt.</value>
+  </data>
+  <data name="ColorCustomization">
+    <value>Eigene Farben</value>
+  </data>
+  <data name="ColorCustomizationHint">
+    <value>Leere Felder verwenden automatische Farben. Auf ein Farbfeld klicken, um eine Farbe zu wählen.</value>
+  </data>
+  <data name="ColorPickerHint">
+    <value>Farbe wählen</value>
+  </data>
+  <data name="ResetThemeColors">
+    <value>Diesen Modus zurücksetzen</value>
+  </data>
+  <data name="Transparency">
+    <value>Transparenz und Unschärfe</value>
+  </data>
+  <data name="ReduceMotion">
+    <value>Oberflächenanimationen deaktivieren</value>
+  </data>
+  <data name="Behavior">
+    <value>Verhalten</value>
+  </data>
+  <data name="PanelReveal">
+    <value>Leiste anzeigen</value>
+  </data>
+  <data name="PinOpen">
+    <value>Nicht automatisch ausblenden</value>
+  </data>
+  <data name="AiConnection">
+    <value>KI-Verbindung</value>
+  </data>
+  <data name="Provider">
+    <value>Anbieter</value>
+  </data>
+  <data name="Address">
+    <value>Adresse</value>
+  </data>
+  <data name="Model">
+    <value>Modell</value>
+  </data>
+  <data name="ApiKey">
+    <value>API-Schlüssel (auf diesem Gerät verschlüsselt)</value>
+  </data>
+  <data name="ApiKeyPlaceholder">
+    <value>Leer lassen, um den gespeicherten Schlüssel zu behalten</value>
+  </data>
+  <data name="RemoveKey">
+    <value>Gespeicherten Schlüssel entfernen</value>
+  </data>
+  <data name="TestConnection">
+    <value>Speichern und Verbindung testen</value>
+  </data>
+  <data name="SettingsSaved">
+    <value>Gespeichert</value>
+  </data>
+  <data name="SettingsSaving">
+    <value>Wird gespeichert…</value>
+  </data>
+  <data name="SettingsError">
+    <value>Einstellungen konnten nicht gespeichert werden</value>
+  </data>
+  <data name="FreeDay">
+    <value>Freier Tag</value>
+  </data>
+  <data name="EmptyPlan">
+    <value>Dein Plan ist leer</value>
+  </data>
+  <data name="EmptyPlanHint">
+    <value>Füge eine Aufgabe in einer Zeile hinzu</value>
+  </data>
+  <data name="MinutesShort">
+    <value>Min.</value>
+  </data>
+  <data name="EventKind">
+    <value>Termin</value>
+  </data>
+  <data name="TaskKind">
+    <value>Aufgabe</value>
+  </data>
+  <data name="DoneKind">
+    <value>Erledigt</value>
+  </data>
+  <data name="Focus">
+    <value>Fokus</value>
+  </data>
+  <data name="Add">
+    <value>Hinzufügen</value>
+  </data>
+  <data name="Added">
+    <value>Hinzugefügt</value>
+  </data>
+  <data name="SuggestedByAssistant">
+    <value>Vom Assistenten vorgeschlagen</value>
+  </data>
+  <data name="Priority">
+    <value>Priorität</value>
+  </data>
+  <data name="OptionCustom">
+    <value>Benutzerdefiniert</value>
+  </data>
+  <data name="OptionPreset">
+    <value>Designfarbe</value>
+  </data>
+  <data name="OptionSystemAccent">
+    <value>Systemakzent</value>
+  </data>
+  <data name="OptionWallpaper">
+    <value>Desktophintergrund</value>
+  </data>
+  <data name="OptionHover">
+    <value>Beim Darüberfahren</value>
+  </data>
+  <data name="OptionClick">
+    <value>Beim Klicken</value>
+  </data>
+  <data name="TaskAdded">
+    <value>Aufgabe hinzugefügt</value>
+  </data>
+  <data name="TaskRestored">
+    <value>Aufgabe wiederhergestellt</value>
+  </data>
+  <data name="TaskUpdated">
+    <value>Aufgabe aktualisiert</value>
+  </data>
+  <data name="TaskDeleted">
+    <value>Aufgabe gelöscht</value>
+  </data>
+  <data name="BlockCompleted">
+    <value>Fokusblock abgeschlossen</value>
+  </data>
+  <data name="EventAdded">
+    <value>Termin hinzugefügt</value>
+  </data>
+  <data name="EventUpdated">
+    <value>Termin aktualisiert</value>
+  </data>
+  <data name="EventDeleted">
+    <value>Termin gelöscht</value>
+  </data>
+  <data name="Thinking">
+    <value>Denke nach…</value>
+  </data>
+  <data name="SecondsShort">
+    <value>Sek.</value>
+  </data>
+  <data name="ReplyReady">
+    <value>Antwort ist bereit</value>
+  </data>
+  <data name="ReviewSuggestions">
+    <value>Vorschläge vor dem Hinzufügen prüfen</value>
+  </data>
+  <data name="RequestCancelled">
+    <value>Anfrage abgebrochen</value>
+  </data>
+  <data name="ReplyFailed">
+    <value>Keine Antwort erhalten: {0}</value>
+  </data>
+  <data name="ConnectionError">
+    <value>Verbindungsfehler</value>
+  </data>
+  <data name="SuggestionAdded">
+    <value>Vorschlag hinzugefügt</value>
+  </data>
+  <data name="OpenApp">
+    <value>DAYDRIVE öffnen</value>
+  </data>
+  <data name="QuickAdd">
+    <value>Schnellaufgabe</value>
+  </data>
+  <data name="Exit">
+    <value>Beenden</value>
+  </data>
+  <data name="CalendarToday">
+    <value>Heute</value>
+  </data>
+  <data name="ComposerTask">
+    <value>Aufgabe</value>
+  </data>
+  <data name="ComposerAgent">
+    <value>Agent</value>
+  </data>
+  <data name="NewEvent">
+    <value>Neuer Termin</value>
+  </data>
+  <data name="Date">
+    <value>Datum</value>
+  </data>
+  <data name="Time">
+    <value>Zeit</value>
+  </data>
+  <data name="Duration">
+    <value>Dauer</value>
+  </data>
+  <data name="NoDeadline">
+    <value>Keine Frist</value>
+  </data>
+  <data name="InvalidInput">
+    <value>Datum, Uhrzeit und Zahlenwerte prüfen</value>
+  </data>
+  <data name="ActiveTasks">
+    <value>Aufgaben</value>
+  </data>
+  <data name="NoAgenda">
+    <value>Für diesen Tag ist nichts geplant</value>
+  </data>
+  <data name="DueDate">
+    <value>Fällig</value>
+  </data>
+  <data name="PriorityLabel">
+    <value>Priorität</value>
+  </data>
+  <data name="AgentConversation">
+    <value>Unterhaltung</value>
+  </data>
+  <data name="Send">
+    <value>Senden</value>
+  </data>
+  <data name="TimeFrom">
+    <value>Von</value>
+  </data>
+  <data name="TimeTo">
+    <value>Bis</value>
+  </data>
+  <data name="WeekNavigationHint">
+    <value>Scrollen oder ziehen, um die Woche zu wechseln</value>
+  </data>
+  <data name="Attachment">
+    <value>Anhang</value>
+  </data>
+  <data name="Attach">
+    <value>Datei anhängen</value>
+  </data>
+  <data name="ChooseDate">
+    <value>Datum auswählen</value>
+  </data>
+  <data name="EditEvent">
+    <value>Termin bearbeiten</value>
+  </data>
+  <data name="Confirm">
+    <value>Bestätigen</value>
+  </data>
+  <data name="ConfirmChanges">
+    <value>Diese Änderungen übernehmen?</value>
+  </data>
+  <data name="ConfirmDeleteEvent">
+    <value>Diesen Termin löschen?</value>
+  </data>
+  <data name="ConfirmDeleteTask">
+    <value>Diese Aufgabe löschen?</value>
+  </data>
+  <data name="DragToCreateHint">
+    <value>Über freie Zeit ziehen, um einen Termin zu erstellen</value>
+  </data>
+  <data name="DaySummaryFormat">
+    <value>Heute: {0} · Geplant: {1} Min.</value>
+  </data>
+  <data name="Use24HourClock">
+    <value>24-Stunden-Format verwenden</value>
+  </data>
+  <data name="ChooseStartTime">
+    <value>Startzeit</value>
+  </data>
+  <data name="ChooseEndTime">
+    <value>Endzeit</value>
+  </data>
+  <data name="TimePickerHint">
+    <value>5-Minuten-Schritte</value>
+  </data>
+  <data name="TransparencyIntensity">
+    <value>Transparenzintensität</value>
+  </data>
+  <data name="ChooseTime">
+    <value>Uhrzeit auswählen</value>
+  </data>
+  <data name="Hours">
+    <value>Stunden</value>
+  </data>
+  <data name="Minutes">
+    <value>Minuten</value>
+  </data>
+  <data name="EventTitleRequired">
+    <value>Titel für den Termin eingeben</value>
+  </data>
+  <data name="EventDateTimeRequired">
+    <value>Datum, Startzeit und Endzeit auswählen</value>
+  </data>
+  <data name="EventTimeRangeRequired">
+    <value>Start- und Endzeit dürfen nicht gleich sein</value>
+  </data>
+  <data name="EventSaveFailed">
+    <value>Termin konnte nicht gespeichert werden. Erneut versuchen.</value>
+  </data>
+  <data name="AttachDialogTitle">
+    <value>Datei anhängen</value>
+  </data>
+  <data name="McpArgumentsPlaceholder">
+    <value>Argumente des MCP-Servers</value>
+  </data>
+  <data name="McpToolPlaceholder">
+    <value>Name des MCP-Werkzeugs</value>
+  </data>
+  <data name="ScheduledBlock">
+    <value>Geplanter Block</value>
+  </data>
+  <data name="StartingSoon">
+    <value>Beginnt in Kürze</value>
+  </data>
+  <data name="StartsInMinutes">
+    <value>{0} beginnt in {1} Min.</value>
+  </data>
+  <data name="StartupFailed">
+    <value>DAYDRIVE konnte nicht gestartet werden</value>
+  </data>
+  <data name="CrashLogSaved">
+    <value>Details wurden in daydrive-crash.log im Anwendungsdatenordner gespeichert.</value>
+  </data>
+  <data name="OptionProviderLocal">
+    <value>Lokales Modell (GGUF)</value>
+  </data>
+  <data name="OptionProviderOpenAi">
+    <value>Benutzerdefinierte API</value>
+  </data>
+  <data name="OptionTransportHttp">
+    <value>HTTP-Server</value>
+  </data>
+  <data name="OptionTransportStdio">
+    <value>Lokaler Befehl (stdio)</value>
+  </data>
+  <data name="ScrollToAdjust">
+    <value>Zum Ändern scrollen</value>
+  </data>
+  <data name="NewTask">
+    <value>Neue Aufgabe</value>
+  </data>
+  <data name="AddTask">
+    <value>Aufgabe hinzufügen</value>
+  </data>
+  <data name="TaskTitle">
+    <value>Was ist zu erledigen?</value>
+  </data>
+  <data name="EmptyPlanTaskHint">
+    <value>Aufgabe oder Termin erstellen</value>
+  </data>
+  <data name="LaunchAtStartup">
+    <value>Beim Systemstart ausführen</value>
+  </data>
+  <data name="AutostartFailed">
+    <value>Systemstart-Einstellung konnte nicht geändert werden</value>
+  </data>
+  <data name="PriorityLow">
+    <value>Niedrig</value>
+  </data>
+  <data name="PriorityNormal">
+    <value>Normal</value>
+  </data>
+  <data name="PriorityHigh">
+    <value>Hoch</value>
+  </data>
+  <data name="PriorityUrgent">
+    <value>Dringend</value>
+  </data>
+  <data name="PreferredAny">
+    <value>Jederzeit</value>
+  </data>
+  <data name="PreferredMorning">
+    <value>Morgens</value>
+  </data>
+  <data name="PreferredAfternoon">
+    <value>Nachmittags</value>
+  </data>
+  <data name="PreferredEvening">
+    <value>Abends</value>
+  </data>
+  <data name="Notes">
+    <value>Notizen</value>
+  </data>
+  <data name="NotesPlaceholder">
+    <value>Kontext oder nächster Schritt</value>
+  </data>
+  <data name="AdvancedPlanning">
+    <value>Planungsoptionen</value>
+  </data>
+  <data name="EarliestStart">
+    <value>Frühestens beginnen</value>
+  </data>
+  <data name="AnyDate">
+    <value>Keine Einschränkung</value>
+  </data>
+  <data name="PreferredTime">
+    <value>Bevorzugte Zeit</value>
+  </data>
+  <data name="SplitTask">
+    <value>Aufgabe in Blöcke aufteilen</value>
+  </data>
+  <data name="MinBlock">
+    <value>Mindestblock, Min.</value>
+  </data>
+  <data name="MaxSplits">
+    <value>Maximale Blöcke</value>
+  </data>
+  <data name="ManageTaskBlock">
+    <value>Aufgabenblock</value>
+  </data>
+  <data name="PlannedInterval">
+    <value>Geplantes Intervall</value>
+  </data>
+  <data name="CompletedMinutes">
+    <value>Erledigt, Min.</value>
+  </data>
+  <data name="CompleteWork">
+    <value>Abschließen</value>
+  </data>
+  <data name="OpenTask">
+    <value>Aufgabe öffnen</value>
+  </data>
+  <data name="NotToday">
+    <value>Nicht heute</value>
+  </data>
+  <data name="Unschedule">
+    <value>Aus Zeitplan entfernen</value>
+  </data>
+  <data name="LockTime">
+    <value>Diese Zeit sperren</value>
+  </data>
+  <data name="ConfirmTaskBlockChange">
+    <value>Neues Intervall und Blockoptionen speichern?</value>
+  </data>
+  <data name="ConfirmTaskBlockComplete">
+    <value>Die eingegebene Arbeitszeit erfassen?</value>
+  </data>
+  <data name="ConfirmTaskBlockUnschedule">
+    <value>Diesen Block aus dem Zeitplan entfernen? Die Aufgabe bleibt erhalten.</value>
+  </data>
+  <data name="ConfirmTaskBlockNotToday">
+    <value>Diese Aufgabe für den Tag aus dem Zeitplan nehmen?</value>
+  </data>
+  <data name="TaskBlockMinutesInvalid">
+    <value>1 Minute bis zur Blockdauer eingeben</value>
+  </data>
+  <data name="TaskBlockMoved">
+    <value>Aufgabenblock verschoben und gesperrt</value>
+  </data>
+  <data name="TaskBlockUpdated">
+    <value>Blockoptionen gespeichert</value>
+  </data>
+  <data name="TaskBlockUnscheduled">
+    <value>Block aus dem Zeitplan entfernt</value>
+  </data>
+  <data name="TaskBlockDeferred">
+    <value>Aufgabe auf einen anderen Tag verschoben</value>
+  </data>
+  <data name="TaskBlockPartiallyCompleted">
+    <value>Teilarbeit erfasst; der Rest kehrt in den Plan zurück</value>
+  </data>
+  <data name="TaskBlockConflict">
+    <value>Dieses Intervall überschneidet sich mit einem anderen Termin oder Block</value>
+  </data>
+  <data name="LocalModelIntro">
+    <value>Wähle ein Modell. DAYDRIVE lädt GGUF und llama.cpp herunter und führt alles nur auf diesem Gerät aus.</value>
+  </data>
+  <data name="LocalModelRoleLite">
+    <value>Schnelle Befehlsanalyse und Aufgabenerfassung</value>
+  </data>
+  <data name="LocalModelRoleBalanced">
+    <value>Alltagsplanung und Assistent — empfohlen</value>
+  </data>
+  <data name="LocalModelRoleSmart">
+    <value>Wochenanalyse und komplexe Agent-Anfragen</value>
+  </data>
+  <data name="Recommended">
+    <value>Empfohlen</value>
+  </data>
+  <data name="LocalEngine">
+    <value>Lokale Engine</value>
+  </data>
+  <data name="DownloadModel">
+    <value>Herunterladen</value>
+  </data>
+  <data name="DownloadVisionSupport">
+    <value>Bildverarbeitung laden</value>
+  </data>
+  <data name="StartModel">
+    <value>Starten</value>
+  </data>
+  <data name="StopModel">
+    <value>Stoppen</value>
+  </data>
+  <data name="VisionSupport">
+    <value>Bildeingabe</value>
+  </data>
+  <data name="VisionSupportHint" xml:space="preserve"><value>Lässt das Modell angehängte Bilder lesen. Dafür braucht es eine zweite Datei – den Bildprojektor –, die zusammen mit dem Modell geladen wird.</value></data>
+  <data name="IdleSleep">
+    <value>Speicher bei Inaktivität freigeben</value>
+  </data>
+  <data name="IdleFiveMinutes">
+    <value>Nach 5 Minuten</value>
+  </data>
+  <data name="IdleTenMinutes">
+    <value>Nach 10 Minuten</value>
+  </data>
+  <data name="IdleThirtyMinutes">
+    <value>Nach 30 Minuten</value>
+  </data>
+  <data name="IdleNever">
+    <value>Nie automatisch</value>
+  </data>
+  <data name="LocalModelArchitectureHint">
+    <value>Die KI erhält ungeplante Aufgaben und feste Termine nur als Kontext. Das Modell hat keinen Datenbankzugriff und reserviert niemals automatisch Zeit.</value>
+  </data>
+  <data name="DownloadingEngine">
+    <value>llama.cpp wird heruntergeladen…</value>
+  </data>
+  <data name="ExtractingEngine">
+    <value>llama.cpp wird installiert…</value>
+  </data>
+  <data name="DownloadingModel">
+    <value>GGUF-Modell wird heruntergeladen…</value>
+  </data>
+  <data name="DownloadingVision">
+    <value>Bildprojektor wird heruntergeladen…</value>
+  </data>
+  <data name="StartingLocalModel">
+    <value>Modell wird in den Speicher geladen…</value>
+  </data>
+  <data name="LocalModelRunning">
+    <value>Läuft lokal</value>
+  </data>
+  <data name="LocalModelSleeping">
+    <value>Ruhezustand — startet bei der nächsten Anfrage</value>
+  </data>
+  <data name="LocalModelStopped">
+    <value>Gestoppt — startet bei Bedarf automatisch</value>
+  </data>
+  <data name="LocalModelNotInstalled">
+    <value>Nicht heruntergeladen</value>
+  </data>
+  <data name="LocalModelInstalled">
+    <value>Lokales Modell ist bereit</value>
+  </data>
+  <data name="LocalModelDeleted">
+    <value>Lokales Modell gelöscht</value>
+  </data>
+  <data name="LocalModelError">
+    <value>Fehler des lokalen Modells</value>
+  </data>
+  <data name="DownloadCancelled">
+    <value>Download pausiert — kann später fortgesetzt werden</value>
+  </data>
+  <data name="QuickPromptPlan">
+    <value>Plane meinen Tag</value>
+  </data>
+  <data name="QuickPromptToday">
+    <value>Was ist für heute geplant?</value>
+  </data>
+  <data name="QuickPromptTask">
+    <value>Erstelle eine Aufgabe für heute Abend</value>
+  </data>
+  <data name="SwitchModelConfirmTitle">
+    <value>Modell wechseln</value>
+  </data>
+  <data name="SwitchModelConfirmText">
+    <value>Modell „{0}“ läuft gerade. Anhalten und zu „{1}“ wechseln?</value>
+  </data>
+  <data name="SwitchAndStart">
+    <value>Stoppen und starten</value>
+  </data>
+  <data name="SwitchOnly">
+    <value>Nur wechseln</value>
+  </data>
+  <data name="StopAndSwitch">
+    <value>Stoppen und wechseln</value>
+  </data>
+  <data name="KeepRunning">
+    <value>Im Hintergrund lassen</value>
+  </data>
+  <data name="SwitchProviderConfirmText">
+    <value>Lokales Modell „{0}“ läuft. Vor dem Wechsel zu {1} stoppen?</value>
+  </data>
+  <data name="ItemsCountOne">
+    <value>{0} Element</value>
+  </data>
+  <data name="ItemsCountFew">
+    <value>{0} Elemente</value>
+  </data>
+  <data name="ItemsCountMany">
+    <value>{0} Elemente</value>
+  </data>
+  <data name="UnscheduledTasks">
+    <value>Ungeplant</value>
+  </data>
+  <data name="CurrentEvent">
+    <value>Aktueller Termin</value>
+  </data>
+  <data name="NextEvent">
+    <value>Nächster Termin</value>
+  </data>
+  <data name="NoEventsTitle">
+    <value>Keine Termine geplant</value>
+  </data>
+  <data name="NoEventsHint">
+    <value>Erstelle einen Termin, um Zeit zu reservieren</value>
+  </data>
+  <data name="NoEventsForDay">
+    <value>Für diesen Tag sind keine Termine geplant</value>
+  </data>
+  <data name="EventDaySummaryFormat">
+    <value>{0} Termine · {1} Min. belegt</value>
+  </data>
+  <data name="EndingSoon">
+    <value>Endet in Kürze</value>
+  </data>
+  <data name="EndsInMinutes">
+    <value>{0} endet in {1} Min.</value>
+  </data>
+  <data name="EventCategory">
+    <value>Kategorie</value>
+  </data>
+  <data name="EventPriority">
+    <value>Priorität</value>
+  </data>
+  <data name="EventRepeat">
+    <value>Wiederholung</value>
+  </data>
+  <data name="EventCategoryGeneral">
+    <value>Allgemein</value>
+  </data>
+  <data name="EventCategoryWork">
+    <value>Arbeit</value>
+  </data>
+  <data name="EventCategoryPersonal">
+    <value>Persönlich</value>
+  </data>
+  <data name="EventCategoryStudy">
+    <value>Lernen</value>
+  </data>
+  <data name="EventCategoryHealth">
+    <value>Gesundheit</value>
+  </data>
+  <data name="EventCategorySocial">
+    <value>Soziales</value>
+  </data>
+  <data name="EventCategoryErrands">
+    <value>Besorgungen</value>
+  </data>
+  <data name="EventCategoryTravel">
+    <value>Reisen</value>
+  </data>
+  <data name="EventCategoryRest">
+    <value>Erholung</value>
+  </data>
+  <data name="EventPriorityNormal">
+    <value>Normal</value>
+  </data>
+  <data name="EventPriorityHigh">
+    <value>Wichtig</value>
+  </data>
+  <data name="EventPriorityCritical">
+    <value>Kritisch</value>
+  </data>
+  <data name="RepeatNever">
+    <value>Keine Wiederholung</value>
+  </data>
+  <data name="RepeatDaily">
+    <value>Täglich</value>
+  </data>
+  <data name="RepeatWeekdays">
+    <value>Wochentags</value>
+  </data>
+  <data name="RepeatWeekly">
+    <value>Wöchentlich</value>
+  </data>
+  <data name="RepeatMonthly">
+    <value>Monatlich</value>
+  </data>
+  <data name="ScopeOccurrence">
+    <value>Nur dieser Termin</value>
+  </data>
+  <data name="ScopeFollowing">
+    <value>Dieser und folgende</value>
+  </data>
+  <data name="ScopeSeries">
+    <value>Gesamte Serie</value>
+  </data>
+  <data name="DayActions">
+    <value>Tagesaktionen</value>
+  </data>
+  <data name="CopyToTomorrow">
+    <value>Auf morgen kopieren</value>
+  </data>
+  <data name="CopyToNextWeek">
+    <value>Auf nächste Woche kopieren</value>
+  </data>
+  <data name="Copy">
+    <value>Kopieren</value>
+  </data>
+  <data name="CopyDayConfirmation">
+    <value>Diesen Zeitplan auf {0} kopieren?</value>
+  </data>
+  <data name="CopyDayCompleted">
+    <value>Kopierte Termine: {0}</value>
+  </data>
+  <data name="CopyEventConfirmation" xml:space="preserve">
+    <value>„{0}“ auf {1} kopieren?</value>
+  </data>
+  <data name="ClearDay" xml:space="preserve">
+    <value>Diesen Tag leeren</value>
+  </data>
+  <data name="CopySchedule" xml:space="preserve">
+    <value>Zeitplan kopieren</value>
+  </data>
+  <data name="DayActionsShort" xml:space="preserve">
+    <value>Tagesplan</value>
+  </data>
+  <data name="CopyToDate" xml:space="preserve">
+    <value>Anderes Datum wählen</value>
+  </data>
+  <data name="DayPlanning" xml:space="preserve">
+    <value>Tagesplanung</value>
+  </data>
+  <data name="EventCopied" xml:space="preserve">
+    <value>Termin auf {0} kopiert</value>
+  </data>
+  <data name="DayPlanningHint" xml:space="preserve">
+    <value>Termine kopieren oder löschen</value>
+  </data>
+  <data name="ClearDayConfirmation" xml:space="preserve">
+    <value>Alle Termine am {0} löschen?</value>
+  </data>
+  <data name="CopyEvent" xml:space="preserve">
+    <value>Termin kopieren</value>
+  </data>
+  <data name="ClearDayCompleted" xml:space="preserve">
+    <value>Entfernte Termine: {0}</value>
+  </data>
+  <data name="ShiftEarlier" xml:space="preserve">
+    <value>Früher</value>
+  </data>
+  <data name="EventActions" xml:space="preserve">
+    <value>Terminaktionen</value>
+  </data>
+  <data name="ShiftLater" xml:space="preserve">
+    <value>Später</value>
+  </data>
+  <data name="Shift" xml:space="preserve">
+    <value>Verschieben</value>
+  </data>
+  <data name="ShiftDayConfirmation" xml:space="preserve">
+    <value>Alle Termine am {0} um {1} verschieben?</value>
+  </data>
+  <data name="ShiftSchedule" xml:space="preserve">
+    <value>Zeitplan verschieben</value>
+  </data>
+  <data name="ShiftDayCompleted" xml:space="preserve">
+    <value>Verschobene Termine: {0}</value>
+  </data>
+  <data name="ShiftDayAmountRequired" xml:space="preserve">
+    <value>Verschiebungsdauer eingeben</value>
+  </data>
+  <data name="AiActionCopyDay" xml:space="preserve">
+    <value>Tagesplan kopieren</value>
+  </data>
+  <data name="AiActionDeleteEvent" xml:space="preserve">
+    <value>Termin löschen</value>
+  </data>
+  <data name="AiActionUpdateEvent" xml:space="preserve">
+    <value>Termin ändern</value>
+  </data>
+  <data name="AiActionTargetMissing" xml:space="preserve">
+    <value>Der angeforderte Termin oder die Aufgabe existiert nicht mehr.</value>
+  </data>
+  <data name="AiActionShiftDay" xml:space="preserve">
+    <value>Tagesplan verschieben</value>
+  </data>
+  <data name="AiActionInvalid" xml:space="preserve">
+    <value>Der KI-Aktion fehlen erforderliche Angaben.</value>
+  </data>
+  <data name="ShareExternalContextHint" xml:space="preserve">
+    <value>Erlaubt API- oder MCP-Anbietern, den letzten Dialog und Kalenderdaten zu empfangen. Standardmäßig aus.</value>
+  </data>
+  <data name="AiActionCreateTask" xml:space="preserve">
+    <value>Ungeplante Aufgabe erstellen</value>
+  </data>
+  <data name="AiAccessConfirmAll" xml:space="preserve">
+    <value>Jede Aktion bestätigen</value>
+  </data>
+  <data name="AiActionUpdateTask" xml:space="preserve">
+    <value>Ungeplante Aufgabe ändern</value>
+  </data>
+  <data name="AiAccessFull" xml:space="preserve">
+    <value>Voller Kalenderzugriff</value>
+  </data>
+  <data name="AiAccessAutoSafe" xml:space="preserve">
+    <value>Sichere Aktionen automatisch anwenden</value>
+  </data>
+  <data name="AiActionFailed" xml:space="preserve">
+    <value>Anwendung fehlgeschlagen</value>
+  </data>
+  <data name="AiActionApplied" xml:space="preserve">
+    <value>Angewendet</value>
+  </data>
+  <data name="AiActionCreateEvent" xml:space="preserve">
+    <value>Termin erstellen</value>
+  </data>
+  <data name="AiActionDismissed" xml:space="preserve">
+    <value>Verworfen</value>
+  </data>
+  <data name="ShareExternalContext" xml:space="preserve">
+    <value>Kontext mit externer KI teilen</value>
+  </data>
+  <data name="AiAccessHint" xml:space="preserve"><value>Was der Assistent ändern darf, ohne vorher zu fragen.</value></data>
+  <data name="AiActionDeleteTask" xml:space="preserve">
+    <value>Ungeplante Aufgabe löschen</value>
+  </data>
+  <data name="AiAccess" xml:space="preserve">
+    <value>KI-Berechtigungen</value>
+  </data>
+  <data name="ClearConversation" xml:space="preserve">
+    <value>Unterhaltung löschen</value>
+  </data>
+  <data name="Dismiss" xml:space="preserve">
+    <value>Verwerfen</value>
+  </data>
+  <data name="AiActionReady" xml:space="preserve">
+    <value>Aktion wartet auf Prüfung</value>
+  </data>
+  <data name="AiAccessConfirmAllHint" xml:space="preserve">
+    <value>Jede Kalenderänderung wartet auf deine Bestätigung.</value>
+  </data>
+  <data name="AiAccessAutoSafeHint" xml:space="preserve">
+    <value>Erstellen und Bearbeiten dürfen automatisch erfolgen; Löschen und Änderungen am ganzen Tag brauchen eine Bestätigung.</value>
+  </data>
+  <data name="AiAccessFullHint" xml:space="preserve">
+    <value>Der Assistent darf alle Kalenderänderungen anwenden, einschließlich Löschen und Tages-Sammelaktionen.</value>
+  </data>
+  <data name="AiActionCopyEvent" xml:space="preserve">
+    <value>Termin kopieren</value>
+  </data>
+  <data name="ChatNewChat" xml:space="preserve">
+    <value>Neuer Chat</value>
+  </data>
+  <data name="ChatExpand" xml:space="preserve">
+    <value>Breite Ansicht öffnen</value>
+  </data>
+  <data name="ChatCollapse" xml:space="preserve">
+    <value>Zurück zur kompakten Ansicht</value>
+  </data>
+  <data name="ChatHistory" xml:space="preserve">
+    <value>Verlauf</value>
+  </data>
+  <data name="ChatSearchPlaceholder" xml:space="preserve">
+    <value>Unterhaltungen durchsuchen</value>
+  </data>
+  <data name="ChatNoConversations" xml:space="preserve">
+    <value>Noch keine gespeicherten Unterhaltungen</value>
+  </data>
+  <data name="ChatNoSearchResults" xml:space="preserve">
+    <value>Keine Treffer</value>
+  </data>
+  <data name="ChatPin" xml:space="preserve">
+    <value>Anheften</value>
+  </data>
+  <data name="ChatUnpin" xml:space="preserve">
+    <value>Lösen</value>
+  </data>
+  <data name="ChatDeleteConversation" xml:space="preserve">
+    <value>Unterhaltung löschen</value>
+  </data>
+  <data name="ChatDeleteConfirm" xml:space="preserve">
+    <value>Diese Unterhaltung endgültig löschen?</value>
+  </data>
+  <data name="ChatGroupToday" xml:space="preserve">
+    <value>Heute</value>
+  </data>
+  <data name="ChatGroupYesterday" xml:space="preserve">
+    <value>Gestern</value>
+  </data>
+  <data name="ChatGroupWeek" xml:space="preserve">
+    <value>Letzte 7 Tage</value>
+  </data>
+  <data name="ChatGroupOlder" xml:space="preserve">
+    <value>Früher</value>
+  </data>
+  <data name="ChatMessageCount" xml:space="preserve">
+    <value>{0} Nachrichten</value>
+  </data>
+  <data name="ChatCopy" xml:space="preserve">
+    <value>Kopieren</value>
+  </data>
+  <data name="ChatCopied" xml:space="preserve">
+    <value>Kopiert</value>
+  </data>
+  <data name="ChatRetry" xml:space="preserve">
+    <value>Erneut fragen</value>
+  </data>
+  <data name="ChatStop" xml:space="preserve">
+    <value>Stoppen</value>
+  </data>
+  <data name="ChatToolActivity" xml:space="preserve">
+    <value>Was ich getan habe</value>
+  </data>
+  <data name="ChatToolApplied" xml:space="preserve">
+    <value>ausgeführt</value>
+  </data>
+  <data name="ChatToolProposed" xml:space="preserve">
+    <value>vorgeschlagen</value>
+  </data>
+  <data name="ChatToolFailed" xml:space="preserve">
+    <value>fehlgeschlagen</value>
+  </data>
+  <data name="StageConnecting" xml:space="preserve">
+    <value>Verbinde…</value>
+  </data>
+  <data name="StageThinking" xml:space="preserve">
+    <value>Denke nach…</value>
+  </data>
+  <data name="StageWriting" xml:space="preserve">
+    <value>Schreibe…</value>
+  </data>
+  <data name="StageToolSchedule" xml:space="preserve">
+    <value>Lese deinen Kalender…</value>
+  </data>
+  <data name="StageToolTasks" xml:space="preserve">
+    <value>Lese deine Aufgaben…</value>
+  </data>
+  <data name="StageToolSlots" xml:space="preserve">
+    <value>Suche freie Zeit…</value>
+  </data>
+  <data name="StageToolAnalytics" xml:space="preserve">
+    <value>Lese deine Statistik…</value>
+  </data>
+  <data name="StageToolMemory" xml:space="preserve">
+    <value>Aktualisiere Gedächtnis…</value>
+  </data>
+  <data name="StageToolWrite" xml:space="preserve">
+    <value>Bereite die Änderung vor…</value>
+  </data>
+  <data name="StageToolExternal" xml:space="preserve">
+    <value>Rufe ein MCP-Werkzeug auf…</value>
+  </data>
+  <data name="ChatMemory" xml:space="preserve">
+    <value>Gedächtnis</value>
+  </data>
+  <data name="ChatMemoryHint" xml:space="preserve">
+    <value>Fakten, die der Assistent zwischen Unterhaltungen behält. Nur auf diesem Rechner gespeichert.</value>
+  </data>
+  <data name="ChatMemoryEmpty" xml:space="preserve">
+    <value>Noch nichts gespeichert. Der Assistent ergänzt Notizen im Gespräch.</value>
+  </data>
+  <data name="ChatMemoryAdd" xml:space="preserve">
+    <value>Notiz hinzufügen</value>
+  </data>
+  <data name="ChatMemoryKeyPlaceholder" xml:space="preserve">
+    <value>Kurzer Schlüssel, z. B. deep-work-window</value>
+  </data>
+  <data name="ChatMemoryValuePlaceholder" xml:space="preserve">
+    <value>Was soll gemerkt werden?</value>
+  </data>
+  <data name="ChatMemoryClear" xml:space="preserve">
+    <value>Alles vergessen</value>
+  </data>
+  <data name="ChatMemoryClearConfirm" xml:space="preserve">
+    <value>Alle gespeicherten Notizen löschen?</value>
+  </data>
+  <data name="ChatMemoryFromAssistant" xml:space="preserve">
+    <value>vom Assistenten gespeichert</value>
+  </data>
+  <data name="ChatMemoryFromUser" xml:space="preserve">
+    <value>von dir hinzugefügt</value>
+  </data>
+  <data name="ChatSuggestions" xml:space="preserve">
+    <value>Frag doch mal</value>
+  </data>
+  <data name="ChatIntroTitle" xml:space="preserve">
+    <value>Womit fangen wir an?</value>
+  </data>
+  <data name="ChatComposerHint" xml:space="preserve">
+    <value>Enter sendet · Shift+Enter beginnt eine neue Zeile</value>
+  </data>
+  <data name="SuggestPlanTomorrow" xml:space="preserve">
+    <value>Plane morgen um bestehende Termine herum</value>
+  </data>
+  <data name="SuggestFreeTime" xml:space="preserve">
+    <value>Wo habe ich diese Woche zwei freie Stunden?</value>
+  </data>
+  <data name="SuggestOverdue" xml:space="preserve">
+    <value>Was ist überfällig und was sollte weg?</value>
+  </data>
+  <data name="SuggestBalance" xml:space="preserve">
+    <value>Ist meine Woche ausgewogen?</value>
+  </data>
+  <data name="SuggestBusyDay" xml:space="preserve">
+    <value>Heute ist voll — was lässt sich verschieben?</value>
+  </data>
+  <data name="SuggestEmptyDay" xml:space="preserve">
+    <value>Für heute ist nichts geplant — hilf mir den Tag zu formen</value>
+  </data>
+  <data name="SuggestFollowUp" xml:space="preserve">
+    <value>Weiter: {0}</value>
+  </data>
+  <data name="SuggestReview" xml:space="preserve">
+    <value>Sieh dir letzte Woche an und sag mir, was sich geändert hat</value>
+  </data>
+  <data name="AiMemoryEnabled" xml:space="preserve">
+    <value>Der Assistent darf sich Fakten über mich merken</value>
+  </data>
+  <data name="AiMemoryHint" xml:space="preserve">
+    <value>Notizen bleiben in der lokalen Datenbank und gehen nur bei aktivierter Kontextfreigabe an ein externes Modell.</value>
+  </data>
+  <data name="McpToolsEnabled" xml:space="preserve">
+    <value>Dem gewählten Modell die Werkzeuge des MCP-Servers geben</value>
+  </data>
+  <data name="McpToolsHint" xml:space="preserve">
+    <value>Das ist der moderne Weg mit MCP: Das Modell denkt weiter und erhält lediglich zusätzliche Fähigkeiten. Wird MCP dagegen als Anbieter gewählt, antwortet der Server selbst über ein einzelnes Brücken-Werkzeug.</value>
+  </data>
+  <data name="ShowTools" xml:space="preserve">
+    <value>Verfügbare Werkzeuge anzeigen</value>
+  </data>
+  <data name="ToolsAvailable" xml:space="preserve">
+    <value>Werkzeuge, die das Modell aufrufen kann</value>
+  </data>
+  <data name="ToolBuiltIn" xml:space="preserve">
+    <value>integriert</value>
+  </data>
+  <data name="Analytics" xml:space="preserve">
+    <value>Analyse</value>
+  </data>
+  <data name="AnalyticsSubtitle" xml:space="preserve">
+    <value>Nachvollziehbare Statistiken aus deinem eigenen Verlauf</value>
+  </data>
+  <data name="RangeWeek" xml:space="preserve">
+    <value>Woche</value>
+  </data>
+  <data name="RangeMonth" xml:space="preserve">
+    <value>Monat</value>
+  </data>
+  <data name="RangeQuarter" xml:space="preserve">
+    <value>3 Monate</value>
+  </data>
+  <data name="MetricScheduled" xml:space="preserve">
+    <value>Geplant</value>
+  </data>
+  <data name="MetricFocus" xml:space="preserve">
+    <value>Fokuszeit</value>
+  </data>
+  <data name="MetricCompletion" xml:space="preserve">
+    <value>Abschluss</value>
+  </data>
+  <data name="MetricAccuracy" xml:space="preserve">
+    <value>Plangenauigkeit</value>
+  </data>
+  <data name="MetricOnTime" xml:space="preserve">
+    <value>Pünktlich begonnen</value>
+  </data>
+  <data name="MetricLoad" xml:space="preserve">
+    <value>Auslastung</value>
+  </data>
+  <data name="MetricStreak" xml:space="preserve">
+    <value>Aktive Serie</value>
+  </data>
+  <data name="MetricOverdue" xml:space="preserve">
+    <value>Überfällige Aufgaben</value>
+  </data>
+  <data name="MetricDays" xml:space="preserve">
+    <value>{0} T</value>
+  </data>
+  <data name="MetricHours" xml:space="preserve">
+    <value>{0:0.#} Std</value>
+  </data>
+  <data name="MetricNoSample" xml:space="preserve">
+    <value>zu wenig Daten</value>
+  </data>
+  <data name="MetricVsPrevious" xml:space="preserve">
+    <value>ggü. Vorperiode</value>
+  </data>
+  <data name="ChartDailyLoad" xml:space="preserve">
+    <value>Tag für Tag</value>
+  </data>
+  <data name="ChartCategories" xml:space="preserve">
+    <value>Wohin die Zeit geht</value>
+  </data>
+  <data name="ChartHours" xml:space="preserve">
+    <value>Tagesstunden</value>
+  </data>
+  <data name="ChartWeekdays" xml:space="preserve">
+    <value>Nach Wochentag</value>
+  </data>
+  <data name="ChartScheduledLegend" xml:space="preserve">
+    <value>Geplant</value>
+  </data>
+  <data name="ChartCompletedLegend" xml:space="preserve">
+    <value>Erledigt</value>
+  </data>
+  <data name="AnalyticsEmpty" xml:space="preserve">
+    <value>Noch sind nicht genügend Daten vorhanden. Plane ein paar Tage und schließe einige Sitzungen ab — die Auswertung erscheint dann automatisch.</value>
+  </data>
+  <data name="AnalyticsInsights" xml:space="preserve">
+    <value>Was die Daten zeigen</value>
+  </data>
+  <data name="AnalyticsAskAi" xml:space="preserve">
+    <value>Mit dem Assistenten besprechen</value>
+  </data>
+  <data name="AnalyticsAskAiPrompt" xml:space="preserve">
+    <value>Sieh dir meine Statistik der letzten {0} Tage an und sag mir, was ich ändern sollte.</value>
+  </data>
+  <data name="AnalyticsAskAiPeriodPrompt" xml:space="preserve">
+    <value>Sieh dir meine Statistik vom {0} bis {1} an und sag mir, was ich ändern sollte.</value>
+  </data>
+  <data name="InsightSample" xml:space="preserve">
+    <value>{0} Beobachtungen · Konfidenz {1}%</value>
+  </data>
+  <data name="InsightEstimationBiasOver" xml:space="preserve">
+    <value>Sitzungen dauern rund {0}% länger als geplant</value>
+  </data>
+  <data name="InsightEstimationBiasUnder" xml:space="preserve">
+    <value>Sitzungen enden rund {0}% früher als geplant</value>
+  </data>
+  <data name="InsightStrongTimeOfDay" xml:space="preserve">
+    <value>{0} trägt {1}% deiner erledigten Arbeit</value>
+  </data>
+  <data name="InsightScheduleFriction" xml:space="preserve">
+    <value>{0} von {1} Blöcken mussten verschoben werden</value>
+  </data>
+  <data name="InsightStartDelay" xml:space="preserve">
+    <value>{0} von {1} Sitzungen wurden übersprungen</value>
+  </data>
+  <data name="InsightOverload" xml:space="preserve">
+    <value>Der Kalender belegt {0}% deiner Wachzeit</value>
+  </data>
+  <data name="InsightUnderuse" xml:space="preserve">
+    <value>Nur {0}% deiner verfügbaren Zeit sind verplant</value>
+  </data>
+  <data name="InsightCategoryDominance" xml:space="preserve">
+    <value>{0} nimmt {1}% deiner geplanten Zeit ein</value>
+  </data>
+  <data name="InsightConsistency" xml:space="preserve">
+    <value>Deine Auslastung bleibt gleichmäßig bei rund {0} Std pro Tag</value>
+  </data>
+  <data name="PartOfDayMorning" xml:space="preserve">
+    <value>Morgen</value>
+  </data>
+  <data name="PartOfDayAfternoon" xml:space="preserve">
+    <value>Nachmittag</value>
+  </data>
+  <data name="PartOfDayEvening" xml:space="preserve">
+    <value>Abend</value>
+  </data>
+  <data name="CategoryFocus" xml:space="preserve">
+    <value>Fokus</value>
+  </data>
+  <data name="NowLabel" xml:space="preserve">
+    <value>Jetzt</value>
+  </data>
+  <data name="StartsIn" xml:space="preserve">
+    <value>in {0}</value>
+  </data>
+  <data name="EndsIn" xml:space="preserve">
+    <value>noch {0}</value>
+  </data>
+  <data name="DurationHoursMinutes" xml:space="preserve">
+    <value>{0} Std {1} Min</value>
+  </data>
+  <data name="DurationMinutes" xml:space="preserve">
+    <value>{0} Min</value>
+  </data>
+  <data name="OverdueBadge" xml:space="preserve">
+    <value>überfällig</value>
+  </data>
+  <data name="TodayBadge" xml:space="preserve">
+    <value>heute</value>
+  </data>
+  <data name="TomorrowBadge" xml:space="preserve">
+    <value>morgen</value>
+  </data>
+  <data name="DayLoadLabel" xml:space="preserve">
+    <value>{0} belegt</value>
+  </data>
+  <data name="ChatToolRead" xml:space="preserve">
+    <value>gelesen</value>
+  </data>
+  <data name="MetricPeakHour" xml:space="preserve">
+    <value>Produktivste Stunde</value>
+  </data>
+  <data name="MemoryCategoryGeneral" xml:space="preserve">
+    <value>Allgemein</value>
+  </data>
+  <data name="MemoryCategoryPreference" xml:space="preserve">
+    <value>Vorliebe</value>
+  </data>
+  <data name="MemoryCategoryRoutine" xml:space="preserve">
+    <value>Routine</value>
+  </data>
+  <data name="MemoryCategoryConstraint" xml:space="preserve">
+    <value>Einschränkung</value>
+  </data>
+  <data name="MemoryCategoryGoal" xml:space="preserve">
+    <value>Ziel</value>
+  </data>
+  <data name="MemoryCategoryContext" xml:space="preserve">
+    <value>Kontext</value>
+  </data>
+  <data name="LocalModelRoleGeneral" xml:space="preserve">
+    <value>Universeller Agent</value>
+  </data>
+  <data name="LocalModelRoleReasoning" xml:space="preserve">
+    <value>Reasoning und schnelle Antworten</value>
+  </data>
+  <data name="LocalModelRoleToolUse" xml:space="preserve">
+    <value>Zerlegung und Werkzeugnutzung</value>
+  </data>
+  <data name="LocalModelRoleCustom" xml:space="preserve">
+    <value>Deine eigene GGUF-Datei</value>
+  </data>
+  <data name="ExperimentalBadge" xml:space="preserve">
+    <value>erweitert</value>
+  </data>
+  <data name="CustomModelTitle" xml:space="preserve">
+    <value>Eigenes Modell</value>
+  </data>
+  <data name="CustomModelHint" xml:space="preserve"><value>Wähle eine GGUF-Datei auf der Festplatte. Sie wird unverändert verwendet: Nichts wird heruntergeladen oder kopiert. Es können zwei getrennte Dateien nötig sein; sie sind nicht austauschbar.</value></data>
+  <data name="CustomModelBadge" xml:space="preserve">
+    <value>eigen</value>
+  </data>
+  <data name="CustomModelNotChosen" xml:space="preserve">
+    <value>Keine Datei gewählt</value>
+  </data>
+  <data name="PickModelFile" xml:space="preserve">
+    <value>GGUF wählen</value>
+  </data>
+  <data name="PickProjectorFile" xml:space="preserve">
+    <value>Projektor wählen</value>
+  </data>
+  <data name="ClearCustomModel" xml:space="preserve">
+    <value>Entfernen</value>
+  </data>
+  <data name="CustomModelDialogTitle" xml:space="preserve">
+    <value>GGUF-Modelldatei auswählen</value>
+  </data>
+  <data name="ModelParameters" xml:space="preserve">
+    <value>Modellparameter</value>
+  </data>
+  <data name="ParamOff" xml:space="preserve">
+    <value>aus</value>
+  </data>
+  <data name="ParamMinutes" xml:space="preserve">
+    <value>{0} Min</value>
+  </data>
+  <data name="ParamTemperature" xml:space="preserve">
+    <value>Temperatur</value>
+  </data>
+  <data name="ParamTemperatureHint" xml:space="preserve"><value>Wie stark das Modell seine Formulierungen variiert. Niedrig hält Datum, Zeit und Titel wörtlich – genau das braucht die Planung; hoch ist lebendiger und ungenauer. Standard ist 0,3.</value></data>
+  <data name="ParamMaxTokens" xml:space="preserve">
+    <value>Antwortlänge</value>
+  </data>
+  <data name="ParamMaxTokensHint" xml:space="preserve"><value>Die längste einzelne Antwort in Token – je etwa drei Viertel eines Wortes. Zu wenig, und ein langer Plan bricht mitten im Satz ab; zu viel kostet nichts, solange das Modell nicht so viel schreibt. 4000 reicht für einen ganzen Tagesplan.</value></data>
+  <data name="ParamTopP" xml:space="preserve">
+    <value>Top-p</value>
+  </data>
+  <data name="ParamTopPHint" xml:space="preserve"><value>Eine zweite, gröbere Grenze für dasselbe: Unter 1,00 wählt das Modell nur aus den wahrscheinlichsten Wörtern. Lass den Wert auf 1,00 und nutze stattdessen die Temperatur – bei 1,00 wird der Parameter gar nicht mitgesendet.</value></data>
+  <data name="ParamToolIterations" xml:space="preserve">
+    <value>Werkzeugschritte</value>
+  </data>
+  <data name="ParamToolIterationsHint" xml:space="preserve"><value>Wie oft der Assistent nachsehen, handeln und erneut nachdenken darf, bevor er antworten muss. Jeder Schritt ist ein Netzwerkdurchgang. Wenig ist schneller, gibt aber bei Verschachteltem auf; 12 reicht, um eine ganze Woche zu planen.</value></data>
+  <data name="ParamHistory" xml:space="preserve">
+    <value>Verlaufstiefe</value>
+  </data>
+  <data name="ParamHistoryHint" xml:space="preserve"><value>Wie viele frühere Nachrichten erneut mitgeschickt werden, damit der Assistent den Faden behält. Alles davor ist innerhalb des Gesprächs vergessen. Mehr Kontext kostet Token und bei jeder Nachricht etwas Zeit.</value></data>
+  <data name="ParamTimeout" xml:space="preserve">
+    <value>Zeitlimit</value>
+  </data>
+  <data name="ParamTimeoutHint" xml:space="preserve"><value>Wie lange auf eine Antwort gewartet wird, bevor sie aufgegeben wird. Ein Sicherheitsnetz, keine Geschwindigkeitseinstellung – höher macht nichts langsamer, niedriger macht aus einer langsamen Antwort nur gar keine.</value></data>
+  <data name="ParamExtraInstructions" xml:space="preserve">
+    <value>Zusätzliche Anweisungen</value>
+  </data>
+  <data name="ParamExtraInstructionsPlaceholder" xml:space="preserve"><value>Zum Beispiel: antworte kurz; buche nichts vor 10:00; nenne Deep Work „Fokus“.</value></data>
+  <data name="ResetParameters" xml:space="preserve">
+    <value>Auf Standard zurücksetzen</value>
+  </data>
+  <data name="LocalRuntimeSection" xml:space="preserve">
+    <value>Lokale Engine</value>
+  </data>
+  <data name="ParamContext" xml:space="preserve">
+    <value>Kontextfenster</value>
+  </data>
+  <data name="ParamContextHint" xml:space="preserve">
+    <value>Tokens, die llama-server im Speicher hält. Weniger ist schneller und leichter.</value>
+  </data>
+  <data name="ParamThreads" xml:space="preserve">
+    <value>Threads</value>
+  </data>
+  <data name="ParamThreadsHint" xml:space="preserve">
+    <value>Bei 0 entscheidet llama.cpp. Meist ist es schneller, die Anzahl der physischen Kerne anzugeben.</value>
+  </data>
+  <data name="HideTools" xml:space="preserve">
+    <value>Ausblenden</value>
+  </data>
+  <data name="TrackSection" xml:space="preserve">
+    <value>Wie lief es?</value>
+  </data>
+  <data name="TrackStart" xml:space="preserve">
+    <value>Starten</value>
+  </data>
+  <data name="TrackDone" xml:space="preserve">
+    <value>Erledigt</value>
+  </data>
+  <data name="TrackPartial" xml:space="preserve">
+    <value>Teilweise</value>
+  </data>
+  <data name="TrackSkip" xml:space="preserve">
+    <value>Übersprungen</value>
+  </data>
+  <data name="TrackUndo" xml:space="preserve">
+    <value>Rückgängig</value>
+  </data>
+  <data name="TrackedStarted" xml:space="preserve">
+    <value>gestartet um {0}</value>
+  </data>
+  <data name="TrackedDone" xml:space="preserve">
+    <value>erledigt · {0}</value>
+  </data>
+  <data name="TrackedPartial" xml:space="preserve">
+    <value>teilweise · {0}</value>
+  </data>
+  <data name="TrackedSkipped" xml:space="preserve">
+    <value>übersprungen</value>
+  </data>
+  <data name="TrackHint" xml:space="preserve">
+    <value>Diese Markierungen füllen Abschluss, Plangenauigkeit und Pünktlichkeit in der Analyse.</value>
+  </data>
+  <data name="PeekNothingToday" xml:space="preserve">
+    <value>Nichts geplant</value>
+  </data>
+  <data name="PeekOpen" xml:space="preserve">
+    <value>DAYDRIVE öffnen</value>
+  </data>
+  <data name="PeekBusyToday" xml:space="preserve">
+    <value>heute {0}</value>
+  </data>
+  <data name="PeekOverdue" xml:space="preserve">
+    <value>{0} überfällig</value>
+  </data>
+  <data name="DurationLabelShort" xml:space="preserve">
+    <value>Minuten</value>
+  </data>
+  <data name="FinishedEvent" xml:space="preserve">
+    <value>Gerade beendet</value>
+  </data>
+  <data name="SettingsTabAssistant" xml:space="preserve">
+    <value>KI-Verbindungen</value>
+  </data>
+  <data name="SettingsTabModels" xml:space="preserve">
+    <value>Lokale KI</value>
+  </data>
+  <data name="VisualPalette" xml:space="preserve">
+    <value>Datenpalette</value>
+  </data>
+  <data name="VisualPaletteHint" xml:space="preserve">
+    <value>Farben für Diagramme, Kategorien und Prioritätsmarkierungen.</value>
+  </data>
+  <data name="PaletteVibrant" xml:space="preserve">
+    <value>Lebendig</value>
+  </data>
+  <data name="PaletteAccent" xml:space="preserve">
+    <value>Akzenttöne</value>
+  </data>
+  <data name="PaletteMonochrome" xml:space="preserve">
+    <value>Monochrom</value>
+  </data>
+  <data name="PalettePastel" xml:space="preserve">
+    <value>Pastell</value>
+  </data>
+  <data name="PaletteEarth" xml:space="preserve">
+    <value>Erde</value>
+  </data>
+  <data name="PaletteNeon" xml:space="preserve">
+    <value>Neon</value>
+  </data>
+  <data name="PaletteColorBlind" xml:space="preserve">
+    <value>Barrierearm</value>
+  </data>
+  <data name="RamLabel" xml:space="preserve">
+    <value>RAM</value>
+  </data>
+  <data name="CpuLabel" xml:space="preserve">
+    <value>CPU</value>
+  </data>
+  <data name="MetricPercentagePoints" xml:space="preserve">
+    <value>{0:0} %-Pkt.</value>
+  </data>
+  <data name="InterfaceFont" xml:space="preserve"><value>Oberflächenschrift</value></data>
+  <data name="InterfaceFontHint" xml:space="preserve"><value>Wähle eine mitgelieferte kyrillische Schrift oder füge eine eigene TTF- oder OTF-Datei hinzu.</value></data>
+  <data name="FontPreview" xml:space="preserve"><value>Аа Aa 0123 · Ruhiger Fokus</value></data>
+  <data name="AddCustomFont" xml:space="preserve"><value>Eigene Schrift hinzufügen</value></data>
+  <data name="FontPickerTitle" xml:space="preserve"><value>Schriftdatei auswählen</value></data>
+  <data name="FontAdded" xml:space="preserve"><value>Schrift „{0}“ wurde hinzugefügt.</value></data>
+  <data name="FontInvalid" xml:space="preserve"><value>Diese Schriftdatei konnte nicht gelesen werden.</value></data>
+  <data name="CustomFontLabel" xml:space="preserve"><value>{0} · eigene</value></data>
+  <data name="FontSystem" xml:space="preserve"><value>System</value></data>
+  <data name="ActivityTimer" xml:space="preserve"><value>Aktivitätstimer</value></data>
+  <data name="AiConnectionIntro" xml:space="preserve"><value>Wähle, wer im Assistenten antwortet: ein Modell auf diesem Gerät, eine kompatible API oder ein MCP-Server.</value></data>
+  <data name="LocalAiTitle" xml:space="preserve"><value>Lokale KI</value></data>
+  <data name="LocalAiConnectionHint" xml:space="preserve"><value>Das Modell läuft auf diesem Gerät. Downloads, Dateien und Engine werden unter Lokale KI verwaltet.</value></data>
+  <data name="OpenLocalAi" xml:space="preserve"><value>Öffnen</value></data>
+  <data name="ApiConnectionTitle" xml:space="preserve"><value>API-Verbindung</value></data>
+  <data name="ApiConnectionHint" xml:space="preserve"><value>Verbinde eine OpenAI-kompatible HTTP-API. Der Schlüssel wird auf diesem Gerät verschlüsselt.</value></data>
+  <data name="McpConnectionTitle" xml:space="preserve"><value>MCP-Server</value></data>
+  <data name="McpConnectionHint" xml:space="preserve"><value>Wähle MCP als Anbieter, wenn der Server selbst über ein Brückenwerkzeug antworten soll.</value></data>
+  <data name="McpTransport" xml:space="preserve"><value>Transport</value></data>
+  <data name="McpCommandLabel" xml:space="preserve"><value>Serverbefehl</value></data>
+  <data name="McpToolLabel" xml:space="preserve"><value>Brückenwerkzeug</value></data>
+  <data name="AdvancedSettings" xml:space="preserve"><value>Erweitert</value></data>
+  <data name="AdvancedSettingsHint" xml:space="preserve"><value>Wie das Modell schreibt, wie weit es allein gehen darf und was es immer im Blick behalten soll.</value></data>
+  <data name="TrackEventTooltip" xml:space="preserve"><value>Festhalten, wie dieser Termin verlief</value></data>
+  <data name="TrackPartialTooltip" xml:space="preserve"><value>Teilweise erledigt – du gibst an, wie lange es wirklich gedauert hat</value></data>
+  <data name="UnmarkedEvents" xml:space="preserve"><value>{0} ohne Vermerk</value></data>
+  <data name="PeekOpenPanel" xml:space="preserve"><value>Panel öffnen</value></data>
+  <data name="AskAssistant" xml:space="preserve"><value>Assistent fragen</value></data>
+  <data name="AiProviderLocalSummary" xml:space="preserve"><value>Das Modell läuft auf diesem Rechner. Nichts verlässt das Gerät, und die Engine wird unten geladen und verwaltet.</value></data>
+  <data name="AiProviderApiSummary" xml:space="preserve"><value>Ein beliebiger OpenAI-kompatibler Endpunkt, auch Ollama. Dein Zeitplan wird erst gesendet, wenn du es unten erlaubst.</value></data>
+  <data name="AiProviderMcpSummary" xml:space="preserve"><value>Ein MCP-Server antwortet über ein einzelnes Brücken-Tool. Bilder lassen sich so nicht senden.</value></data>
+  <data name="AttachImage" xml:space="preserve"><value>Bild…</value></data>
+  <data name="AttachDocument" xml:space="preserve"><value>Dokument…</value></data>
+  <data name="AttachImagesFilter" xml:space="preserve"><value>Bilder</value></data>
+  <data name="AttachDocumentsFilter" xml:space="preserve"><value>Dokumente</value></data>
+  <data name="AttachUnsupported" xml:space="preserve"><value>Dieses Format kann nicht gelesen werden. Bilder: PNG, JPEG, WebP, BMP, GIF. Dokumente: PDF, DOCX und Textdateien.</value></data>
+  <data name="AttachTooLarge" xml:space="preserve"><value>Die Datei ist größer als {0} MB und kann nicht angehängt werden.</value></data>
+  <data name="AttachImageNotSupported" xml:space="preserve"><value>Die aktuelle Engine kann keine Bilder lesen. Wechsle den Anbieter oder aktiviere die Bildeingabe für das lokale Modell.</value></data>
+  <data name="SettingsTabData" xml:space="preserve"><value>Daten und Synchronisierung</value></data>
+  <data name="SettingsTabAbout" xml:space="preserve"><value>Über</value></data>
+  <data name="CloudSyncTitle" xml:space="preserve"><value>Cloud-Synchronisierung</value></data>
+  <data name="CloudSyncIntro" xml:space="preserve"><value>Legt eine Kopie Ihrer Daten dort ab, wo Ihre anderen Computer sie abholen können. Synchronisiert werden Aufgaben, Termine, Fortschritt, Assistenten-Chats und das Gedächtnis; Einstellungen bleiben auf jedem Computer eigen.</value></data>
+  <data name="CloudDestination" xml:space="preserve"><value>Ziel</value></data>
+  <data name="CloudProviderOff" xml:space="preserve"><value>Aus</value></data>
+  <data name="CloudProviderFolder" xml:space="preserve"><value>Synchronisierter Ordner</value></data>
+  <data name="CloudFolderHint" xml:space="preserve"><value>Wähle einen Ordner, den dein Google-Drive-, OneDrive- oder Dropbox-Client bereits synchronisiert. Hier sind weder Konto noch Schlüssel nötig.</value></data>
+  <data name="CloudFolderPlaceholder" xml:space="preserve"><value>C:\Users\name\Google Drive</value></data>
+  <data name="CloudFolderDialogTitle" xml:space="preserve"><value>Synchronisierten Ordner wählen</value></data>
+  <data name="Browse" xml:space="preserve"><value>Durchsuchen…</value></data>
+  <data name="CloudGoogleHint" xml:space="preserve"><value>Lädt direkt in den versteckten App-Ordner von Drive. Auf den Rest deines Drives kann die App nicht zugreifen.</value></data>
+  <data name="CloudGoogleSetupTitle" xml:space="preserve"><value>Einmalige Einrichtung</value></data>
+  <data name="CloudGoogleSetupSteps" xml:space="preserve"><value>Einmalig in der Google Cloud Console:
+1. Ein Projekt anlegen und darin die „Google Drive API“ aktivieren.
+2. Auf dem OAuth-Zustimmungsbildschirm „Extern“ wählen und die eigene Google-Adresse als Testnutzer eintragen.
+3. Unter „Anmeldedaten“ eine OAuth-Client-ID vom Typ „Desktop-App“ erstellen.
+4. Client-ID und Clientschlüssel unten einfügen und „Google-Konto verbinden“ drücken.</value></data>
+  <data name="CloudGoogleConsole" xml:space="preserve"><value>Google Cloud Console öffnen</value></data>
+  <data name="CloudGoogleClientId" xml:space="preserve"><value>OAuth-Client-ID</value></data>
+  <data name="CloudGoogleClientSecret" xml:space="preserve"><value>OAuth-Client-Secret</value></data>
+  <data name="CloudGoogleClientSecretPlaceholder" xml:space="preserve"><value>GOCSPX-…</value></data>
+  <data name="CloudGoogleClientSecretHint" xml:space="preserve"><value>Erforderlich. Er steht in der Google Cloud Console neben der Client-ID. Wird verschlüsselt auf diesem Computer gespeichert und nur an Google gesendet.</value></data>
+  <data name="CloudGoogleConnect" xml:space="preserve"><value>Google-Konto verbinden</value></data>
+  <data name="CloudGoogleDisconnect" xml:space="preserve"><value>Trennen</value></data>
+  <data name="CloudGoogleWaiting" xml:space="preserve"><value>Schließe die Anmeldung im Browser ab…</value></data>
+  <data name="CloudGoogleDisconnected" xml:space="preserve"><value>Das Google-Konto wurde getrennt. Die Kopie in der Cloud blieb unberührt.</value></data>
+  <data name="CloudDeviceName" xml:space="preserve"><value>Dieser Rechner heißt</value></data>
+  <data name="CloudDeviceNamePlaceholder" xml:space="preserve"><value>Laptop</value></data>
+  <data name="CloudDeviceNameHint" xml:space="preserve"><value>Wird neben einer Sicherung angezeigt, damit du siehst, welcher Rechner zuletzt hochgeladen hat.</value></data>
+  <data name="CloudAutomatic" xml:space="preserve"><value>Von selbst synchronisieren</value></data>
+  <data name="CloudAutomaticHint" xml:space="preserve"><value>Prüft kurz nach dem Start, alle fünfzehn Minuten und noch einmal beim Beenden. Ist dies aus, synchronisiert nur die Schaltfläche.</value></data>
+  <data name="CloudSyncNow" xml:space="preserve"><value>Jetzt synchronisieren</value></data>
+  <data name="CloudCheck" xml:space="preserve"><value>Cloud prüfen</value></data>
+  <data name="CloudSyncRunning" xml:space="preserve"><value>Synchronisierung…</value></data>
+  <data name="CloudNoSnapshot" xml:space="preserve"><value>Es wurde noch nichts hochgeladen.</value></data>
+  <data name="CloudSnapshotFormat" xml:space="preserve"><value>gespeichert {0}</value></data>
+  <data name="CloudSnapshotDeviceFormat" xml:space="preserve"><value>gespeichert {0} von „{1}“</value></data>
+  <data name="CloudConflictTitle" xml:space="preserve"><value>Beide Kopien haben sich geändert</value></data>
+  <data name="CloudConflictHint" xml:space="preserve"><value>Sowohl dieser Rechner als auch die Cloud-Kopie wurden seit der letzten Synchronisierung geändert. Beim Zusammenführen müsste geraten werden. Wähle deshalb, welche Kopie bleiben soll; die andere wird ersetzt.</value></data>
+  <data name="CloudKeepLocal" xml:space="preserve"><value>Diesen Rechner behalten</value></data>
+  <data name="CloudKeepCloud" xml:space="preserve"><value>Cloud-Kopie behalten</value></data>
+  <data name="CloudRestartHint" xml:space="preserve"><value>Die heruntergeladene Kopie ist bereit und wird nach einem Neustart von DAYDRIVE verwendet. Deine bisherigen Daten wurden im Ordner Backups gesichert.</value></data>
+  <data name="LocalData" xml:space="preserve"><value>Auf diesem Rechner</value></data>
+  <data name="LocalDataHint" xml:space="preserve"><value>Alles liegt hier in einer SQLite-Datenbank, zusammen mit Sicherungen und den Dateien des lokalen Modells.</value></data>
+  <data name="OpenDataFolder" xml:space="preserve"><value>Ordner öffnen</value></data>
+  <data name="CouldNotOpenFolder" xml:space="preserve"><value>Der Ordner konnte nicht geöffnet werden.</value></data>
+  <data name="CouldNotOpenLink" xml:space="preserve"><value>Der Browser konnte für {0} nicht geöffnet werden</value></data>
+  <data name="AboutVersionFormat" xml:space="preserve"><value>Version {0}</value></data>
+  <data name="AboutTagline" xml:space="preserve"><value>Ein kompakter Planer und Kalender, der Daten lokal speichert und am Bildschirmrand immer griffbereit ist.</value></data>
+  <data name="AboutAuthorLabel" xml:space="preserve"><value>Entwickelt von</value></data>
+  <data name="AboutOpenGitHub" xml:space="preserve"><value>GitHub</value></data>
+  <data name="AboutLinks" xml:space="preserve"><value>Links</value></data>
+  <data name="AboutRepository" xml:space="preserve"><value>Quellcode</value></data>
+  <data name="AboutIssues" xml:space="preserve"><value>Ein Problem melden</value></data>
+  <data name="AboutReleases" xml:space="preserve"><value>Alle Releases</value></data>
+  <data name="UpdatesTitle" xml:space="preserve"><value>Updates</value></data>
+  <data name="GeneralIntro" xml:space="preserve"><value>Sprache und was die Anwendung beim Start des Rechners tut.</value></data>
+  <data name="AppearanceIntro" xml:space="preserve"><value>Thema, Farben und Schrift, und wie viel vom Desktop durchscheint.</value></data>
+  <data name="BehaviorIntro" xml:space="preserve"><value>Wie die Leiste und das Schnell-Widget ein- und ausgeblendet werden.</value></data>
+  <data name="RemindersIntro" xml:space="preserve"><value>Karten, die vor Beginn oder Ende eines Termins am Randgriff erscheinen.</value></data>
+  <data name="UpdatesIntro" xml:space="preserve"><value>Einmal täglich im Hintergrund geprüft. Nichts hier unterbricht.</value></data>
+  <data name="UpdateChecking" xml:space="preserve"><value>Wird geprüft…</value></data>
+  <data name="UpdateUpToDate" xml:space="preserve"><value>Du hast die neueste Version.</value></data>
+  <data name="UpdateAvailableFormat" xml:space="preserve"><value>Version {0} ist verfügbar.</value></data>
+  <data name="UpdateSkippedFormat" xml:space="preserve"><value>Version {0} wird nicht mehr erwähnt.</value></data>
+  <data name="UpdateSkip" xml:space="preserve"><value>Überspringen</value></data>
+  <data name="UpdateOpen" xml:space="preserve"><value>Was ist neu</value></data>
+  <data name="UpdateCheckEnabled" xml:space="preserve"><value>Über neue Versionen informieren</value></data>
+  <data name="UpdateCheckHint" xml:space="preserve"><value>Fragt GitHub einmal am Tag. Es werden keine persönlichen Daten gesendet, du wirst nicht unterbrochen und eine übersprungene Version wird nicht erneut angezeigt.</value></data>
+  <data name="UpdateCheckNow" xml:space="preserve"><value>Jetzt prüfen</value></data>
+  <data name="PeekOfPlanned" xml:space="preserve"><value>von {0} geplant</value></data>
+  <data name="PeekUntilStart" xml:space="preserve"><value>bis zum Start</value></data>
+  <data name="PeekAllGood" xml:space="preserve"><value>Alles im Griff</value></data>
+  <data name="PeekNotStarted" xml:space="preserve"><value>noch nicht begonnen</value></data>
+  <data name="PeekOverPlanned" xml:space="preserve"><value>{0} über Plan</value></data>
+  <data name="HandleTooltipPanel" xml:space="preserve"><value>Links — Panel</value></data>
+  <data name="HandleTooltipWidget" xml:space="preserve"><value>Rechts — Widget</value></data>
+  <data name="WidgetHideDelay" xml:space="preserve"><value>Verzögerung bis das Widget verschwindet</value></data>
+  <data name="WidgetHideDelayHint" xml:space="preserve"><value>Wie lange das Widget sichtbar bleibt, nachdem der Zeiger es verlassen hat. Ein Rechtsklick auf den Rand öffnet es; die linke Taste öffnet weiterhin das Panel.</value></data>
+  <data name="WidgetKeepOpen" xml:space="preserve"><value>Widget nicht automatisch ausblenden</value></data>
+  <data name="WidgetKeepOpenHint" xml:space="preserve"><value>Das Schnell-Widget bleibt sichtbar, bis es geschlossen wird — mit der rechten Maustaste auf den Randgriff oder auf das Widget selbst. Erinnerungen holen es weiterhin selbst hervor und nehmen es wieder mit.</value></data>
+  <data name="MascotColor" xml:space="preserve"><value>Widget-Maskottchen</value></data>
+  <data name="MascotColorDynamic" xml:space="preserve"><value>Der Themenfarbe folgen</value></data>
+  <data name="MascotColorHint" xml:space="preserve"><value>Die Figur neben der Uhr im Schnell-Widget. Sie übernimmt die Akzentfarbe des Themas, solange hier keine eigene gewählt ist.</value></data>
+  <data name="MascotShow" xml:space="preserve"><value>Maskottchen anzeigen</value></data>
+  <data name="SelectEvents" xml:space="preserve"><value>Auswählen</value></data>
+  <data name="SelectAllEvents" xml:space="preserve"><value>Alle</value></data>
+  <data name="ClearSelectionAction" xml:space="preserve"><value>Aufheben</value></data>
+  <data name="SelectionNone" xml:space="preserve"><value>Nichts ausgewählt</value></data>
+  <data name="SelectionCount" xml:space="preserve"><value>{0} ausgewählt · {1}</value></data>
+  <data name="SelectionEmptyHint" xml:space="preserve"><value>Markiere zuerst die gewünschten Termine.</value></data>
+  <data name="SelectEventAction" xml:space="preserve"><value>Auswählen</value></data>
+  <data name="SelectionExit" xml:space="preserve"><value>Fertig</value></data>
+  <data name="SelectionHint" xml:space="preserve"><value>Termine markieren, um sie gemeinsam zu verschieben oder zu löschen.</value></data>
+  <data name="SelectionDeleteConfirm" xml:space="preserve"><value>{0} löschen?</value></data>
+  <data name="SelectionDeleted" xml:space="preserve"><value>Gelöscht: {0}</value></data>
+  <data name="DeleteSelected" xml:space="preserve"><value>Löschen</value></data>
+  <data name="MoveEvent" xml:space="preserve"><value>Verschieben…</value></data>
+  <data name="MoveSelected" xml:space="preserve"><value>Verschieben</value></data>
+  <data name="MoveTitle" xml:space="preserve"><value>Termine verschieben</value></data>
+  <data name="MoveSubjectCount" xml:space="preserve"><value>{0} Termine</value></data>
+  <data name="MoveModeTime" xml:space="preserve"><value>Um eine Zeit</value></data>
+  <data name="MoveModeDate" xml:space="preserve"><value>Auf ein Datum</value></data>
+  <data name="MoveByHowMuch" xml:space="preserve"><value>Verschieben um</value></data>
+  <data name="MoveEarlier" xml:space="preserve"><value>Früher</value></data>
+  <data name="MoveLater" xml:space="preserve"><value>Später</value></data>
+  <data name="MovePreview" xml:space="preserve"><value>{0} — {1}, {2}</value></data>
+  <data name="MoveNothingToDo" xml:space="preserve"><value>Damit ändert sich nichts.</value></data>
+  <data name="MoveCheck" xml:space="preserve"><value>Prüfen und verschieben</value></data>
+  <data name="MoveApply" xml:space="preserve"><value>Verschieben</value></data>
+  <data name="MoveAffects" xml:space="preserve"><value>Das betrifft andere Termine</value></data>
+  <data name="MoveNoCollisions" xml:space="preserve"><value>Nichts anderes ist betroffen.</value></data>
+  <data name="MoveCollisionSummary" xml:space="preserve"><value>{0} Überschneidungen</value></data>
+  <data name="MoveConfirmClear" xml:space="preserve"><value>{0} werden verschoben. Nichts anderes ist betroffen — {1}</value></data>
+  <data name="MoveConfirmWithCollisions" xml:space="preserve"><value>Das Verschieben von {0} überschneidet {1} andere Termine. Trotzdem verschieben?</value></data>
+  <data name="MoveCompleted" xml:space="preserve"><value>Verschoben: {0}</value></data>
+  <data name="MoveCompletedWithCollisions" xml:space="preserve"><value>Verschoben: {0} · Überschneidungen: {1}</value></data>
+  <data name="CollisionWithExisting" xml:space="preserve"><value>„{0}“ überschneidet „{1}“</value></data>
+  <data name="CollisionWithinSelection" xml:space="preserve"><value>„{0}“ und „{1}“ überschneiden sich</value></data>
+  <data name="MoveNudgeMinusHour" xml:space="preserve"><value>−1 Std</value></data>
+  <data name="MoveNudgeMinus15" xml:space="preserve"><value>−15 Min</value></data>
+  <data name="MoveNudgePlus15" xml:space="preserve"><value>+15 Min</value></data>
+  <data name="MoveNudgePlusHour" xml:space="preserve"><value>+1 Std</value></data>
+  <data name="DragEventHint" xml:space="preserve"><value>Ziehe einen Termin auf eine andere Uhrzeit oder einen anderen Tag.</value></data>
+  <data name="DayResultLabel" xml:space="preserve"><value>Tagesergebnis</value></data>
+  <data name="DaySoFarLabel" xml:space="preserve"><value>Heute bisher</value></data>
+  <data name="DayAheadLabel" xml:space="preserve"><value>Bevorstehend</value></data>
+  <data name="DayReviewTitle" xml:space="preserve"><value>{0} von {1} erledigt</value></data>
+  <data name="DayReviewMeta" xml:space="preserve"><value>{0} von {1} · {2}%</value></data>
+  <data name="DayReviewEmpty" xml:space="preserve"><value>Nichts war geplant</value></data>
+  <data name="DayReviewEmptyHint" xml:space="preserve"><value>Dieser Tag hat keine Termine.</value></data>
+  <data name="DayAheadTitle" xml:space="preserve"><value>{0} · {1}</value></data>
+  <data name="DayChipDone" xml:space="preserve"><value>{0} erledigt</value></data>
+  <data name="DayChipPartial" xml:space="preserve"><value>{0} teilweise</value></data>
+  <data name="DayChipSkipped" xml:space="preserve"><value>{0} übersprungen</value></data>
+  <data name="DayChipUnmarked" xml:space="preserve"><value>{0} ohne Eintrag</value></data>
+  <data name="DayChipUpcoming" xml:space="preserve"><value>{0} stehen aus</value></data>
+  <data name="PeekUnmarked" xml:space="preserve"><value>{0} ohne Eintrag</value></data>
+  <data name="PeekSkipped" xml:space="preserve"><value>{0} übersprungen</value></data>
+  <data name="PeekPartial" xml:space="preserve"><value>{0} nur teilweise</value></data>
+  <data name="PeekDayDone" xml:space="preserve"><value>Tag abgeschlossen · {0} erledigt</value></data>
+  <data name="PeekDaySummary" xml:space="preserve"><value>{0} von {1} erledigt</value></data>
+  <data name="TrackRunning" xml:space="preserve"><value>Läuft</value></data>
+  <data name="RangeDetailDays" xml:space="preserve"><value>letzte {0} Tage</value></data>
+  <data name="RangeDetailWeeks" xml:space="preserve"><value>letzte {0} Wochen</value></data>
+  <data name="RangeDetailCalendarWeek" xml:space="preserve"><value>Kalenderwoche · Mo–So</value></data>
+  <data name="RangeDetailCalendarMonth" xml:space="preserve"><value>Kalendermonat · erster bis letzter Tag</value></data>
+  <data name="RangeDetailCalendarQuarter" xml:space="preserve"><value>3 vollständige Kalendermonate</value></data>
+  <data name="RangePickerTooltip" xml:space="preserve"><value>Angezeigter Zeitraum</value></data>
+  <data name="AnalyticsCurrentWeek" xml:space="preserve"><value>Aktuelle Woche</value></data>
+  <data name="AnalyticsPreviousWeek" xml:space="preserve"><value>Vorherige Woche</value></data>
+  <data name="AnalyticsNextWeek" xml:space="preserve"><value>Nächste Woche</value></data>
+  <data name="ChartPerDay" xml:space="preserve"><value>pro Tag</value></data>
+  <data name="ChartPerWeek" xml:space="preserve"><value>pro Woche</value></data>
+  <data name="ChartTotal" xml:space="preserve"><value>gesamt</value></data>
+  <data name="EventsCountOne" xml:space="preserve"><value>{0} Termin</value></data>
+  <data name="EventsCountFew" xml:space="preserve"><value>{0} Termine</value></data>
+  <data name="EventsCountMany" xml:space="preserve"><value>{0} Termine</value></data>
+  <data name="ChartWeeklyLoad" xml:space="preserve"><value>Woche für Woche</value></data>
+  <data name="ShiftMoreOptions" xml:space="preserve"><value>Weitere Optionen</value></data>
+  <data name="ShiftDays" xml:space="preserve"><value>Tage</value></data>
+  <data name="ShiftOnDate" xml:space="preserve"><value>Auf ein Datum</value></data>
+  <data name="ShiftDayDateConfirmation" xml:space="preserve"><value>Alles am {0} auf den {1} verschieben?</value></data>
+  <data name="VisionUnsupported" xml:space="preserve"><value>Dieses Modell hat keinen Bild-Encoder, daher bleibt die Bildeingabe deaktiviert. Wähle ein Modell mit der Markierung „Bilder“.</value></data>
+  <data name="VisionReady" xml:space="preserve"><value>Die Bildeingabe ist bereit. Hänge ein Bild an und stelle eine Frage dazu.</value></data>
+  <data name="VisionNeedsProjector" xml:space="preserve"><value>Der Projektor für dieses Modell wurde noch nicht heruntergeladen. Nutze die Schaltfläche oben.</value></data>
+  <data name="VisionNeedsCustomProjector" xml:space="preserve"><value>Wähle unten die mmproj-Datei dieses Modells, sonst bleibt die Bildeingabe deaktiviert.</value></data>
+  <data name="VisionBadge" xml:space="preserve"><value>Bilder</value></data>
+  <data name="CustomWeightsTitle" xml:space="preserve"><value>Modelldatei · GGUF</value></data>
+  <data name="CustomWeightsHint" xml:space="preserve"><value>Das Modell selbst: alles, was es weiß, und alles, was es schreiben kann. Erforderlich.</value></data>
+  <data name="CustomProjectorTitle" xml:space="preserve"><value>Bildprojektor · mmproj</value></data>
+  <data name="CustomProjectorHint" xml:space="preserve"><value>Eine zweite, viel kleinere Datei, die ein Bild in etwas verwandelt, das das Modell oben lesen kann. Nur für Bildeingabe – und nur die mmproj-Datei genau dieses Modells.</value></data>
+  <data name="CustomFileMissing" xml:space="preserve"><value>Nicht gewählt</value></data>
+  <data name="McpEndpointHint" xml:space="preserve"><value>Die eigene Adresse des MCP-Servers. Getrennt von der API-Adresse: wurde die eine für die andere gehalten, gab es vor jeder Nachricht einen aussichtslosen Verbindungsversuch.</value></data>
+  <data name="AdvancedMcpNotice" xml:space="preserve"><value>Die MCP-Brücke antwortet selbst, daher erreicht sie keine dieser Einstellungen. Wechsle zu einem lokalen Modell oder einer API-Verbindung, um Anfragen anzupassen.</value></data>
+  <data name="ParamGroupSampling" xml:space="preserve"><value>Wie die Antwort geschrieben wird</value></data>
+  <data name="ParamGroupBudget" xml:space="preserve"><value>Wie weit es gehen darf</value></data>
+  <data name="ParamGroupStanding" xml:space="preserve"><value>Jedes Gespräch</value></data>
+  <data name="AiActionSetTaskStatus" xml:space="preserve"><value>Aufgabenstatus ändern</value></data>
+  <data name="AiActionCreateFocusBlock" xml:space="preserve"><value>Arbeitszeit reservieren</value></data>
+  <data name="StageToolSearch" xml:space="preserve"><value>Suche im Zeitplan…</value></data>
+  <data name="TaskStatusInbox" xml:space="preserve"><value>Eingang</value></data>
+  <data name="TaskStatusReady" xml:space="preserve"><value>Bereit</value></data>
+  <data name="TaskStatusScheduled" xml:space="preserve"><value>Geplant</value></data>
+  <data name="TaskStatusInProgress" xml:space="preserve"><value>In Arbeit</value></data>
+  <data name="TaskStatusDone" xml:space="preserve"><value>Erledigt</value></data>
+  <data name="TaskStatusCancelled" xml:space="preserve"><value>Abgebrochen</value></data>
+  <data name="AiAccessConfirmAllShort" xml:space="preserve"><value>Bestätigen</value></data>
+  <data name="AiAccessAutoSafeShort" xml:space="preserve"><value>Sicher</value></data>
+  <data name="AiAccessFullShort" xml:space="preserve"><value>Voll</value></data>
+  <data name="SnapStep" xml:space="preserve"><value>{0} Min.</value></data>
+  <data name="Reminders" xml:space="preserve"><value>Erinnerungen</value></data>
+  <data name="NotificationsEnabled" xml:space="preserve"><value>Erinnerungen anzeigen</value></data>
+  <data name="NotificationsEnabledHint" xml:space="preserve"><value>Eine Karte im Schnell-Widget neben dem Randgriff, vor Beginn oder Ende eines Termins. Nichts wird an das System übergeben.</value></data>
+  <data name="NotificationSound" xml:space="preserve"><value>Erinnerungston</value></data>
+  <data name="NotificationSoundHint" xml:space="preserve"><value>Spielt den in den Systemeinstellungen gewählten Hinweiston, leise wenn das Widget schon offen ist.</value></data>
+  <data name="NotificationsOffHint" xml:space="preserve"><value>Erinnerungen sind aus.</value></data>
+  <data name="NotificationDismissAll" xml:space="preserve"><value>Alle schließen</value></data>
+  <data name="DoNotDisturb" xml:space="preserve"><value>Nicht stören</value></data>
+  <data name="DoNotDisturbUntil" xml:space="preserve"><value>Ruhe bis {0}</value></data>
+  <data name="DoNotDisturbEnd" xml:space="preserve"><value>Nicht stören beenden</value></data>
+  <data name="DoNotDisturbOffHint" xml:space="preserve"><value>Erinnerungen kommen wie geplant.</value></data>
+  <data name="DoNotDisturbOffShort" xml:space="preserve"><value>Aus</value></data>
+  <data name="DoNotDisturbUntilResumedHint" xml:space="preserve"><value>Ruhe, bis du Erinnerungen wieder einschaltest.</value></data>
+  <data name="DoNotDisturbLength" xml:space="preserve"><value>Wie lange</value></data>
+  <data name="QuietLengthMinutes" xml:space="preserve"><value>{0} Min.</value></data>
+  <data name="QuietLengthHours" xml:space="preserve"><value>{0} Std.</value></data>
+  <data name="QuietLengthUntilResumed" xml:space="preserve"><value>Bis ich es wieder einschalte</value></data>
+  <data name="FocusMode" xml:space="preserve"><value>Fokusmodus</value></data>
+  <data name="FocusModeIntro" xml:space="preserve"><value>Solange ein Spiel — oder sonst etwas — den ganzen Bildschirm einnimmt, tritt die Shell zurück: Sie gibt die systemweiten Tastenkürzel frei, damit die Tasten das erreichen, was gerade davor liegt, und hält ihre Erinnerungen zurück, bis der Bildschirm wieder Ihnen gehört.</value></data>
+  <data name="FocusModeManualOnlyHint" xml:space="preserve"><value>Dieser Desktop sagt nicht, was sonst auf dem Bildschirm ist, also wird von allein nichts bemerkt. Von Hand eingeschaltet funktioniert der Fokusmodus auch hier.</value></data>
+  <data name="FocusModeAuto" xml:space="preserve"><value>Vollbild-Anwendungen bemerken</value></data>
+  <data name="FocusModeHold" xml:space="preserve"><value>Eingeschaltet lassen</value></data>
+  <data name="FocusModeHoldHint" xml:space="preserve"><value>Bleibt an, ganz gleich was auf dem Bildschirm ist, bis er wieder ausgeschaltet wird. Über einen Neustart hinaus wird das nicht gemerkt.</value></data>
+  <data name="FocusModeReleaseShortcuts" xml:space="preserve"><value>Tastenkürzel freigeben</value></data>
+  <data name="FocusModeReleaseShortcutsHint" xml:space="preserve"><value>Eine Kombination, die diese Anwendung hält, bekommt das Spiel nie zu sehen. In den eigenen Fenstern von DAYDRIVE wirken sie weiter.</value></data>
+  <data name="FocusModeHoldReminders" xml:space="preserve"><value>Erinnerungen zurückhalten</value></data>
+  <data name="FocusModeHoldRemindersHint" xml:space="preserve"><value>Über den Bildschirm wird nichts gezeichnet. Was fällig wurde, kommt gesammelt, sobald der Fokusmodus endet — verloren geht nichts.</value></data>
+  <data name="FocusModeHideHandle" xml:space="preserve"><value>Den Streifen vom Bildschirm nehmen</value></data>
+  <data name="FocusModeHideHandleHint" xml:space="preserve"><value>Der Streifen am rechten Rand nimmt keine Klicks mehr an. Das Symbol im Infobereich öffnet die Oberfläche weiterhin, und der Streifen ist zurück, sobald der Fokusmodus endet.</value></data>
+  <data name="FocusModeIdleHint" xml:space="preserve"><value>Nichts nimmt den ganzen Bildschirm ein. Die Tastenkürzel sind belegt, Erinnerungen kommen an.</value></data>
+  <data name="FocusModeOffHint" xml:space="preserve"><value>Die Shell bleibt, wie sie ist, was auch immer sonst auf dem Bildschirm steht.</value></data>
+  <data name="FocusModeHeldHint" xml:space="preserve"><value>Von Hand eingeschaltet.</value></data>
+  <data name="FocusModeAppHint" xml:space="preserve"><value>{0} hat den Bildschirm.</value></data>
+  <data name="FocusModeAnonHint" xml:space="preserve"><value>Etwas nimmt den ganzen Bildschirm ein.</value></data>
+  <data name="FocusModePresentingHint" xml:space="preserve"><value>Der Präsentationsmodus ist an.</value></data>
+  <data name="FocusModeOnShort" xml:space="preserve"><value>An</value></data>
+  <data name="FocusModeHeldTitle" xml:space="preserve"><value>Während der Bildschirm belegt war</value></data>
+  <data name="ShortcutsFocusHeld" xml:space="preserve"><value>Der Fokusmodus hat sie vorerst freigegeben — etwas anderes hat den ganzen Bildschirm. In den Fenstern von DAYDRIVE wirken sie weiter.</value></data>
+  <data name="LocalModelGpu" xml:space="preserve"><value>Grafikkarte verwenden</value></data>
+  <data name="LocalModelGpuOnHint" xml:space="preserve"><value>Neben der Prozessor-Version wird eine GPU-Version der Engine installiert; alles, was passt, läuft auf der Karte. Bei einer Änderung startet das Modell neu.</value></data>
+  <data name="LocalModelGpuOffHint" xml:space="preserve"><value>Das Modell läuft vollständig auf dem Prozessor. Langsamer, dafür bleibt die Karte frei.</value></data>
+  <data name="GpuLabel" xml:space="preserve"><value>GPU</value></data>
+  <data name="CpuOnlyLabel" xml:space="preserve"><value>CPU</value></data>
+  <data name="VramLabel" xml:space="preserve"><value>VRAM</value></data>
+  <data name="GpuOffloadDetail" xml:space="preserve"><value>{0} · {1} von {2} Schichten auf der Karte</value></data>
+  <data name="CpuOnlyDetail" xml:space="preserve"><value>Läuft auf dem Prozessor</value></data>
+  <data name="ResourceOfTotal" xml:space="preserve"><value>von {0} im Rechner</value></data>
+  <data name="ResourceNotInUse" xml:space="preserve"><value>nicht genutzt</value></data>
+  <data name="ResourceUnavailable" xml:space="preserve"><value>—</value></data>
+  <data name="StageLoadingModel" xml:space="preserve"><value>Modell wird geladen…</value></data>
+  <data name="TrackPause" xml:space="preserve"><value>Pause</value></data>
+  <data name="TrackResume" xml:space="preserve"><value>Resume</value></data>
+  <data name="TrackStop" xml:space="preserve"><value>Stop</value></data>
+  <data name="TrackPaused" xml:space="preserve"><value>Paused</value></data>
+  <data name="TrackWorked" xml:space="preserve"><value>Worked</value></data>
+  <data name="TrackPausedFor" xml:space="preserve"><value>{0} paused</value></data>
+  <data name="TrackPlanActual" xml:space="preserve"><value>plan {0} · actual {1}</value></data>
+  <data name="TrackOverPlan" xml:space="preserve"><value>{0} over plan</value></data>
+  <data name="TrackUnderPlan" xml:space="preserve"><value>{0} left of the plan</value></data>
+  <data name="TrackedPartialProgress" xml:space="preserve"><value>partly · {0}% · {1}</value></data>
+  <data name="SessionTimerTooltip" xml:space="preserve"><value>Work time. Pauses are counted separately and never added to it.</value></data>
+  <data name="PausePromptTitle" xml:space="preserve"><value>Still on this?</value></data>
+  <data name="PausePromptBody" xml:space="preserve"><value>Paused for {0}.</value></data>
+  <data name="PausePromptResume" xml:space="preserve"><value>Keep going</value></data>
+  <data name="PausePromptFinish" xml:space="preserve"><value>End session</value></data>
+  <data name="SessionResultTitle" xml:space="preserve"><value>How did it go?</value></data>
+  <data name="SessionResultDone" xml:space="preserve"><value>Done</value></data>
+  <data name="SessionResultPartial" xml:space="preserve"><value>Partly</value></data>
+  <data name="SessionResultMissed" xml:space="preserve"><value>Not done</value></data>
+  <data name="SessionMeasured" xml:space="preserve"><value>Worked {0} of {1} planned</value></data>
+  <data name="SessionMeasuredNoPlan" xml:space="preserve"><value>Worked {0}</value></data>
+  <data name="SessionProgressTitle" xml:space="preserve"><value>How far did it get?</value></data>
+  <data name="SessionNextStepTitle" xml:space="preserve"><value>What's left?</value></data>
+  <data name="SessionNextStepPlaceholder" xml:space="preserve"><value>Recheck the last three screens</value></data>
+  <data name="SessionSave" xml:space="preserve"><value>Save</value></data>
+  <data name="SessionLater" xml:space="preserve"><value>Not now</value></data>
+  <data name="NextStepChip" xml:space="preserve"><value>Next: {0}</value></data>
+  <data name="NextStepTooltip" xml:space="preserve"><value>Where to pick this up. Set when the event was left part-done.</value></data>
+  <data name="ChatWrapUp" xml:space="preserve"><value>Day wrap-up</value></data>
+  <data name="WrapUpTitle" xml:space="preserve"><value>Wrap up the day</value></data>
+  <data name="WrapUpHint" xml:space="preserve"><value>Alles, was ohne Ergebnis endete – heute und in den Wochen davor.</value></data>
+  <data name="WrapUpCount" xml:space="preserve"><value>{0} without a result</value></data>
+  <data name="WrapUpEmpty" xml:space="preserve"><value>Nothing left to answer for</value></data>
+  <data name="WrapUpEmptyHint" xml:space="preserve"><value>Jedes beendete Ereignis hat ein Ergebnis.</value></data>
+  <data name="WrapUpDone" xml:space="preserve"><value>Done</value></data>
+  <data name="WrapUpMove" xml:space="preserve"><value>Move</value></data>
+  <data name="WrapUpSkip" xml:space="preserve"><value>Skip</value></data>
+  <data name="WrapUpMoveTooltip" xml:space="preserve"><value>Move to tomorrow, same time</value></data>
+  <data name="WrapUpAcceptAll" xml:space="preserve"><value>Accept all suggestions</value></data>
+  <data name="WrapUpHadActivity" xml:space="preserve"><value>timer ran {0}</value></data>
+  <data name="WrapUpNeverStarted" xml:space="preserve"><value>never started</value></data>
+  <data name="WrapUpSuggestion" xml:space="preserve"><value>suggested: {0}</value></data>
+  <data name="WrapUpResolvedDone" xml:space="preserve"><value>Marked done</value></data>
+  <data name="WrapUpResolvedSkipped" xml:space="preserve"><value>Skipped</value></data>
+  <data name="WrapUpResolvedMoved" xml:space="preserve"><value>Moved to {0}</value></data>
+  <data name="WrapUpOffer" xml:space="preserve"><value>{0} of today's events have no result yet.</value></data>
+  <data name="WrapUpOpen" xml:space="preserve"><value>Wrap up</value></data>
+  <data name="WrapUpLater" xml:space="preserve"><value>Later</value></data>
+  <data name="WrapUpBadge" xml:space="preserve"><value>{0}</value></data>
+  <data name="BlockerTitle" xml:space="preserve"><value>Moved {0} times now. What is in the way?</value></data>
+  <data name="BlockerNotEnoughTime" xml:space="preserve"><value>Not enough time</value></data>
+  <data name="BlockerTooBig" xml:space="preserve"><value>Too big</value></data>
+  <data name="BlockerUnclearStart" xml:space="preserve"><value>Unclear where to start</value></data>
+  <data name="BlockerNotRelevant" xml:space="preserve"><value>No longer relevant</value></data>
+  <data name="BlockerShorten" xml:space="preserve"><value>Make it shorter</value></data>
+  <data name="BlockerShortenHint" xml:space="preserve"><value>Halve the slot, to {0}.</value></data>
+  <data name="BlockerFirstStep" xml:space="preserve"><value>Give it a first step</value></data>
+  <data name="BlockerDrop" xml:space="preserve"><value>Drop it</value></data>
+  <data name="BlockerDropHint" xml:space="preserve"><value>Take it off the calendar.</value></data>
+  <data name="BlockerNoted" xml:space="preserve"><value>Noted.</value></data>
+  <data name="TrackedPausedAt" xml:space="preserve"><value>paused - {0} worked</value></data>
+  <data name="BlockerEarlier" xml:space="preserve"><value>Move it earlier</value></data>
+  <data name="BlockerEarlierHint" xml:space="preserve"><value>Put it first thing, at {0}, before the day fills up.</value></data>
+  <data name="MonitorPanel" xml:space="preserve"><value>Überwachung</value></data>
+  <data name="MonitorIdle" xml:space="preserve"><value>Nicht gestartet</value></data>
+  <data name="NextStepCardTitle" xml:space="preserve"><value>Was noch offen ist</value></data>
+  <data name="NextStepFold" xml:space="preserve"><value>Notiz einklappen</value></data>
+  <data name="NextStepUnfold" xml:space="preserve"><value>Notiz wieder zeigen</value></data>
+  <data name="NextStepCollapse" xml:space="preserve"><value>Liste einklappen</value></data>
+  <data name="NextStepExpand" xml:space="preserve"><value>Liste ausklappen</value></data>
+  <data name="SessionDismiss" xml:space="preserve"><value>Verwerfen</value></data>
+  <data name="SessionNextStepAdd" xml:space="preserve"><value>Zeile hinzufügen</value></data>
+  <data name="SessionNextStepAddHint" xml:space="preserve"><value>Enter fügt eine weitere hinzu</value></data>
+  <data name="SessionNextStepRemove" xml:space="preserve"><value>Von der Liste nehmen</value></data>
+  <data name="Shortcuts" xml:space="preserve"><value>Tastenkürzel</value></data>
+  <data name="ShortcutsIntro" xml:space="preserve"><value>Funktionieren aus jeder Anwendung. Zum Neubelegen die Kombination drücken; Escape bricht ab, Rücktaste schaltet aus.</value></data>
+  <data name="ShortcutsWindowOnlyIntro" xml:space="preserve"><value>Funktionieren, solange ein DAYDRIVE-Fenster im Vordergrund ist. Systemweite Tasten gibt es vorerst nur unter Windows; unter macOS und Wayland legen Sie sie in den System- oder Compositor-Einstellungen fest.</value></data>
+  <data name="ShortcutsReset" xml:space="preserve"><value>Standard wiederherstellen</value></data>
+  <data name="ShortcutResetOne" xml:space="preserve"><value>Zurück zum Standard</value></data>
+  <data name="ShortcutRebind" xml:space="preserve"><value>Zum Neubelegen drücken</value></data>
+  <data name="ShortcutPressKeys" xml:space="preserve"><value>Tasten drücken …</value></data>
+  <data name="ShortcutClash" xml:space="preserve"><value>Diese Kombination ist bereits belegt</value></data>
+  <data name="ShortcutRefused" xml:space="preserve"><value>Ein anderes Programm belegt diese Tasten</value></data>
+  <data name="ShortcutOff" xml:space="preserve"><value>Aus</value></data>
+  <data name="ShortcutToggleShell" xml:space="preserve"><value>Planer ein- oder ausblenden</value></data>
+  <data name="ShortcutToggleWidget" xml:space="preserve"><value>Schnell-Widget ein- oder ausblenden</value></data>
+  <data name="ShortcutToggleAssistant" xml:space="preserve"><value>Assistenten öffnen</value></data>
+  <data name="ShortcutStartOrPauseSession" xml:space="preserve"><value>Sitzung starten oder anhalten</value></data>
+  <data name="ShortcutStopSession" xml:space="preserve"><value>Sitzung beenden</value></data>
+  <data name="ShortcutToggleDoNotDisturb" xml:space="preserve"><value>Bitte nicht stören an oder aus</value></data>
+  <data name="CloudStateOk" xml:space="preserve"><value>Alles ist synchron</value></data>
+  <data name="CloudStateOkHint" xml:space="preserve"><value>Geprüft {0}. Dieser Computer und die Cloud haben dieselben Daten.</value></data>
+  <data name="CloudStatePending" xml:space="preserve"><value>Einige Änderungen sind noch nicht in der Cloud</value></data>
+  <data name="CloudStatePendingAuto" xml:space="preserve"><value>Sie werden gegen {0} von selbst gesendet – oder drücken Sie „Jetzt synchronisieren“.</value></data>
+  <data name="CloudStatePendingManual" xml:space="preserve"><value>Die automatische Synchronisierung ist aus – drücken Sie „Jetzt synchronisieren“, um sie zu senden.</value></data>
+  <data name="CloudStateNever" xml:space="preserve"><value>Noch nichts synchronisiert</value></data>
+  <data name="CloudStateNeverHint" xml:space="preserve"><value>Drücken Sie „Jetzt synchronisieren“, um die erste Kopie in die Cloud zu legen.</value></data>
+  <data name="CloudStateSyncing" xml:space="preserve"><value>Synchronisiere…</value></data>
+  <data name="CloudStateSyncingHint" xml:space="preserve"><value>Dieser Computer wird mit der Kopie in der Cloud verglichen.</value></data>
+  <data name="CloudStateFailed" xml:space="preserve"><value>Die letzte Synchronisierung ist fehlgeschlagen</value></data>
+  <data name="CloudStateRetryAuto" xml:space="preserve"><value>Der nächste Versuch folgt gegen {0}.</value></data>
+  <data name="CloudStateSetup" xml:space="preserve"><value>Die Einrichtung ist nicht abgeschlossen</value></data>
+  <data name="CloudStateRestart" xml:space="preserve"><value>Eine Kopie aus der Cloud liegt bereit</value></data>
+  <data name="CloudRestartNow" xml:space="preserve"><value>DAYDRIVE neu starten</value></data>
+  <data name="CloudRestartFailed" xml:space="preserve"><value>DAYDRIVE konnte sich nicht selbst neu starten. Beenden Sie es über das Tray-Symbol und öffnen Sie es erneut.</value></data>
+  <data name="CloudFactLastSync" xml:space="preserve"><value>Letzte Synchronisierung</value></data>
+  <data name="CloudFactCloudCopy" xml:space="preserve"><value>In der Cloud</value></data>
+  <data name="CloudFactThisComputer" xml:space="preserve"><value>Dieser Computer</value></data>
+  <data name="CloudFactAutomatic" xml:space="preserve"><value>Automatisch</value></data>
+  <data name="CloudFactNever" xml:space="preserve"><value>noch nie</value></data>
+  <data name="CloudFactRemoteUnknown" xml:space="preserve"><value>noch nicht geprüft</value></data>
+  <data name="CloudFactLocalClean" xml:space="preserve"><value>keine neuen Änderungen</value></data>
+  <data name="CloudFactLocalChanged" xml:space="preserve"><value>neue Änderungen vorhanden</value></data>
+  <data name="CloudFactLocalChangedSince" xml:space="preserve"><value>neue Änderungen, die letzte {0}</value></data>
+  <data name="CloudFactScheduleAuto" xml:space="preserve"><value>beim Start, alle 15 Minuten und beim Beenden · nächste gegen {0}</value></data>
+  <data name="CloudFactScheduleManual" xml:space="preserve"><value>aus, nur über „Jetzt synchronisieren“</value></data>
+  <data name="CloudJournalTitle" xml:space="preserve"><value>Verlauf</value></data>
+  <data name="CloudLogUploaded" xml:space="preserve"><value>In die Cloud gesendet · {0}</value></data>
+  <data name="CloudLogDownloaded" xml:space="preserve"><value>Kopie aus der Cloud heruntergeladen</value></data>
+  <data name="CloudLogDownloadedFrom" xml:space="preserve"><value>Kopie von „{0}“ heruntergeladen</value></data>
+  <data name="CloudLogApplied" xml:space="preserve"><value>Heruntergeladene Kopie übernommen</value></data>
+  <data name="CloudLogUpToDate" xml:space="preserve"><value>Geprüft, nichts zu synchronisieren</value></data>
+  <data name="CloudLogConflict" xml:space="preserve"><value>Beide Kopien geändert – wartet auf Ihre Wahl</value></data>
+  <data name="CloudLogConnected" xml:space="preserve"><value>Google-Konto verbunden</value></data>
+  <data name="CloudLogConnectedAs" xml:space="preserve"><value>Verbunden als {0}</value></data>
+  <data name="CloudLogDisconnected" xml:space="preserve"><value>Google-Konto getrennt</value></data>
+  <data name="CloudLogFailed" xml:space="preserve"><value>Nicht synchronisiert: {0}</value></data>
+  <data name="CloudTriggerManual" xml:space="preserve"><value>manuell</value></data>
+  <data name="CloudTriggerAutomatic" xml:space="preserve"><value>automatisch</value></data>
+  <data name="CloudTriggerStartup" xml:space="preserve"><value>beim Start</value></data>
+  <data name="CloudTriggerExit" xml:space="preserve"><value>beim Beenden</value></data>
+  <data name="CloudJustNow" xml:space="preserve"><value>gerade eben</value></data>
+  <data name="CloudTodayAt" xml:space="preserve"><value>heute um {0}</value></data>
+  <data name="CloudYesterdayAt" xml:space="preserve"><value>gestern um {0}</value></data>
+  <data name="CloudDateAt" xml:space="preserve"><value>{0} um {1}</value></data>
+  <data name="CloudIssueOff" xml:space="preserve"><value>Wählen Sie, wohin synchronisiert werden soll.</value></data>
+  <data name="CloudIssueFolderNotChosen" xml:space="preserve"><value>Wählen Sie den Ordner, den Ihre Cloud-App synchron hält.</value></data>
+  <data name="CloudIssueFolderMissing" xml:space="preserve"><value>Der Synchronisierungsordner wurde nicht gefunden. Vielleicht ist das Laufwerk getrennt oder der Ordner wurde verschoben.</value></data>
+  <data name="CloudIssueFolderNotWritable" xml:space="preserve"><value>DAYDRIVE kann nicht in den Synchronisierungsordner schreiben. Prüfen Sie die Berechtigungen.</value></data>
+  <data name="CloudIssueGoogleClientIdMissing" xml:space="preserve"><value>Fügen Sie die Client-ID aus der Google Cloud Console ein.</value></data>
+  <data name="CloudIssueGoogleClientSecretMissing" xml:space="preserve"><value>Fügen Sie auch den Clientschlüssel ein. Google verlangt ihn bei Clients vom Typ „Desktop-App“.</value></data>
+  <data name="CloudIssueGoogleNotConnected" xml:space="preserve"><value>Drücken Sie „Google-Konto verbinden“, um die Einrichtung abzuschließen.</value></data>
+  <data name="CloudIssueGoogleReconnect" xml:space="preserve"><value>Google akzeptiert die gespeicherte Anmeldung nicht mehr: Der Zugriff wurde widerrufen oder ist abgelaufen. Verbinden Sie das Konto erneut.</value></data>
+  <data name="CloudIssueGoogleClientRejected" xml:space="preserve"><value>Google hat die Client-ID oder den Clientschlüssel abgelehnt. Prüfen Sie, dass der Client vom Typ „Desktop-App“ ist und der Schlüssel zu ihm gehört.</value></data>
+  <data name="CloudIssueGoogleDriveApiDisabled" xml:space="preserve"><value>Die Google Drive API ist in Ihrem Google-Cloud-Projekt nicht aktiviert. Aktivieren Sie sie, warten Sie eine Minute und versuchen Sie es erneut.</value></data>
+  <data name="CloudIssueGoogleScopeMissing" xml:space="preserve"><value>Bei der Anmeldung wurde der Zugriff auf Google Drive nicht erlaubt. Verbinden Sie sich erneut und setzen Sie das Häkchen bei Google Drive.</value></data>
+  <data name="CloudIssueSignInCancelled" xml:space="preserve"><value>Die Anmeldung wurde abgebrochen.</value></data>
+  <data name="CloudIssueSignInTimedOut" xml:space="preserve"><value>Die Anmeldung wurde nicht innerhalb von 5 Minuten abgeschlossen. Versuchen Sie es erneut.</value></data>
+  <data name="CloudIssueOffline" xml:space="preserve"><value>Die Cloud war nicht erreichbar. Prüfen Sie die Internetverbindung.</value></data>
+  <data name="CloudIssueInterrupted" xml:space="preserve"><value>Die Synchronisierung wurde vor dem Ende unterbrochen.</value></data>
+  <data name="CloudIssueBusy" xml:space="preserve"><value>Es läuft bereits eine Synchronisierung.</value></data>
+  <data name="CloudIssueNothingInCloud" xml:space="preserve"><value>In der Cloud liegt noch nichts.</value></data>
+  <data name="CloudIssueNotADatabase" xml:space="preserve"><value>Die Datei in der Cloud enthält keine DAYDRIVE-Daten. Nichts wurde geändert.</value></data>
+  <data name="CloudIssueUnexpected" xml:space="preserve"><value>Unerwarteter Fehler: {0}</value></data>
+  <data name="CloudGoogleConnectedNoEmail" xml:space="preserve"><value>Google-Konto verbunden</value></data>
+  <data name="CloudGoogleSecretSaved" xml:space="preserve"><value>Clientschlüssel gespeichert</value></data>
+  <data name="CloudTrayLabel" xml:space="preserve"><value>Cloud-Synchronisierung</value></data>
+  <data name="CloudTrayOk" xml:space="preserve"><value>synchronisiert {0}</value></data>
+  <data name="CloudTrayPending" xml:space="preserve"><value>Änderungen offen</value></data>
+  <data name="CloudTraySyncing" xml:space="preserve"><value>synchronisiert…</value></data>
+  <data name="CloudTrayError" xml:space="preserve"><value>fehlgeschlagen</value></data>
+  <data name="CloudTrayAttention" xml:space="preserve"><value>braucht Ihre Entscheidung</value></data>
+  <data name="CloudStatusBarFailed" xml:space="preserve"><value>Cloud-Synchronisierung fehlgeschlagen: {0}</value></data>
+  <data name="LocalQuantNote" xml:space="preserve"><value>Alle Modelle gibt es in Q5_K_M: nahezu volle Qualität bei einer Größe, die ein normaler Computer schafft.</value></data>
+  <data name="LocalModelLegacyFiles" xml:space="preserve"><value>Downloads in nicht mehr angebotenen Varianten ({0}) belegen {1}.</value></data>
+  <data name="LocalModelLegacyDelete" xml:space="preserve"><value>Löschen</value></data>
+  <data name="LocalModelLegacyDeleted" xml:space="preserve"><value>Alte Modelldateien gelöscht, {0} frei geworden.</value></data>
+  <data name="LocalHardwareTitle" xml:space="preserve"><value>Dieser Computer</value></data>
+  <data name="LocalHardwareHint" xml:space="preserve"><value>Was DAYDRIVE gefunden hat und wie das Modell deshalb läuft.</value></data>
+  <data name="LocalHardwareRescan" xml:space="preserve"><value>Erneut prüfen</value></data>
+  <data name="LocalHardwareCpu" xml:space="preserve"><value>Prozessor</value></data>
+  <data name="LocalHardwareMemory" xml:space="preserve"><value>Arbeitsspeicher</value></data>
+  <data name="LocalHardwareGpu" xml:space="preserve"><value>Grafikkarte</value></data>
+  <data name="LocalHardwareCpuValue" xml:space="preserve"><value>{0} Kerne · {1} Threads</value></data>
+  <data name="LocalHardwareCpuHybrid" xml:space="preserve"><value>{0} Performance- + {1} Effizienzkerne · {2} Threads</value></data>
+  <data name="LocalHardwareCpuThreads" xml:space="preserve"><value>{0} Threads</value></data>
+  <data name="LocalHardwareMemoryValue" xml:space="preserve"><value>{0} · gerade frei: {1}</value></data>
+  <data name="LocalHardwareGpuValue" xml:space="preserve"><value>{0} · {1}</value></data>
+  <data name="LocalHardwareGpuFree" xml:space="preserve"><value>{0} · {1}, {2} frei</value></data>
+  <data name="LocalHardwareGpuIntegrated" xml:space="preserve"><value>nur integrierte Grafik ({0}); sie wird für das Modell nicht genutzt</value></data>
+  <data name="LocalHardwareGpuNone" xml:space="preserve"><value>keine separate Grafikkarte</value></data>
+  <data name="LocalHardwareUnknown" xml:space="preserve"><value>konnte nicht ermittelt werden</value></data>
+  <data name="LocalHardwareDetecting" xml:space="preserve"><value>Computer wird geprüft…</value></data>
+  <data name="LocalTuneFullGpu" xml:space="preserve"><value>Das ganze Modell passt auf die Grafikkarte</value></data>
+  <data name="LocalTuneSplit" xml:space="preserve"><value>Etwa {0} % des Modells laufen auf der Grafikkarte, der Rest auf dem Prozessor</value></data>
+  <data name="LocalTuneCpu" xml:space="preserve"><value>Die Grafikkarte ist zu klein, um zu helfen, daher läuft das Modell auf dem Prozessor</value></data>
+  <data name="LocalTuneCpuNoCard" xml:space="preserve"><value>Das Modell läuft auf dem Prozessor</value></data>
+  <data name="LocalTuneSummary" xml:space="preserve"><value>Kontext {0} Tokens · {1} Threads · Antworten bis {2} Tokens · merkt sich die letzten {3} Nachrichten</value></data>
+  <data name="LocalTuneWarnMemory" xml:space="preserve"><value>Das Modell braucht etwa {0}, frei sind aber nur etwa {1}. Es läuft langsam und kann andere Programme bremsen; es hilft, Programme zu schließen oder ein kleineres Modell zu wählen.</value></data>
+  <data name="LocalTuneManual" xml:space="preserve"><value>Die automatische Wahl ist aus: Das ist nur eine Empfehlung, verwendet werden die Werte unten.</value></data>
+  <data name="LocalAutoTune" xml:space="preserve"><value>Einstellungen automatisch für diesen Computer wählen</value></data>
+  <data name="LocalAutoTuneHint" xml:space="preserve"><value>Wird neu berechnet, sobald sich das Modell oder der Computer ändert. Ausschalten, um die Werte selbst festzulegen.</value></data>
+  <data name="ParamsForLocal" xml:space="preserve"><value>Diese Werte gelten nur für das lokale Modell; die API hat eigene.</value></data>
+  <data name="ParamsForApi" xml:space="preserve"><value>Diese Werte werden nur mit Anfragen an die API gesendet; das lokale Modell hat eigene.</value></data>
+  <data name="ParamsAutoBudget" xml:space="preserve"><value>Antwortlänge, Verlauf und Wartezeit sind für diesen Computer gewählt. Zum Ändern die automatische Wahl oben ausschalten.</value></data>
+  <data name="StepsCountOne" xml:space="preserve"><value>{0} Schritt</value></data>
+  <data name="StepsCountFew" xml:space="preserve"><value>{0} Schritte</value></data>
+  <data name="StepsCountMany" xml:space="preserve"><value>{0} Schritte</value></data>
+  <data name="ProjectProgress" xml:space="preserve"><value>{0} von {1} erledigt · {2} von {3}</value></data>
+  <data name="ProjectNoStepsYet" xml:space="preserve"><value>Noch keine Schritte. Schreiben Sie unten den ersten und geben Sie ihm eine Dauer und einen Tag.</value></data>
+  <data name="ProjectNextChip" xml:space="preserve"><value>als Nächstes: {0}</value></data>
+  <data name="StepAfterDeadline" xml:space="preserve"><value>nach der Frist</value></data>
+  <data name="NewStepPlaceholder" xml:space="preserve"><value>Neuer Schritt…</value></data>
+  <data name="StepNoDay" xml:space="preserve"><value>Ohne Tag</value></data>
+  <data name="StepSchedule" xml:space="preserve"><value>Uhrzeit festlegen</value></data>
+  <data name="StepScheduleTooltip" xml:space="preserve"><value>Diesen Schritt zu einer bestimmten Uhrzeit in den Kalender eintragen</value></data>
+  <data name="StepScheduleHeading" xml:space="preserve"><value>Zeit für einen Projektschritt</value></data>
+  <data name="StepMoveDay" xml:space="preserve"><value>Auf einen anderen Tag verschieben</value></data>
+  <data name="StepDurationTooltip" xml:space="preserve"><value>Wie lange dieser Schritt dauert</value></data>
+  <data name="StepOpenEvent" xml:space="preserve"><value>Im Tag anzeigen</value></data>
+  <data name="StepDelete" xml:space="preserve"><value>Schritt löschen</value></data>
+  <data name="StepRenameHint" xml:space="preserve"><value>Zum Umbenennen klicken</value></data>
+  <data name="StepToggleDone" xml:space="preserve"><value>Als erledigt markieren oder zurücknehmen</value></data>
+  <data name="DayStepsTitle" xml:space="preserve"><value>Für diesen Tag geplant</value></data>
+  <data name="StepOverdueFrom" xml:space="preserve"><value>geplant {0}</value></data>
+  <data name="StepAddTooltip" xml:space="preserve"><value>Schritt hinzufügen (Enter)</value></data>
+  <data name="ProjectShowFinished" xml:space="preserve"><value>Erledigte Tage zeigen ({0})</value></data>
+  <data name="ProjectHideFinished" xml:space="preserve"><value>Erledigte Tage ausblenden</value></data>
+  <data name="DayStepsTitleToday" xml:space="preserve"><value>Für heute geplant</value></data>
+  <data name="StepsTitle" xml:space="preserve"><value>Schritte</value></data>
+  <data name="StepsFold" xml:space="preserve"><value>Schritte einklappen</value></data>
+  <data name="StepsChipTooltip" xml:space="preserve"><value>Erledigte Schritte – zum Ein- oder Ausblenden klicken</value></data>
+  <data name="BreakIntoSteps" xml:space="preserve"><value>In Schritte aufteilen</value></data>
+  <data name="OpenProject" xml:space="preserve"><value>Projekt öffnen</value></data>
+  <data name="SittingPlanned" xml:space="preserve"><value>Schritte: {0} von {1}</value></data>
+  <data name="SittingOverflow" xml:space="preserve"><value>Schritte: {0} – {1} länger als der Termin</value></data>
+  <data name="SittingSeriesHint" xml:space="preserve"><value>Eine Liste für alle Wiederholungen dieses Termins; jeder Tag wird für sich abgehakt.</value></data>
+  <data name="SittingLeft" xml:space="preserve"><value>noch {0}</value></data>
+  <data name="SittingNoStepsYet" xml:space="preserve"><value>Notieren Sie, wofür diese Zeit gebraucht wird. Haken Sie die Schritte unterwegs ab – das Ergebnis des Termins wird von selbst eingetragen.</value></data>
+  <data name="SessionSittingHint" xml:space="preserve"><value>Haken Sie unten in den Schritten ab, was geschafft ist – der Prozentwert folgt. Was offen bleibt, ist der Rest.</value></data>
+  <data name="CarryHeading" xml:space="preserve"><value>Den Rest fortsetzen</value></data>
+  <data name="CarryToTime" xml:space="preserve"><value>Fortsetzen…</value></data>
+  <data name="CarryToTimeTooltip" xml:space="preserve"><value>Dem Rest eine neue Uhrzeit geben</value></data>
+  <data name="CarryToUnscheduled" xml:space="preserve"><value>Zu Ungeplant</value></data>
+  <data name="CarryToUnscheduledTooltip" xml:space="preserve"><value>Den Rest zu einer Aufgabe machen und über die Tage planen</value></data>
+  <data name="StepsCarried" xml:space="preserve"><value>Die offenen Schritte sind zur neuen Uhrzeit verschoben</value></data>
+  <data name="StepsCarriedToUnscheduled" xml:space="preserve"><value>Die offenen Schritte sind jetzt eine Aufgabe unter „Ungeplant“</value></data>
+  <data name="StepsRemoved" xml:space="preserve"><value>Keine Schritte mehr</value></data>
+  <data name="SittingAnsweredDone" xml:space="preserve"><value>Alle Schritte erledigt – der Termin ist als erledigt markiert</value></data>
+  <data name="SittingReopened" xml:space="preserve"><value>Ein Schritt ist wieder offen – der Termin ist teilweise erledigt</value></data>
+  <data name="ProjectFinished" xml:space="preserve"><value>Alle Schritte als erledigt markiert</value></data>
+  <data name="ConfirmDeleteProjectTask" xml:space="preserve"><value>Die Aufgabe mit allen Schritten löschen? Für sie geplante Termine bleiben im Kalender.</value></data>
+  <data name="ConfirmDeleteEventSteps" xml:space="preserve"><value>Diesen Termin mit seinen Schritten löschen?</value></data>
+  <data name="ProjectCategoryTooltip" xml:space="preserve"><value>Die Farbe des Projekts – die auch die für seine Schritte geplanten Termine tragen</value></data>
+  <data name="WindowedShellHint" xml:space="preserve"><value>Ihr Desktop bestimmt die Fensterposition. DAYDRIVE zeigt alle Bereiche in einem skalierbaren Fenster; Optionen für Bildschirmrand und Widget sind hier nicht verfügbar.</value></data>
+  <data name="LocalHardwareGpuDetected" xml:space="preserve"><value>{0} · Videospeicher nicht verfügbar</value></data>
+  <data name="ThemeColorAccent" xml:space="preserve"><value>Akzent</value></data>
+  <data name="ThemeColorBackground" xml:space="preserve"><value>Fensterhintergrund</value></data>
+  <data name="ThemeColorSurface" xml:space="preserve"><value>Bereiche</value></data>
+  <data name="ThemeColorSurfaceAlt" xml:space="preserve"><value>Felder und Karten</value></data>
+  <data name="ThemeColorText" xml:space="preserve"><value>Text</value></data>
+  <data name="ThemeColorMuted" xml:space="preserve"><value>Sekundärer Text</value></data>
+  <data name="ThemeColorStroke" xml:space="preserve"><value>Umrandungen</value></data>
+  <data name="ThemeColorSecondary" xml:space="preserve"><value>Zweiter Akzent</value></data>
+  <data name="ThemeColorTertiary" xml:space="preserve"><value>Dritter Akzent</value></data>
+  <data name="ThemeColorSelection" xml:space="preserve"><value>Auswahl</value></data>
+  <data name="ThemeColorSuccess" xml:space="preserve"><value>Erfolg</value></data>
+  <data name="ThemeColorWarning" xml:space="preserve"><value>Warnung</value></data>
+  <data name="ThemeColorDanger" xml:space="preserve"><value>Fehler</value></data>
+  <data name="ThemeColorShadow" xml:space="preserve"><value>Schatten</value></data>
+  <data name="ThemeWindowRadius" xml:space="preserve"><value>Fenster</value></data>
+  <data name="ThemeCardRadius" xml:space="preserve"><value>Karten</value></data>
+  <data name="ThemeItemRadius" xml:space="preserve"><value>Listeneinträge</value></data>
+  <data name="ThemeControlRadius" xml:space="preserve"><value>Schaltflächen und Felder</value></data>
+  <data name="ThemeTextScale" xml:space="preserve"><value>Textskalierung</value></data>
+  <data name="ThemeShadowStrength" xml:space="preserve"><value>Schattenstärke</value></data>
+  <data name="ThemeDetails" xml:space="preserve"><value>Weitere Farben</value></data>
+  <data name="ThemeGeometry" xml:space="preserve"><value>Form und Typografie</value></data>
+  <data name="ThemeColorReset" xml:space="preserve"><value>Automatische Farbe</value></data>
+  <data name="ThemeColorInvalid" xml:space="preserve"><value>#RRGGBB oder #AARRGGBB eingeben.</value></data>
+  <data name="ImportTheme" xml:space="preserve"><value>Design importieren</value></data>
+  <data name="ExportTheme" xml:space="preserve"><value>Design exportieren</value></data>
+  <data name="ResetAppearance" xml:space="preserve"><value>Gesamtes Aussehen zurücksetzen</value></data>
+  <data name="ThemeFileInvalid" xml:space="preserve"><value>Design konnte nicht gelesen oder gespeichert werden. Dateiformat und Ordnerzugriff prüfen.</value></data>
+  <data name="ThemeImported" xml:space="preserve"><value>Design importiert.</value></data>
+  <data name="ThemeExported" xml:space="preserve"><value>Design exportiert.</value></data>
+</root>

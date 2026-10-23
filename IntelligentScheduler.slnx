@@ -1,0 +1,13 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/IntelligentScheduler.Domain/IntelligentScheduler.Domain.csproj" />
+    <Project Path="src/IntelligentScheduler.Application/IntelligentScheduler.Application.csproj" />
+    <Project Path="src/IntelligentScheduler.Infrastructure/IntelligentScheduler.Infrastructure.csproj" />
+    <Project Path="src/IntelligentScheduler.Desktop/IntelligentScheduler.Desktop.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/IntelligentScheduler.Desktop.Tests/IntelligentScheduler.Desktop.Tests.csproj" />
+    <Project Path="tests/IntelligentScheduler.Application.Tests/IntelligentScheduler.Application.Tests.csproj" />
+    <Project Path="tests/IntelligentScheduler.Infrastructure.Tests/IntelligentScheduler.Infrastructure.Tests.csproj" />
+  </Folder>
+</Solution>

@@ -1,0 +1,12 @@
+<Window xmlns:local="using:IntelligentScheduler.Desktop" xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:icons="using:IntelligentScheduler.Desktop.Controls"
+        x:Class="IntelligentScheduler.Desktop.TimePickerWindow"
+        Title="{DynamicResource L.ChooseTime}" Width="236" Height="176"
+        CanResize="False" ShowInTaskbar="False" ShowActivated="True" Topmost="True"
+        WindowDecorations="None" Background="Transparent"
+        TransparencyLevelHint="Transparent" WindowStartupLocation="Manual"
+        Classes.reduceMotion="{Binding ReduceMotion}"
+        Classes.motion="{Binding !ReduceMotion}">
+  <local:TimePickerView x:Name="View" />
+</Window>

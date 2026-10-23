@@ -1,0 +1,1445 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:icons="using:IntelligentScheduler.Desktop.Controls"
+        xmlns:vm="using:IntelligentScheduler.Desktop.ViewModels"
+        xmlns:local="using:IntelligentScheduler.Desktop"
+        xmlns:primitives="using:Avalonia.Controls.Primitives"
+        x:Class="IntelligentScheduler.Desktop.PlannerView" Background="Transparent"
+        Classes.reduceMotion="{Binding ReduceMotion}"
+        Classes.motion="{Binding !ReduceMotion}"
+        Classes.glass="{Binding IsChatSheetOpen}">
+  <UserControl.Resources>
+    <DataTemplate x:Key="EventCategoryOptionTemplate" DataType="vm:ChoiceOption">
+      <Grid ColumnDefinitions="Auto,*" ColumnSpacing="7">
+        <Border Width="3" Height="18" CornerRadius="2" Background="{Binding Accent}" VerticalAlignment="Center" />
+        <TextBlock Grid.Column="1" Text="{Binding Label}" TextTrimming="CharacterEllipsis" VerticalAlignment="Center" />
+      </Grid>
+    </DataTemplate>
+    <DataTemplate x:Key="EventPriorityOptionTemplate" DataType="vm:ChoiceOption">
+      <Grid ColumnDefinitions="20,*" ColumnSpacing="5">
+        <TextBlock Text="{Binding Glyph}" Foreground="{DynamicResource ShellMuted}" FontWeight="SemiBold"
+                   HorizontalAlignment="Center" VerticalAlignment="Center" />
+        <TextBlock Grid.Column="1" Text="{Binding Label}" TextTrimming="CharacterEllipsis" VerticalAlignment="Center" />
+      </Grid>
+    </DataTemplate>
+    <DataTemplate x:Key="EventRepeatOptionTemplate" DataType="vm:ChoiceOption">
+      <TextBlock Text="{Binding Label}" TextTrimming="CharacterEllipsis" VerticalAlignment="Center" />
+    </DataTemplate>
+    <!-- One step of an unscheduled project, wherever it is shown: inside its task, or in the day
+         it is planned for. A round tick, the name, and two chips for the two things the user
+         decides about such a step - how long it takes, and when. The name is edited where it is
+         read. In the day the project's name rides along, and pressing it opens the project. -->
+    <DataTemplate x:Key="ProjectStepRowTemplate" DataType="vm:ProjectStepRowViewModel">
+      <Border Classes="stepRow" Classes.done="{Binding IsDone}" Margin="0,0,0,4">
+        <Grid ColumnDefinitions="3,Auto,*,Auto">
+          <Border Classes="stepRowRail" Background="{Binding Accent}" />
+          <Button Grid.Column="1" Classes="stepCheck" Classes.done="{Binding IsDone}"
+                  Command="{Binding ToggleCommand}" AutomationProperties.Name="{DynamicResource L.StepToggleDone}">
+            <icons:AnimatedIcon Data="{StaticResource IconCheck}" Width="10" Height="10" />
+          </Button>
+          <StackPanel Grid.Column="2" Spacing="5" Margin="0,7,4,7" VerticalAlignment="Center">
+            <!-- Renaming is listened for by the window, not here: handlers written on the
+                 elements of a template kept among the resources never reach its code-behind. -->
+            <Panel>
+              <Button Classes="stepTitle" IsVisible="{Binding !IsRenaming}"
+                      ToolTip.Tip="{DynamicResource L.StepRenameHint}">
+                <TextBlock Text="{Binding Title}" Classes="stepTitleText" Classes.done="{Binding IsDone}" />
+              </Button>
+              <TextBox Classes="bareInput stepRenameInput" IsVisible="{Binding IsRenaming}"
+                       MaxLength="200" AcceptsReturn="False"
+                       Text="{Binding RenameText, Mode=TwoWay}" />
+            </Panel>
+            <WrapPanel Orientation="Horizontal">
+              <Button Classes="chipLink" IsVisible="{Binding ShowProject}" Margin="0,0,4,3"
+                      Command="{Binding RevealProjectCommand}" ToolTip.Tip="{DynamicResource L.OpenProject}">
+                <Border Classes="rowTag categoryChip" Background="{Binding AccentSoft}">
+                  <StackPanel Orientation="Horizontal" Spacing="5">
+                    <Border Classes="projectGlyph" Background="{Binding Accent}" />
+                    <TextBlock Text="{Binding ProjectTitle}" Foreground="{Binding Accent}" MaxWidth="118" />
+                  </StackPanel>
+                </Border>
+              </Button>
+              <Button Classes="stepChip" Command="{Binding PickDurationCommand}" Margin="0,0,4,3">
+                <StackPanel Orientation="Horizontal" Spacing="4">
+                  <icons:AnimatedIcon Data="{StaticResource IconTimer}" Width="9" Height="9" />
+                  <TextBlock Text="{Binding DurationText}" />
+                </StackPanel>
+              </Button>
+              <Button Classes="stepChip time" Classes.booked="{Binding IsScheduled}" Command="{Binding TimeCommand}"
+                      Margin="0,0,4,3" ToolTip.Tip="{Binding ScheduleTooltip}">
+                <StackPanel Orientation="Horizontal" Spacing="4">
+                  <icons:AnimatedIcon Data="{StaticResource IconClock}" Width="9" Height="9" />
+                  <TextBlock Text="{Binding ScheduleText}" />
+                </StackPanel>
+              </Button>
+              <Border Classes="rowTag outcomeChip" Classes.partial="{Binding IsPartial}"
+                      Classes.skipped="{Binding IsSkipped}" IsVisible="{Binding HasOutcome}" Margin="0,0,4,3">
+                <TextBlock Text="{Binding OutcomeText}" />
+              </Border>
+              <Border Classes="rowTag deadlineChip overdue" IsVisible="{Binding HasCarriedFrom}" Margin="0,0,4,3">
+                <TextBlock Text="{Binding CarriedFromText}" />
+              </Border>
+            </WrapPanel>
+          </StackPanel>
+          <StackPanel Grid.Column="3" Orientation="Horizontal" Spacing="2" Classes="stepActions"
+                      Margin="0,0,6,0" VerticalAlignment="Center">
+            <Button Classes="icon quiet mini editAction" Command="{Binding PickDayCommand}"
+                    IsVisible="{Binding CanEditPlan}" ToolTip.Tip="{DynamicResource L.StepMoveDay}">
+              <icons:AnimatedIcon Data="{StaticResource IconCalendar}" Motion="Calendar" Width="13" Height="13" />
+            </Button>
+            <Button Classes="icon quiet mini deleteAction" Command="{Binding DeleteCommand}"
+                    ToolTip.Tip="{DynamicResource L.StepDelete}">
+              <icons:AnimatedIcon Data="{StaticResource IconDelete}" Motion="Delete" Width="13" Height="13" />
+            </Button>
+          </StackPanel>
+        </Grid>
+      </Border>
+    </DataTemplate>
+    <!-- One line of an event's checklist, in the shape of the "what is left" lines it sits among:
+         the event's colour on its own left edge, a small round tick, the name - edited where it
+         is read - and how long it takes. Taking it off the list waits under the hand. -->
+    <DataTemplate x:Key="SittingStepTemplate" DataType="vm:SittingStepViewModel">
+      <Border Classes="sittingStep" Classes.done="{Binding IsDone}">
+        <Grid ColumnDefinitions="3,Auto,*,Auto,Auto">
+          <Border Classes="leftoverItemRail" Background="{Binding Accent}" />
+          <Button Grid.Column="1" Classes="stepCheck small" Classes.done="{Binding IsDone}"
+                  Command="{Binding ToggleCommand}" AutomationProperties.Name="{DynamicResource L.StepToggleDone}">
+            <icons:AnimatedIcon Data="{StaticResource IconCheck}" Width="8" Height="8" />
+          </Button>
+          <Panel Grid.Column="2" Margin="0,6,6,6" VerticalAlignment="Center">
+            <Button Classes="stepTitle" IsVisible="{Binding !IsRenaming}"
+                    ToolTip.Tip="{DynamicResource L.StepRenameHint}">
+              <TextBlock Text="{Binding Title}" Classes="stepTitleText sitting" Classes.done="{Binding IsDone}" />
+            </Button>
+            <TextBox Classes="bareInput stepRenameInput sitting" IsVisible="{Binding IsRenaming}"
+                     MaxLength="200" AcceptsReturn="False"
+                     Text="{Binding RenameText, Mode=TwoWay}" />
+          </Panel>
+          <Button Grid.Column="3" Classes="stepChip" Command="{Binding PickDurationCommand}"
+                  Margin="0,0,3,0">
+            <TextBlock Text="{Binding DurationText}" />
+          </Button>
+          <Button Grid.Column="4" Classes="stepRemove stepDelete" Command="{Binding DeleteCommand}"
+                  ToolTip.Tip="{DynamicResource L.StepDelete}" Margin="0,0,5,0">
+            <icons:AnimatedIcon Data="{StaticResource IconClose}" Width="9" Height="9" />
+          </Button>
+        </Grid>
+      </Border>
+    </DataTemplate>
+    <!-- A step written into the event or task form before the thing exists. The same line as a
+         step of the checklist it is about to become, without the tick: nothing can be done yet. -->
+    <DataTemplate x:Key="DraftStepTemplate" DataType="vm:DraftStepViewModel">
+      <Border Classes="sittingStep draft">
+        <Grid ColumnDefinitions="3,*,Auto,Auto">
+          <Border Classes="leftoverItemRail" Background="{DynamicResource ShellAccent}" />
+          <TextBlock Grid.Column="1" Text="{Binding Title}" Classes="leftoverItemText" />
+          <Button Grid.Column="2" Classes="stepChip" CommandParameter="{Binding}"
+                  Command="{Binding $parent[Window].DataContext.PickDraftLineDurationCommand}">
+            <TextBlock Text="{Binding DurationText}" />
+          </Button>
+          <Button Grid.Column="3" Classes="stepRemove" Command="{Binding RemoveCommand}"
+                  ToolTip.Tip="{DynamicResource L.StepDelete}" Margin="3,0,5,0">
+            <icons:AnimatedIcon Data="{StaticResource IconClose}" Width="9" Height="9" />
+          </Button>
+        </Grid>
+      </Border>
+    </DataTemplate>
+  </UserControl.Resources>
+  <Grid ColumnDefinitions="20,424">
+    <!-- Compact shell tabs stay centered and never merge with the bottom edge. -->
+    <StackPanel Grid.Column="0" IsVisible="{Binding IsEdgeShell}" VerticalAlignment="Center" Spacing="8" ZIndex="5"
+                Background="{StaticResource ShellInputSurface}">
+      <Button Height="112" Classes="petalTab"
+              Classes.active="{Binding IsCalendarPopupOpen}" Command="{Binding ToggleCalendarCommand}"
+              ToolTip.Tip="{DynamicResource L.Calendar}">
+        <icons:AnimatedIcon Data="{StaticResource IconCalendar}" Width="13" Height="13" />
+      </Button>
+      <!-- The assistant is reached the same way the other three surfaces are. It used to be a
+           pill across the foot of the panel, which spent a whole row of the shell on a control
+           that is pressed once a session and cost the conversation above it that row twice
+           over: once for the pill, once for the rule it sat on. -->
+      <Button Height="112" Classes="petalTab"
+              Classes.active="{Binding IsChatOpen}" Command="{Binding ToggleChatCommand}"
+              ToolTip.Tip="{DynamicResource L.AgentConversation}">
+        <icons:AnimatedIcon Data="{StaticResource IconChat}" Motion="Bot" Width="13" Height="13" />
+      </Button>
+      <Button Height="112" Classes="petalTab"
+              Classes.active="{Binding IsAnalyticsOpen}" Command="{Binding ToggleAnalyticsCommand}"
+              ToolTip.Tip="{DynamicResource L.Analytics}">
+        <icons:AnimatedIcon Data="{StaticResource IconChart}" Width="13" Height="13" />
+      </Button>
+      <Button Height="112" Classes="petalTab"
+              Classes.active="{Binding IsSettings}" Command="{Binding ShowSettingsCommand}"
+              ToolTip.Tip="{DynamicResource L.Settings}">
+        <icons:AnimatedIcon Data="{StaticResource IconCog}" Width="13" Height="13" />
+      </Button>
+    </StackPanel>
+
+    <Border Grid.Column="1" Background="{DynamicResource ShellBackground}"
+            BorderBrush="{DynamicResource ShellStroke}" BorderThickness="1"
+            CornerRadius="{DynamicResource ShellWindowRadius}" ClipToBounds="True">
+      <!-- The conversation is laid over the planner, not through it. The planner used to be
+           put out of focus while the sheet was up, which read as the whole window going soft
+           every time the assistant was opened; the sheet is opaque enough to be read on its
+           own, so the layer underneath is left exactly as it was. It still goes quiet: the
+           window takes a .glass class while the sheet is there and the three ambient loops in
+           this card stop, because nothing that cannot be seen is worth repainting. -->
+      <Panel>
+        <Grid RowDefinitions="Auto,Auto,*,Auto" Classes="shellContent">
+          <Grid Margin="17,14,17,7" RowDefinitions="Auto,Auto" ColumnDefinitions="*,Auto" PointerPressed="Header_OnPointerPressed">
+            <TextBlock Text="{Binding DateTitle}" Classes="title" />
+            <TextBlock Grid.Column="1" Text="{Binding CurrentTimeText}" Classes="headerClock" VerticalAlignment="Center" />
+            <Grid Grid.Row="1" Grid.ColumnSpan="2" ColumnDefinitions="*,Auto,Auto" ColumnSpacing="8" Margin="0,3,0,0">
+              <TextBlock Text="{Binding DaySummary}" Classes="muted" VerticalAlignment="Center" />
+              <!-- How much of the planned day is actually accounted for. Only shown once
+                   something has been marked, so an untouched day stays quiet. -->
+              <Border Grid.Column="1" Classes="dayProgressTrack" IsVisible="{Binding HasDayRecord}">
+                <ProgressBar Classes="dayProgress" Minimum="0" Maximum="100" Value="{Binding Progress}" />
+              </Border>
+              <TextBlock Grid.Column="2" Text="{Binding ProgressText}" Classes="muted" FontSize="{DynamicResource MarelianFont9_5}"
+                         FontWeight="SemiBold" Foreground="{DynamicResource ShellAccent}"
+                         VerticalAlignment="Center" IsVisible="{Binding HasDayRecord}" />
+            </Grid>
+          </Grid>
+
+          <!-- Compact week strip: square selection, centered arrows and wheel navigation. -->
+          <Border x:Name="WeekStrip" Grid.Row="1" Classes="miniWeek" Width="350" Height="50"
+                  HorizontalAlignment="Center" Margin="0,2,0,10"
+                  PointerWheelChanged="WeekStrip_OnPointerWheelChanged">
+            <Grid ColumnDefinitions="24,*,24">
+              <Button Classes="weekArrow subtle nudgeLeft" Click="PreviousWeek_OnClick">
+                <icons:AnimatedIcon Data="{StaticResource IconChevronLeft}" Width="14" Height="14" />
+              </Button>
+              <ItemsControl x:Name="WeekDaysStrip" Grid.Column="1" ItemsSource="{Binding WeekDays}" VerticalAlignment="Center">
+                <ItemsControl.ItemsPanel><ItemsPanelTemplate><primitives:UniformGrid Columns="7" Rows="1" /></ItemsPanelTemplate></ItemsControl.ItemsPanel>
+                <ItemsControl.ItemTemplate>
+                  <DataTemplate DataType="vm:DayChipViewModel">
+                    <Button Classes="weekDay" Classes.selected="{Binding IsSelected}" Command="{Binding SelectCommand}">
+                      <StackPanel HorizontalAlignment="Center" Spacing="2">
+                        <TextBlock Text="{Binding Day}" FontSize="{DynamicResource MarelianFont8}" Foreground="{DynamicResource ShellMuted}" HorizontalAlignment="Center" />
+                        <TextBlock Text="{Binding Number}" FontSize="{DynamicResource MarelianFont14}" FontWeight="SemiBold" HorizontalAlignment="Center" />
+                        <Border Width="3" Height="3" CornerRadius="2" Background="{DynamicResource ShellAccent}"
+                                IsVisible="{Binding IsToday}" HorizontalAlignment="Center" />
+                      </StackPanel>
+                    </Button>
+                  </DataTemplate>
+                </ItemsControl.ItemTemplate>
+              </ItemsControl>
+              <Button Grid.Column="2" Classes="weekArrow subtle nudgeRight" Click="NextWeek_OnClick">
+                <icons:AnimatedIcon Data="{StaticResource IconChevronRight}" Width="14" Height="14" />
+              </Button>
+            </Grid>
+          </Border>
+
+          <!-- The day stops just above where the assistant sheet's bottom edge falls. Run to the
+               foot of the card it showed a slot of agenda under that edge — half a chip, cut off
+               by the sheet rather than by the window — which is the same seam the sheet used to
+               avoid by ending exactly where the pill's row began. -->
+          <ScrollViewer Grid.Row="2" Classes="modernScroll dayScroll"
+                        Classes.docked="{Binding ShowMonitorPanel}" BringIntoViewOnFocusChange="False">
+            <StackPanel Spacing="11">
+              <Border Classes="surface emphasis" Padding="13,11">
+                <!-- The event on the left, the clock on the right of the line its name is
+                     on. While a session is running the number is the loudest thing about the
+                     event, so it is read at a glance rather than hunted for in a chip at the
+                     bottom of the card; the moment it was set going sits under it, small,
+                     because that is a fact rather than a reading. -->
+                <Grid ColumnDefinitions="4,*" ColumnSpacing="11">
+                  <Border Background="{DynamicResource ShellAccent}" CornerRadius="2" />
+                  <Grid Grid.Column="1" RowDefinitions="Auto,Auto,Auto,Auto" ColumnDefinitions="*,Auto"
+                        ColumnSpacing="10">
+                    <TextBlock Text="{Binding NextLabel}" FontSize="{DynamicResource MarelianFont9_5}" FontWeight="SemiBold"
+                               Foreground="{DynamicResource ShellAccent}" LetterSpacing="0.6" />
+                    <TextBlock Grid.Row="1" Text="{Binding NextTitle}" FontSize="{DynamicResource MarelianFont16}" FontWeight="SemiBold"
+                               TextTrimming="CharacterEllipsis" VerticalAlignment="Center" Margin="0,3,0,0" />
+                    <TextBlock Grid.Row="2" Text="{Binding NextMeta}" Classes="muted" FontSize="{DynamicResource MarelianFont11}"
+                               TextTrimming="CharacterEllipsis" VerticalAlignment="Center" Margin="0,3,0,0" />
+
+                    <!-- The light that says a session is on. It belongs to the event rather
+                         than to the number, so it sits on the event's own line above the clock
+                         instead of being welded to the left of it. -->
+                    <Border Grid.Column="1" Classes="cardLivePip" Classes.live="{Binding IsSessionRunning}"
+                            IsVisible="{Binding IsTrackingTimerVisible}" />
+                    <!-- The clock itself: digits and nothing else. No plate under it - a number
+                         this size is found without one, and the plate was what made it read as
+                         a chip - and nothing drawn behind it either. While it counts, the
+                         accent in the digits themselves warms and cools; held, it goes quiet. -->
+                    <TextBlock Grid.Row="1" Grid.Column="1" Text="{Binding TrackingElapsedText}"
+                               Classes="cardTimerValue"
+                               Classes.live="{Binding IsSessionRunning}"
+                               Classes.held="{Binding IsSessionPaused}"
+                               IsVisible="{Binding IsTrackingTimerVisible}" />
+                    <!-- When the stopwatch was set going. It used to be a chip - a plate, an
+                         edge and eight pixels of padding around six words - which gave the
+                         quietest fact on the card the loudest container on it, and made a
+                         second boxed thing sit under a clock that had deliberately given its
+                         own box up. It is a line of small muted type now, in the same voice as
+                         the event's hours across the row from it. -->
+                    <TextBlock Grid.Row="2" Grid.Column="1" Classes="cardStartedNote"
+                               Text="{Binding TrackingStartedAtText}"
+                               IsVisible="{Binding HasTrackingStartedAt}" />
+
+                    <!-- What a day that is over, or has not started, actually came to. The card
+                         used to answer that by naming the day's first event as though it were
+                         about to happen. -->
+                    <ItemsControl Grid.Row="3" Grid.ColumnSpan="2" ItemsSource="{Binding DayReviewChips}"
+                                  IsVisible="{Binding HasDayReview}" Margin="0,5,0,0">
+                      <ItemsControl.ItemsPanel>
+                        <ItemsPanelTemplate><WrapPanel /></ItemsPanelTemplate>
+                      </ItemsControl.ItemsPanel>
+                      <ItemsControl.ItemTemplate>
+                        <DataTemplate DataType="vm:DayReviewChipViewModel">
+                          <Border Classes="dayReviewChip" Classes.strong="{Binding IsStrong}" Margin="0,3,5,0">
+                            <StackPanel Orientation="Horizontal" Spacing="5">
+                              <Border Width="6" Height="6" CornerRadius="3" Background="{Binding Accent}"
+                                      VerticalAlignment="Center" />
+                              <TextBlock Text="{Binding Text}" FontSize="{DynamicResource MarelianFont10}" />
+                            </StackPanel>
+                          </Border>
+                        </DataTemplate>
+                      </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                  </Grid>
+                </Grid>
+              </Border>
+
+              <!-- Asked once, at the end of the day, about everything at once - and asked
+                   less often every time it goes unused; see EdgeShellViewModel.WrapUp.cs. -->
+              <Border Classes="surface wrapUpOffer" Padding="12,10"
+                      IsVisible="{Binding IsWrapUpOfferVisible}">
+                <Grid ColumnDefinitions="Auto,*,Auto,Auto" ColumnSpacing="9">
+                  <icons:AnimatedIcon Data="{StaticResource IconTimer}" Motion="Timer" Width="16" Height="16"
+                                      Foreground="{DynamicResource ShellAccent}" VerticalAlignment="Center" />
+                  <StackPanel Grid.Column="1" Spacing="1" VerticalAlignment="Center">
+                    <TextBlock Text="{DynamicResource L.WrapUpTitle}" FontSize="{DynamicResource MarelianFont12}" FontWeight="SemiBold" />
+                    <TextBlock Text="{Binding WrapUpOfferText}" Classes="muted" FontSize="{DynamicResource MarelianFont10_5}"
+                               TextWrapping="Wrap" />
+                  </StackPanel>
+                  <Button Grid.Column="2" Classes="quiet compact" VerticalAlignment="Center"
+                          Command="{Binding DismissWrapUpOfferCommand}"
+                          Content="{DynamicResource L.WrapUpLater}" />
+                  <Button Grid.Column="3" Classes="primary compact" VerticalAlignment="Center"
+                          Command="{Binding OpenWrapUpCommand}"
+                          Content="{DynamicResource L.WrapUpOpen}" />
+                </Grid>
+              </Border>
+
+              <Grid ColumnDefinitions="*,Auto,Auto">
+                <Button Classes="quiet sectionToggle" Command="{Binding ToggleScheduleCommand}" HorizontalAlignment="Left">
+                  <Grid ColumnDefinitions="Auto,*" ColumnSpacing="8">
+                    <Panel Width="16" Height="16" VerticalAlignment="Center" ClipToBounds="False">
+                      <icons:AnimatedIcon Data="{StaticResource IconChevronRight}" Width="10" Height="10"
+                                Classes="expandChevron" Classes.expanded="{Binding IsScheduleExpanded}"
+                                HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Panel>
+                    <StackPanel Grid.Column="1" Spacing="1">
+                      <TextBlock Text="{DynamicResource L.Schedule}" Classes="section" />
+                      <StackPanel Orientation="Horizontal" Spacing="6">
+                        <TextBlock Text="{Binding ScheduleCountText}" Classes="muted" VerticalAlignment="Center" />
+                        <!-- Says how much of the day is still unaccounted for, without nagging. -->
+                        <Border Classes="unmarkedChip" IsVisible="{Binding HasUnmarkedEvents}"
+                                ToolTip.Tip="{DynamicResource L.TrackHint}">
+                          <TextBlock Text="{Binding UnmarkedEventsText}" FontSize="{DynamicResource MarelianFont9}"
+                                     Foreground="{DynamicResource ShellAccent}" />
+                        </Border>
+                      </StackPanel>
+                    </StackPanel>
+                  </Grid>
+                </Button>
+                <!-- Ticking rows used to start from a button of its own here. It now starts where
+                     a selection actually starts, inside one event's own menu, and this heading is
+                     left to the two things that are about the day rather than about a choice
+                     inside it. -->
+                <Button x:Name="DayPlanButton" Grid.Column="1" Classes="icon quiet dayOperationsTrigger"
+                        Command="{Binding ToggleDayActionsCommand}" ToolTip.Tip="{DynamicResource L.DayActions}">
+                  <Grid Width="18" Height="18">
+                    <icons:AnimatedIcon Data="{StaticResource IconCalendar}" Width="17" Height="17" />
+                    <Border Width="9" Height="7" CornerRadius="3" Background="{DynamicResource ShellSurfaceAlt}"
+                            BorderBrush="{DynamicResource ShellAccent}" BorderThickness="1"
+                            HorizontalAlignment="Right" VerticalAlignment="Bottom">
+                      <StackPanel Spacing="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <Border Width="4" Height="1" CornerRadius="1" Background="{DynamicResource ShellAccent}" />
+                        <Border Width="4" Height="1" CornerRadius="1" Background="{DynamicResource ShellAccent}" />
+                      </StackPanel>
+                    </Border>
+                  </Grid>
+                </Button>
+                <Button Grid.Column="2" Classes="quiet compact newItemAction" Command="{Binding ToggleEventComposerCommand}">
+                  <StackPanel Orientation="Horizontal" Spacing="6" VerticalAlignment="Center">
+                    <icons:AnimatedIcon Data="{StaticResource IconPlus}" Motion="Plus" Classes="completeSpin" Width="16" />
+                    <TextBlock Text="{DynamicResource L.NewEvent}" />
+                  </StackPanel>
+                </Button>
+
+              </Grid>
+
+
+              <!-- The selection bar. It only exists while rows are being ticked, and it says how
+                   much has been chosen before offering to do anything with it.
+                   It used to be three stacked rows, two of them full-width filled buttons, which
+                   spent more of a 424-pixel panel on the fact that a selection existed than on the
+                   day the selection was made in. One line now: the count, the two words that
+                   change it, and the three things that can be done with it. -->
+              <Border Classes="selectionBar" IsVisible="{Binding IsSelectionIdle}">
+                <StackPanel Spacing="7">
+                  <Grid ColumnDefinitions="*,Auto,Auto,Auto,Auto,Auto" ColumnSpacing="3">
+                    <StackPanel Orientation="Horizontal" Spacing="6" VerticalAlignment="Center" Margin="2,0,4,0">
+                      <icons:AnimatedIcon Data="{StaticResource IconCheck}" Width="12" Height="12"
+                                          Foreground="{DynamicResource ShellAccent}" VerticalAlignment="Center" />
+                      <TextBlock Text="{Binding SelectionSummaryText}" FontSize="{DynamicResource MarelianFont11}" FontWeight="SemiBold"
+                                 VerticalAlignment="Center" TextTrimming="CharacterEllipsis" />
+                    </StackPanel>
+                    <Button Grid.Column="1" Classes="selectionLink" Command="{Binding SelectAllEventsCommand}"
+                            IsEnabled="{Binding CanSelectAllEvents}" Content="{DynamicResource L.SelectAllEvents}" />
+                    <Button Grid.Column="2" Classes="selectionLink" Command="{Binding ClearEventSelectionCommand}"
+                            IsEnabled="{Binding HasSelectedEvents}" Content="{DynamicResource L.ClearSelectionAction}" />
+                    <Button Grid.Column="3" Classes="selectionAction move" IsEnabled="{Binding HasSelectedEvents}"
+                            Command="{Binding OpenMoveForSelectionCommand}"
+                            ToolTip.Tip="{DynamicResource L.MoveSelected}">
+                      <icons:AnimatedIcon Data="{StaticResource IconRefresh}" Motion="Shift" Width="13" Height="13" />
+                    </Button>
+                    <Button Grid.Column="4" Classes="selectionAction remove" IsEnabled="{Binding HasSelectedEvents}"
+                            Command="{Binding RequestDeleteSelectionCommand}"
+                            ToolTip.Tip="{DynamicResource L.DeleteSelected}">
+                      <icons:AnimatedIcon Data="{StaticResource IconDelete}" Motion="Delete" Width="13" Height="13" />
+                    </Button>
+                    <Button Grid.Column="5" Classes="selectionAction done" Command="{Binding ToggleSelectionModeCommand}"
+                            ToolTip.Tip="{DynamicResource L.SelectionExit}">
+                      <icons:AnimatedIcon Data="{StaticResource IconClose}" Width="13" Height="13" />
+                    </Button>
+                  </Grid>
+                  <Grid ColumnDefinitions="*,Auto,Auto" ColumnSpacing="6"
+                        IsVisible="{Binding IsSelectionDeleteConfirmationVisible}">
+                    <TextBlock Text="{Binding SelectionDeleteConfirmationText}" TextWrapping="Wrap"
+                               VerticalAlignment="Center" FontSize="{DynamicResource MarelianFont11}" />
+                    <Button Grid.Column="1" Classes="quiet compact" Command="{Binding CancelDeleteSelectionCommand}"
+                            Content="{DynamicResource L.Cancel}" />
+                    <Button Grid.Column="2" Classes="dangerFilled compact" Command="{Binding ConfirmDeleteSelectionCommand}"
+                            Content="{DynamicResource L.Delete}" />
+                  </Grid>
+                </StackPanel>
+              </Border>
+
+              <Border Classes="confirmation save" IsVisible="{Binding IsCopyDayConfirmationVisible}">
+                <Grid ColumnDefinitions="*,Auto,Auto" ColumnSpacing="6">
+                  <TextBlock Text="{Binding CopyDayTargetText}" TextWrapping="Wrap" VerticalAlignment="Center" />
+                  <Button Grid.Column="1" Classes="quiet compact" Command="{Binding CancelCopyDayCommand}" Content="{DynamicResource L.Cancel}" />
+                  <Button Grid.Column="2" Classes="primary compact" Command="{Binding ConfirmCopyDayCommand}" Content="{DynamicResource L.Copy}" />
+                </Grid>
+              </Border>
+              <Border Classes="confirmation save" IsVisible="{Binding IsEventCopyConfirmationVisible}">
+                <Grid ColumnDefinitions="*,Auto,Auto" ColumnSpacing="6">
+                  <TextBlock Text="{Binding EventCopyConfirmationText}" TextWrapping="Wrap" VerticalAlignment="Center" />
+                  <Button Grid.Column="1" Classes="quiet compact" Command="{Binding CancelEventCopyCommand}" Content="{DynamicResource L.Cancel}" />
+                  <Button Grid.Column="2" Classes="primary compact" Command="{Binding ConfirmEventCopyCommand}" Content="{DynamicResource L.Copy}" />
+                </Grid>
+              </Border>
+              <Border x:Name="EventComposerCard" Classes="surface formCard" IsVisible="{Binding IsEventComposerVisible}">
+                <StackPanel Spacing="9">
+                  <Grid ColumnDefinitions="*,Auto">
+                    <TextBlock Text="{Binding EventActionText}" Classes="section" VerticalAlignment="Center" />
+                    <Button Grid.Column="1" Classes="icon quiet closeGlyph" Command="{Binding ToggleEventComposerCommand}">
+                      <icons:AnimatedIcon Data="{StaticResource IconClose}" Width="16" />
+                    </Button>
+                  </Grid>
+                  <TextBox Text="{Binding EventTitle}" PlaceholderText="{DynamicResource L.EventTitle}" />
+                  <Grid ColumnDefinitions="132,108,108" ColumnSpacing="6" HorizontalAlignment="Center">
+                    <StackPanel Spacing="4">
+                      <TextBlock Text="{DynamicResource L.Date}" Classes="label" />
+                      <Button Classes="fieldButton eventDateField" Command="{Binding OpenEventDateCalendarCommand}">
+                        <Grid ColumnDefinitions="Auto,*" ColumnSpacing="6">
+                          <icons:AnimatedIcon Data="{StaticResource IconCalendar}" Width="15" />
+                          <TextBlock Grid.Column="1" Text="{Binding EventDateLabel}" HorizontalAlignment="Left" TextTrimming="CharacterEllipsis" />
+                        </Grid>
+                      </Button>
+                    </StackPanel>
+                    <StackPanel Grid.Column="1" Spacing="4">
+                      <TextBlock Text="{DynamicResource L.TimeFrom}" Classes="label" />
+                      <Button Width="108" Classes="fieldButton timeField" Command="{Binding OpenEventStartTimePickerCommand}"
+                              Content="{Binding EventTimeLabel}" />
+                    </StackPanel>
+                    <StackPanel Grid.Column="2" Spacing="4">
+                      <TextBlock Text="{DynamicResource L.TimeTo}" Classes="label" />
+                      <Button Width="108" Classes="fieldButton timeField" Command="{Binding OpenEventEndTimePickerCommand}"
+                              Content="{Binding EventEndTimeLabel}" />
+                    </StackPanel>
+                  </Grid>
+                  <Grid ColumnDefinitions="*,*,*" ColumnSpacing="7">
+                    <StackPanel Spacing="4">
+                      <TextBlock Text="{DynamicResource L.EventCategory}" Classes="label metaLabel" />
+                      <Grid ClipToBounds="True">
+                        <ComboBox Classes="eventMetaSelector category" ItemTemplate="{StaticResource EventCategoryOptionTemplate}" ItemsSource="{Binding EventCategoryOptions}"
+                                  SelectedItem="{Binding SelectedEventCategoryOption, Mode=TwoWay}" />
+                      </Grid>
+                    </StackPanel>
+                    <StackPanel Grid.Column="1" Spacing="4">
+                      <TextBlock Text="{DynamicResource L.EventPriority}" Classes="label metaLabel" />
+                      <ComboBox Classes="eventMetaSelector" ItemTemplate="{StaticResource EventPriorityOptionTemplate}" ItemsSource="{Binding EventPriorityOptions}"
+                                SelectedItem="{Binding SelectedEventPriorityOption, Mode=TwoWay}" />
+                    </StackPanel>
+                    <StackPanel Grid.Column="2" Spacing="4">
+                      <TextBlock Text="{DynamicResource L.EventRepeat}" Classes="label metaLabel" />
+                      <ComboBox Classes="eventMetaSelector" ItemTemplate="{StaticResource EventRepeatOptionTemplate}" ItemsSource="{Binding EventRecurrenceOptions}"
+                                SelectedItem="{Binding SelectedEventRecurrenceOption, Mode=TwoWay}" />
+                    </StackPanel>
+                  </Grid>
+                  <!-- Steps, if the hour is going to be spent on several things. Asked for with one
+                       quiet line rather than laid out in advance: most events are one thing, and a
+                       form that always offers a list reads as a form that expects one. -->
+                  <Button Classes="draftToggle" IsVisible="{Binding ShowEventDraftToggle}"
+                          Command="{Binding OpenEventDraftStepsCommand}" HorizontalAlignment="Left">
+                    <StackPanel Orientation="Horizontal" Spacing="6">
+                      <icons:AnimatedIcon Motion="Steps" Width="13" Height="13" />
+                      <TextBlock Text="{DynamicResource L.BreakIntoSteps}" />
+                    </StackPanel>
+                  </Button>
+                  <StackPanel Spacing="5" IsVisible="{Binding ShowEventDraftEditor}">
+                    <Grid ColumnDefinitions="Auto,*" ColumnSpacing="8">
+                      <TextBlock Text="{DynamicResource L.StepsTitle}" Classes="label metaLabel" VerticalAlignment="Center" />
+                      <TextBlock Grid.Column="1" Text="{Binding EventDraftSummary}" Classes="sittingSummary"
+                                 Classes.overflow="{Binding IsEventDraftOverflowing}" />
+                    </Grid>
+                    <ItemsControl ItemsSource="{Binding EventDraftSteps}" ItemTemplate="{StaticResource DraftStepTemplate}" />
+                    <Grid ColumnDefinitions="*,Auto" ColumnSpacing="6">
+                      <Border Classes="nextStepEditor stepComposer">
+                        <Grid ColumnDefinitions="*,Auto" ColumnSpacing="4">
+                          <TextBox x:Name="EventDraftStepBox" Classes="bareInput draftStepInput" Tag="event" FontSize="{DynamicResource MarelianFont11_5}"
+                                   MaxLength="200" AcceptsReturn="False" TextWrapping="NoWrap" VerticalAlignment="Center"
+                                   Text="{Binding EventDraftStepText, Mode=TwoWay}"
+                                   PlaceholderText="{DynamicResource L.NewStepPlaceholder}" />
+                          <Button Grid.Column="1" Classes="stepChip" Command="{Binding PickEventDraftDurationCommand}">
+                            <StackPanel Orientation="Horizontal" Spacing="4">
+                              <icons:AnimatedIcon Data="{StaticResource IconTimer}" Width="9" Height="9" />
+                              <TextBlock Text="{Binding EventDraftDurationText}" />
+                            </StackPanel>
+                          </Button>
+                        </Grid>
+                      </Border>
+                      <Button Grid.Column="1" Classes="stepAdd" Content="+" VerticalAlignment="Center"
+                              Command="{Binding AddEventDraftStepCommand}" ToolTip.Tip="{DynamicResource L.StepAddTooltip}" />
+                    </Grid>
+                  </StackPanel>
+                  <Border x:Name="EventValidationPanel" Background="{DynamicResource ShellAccentSoft}" CornerRadius="{DynamicResource ShellControlRadius}" Padding="9,6"
+                          IsVisible="{Binding HasEventValidationError}">
+                    <TextBlock Text="{Binding EventValidationMessage}" Foreground="{DynamicResource ShellDanger}"
+                               FontSize="{DynamicResource MarelianFont11}" TextWrapping="Wrap" HorizontalAlignment="Center" />
+                  </Border>
+                  <!-- The two answers the form has are the width of the form. Held to 92 px
+                       each and centred, they read as a pair of chips dropped onto the bottom of
+                       a card several times their width, with the card's own edges as the only
+                       thing lining them up. -->
+                  <Grid ColumnDefinitions="*,*" ColumnSpacing="8">
+                    <Button Classes="secondary compactAction" HorizontalAlignment="Stretch"
+                            Command="{Binding ToggleEventComposerCommand}" Content="{DynamicResource L.Cancel}" />
+                    <Button Grid.Column="1" Classes="primary compactAction" HorizontalAlignment="Stretch"
+                            Command="{Binding RequestEventSaveCommand}" Content="{DynamicResource L.Save}" IsEnabled="{Binding !IsBusy}" />
+                  </Grid>
+                  <!-- One line: the question and the two answers to it. The scope list is the
+                       only thing that ever needs a second, and only for a repeating event. -->
+                  <Border x:Name="EventSaveConfirmationPanel" Classes="confirmation save" IsVisible="{Binding IsEventSaveConfirmationVisible}">
+                    <StackPanel Spacing="6">
+                      <Grid ColumnDefinitions="*,Auto,Auto" ColumnSpacing="5">
+                        <TextBlock Text="{DynamicResource L.ConfirmChanges}" FontSize="{DynamicResource MarelianFont11_5}" TextWrapping="Wrap" VerticalAlignment="Center" />
+                        <Button Grid.Column="1" Classes="quiet compact" Command="{Binding CancelEventConfirmationCommand}" Content="{DynamicResource L.Cancel}" />
+                        <Button Grid.Column="2" Classes="primary compact" Command="{Binding ConfirmEventSaveCommand}" Content="{DynamicResource L.Confirm}" />
+                      </Grid>
+                      <ComboBox ItemsSource="{Binding EventEditScopeOptions}" SelectedItem="{Binding SelectedEventEditScopeOption}"
+                                IsVisible="{Binding IsEditingRecurringEvent}" HorizontalAlignment="Stretch" />
+                    </StackPanel>
+                  </Border>
+                </StackPanel>
+              </Border>
+
+
+              <ItemsControl x:Name="AgendaList" ItemsSource="{Binding Agenda}" IsVisible="{Binding IsScheduleExpanded}">
+                <ItemsControl.ItemTemplate>
+                  <DataTemplate DataType="vm:AgendaItemViewModel">
+                    <StackPanel Margin="0,3">
+                      <Border Classes="agendaCard" Classes.current="{Binding IsCurrent}" Classes.past="{Binding IsPast}"
+                              Classes.flash="{Binding IsFlashing}">
+                        <StackPanel>
+                          <Grid ColumnDefinitions="3,Auto,72,*,Auto,Auto,Auto,Auto" ColumnSpacing="0" IsVisible="{Binding !IsDeletePending}">
+                            <Border Classes="agendaRail" Background="{Binding Accent}" Margin="0,8" />
+
+                            <!-- Only events can be picked; a focus block has its own editor. -->
+                            <CheckBox Grid.Column="1" Classes="rowSelect" IsVisible="{Binding IsSelectable}"
+                                      IsChecked="{Binding IsSelected}" VerticalAlignment="Center" Margin="9,0,0,0" />
+
+                            <StackPanel Grid.Column="2" Spacing="2" VerticalAlignment="Center" Margin="8,8,4,8" ClipToBounds="True">
+                              <TextBlock Text="{Binding StartText}" FontSize="{DynamicResource MarelianFont11_5}" FontWeight="SemiBold" />
+                              <TextBlock Text="{Binding EndText}" Classes="muted" FontSize="{DynamicResource MarelianFont10}" />
+                            </StackPanel>
+
+                            <StackPanel Grid.Column="3" Spacing="5" VerticalAlignment="Center" Margin="0,8,7,8">
+                              <TextBlock Text="{Binding Title}" FontWeight="SemiBold" FontSize="{DynamicResource MarelianFont13_5}" TextTrimming="CharacterEllipsis" />
+                              <StackPanel Orientation="Horizontal" Spacing="4">
+                                <Border Classes="rowTag categoryChip" Background="{Binding AccentSoft}" IsVisible="{Binding ShowCategoryChip}">
+                                  <TextBlock Text="{Binding CategoryLabel}" Foreground="{Binding Accent}" MaxWidth="108" />
+                                </Border>
+                                <!-- A slot booked for a project's step names the project in the
+                                     category's place: it says more about the hour. Pressing the
+                                     name opens the project, down in the unscheduled list. -->
+                                <Button Classes="chipLink" IsVisible="{Binding HasProjectLabel}"
+                                        Command="{Binding OpenProjectCommand}" ToolTip.Tip="{DynamicResource L.OpenProject}">
+                                  <Border Classes="rowTag categoryChip" Background="{Binding AccentSoft}">
+                                    <StackPanel Orientation="Horizontal" Spacing="5">
+                                      <Border Classes="projectGlyph" Background="{Binding Accent}" />
+                                      <TextBlock Text="{Binding ProjectLabel}" Foreground="{Binding Accent}" MaxWidth="124" />
+                                    </StackPanel>
+                                  </Border>
+                                </Button>
+                                <Border Classes="rowTag durationPill">
+                                  <TextBlock Text="{Binding DurationText}" Foreground="{DynamicResource ShellMuted}" />
+                                </Border>
+                                <!-- An event broken into steps says how far through them it is, and
+                                     opens its checklist from here. -->
+                                <Button Classes="stepsChip" IsVisible="{Binding Sitting.HasSteps, FallbackValue=False}"
+                                        Classes.complete="{Binding Sitting.IsComplete, FallbackValue=False}"
+                                        Classes.open="{Binding Sitting.IsOpen, FallbackValue=False}"
+                                        Command="{Binding Sitting.ToggleOpenCommand}"
+                                        ToolTip.Tip="{DynamicResource L.StepsChipTooltip}">
+                                  <StackPanel Orientation="Horizontal" Spacing="4">
+                                    <icons:AnimatedIcon Motion="Steps" Width="10" Height="10" />
+                                    <TextBlock Text="{Binding Sitting.StepsText}" />
+                                  </StackPanel>
+                                </Button>
+                                <Border Classes="rowTag nowPill" IsVisible="{Binding IsCurrent}">
+                                  <TextBlock Text="{Binding NowLabel}" Foreground="{DynamicResource ShellOnAccent}" />
+                                </Border>
+                                <Border Classes="rowTag outcomeChip rowOutcome" Classes.skipped="{Binding IsOutcomeSkipped}"
+                                        Classes.done="{Binding IsOutcomeDone}" Classes.partial="{Binding IsOutcomePartial}"
+                                        IsVisible="{Binding HasOutcome}" ToolTip.Tip="{Binding OutcomeTooltip}">
+                                  <TextBlock Text="{Binding OutcomeText}" />
+                                </Border>
+                                <TextBlock Text="{Binding RelativeText}" FontSize="{DynamicResource MarelianFont9_5}" Foreground="{DynamicResource ShellMuted}"
+                                           VerticalAlignment="Center" IsVisible="{Binding HasRelative}" />
+                              </StackPanel>
+                            </StackPanel>
+
+                            <TextBlock Grid.Column="4" Text="{Binding PriorityMark}" Foreground="{DynamicResource ShellDanger}"
+                                       FontWeight="Bold" FontSize="{DynamicResource MarelianFont13}" IsVisible="{Binding HasPriorityMark}"
+                                       Margin="0,0,6,0" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                            <!-- All that is left of a card that has been put away, and the way back to it:
+                                 the same shape as the button beside it, because both say the same thing -
+                                 there is more about this event than the row is showing. -->
+                            <Button Grid.Column="5" Classes="rowTrackToggle marked note"
+                                    IsVisible="{Binding IsNextStepHidden}"
+                                    Command="{Binding ToggleNextStepCommand}" VerticalAlignment="Center"
+                                    ToolTip.Tip="{Binding NextStepPeekHint}">
+                              <icons:AnimatedIcon Data="{StaticResource IconChevronRight}" Motion="ChevronRight"
+                                                  Width="13" Height="13" />
+                            </Button>
+                            <!-- Fixation lives on the row, so a past event is marked where it is shown. -->
+                            <Button Grid.Column="6" Classes="rowTrackToggle" Classes.open="{Binding IsTrackingOpen}"
+                                    Classes.missing="{Binding IsOutcomeMissing}"
+                                    Classes.marked="{Binding HasOutcome}" IsVisible="{Binding CanTrack}"
+                                    Command="{Binding ToggleTrackingCommand}" VerticalAlignment="Center"
+                                    Margin="0,0,3,0" ToolTip.Tip="{DynamicResource L.TrackEventTooltip}">
+                              <icons:AnimatedIcon Data="{StaticResource IconPin}" Motion="Pin" Width="14" Height="14" />
+                            </Button>
+                            <Button Grid.Column="7" Classes="icon quiet eventMenuButton" IsVisible="{Binding IsEvent}"
+                                    Margin="0,0,5,0" VerticalAlignment="Center"
+                                    ToolTip.Tip="{DynamicResource L.EventActions}">
+                              <Button.Flyout>
+                                <MenuFlyout Placement="LeftEdgeAlignedTop">
+                                  <!-- Where ticking begins. It sits first because it is the one entry
+                                       that is about more than this event: everything under it does
+                                       something to this row, and this one says "and others like it". -->
+                                  <MenuItem Header="{DynamicResource L.SelectEventAction}" Command="{Binding BeginSelectionCommand}">
+                                    <MenuItem.Icon><icons:AnimatedIcon Data="{StaticResource IconCheck}" Width="15" /></MenuItem.Icon>
+                                  </MenuItem>
+                                  <MenuItem Header="{DynamicResource L.MoveEvent}" Command="{Binding MoveAloneCommand}">
+                                    <MenuItem.Icon><icons:AnimatedIcon Data="{StaticResource IconRefresh}" Width="15" /></MenuItem.Icon>
+                                  </MenuItem>
+                                  <MenuItem Header="{DynamicResource L.CopyEvent}" Command="{Binding CopyCommand}">
+                                    <MenuItem.Icon><icons:AnimatedIcon Data="{StaticResource IconCopy}" Width="15" /></MenuItem.Icon>
+                                  </MenuItem>
+                                  <MenuItem Header="{DynamicResource L.Edit}" Command="{Binding EditCommand}">
+                                    <MenuItem.Icon><icons:AnimatedIcon Data="{StaticResource IconEdit}" Width="15" /></MenuItem.Icon>
+                                  </MenuItem>
+                                  <!-- The hour, written down as what it is spent on. Offered only to
+                                       an event that has no steps yet and is not a step's slot. -->
+                                  <MenuItem Header="{DynamicResource L.BreakIntoSteps}" Command="{Binding BreakIntoStepsCommand}"
+                                            IsVisible="{Binding CanBreakIntoSteps}">
+                                    <MenuItem.Icon><icons:AnimatedIcon Motion="Steps" Width="15" /></MenuItem.Icon>
+                                  </MenuItem>
+                                  <MenuItem Header="{DynamicResource L.Delete}" Command="{Binding RequestDeleteCommand}">
+                                    <MenuItem.Icon><icons:AnimatedIcon Data="{StaticResource IconDelete}" Width="15" Foreground="{DynamicResource ShellDanger}" /></MenuItem.Icon>
+                                  </MenuItem>
+                                </MenuFlyout>
+                              </Button.Flyout>
+                              <icons:AnimatedIcon Data="{StaticResource IconMenu}" Width="15" Height="15" />
+                            </Button>
+                          </Grid>
+                          <!-- "How did it go?", asked here and nowhere else. This tray is
+                               already what a person opens to say what happened to an event, so
+                               the sheet that used to be drawn on the day card is simply its
+                               second face: three answers, and - for the one answer that needs it
+                               - how far the work got and what is left of it. Stopping a session
+                               anywhere in the shell opens this tray on the row it belongs to. -->
+                          <Border Classes="rowTrackTray" IsVisible="{Binding IsTrackingOpen}">
+                            <StackPanel Spacing="8">
+                              <Grid ColumnDefinitions="Auto,*,Auto" ColumnSpacing="8">
+                                <TextBlock Text="{DynamicResource L.TrackSection}" Classes="trayHeading"
+                                           VerticalAlignment="Center" />
+                                <!-- The stopwatch is not here. This tray asks one question -
+                                     how did it go - and a start, a hold and a stop are not
+                                     answers to it: they are what a session is run with, and a
+                                     session has a rail of its own at the foot of the shell and
+                                     another on the widget. Three buttons that set a clock going
+                                     sitting under the words "how did it go?" made the tray mean
+                                     two things at once, and offered to start something the user
+                                     had just opened this to close the book on.
+
+                                     What is left are the two presses that are about the
+                                     question itself: take the answer back, or put the question
+                                     away unanswered. -->
+                                <StackPanel Grid.Column="2" Orientation="Horizontal" Spacing="4">
+                                  <Button Classes="rowTrackAction undo" Command="{Binding TrackUndoCommand}"
+                                          IsVisible="{Binding HasOutcome}"
+                                          ToolTip.Tip="{DynamicResource L.TrackUndo}">
+                                    <icons:AnimatedIcon Data="{StaticResource IconRefresh}" Motion="Refresh" Width="11" Height="11" />
+                                  </Button>
+                                  <Button Classes="rowTrackAction undo trayClose" Command="{Binding CloseTrackingCommand}"
+                                          IsVisible="{Binding IsVerdictStep}"
+                                          ToolTip.Tip="{DynamicResource L.SessionLater}">
+                                    <icons:AnimatedIcon Data="{StaticResource IconClose}" Width="11" Height="11" />
+                                  </Button>
+                                </StackPanel>
+                              </Grid>
+
+                              <!-- The three answers, one shape, each carrying its own colour so
+                                   the choice is read rather than parsed. -->
+                              <Grid ColumnDefinitions="*,*,*" ColumnSpacing="5" IsVisible="{Binding IsVerdictStep}">
+                                <Button Classes="verdictPill done" Command="{Binding TrackDoneCommand}">
+                                  <StackPanel Orientation="Horizontal" Spacing="6" HorizontalAlignment="Center">
+                                    <icons:AnimatedIcon Data="{StaticResource IconCheck}" Motion="Check" Width="12" Height="12" />
+                                    <TextBlock Text="{DynamicResource L.TrackDone}" FontSize="{DynamicResource MarelianFont10_5}" />
+                                  </StackPanel>
+                                </Button>
+                                <Button Grid.Column="1" Classes="verdictPill partial" Command="{Binding TrackPartialCommand}"
+                                        ToolTip.Tip="{DynamicResource L.TrackPartialTooltip}">
+                                  <StackPanel Orientation="Horizontal" Spacing="6" HorizontalAlignment="Center">
+                                    <icons:AnimatedIcon Data="{StaticResource IconTune}" Motion="Partial" Width="12" Height="12" />
+                                    <TextBlock Text="{DynamicResource L.TrackPartial}" FontSize="{DynamicResource MarelianFont10_5}" />
+                                  </StackPanel>
+                                </Button>
+                                <Button Grid.Column="2" Classes="verdictPill missed" Command="{Binding TrackSkipCommand}">
+                                  <StackPanel Orientation="Horizontal" Spacing="6" HorizontalAlignment="Center">
+                                    <icons:AnimatedIcon Data="{StaticResource IconSkip}" Motion="Skip" Width="12" Height="12" />
+                                    <TextBlock Text="{DynamicResource L.TrackSkip}" FontSize="{DynamicResource MarelianFont10_5}" />
+                                  </StackPanel>
+                                </Button>
+                              </Grid>
+
+                              <!-- Answered "partly": how far it got, and what is left of it.
+                                   Both are things only the user knows; the minutes are not
+                                   asked for, because the session measured them. The answer is
+                                   written in the shell, which is why these reach past the row
+                                   for it - the same question can be raised from the widget. -->
+                              <StackPanel Spacing="7" IsVisible="{Binding IsReviewDetailOpen}">
+                                <TextBlock Classes="sessionMeasured" Margin="0"
+                                           Text="{Binding $parent[ItemsControl].DataContext.SessionReviewMeasuredText}" />
+
+                                <!-- The whole scale, not four opinions about what an honest
+                                     answer looks like. The figure is the user's: the slider
+                                     reaches all of it, and the two steps beside the number land
+                                     the last percent without a fight. -->
+                                <Grid ColumnDefinitions="Auto,*,Auto" ColumnSpacing="9">
+                                  <TextBlock Text="{DynamicResource L.SessionProgressTitle}" Classes="sessionStepLabel" />
+                                  <Slider Grid.Column="1" Classes="progressSlider" Minimum="1" Maximum="100"
+                                          TickFrequency="1" IsSnapToTickEnabled="True"
+                                          Value="{Binding $parent[ItemsControl].DataContext.SessionReviewProgress, Mode=TwoWay}" />
+                                  <StackPanel Grid.Column="2" Orientation="Horizontal" Spacing="4">
+                                    <Button Classes="progressStep" Content="&#x2212;" CommandParameter="-1"
+                                            Command="{Binding $parent[ItemsControl].DataContext.NudgeSessionProgressCommand}" />
+                                    <Border Classes="progressValue">
+                                      <TextBlock FontSize="{DynamicResource MarelianFont11}" FontWeight="SemiBold"
+                                                 Text="{Binding $parent[ItemsControl].DataContext.SessionReviewProgressText}" />
+                                    </Border>
+                                    <Button Classes="progressStep" Content="+" CommandParameter="1"
+                                            Command="{Binding $parent[ItemsControl].DataContext.NudgeSessionProgressCommand}" />
+                                  </StackPanel>
+                                </Grid>
+
+                                <!-- An event broken into steps already has its list of what is
+                                     left: the steps nobody ticked. It is not written out again
+                                     here; the checklist under the row is opened instead, and
+                                     ticking it moves the figure above. -->
+                                <Border Classes="sittingReviewHint"
+                                        IsVisible="{Binding $parent[ItemsControl].DataContext.IsSessionReviewSitting}">
+                                  <Grid ColumnDefinitions="Auto,*" ColumnSpacing="7">
+                                    <icons:AnimatedIcon Motion="Steps" Width="12" Height="12" VerticalAlignment="Top" Margin="0,1,0,0" />
+                                    <TextBlock Grid.Column="1" Text="{DynamicResource L.SessionSittingHint}" TextWrapping="Wrap" />
+                                  </Grid>
+                                </Border>
+
+                                <!-- What is left, as the list it is. One box and one button:
+                                     enter or the plus moves the line onto the list, and saving
+                                     takes whatever is still in the box with it, so a single
+                                     line never has to be added to be kept. The box wraps -
+                                     it used to run off to the right, which made anything
+                                     longer than a few words unreadable while it was typed. -->
+                                <StackPanel Spacing="7" IsVisible="{Binding !$parent[ItemsControl].DataContext.IsSessionReviewSitting}">
+                                <Grid ColumnDefinitions="*,Auto" ColumnSpacing="6" Margin="0,1,0,0">
+                                  <TextBlock Text="{DynamicResource L.SessionNextStepTitle}" Classes="sessionStepLabel" />
+                                  <TextBlock Grid.Column="1" Classes="hint" FontSize="{DynamicResource MarelianFont9}"
+                                             Text="{DynamicResource L.SessionNextStepAddHint}" />
+                                </Grid>
+                                <Grid ColumnDefinitions="*,Auto" ColumnSpacing="6">
+                                  <Border Classes="nextStepEditor">
+                                    <TextBox Classes="bareInput" FontSize="{DynamicResource MarelianFont11}" MaxLength="120"
+                                             TextWrapping="Wrap" AcceptsReturn="False"
+                                             KeyDown="SessionStep_OnKeyDown"
+                                             Text="{Binding $parent[ItemsControl].DataContext.SessionReviewNextStep, Mode=TwoWay}"
+                                             PlaceholderText="{DynamicResource L.SessionNextStepPlaceholder}" />
+                                  </Border>
+                                  <Button Grid.Column="1" Classes="stepAdd" Content="+"
+                                          ToolTip.Tip="{DynamicResource L.SessionNextStepAdd}"
+                                          Command="{Binding $parent[ItemsControl].DataContext.AddSessionStepCommand}" />
+                                </Grid>
+                                <ItemsControl ItemsSource="{Binding $parent[ItemsControl].DataContext.SessionReviewSteps}"
+                                              IsVisible="{Binding $parent[ItemsControl].DataContext.HasSessionReviewSteps}">
+                                  <ItemsControl.ItemTemplate>
+                                    <DataTemplate DataType="vm:SessionStepViewModel">
+                                      <!-- The list being written, in the same shape it will be
+                                           read in on the card below: one rail per line on the
+                                           line's own left edge, and no dot in front of the
+                                           words. What is typed here and what is kept there are
+                                           the same list, so they are not two different objects. -->
+                                      <Border Classes="leftoverItem">
+                                        <Grid ColumnDefinitions="3,*,Auto">
+                                          <Border Classes="leftoverItemRail"
+                                                  Background="{Binding $parent[ItemsControl].DataContext.Accent}" />
+                                          <TextBlock Grid.Column="1" Text="{Binding Text}"
+                                                     Classes="leftoverItemText" />
+                                          <Button Grid.Column="2" Classes="stepRemove" Command="{Binding RemoveCommand}"
+                                                  Margin="0,0,5,0"
+                                                  ToolTip.Tip="{DynamicResource L.SessionNextStepRemove}">
+                                            <icons:AnimatedIcon Data="{StaticResource IconClose}" Width="9" Height="9" />
+                                          </Button>
+                                        </Grid>
+                                      </Border>
+                                    </DataTemplate>
+                                  </ItemsControl.ItemTemplate>
+                                </ItemsControl>
+                                </StackPanel>
+
+                                <!-- Two answers, the same size, side by side across the tray:
+                                     put the question away, or write it down. -->
+                                <Grid ColumnDefinitions="*,*" ColumnSpacing="6" Margin="0,2,0,0">
+                                  <Button Classes="trayAction" Content="{DynamicResource L.SessionDismiss}"
+                                          Command="{Binding $parent[ItemsControl].DataContext.DismissSessionReviewCommand}" />
+                                  <Button Grid.Column="1" Classes="trayAction save" Content="{DynamicResource L.SessionSave}"
+                                          Command="{Binding $parent[ItemsControl].DataContext.SaveSessionPartialCommand}" />
+                                </Grid>
+                              </StackPanel>
+                            </StackPanel>
+                          </Border>
+                          <Grid ColumnDefinitions="*,Auto,Auto" ColumnSpacing="6" Margin="10,8" IsVisible="{Binding IsDeletePending}">
+                            <StackPanel Spacing="4"><TextBlock Text="{Binding DeleteConfirmationText}" TextWrapping="Wrap" /><ComboBox ItemsSource="{Binding DeleteScopeOptions}" SelectedItem="{Binding SelectedDeleteScopeOption}" IsVisible="{Binding IsRecurring}" MinWidth="138" /></StackPanel>
+                            <Button Grid.Column="1" Classes="quiet compact" Command="{Binding CancelDeleteCommand}" Content="{DynamicResource L.Cancel}" />
+                            <Button Grid.Column="2" Classes="dangerFilled compact" Command="{Binding ConfirmDeleteCommand}" Content="{DynamicResource L.Delete}" />
+                          </Grid>
+                        </StackPanel>
+                      </Border>
+                      <!-- What is left of the event: its own card under the row, the width of
+                           the row, built like one - the same surface, the same accent, smaller
+                           type.
+
+                           The accent used to be one rail down the side of the whole card, which
+                           drew a bracket around the list and made three separate things read as
+                           one paragraph with a margin. Every line carries its own now, on its
+                           own left edge: the same mark repeated, once per thing still to do,
+                           which is what the list actually is. The dots that used to stand in
+                           front of the text are gone with it - a line already inside its own
+                           box, against its own rail, does not also need to be pointed at.
+
+                           Two ways to quieten it, and they are not the same thing. The chevron
+                           rolls the lines up and leaves the heading standing with the count on
+                           it; the cross takes the whole card off the day and leaves a chip on
+                           the row above as the way back. "Not now" and "not any more". -->
+                      <Border Classes="leftoverCard" IsVisible="{Binding ShowNextStepCard}"
+                              Classes.rolled="{Binding IsNextStepCollapsed}"
+                              Classes.past="{Binding IsPast}">
+                        <StackPanel Spacing="5">
+                          <Grid ColumnDefinitions="Auto,Auto,*,Auto,Auto" ColumnSpacing="7">
+                            <TextBlock Text="{DynamicResource L.NextStepCardTitle}"
+                                       Classes="leftoverTitle" VerticalAlignment="Center" />
+                            <Border Grid.Column="1" Classes="leftoverCount"
+                                    IsVisible="{Binding ShowNextStepCount}">
+                              <TextBlock Text="{Binding NextStepCount}" FontSize="{DynamicResource MarelianFont9}" />
+                            </Border>
+                            <Button Grid.Column="3" Classes="leftoverFold"
+                                    Command="{Binding ToggleNextStepCollapsedCommand}"
+                                    ToolTip.Tip="{Binding NextStepCollapseHint}">
+                              <icons:AnimatedIcon Data="{StaticResource IconChevronRight}"
+                                                  Classes="expandChevron"
+                                                  Classes.expanded="{Binding ShowNextStepList}"
+                                                  Width="10" Height="10" />
+                            </Button>
+                            <Button Grid.Column="4" Classes="leftoverFold close"
+                                    Command="{Binding ToggleNextStepCommand}"
+                                    ToolTip.Tip="{DynamicResource L.NextStepFold}">
+                              <icons:AnimatedIcon Data="{StaticResource IconClose}" Width="10" Height="10" />
+                            </Button>
+                          </Grid>
+                          <ItemsControl ItemsSource="{Binding NextStepItems}"
+                                        IsVisible="{Binding ShowNextStepList}">
+                            <ItemsControl.ItemTemplate>
+                              <DataTemplate>
+                                <Border Classes="leftoverItem">
+                                  <Grid ColumnDefinitions="3,*">
+                                    <Border Classes="leftoverItemRail"
+                                            Background="{Binding $parent[ItemsControl].DataContext.Accent}" />
+                                    <TextBlock Grid.Column="1" Text="{Binding}" Classes="leftoverItemText" />
+                                  </Grid>
+                                </Border>
+                              </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+                          </ItemsControl>
+                        </StackPanel>
+                      </Border>
+                      <!-- The steps the hour is spent on: the event's own checklist, under the row
+                           and built like the note above it - the same surface, the event's colour
+                           on every line. Its heading says how the steps sit in the event's time;
+                           under the lines is the box the next one is written in, and once the
+                           hour has gone - or was answered short of done - what is left can be
+                           carried on: to another hour, or back to the unscheduled list.
+
+                           Drawn only for an event that has a checklist or is being given one, so
+                           a day of plain events realizes none of it. -->
+                      <ContentControl Content="{Binding Sitting}" IsVisible="{Binding Sitting.IsCardVisible, FallbackValue=False}">
+                        <ContentControl.ContentTemplate>
+                          <DataTemplate DataType="vm:SittingViewModel">
+                            <Border Classes="sittingCard" Classes.past="{Binding $parent[ContentControl].DataContext.IsPast}">
+                              <StackPanel Spacing="5">
+                                <Grid ColumnDefinitions="Auto,*,Auto" ColumnSpacing="8">
+                                  <TextBlock Text="{DynamicResource L.StepsTitle}" Classes="leftoverTitle"
+                                             VerticalAlignment="Center" />
+                                  <TextBlock Grid.Column="1" Text="{Binding SummaryText}" Classes="sittingSummary"
+                                             Classes.overflow="{Binding IsOverflowing}" ToolTip.Tip="{Binding SeriesNote}" ToolTip.ServiceEnabled="{Binding IsOverflowing}" />
+                                  <Button Grid.Column="2" Classes="leftoverFold" Command="{Binding ToggleOpenCommand}"
+                                          ToolTip.Tip="{DynamicResource L.StepsFold}">
+                                    <icons:AnimatedIcon Data="{StaticResource IconChevronRight}" Classes="expandChevron expanded"
+                                                        Width="10" Height="10" />
+                                  </Button>
+                                </Grid>
+                                <TextBlock Classes="hint sittingHint" Text="{DynamicResource L.SittingNoStepsYet}"
+                                           IsVisible="{Binding !HasSteps}" />
+                                <ItemsControl ItemsSource="{Binding Steps}" ItemTemplate="{StaticResource SittingStepTemplate}" />
+                                <Grid ColumnDefinitions="*,Auto" ColumnSpacing="6">
+                                  <Border Classes="nextStepEditor stepComposer">
+                                    <Grid ColumnDefinitions="*,Auto" ColumnSpacing="4">
+                                      <TextBox Classes="bareInput stepComposerInput sittingComposerInput" FontSize="{DynamicResource MarelianFont11}" MaxLength="200"
+                                               AcceptsReturn="False" TextWrapping="NoWrap" VerticalAlignment="Center"
+                                               Text="{Binding DraftTitle, Mode=TwoWay}"
+                                               PlaceholderText="{DynamicResource L.NewStepPlaceholder}" />
+                                      <Button Grid.Column="1" Classes="stepChip" Command="{Binding PickDraftDurationCommand}">
+                                        <StackPanel Orientation="Horizontal" Spacing="4">
+                                          <icons:AnimatedIcon Data="{StaticResource IconTimer}" Width="9" Height="9" />
+                                          <TextBlock Text="{Binding DraftDurationText}" />
+                                        </StackPanel>
+                                      </Button>
+                                    </Grid>
+                                  </Border>
+                                  <Button Grid.Column="1" Classes="stepAdd" Content="+" VerticalAlignment="Center"
+                                          Command="{Binding AddStepCommand}" ToolTip.Tip="{DynamicResource L.StepAddTooltip}" />
+                                </Grid>
+                                <Grid ColumnDefinitions="*,Auto,Auto" ColumnSpacing="5" Margin="0,2,0,0" IsVisible="{Binding CanCarry}">
+                                  <TextBlock Text="{Binding CarryText}" Classes="sittingCarryText" VerticalAlignment="Center" />
+                                  <Button Grid.Column="1" Classes="carryAction" Command="{Binding CarryToUnscheduledCommand}"
+                                          ToolTip.Tip="{DynamicResource L.CarryToUnscheduledTooltip}"
+                                          Content="{DynamicResource L.CarryToUnscheduled}" />
+                                  <Button Grid.Column="2" Classes="carryAction primary" Command="{Binding CarryToTimeCommand}"
+                                          ToolTip.Tip="{DynamicResource L.CarryToTimeTooltip}"
+                                          Content="{DynamicResource L.CarryToTime}" />
+                                </Grid>
+                              </StackPanel>
+                            </Border>
+                          </DataTemplate>
+                        </ContentControl.ContentTemplate>
+                      </ContentControl>
+                    </StackPanel>
+                  </DataTemplate>
+                </ItemsControl.ItemTemplate>
+              </ItemsControl>
+
+              <Grid ColumnDefinitions="*,Auto" Margin="0,3,0,0">
+                <Button Classes="quiet sectionToggle" Command="{Binding ToggleTasksCommand}" HorizontalAlignment="Left">
+                  <Grid ColumnDefinitions="Auto,*" ColumnSpacing="8">
+                    <Panel Width="16" Height="16" VerticalAlignment="Center" ClipToBounds="False">
+                      <icons:AnimatedIcon Data="{StaticResource IconChevronRight}" Width="10" Height="10"
+                                Classes="expandChevron" Classes.expanded="{Binding IsTasksExpanded}"
+                                HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Panel>
+                    <StackPanel Grid.Column="1" Spacing="1">
+                      <TextBlock Text="{DynamicResource L.UnscheduledTasks}" Classes="section" />
+                      <TextBlock Text="{Binding TasksCountText}" Classes="muted" />
+                    </StackPanel>
+                  </Grid>
+                </Button>
+                <Button Grid.Column="1" Classes="quiet compact newItemAction" Command="{Binding ToggleTaskComposerCommand}">
+                  <StackPanel Orientation="Horizontal" Spacing="6" VerticalAlignment="Center">
+                    <icons:AnimatedIcon Data="{StaticResource IconPlus}" Motion="Plus" Classes="completeSpin" Width="16" />
+                    <TextBlock Text="{DynamicResource L.NewTask}" />
+                  </StackPanel>
+                </Button>
+              </Grid>
+
+              <Border x:Name="TaskEditorCard" Classes="surface formCard" Padding="12,10" IsVisible="{Binding IsTaskEditorVisible}">
+                <StackPanel Spacing="8">
+                  <Grid ColumnDefinitions="*,Auto"><TextBlock Text="{Binding TaskActionText}" Classes="section" VerticalAlignment="Center" /><Button Grid.Column="1" Classes="icon quiet closeGlyph" Command="{Binding CancelTaskEditCommand}"><icons:AnimatedIcon Data="{StaticResource IconClose}" Width="16" /></Button></Grid>
+                  <TextBox Text="{Binding EditTitle}" PlaceholderText="{DynamicResource L.TaskTitle}" />
+                  <Grid ColumnDefinitions="*,*" RowDefinitions="Auto,36" ColumnSpacing="8" RowSpacing="4">
+                    <TextBlock Text="{DynamicResource L.Duration}" Classes="label metaLabel" IsVisible="{Binding !IsTaskEditorProject}" />
+                    <TextBlock Text="{DynamicResource L.EventCategory}" Classes="label metaLabel" IsVisible="{Binding IsTaskEditorProject}" />
+                    <TextBlock Grid.Column="1" Text="{DynamicResource L.PriorityLabel}" Classes="label metaLabel" />
+                    <Button Grid.Row="1" Classes="fieldButton eventMetaField taskMetaField"
+                            Command="{Binding OpenTaskDurationTimePickerCommand}" IsVisible="{Binding !IsTaskEditorProject}">
+                      <Grid ColumnDefinitions="20,*" ColumnSpacing="5">
+                        <icons:AnimatedIcon Data="{StaticResource IconClock}" Width="14" />
+                        <TextBlock Grid.Column="1" Text="{Binding TaskDurationLabel}" VerticalAlignment="Center" />
+                      </Grid>
+                    </Button>
+                    <!-- A task broken into steps is as long as they are, so the form does not ask.
+                         What it asks instead is the colour its hours take on the calendar. -->
+                    <Grid Grid.Row="1" ClipToBounds="True" IsVisible="{Binding IsTaskEditorProject}">
+                      <ComboBox Classes="eventMetaSelector category taskMetaField"
+                                ItemTemplate="{StaticResource EventCategoryOptionTemplate}"
+                                ItemsSource="{Binding EventCategoryOptions}"
+                                SelectedItem="{Binding SelectedTaskCategoryOption, Mode=TwoWay}"
+                                ToolTip.Tip="{DynamicResource L.ProjectCategoryTooltip}" />
+                    </Grid>
+                    <ComboBox Grid.Row="1" Grid.Column="1" Classes="eventMetaSelector taskMetaField"
+                              ItemTemplate="{StaticResource EventPriorityOptionTemplate}"
+                              ItemsSource="{Binding TaskPriorityOptions}" SelectedItem="{Binding SelectedTaskPriorityOption}" />
+                  </Grid>
+                  <StackPanel Spacing="4">
+                    <TextBlock Text="{DynamicResource L.DueDate}" Classes="label" />
+                    <Grid ColumnDefinitions="*,Auto" ColumnSpacing="6">
+                      <Button x:Name="TaskDateButton" Classes="fieldButton" Command="{Binding OpenTaskDeadlineCalendarCommand}"><Grid ColumnDefinitions="Auto,*" ColumnSpacing="8"><icons:AnimatedIcon Data="{StaticResource IconCalendar}" Width="16" /><TextBlock Grid.Column="1" Text="{Binding EditDeadlineLabel}" /></Grid></Button>
+                      <Button Grid.Column="1" Classes="icon quiet closeGlyph" Command="{Binding ClearTaskDeadlineCommand}"><icons:AnimatedIcon Data="{StaticResource IconClose}" Width="15" /></Button>
+                    </Grid>
+                  </StackPanel>
+
+                  <StackPanel Spacing="4">
+                    <TextBlock Text="{DynamicResource L.Notes}" Classes="label" />
+                    <TextBox Text="{Binding EditNotes}" PlaceholderText="{DynamicResource L.NotesPlaceholder}" AcceptsReturn="True" TextWrapping="Wrap" MaxHeight="68" />
+                  </StackPanel>
+
+                  <!-- Work too big for one sitting, written down as the steps it takes. Their days are
+                       planned on the task itself once it is saved; here they only get a length. -->
+                  <Button Classes="draftToggle" IsVisible="{Binding ShowTaskDraftToggle}"
+                          Command="{Binding OpenTaskDraftStepsCommand}" HorizontalAlignment="Left">
+                    <StackPanel Orientation="Horizontal" Spacing="6">
+                      <icons:AnimatedIcon Motion="Steps" Width="13" Height="13" />
+                      <TextBlock Text="{DynamicResource L.BreakIntoSteps}" />
+                    </StackPanel>
+                  </Button>
+                  <StackPanel Spacing="5" IsVisible="{Binding ShowTaskDraftEditor}">
+                    <Grid ColumnDefinitions="Auto,*" ColumnSpacing="8">
+                      <TextBlock Text="{DynamicResource L.StepsTitle}" Classes="label metaLabel" VerticalAlignment="Center" />
+                      <TextBlock Grid.Column="1" Text="{Binding TaskDraftSummary}" Classes="sittingSummary" />
+                    </Grid>
+                    <ItemsControl ItemsSource="{Binding TaskDraftSteps}" ItemTemplate="{StaticResource DraftStepTemplate}" />
+                    <Grid ColumnDefinitions="*,Auto" ColumnSpacing="6">
+                      <Border Classes="nextStepEditor stepComposer">
+                        <Grid ColumnDefinitions="*,Auto" ColumnSpacing="4">
+                          <TextBox x:Name="TaskDraftStepBox" Classes="bareInput draftStepInput" Tag="task" FontSize="{DynamicResource MarelianFont11_5}"
+                                   MaxLength="200" AcceptsReturn="False" TextWrapping="NoWrap" VerticalAlignment="Center"
+                                   Text="{Binding TaskDraftStepText, Mode=TwoWay}"
+                                   PlaceholderText="{DynamicResource L.NewStepPlaceholder}" />
+                          <Button Grid.Column="1" Classes="stepChip" Command="{Binding PickTaskDraftDurationCommand}">
+                            <StackPanel Orientation="Horizontal" Spacing="4">
+                              <icons:AnimatedIcon Data="{StaticResource IconTimer}" Width="9" Height="9" />
+                              <TextBlock Text="{Binding TaskDraftDurationText}" />
+                            </StackPanel>
+                          </Button>
+                        </Grid>
+                      </Border>
+                      <Button Grid.Column="1" Classes="stepAdd" Content="+" VerticalAlignment="Center"
+                              Command="{Binding AddTaskDraftStepCommand}" ToolTip.Tip="{DynamicResource L.StepAddTooltip}" />
+                    </Grid>
+                  </StackPanel>
+                  <Grid ColumnDefinitions="92,92" ColumnSpacing="8" HorizontalAlignment="Center"><Button Width="92" Classes="secondary compactAction" Command="{Binding CancelTaskEditCommand}" Content="{DynamicResource L.Cancel}" /><Button Grid.Column="1" Width="92" Classes="primary compactAction" Command="{Binding SaveTaskEditCommand}" Content="{DynamicResource L.Save}" /></Grid>
+                </StackPanel>
+              </Border>
+
+              <!-- What unscheduled projects put on this day without an hour yet: the steps planned for
+                   it, and on today also the ones an earlier day left unfinished. They head the list
+                   because they are its most concrete part - work that already knows its day and is
+                   only waiting for a time. Booked steps are rows of the schedule above instead. -->
+              <StackPanel Spacing="5" IsVisible="{Binding ShowDaySteps}">
+                <Grid ColumnDefinitions="*,Auto" Margin="2,0">
+                  <TextBlock Text="{Binding DayStepsTitle}" Classes="dayStepsHeading" />
+                  <TextBlock Grid.Column="1" Text="{Binding DayStepsSummary}" Classes="stepDayTotal" />
+                </Grid>
+                <ItemsControl x:Name="DayStepsList" ItemsSource="{Binding DaySteps}"
+                              ItemTemplate="{StaticResource ProjectStepRowTemplate}" />
+              </StackPanel>
+
+              <ItemsControl x:Name="TasksList" ItemsSource="{Binding Tasks}" IsVisible="{Binding IsTasksExpanded}">
+                <ItemsControl.ItemTemplate>
+                  <DataTemplate DataType="vm:CompactTaskViewModel">
+                    <!-- A task, and - once it has been broken into steps - a project: the same row,
+                         with how far along it is under its name, a chip that says how many of its
+                         steps are done and opens them, and the next of them. Opened, it lays the
+                         project out day by day with the box the next step is written in. -->
+                    <Border Classes="agendaCard taskRow" Margin="0,3" Opacity="{Binding DimOpacity}"
+                            Classes.expanded="{Binding Project.IsExpanded, FallbackValue=False}">
+                      <StackPanel>
+                        <Grid ColumnDefinitions="3,38,*,Auto" ColumnSpacing="0" IsVisible="{Binding !IsDeletePending}">
+                          <Border Classes="agendaRail" Background="{Binding PriorityBrush}" Margin="0,8"
+                                  ToolTip.Tip="{Binding PriorityLabel}" />
+                          <Button Grid.Column="1" Classes="icon quiet checkAction" Margin="5,0,3,0"
+                                  Command="{Binding ToggleCommand}"><icons:AnimatedIcon Data="{StaticResource IconCheck}" Width="15" /></Button>
+                          <StackPanel Grid.Column="2" VerticalAlignment="Center" Spacing="5" Margin="5,8,7,8">
+                            <TextBlock Text="{Binding Title}" FontWeight="SemiBold" FontSize="{DynamicResource MarelianFont13}" TextTrimming="CharacterEllipsis" />
+                            <Border Classes="projectProgressTrack" IsVisible="{Binding Project.HasSteps, FallbackValue=False}">
+                              <ProgressBar Classes="projectProgress" Minimum="0" Maximum="100"
+                                           Value="{Binding Project.Progress, FallbackValue=0}"
+                                           Foreground="{Binding Project.Accent, FallbackValue={x:Null}}" />
+                            </Border>
+                            <StackPanel Orientation="Horizontal" Spacing="5">
+                              <Button Classes="stepsChip" IsVisible="{Binding Project.HasSteps, FallbackValue=False}"
+                                      Classes.complete="{Binding Project.IsComplete, FallbackValue=False}"
+                                      Classes.open="{Binding Project.IsExpanded, FallbackValue=False}"
+                                      Command="{Binding Project.ToggleExpandedCommand}"
+                                      ToolTip.Tip="{Binding Project.ProgressText}">
+                                <StackPanel Orientation="Horizontal" Spacing="4">
+                                  <icons:AnimatedIcon Motion="Steps" Width="10" Height="10" />
+                                  <TextBlock Text="{Binding Project.StepsText}" />
+                                  <icons:AnimatedIcon Data="{StaticResource IconChevronRight}" Classes="expandChevron"
+                                                      Classes.expanded="{Binding Project.IsExpanded, FallbackValue=False}"
+                                                      Width="8" Height="8" />
+                                </StackPanel>
+                              </Button>
+                              <Border Classes="rowTag durationPill">
+                                <TextBlock Text="{Binding DurationText}" Foreground="{DynamicResource ShellMuted}" />
+                              </Border>
+                              <Border Classes="rowTag deadlineChip" Classes.overdue="{Binding IsOverdue}" IsVisible="{Binding HasDeadline}">
+                                <StackPanel Orientation="Horizontal" Spacing="4">
+                                  <icons:AnimatedIcon Data="{StaticResource IconClock}" Width="9" Height="9"
+                                            Foreground="{DynamicResource ShellMuted}" VerticalAlignment="Center" />
+                                  <TextBlock Text="{Binding DeadlineText}" Foreground="{DynamicResource ShellMuted}" />
+                                </StackPanel>
+                              </Border>
+                            </StackPanel>
+                            <TextBlock Classes="projectNext" Text="{Binding Project.NextText}"
+                                       IsVisible="{Binding Project.HasNext, FallbackValue=False}" />
+                          </StackPanel>
+                          <StackPanel Grid.Column="3" Orientation="Horizontal" Spacing="1" Classes="rowActions"
+                                      Margin="0,0,5,0" VerticalAlignment="Center">
+                            <Button Classes="icon quiet editAction" Command="{Binding BreakIntoStepsCommand}"
+                                    IsVisible="{Binding Project.IsEmpty, FallbackValue=True}"
+                                    ToolTip.Tip="{DynamicResource L.BreakIntoSteps}">
+                              <icons:AnimatedIcon Motion="Steps" Width="15" Height="15" />
+                            </Button>
+                            <Button Classes="icon quiet editAction" Command="{Binding EditCommand}"><icons:AnimatedIcon Data="{StaticResource IconEdit}" Width="14" /></Button>
+                            <Button Classes="icon quiet danger deleteAction" Command="{Binding RequestDeleteCommand}"><icons:AnimatedIcon Data="{StaticResource IconDelete}" Width="15" /></Button>
+                          </StackPanel>
+                        </Grid>
+                        <!-- Opened: the project day by day, and under it the box the next step is
+                             written in, with the length and the day it will be written with. -->
+                        <ContentControl Content="{Binding Project}" IsVisible="{Binding Project.IsExpanded, FallbackValue=False}">
+                          <ContentControl.ContentTemplate>
+                            <DataTemplate DataType="vm:TaskProjectViewModel">
+                              <StackPanel Spacing="6" Margin="12,0,10,10">
+                                <Grid ColumnDefinitions="*,Auto" ColumnSpacing="6" IsVisible="{Binding IsEmpty}">
+                                  <TextBlock Classes="hint" Text="{DynamicResource L.ProjectNoStepsYet}" VerticalAlignment="Center" />
+                                  <Button Grid.Column="1" Classes="leftoverFold close" Command="{Binding ToggleExpandedCommand}"
+                                          ToolTip.Tip="{DynamicResource L.Cancel}" VerticalAlignment="Top">
+                                    <icons:AnimatedIcon Data="{StaticResource IconClose}" Width="10" Height="10" />
+                                  </Button>
+                                </Grid>
+                                <Button Classes="selectionLink" HorizontalAlignment="Left" IsVisible="{Binding HasFinishedDays}"
+                                        Command="{Binding ToggleFinishedCommand}" Content="{Binding FinishedToggleText}" />
+                                <ItemsControl ItemsSource="{Binding Groups}">
+                                  <ItemsControl.ItemTemplate>
+                                    <DataTemplate DataType="vm:ProjectDayGroupViewModel">
+                                      <StackPanel Spacing="4" Margin="0,3,0,0" IsVisible="{Binding IsShown}">
+                                        <Grid ColumnDefinitions="*,Auto,Auto" ColumnSpacing="6" Margin="2,0">
+                                          <TextBlock Text="{Binding Heading}" Classes="stepDayTitle"
+                                                     Classes.today="{Binding IsToday}" Classes.overdue="{Binding IsOverdue}" />
+                                          <Border Grid.Column="1" Classes="rowTag lateChip" IsVisible="{Binding IsAfterDeadline}">
+                                            <TextBlock Text="{DynamicResource L.StepAfterDeadline}" />
+                                          </Border>
+                                          <TextBlock Grid.Column="2" Text="{Binding TotalText}" Classes="stepDayTotal" />
+                                        </Grid>
+                                        <ItemsControl ItemsSource="{Binding Steps}" ItemTemplate="{StaticResource ProjectStepRowTemplate}" />
+                                      </StackPanel>
+                                    </DataTemplate>
+                                  </ItemsControl.ItemTemplate>
+                                </ItemsControl>
+                                <Grid ColumnDefinitions="*,Auto" ColumnSpacing="6">
+                                  <Border Classes="nextStepEditor stepComposer">
+                                    <Grid ColumnDefinitions="*,Auto,Auto" ColumnSpacing="4">
+                                      <TextBox Classes="bareInput stepComposerInput" FontSize="{DynamicResource MarelianFont11_5}" MaxLength="200"
+                                               AcceptsReturn="False" TextWrapping="NoWrap" VerticalAlignment="Center"
+                                               Text="{Binding DraftTitle, Mode=TwoWay}"
+                                               PlaceholderText="{DynamicResource L.NewStepPlaceholder}" />
+                                      <Button Grid.Column="1" Classes="stepChip" Command="{Binding PickDraftDurationCommand}">
+                                        <StackPanel Orientation="Horizontal" Spacing="4">
+                                          <icons:AnimatedIcon Data="{StaticResource IconTimer}" Width="9" Height="9" />
+                                          <TextBlock Text="{Binding DraftDurationText}" />
+                                        </StackPanel>
+                                      </Button>
+                                      <Button Grid.Column="2" Classes="stepChip" Command="{Binding PickDraftDayCommand}"
+                                              ToolTip.Tip="{DynamicResource L.ChooseDate}">
+                                        <StackPanel Orientation="Horizontal" Spacing="4">
+                                          <icons:AnimatedIcon Data="{StaticResource IconCalendar}" Width="9" Height="9" />
+                                          <TextBlock Text="{Binding DraftDayText}" />
+                                        </StackPanel>
+                                      </Button>
+                                    </Grid>
+                                  </Border>
+                                  <Button Grid.Column="1" Classes="stepAdd" Content="+" VerticalAlignment="Center"
+                                          Command="{Binding AddStepCommand}" ToolTip.Tip="{DynamicResource L.StepAddTooltip}" />
+                                </Grid>
+                              </StackPanel>
+                            </DataTemplate>
+                          </ContentControl.ContentTemplate>
+                        </ContentControl>
+                        <Grid ColumnDefinitions="*,Auto,Auto" ColumnSpacing="6" Margin="10,8" IsVisible="{Binding IsDeletePending}">
+                          <TextBlock Text="{Binding DeleteConfirmationText}" VerticalAlignment="Center" TextWrapping="Wrap" />
+                          <Button Grid.Column="1" Classes="quiet compact" Command="{Binding CancelDeleteCommand}" Content="{DynamicResource L.Cancel}" />
+                          <Button Grid.Column="2" Classes="dangerFilled compact" Command="{Binding ConfirmDeleteCommand}" Content="{DynamicResource L.Delete}" />
+                        </Grid>
+                      </StackPanel>
+                    </Border>
+                  </DataTemplate>
+                </ItemsControl.ItemTemplate>
+              </ItemsControl>
+
+            </StackPanel>
+          </ScrollViewer>
+
+          <!-- The monitoring tools, in the shape the widget already wears them: one pill,
+               the two controls a session has, and the clock as the last segment of the same
+               pill rather than a panel built around it. It was a full-width card with a
+               heading, a state line and the event's name in it, which is a lot of furniture
+               for three buttons - and the card above already says which event this is. The
+               three verdicts are not here on purpose: saying how something went is not a
+               monitoring control, and it happens in the row's own tray. -->
+          <Grid Grid.Row="3" Classes="monitorDock" IsVisible="{Binding ShowMonitorPanel}">
+            <StackPanel Spacing="8" HorizontalAlignment="Center">
+              <!-- A pause says nothing until it has gone on long enough that the answer is
+                   genuinely unknown. Then it asks once, quietly, with the only two answers
+                   there are. -->
+              <Border Classes="softPrompt" IsVisible="{Binding IsLongPause}" MaxWidth="392">
+                <Grid ColumnDefinitions="*,Auto,Auto" ColumnSpacing="6">
+                  <StackPanel Spacing="1" VerticalAlignment="Center">
+                    <TextBlock Text="{DynamicResource L.PausePromptTitle}" FontSize="{DynamicResource MarelianFont11_5}" FontWeight="SemiBold" />
+                    <TextBlock Text="{Binding LongPauseText}" Classes="muted" FontSize="{DynamicResource MarelianFont10}" />
+                  </StackPanel>
+                  <Button Grid.Column="1" Classes="quiet compact" Command="{Binding EndPausedSessionCommand}"
+                          Content="{DynamicResource L.PausePromptFinish}" />
+                  <Button Grid.Column="2" Classes="primary compact" Command="{Binding KeepGoingCommand}"
+                          Content="{DynamicResource L.PausePromptResume}" />
+                </Grid>
+              </Border>
+
+              <Border Classes="monitorRail" Classes.live="{Binding IsSessionRunning}"
+                      HorizontalAlignment="Center">
+                <StackPanel Orientation="Horizontal" Spacing="3">
+                  <!-- One slot for "set it going", whichever of the two that means. -->
+                  <Button Classes="railButton start" Command="{Binding StartEventCommand}"
+                          IsVisible="{Binding CanStartTracking}" ToolTip.Tip="{DynamicResource L.TrackStart}">
+                    <icons:AnimatedIcon Data="{StaticResource IconPlay}" Motion="Play" Width="14" Height="14" />
+                  </Button>
+                  <Button Classes="railButton start" Command="{Binding ResumeEventCommand}"
+                          IsVisible="{Binding CanResumeSession}" ToolTip.Tip="{DynamicResource L.TrackResume}">
+                    <icons:AnimatedIcon Data="{StaticResource IconPlay}" Motion="Play" Width="14" Height="14" />
+                  </Button>
+                  <Button Classes="railButton pause" Command="{Binding PauseEventCommand}"
+                          IsVisible="{Binding CanPauseSession}" ToolTip.Tip="{DynamicResource L.TrackPause}">
+                    <icons:AnimatedIcon Motion="Pause" Width="14" Height="14" />
+                  </Button>
+                  <Button Classes="railButton stop" Command="{Binding StopEventCommand}"
+                          IsVisible="{Binding IsSessionOpen}" ToolTip.Tip="{DynamicResource L.TrackStop}">
+                    <icons:AnimatedIcon Data="{StaticResource IconStop}" Motion="Stop" Width="14" Height="14" />
+                  </Button>
+
+                  <!-- The creature, as the pill's last segment. It was the stopwatch here, and
+                       the stopwatch was already on the card two rows up, set large and in the
+                       accent - so the dock repeated the loudest number on the screen in a box
+                       eight characters wide. What the dock is missing is not another reading
+                       but the one thing that says how the day is going without being read; the
+                       mood it wears is the same one the widget's creature wears. Set apart by
+                       a hairline so it belongs to the pill rather than floating beside it. -->
+                  <Border Classes="railDivider" IsVisible="{Binding ShowMascot}" />
+                  <Border Classes="railMascot" IsVisible="{Binding ShowMascot}">
+                    <icons:MascotView x:Name="DockMascot" Width="22" Height="22"
+                                      Mood="{Binding PeekMascotMood}"
+                                      Accent="{DynamicResource ShellAccent}"
+                                      AccentOverride="{Binding MascotAccentBrush}"
+                                      IsAnimated="{Binding !ReduceMotion}" />
+                  </Border>
+                </StackPanel>
+              </Border>
+            </StackPanel>
+          </Grid>
+
+          <Grid Grid.RowSpan="4" IsVisible="{Binding IsDayActionsOpen}" IsHitTestVisible="{Binding IsDayActionsOpen}" ZIndex="32">
+            <Button Classes="overlayDismiss" Command="{Binding CloseDayActionsCommand}" />
+            <Border Classes="dayActionsPanel" HorizontalAlignment="Center" VerticalAlignment="Center">
+              <StackPanel Spacing="13">
+                <Grid ColumnDefinitions="Auto,*,Auto" ColumnSpacing="10">
+                  <Border Width="32" Height="32" CornerRadius="{DynamicResource ShellControlRadius}" Background="{DynamicResource ShellAccentSoft}">
+                    <icons:AnimatedIcon Data="{StaticResource IconTune}" Width="16" Height="16" Foreground="{DynamicResource ShellAccent}" />
+                  </Border>
+                  <StackPanel Grid.Column="1" Spacing="1" VerticalAlignment="Center">
+                    <TextBlock Text="{DynamicResource L.DayActions}" FontSize="{DynamicResource MarelianFont14}" FontWeight="SemiBold" />
+                    <TextBlock Text="{Binding SelectedDateLabel}" Classes="muted" FontSize="{DynamicResource MarelianFont10}" />
+                  </StackPanel>
+                  <Button Grid.Column="2" Classes="icon quiet mini closeGlyph" Command="{Binding CloseDayActionsCommand}">
+                    <icons:AnimatedIcon Data="{StaticResource IconClose}" Width="13" />
+                  </Button>
+                </Grid>
+
+                <StackPanel Spacing="7">
+                  <TextBlock Text="{DynamicResource L.CopySchedule}" Classes="label" Margin="2,0" />
+                  <Grid Width="312" ColumnDefinitions="100,100,100" ColumnSpacing="6" HorizontalAlignment="Center">
+                    <Button Grid.Column="0" Classes="dayActionTile" Command="{Binding RequestCopyDayTomorrowCommand}">
+                      <StackPanel Spacing="4" HorizontalAlignment="Center">
+                        <icons:AnimatedIcon Data="{StaticResource IconArrowUp}" Motion="ArrowRight" Width="13" Height="13" Foreground="{DynamicResource ShellAccent}" />
+                        <TextBlock Text="{DynamicResource L.CopyToTomorrow}" FontSize="{DynamicResource MarelianFont10_5}" TextAlignment="Center" TextWrapping="Wrap" MaxLines="2" />
+                      </StackPanel>
+                    </Button>
+                    <Button Grid.Column="1" Classes="dayActionTile" Command="{Binding RequestCopyDayNextWeekCommand}">
+                      <StackPanel Spacing="4" HorizontalAlignment="Center">
+                        <icons:AnimatedIcon Data="{StaticResource IconCopy}" Motion="Copy" Width="13" Height="13" Foreground="{DynamicResource ShellAccent}" />
+                        <TextBlock Text="{DynamicResource L.CopyToNextWeek}" FontSize="{DynamicResource MarelianFont10_5}" TextAlignment="Center" TextWrapping="Wrap" MaxLines="2" />
+                      </StackPanel>
+                    </Button>
+                    <Button Grid.Column="2" Classes="dayActionTile" Command="{Binding RequestCopyDayToDateCommand}">
+                      <StackPanel Spacing="4" HorizontalAlignment="Center">
+                        <icons:AnimatedIcon Data="{StaticResource IconCalendar}" Motion="Calendar" Width="13" Height="13" Foreground="{DynamicResource ShellAccent}" />
+                        <TextBlock Text="{DynamicResource L.CopyToDate}" FontSize="{DynamicResource MarelianFont10_5}" TextAlignment="Center" TextWrapping="Wrap" MaxLines="2" />
+                      </StackPanel>
+                    </Button>
+                  </Grid>
+                  <TextBlock Text="{DynamicResource L.ShiftSchedule}" Classes="label" Margin="2,2,0,0" />
+                  <Grid Width="312" ColumnDefinitions="100,100,100" ColumnSpacing="6" HorizontalAlignment="Center">
+                    <Button Grid.Column="0" Classes="shiftDirection" Classes.active="{Binding IsDayShiftEarlier}"
+                            Command="{Binding SetDayShiftEarlierCommand}">
+                      <StackPanel Orientation="Horizontal" Spacing="5" HorizontalAlignment="Center">
+                        <icons:AnimatedIcon Data="{StaticResource IconChevronLeft}" Motion="ArrowLeft" Width="12" Height="12" />
+                        <TextBlock Text="{DynamicResource L.ShiftEarlier}" />
+                      </StackPanel>
+                    </Button>
+                    <Button Grid.Column="1" Classes="dayShiftTime" Command="{Binding OpenDayShiftTimePickerCommand}"
+                            ToolTip.Tip="{DynamicResource L.ChooseTime}">
+                      <StackPanel Orientation="Horizontal" Spacing="5" HorizontalAlignment="Center">
+                        <icons:AnimatedIcon Data="{StaticResource IconClock}" Motion="Clock" Width="13" />
+                        <TextBlock Text="{Binding DayShiftAmountLabel}" FontWeight="SemiBold" />
+                      </StackPanel>
+                    </Button>
+                    <Button Grid.Column="2" Classes="shiftDirection" Classes.active="{Binding IsDayShiftLater}"
+                            Command="{Binding SetDayShiftLaterCommand}">
+                      <StackPanel Orientation="Horizontal" Spacing="5" HorizontalAlignment="Center">
+                        <TextBlock Text="{DynamicResource L.ShiftLater}" />
+                        <icons:AnimatedIcon Data="{StaticResource IconChevronRight}" Motion="ArrowRight" Width="12" Height="12" />
+                      </StackPanel>
+                    </Button>
+                  </Grid>
+
+                  <!-- Hours are what almost every shift is, so they stay the whole of the
+                       question until asked otherwise. Whole days, and a day to land on, are
+                       the same question at a coarser grain and live one press below it. -->
+                  <Button Classes="shiftMoreToggle" Classes.open="{Binding IsDayShiftMoreOpen}"
+                          Width="312" HorizontalAlignment="Center"
+                          Command="{Binding ToggleDayShiftMoreCommand}">
+                    <Grid ColumnDefinitions="*,Auto">
+                      <TextBlock Text="{DynamicResource L.ShiftMoreOptions}" VerticalAlignment="Center" />
+                      <icons:AnimatedIcon Grid.Column="1" Data="{StaticResource IconChevronRight}" Motion="ArrowRight"
+                                          Width="12" Height="12" VerticalAlignment="Center" />
+                    </Grid>
+                  </Button>
+
+                  <StackPanel Spacing="7" IsVisible="{Binding IsDayShiftMoreOpen}">
+                    <Grid Width="312" ColumnDefinitions="100,100,100" ColumnSpacing="6" HorizontalAlignment="Center">
+                      <Button Classes="shiftDirection" Command="{Binding NudgeDayShiftDaysCommand}"
+                              CommandParameter="-1" Content="−1" />
+                      <Border Grid.Column="1" Classes="shiftDaysValue">
+                        <StackPanel Orientation="Horizontal" Spacing="5" HorizontalAlignment="Center" VerticalAlignment="Center">
+                          <icons:AnimatedIcon Data="{StaticResource IconCalendar}" Motion="Calendar" Width="13" Height="13"
+                                              Foreground="{DynamicResource ShellMuted}" VerticalAlignment="Center" />
+                          <TextBlock Text="{Binding DayShiftDaysLabel}" FontWeight="SemiBold" VerticalAlignment="Center"
+                                     ToolTip.Tip="{DynamicResource L.ShiftDays}" />
+                        </StackPanel>
+                      </Border>
+                      <Button Grid.Column="2" Classes="shiftDirection" Command="{Binding NudgeDayShiftDaysCommand}"
+                              CommandParameter="1" Content="+1" />
+                    </Grid>
+                    <Button Classes="shiftDateTile" Classes.active="{Binding IsDayShiftByDate}"
+                            Width="312" HorizontalAlignment="Center"
+                            Command="{Binding OpenDayShiftDateCalendarCommand}">
+                      <Grid ColumnDefinitions="Auto,*,Auto" ColumnSpacing="8">
+                        <icons:AnimatedIcon Data="{StaticResource IconCalendar}" Motion="Calendar" Width="13" Height="13"
+                                            Foreground="{DynamicResource ShellAccent}" VerticalAlignment="Center" />
+                        <TextBlock Grid.Column="1" Text="{DynamicResource L.ShiftOnDate}" FontSize="{DynamicResource MarelianFont11_5}"
+                                   HorizontalAlignment="Left" VerticalAlignment="Center" />
+                        <TextBlock Grid.Column="2" Text="{Binding DayShiftTargetDateLabel}" FontSize="{DynamicResource MarelianFont11_5}"
+                                   FontWeight="SemiBold" VerticalAlignment="Center" />
+                      </Grid>
+                    </Button>
+                  </StackPanel>
+
+                  <Grid Width="312" ColumnDefinitions="153,153" ColumnSpacing="6" HorizontalAlignment="Center">
+                  <Button Grid.Column="0" Classes="dayAction danger dayActionFinal" Command="{Binding RequestClearDayCommand}">
+                    <StackPanel Orientation="Horizontal" Spacing="7" HorizontalAlignment="Center">
+                      <icons:AnimatedIcon Data="{StaticResource IconDelete}" Motion="Delete" Width="14" Foreground="{DynamicResource ShellDanger}" />
+                      <TextBlock Text="{DynamicResource L.ClearDay}" />
+                    </StackPanel>
+                  </Button>
+                  <Button Grid.Column="1" Classes="primary dayActionFinal" Command="{Binding RequestShiftDayCommand}">
+                    <StackPanel Orientation="Horizontal" Spacing="7" HorizontalAlignment="Center">
+                      <icons:AnimatedIcon Data="{StaticResource IconRefresh}" Motion="Shift" Width="14" />
+                      <TextBlock Text="{DynamicResource L.Shift}" />
+                    </StackPanel>
+                  </Button>
+                  </Grid>
+                </StackPanel>
+              </StackPanel>
+            </Border>
+          </Grid>
+          <!-- The sheet stands over the day list on its own, like every other sheet the shell
+               puts up. Dimming what it covers meant a black rectangle over the whole panel —
+               a plate the eye reads before the sheet, and the one thing in a shell made of
+               glass with no light in it at all. The day list is kept from reading through the
+               sheet by the sheet itself, which is held to the shell's most opaque layer. -->
+          <Grid Grid.RowSpan="4" IsVisible="{Binding IsMovePanelOpen}" IsHitTestVisible="{Binding IsMovePanelOpen}"
+                ZIndex="36">
+            <Button Classes="overlayDismiss" Command="{Binding CloseMovePanelCommand}" />
+            <local:EventMoveView HorizontalAlignment="Center" VerticalAlignment="Center" />
+          </Grid>
+          <Grid Grid.RowSpan="4" IsVisible="{Binding IsShiftDayConfirmationVisible}" IsHitTestVisible="{Binding IsShiftDayConfirmationVisible}" ZIndex="34">
+            <Button Classes="overlayDismiss" Command="{Binding CancelShiftDayCommand}" />
+            <Border Classes="dayShiftConfirmation" HorizontalAlignment="Center" VerticalAlignment="Center">
+              <StackPanel Spacing="12">
+                <TextBlock Text="{Binding ShiftDayConfirmationText}" TextWrapping="Wrap" TextAlignment="Center" />
+                <Grid ColumnDefinitions="92,92" ColumnSpacing="8" HorizontalAlignment="Center">
+                  <Button Width="92" Classes="secondary compactAction" Command="{Binding CancelShiftDayCommand}" Content="{DynamicResource L.Cancel}" />
+                  <Button Grid.Column="1" Width="92" Classes="primary compactAction" Command="{Binding ConfirmShiftDayCommand}" Content="{DynamicResource L.Confirm}" />
+                </Grid>
+              </StackPanel>
+            </Border>
+          </Grid>
+
+        </Grid>
+
+        <!-- The sheet unfolds out of the petal that asked for it and now runs to the foot of
+             the card: with the pill gone there is no row under it to stop short of, and the
+             forty-four pixels that row cost are the conversation's. Its top edge has not moved,
+             so what it covers is exactly what it always covered. -->
+        <local:ChatFlyoutView Classes="chatFlyout" Classes.open="{Binding IsChatSheetOpen}"
+                              IsVisible="{Binding IsChatSheetPresent}" IsHitTestVisible="{Binding IsChatSheetOpen}"
+                              HorizontalAlignment="Stretch" VerticalAlignment="Bottom"
+                              Height="610" Margin="12,0,12,12" ZIndex="20" />
+      </Panel>
+    </Border>
+
+  </Grid>
+</UserControl>

@@ -1,0 +1,14 @@
+<Window xmlns:local="using:IntelligentScheduler.Desktop" xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:icons="using:IntelligentScheduler.Desktop.Controls"
+        xmlns:vm="using:IntelligentScheduler.Desktop.ViewModels"
+        xmlns:primitives="using:Avalonia.Controls.Primitives"
+        x:Class="IntelligentScheduler.Desktop.DatePickerWindow"
+        Title="{DynamicResource L.ChooseDate}" Width="360" Height="402"
+        CanResize="False" ShowInTaskbar="False" ShowActivated="True" Topmost="True"
+        WindowDecorations="None" Background="Transparent"
+        TransparencyLevelHint="Transparent" WindowStartupLocation="Manual"
+        Classes.reduceMotion="{Binding ReduceMotion}"
+        Classes.motion="{Binding !ReduceMotion}">
+  <local:DatePickerView x:Name="View" />
+</Window>

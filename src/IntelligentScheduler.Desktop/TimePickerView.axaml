@@ -1,0 +1,60 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:icons="using:IntelligentScheduler.Desktop.Controls"
+        x:Class="IntelligentScheduler.Desktop.TimePickerView" Background="Transparent"
+        Classes.reduceMotion="{Binding ReduceMotion}"
+        Classes.motion="{Binding !ReduceMotion}">
+  <Border Background="{DynamicResource ShellPopup}"
+          BorderBrush="{DynamicResource ShellStroke}" BorderThickness="1"
+          CornerRadius="{DynamicResource ShellWindowRadius}" Padding="9" ClipToBounds="True">
+    <Grid RowDefinitions="Auto,Auto,Auto" RowSpacing="5">
+      <Grid ColumnDefinitions="*,Auto">
+        <TextBlock Text="{Binding TimePickerTitle}" FontSize="{DynamicResource MarelianFont14}" FontWeight="SemiBold" VerticalAlignment="Center" />
+        <Button Grid.Column="1" Classes="icon quiet mini closeGlyph" Command="{Binding CloseTimePickerCommand}">
+          <icons:AnimatedIcon Data="{StaticResource IconClose}" Width="14" />
+        </Button>
+      </Grid>
+
+      <StackPanel Grid.Row="1" Orientation="Horizontal" Spacing="4"
+                  HorizontalAlignment="Center" VerticalAlignment="Center">
+        <Border Width="56" Classes="timeWheelColumn" PointerWheelChanged="Hours_OnPointerWheelChanged"
+                ToolTip.Tip="{DynamicResource L.ScrollToAdjust}">
+          <StackPanel Spacing="2">
+            <TextBlock Text="{DynamicResource L.Hours}" Classes="label" HorizontalAlignment="Center" />
+            <Button Classes="quiet timeStep nudgeUp" Command="{Binding IncrementTimePickerHourCommand}">
+              <icons:AnimatedIcon Data="{StaticResource IconChevronUp}" Width="12" Height="12" />
+            </Button>
+            <TextBlock Text="{Binding TimePickerHourText}" FontSize="{DynamicResource MarelianFont20}" FontWeight="SemiBold" HorizontalAlignment="Center" />
+            <Button Classes="quiet timeStep nudgeDown" Command="{Binding DecrementTimePickerHourCommand}">
+              <icons:AnimatedIcon Data="{StaticResource IconChevronDown}" Width="12" Height="12" />
+            </Button>
+          </StackPanel>
+        </Border>
+        <TextBlock Width="8" Text=":" FontSize="{DynamicResource MarelianFont20}" FontWeight="SemiBold"
+                   HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,12,0,0" />
+        <Border Width="56" Classes="timeWheelColumn" PointerWheelChanged="Minutes_OnPointerWheelChanged"
+                ToolTip.Tip="{DynamicResource L.ScrollToAdjust}">
+          <StackPanel Spacing="2">
+            <TextBlock Text="{DynamicResource L.Minutes}" Classes="label" HorizontalAlignment="Center" />
+            <Button Classes="quiet timeStep nudgeUp" Command="{Binding IncrementTimePickerMinuteCommand}">
+              <icons:AnimatedIcon Data="{StaticResource IconChevronUp}" Width="12" Height="12" />
+            </Button>
+            <TextBlock Text="{Binding TimePickerMinuteText}" FontSize="{DynamicResource MarelianFont20}" FontWeight="SemiBold" HorizontalAlignment="Center" />
+            <Button Classes="quiet timeStep nudgeDown" Command="{Binding DecrementTimePickerMinuteCommand}">
+              <icons:AnimatedIcon Data="{StaticResource IconChevronDown}" Width="12" Height="12" />
+            </Button>
+          </StackPanel>
+        </Border>
+        <Button Classes="secondary periodToggle" Command="{Binding ToggleTimePickerPeriodCommand}"
+                Content="{Binding TimePickerPeriodText}" IsVisible="{Binding IsTimePickerPeriodVisible}" />
+      </StackPanel>
+
+      <Grid Grid.Row="2" ColumnDefinitions="76,76" ColumnSpacing="6" HorizontalAlignment="Center">
+          <Button Classes="secondary compactAction" Command="{Binding CloseTimePickerCommand}"
+                  Content="{DynamicResource L.Cancel}" />
+          <Button Grid.Column="1" Classes="primary compactAction" Command="{Binding ApplyTimePickerCommand}"
+                  Content="{DynamicResource L.DoneKind}" />
+      </Grid>
+    </Grid>
+  </Border>
+</UserControl>

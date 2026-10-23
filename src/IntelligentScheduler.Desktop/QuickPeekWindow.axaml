@@ -1,0 +1,297 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:icons="using:IntelligentScheduler.Desktop.Controls"
+        x:Class="IntelligentScheduler.Desktop.QuickPeekWindow"
+        Title="{DynamicResource L.AppName}" SizeToContent="WidthAndHeight"
+        CanResize="False" ShowInTaskbar="False" ShowActivated="False" Topmost="True"
+        WindowDecorations="None" Background="Transparent"
+        WindowStartupLocation="Manual"
+        TransparencyLevelHint="Transparent"
+        Classes.reduceMotion="{Binding ReduceMotion}"
+        Classes.motion="{Binding !ReduceMotion}">
+
+  <!-- The card draws nothing itself. It carries the widget's own fade and scale, and gives the
+       pointer some slack around the blocks so crossing between them never reads as leaving.
+       That slack is also what the shadows fall into: clipped at the window edge they used to
+       show up as a hard-cornered dark plate under the widget. -->
+  <Border x:Name="PeekCard" Classes="peekCard"
+          PointerEntered="Card_OnPointerEntered"
+          PointerExited="Card_OnPointerExited"
+          PointerPressed="Card_OnPointerPressed">
+    <!-- Both columns are centred on the same axis, so the rail and the blocks stay level with
+         each other whichever of the two happens to be taller. -->
+    <Grid x:Name="PeekContent" ColumnDefinitions="Auto,Auto" Background="{StaticResource ShellInputSurface}">
+
+      <!-- The rail belongs to the widget rather than to the reminder: it is how the day gets
+           answered for, which is not what a notification is asking. So it is one of the parts
+           that appear when the user opens the widget, and not before. -->
+      <Border x:Name="PeekRail" Classes="peekRail" IsVisible="{Binding ShowPeekTrackingRail}" ZIndex="0">
+        <!-- Each control is its own round key. They shared one plate before, which made the
+             column read as a single object with regions in it rather than as the two or three
+             separate presses it actually offers - and that plate was a fourth surface standing
+             beside three that already carry their own edges. The seat is the circle; the button
+             inside it is the light that comes on when the pointer arrives. -->
+        <StackPanel Spacing="7">
+          <!-- One slot for "set it going": start when nothing is running, release when the
+               session is being held. Two buttons, never both at once. -->
+          <Border Classes="peekRailSeat" IsVisible="{Binding CanStartTracking}"
+                  Classes.on="{Binding CanStartTracking}">
+            <Button Classes="peekRailButton start" Command="{Binding StartEventCommand}"
+                    ToolTip.Tip="{DynamicResource L.TrackStart}">
+              <icons:AnimatedIcon Data="{StaticResource IconPlay}" Motion="Play" Width="14" Height="14" />
+            </Button>
+          </Border>
+          <Border Classes="peekRailSeat" IsVisible="{Binding CanResumeSession}"
+                  Classes.on="{Binding CanResumeSession}">
+            <Button Classes="peekRailButton start" Command="{Binding ResumeEventCommand}"
+                    ToolTip.Tip="{DynamicResource L.TrackResume}">
+              <icons:AnimatedIcon Data="{StaticResource IconPlay}" Motion="Play" Width="14" Height="14" />
+            </Button>
+          </Border>
+          <Border Classes="peekRailSeat" IsVisible="{Binding CanPauseSession}"
+                  Classes.on="{Binding CanPauseSession}">
+            <Button Classes="peekRailButton pause" Command="{Binding PauseEventCommand}"
+                    ToolTip.Tip="{DynamicResource L.TrackPause}">
+              <icons:AnimatedIcon Motion="Pause" Width="14" Height="14" />
+            </Button>
+          </Border>
+          <!-- Stopping does not record anything; it holds the clock and raises the one
+               question, which the widget then asks in the block below. -->
+          <Border Classes="peekRailSeat" IsVisible="{Binding IsSessionOpen}"
+                  Classes.on="{Binding IsSessionOpen}">
+            <Button Classes="peekRailButton stop" Command="{Binding StopEventCommand}"
+                    ToolTip.Tip="{DynamicResource L.TrackStop}">
+              <icons:AnimatedIcon Data="{StaticResource IconStop}" Motion="Stop" Width="14" Height="14" />
+            </Button>
+          </Border>
+          <!-- Done and skipped used to sit here too, which made the rail half a stopwatch and
+               half a verdict. Saying how something went is not a monitoring control: it is
+               asked once, when a session ends, in the card below.
+
+               Undoing is not one of the session's controls either, so its key is set a little
+               further down the column. That gap is what the hairline across the plate used to
+               do: separate keys are grouped by the space between them, and a rule floating in
+               the space between two circles is a mark rather than a division. -->
+          <Border Classes="peekRailSeat apart" IsVisible="{Binding HasTrackingVerdict}"
+                  Classes.on="{Binding HasTrackingVerdict}">
+            <Button Classes="peekRailButton undo" Command="{Binding UndoTrackingCommand}"
+                    ToolTip.Tip="{DynamicResource L.TrackUndo}">
+              <icons:AnimatedIcon Data="{StaticResource IconRefresh}" Motion="Refresh" Width="14" Height="14" />
+            </Button>
+          </Border>
+        </StackPanel>
+      </Border>
+
+      <StackPanel Grid.Column="1" Width="{Binding PeekColumnWidth}" Spacing="8" VerticalAlignment="Center">
+
+        <!-- The clock. It describes the day rather than anything that has just happened, so it
+             is one of the blocks a reminder does without: the widget a notification puts on the
+             screen is the card and the countdown, and this appears when the widget is asked for. -->
+        <Border x:Name="PeekClockBlock" Classes="peekBlock clockBlock flush"
+                IsVisible="{Binding ShowPeekClockBlock}" ZIndex="4">
+          <Button Classes="peekBlockFill" Command="{Binding OpenShellFromPeekCommand}"
+                  ToolTip.Tip="{DynamicResource L.PeekOpen}">
+            <!-- Two columns, one axis. The creature used to share a row with the clock, which
+                 put it against the top edge of a block that is three lines tall; it now sits
+                 level with the middle of everything the block says. -->
+            <Grid ColumnDefinitions="*,Auto">
+              <StackPanel Spacing="0" VerticalAlignment="Center">
+                <!-- A twelve-hour clock is half again as wide as a twenty-four-hour one, and the
+                     block is a single fixed width shared with the creature. Set at one size it
+                     was reaching past the column and being cut through the last letter. -->
+                <TextBlock Text="{Binding CurrentTimeText}" Classes="peekClock"
+                           Classes.twelveHour="{Binding !Use24HourClock}" />
+                <TextBlock Text="{Binding PeekDateText}" Classes="peekCaption" />
+                <!-- Three readings, not two. "Nothing is overdue" is news, and so is "two of
+                     today's events were skipped" — which used to fall through to the same
+                     green chip that says everything is fine. -->
+                <Border Classes="peekChip" Classes.danger="{Binding IsPeekStatusDanger}"
+                        Classes.warning="{Binding IsPeekStatusWarning}"
+                        Classes.ok="{Binding IsPeekStatusOk}" Margin="0,7,0,0">
+                  <TextBlock Text="{Binding PeekStatusText}" FontSize="{DynamicResource MarelianFont9_5}"
+                             TextTrimming="CharacterEllipsis" />
+                </Border>
+              </StackPanel>
+              <!-- The space beside the clock was always empty. It now holds the one part of
+                   the widget that says how the day is going without being read.
+
+                   The right margin is what puts it in the middle of that space rather than
+                   against the far side of it: the drawing carries an eighth of its own box as
+                   blank on each side, so a creature laid out flush right still reads as sitting
+                   a good way in from the border, and the gap on the clock's side was twice the
+                   one on the border's. The margin is the difference between the two, halved. -->
+              <icons:MascotView x:Name="PeekMascot" Grid.Column="1" Width="54" Height="54"
+                                Margin="0,0,10,0"
+                                IsVisible="{Binding ShowMascot}"
+                                Mood="{Binding PeekMascotMood}"
+                                Accent="{DynamicResource ShellAccent}"
+                                AccentOverride="{Binding MascotAccentBrush}"
+                                IsAnimated="{Binding !ReduceMotion}"
+                                VerticalAlignment="Center" />
+            </Grid>
+          </Button>
+        </Border>
+
+        <!-- The event, and the reminder about it. One surface: a reminder is not a card in front
+             of the card, nor a strip grown underneath it — it is this block wearing the news.
+             The eyebrow says what has just been said, the block's edge takes the accent, and the
+             ring down the right says how long the card has left. Nothing here changes size,
+             which is the whole point: the widget is the same object a second before and a second
+             after a reminder, and the only thing a reminder moves is what the block says. -->
+        <Border x:Name="PeekEventBlock" Classes="peekBlock eventBlock"
+                Classes.notified="{Binding HasPeekNotifications}"
+                IsVisible="{Binding ShowPeekEventBlock}" ZIndex="3"
+                PointerPressed="Reminder_OnPointerPressed">
+          <!-- Two columns, and the right one is a fixed slot rather than an Auto one on purpose:
+               it holds the state light at rest and the countdown ring while a reminder is on,
+               and a slot that measured to whichever of the two is in it would hand the title a
+               different width every time a reminder arrived. The block is the same shape either
+               way, and the only thing that changes inside it is which mark is lit. -->
+          <Grid ColumnDefinitions="*,22" ColumnSpacing="8">
+            <StackPanel x:Name="PeekEventBody" Classes="peekEventBody" Spacing="3">
+
+              <!-- Whether this is what is on now, what is next, or what a reminder has just said
+                   about it. The row keeps the height it had when a dismiss button stood in it,
+                   so the card is exactly as tall as it has always been. -->
+              <Grid MinHeight="15">
+                <TextBlock Text="{Binding PeekEventEyebrow}" Classes="peekEyebrow" />
+              </Grid>
+
+              <!-- The event's own lines, which a reminder about this very event leaves alone. -->
+              <StackPanel Spacing="3" IsVisible="{Binding ShowPeekEventLines}">
+                <TextBlock Text="{Binding NextTitle}" Classes="peekEventTitle" />
+                <TextBlock Text="{Binding NextMeta}" Classes="peekCaption" />
+                <!-- What became of this, or - while it is still going - when it was set going.
+                     Both are one line of muted type now. The verdict used to be the one state
+                     that kept a chip around it - a plate, an edge and six pixels of padding
+                     around "done in 45 min" - which made the card taller at the exact moment it
+                     had least left to say, and set the quietest fact on it beside the loudest
+                     container. "started at 11:20" had already given that up; this is the same
+                     line, and it is written the same way. -->
+                <Border Classes="peekChip stateChip"
+                        IsVisible="{Binding HasTrackingState}"
+                        Classes.on="{Binding HasTrackingState}">
+                  <StackPanel Orientation="Horizontal" Spacing="5">
+                    <icons:AnimatedIcon Data="{StaticResource IconPin}" Motion="Pin" Width="10" Height="10" />
+                    <TextBlock Text="{Binding TrackingStateText}" FontSize="{DynamicResource MarelianFont9_5}"
+                               TextTrimming="CharacterEllipsis" />
+                  </StackPanel>
+                </Border>
+              </StackPanel>
+
+              <!-- A reminder about something the card is not describing has no lines to wear, so
+                   it says itself. This is the only case where the card's own text steps aside. -->
+              <TextBlock Text="{Binding PeekReminderBody}" Classes="peekReminderText"
+                         IsVisible="{Binding IsPeekReminderSolo}" />
+            </StackPanel>
+
+            <!-- The one slot, and the two things that stand in it. At rest it is the light that
+                 says whether a session is running; while a reminder is on the card it is the
+                 reminder's own clock, winding down to the moment the card stops saying this.
+
+                 It is at the top of the block rather than halfway down it. A live indicator is
+                 read as a corner mark — the one thing on a card that is allowed to keep moving
+                 after everything else has settled — and in the middle of the right-hand edge it
+                 was floating beside the title with nothing to belong to. Up here it sits on the
+                 eyebrow's line, which is where the card says what state this is.
+
+                 The cross that used to sit up on the eyebrow line is gone with the hairline it
+                 came in with. A reminder that has to be dismissed by hand is a reminder that
+                 outstays its own countdown, and every press inside the widget already answers
+                 it - see AdoptPeek in App.axaml.cs. -->
+            <Panel Grid.Column="1" VerticalAlignment="Top" Height="22">
+              <Border Classes="peekLiveDot" Classes.live="{Binding IsPeekEventRunning}"
+                      IsVisible="{Binding !IsPeekReminderDrawn}"
+                      HorizontalAlignment="Center" VerticalAlignment="Center" />
+              <icons:RingCountdown x:Name="PeekReminderRing" Classes="peekReminderRing"
+                                   IsVisible="{Binding IsPeekReminderDrawn}"
+                                   Value="{Binding Notifications.RemainingPercent}" />
+            </Panel>
+          </Grid>
+        </Border>
+
+        <!-- The countdown: the other half of every reminder this application raises. "It starts
+             in five minutes" is a title and a number, so this block stays with the card in the
+             compact shape and the two of them are the whole notification. -->
+        <Border x:Name="PeekTimerBlock" Classes="peekBlock timerBlock"
+                Classes.waiting="{Binding IsPeekAwaitingStart}"
+                IsVisible="{Binding ShowPeekTimerBlock}" ZIndex="2">
+          <StackPanel Spacing="1">
+            <TextBlock Text="{Binding PeekTimerText}" Classes="peekTimerValue" />
+            <TextBlock Text="{Binding PeekTimerCaption}" Classes="peekCaption" />
+            <ProgressBar Classes="peekProgress" Minimum="0" Maximum="100"
+                         Value="{Binding PeekProgressPercent}" />
+          </StackPanel>
+        </Border>
+
+        <!-- The only thing a pause is allowed to ask, once it has stood still long enough that
+             the answer is genuinely unknown - and a block of the widget's own, like everything
+             else the widget says. It was tacked onto the foot of the countdown, which made that
+             block mean two things at once and grew it downwards by a heading and two buttons at
+             the moment the question arrived. It is the same shape as the question below it now:
+             both ask, both are answered in one press, and both come and go as blocks. -->
+        <Border x:Name="PeekPausePromptBlock" Classes="peekBlock pausePromptBlock"
+                IsVisible="{Binding ShowPeekPausePrompt}"
+                Classes.on="{Binding ShowPeekPausePrompt}" ZIndex="2">
+          <StackPanel Spacing="6">
+            <TextBlock Text="{DynamicResource L.PausePromptTitle}" Classes="peekPromptTitle" />
+            <Grid ColumnDefinitions="*,*" ColumnSpacing="5">
+              <Button Classes="peekPromptButton keep" Command="{Binding KeepGoingCommand}">
+                <TextBlock Text="{DynamicResource L.PausePromptResume}" FontSize="{DynamicResource MarelianFont9}" />
+              </Button>
+              <Button Grid.Column="1" Classes="peekPromptButton end" Command="{Binding EndPausedSessionCommand}">
+                <TextBlock Text="{DynamicResource L.PausePromptFinish}" FontSize="{DynamicResource MarelianFont9}" />
+              </Button>
+            </Grid>
+          </StackPanel>
+        </Border>
+
+        <!-- The one question, in a card of its own under the clock. It used to be tacked onto
+             the bottom of the countdown block, which made the block mean two things: how long
+             this has been running, and what became of it. "Partly" needs a figure and a line of
+             prose, which is more than the widget can hold, so that answer brings the shell
+             forward and asks in the event's own row; the other two are answered here, and
+             answering them closes that row's tray with them. -->
+        <Border x:Name="PeekPromptBlock" Classes="peekBlock promptBlock"
+                IsVisible="{Binding ShowPeekSessionPrompt}"
+                Classes.on="{Binding ShowPeekSessionPrompt}" ZIndex="2">
+          <StackPanel Spacing="6">
+            <TextBlock Text="{DynamicResource L.SessionResultTitle}" Classes="peekPromptTitle" />
+            <Grid ColumnDefinitions="*,*,*" ColumnSpacing="5">
+              <Button Classes="peekPromptButton done" Command="{Binding AnswerSessionDoneCommand}"
+                      ToolTip.Tip="{DynamicResource L.SessionResultDone}">
+                <icons:AnimatedIcon Data="{StaticResource IconCheck}" Motion="Check" Width="13" Height="13" />
+              </Button>
+              <Button Grid.Column="1" Classes="peekPromptButton partial"
+                      Command="{Binding BeginPartialEntryForPeekCommand}"
+                      ToolTip.Tip="{DynamicResource L.SessionResultPartial}">
+                <icons:AnimatedIcon Data="{StaticResource IconTune}" Motion="Partial" Width="13" Height="13" />
+              </Button>
+              <Button Grid.Column="2" Classes="peekPromptButton missed"
+                      Command="{Binding AnswerSessionMissedCommand}"
+                      ToolTip.Tip="{DynamicResource L.SessionResultMissed}">
+                <icons:AnimatedIcon Data="{StaticResource IconSkip}" Motion="Skip" Width="13" Height="13" />
+              </Button>
+            </Grid>
+          </StackPanel>
+        </Border>
+
+        <!-- What comes after this one. Like the clock, it is about the day rather than about the
+             reminder, so it waits for the user to open the widget. -->
+        <Border x:Name="PeekNextBlock" Classes="peekBlock nextBlock"
+                IsVisible="{Binding ShowPeekNextBlock}" ZIndex="1">
+          <Grid ColumnDefinitions="Auto,Auto,*" ColumnSpacing="6">
+            <icons:AnimatedIcon Data="{StaticResource IconChevronRight}" Motion="ChevronRight"
+                                Width="10" Height="10" Foreground="{DynamicResource ShellMuted}"
+                                VerticalAlignment="Center" />
+            <TextBlock Grid.Column="1" Text="{Binding PeekNextTime}" FontSize="{DynamicResource MarelianFont9_5}" FontWeight="SemiBold"
+                       Foreground="{DynamicResource ShellAccent}" VerticalAlignment="Center" />
+            <TextBlock Grid.Column="2" Text="{Binding PeekNextTitle}" FontSize="{DynamicResource MarelianFont9_5}"
+                       Foreground="{DynamicResource ShellMuted}" TextTrimming="CharacterEllipsis"
+                       VerticalAlignment="Center" />
+          </Grid>
+        </Border>
+      </StackPanel>
+    </Grid>
+  </Border>
+</Window>

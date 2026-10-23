@@ -1,0 +1,1031 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:icons="using:IntelligentScheduler.Desktop.Controls"
+             xmlns:vm="using:IntelligentScheduler.Desktop.ViewModels"
+             xmlns:controls="using:IntelligentScheduler.Desktop.Controls"
+             x:Class="IntelligentScheduler.Desktop.ChatFlyoutView">
+  <Grid>
+    <Border Classes="chatPanel" Padding="0">
+      <Grid RowDefinitions="Auto,*,Auto">
+
+        <!-- ============================ Header ============================ -->
+        <Border Grid.Row="0" Classes="chatHeader" Padding="12,10,10,9">
+          <Grid ColumnDefinitions="Auto,*,Auto,Auto,Auto,Auto,Auto,Auto" ColumnSpacing="8">
+            <Border Classes="chatAvatar">
+              <icons:AnimatedIcon Data="{StaticResource IconChat}" Motion="Bot" Width="15" Height="15"
+                        Foreground="{DynamicResource ShellAccent}" HorizontalAlignment="Center" VerticalAlignment="Center" />
+            </Border>
+            <StackPanel Grid.Column="1" Spacing="0" VerticalAlignment="Center">
+              <TextBlock Classes="chatTitle" Text="{Binding ActiveConversationTitle}" FontSize="{DynamicResource MarelianFont13_5}"
+                         FontWeight="SemiBold" TextTrimming="CharacterEllipsis" HorizontalAlignment="Left" />
+              <TextBlock Text="{Binding AssistantState}" Classes="muted" FontSize="{DynamicResource MarelianFont10_5}"
+                         TextTrimming="CharacterEllipsis" />
+            </StackPanel>
+
+            <!-- The day wrap-up. It is in this panel because this is where the application's
+                 own drawers live, and it consults nothing: no model, no message, no network.
+                 The badge is the only standing reminder that anything is unanswered, which is
+                 what lets the offer under the day card back off without hiding the work. -->
+            <Panel Grid.Column="2">
+              <Button Classes="icon quiet chatHeaderButton" Classes.active="{Binding IsWrapUpOpen}"
+                      Command="{Binding ToggleWrapUpCommand}" ToolTip.Tip="{DynamicResource L.ChatWrapUp}">
+                <icons:AnimatedIcon Data="{StaticResource IconTimer}" Motion="Timer" Width="15" Height="15" />
+              </Button>
+              <Border Classes="headerBadge" IsVisible="{Binding HasWrapUpBadge}"
+                      IsHitTestVisible="False">
+                <TextBlock Text="{Binding WrapUpBadgeText}" FontSize="{DynamicResource MarelianFont8}" FontWeight="Bold" />
+              </Border>
+            </Panel>
+            <Button Grid.Column="3" Classes="icon quiet chatHeaderButton" Classes.active="{Binding IsChatHistoryOpen}"
+                    Command="{Binding ToggleChatHistoryCommand}" ToolTip.Tip="{DynamicResource L.ChatHistory}">
+              <icons:AnimatedIcon Data="{StaticResource IconHistory}" Width="15" Height="15" />
+            </Button>
+            <Button Grid.Column="4" Classes="icon quiet chatHeaderButton" Classes.active="{Binding IsMemoryPanelOpen}"
+                    Command="{Binding ToggleMemoryPanelCommand}" ToolTip.Tip="{DynamicResource L.ChatMemory}">
+              <icons:AnimatedIcon Data="{StaticResource IconMemory}" Width="15" Height="15" />
+            </Button>
+            <Button Grid.Column="5" Classes="icon quiet chatHeaderButton"
+                    Command="{Binding NewChatCommand}" ToolTip.Tip="{DynamicResource L.ChatNewChat}">
+              <icons:AnimatedIcon Data="{StaticResource IconCompose}" Width="15" Height="15" />
+            </Button>
+            <!-- Where the conversation is held. One button for both directions, because there
+                 is only ever one other place for it to be, and the glyph says which one. -->
+            <Button Grid.Column="6" Classes="icon quiet chatHeaderButton" Classes.active="{Binding IsChatExpanded}"
+                    Command="{Binding ToggleChatExpandedCommand}" ToolTip.Tip="{Binding ChatExpandTooltip}">
+              <Panel>
+                <icons:AnimatedIcon Motion="Expand" Width="15" Height="15" IsVisible="{Binding !IsChatExpanded}" />
+                <icons:AnimatedIcon Motion="Collapse" Width="15" Height="15" IsVisible="{Binding IsChatExpanded}" />
+              </Panel>
+            </Button>
+            <Button Grid.Column="7" Classes="icon quiet closeGlyph" Width="28" Height="28"
+                    Command="{Binding CloseChatCommand}">
+              <icons:AnimatedIcon Data="{StaticResource IconClose}" Width="14" />
+            </Button>
+          </Grid>
+        </Border>
+
+        <!-- ============================ Body ============================ -->
+        <Panel Grid.Row="1">
+
+          <!--  Conversation  -->
+          <ScrollViewer x:Name="ChatMessagesScroll" Classes="modernScroll chatColumn" IsVisible="{Binding ShowChatMain}"
+                        VerticalScrollBarVisibility="Visible" Padding="12,8,2,4">
+            <StackPanel Spacing="10">
+              <ItemsControl ItemsSource="{Binding Messages}">
+                <ItemsControl.ItemTemplate>
+                  <DataTemplate DataType="vm:AssistantMessageViewModel">
+                    <Grid Classes="chatTurn" Margin="0,1">
+
+                      <!-- User turn -->
+                      <StackPanel Classes="userTurn" HorizontalAlignment="Right" Spacing="3"
+                                  IsVisible="{Binding FromUser}">
+                        <Border Classes="chatBubble userBubble">
+                          <StackPanel Spacing="5">
+                            <Border Classes="messageAttachment" IsVisible="{Binding HasAttachment}">
+                              <Grid ColumnDefinitions="Auto,*" ColumnSpacing="5">
+                                <icons:AnimatedIcon Data="{StaticResource IconAttach}" Width="11" Height="11" />
+                                <TextBlock Grid.Column="1" Text="{Binding AttachmentName}" FontSize="{DynamicResource MarelianFont10_5}"
+                                           TextTrimming="CharacterEllipsis" VerticalAlignment="Center" />
+                              </Grid>
+                            </Border>
+                            <!-- Said, not printed: the words can be taken out of a turn the way
+                                 they can be taken out of any other text on the screen. -->
+                            <SelectableTextBlock Text="{Binding Text}" TextWrapping="Wrap"
+                                                 FontSize="{Binding $parent[UserControl].DataContext.ChatBodyFontSize}"
+                                                 LineHeight="{Binding $parent[UserControl].DataContext.ChatBodyLineHeight}" IsVisible="{Binding ShowsMessageBody}">
+                              <SelectableTextBlock.ContextFlyout>
+                                <MenuFlyout>
+                                  <MenuItem Header="{DynamicResource L.ChatCopy}" Command="{Binding CopyCommand}" />
+                                  <MenuItem Header="{DynamicResource L.Edit}" Command="{Binding BeginEditCommand}"
+                                            IsVisible="{Binding CanEdit}" />
+                                </MenuFlyout>
+                              </SelectableTextBlock.ContextFlyout>
+                            </SelectableTextBlock>
+
+                            <!-- Asked again in different words, in the place it was asked. -->
+                            <StackPanel Spacing="6" IsVisible="{Binding IsEditing}">
+                              <TextBox Classes="messageEditor" Text="{Binding Draft}" AcceptsReturn="True"
+                                       TextWrapping="Wrap" MinHeight="54" MaxHeight="150"
+                                       SizeChanged="MessageEditor_OnSizeChanged" />
+                              <StackPanel Orientation="Horizontal" Spacing="5" HorizontalAlignment="Right">
+                                <Button Classes="quiet compact" Padding="9,4" Command="{Binding CancelEditCommand}">
+                                  <TextBlock Text="{DynamicResource L.Cancel}" FontSize="{DynamicResource MarelianFont10_5}" />
+                                </Button>
+                                <Button Classes="primary compact" Padding="9,4" Command="{Binding CommitEditCommand}">
+                                  <TextBlock Text="{DynamicResource L.Send}" FontSize="{DynamicResource MarelianFont10_5}" />
+                                </Button>
+                              </StackPanel>
+                            </StackPanel>
+                          </StackPanel>
+                        </Border>
+                        <StackPanel Orientation="Horizontal" Spacing="5" HorizontalAlignment="Right"
+                                    Classes="messageActions" IsVisible="{Binding ShowsMessageBody}">
+                          <TextBlock Text="{Binding TimeText}" Classes="muted" FontSize="{DynamicResource MarelianFont9_5}" VerticalAlignment="Center" />
+                          <Button Classes="icon quiet micro" Command="{Binding BeginEditCommand}"
+                                  IsVisible="{Binding CanEdit}" ToolTip.Tip="{DynamicResource L.Edit}">
+                            <icons:AnimatedIcon Data="{StaticResource IconEdit}" Width="11" Height="11" />
+                          </Button>
+                          <Button Classes="icon quiet micro" Command="{Binding CopyCommand}"
+                                  ToolTip.Tip="{DynamicResource L.ChatCopy}">
+                            <icons:AnimatedIcon Data="{StaticResource IconCopy}" Width="11" Height="11" />
+                          </Button>
+                          <Button Classes="icon quiet micro" Command="{Binding RetryCommand}"
+                                  IsVisible="{Binding CanRetry}" ToolTip.Tip="{DynamicResource L.ChatRetry}">
+                            <icons:AnimatedIcon Data="{StaticResource IconRefresh}" Width="11" Height="11" />
+                          </Button>
+                        </StackPanel>
+                      </StackPanel>
+
+                      <!-- Assistant turn.
+                           In the widened panel this carries no plate at all: the answer is the
+                           page. A reply of any length inside a bordered box reads as a quotation
+                           of itself, and the box was doing no work that the whitespace around a
+                           turn does not already do - there is only ever one assistant speaking,
+                           and the question above it is already in a plate of its own. The sheet
+                           inside the planner keeps the plate, because there the column is narrow
+                           enough that two turns without one run together. -->
+                      <StackPanel HorizontalAlignment="Stretch" Spacing="4" IsVisible="{Binding FromAssistant}">
+                        <Border Classes="chatBubble assistantBubble" Classes.errorBubble="{Binding IsError}">
+                          <Border.ContextFlyout>
+                            <MenuFlyout>
+                              <MenuItem Header="{DynamicResource L.ChatCopy}" Command="{Binding CopyCommand}" />
+                            </MenuFlyout>
+                          </Border.ContextFlyout>
+                          <StackPanel Spacing="7">
+                            <controls:MarkdownPresenter Text="{Binding Text}"
+                                                        TextBrush="{DynamicResource ShellText}"
+                                                        AccentBrush="{DynamicResource ShellAccent}"
+                                                        CodeBackground="{DynamicResource ShellSurfaceAlt}"
+                                                        CopyLabel="{DynamicResource L.ChatCopy}"
+                                                        BodyFontSize="{Binding $parent[UserControl].DataContext.ChatBodyFontSize}" />
+
+                            <!-- What the assistant actually did -->
+                            <StackPanel Spacing="4" IsVisible="{Binding HasTrace}">
+                              <Button Classes="traceToggle" Command="{Binding ToggleTraceCommand}"
+                                      HorizontalAlignment="Left">
+                                <StackPanel Orientation="Horizontal" Spacing="5">
+                                  <icons:AnimatedIcon Data="{StaticResource IconTool}" Width="10" Height="10"
+                                            Foreground="{DynamicResource ShellAccent}" VerticalAlignment="Center" />
+                                  <TextBlock Text="{DynamicResource L.ChatToolActivity}" FontSize="{DynamicResource MarelianFont10_5}" VerticalAlignment="Center" />
+                                  <TextBlock Text="{Binding TraceGlyph}" FontSize="{DynamicResource MarelianFont10}" Foreground="{DynamicResource ShellMuted}"
+                                             VerticalAlignment="Center" />
+                                </StackPanel>
+                              </Button>
+                              <ItemsControl ItemsSource="{Binding Trace}" IsVisible="{Binding IsTraceExpanded}">
+                                <ItemsControl.ItemTemplate>
+                                  <DataTemplate DataType="vm:AssistantToolTraceViewModel">
+                                    <Border Classes="traceRow" Classes.failed="{Binding IsError}" Margin="0,1">
+                                      <Grid ColumnDefinitions="Auto,*,Auto" ColumnSpacing="7">
+                                        <Border Width="5" Height="5" CornerRadius="3" VerticalAlignment="Center"
+                                                Background="{DynamicResource ShellAccent}" />
+                                        <StackPanel Grid.Column="1" Spacing="1">
+                                          <StackPanel Orientation="Horizontal" Spacing="5">
+                                            <TextBlock Text="{Binding Name}" FontSize="{DynamicResource MarelianFont10_5}" FontWeight="Medium" />
+                                            <Border Classes="tierBadge" IsVisible="{Binding IsExternal}" Padding="4,0">
+                                              <TextBlock Text="MCP" FontSize="{DynamicResource MarelianFont8}" Foreground="{DynamicResource ShellAccent}" />
+                                            </Border>
+                                          </StackPanel>
+                                          <TextBlock Text="{Binding Detail}" Classes="muted" FontSize="{DynamicResource MarelianFont9_5}"
+                                                     TextWrapping="Wrap" MaxLines="2" TextTrimming="CharacterEllipsis" />
+                                        </StackPanel>
+                                        <TextBlock Grid.Column="2" Text="{Binding StateText}" FontSize="{DynamicResource MarelianFont9_5}"
+                                                   Foreground="{DynamicResource ShellMuted}" VerticalAlignment="Center" />
+                                      </Grid>
+                                    </Border>
+                                  </DataTemplate>
+                                </ItemsControl.ItemTemplate>
+                              </ItemsControl>
+                            </StackPanel>
+                          </StackPanel>
+                        </Border>
+
+                        <StackPanel Orientation="Horizontal" Spacing="6" Margin="3,0,0,0" Classes="messageActions">
+                          <TextBlock Text="{Binding Meta}" Classes="muted" FontSize="{DynamicResource MarelianFont9_5}" VerticalAlignment="Center"
+                                     IsVisible="{Binding HasMeta}" TextTrimming="CharacterEllipsis" MaxWidth="220" />
+                          <Button Classes="icon quiet micro" Command="{Binding CopyCommand}"
+                                  ToolTip.Tip="{DynamicResource L.ChatCopy}">
+                            <icons:AnimatedIcon Data="{StaticResource IconCopy}" Width="11" Height="11" />
+                          </Button>
+                        </StackPanel>
+                      </StackPanel>
+                    </Grid>
+                  </DataTemplate>
+                </ItemsControl.ItemTemplate>
+              </ItemsControl>
+
+              <!-- Nothing said yet. The panel opens on this rather than on an empty
+                   transcript with one manufactured turn at the top of it. -->
+              <Border Classes="chatIntro" IsVisible="{Binding ShowChatIntro}">
+                <StackPanel Spacing="10" HorizontalAlignment="Center">
+                  <Border Classes="chatIntroMark" HorizontalAlignment="Center">
+                    <icons:AnimatedIcon Data="{StaticResource IconChat}" Motion="Bot" Width="21" Height="21"
+                                        Foreground="{DynamicResource ShellAccent}"
+                                        HorizontalAlignment="Center" VerticalAlignment="Center" />
+                  </Border>
+                  <TextBlock Text="{DynamicResource L.ChatIntroTitle}" Classes="chatIntroTitle"
+                             TextAlignment="Center" HorizontalAlignment="Center" />
+                  <TextBlock Text="{DynamicResource L.AssistantIntro}" Classes="muted" FontSize="{DynamicResource MarelianFont11_5}"
+                             TextWrapping="Wrap" TextAlignment="Center" MaxWidth="380"
+                             HorizontalAlignment="Center" />
+                </StackPanel>
+              </Border>
+
+              <!-- Task suggestions returned by the assistant -->
+              <ItemsControl ItemsSource="{Binding Suggestions}">
+                <ItemsControl.ItemTemplate>
+                  <DataTemplate DataType="vm:AssistantSuggestionViewModel">
+                    <Border Classes="suggestionCard" Margin="0,2">
+                      <Grid ColumnDefinitions="3,*,Auto" ColumnSpacing="9">
+                        <Border Background="{DynamicResource ShellAccent}" CornerRadius="2" />
+                        <StackPanel Grid.Column="1" Spacing="2">
+                          <TextBlock Text="{Binding Title}" FontWeight="SemiBold" TextTrimming="CharacterEllipsis" />
+                          <TextBlock Text="{Binding Meta}" Classes="muted" />
+                          <TextBlock Text="{Binding Reason}" Classes="muted" TextWrapping="Wrap" MaxLines="2" />
+                        </StackPanel>
+                        <Button Grid.Column="2" Classes="primary compact" Padding="9,5"
+                                Command="{Binding AddCommand}" Content="{Binding ActionText}" VerticalAlignment="Center" />
+                      </Grid>
+                    </Border>
+                  </DataTemplate>
+                </ItemsControl.ItemTemplate>
+              </ItemsControl>
+
+              <!-- Changes waiting for confirmation -->
+              <ItemsControl ItemsSource="{Binding AssistantActions}">
+                <ItemsControl.ItemTemplate>
+                  <DataTemplate DataType="vm:AssistantActionViewModel">
+                    <Border Classes="assistantActionCard" Classes.critical="{Binding IsCritical}" Margin="0,2">
+                      <Grid ColumnDefinitions="3,*,Auto" ColumnSpacing="9">
+                        <Border Background="{DynamicResource ShellAccent}" CornerRadius="2" />
+                        <StackPanel Grid.Column="1" Spacing="2">
+                          <TextBlock Text="{Binding Title}" FontWeight="SemiBold" />
+                          <TextBlock Text="{Binding Summary}" Classes="muted" TextWrapping="Wrap" />
+                          <TextBlock Text="{Binding Reason}" Classes="muted" FontSize="{DynamicResource MarelianFont10}" TextWrapping="Wrap" IsVisible="{Binding HasReason}" />
+                          <TextBlock Text="{Binding StateText}" Foreground="{DynamicResource ShellAccent}" FontSize="{DynamicResource MarelianFont10}"
+                                     IsVisible="{Binding !IsPending}" />
+                        </StackPanel>
+                        <StackPanel Grid.Column="2" Orientation="Horizontal" Spacing="4" VerticalAlignment="Center"
+                                    IsVisible="{Binding IsPending}">
+                          <Button Classes="icon quiet micro closeGlyph" Command="{Binding DismissCommand}"
+                                  ToolTip.Tip="{DynamicResource L.Dismiss}">
+                            <icons:AnimatedIcon Data="{StaticResource IconClose}" Width="11" />
+                          </Button>
+                          <Button Classes="primary compact" Command="{Binding ConfirmCommand}"
+                                  Content="{DynamicResource L.Confirm}" />
+                        </StackPanel>
+                      </Grid>
+                    </Border>
+                  </DataTemplate>
+                </ItemsControl.ItemTemplate>
+              </ItemsControl>
+
+              <!-- Suggestions built from the user's own schedule and history -->
+              <StackPanel Spacing="6" Margin="0,2,0,4" IsVisible="{Binding HasDynamicSuggestions}">
+                <TextBlock Text="{DynamicResource L.ChatSuggestions}" Classes="muted" FontSize="{DynamicResource MarelianFont10}"
+                           Margin="3,0" />
+                <ItemsControl ItemsSource="{Binding DynamicSuggestions}">
+                  <ItemsControl.ItemsPanel><ItemsPanelTemplate><StackPanel Spacing="5" /></ItemsPanelTemplate></ItemsControl.ItemsPanel>
+                  <ItemsControl.ItemTemplate>
+                    <DataTemplate DataType="vm:ChatSuggestionViewModel">
+                      <Button Classes="quickPromptButton" Command="{Binding SendCommand}">
+                        <Grid ColumnDefinitions="Auto,*" ColumnSpacing="8">
+                          <icons:AnimatedIcon Data="{StaticResource IconSparkle}" Width="12" Height="12"
+                                    Foreground="{DynamicResource ShellAccent}" VerticalAlignment="Center" />
+                          <TextBlock Grid.Column="1" Text="{Binding Text}" FontSize="{DynamicResource MarelianFont11_5}" TextWrapping="Wrap"
+                                     MaxLines="2" TextTrimming="CharacterEllipsis" VerticalAlignment="Center" />
+                        </Grid>
+                      </Button>
+                    </DataTemplate>
+                  </ItemsControl.ItemTemplate>
+                </ItemsControl>
+              </StackPanel>
+            </StackPanel>
+          </ScrollViewer>
+
+          <!--  History drawer  -->
+          <Grid Classes="chatColumn" IsVisible="{Binding IsChatHistoryOpen}" RowDefinitions="Auto,*" Margin="12,8,7,4">
+            <Border Classes="searchField" Margin="0,0,5,8">
+              <Grid ColumnDefinitions="Auto,*">
+                <icons:AnimatedIcon Data="{StaticResource IconSearch}" Width="13" Height="13"
+                          Foreground="{DynamicResource ShellMuted}" Margin="8,0,6,0" VerticalAlignment="Center" />
+                <TextBox Grid.Column="1" Classes="bareInput" Text="{Binding ChatSearchQuery}"
+                         PlaceholderText="{DynamicResource L.ChatSearchPlaceholder}" />
+              </Grid>
+            </Border>
+
+            <ScrollViewer Grid.Row="1" Classes="modernScroll" VerticalScrollBarVisibility="Visible">
+              <StackPanel Spacing="4">
+                <Border Classes="emptyHint" IsVisible="{Binding !HasConversations}">
+                  <TextBlock Text="{DynamicResource L.ChatNoConversations}" Classes="muted"
+                             TextWrapping="Wrap" TextAlignment="Center" />
+                </Border>
+                <ItemsControl ItemsSource="{Binding Conversations}">
+                  <ItemsControl.ItemTemplate>
+                    <DataTemplate DataType="vm:ChatConversationViewModel">
+                      <Border Classes="conversationRow" Classes.selected="{Binding IsSelected}" Margin="0,1">
+                        <Grid>
+                          <!-- Normal state -->
+                          <Grid ColumnDefinitions="Auto,*,Auto,Auto" ColumnSpacing="7"
+                                IsVisible="{Binding !IsDeletePending}">
+                            <icons:AnimatedIcon Data="{StaticResource IconPin}" Width="11" Height="11"
+                                      Foreground="{DynamicResource ShellAccent}" VerticalAlignment="Center"
+                                      IsVisible="{Binding IsPinned}" />
+                            <Button Grid.Column="1" Classes="conversationOpen" Command="{Binding OpenCommand}"
+                                    IsVisible="{Binding !IsRenaming}">
+                              <StackPanel Spacing="2" HorizontalAlignment="Stretch">
+                                <TextBlock Text="{Binding Title}" FontSize="{DynamicResource MarelianFont12}" FontWeight="Medium"
+                                           TextTrimming="CharacterEllipsis" HorizontalAlignment="Left" />
+                                <TextBlock Text="{Binding Preview}" Classes="muted" FontSize="{DynamicResource MarelianFont10}"
+                                           TextTrimming="CharacterEllipsis" IsVisible="{Binding HasPreview}"
+                                           HorizontalAlignment="Left" />
+                              </StackPanel>
+                            </Button>
+                            <TextBox Grid.Column="1" Text="{Binding DraftTitle}" IsVisible="{Binding IsRenaming}"
+                                     KeyDown="RenameBox_OnKeyDown" LostFocus="RenameBox_OnLostFocus" FontSize="{DynamicResource MarelianFont12}" />
+                            <Button Grid.Column="2" Classes="icon quiet micro" Command="{Binding TogglePinCommand}"
+                                    ToolTip.Tip="{Binding PinTooltip}">
+                              <icons:AnimatedIcon Data="{StaticResource IconPin}" Width="11" Height="11" />
+                            </Button>
+                            <Button Grid.Column="3" Classes="icon quiet micro danger" Command="{Binding RequestDeleteCommand}"
+                                    ToolTip.Tip="{DynamicResource L.ChatDeleteConversation}">
+                              <icons:AnimatedIcon Data="{StaticResource IconDelete}" Width="11" Height="11" />
+                            </Button>
+                          </Grid>
+
+                          <!-- Delete confirmation -->
+                          <Grid ColumnDefinitions="*,Auto,Auto" ColumnSpacing="6" IsVisible="{Binding IsDeletePending}">
+                            <TextBlock Text="{DynamicResource L.ChatDeleteConfirm}" FontSize="{DynamicResource MarelianFont10_5}"
+                                       TextWrapping="Wrap" VerticalAlignment="Center" />
+                            <Button Grid.Column="1" Classes="quiet compact" Command="{Binding CancelDeleteCommand}"
+                                    Content="{DynamicResource L.Cancel}" />
+                            <Button Grid.Column="2" Classes="dangerFilled compact" Command="{Binding ConfirmDeleteCommand}"
+                                    Content="{DynamicResource L.Delete}" />
+                          </Grid>
+                        </Grid>
+                      </Border>
+                    </DataTemplate>
+                  </ItemsControl.ItemTemplate>
+                </ItemsControl>
+              </StackPanel>
+            </ScrollViewer>
+          </Grid>
+
+          <!--  Day wrap-up drawer  -->
+          <!-- Everything today left unanswered, on one screen, each line already carrying the
+               application's own reading of it. Answering is a tap per line, or one tap for the
+               lot. A line that has been pushed onto another day twice grows the only question
+               in here worth asking twice: what keeps getting in the way. -->
+          <Grid Classes="chatColumn" IsVisible="{Binding IsWrapUpOpen}" RowDefinitions="Auto,*,Auto"
+                Margin="12,8,7,4">
+            <Border Classes="memoryBanner" Margin="0,0,5,8">
+              <Grid ColumnDefinitions="Auto,*" ColumnSpacing="9">
+                <Border Classes="memoryBannerMark">
+                  <icons:AnimatedIcon Data="{StaticResource IconTimer}" Motion="Timer" Width="14" Height="14"
+                                      Foreground="{DynamicResource ShellAccent}"
+                                      HorizontalAlignment="Center" VerticalAlignment="Center" />
+                </Border>
+                <StackPanel Grid.Column="1" Spacing="2" VerticalAlignment="Center">
+                  <TextBlock Text="{Binding WrapUpCountText}" FontSize="{DynamicResource MarelianFont12}" FontWeight="SemiBold" />
+                  <TextBlock Text="{DynamicResource L.WrapUpHint}" Classes="muted" FontSize="{DynamicResource MarelianFont10}"
+                             TextWrapping="Wrap" />
+                </StackPanel>
+              </Grid>
+            </Border>
+
+            <ScrollViewer Grid.Row="1" Classes="modernScroll" VerticalScrollBarVisibility="Visible">
+              <StackPanel Spacing="6">
+                <Border Classes="emptyHint" IsVisible="{Binding !HasWrapUpRows}">
+                  <StackPanel Spacing="3">
+                    <TextBlock Text="{DynamicResource L.WrapUpEmpty}" TextAlignment="Center"
+                               FontSize="{DynamicResource MarelianFont12}" FontWeight="SemiBold" />
+                    <TextBlock Text="{DynamicResource L.WrapUpEmptyHint}" Classes="muted"
+                               TextWrapping="Wrap" TextAlignment="Center" FontSize="{DynamicResource MarelianFont10_5}" />
+                  </StackPanel>
+                </Border>
+
+                <ItemsControl ItemsSource="{Binding WrapUpItems}">
+                  <ItemsControl.ItemTemplate>
+                    <DataTemplate DataType="vm:WrapUpItemViewModel">
+                      <Border Classes="wrapUpRow" Classes.settled="{Binding IsResolved}" Margin="0,1">
+                        <Grid ColumnDefinitions="3,*" ColumnSpacing="9">
+                          <Border Background="{Binding Accent}" CornerRadius="2" />
+                          <StackPanel Grid.Column="1" Spacing="6">
+
+                            <StackPanel Spacing="2">
+                              <TextBlock Text="{Binding Title}" FontSize="{DynamicResource MarelianFont12}" FontWeight="SemiBold"
+                                         TextTrimming="CharacterEllipsis" />
+                              <Grid ColumnDefinitions="Auto,Auto,Auto,*" ColumnSpacing="7">
+                                <!-- Which day this is from, on the lines the drawer has caught
+                                     up with rather than the ones today produced. A list that
+                                     reaches three weeks back is unreadable without it. -->
+                                <Border Classes="rowTag wrapUpDay" IsVisible="{Binding IsFromEarlierDay}">
+                                  <TextBlock Text="{Binding DayText}" />
+                                </Border>
+                                <TextBlock Grid.Column="1" Text="{Binding TimeText}" Classes="muted" FontSize="{DynamicResource MarelianFont10}"
+                                           VerticalAlignment="Center" />
+                                <TextBlock Grid.Column="2" Text="{Binding ActivityText}" FontSize="{DynamicResource MarelianFont10}"
+                                           VerticalAlignment="Center"
+                                           Classes="wrapUpActivity" Classes.worked="{Binding HadActivity}" />
+                              </Grid>
+                            </StackPanel>
+
+                            <!-- Where it was left, if it was ever left anywhere. -->
+                            <Border Classes="nextStepChip row" IsVisible="{Binding HasNextStep}">
+                              <Grid ColumnDefinitions="Auto,*" ColumnSpacing="5">
+                                <icons:AnimatedIcon Data="{StaticResource IconChevronRight}" Motion="ChevronRight"
+                                                    Width="10" Height="10" VerticalAlignment="Center" />
+                                <TextBlock Grid.Column="1" Text="{Binding NextStepText}" FontSize="{DynamicResource MarelianFont10}"
+                                           TextTrimming="CharacterEllipsis" />
+                              </Grid>
+                            </Border>
+
+                            <!-- The three answers, with the read one already lit. -->
+                            <StackPanel Spacing="5" IsVisible="{Binding ShowActions}">
+                              <Grid ColumnDefinitions="*,*,*" ColumnSpacing="5">
+                                <Button Classes="wrapUpAction done" Classes.suggested="{Binding IsDoneSuggested}"
+                                        Command="{Binding MarkDoneCommand}"
+                                        Content="{DynamicResource L.WrapUpDone}" />
+                                <Button Grid.Column="1" Classes="wrapUpAction move"
+                                        Classes.suggested="{Binding IsMoveSuggested}"
+                                        Command="{Binding MoveOnCommand}"
+                                        ToolTip.Tip="{DynamicResource L.WrapUpMoveTooltip}"
+                                        Content="{DynamicResource L.WrapUpMove}" />
+                                <Button Grid.Column="2" Classes="wrapUpAction skip" Command="{Binding SkipCommand}"
+                                        Content="{DynamicResource L.WrapUpSkip}" />
+                              </Grid>
+                              <TextBlock Text="{Binding SuggestionText}" Classes="muted" FontSize="{DynamicResource MarelianFont9_5}" />
+                            </StackPanel>
+
+                            <!-- Asked only on a repeat postponement. -->
+                            <StackPanel Spacing="6" IsVisible="{Binding IsAskingBlocker}">
+                              <TextBlock Text="{Binding BlockerTitle}" FontSize="{DynamicResource MarelianFont11}" FontWeight="SemiBold"
+                                         TextWrapping="Wrap" />
+                              <Grid ColumnDefinitions="*,*" RowDefinitions="Auto,Auto"
+                                    ColumnSpacing="5" RowSpacing="5">
+                                <Button Classes="blockerChoice" Command="{Binding ChooseNotEnoughTimeCommand}"
+                                        Content="{DynamicResource L.BlockerNotEnoughTime}" />
+                                <Button Grid.Column="1" Classes="blockerChoice" Command="{Binding ChooseTooBigCommand}"
+                                        Content="{DynamicResource L.BlockerTooBig}" />
+                                <Button Grid.Row="1" Classes="blockerChoice" Command="{Binding ChooseUnclearStartCommand}"
+                                        Content="{DynamicResource L.BlockerUnclearStart}" />
+                                <Button Grid.Row="1" Grid.Column="1" Classes="blockerChoice"
+                                        Command="{Binding ChooseNotRelevantCommand}"
+                                        Content="{DynamicResource L.BlockerNotRelevant}" />
+                              </Grid>
+                            </StackPanel>
+
+                            <!-- One offer, chosen by the answer. Never a menu of four. -->
+                            <StackPanel Spacing="6" IsVisible="{Binding IsOfferingRemedy}">
+                              <Border Classes="nextStepEditor" IsVisible="{Binding IsRemedyFirstStep}">
+                                <TextBox Classes="bareInput" Text="{Binding FirstStepDraft}" FontSize="{DynamicResource MarelianFont11}"
+                                         MaxLength="200"
+                                         PlaceholderText="{DynamicResource L.SessionNextStepPlaceholder}" />
+                              </Border>
+                              <TextBlock Text="{Binding RemedyHint}" Classes="muted" FontSize="{DynamicResource MarelianFont10}"
+                                         TextWrapping="Wrap" IsVisible="{Binding !IsRemedyFirstStep}" />
+                              <Grid ColumnDefinitions="Auto,*,Auto" ColumnSpacing="6">
+                                <Button Classes="quiet compact" Command="{Binding DeclineRemedyCommand}"
+                                        Content="{DynamicResource L.WrapUpLater}" />
+                                <Button Grid.Column="2" Classes="primary compact"
+                                        Classes.dangerFilled="{Binding IsRemedyDrop}"
+                                        Command="{Binding TakeRemedyCommand}"
+                                        Content="{Binding RemedyText}" />
+                              </Grid>
+                            </StackPanel>
+
+                            <!-- What became of it, kept on screen so a mis-tap has something
+                                 to point at instead of an empty space. -->
+                            <Border Classes="outcomeChip rowOutcome done" HorizontalAlignment="Left"
+                                    IsVisible="{Binding IsResolved}">
+                              <StackPanel Orientation="Horizontal" Spacing="5">
+                                <icons:AnimatedIcon Data="{StaticResource IconCheck}" Motion="Check"
+                                                    Width="10" Height="10" />
+                                <TextBlock Text="{Binding ResolutionText}" FontSize="{DynamicResource MarelianFont9_5}" />
+                              </StackPanel>
+                            </Border>
+                          </StackPanel>
+                        </Grid>
+                      </Border>
+                    </DataTemplate>
+                  </ItemsControl.ItemTemplate>
+                </ItemsControl>
+              </StackPanel>
+            </ScrollViewer>
+
+            <!-- The whole point of proposing an answer per line: a day where nothing
+                 surprising happened costs one tap. -->
+            <Button Grid.Row="2" Classes="primary" Margin="0,9,5,0" HorizontalAlignment="Stretch"
+                    IsVisible="{Binding HasWrapUpSuggestions}"
+                    Command="{Binding AcceptWrapUpSuggestionsCommand}">
+              <StackPanel Orientation="Horizontal" Spacing="7" HorizontalAlignment="Center">
+                <icons:AnimatedIcon Data="{StaticResource IconCheck}" Motion="Check" Width="13" Height="13" />
+                <TextBlock Text="{DynamicResource L.WrapUpAcceptAll}" FontSize="{DynamicResource MarelianFont11_5}" />
+              </StackPanel>
+            </Button>
+          </Grid>
+
+          <!--  Memory drawer  -->
+          <Grid Classes="chatColumn" IsVisible="{Binding IsMemoryPanelOpen}" RowDefinitions="Auto,*,Auto" Margin="12,8,7,4">
+            <!-- What the assistant is carrying, said in one line and stamped with how much of
+                 it there is. A drawer of notes with no count reads as a list that might go on
+                 for ever; it almost never does. -->
+            <Border Classes="memoryBanner" Margin="0,0,5,8">
+              <Grid ColumnDefinitions="Auto,*,Auto" ColumnSpacing="9">
+                <Border Classes="memoryBannerMark">
+                  <icons:AnimatedIcon Data="{StaticResource IconMemory}" Motion="Brain" Width="14" Height="14"
+                            Foreground="{DynamicResource ShellAccent}"
+                            HorizontalAlignment="Center" VerticalAlignment="Center" />
+                </Border>
+                <StackPanel Grid.Column="1" Spacing="2" VerticalAlignment="Center">
+                  <TextBlock Text="{DynamicResource L.ChatMemory}" FontSize="{DynamicResource MarelianFont12}" FontWeight="SemiBold" />
+                  <TextBlock Text="{DynamicResource L.ChatMemoryHint}" Classes="muted" FontSize="{DynamicResource MarelianFont10}"
+                             TextWrapping="Wrap" />
+                </StackPanel>
+                <Border Grid.Column="2" Classes="memoryCount" VerticalAlignment="Center"
+                        IsVisible="{Binding HasMemories}">
+                  <TextBlock Text="{Binding MemoryCountText}" FontSize="{DynamicResource MarelianFont10_5}" FontWeight="SemiBold"
+                             Foreground="{DynamicResource ShellAccent}" />
+                </Border>
+              </Grid>
+            </Border>
+
+            <ScrollViewer Grid.Row="1" Classes="modernScroll" VerticalScrollBarVisibility="Visible">
+              <StackPanel Spacing="5">
+                <Border Classes="emptyHint" IsVisible="{Binding !HasMemories}">
+                  <StackPanel Spacing="8">
+                    <icons:AnimatedIcon Data="{StaticResource IconMemory}" Width="20" Height="20"
+                              Foreground="{DynamicResource ShellMuted}" Opacity="0.55"
+                              HorizontalAlignment="Center" />
+                    <TextBlock Text="{DynamicResource L.ChatMemoryEmpty}" Classes="muted"
+                               TextWrapping="Wrap" TextAlignment="Center" />
+                  </StackPanel>
+                </Border>
+                <ItemsControl ItemsSource="{Binding Memories}">
+                  <ItemsControl.ItemTemplate>
+                    <DataTemplate DataType="vm:UserMemoryViewModel">
+                      <!-- A note switched off is still a note: it keeps its place and its
+                           wording and only loses its colour, so what has been set aside can be
+                           read as easily as what is in use. -->
+                      <Border Classes="memoryRow" Classes.muted="{Binding !IsEnabled}" Margin="0,1">
+                        <Grid RowDefinitions="Auto,Auto" ColumnDefinitions="3,*,Auto" ColumnSpacing="9">
+                          <Border Grid.RowSpan="2" Classes="memoryRail" />
+                          <Grid Grid.Column="1" ColumnDefinitions="*,Auto" ColumnSpacing="6">
+                            <TextBlock Text="{Binding Key}" FontSize="{DynamicResource MarelianFont11_5}" FontWeight="SemiBold"
+                                       TextTrimming="CharacterEllipsis" VerticalAlignment="Center" />
+                            <Border Grid.Column="1" Classes="tierBadge" Padding="6,1" VerticalAlignment="Center">
+                              <TextBlock Text="{Binding Category}" FontSize="{DynamicResource MarelianFont8_5}" LetterSpacing="0.3"
+                                         Foreground="{DynamicResource ShellAccent}" />
+                            </Border>
+                          </Grid>
+                          <StackPanel Grid.Row="1" Grid.Column="1" Spacing="3" Margin="0,3,0,0">
+                            <TextBlock Text="{Binding Value}" Classes="muted" FontSize="{DynamicResource MarelianFont10_5}"
+                                       TextWrapping="Wrap" Foreground="{DynamicResource ShellText}"
+                                       Opacity="0.86" />
+                            <TextBlock Text="{Binding Origin}" Classes="muted" FontSize="{DynamicResource MarelianFont9}" Opacity="0.62" />
+                          </StackPanel>
+                          <StackPanel Grid.RowSpan="2" Grid.Column="2" Orientation="Horizontal" Spacing="2"
+                                      VerticalAlignment="Top">
+                            <CheckBox Classes="memorySwitch" IsChecked="{Binding IsEnabled}"
+                                      ToolTip.Tip="{Binding Origin}" VerticalAlignment="Center" />
+                            <Button Classes="icon quiet micro danger" Command="{Binding DeleteCommand}"
+                                    ToolTip.Tip="{DynamicResource L.Delete}">
+                              <icons:AnimatedIcon Data="{StaticResource IconDelete}" Width="11" Height="11" />
+                            </Button>
+                          </StackPanel>
+                        </Grid>
+                      </Border>
+                    </DataTemplate>
+                  </ItemsControl.ItemTemplate>
+                </ItemsControl>
+              </StackPanel>
+            </ScrollViewer>
+
+            <!-- Writing a note by hand: the two halves of one, on one card, so the pair reads
+                 as a single thing being composed rather than two unrelated fields. -->
+            <StackPanel Grid.Row="2" Spacing="7" Margin="0,9,5,0">
+              <Border Classes="memoryComposer">
+                <StackPanel Spacing="6">
+                  <TextBox Classes="bareInput" Text="{Binding NewMemoryKey}" FontSize="{DynamicResource MarelianFont11_5}" FontWeight="SemiBold"
+                           PlaceholderText="{DynamicResource L.ChatMemoryKeyPlaceholder}" />
+                  <Border Height="1" Background="{DynamicResource ShellStroke}" Opacity="0.7" />
+                  <TextBox Classes="bareInput" Text="{Binding NewMemoryValue}" FontSize="{DynamicResource MarelianFont11}"
+                           PlaceholderText="{DynamicResource L.ChatMemoryValuePlaceholder}"
+                           AcceptsReturn="True" TextWrapping="Wrap" MaxHeight="64" />
+                  <Button Classes="primary compact" Padding="10,5" HorizontalAlignment="Right"
+                          Command="{Binding AddMemoryCommand}">
+                    <StackPanel Orientation="Horizontal" Spacing="6">
+                      <icons:AnimatedIcon Data="{StaticResource IconPlus}" Motion="Plus" Width="11" Height="11" />
+                      <TextBlock Text="{DynamicResource L.ChatMemoryAdd}" FontSize="{DynamicResource MarelianFont10_5}" />
+                    </StackPanel>
+                  </Button>
+                </StackPanel>
+              </Border>
+              <Grid ColumnDefinitions="*,Auto,Auto" ColumnSpacing="6" IsVisible="{Binding IsMemoryClearPending}">
+                <TextBlock Text="{DynamicResource L.ChatMemoryClearConfirm}" FontSize="{DynamicResource MarelianFont10_5}"
+                           TextWrapping="Wrap" VerticalAlignment="Center" />
+                <Button Grid.Column="1" Classes="quiet compact" Command="{Binding CancelClearMemoryCommand}"
+                        Content="{DynamicResource L.Cancel}" />
+                <Button Grid.Column="2" Classes="dangerFilled compact" Command="{Binding ConfirmClearMemoryCommand}"
+                        Content="{DynamicResource L.Delete}" />
+              </Grid>
+              <Button Classes="quiet compact danger" HorizontalAlignment="Left" Padding="8,4"
+                      IsVisible="{Binding HasMemories}"
+                      Command="{Binding RequestClearMemoryCommand}">
+                <TextBlock Text="{DynamicResource L.ChatMemoryClear}" FontSize="{DynamicResource MarelianFont10_5}" />
+              </Button>
+            </StackPanel>
+          </Grid>
+        </Panel>
+
+        <!-- Back to the newest turn. It appears only once the reader has left the end of
+             the thread, sits over the seam between the conversation and the composer, and is
+             the one thing on this panel that is allowed to overlap anything. -->
+        <Button Grid.Row="1" x:Name="ScrollToEndButton" Classes="scrollToEnd" IsVisible="False"
+                HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,6"
+                Click="ScrollToEnd_OnClick">
+          <icons:AnimatedIcon Data="{StaticResource IconChevronDown}" Width="13" Height="13" />
+        </Button>
+
+        <!-- ============================ Composer ============================ -->
+        <StackPanel Grid.Row="2" Classes="chatColumn" Spacing="5" Margin="10,0,10,10" IsVisible="{Binding ShowChatMain}">
+
+          <!-- Live stage indicator -->
+          <Border Classes="stagePill" IsVisible="{Binding HasStage}" HorizontalAlignment="Left">
+            <StackPanel Orientation="Horizontal" Spacing="7" VerticalAlignment="Center">
+              <Border Width="6" Height="6" CornerRadius="3" Background="{DynamicResource ShellAccent}"
+                      VerticalAlignment="Center" />
+              <TextBlock Text="{Binding AssistantStage}" FontSize="{DynamicResource MarelianFont10_5}" Foreground="{DynamicResource ShellText}" />
+              <Button Classes="quiet micro" Padding="5,1" Command="{Binding CancelAssistantCommand}">
+                <TextBlock Text="{DynamicResource L.ChatStop}" FontSize="{DynamicResource MarelianFont9_5}" />
+              </Button>
+            </StackPanel>
+          </Border>
+
+          <!-- What the running model is costing the machine: four figures, each built the same
+               way — what it is, how much of it, and a bar for the share — so the eye compares
+               them rather than reading them.
+
+               It used to be three of those plus a separate video-memory line hung underneath,
+               and a bordered capsule around the uptime, in a card that was half again as tall
+               as anything it reported. Video memory is the same kind of reading as the other
+               three and now stands beside them instead of under them, which both adds the
+               figure and takes a row away.
+
+               The card says where the model actually ended up, not where it was asked to go: a
+               graphics card that could not take it leaves the badge on CPU and both of its
+               columns reading "not in use". -->
+          <Border Classes="resourceMonitorPill" IsVisible="{Binding ShowLocalModelResourceMonitor}">
+            <StackPanel Spacing="6">
+              <Grid ColumnDefinitions="Auto,*,Auto,Auto" ColumnSpacing="6">
+                <Border Width="5" Height="5" CornerRadius="3" Background="{DynamicResource ShellAccent}"
+                        VerticalAlignment="Center" />
+                <TextBlock Grid.Column="1" Text="{Binding RunningLocalModelDisplayName}" FontSize="{DynamicResource MarelianFont10}"
+                           FontWeight="SemiBold" TextTrimming="CharacterEllipsis"
+                           Foreground="{DynamicResource ShellText}" VerticalAlignment="Center" />
+                <Border Grid.Column="2" Classes="acceleratorBadge" Classes.gpu="{Binding IsLocalModelOnGpu}"
+                        VerticalAlignment="Center" ToolTip.Tip="{Binding LocalModelAcceleratorDetail}">
+                  <TextBlock Text="{Binding LocalModelAcceleratorText}" FontSize="{DynamicResource MarelianFont8_5}" FontWeight="SemiBold" />
+                </Border>
+                <TextBlock Grid.Column="3" Text="{Binding LocalModelUptimeText}" FontSize="{DynamicResource MarelianFont9}"
+                           Foreground="{DynamicResource ShellMuted}" VerticalAlignment="Center" />
+              </Grid>
+
+              <Grid ColumnDefinitions="*,*,*,*" ColumnSpacing="7">
+                <StackPanel Classes="resourceReadout">
+                  <TextBlock Text="{DynamicResource L.CpuLabel}" Classes="resourceName" />
+                  <TextBlock Text="{Binding LocalModelCpuUsageText}" Classes="resourceValue" />
+                  <ProgressBar Classes="resourceMeter" Value="{Binding LocalModelCpuFraction}" />
+                </StackPanel>
+
+                <StackPanel Grid.Column="1" Classes="resourceReadout"
+                            ToolTip.Tip="{Binding LocalModelAcceleratorDetail}">
+                  <TextBlock Text="{DynamicResource L.GpuLabel}" Classes="resourceName" />
+                  <TextBlock Text="{Binding LocalModelGpuUsageText}" Classes="resourceValue"
+                             Classes.idle="{Binding !IsLocalModelOnGpu}" />
+                  <ProgressBar Classes="resourceMeter" Value="{Binding LocalModelGpuFraction}"
+                               IsEnabled="{Binding IsLocalModelOnGpu}" />
+                </StackPanel>
+
+                <StackPanel Grid.Column="2" Classes="resourceReadout"
+                            ToolTip.Tip="{Binding LocalModelMemoryScaleText}">
+                  <TextBlock Text="{DynamicResource L.RamLabel}" Classes="resourceName" />
+                  <TextBlock Text="{Binding LocalModelMemoryUsageText}" Classes="resourceValue" />
+                  <ProgressBar Classes="resourceMeter" Value="{Binding LocalModelMemoryFraction}" />
+                </StackPanel>
+
+                <!-- The card's own memory, live off the machine rather than out of the engine's
+                     startup log, which is why this column had nothing in it at all. -->
+                <StackPanel Grid.Column="3" Classes="resourceReadout"
+                            ToolTip.Tip="{Binding LocalModelVideoMemoryScaleText}">
+                  <TextBlock Text="{DynamicResource L.VramLabel}" Classes="resourceName" />
+                  <TextBlock Text="{Binding LocalModelVideoMemoryText}" Classes="resourceValue"
+                             Classes.idle="{Binding !IsLocalModelOnGpu}" />
+                  <ProgressBar Classes="resourceMeter" Value="{Binding LocalModelVideoMemoryFraction}"
+                               IsEnabled="{Binding IsLocalModelOnGpu}" />
+                </StackPanel>
+              </Grid>
+            </StackPanel>
+          </Border>
+
+          <Border Classes="composer copilotComposer" Padding="7">
+            <Grid RowDefinitions="Auto,Auto,Auto,Auto">
+              <TextBox x:Name="ComposerTextBox" Classes="composerInput" Text="{Binding ComposerInput}"
+                       PlaceholderText="{Binding ComposerPlaceholder}" AcceptsReturn="True"
+                       TextWrapping="Wrap" MinHeight="40" MaxHeight="168" />
+              <StackPanel Grid.Row="1" Spacing="3" Margin="5,2,5,4">
+                <!-- An image shows itself. Guessing from a file name is how the wrong picture gets sent. -->
+                <Border Classes="attachmentChip" IsVisible="{Binding HasAttachment}">
+                  <Grid ColumnDefinitions="Auto,*,Auto" ColumnSpacing="7">
+                    <Border Classes="attachmentThumb" IsVisible="{Binding IsAttachmentImage}">
+                      <Image Source="{Binding AttachmentPreview}" Stretch="UniformToFill" />
+                    </Border>
+                    <icons:AnimatedIcon Data="{StaticResource IconAttach}" Motion="Attach" Width="12"
+                                        IsVisible="{Binding !IsAttachmentImage}" VerticalAlignment="Center" />
+                    <StackPanel Grid.Column="1" Spacing="1" VerticalAlignment="Center">
+                      <TextBlock Text="{Binding AttachedFileName}" TextTrimming="CharacterEllipsis" FontSize="{DynamicResource MarelianFont11}" />
+                      <TextBlock Text="{Binding AttachedFileMeta}" Classes="muted" FontSize="{DynamicResource MarelianFont9}" />
+                    </StackPanel>
+                    <Button Grid.Column="2" Classes="icon quiet micro closeGlyph" Command="{Binding ClearAttachmentCommand}">
+                      <icons:AnimatedIcon Data="{StaticResource IconClose}" Width="11" />
+                    </Button>
+                  </Grid>
+                </Border>
+                <TextBlock Text="{Binding AttachmentWarning}" Classes="hint" FontSize="{DynamicResource MarelianFont9_5}" TextWrapping="Wrap"
+                           Foreground="{DynamicResource ShellWarning}" IsVisible="{Binding HasAttachmentWarning}" />
+              </StackPanel>
+              <Grid Grid.Row="2" ColumnDefinitions="Auto,*,Auto,Auto,Auto" ColumnSpacing="5" Margin="0,3,0,0">
+                <Button Classes="icon quiet composerTool" ToolTip.Tip="{DynamicResource L.Attach}">
+                  <Button.Flyout>
+                    <MenuFlyout Placement="TopEdgeAlignedLeft">
+                      <MenuItem Header="{DynamicResource L.AttachImage}" Click="AttachImage_OnClick">
+                        <MenuItem.Icon><icons:AnimatedIcon Data="{StaticResource IconSparkle}" Width="14" /></MenuItem.Icon>
+                      </MenuItem>
+                      <MenuItem Header="{DynamicResource L.AttachDocument}" Click="AttachDocument_OnClick">
+                        <MenuItem.Icon><icons:AnimatedIcon Data="{StaticResource IconAttach}" Width="14" /></MenuItem.Icon>
+                      </MenuItem>
+                    </MenuFlyout>
+                  </Button.Flyout>
+                  <icons:AnimatedIcon Data="{StaticResource IconPlus}" Motion="Plus" Width="15" Height="15" />
+                </Button>
+
+                <!-- What the assistant may do without asking, on the composer's own row rather
+                     than on a strip of its own above it. It had a badge, a heading and a groove
+                     to itself for a control that is three small buttons; here it costs the sheet
+                     no height at all. Only the step in force says its name — three names never
+                     fitted, and three trimmed names name none of them — and the two on offer are
+                     their icon, which is enough to be found and pressed. -->
+                <Border Grid.Column="1" Classes="accessTrack" HorizontalAlignment="Left" VerticalAlignment="Center">
+                  <Grid ColumnDefinitions="Auto,Auto,Auto" ColumnSpacing="2">
+                    <Button Classes="accessSegment" Classes.selected="{Binding IsAccessConfirmAll}"
+                            Command="{Binding SetAssistantAccessCommand}" CommandParameter="ConfirmAll"
+                            ToolTip.Tip="{DynamicResource L.AiAccessConfirmAllHint}">
+                      <StackPanel Orientation="Horizontal" Spacing="5" HorizontalAlignment="Center">
+                        <icons:AnimatedIcon Data="{StaticResource IconCheck}" Width="10" Height="10" VerticalAlignment="Center" />
+                        <TextBlock Text="{DynamicResource L.AiAccessConfirmAllShort}" FontSize="{DynamicResource MarelianFont10}" MaxWidth="82"
+                                   IsVisible="{Binding IsAccessConfirmAll}"
+                                   TextTrimming="CharacterEllipsis" VerticalAlignment="Center" />
+                      </StackPanel>
+                    </Button>
+                    <Button Grid.Column="1" Classes="accessSegment" Classes.selected="{Binding IsAccessAutoSafe}"
+                            Command="{Binding SetAssistantAccessCommand}" CommandParameter="AutoSafe"
+                            ToolTip.Tip="{DynamicResource L.AiAccessAutoSafeHint}">
+                      <StackPanel Orientation="Horizontal" Spacing="5" HorizontalAlignment="Center">
+                        <icons:AnimatedIcon Data="{StaticResource IconSparkle}" Width="10" Height="10" VerticalAlignment="Center" />
+                        <TextBlock Text="{DynamicResource L.AiAccessAutoSafeShort}" FontSize="{DynamicResource MarelianFont10}" MaxWidth="82"
+                                   IsVisible="{Binding IsAccessAutoSafe}"
+                                   TextTrimming="CharacterEllipsis" VerticalAlignment="Center" />
+                      </StackPanel>
+                    </Button>
+                    <Button Grid.Column="2" Classes="accessSegment danger" Classes.selected="{Binding IsAccessFullAccess}"
+                            Command="{Binding SetAssistantAccessCommand}" CommandParameter="FullAccess"
+                            ToolTip.Tip="{DynamicResource L.AiAccessFullHint}">
+                      <StackPanel Orientation="Horizontal" Spacing="5" HorizontalAlignment="Center">
+                        <icons:AnimatedIcon Data="{StaticResource IconPower}" Width="10" Height="10" VerticalAlignment="Center" />
+                        <TextBlock Text="{DynamicResource L.AiAccessFullShort}" FontSize="{DynamicResource MarelianFont10}" MaxWidth="82"
+                                   IsVisible="{Binding IsAccessFullAccess}"
+                                   TextTrimming="CharacterEllipsis" VerticalAlignment="Center" />
+                      </StackPanel>
+                    </Button>
+                  </Grid>
+                </Border>
+
+                <Button Grid.Column="2" Classes="icon quiet modelPowerButton"
+                        IsVisible="{Binding IsLocalProviderActive}"
+                        IsEnabled="{Binding CanToggleLocalModelExecution}"
+                        Command="{Binding ToggleLocalModelExecutionCommand}"
+                        ToolTip.Tip="{Binding LocalModelExecutionTooltip}">
+                  <Panel>
+                    <icons:AnimatedIcon Data="{StaticResource IconStop}" Width="10" Height="10"
+                              Foreground="{DynamicResource ShellDanger}" IsVisible="{Binding IsLocalModelRunning}" />
+                    <icons:AnimatedIcon Data="{StaticResource IconStop}" Width="10" Height="10"
+                              Foreground="{DynamicResource ShellAccent}" IsVisible="{Binding IsLocalModelStarting}" />
+                    <icons:AnimatedIcon Data="{StaticResource IconPlay}" Width="10" Height="10"
+                              Foreground="{DynamicResource ShellAccent}" IsVisible="{Binding !CanStopLocalModel}" />
+                  </Panel>
+                </Button>
+
+                <Button Grid.Column="3" Classes="modelSwitcher" Command="{Binding ToggleModelMenuCommand}">
+                  <StackPanel Orientation="Horizontal" Spacing="5" VerticalAlignment="Center">
+                    <icons:AnimatedIcon Data="{StaticResource IconSparkle}" Width="11" Height="11" Foreground="{DynamicResource ShellAccent}" />
+                    <TextBlock Text="{Binding ActiveModelDisplayName}" FontSize="{DynamicResource MarelianFont11}" FontWeight="Medium"
+                               MaxWidth="104" TextTrimming="CharacterEllipsis" VerticalAlignment="Center" />
+                    <icons:AnimatedIcon Data="{StaticResource IconChevronDown}" Width="9" Height="9" Foreground="{DynamicResource ShellMuted}" VerticalAlignment="Center" />
+                  </StackPanel>
+                </Button>
+
+                <!-- One slot, two meanings. While a turn is running the only press worth
+                     offering here is the one that stops it, and a send button greyed out for
+                     the whole of a long answer is a control that says "wait" and nothing else.
+                     The stop that lived in the stage pill above stays there too; this is the
+                     one under the hand that just pressed send. -->
+                <Button Grid.Column="4" Classes="icon sendButton" Width="30" Height="30"
+                        IsVisible="{Binding !IsBusy}"
+                        Command="{Binding SubmitComposerCommand}"
+                        ToolTip.Tip="{DynamicResource L.Send}">
+                  <icons:AnimatedIcon Data="{StaticResource IconArrowUp}" Width="15" Height="15" />
+                </Button>
+                <Button Grid.Column="4" Classes="icon sendButton stopButton" Width="30" Height="30"
+                        IsVisible="{Binding IsBusy}"
+                        Command="{Binding CancelAssistantCommand}"
+                        ToolTip.Tip="{DynamicResource L.ChatStop}">
+                  <icons:AnimatedIcon Data="{StaticResource IconStop}" Motion="Stop" Width="13" Height="13" />
+                </Button>
+              </Grid>
+
+              <!-- What the two keys do, said once under the field rather than learned by
+                   accident. Only in the widened panel: the sheet has no height to spare. -->
+              <TextBlock Grid.Row="3" Classes="composerHint" Text="{DynamicResource L.ChatComposerHint}"
+                         HorizontalAlignment="Right" Margin="0,4,3,0" />
+            </Grid>
+          </Border>
+        </StackPanel>
+      </Grid>
+    </Border>
+
+    <!-- Invisible background click interceptor to close the model menu -->
+    <Border IsVisible="{Binding IsModelMenuOpen}" Background="Transparent"
+            PointerPressed="CloseModelMenu_PointerPressed" />
+
+    <!-- Floating model switcher -->
+    <Border IsVisible="{Binding IsModelMenuOpen}"
+            Classes="floatingModelCard"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Bottom"
+            Margin="0,0,55,54">
+      <Panel>
+        <StackPanel IsVisible="{Binding IsSwitchModelConfirmationOpen}" Spacing="7" Width="220" Margin="4,2">
+          <Grid ColumnDefinitions="*,Auto">
+            <TextBlock Text="{Binding SwitchModelConfirmationTitle}" FontSize="{DynamicResource MarelianFont11}" FontWeight="Bold" Foreground="{DynamicResource ShellAccent}" />
+            <Button Grid.Column="1" Classes="icon quiet micro closeGlyph" Command="{Binding CancelSwitchModelConfirmationCommand}">
+              <icons:AnimatedIcon Data="{StaticResource IconClose}" Width="9" Height="9" />
+            </Button>
+          </Grid>
+          <TextBlock Text="{Binding SwitchModelConfirmationMessage}" FontSize="{DynamicResource MarelianFont10_5}" TextWrapping="Wrap" Foreground="{DynamicResource ShellText}" />
+
+          <StackPanel IsVisible="{Binding SwitchModelIsTargetLocal}" Spacing="4">
+            <Button Classes="primary compact" Command="{Binding ConfirmSwitchAndStartModelCommand}"
+                    IsVisible="{Binding SwitchModelIsTargetInstalled}" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center">
+              <TextBlock Text="{DynamicResource L.SwitchAndStart}" FontSize="{DynamicResource MarelianFont10_5}" />
+            </Button>
+            <Button Classes="secondary compact" Command="{Binding ConfirmSwitchOnlyModelCommand}"
+                    HorizontalAlignment="Stretch" HorizontalContentAlignment="Center">
+              <TextBlock Text="{DynamicResource L.SwitchOnly}" FontSize="{DynamicResource MarelianFont10_5}" />
+            </Button>
+            <Button Classes="quiet compact" Command="{Binding CancelSwitchModelConfirmationCommand}"
+                    HorizontalAlignment="Stretch" HorizontalContentAlignment="Center">
+              <TextBlock Text="{DynamicResource L.Cancel}" FontSize="{DynamicResource MarelianFont10_5}" />
+            </Button>
+          </StackPanel>
+
+          <StackPanel IsVisible="{Binding !SwitchModelIsTargetLocal}" Spacing="4">
+            <Button Classes="primary compact" Command="{Binding ConfirmSwitchOnlyModelCommand}"
+                    HorizontalAlignment="Stretch" HorizontalContentAlignment="Center">
+              <TextBlock Text="{DynamicResource L.StopAndSwitch}" FontSize="{DynamicResource MarelianFont10_5}" />
+            </Button>
+            <Button Classes="secondary compact" Command="{Binding ConfirmSwitchKeepRunningCommand}"
+                    HorizontalAlignment="Stretch" HorizontalContentAlignment="Center">
+              <TextBlock Text="{DynamicResource L.KeepRunning}" FontSize="{DynamicResource MarelianFont10_5}" />
+            </Button>
+            <Button Classes="quiet compact" Command="{Binding CancelSwitchModelConfirmationCommand}"
+                    HorizontalAlignment="Stretch" HorizontalContentAlignment="Center">
+              <TextBlock Text="{DynamicResource L.Cancel}" FontSize="{DynamicResource MarelianFont10_5}" />
+            </Button>
+          </StackPanel>
+        </StackPanel>
+
+        <StackPanel IsVisible="{Binding ShowModelMenuLevel1}" Spacing="2" Width="216">
+          <Grid ColumnDefinitions="*,Auto" Margin="5,2,3,3">
+            <TextBlock Text="{DynamicResource L.Model}" FontSize="{DynamicResource MarelianFont10_5}" FontWeight="Bold" Foreground="{DynamicResource ShellMuted}" />
+            <Button Grid.Column="1" Classes="icon quiet micro closeGlyph" Command="{Binding CloseModelMenuCommand}">
+              <icons:AnimatedIcon Data="{StaticResource IconClose}" Width="9" Height="9" />
+            </Button>
+          </Grid>
+
+          <Button Classes="modelOptionCard" Classes.selected="{Binding IsLocalProviderActive}"
+                  Command="{Binding OpenLocalModelsSubMenuCommand}">
+            <Grid ColumnDefinitions="14,*,Auto" ColumnSpacing="7">
+              <icons:AnimatedIcon Data="{StaticResource IconSparkle}" Width="11" Height="11"
+                        Foreground="{DynamicResource ShellAccent}" VerticalAlignment="Center" />
+              <StackPanel Grid.Column="1" Spacing="0.5" VerticalAlignment="Center">
+                <TextBlock Text="{DynamicResource L.OptionProviderLocal}" FontSize="{DynamicResource MarelianFont11_5}" FontWeight="SemiBold" />
+                <TextBlock Text="{Binding LocalProviderMenuSubtitle}" FontSize="{DynamicResource MarelianFont9_5}" Foreground="{DynamicResource ShellMuted}" />
+              </StackPanel>
+              <icons:AnimatedIcon Grid.Column="2" Data="{StaticResource IconChevronRight}" Width="9" Height="9"
+                        Foreground="{DynamicResource ShellMuted}" VerticalAlignment="Center" />
+            </Grid>
+          </Button>
+
+          <Separator Margin="3,1" Background="{DynamicResource ShellStroke}" Height="1" />
+
+          <Button Classes="modelOptionCard" Classes.selected="{Binding IsExternalProviderActive}"
+                  Command="{Binding SelectExternalApiCommand}">
+            <Grid ColumnDefinitions="14,*,Auto" ColumnSpacing="7">
+              <icons:AnimatedIcon Data="{StaticResource IconCheck}" Width="10" Height="10"
+                        Foreground="{DynamicResource ShellAccent}"
+                        IsVisible="{Binding IsExternalProviderActive}" VerticalAlignment="Center" />
+              <StackPanel Grid.Column="1" Spacing="0.5" VerticalAlignment="Center">
+                <TextBlock Text="{DynamicResource L.OptionProviderOpenAi}" FontSize="{DynamicResource MarelianFont11_5}" FontWeight="SemiBold" />
+                <TextBlock Text="HTTP / API" FontSize="{DynamicResource MarelianFont9_5}" Foreground="{DynamicResource ShellMuted}" />
+              </StackPanel>
+              <Border Grid.Column="2" Classes="tierBadge" VerticalAlignment="Center">
+                <TextBlock Text="API" Foreground="{DynamicResource ShellAccent}" FontSize="{DynamicResource MarelianFont9}" />
+              </Border>
+            </Grid>
+          </Button>
+
+          <Button Classes="modelOptionCard" Classes.selected="{Binding IsMcpProviderActive}"
+                  Command="{Binding SelectMcpProviderCommand}">
+            <Grid ColumnDefinitions="14,*,Auto" ColumnSpacing="7">
+              <icons:AnimatedIcon Data="{StaticResource IconCheck}" Width="10" Height="10"
+                        Foreground="{DynamicResource ShellAccent}"
+                        IsVisible="{Binding IsMcpProviderActive}" VerticalAlignment="Center" />
+              <StackPanel Grid.Column="1" Spacing="0.5" VerticalAlignment="Center">
+                <TextBlock Text="MCP" FontSize="{DynamicResource MarelianFont11_5}" FontWeight="SemiBold" />
+                <TextBlock Text="Model Context Protocol" FontSize="{DynamicResource MarelianFont9_5}" Foreground="{DynamicResource ShellMuted}" />
+              </StackPanel>
+              <Border Grid.Column="2" Classes="tierBadge" VerticalAlignment="Center">
+                <TextBlock Text="MCP" Foreground="{DynamicResource ShellAccent}" FontSize="{DynamicResource MarelianFont9}" />
+              </Border>
+            </Grid>
+          </Button>
+        </StackPanel>
+
+        <StackPanel IsVisible="{Binding ShowModelMenuLevel2}" Spacing="2" Width="216">
+          <Grid ColumnDefinitions="Auto,*,Auto" ColumnSpacing="5" Margin="3,1,3,3">
+            <Button Classes="icon quiet micro" Command="{Binding CloseLocalModelsSubMenuCommand}">
+              <icons:AnimatedIcon Data="{StaticResource IconChevronLeft}" Width="10" Height="10" />
+            </Button>
+            <TextBlock Grid.Column="1" Text="{DynamicResource L.OptionProviderLocal}" FontSize="{DynamicResource MarelianFont10_5}" FontWeight="Bold"
+                       Foreground="{DynamicResource ShellMuted}" VerticalAlignment="Center" />
+            <Button Grid.Column="2" Classes="icon quiet micro closeGlyph" Command="{Binding CloseModelMenuCommand}">
+              <icons:AnimatedIcon Data="{StaticResource IconClose}" Width="9" Height="9" />
+            </Button>
+          </Grid>
+
+          <ItemsControl ItemsSource="{Binding LocalModelQuickOptions}" IsVisible="{Binding HasInstalledLocalModels}">
+            <ItemsControl.ItemTemplate>
+              <DataTemplate DataType="vm:ChatModelQuickOptionViewModel">
+                <Button Classes="modelOptionCard" Classes.selected="{Binding IsSelected}"
+                        Command="{Binding SelectCommand}" Margin="0,1">
+                  <Grid ColumnDefinitions="13,*,Auto" ColumnSpacing="6">
+                    <icons:AnimatedIcon Data="{StaticResource IconCheck}" Width="10" Height="10"
+                              Foreground="{DynamicResource ShellAccent}"
+                              IsVisible="{Binding IsSelected}" VerticalAlignment="Center" />
+                    <StackPanel Grid.Column="1" Spacing="0.5" VerticalAlignment="Center">
+                      <TextBlock Text="{Binding DisplayName}" FontSize="{DynamicResource MarelianFont11_5}" FontWeight="SemiBold" />
+                      <TextBlock Text="{Binding Subtitle}" FontSize="{DynamicResource MarelianFont9}" Foreground="{DynamicResource ShellMuted}" />
+                    </StackPanel>
+                    <Border Grid.Column="2" Classes="tierBadge" VerticalAlignment="Center" IsVisible="{Binding HasBadge}">
+                      <TextBlock Text="{Binding Badge}" Foreground="{DynamicResource ShellAccent}" FontSize="{DynamicResource MarelianFont8_5}" />
+                    </Border>
+                  </Grid>
+                </Button>
+              </DataTemplate>
+            </ItemsControl.ItemTemplate>
+          </ItemsControl>
+
+          <Border IsVisible="{Binding !HasInstalledLocalModels}"
+                  Background="{DynamicResource ShellSurfaceAlt}"
+                  BorderBrush="{DynamicResource ShellStroke}"
+                  BorderThickness="1"
+                  CornerRadius="{DynamicResource ShellControlRadius}"
+                  Padding="10,8"
+                  Margin="0,2">
+            <StackPanel Spacing="6" HorizontalAlignment="Center">
+              <TextBlock Text="{DynamicResource L.LocalModelNotInstalled}"
+                         FontSize="{DynamicResource MarelianFont11}" FontWeight="SemiBold"
+                         HorizontalAlignment="Center"
+                         Foreground="{DynamicResource ShellMuted}" />
+              <Button Classes="primary compact"
+                      Command="{Binding OpenLocalAiSettingsCommand}"
+                      Padding="8,4"
+                      HorizontalAlignment="Center">
+                <TextBlock Text="{DynamicResource L.Settings}" FontSize="{DynamicResource MarelianFont10_5}" />
+              </Button>
+            </StackPanel>
+          </Border>
+        </StackPanel>
+      </Panel>
+    </Border>
+  </Grid>
+</UserControl>
