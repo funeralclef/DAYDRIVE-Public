@@ -1,0 +1,62 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:icons="using:IntelligentScheduler.Desktop.Controls"
+        xmlns:vm="using:IntelligentScheduler.Desktop.ViewModels"
+        xmlns:primitives="using:Avalonia.Controls.Primitives"
+        x:Class="IntelligentScheduler.Desktop.DatePickerView" Background="Transparent"
+        Classes.reduceMotion="{Binding ReduceMotion}"
+        Classes.motion="{Binding !ReduceMotion}">
+  <Border Background="{DynamicResource ShellPopup}"
+          BorderBrush="{DynamicResource ShellStroke}" BorderThickness="1"
+          CornerRadius="{DynamicResource ShellWindowRadius}" Padding="15" ClipToBounds="True">
+    <Grid RowDefinitions="Auto,Auto,*,Auto" RowSpacing="9">
+      <Grid ColumnDefinitions="Auto,*,Auto,Auto">
+        <icons:AnimatedIcon Data="{StaticResource IconCalendar}" Width="17" VerticalAlignment="Center" />
+        <StackPanel Grid.Column="1" Margin="9,0,0,0">
+          <TextBlock Text="{DynamicResource L.ChooseDate}" FontSize="{DynamicResource MarelianFont14}" FontWeight="SemiBold" />
+          <TextBlock Text="{Binding CalendarMonthTitle}" Classes="muted" />
+        </StackPanel>
+        <Button Grid.Column="2" Classes="icon quiet mini nudgeLeft" Command="{Binding PreviousCalendarMonthCommand}">
+          <icons:AnimatedIcon Data="{StaticResource IconChevronLeft}" Width="14" />
+        </Button>
+        <Button Grid.Column="3" Classes="icon quiet mini nudgeRight" Command="{Binding NextCalendarMonthCommand}">
+          <icons:AnimatedIcon Data="{StaticResource IconChevronRight}" Width="14" />
+        </Button>
+      </Grid>
+
+      <ItemsControl Grid.Row="1" ItemsSource="{Binding CalendarWeekDays}">
+        <ItemsControl.ItemsPanel><ItemsPanelTemplate><primitives:UniformGrid Columns="7" Rows="1" /></ItemsPanelTemplate></ItemsControl.ItemsPanel>
+        <ItemsControl.ItemTemplate><DataTemplate><TextBlock Text="{Binding}" Classes="calendarWeekday" /></DataTemplate></ItemsControl.ItemTemplate>
+      </ItemsControl>
+
+      <ItemsControl Grid.Row="2" ItemsSource="{Binding CalendarDays}">
+        <ItemsControl.ItemsPanel><ItemsPanelTemplate><primitives:UniformGrid Columns="7" Rows="6" /></ItemsPanelTemplate></ItemsControl.ItemsPanel>
+        <ItemsControl.ItemTemplate>
+          <DataTemplate DataType="vm:CalendarDayViewModel">
+            <Button Classes="calendarDay notion" Classes.outside="{Binding IsOutsideMonth}"
+                    Classes.selected="{Binding IsSelected}" Classes.today="{Binding IsToday}"
+                    Command="{Binding SelectCommand}">
+              <Grid RowDefinitions="*,Auto" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <TextBlock Text="{Binding Number}" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                <Border Grid.Row="1" Width="3" Height="3" CornerRadius="2"
+                        Background="{DynamicResource ShellAccent}" HorizontalAlignment="Center"
+                        IsVisible="{Binding HasItems}" Margin="0,1,0,0" />
+              </Grid>
+            </Button>
+          </DataTemplate>
+        </ItemsControl.ItemTemplate>
+      </ItemsControl>
+
+      <Grid Grid.Row="3" ColumnDefinitions="*,Auto,Auto" ColumnSpacing="6">
+        <Button Classes="quiet compact" Command="{Binding CalendarTodayCommand}"
+                Content="{DynamicResource L.CalendarToday}" HorizontalAlignment="Left" />
+        <!-- Only for the questions that allow no answer: a step with no day yet, a project with
+             no deadline. Everywhere else a date is what is being asked for. -->
+        <Button Grid.Column="1" Classes="quiet compact" Command="{Binding ClearCalendarDateCommand}"
+                Content="{Binding CalendarClearLabel}" IsVisible="{Binding CanClearCalendarDate}" />
+        <Button Grid.Column="2" Classes="secondary compact" Command="{Binding CloseDatePickerCommand}"
+                Content="{DynamicResource L.Cancel}" />
+      </Grid>
+    </Grid>
+  </Border>
+</UserControl>

@@ -1,0 +1,2094 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="AppName" xml:space="preserve">
+    <value>DAYDRIVE</value>
+  </data>
+  <data name="StatusReady" xml:space="preserve">
+    <value>Hazır</value>
+  </data>
+  <data name="NavPlan" xml:space="preserve">
+    <value>Plan</value>
+  </data>
+  <data name="NavTasks" xml:space="preserve">
+    <value>Görevler</value>
+  </data>
+  <data name="NavAssistant" xml:space="preserve">
+    <value>Asistan</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>Ayarlar</value>
+  </data>
+  <data name="Hide" xml:space="preserve">
+    <value>Paneli gizle</value>
+  </data>
+  <data name="PlanTitle" xml:space="preserve">
+    <value>Günün</value>
+  </data>
+  <data name="PlanSubtitle" xml:space="preserve">
+    <value>Sabit etkinlikler yerinde kalır; görevler etraflarında uyum sağlar</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>İleri</value>
+  </data>
+  <data name="Adjust" xml:space="preserve">
+    <value>Ayarla</value>
+  </data>
+  <data name="Schedule" xml:space="preserve">
+    <value>Program</value>
+  </data>
+  <data name="Calendar" xml:space="preserve">
+    <value>Takvim</value>
+  </data>
+  <data name="AddEvent" xml:space="preserve">
+    <value>Etkinlik ekle</value>
+  </data>
+  <data name="EventTitle" xml:space="preserve">
+    <value>Neler oluyor?</value>
+  </data>
+  <data name="SaveChanges" xml:space="preserve">
+    <value>Değişiklikleri kaydet</value>
+  </data>
+  <data name="TasksTitle" xml:space="preserve">
+    <value>Görevler</value>
+  </data>
+  <data name="TasksSubtitle" xml:space="preserve">
+    <value>Gününüzde kendine yer bulan odaklı bir görev listesi</value>
+  </data>
+  <data name="EditTask" xml:space="preserve">
+    <value>Görevi düzenle</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Kaydet</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>İptal</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Düzenle</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Sil</value>
+  </data>
+  <data name="QuickTaskPlaceholder" xml:space="preserve">
+    <value>Doğal dilde bir görev ekleyin…</value>
+  </data>
+  <data name="AssistantTitle" xml:space="preserve">
+    <value>Asistan</value>
+  </data>
+  <data name="AssistantIntro" xml:space="preserve">
+    <value>Niyetleri gerçekçi bir güne dönüştürebilirim. Doğal yazın.</value>
+  </data>
+  <data name="AssistantPrivacy" xml:space="preserve">
+    <value>Yerel veya seçtiğiniz AI üzerinden</value>
+  </data>
+  <data name="AssistantPlaceholder" xml:space="preserve">
+    <value>Örneğin: yarının programını biraz hafiflet</value>
+  </data>
+  <data name="Ask" xml:space="preserve">
+    <value>Sor</value>
+  </data>
+  <data name="SettingsTitle" xml:space="preserve">
+    <value>Ayarlar</value>
+  </data>
+  <data name="SettingsSubtitle" xml:space="preserve">
+    <value>Değişiklikler otomatik olarak kaydedilir</value>
+  </data>
+  <data name="General" xml:space="preserve">
+    <value>Genel</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>Dil</value>
+  </data>
+  <data name="StartHidden" xml:space="preserve">
+    <value>Gizli başlat</value>
+  </data>
+  <data name="KeepOnTop" xml:space="preserve">
+    <value>Diğer pencerelerin üzerinde tut</value>
+  </data>
+  <data name="Appearance" xml:space="preserve">
+    <value>Görünüm</value>
+  </data>
+  <data name="Design" xml:space="preserve">
+    <value>Tasarım</value>
+  </data>
+  <data name="ColorSource" xml:space="preserve">
+    <value>Vurgu kaynağı</value>
+  </data>
+  <data name="Accent" xml:space="preserve">
+    <value>Vurgu</value>
+  </data>
+  <data name="Background" xml:space="preserve">
+    <value>Arka plan</value>
+  </data>
+  <data name="ThemeMode" xml:space="preserve">
+    <value>Mod</value>
+  </data>
+  <data name="ThemeModeDark" xml:space="preserve">
+    <value>Koyu</value>
+  </data>
+  <data name="ThemeModeLight" xml:space="preserve">
+    <value>Açık</value>
+  </data>
+  <data name="ThemePreviewTitle" xml:space="preserve">
+    <value>MARELIAN</value>
+  </data>
+  <data name="ThemePreviewHint" xml:space="preserve">
+    <value>Açık ve koyu modların renkleri ve şekilleri ayrı kaydedilir.</value>
+  </data>
+  <data name="ColorCustomization" xml:space="preserve">
+    <value>Renkleriniz</value>
+  </data>
+  <data name="ColorCustomizationHint" xml:space="preserve">
+    <value>Otomatik renk için alanı boş bırakın. Renk seçmek için örneğe tıklayın.</value>
+  </data>
+  <data name="ColorPickerHint" xml:space="preserve">
+    <value>Seçmek için sürükle</value>
+  </data>
+  <data name="ResetThemeColors" xml:space="preserve">
+    <value>Bu modu sıfırla</value>
+  </data>
+  <data name="Transparency" xml:space="preserve">
+    <value>Şeffaflık ve bulanıklık</value>
+  </data>
+  <data name="ReduceMotion" xml:space="preserve">
+    <value>Arayüz animasyonlarını devre dışı bırak</value>
+  </data>
+  <data name="Behavior" xml:space="preserve">
+    <value>Davranış</value>
+  </data>
+  <data name="PanelReveal" xml:space="preserve">
+    <value>Paneli göster</value>
+  </data>
+  <data name="PinOpen" xml:space="preserve">
+    <value>Otomatik gizleme</value>
+  </data>
+  <data name="AiConnection" xml:space="preserve">
+    <value>AI bağlantısı</value>
+  </data>
+  <data name="Provider" xml:space="preserve">
+    <value>Sağlayıcı</value>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>Adres</value>
+  </data>
+  <data name="Model" xml:space="preserve">
+    <value>Model</value>
+  </data>
+  <data name="ApiKey" xml:space="preserve">
+    <value>API anahtarı (bu cihazda şifrelenmiş)</value>
+  </data>
+  <data name="ApiKeyPlaceholder" xml:space="preserve">
+    <value>Kaydedilmiş anahtarı korumak için boş bırakın</value>
+  </data>
+  <data name="RemoveKey" xml:space="preserve">
+    <value>Kaydedilmiş anahtarı kaldır</value>
+  </data>
+  <data name="TestConnection" xml:space="preserve">
+    <value>Kaydet ve bağlantıyı test et</value>
+  </data>
+  <data name="SettingsSaved" xml:space="preserve">
+    <value>Kaydedildi</value>
+  </data>
+  <data name="SettingsSaving" xml:space="preserve">
+    <value>Kaydediliyor…</value>
+  </data>
+  <data name="SettingsError" xml:space="preserve">
+    <value>Ayarlar kaydedilemedi</value>
+  </data>
+  <data name="FreeDay" xml:space="preserve">
+    <value>Boş gün</value>
+  </data>
+  <data name="EmptyPlan" xml:space="preserve">
+    <value>Planınız boş</value>
+  </data>
+  <data name="EmptyPlanHint" xml:space="preserve">
+    <value>Tek satırda görev ekle</value>
+  </data>
+  <data name="MinutesShort" xml:space="preserve">
+    <value>dk</value>
+  </data>
+  <data name="EventKind" xml:space="preserve">
+    <value>Etkinlik</value>
+  </data>
+  <data name="TaskKind" xml:space="preserve">
+    <value>Görev</value>
+  </data>
+  <data name="DoneKind" xml:space="preserve">
+    <value>Tamamlandı</value>
+  </data>
+  <data name="Focus" xml:space="preserve">
+    <value>Odaklan</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>Ekle</value>
+  </data>
+  <data name="Added" xml:space="preserve">
+    <value>Eklendi</value>
+  </data>
+  <data name="SuggestedByAssistant" xml:space="preserve">
+    <value>Asistan tarafından önerildi</value>
+  </data>
+  <data name="Priority" xml:space="preserve">
+    <value>öncelik</value>
+  </data>
+  <data name="OptionCustom">
+    <value>Özel</value>
+  </data>
+  <data name="OptionPreset">
+    <value>Öntanımlı</value>
+  </data>
+  <data name="OptionSystemAccent">
+    <value>Sistem vurgusu</value>
+  </data>
+  <data name="OptionWallpaper">
+    <value>Masaüstü duvar kağıdı</value>
+  </data>
+  <data name="OptionHover">
+    <value>Üzerine gelindiğinde</value>
+  </data>
+  <data name="OptionClick">
+    <value>Tıklandığında</value>
+  </data>
+  <data name="TaskAdded">
+    <value>Görev eklendi</value>
+  </data>
+  <data name="TaskRestored">
+    <value>Görev geri yüklendi</value>
+  </data>
+  <data name="TaskUpdated">
+    <value>Görev güncellendi</value>
+  </data>
+  <data name="TaskDeleted">
+    <value>Görev silindi</value>
+  </data>
+  <data name="BlockCompleted">
+    <value>Odak bloğu tamamlandı</value>
+  </data>
+  <data name="EventAdded">
+    <value>Etkinlik eklendi</value>
+  </data>
+  <data name="EventUpdated">
+    <value>Etkinlik güncellendi</value>
+  </data>
+  <data name="EventDeleted">
+    <value>Etkinlik silindi</value>
+  </data>
+  <data name="Thinking">
+    <value>Düşünüyor…</value>
+  </data>
+  <data name="SecondsShort">
+    <value>s</value>
+  </data>
+  <data name="ReplyReady">
+    <value>Yanıt hazır</value>
+  </data>
+  <data name="ReviewSuggestions">
+    <value>Eklemeden önce önerileri gözden geçir</value>
+  </data>
+  <data name="RequestCancelled">
+    <value>İstek iptal edildi</value>
+  </data>
+  <data name="ReplyFailed">
+    <value>Yanıt alınamadı: {0}</value>
+  </data>
+  <data name="ConnectionError">
+    <value>Bağlantı hatası</value>
+  </data>
+  <data name="SuggestionAdded">
+    <value>Öneri eklendi</value>
+  </data>
+  <data name="OpenApp">
+    <value>DAYDRIVE'ı aç</value>
+  </data>
+  <data name="QuickAdd">
+    <value>Hızlı ekle</value>
+  </data>
+  <data name="Exit">
+    <value>Çıkış</value>
+  </data>
+  <data name="CalendarToday">
+    <value>Bugün</value>
+  </data>
+  <data name="ComposerTask">
+    <value>Görev</value>
+  </data>
+  <data name="ComposerAgent">
+    <value>Ajan</value>
+  </data>
+  <data name="NewEvent">
+    <value>Yeni etkinlik</value>
+  </data>
+  <data name="Date">
+    <value>Tarih</value>
+  </data>
+  <data name="Time">
+    <value>Saat</value>
+  </data>
+  <data name="Duration">
+    <value>Süre</value>
+  </data>
+  <data name="NoDeadline">
+    <value>Son tarih yok</value>
+  </data>
+  <data name="InvalidInput">
+    <value>Girilen tarih, saat ve sayıları kontrol edin</value>
+  </data>
+  <data name="ActiveTasks">
+    <value>Görevler</value>
+  </data>
+  <data name="NoAgenda">
+    <value>Bu gün için planlanan bir şey yok</value>
+  </data>
+  <data name="DueDate">
+    <value>Bitiş tarihi</value>
+  </data>
+  <data name="PriorityLabel">
+    <value>Öncelik</value>
+  </data>
+  <data name="AgentConversation">
+    <value>Konuşma</value>
+  </data>
+  <data name="Send">
+    <value>Gönder</value>
+  </data>
+  <data name="TimeFrom">
+    <value>Kimden</value>
+  </data>
+  <data name="TimeTo">
+    <value>Kime</value>
+  </data>
+  <data name="WeekNavigationHint">
+    <value>Haftayı değiştirmek için kaydırın veya sürükleyin</value>
+  </data>
+  <data name="Attachment">
+    <value>Ek</value>
+  </data>
+  <data name="Attach">
+    <value>Dosya ekle</value>
+  </data>
+  <data name="ChooseDate">
+    <value>Tarih seçin</value>
+  </data>
+  <data name="EditEvent">
+    <value>Etkinliği düzenle</value>
+  </data>
+  <data name="Confirm">
+    <value>Onayla</value>
+  </data>
+  <data name="ConfirmChanges">
+    <value>Bu değişiklikleri uygulasın mı?</value>
+  </data>
+  <data name="ConfirmDeleteEvent">
+    <value>Bu etkinliği silmek istiyor musunuz?</value>
+  </data>
+  <data name="ConfirmDeleteTask">
+    <value>Bu görevi silmek istiyor musunuz?</value>
+  </data>
+  <data name="DragToCreateHint">
+    <value>Etkinlik oluşturmak için boş zamanın üzerine sürükleyin</value>
+  </data>
+  <data name="DaySummaryFormat">
+    <value>Bugün {0} öğe · {1} dk planlandı</value>
+  </data>
+  <data name="Use24HourClock">
+    <value>24 saatlik zamanı kullan</value>
+  </data>
+  <data name="ChooseStartTime">
+    <value>Başlangıç zamanı</value>
+  </data>
+  <data name="ChooseEndTime">
+    <value>Bitiş zamanı</value>
+  </data>
+  <data name="TimePickerHint">
+    <value>5 dakikalık adımlar</value>
+  </data>
+  <data name="TransparencyIntensity">
+    <value>Şeffaflık yoğunluğu</value>
+  </data>
+  <data name="ChooseTime">
+    <value>Zamanı seç</value>
+  </data>
+  <data name="Hours">
+    <value>Saatler</value>
+  </data>
+  <data name="Minutes">
+    <value>Dakikalar</value>
+  </data>
+  <data name="EventTitleRequired">
+    <value>Bir etkinlik başlığı girin</value>
+  </data>
+  <data name="EventDateTimeRequired">
+    <value>Bir tarih, başlangıç zamanı ve bitiş zamanı seçin</value>
+  </data>
+  <data name="EventTimeRangeRequired">
+    <value>Başlangıç ve bitiş zamanı aynı olamaz</value>
+  </data>
+  <data name="EventSaveFailed">
+    <value>Etkinlik kaydedilemedi. Tekrar deneyin.</value>
+  </data>
+  <data name="AttachDialogTitle">
+    <value>Dosya ekle</value>
+  </data>
+  <data name="McpArgumentsPlaceholder">
+    <value>MCP sunucu argümanları</value>
+  </data>
+  <data name="McpToolPlaceholder">
+    <value>MCP araç adı</value>
+  </data>
+  <data name="ScheduledBlock">
+    <value>Planlanmış blok</value>
+  </data>
+  <data name="StartingSoon">
+    <value>Yakında başlıyor</value>
+  </data>
+  <data name="StartsInMinutes">
+    <value>{0} {1} dakika içinde başlıyor.</value>
+  </data>
+  <data name="StartupFailed">
+    <value>DAYDRIVE başlatılamadı</value>
+  </data>
+  <data name="CrashLogSaved">
+    <value>Ayrıntılar uygulama veri klasöründeki daydrive-crash.log dosyasına kaydedildi.</value>
+  </data>
+  <data name="OptionProviderLocal">
+    <value>Yerel model (GGUF)</value>
+  </data>
+  <data name="OptionProviderOpenAi">
+    <value>Özel API</value>
+  </data>
+  <data name="OptionTransportHttp">
+    <value>HTTP sunucusu</value>
+  </data>
+  <data name="OptionTransportStdio">
+    <value>Yerel komut (stdio)</value>
+  </data>
+  <data name="ScrollToAdjust">
+    <value>Ayarlamak için kaydırın</value>
+  </data>
+  <data name="NewTask">
+    <value>Yeni görev</value>
+  </data>
+  <data name="AddTask">
+    <value>Görev ekle</value>
+  </data>
+  <data name="TaskTitle">
+    <value>Ne yapılması gerekiyor?</value>
+  </data>
+  <data name="EmptyPlanTaskHint">
+    <value>Görev veya etkinlik oluştur</value>
+  </data>
+  <data name="LaunchAtStartup">
+    <value>Sistem başlangıcında başlat</value>
+  </data>
+  <data name="AutostartFailed">
+    <value>Sistem başlangıç ayarları değiştirilemedi</value>
+  </data>
+  <data name="PriorityLow">
+    <value>Düşük</value>
+  </data>
+  <data name="PriorityNormal">
+    <value>Normal</value>
+  </data>
+  <data name="PriorityHigh">
+    <value>Yüksek</value>
+  </data>
+  <data name="PriorityUrgent">
+    <value>Acil</value>
+  </data>
+  <data name="PreferredAny">
+    <value>Herhangi bir zaman</value>
+  </data>
+  <data name="PreferredMorning">
+    <value>Sabah</value>
+  </data>
+  <data name="PreferredAfternoon">
+    <value>Öğleden sonra</value>
+  </data>
+  <data name="PreferredEvening">
+    <value>Akşam</value>
+  </data>
+  <data name="Notes">
+    <value>Notlar</value>
+  </data>
+  <data name="NotesPlaceholder">
+    <value>Bağlam veya bir sonraki adım</value>
+  </data>
+  <data name="AdvancedPlanning">
+    <value>Planlama seçenekleri</value>
+  </data>
+  <data name="EarliestStart">
+    <value>Erken başlamayın</value>
+  </data>
+  <data name="AnyDate">
+    <value>Kısıtlama yok</value>
+  </data>
+  <data name="PreferredTime">
+    <value>Tercih edilen zaman</value>
+  </data>
+  <data name="SplitTask">
+    <value>Bloklara bölünmeye izin ver</value>
+  </data>
+  <data name="MinBlock">
+    <value>Minimum blok, min</value>
+  </data>
+  <data name="MaxSplits">
+    <value>Maksimum bloklar</value>
+  </data>
+  <data name="ManageTaskBlock">
+    <value>Görev bloğu</value>
+  </data>
+  <data name="PlannedInterval">
+    <value>Planlanan aralık</value>
+  </data>
+  <data name="CompletedMinutes">
+    <value>Tamamlandı, min</value>
+  </data>
+  <data name="CompleteWork">
+    <value>Tamamla</value>
+  </data>
+  <data name="OpenTask">
+    <value>Açık görev</value>
+  </data>
+  <data name="NotToday">
+    <value>Bugün değil</value>
+  </data>
+  <data name="Unschedule">
+    <value>Programdan çıkar</value>
+  </data>
+  <data name="LockTime">
+    <value>Bu zamanı kilitle</value>
+  </data>
+  <data name="ConfirmTaskBlockChange">
+    <value>Yeni aralık ve blok seçeneklerini kaydet?</value>
+  </data>
+  <data name="ConfirmTaskBlockComplete">
+    <value>Girilen tamamlanma zamanını kaydet?</value>
+  </data>
+  <data name="ConfirmTaskBlockUnschedule">
+    <value>Bu bloğu programdan kaldır? Görev kalacak.</value>
+  </data>
+  <data name="ConfirmTaskBlockNotToday">
+    <value>Bu görevi bu günün programından çıkaralım mı?</value>
+  </data>
+  <data name="TaskBlockMinutesInvalid">
+    <value>1 dakikadan blok süresine kadar girin</value>
+  </data>
+  <data name="TaskBlockMoved">
+    <value>Görev bloğu taşındı ve kilitlendi</value>
+  </data>
+  <data name="TaskBlockUpdated">
+    <value>Blok seçenekleri kaydedildi</value>
+  </data>
+  <data name="TaskBlockUnscheduled">
+    <value>Blok programdan kaldırıldı</value>
+  </data>
+  <data name="TaskBlockDeferred">
+    <value>Görev başka bir güne ertelendi</value>
+  </data>
+  <data name="TaskBlockPartiallyCompleted">
+    <value>Kısmi çalışma kaydedildi; geri kalanı plana dönecek</value>
+  </data>
+  <data name="TaskBlockConflict">
+    <value>Bu zaman aralığı başka bir etkinlik veya blokla çakışıyor</value>
+  </data>
+  <data name="LocalModelIntro">
+    <value>Bir model seçin. DAYDRIVE GGUF ve llama.cpp dosyalarını indirir, ardından her şeyi yalnızca bu cihazda çalıştırır.</value>
+  </data>
+  <data name="LocalModelRoleLite">
+    <value>Hızlı komut çözümleme ve görev yakalama</value>
+  </data>
+  <data name="LocalModelRoleBalanced">
+    <value>Günlük planlama ve asistan — tavsiye edilir</value>
+  </data>
+  <data name="LocalModelRoleSmart">
+    <value>Haftalık analiz ve karmaşık ajan talepleri</value>
+  </data>
+  <data name="Recommended">
+    <value>Tavsiye edilen</value>
+  </data>
+  <data name="LocalEngine">
+    <value>Yerel motor</value>
+  </data>
+  <data name="DownloadModel">
+    <value>İndir</value>
+  </data>
+  <data name="DownloadVisionSupport">
+    <value>Görüş ekle</value>
+  </data>
+  <data name="StartModel">
+    <value>Başlat</value>
+  </data>
+  <data name="StopModel">
+    <value>Durdur</value>
+  </data>
+  <data name="VisionSupport">
+    <value>Görüntü girişi</value>
+  </data>
+  <data name="VisionSupportHint" xml:space="preserve"><value>Modelin ekli resimleri okumasını sağlar. İkinci bir dosyaya – görsel projeksiyon cihazına – ihtiyaç duyar ve bu dosya modelle birlikte indirilir.</value></data>
+  <data name="IdleSleep">
+    <value>Boştayken belleği serbest bırak</value>
+  </data>
+  <data name="IdleFiveMinutes">
+    <value>5 dakikadan sonra</value>
+  </data>
+  <data name="IdleTenMinutes">
+    <value>10 dakikadan sonra</value>
+  </data>
+  <data name="IdleThirtyMinutes">
+    <value>30 dakikadan sonra</value>
+  </data>
+  <data name="IdleNever">
+    <value>Asla otomatik olarak</value>
+  </data>
+  <data name="LocalModelArchitectureHint">
+    <value>AI, plansız görevleri ve sabit olayları salt okunur bağlam olarak alır. Modelin veri tabanına erişimi yoktur ve zamanı asla otomatik olarak ayırmaz.</value>
+  </data>
+  <data name="DownloadingEngine">
+    <value>llama.cpp indiriliyor…</value>
+  </data>
+  <data name="ExtractingEngine">
+    <value>llama.cpp kuruluyor…</value>
+  </data>
+  <data name="DownloadingModel">
+    <value>GGUF modeli indiriliyor…</value>
+  </data>
+  <data name="DownloadingVision">
+    <value>Görüş projeksiyon cihazı indiriliyor…</value>
+  </data>
+  <data name="StartingLocalModel">
+    <value>Model belleğe yükleniyor…</value>
+  </data>
+  <data name="LocalModelRunning">
+    <value>Yerel olarak çalışıyor</value>
+  </data>
+  <data name="LocalModelSleeping">
+    <value>Uyuyor — isteğe bağlı tekrar başlar</value>
+  </data>
+  <data name="LocalModelStopped">
+    <value>Durduruldu — gerektiğinde otomatik olarak başlar</value>
+  </data>
+  <data name="LocalModelNotInstalled">
+    <value>İndirilmeyen</value>
+  </data>
+  <data name="LocalModelInstalled">
+    <value>Yerel model hazır</value>
+  </data>
+  <data name="LocalModelDeleted">
+    <value>Yerel model silindi</value>
+  </data>
+  <data name="LocalModelError">
+    <value>Yerel model hatası</value>
+  </data>
+  <data name="DownloadCancelled">
+    <value>İndirme duraklatıldı; daha sonra devam ettirilebilir</value>
+  </data>
+  <data name="QuickPromptPlan">
+    <value>Günümü planla</value>
+  </data>
+  <data name="QuickPromptToday">
+    <value>Bugün için planlanan nedir?</value>
+  </data>
+  <data name="QuickPromptTask">
+    <value>Bu akşam için bir görev oluştur</value>
+  </data>
+  <data name="SwitchModelConfirmTitle">
+    <value>Modeli Değiştir</value>
+  </data>
+  <data name="SwitchModelConfirmText">
+    <value>Model "{0}" çalışıyor. Bunu durdurup "{1}" ile değiştirmek ister misiniz?</value>
+  </data>
+  <data name="SwitchAndStart">
+    <value>Durdur ve başlat</value>
+  </data>
+  <data name="SwitchOnly">
+    <value>Sadece değiştir</value>
+  </data>
+  <data name="StopAndSwitch">
+    <value>Durdur ve değiştir</value>
+  </data>
+  <data name="KeepRunning">
+    <value>Arka planda tut</value>
+  </data>
+  <data name="SwitchProviderConfirmText">
+    <value>Yerel model "{0}" çalışıyor. {1}'e geçmeden önce durdurulsun mu?</value>
+  </data>
+  <data name="ItemsCountOne">
+    <value>{0} öğe</value>
+  </data>
+  <data name="ItemsCountFew">
+    <value>{0} öğe</value>
+  </data>
+  <data name="ItemsCountMany">
+    <value>{0} öğe</value>
+  </data>
+  <data name="UnscheduledTasks">
+    <value>Programlanmamış</value>
+  </data>
+  <data name="CurrentEvent">
+    <value>Mevcut etkinlik</value>
+  </data>
+  <data name="NextEvent">
+    <value>Sonraki etkinlik</value>
+  </data>
+  <data name="NoEventsTitle">
+    <value>Planlanmış etkinlik yok</value>
+  </data>
+  <data name="NoEventsHint">
+    <value>Zaman ayırmak için bir etkinlik oluştur</value>
+  </data>
+  <data name="NoEventsForDay">
+    <value>Bu gün için planlanmış etkinlik yok</value>
+  </data>
+  <data name="EventDaySummaryFormat">
+    <value>{0} etkinlik · {1} dk dolu</value>
+  </data>
+  <data name="EndingSoon">
+    <value>Yakında sona eriyor</value>
+  </data>
+  <data name="EndsInMinutes">
+    <value>{0} {1} dakikada sona eriyor.</value>
+  </data>
+  <data name="EventCategory" xml:space="preserve">
+    <value>Kategori</value>
+  </data>
+  <data name="EventPriority" xml:space="preserve">
+    <value>Öncelik</value>
+  </data>
+  <data name="EventRepeat" xml:space="preserve">
+    <value>Tekrar</value>
+  </data>
+  <data name="EventCategoryGeneral" xml:space="preserve">
+    <value>Genel</value>
+  </data>
+  <data name="EventCategoryWork" xml:space="preserve">
+    <value>İş</value>
+  </data>
+  <data name="EventCategoryPersonal" xml:space="preserve">
+    <value>Kişisel</value>
+  </data>
+  <data name="EventCategoryStudy" xml:space="preserve">
+    <value>Çalışma</value>
+  </data>
+  <data name="EventCategoryHealth" xml:space="preserve">
+    <value>Sağlık</value>
+  </data>
+  <data name="EventCategorySocial" xml:space="preserve">
+    <value>Sosyal</value>
+  </data>
+  <data name="EventCategoryErrands" xml:space="preserve">
+    <value>İşler</value>
+  </data>
+  <data name="EventCategoryTravel" xml:space="preserve">
+    <value>Yolculuk</value>
+  </data>
+  <data name="EventCategoryRest" xml:space="preserve">
+    <value>Dinlenme</value>
+  </data>
+  <data name="EventPriorityNormal" xml:space="preserve">
+    <value>Normal</value>
+  </data>
+  <data name="EventPriorityHigh" xml:space="preserve">
+    <value>Yüksek</value>
+  </data>
+  <data name="EventPriorityCritical" xml:space="preserve">
+    <value>Kritik</value>
+  </data>
+  <data name="RepeatNever" xml:space="preserve">
+    <value>Tekrar etmez</value>
+  </data>
+  <data name="RepeatDaily" xml:space="preserve">
+    <value>Her gün</value>
+  </data>
+  <data name="RepeatWeekdays" xml:space="preserve">
+    <value>Hafta içi günleri</value>
+  </data>
+  <data name="RepeatWeekly" xml:space="preserve">
+    <value>Her hafta</value>
+  </data>
+  <data name="RepeatMonthly" xml:space="preserve">
+    <value>Her ay</value>
+  </data>
+  <data name="ScopeOccurrence" xml:space="preserve">
+    <value>Sadece bu etkinlik</value>
+  </data>
+  <data name="ScopeFollowing" xml:space="preserve">
+    <value>Bu ve sonraki</value>
+  </data>
+  <data name="ScopeSeries" xml:space="preserve">
+    <value>Tüm seri</value>
+  </data>
+  <data name="DayActions" xml:space="preserve">
+    <value>Gün işlemleri</value>
+  </data>
+  <data name="CopyToTomorrow" xml:space="preserve">
+    <value>Yarına kopyala</value>
+  </data>
+  <data name="CopyToNextWeek" xml:space="preserve">
+    <value>Gelecek haftaya kopyala</value>
+  </data>
+  <data name="Copy" xml:space="preserve">
+    <value>Kopyala</value>
+  </data>
+  <data name="CopyDayConfirmation" xml:space="preserve">
+    <value>Bu programı {0} için kopyalansın mı?</value>
+  </data>
+  <data name="CopyDayCompleted" xml:space="preserve">
+    <value>Kopyalanan etkinlikler: {0}</value>
+  </data>
+  <data name="CopyEventConfirmation" xml:space="preserve">
+    <value>“{0}” öğesini {1} için kopyalansın mı?</value>
+  </data>
+  <data name="ClearDay" xml:space="preserve">
+    <value>Bu günü temizle</value>
+  </data>
+  <data name="CopySchedule" xml:space="preserve">
+    <value>Programı kopyala</value>
+  </data>
+  <data name="DayActionsShort" xml:space="preserve">
+    <value>Gün planı</value>
+  </data>
+  <data name="CopyToDate" xml:space="preserve">
+    <value>Başka bir tarih seç</value>
+  </data>
+  <data name="DayPlanning" xml:space="preserve">
+    <value>Gün planlaması</value>
+  </data>
+  <data name="EventCopied" xml:space="preserve">
+    <value>Etkinlik {0} için kopyalandı</value>
+  </data>
+  <data name="DayPlanningHint" xml:space="preserve">
+    <value>Planlanan etkinlikleri kopyala veya temizle</value>
+  </data>
+  <data name="ClearDayConfirmation" xml:space="preserve">
+    <value>{0} tarihindeki tüm etkinlikler silinsin mi?</value>
+  </data>
+  <data name="CopyEvent" xml:space="preserve">
+    <value>Etkinliği kopyala</value>
+  </data>
+  <data name="ClearDayCompleted" xml:space="preserve">
+    <value>Kaldırılan etkinlikler: {0}</value>
+  </data>
+  <data name="ShiftEarlier" xml:space="preserve">
+    <value>Önce</value>
+  </data>
+  <data name="EventActions" xml:space="preserve">
+    <value>Etkinlik eylemleri</value>
+  </data>
+  <data name="ShiftLater" xml:space="preserve">
+    <value>Sonra</value>
+  </data>
+  <data name="Shift" xml:space="preserve">
+    <value>Kaydır</value>
+  </data>
+  <data name="ShiftDayConfirmation" xml:space="preserve">
+    <value>Tüm etkinlikleri {0} tarihinde {1} kadar mı kaydırmak istiyorsunuz?</value>
+  </data>
+  <data name="ShiftSchedule" xml:space="preserve">
+    <value>Programı kaydır</value>
+  </data>
+  <data name="ShiftDayCompleted" xml:space="preserve">
+    <value>Kaydırılan etkinlikler: {0}</value>
+  </data>
+  <data name="ShiftDayAmountRequired" xml:space="preserve">
+    <value>Bir kaydırma süresi girin</value>
+  </data>
+  <data name="AiActionCopyDay" xml:space="preserve">
+    <value>Gün programını kopyala</value>
+  </data>
+  <data name="AiActionDeleteEvent" xml:space="preserve">
+    <value>Etkinliği sil</value>
+  </data>
+  <data name="AiActionUpdateEvent" xml:space="preserve">
+    <value>Etkinliği güncelle</value>
+  </data>
+  <data name="AiActionTargetMissing" xml:space="preserve">
+    <value>İstenen etkinlik veya görev artık mevcut değil.</value>
+  </data>
+  <data name="AiActionShiftDay" xml:space="preserve">
+    <value>Gün programını kaydır</value>
+  </data>
+  <data name="AiActionInvalid" xml:space="preserve">
+    <value>Asistan eylemi için gerekli bilgiler eksik.</value>
+  </data>
+  <data name="ShareExternalContextHint" xml:space="preserve">
+    <value>API veya MCP sağlayıcılarının son konuşma ve takvim detaylarını almasına izin verir. Varsayılan olarak kapalıdır.</value>
+  </data>
+  <data name="AiActionCreateTask" xml:space="preserve">
+    <value>Programlanmamış görev oluştur</value>
+  </data>
+  <data name="AiAccessConfirmAll" xml:space="preserve">
+    <value>Her eylemi onayla</value>
+  </data>
+  <data name="AiActionUpdateTask" xml:space="preserve">
+    <value>Programlanmamış görevi güncelle</value>
+  </data>
+  <data name="AiAccessFull" xml:space="preserve">
+    <value>Tam program erişimi</value>
+  </data>
+  <data name="AiAccessAutoSafe" xml:space="preserve">
+    <value>Güvenli eylemleri otomatik uygula</value>
+  </data>
+  <data name="AiActionFailed" xml:space="preserve">
+    <value>Uygulanamadı</value>
+  </data>
+  <data name="AiActionApplied" xml:space="preserve">
+    <value>Uygulandı</value>
+  </data>
+  <data name="AiActionCreateEvent" xml:space="preserve">
+    <value>Etkinlik oluştur</value>
+  </data>
+  <data name="AiActionDismissed" xml:space="preserve">
+    <value>Reddedildi</value>
+  </data>
+  <data name="ShareExternalContext" xml:space="preserve">
+    <value>Takvim bağlamını harici AI ile paylaş</value>
+  </data>
+  <data name="AiAccessHint" xml:space="preserve"><value>Yapay zekâya izin verilen değişiklikler.</value></data>
+  <data name="AiActionDeleteTask" xml:space="preserve">
+    <value>Plansız görevi sil</value>
+  </data>
+  <data name="AiAccess" xml:space="preserve">
+    <value>AI izinleri</value>
+  </data>
+  <data name="ClearConversation" xml:space="preserve">
+    <value>Sohbeti temizle</value>
+  </data>
+  <data name="Dismiss" xml:space="preserve">
+    <value>Reddet</value>
+  </data>
+  <data name="AiActionReady" xml:space="preserve">
+    <value>Eylem inceleme için hazır</value>
+  </data>
+  <data name="AiAccessConfirmAllHint" xml:space="preserve">
+    <value>Her değişikliği onayla.</value>
+  </data>
+  <data name="AiAccessAutoSafeHint" xml:space="preserve">
+    <value>Silmeleri ve tüm gün değişikliklerini onayla.</value>
+  </data>
+  <data name="AiAccessFullHint" xml:space="preserve">
+    <value>Tüm değişiklikleri onay almadan uygula.</value>
+  </data>
+  <data name="AiActionCopyEvent" xml:space="preserve">
+    <value>Etkinliği kopyala</value>
+  </data>
+  <data name="ChatNewChat" xml:space="preserve">
+    <value>Yeni sohbet</value>
+  </data>
+  <data name="ChatExpand" xml:space="preserve">
+    <value>Geniş görünümü aç</value>
+  </data>
+  <data name="ChatCollapse" xml:space="preserve">
+    <value>Kompakt görünüme dön</value>
+  </data>
+  <data name="ChatHistory" xml:space="preserve">
+    <value>Geçmiş</value>
+  </data>
+  <data name="ChatSearchPlaceholder" xml:space="preserve">
+    <value>Konuşmaları ara</value>
+  </data>
+  <data name="ChatNoConversations" xml:space="preserve">
+    <value>Henüz kaydedilmiş konuşma yok</value>
+  </data>
+  <data name="ChatNoSearchResults" xml:space="preserve">
+    <value>Bu aramaya uyan bir şey yok</value>
+  </data>
+  <data name="ChatPin" xml:space="preserve">
+    <value>Sabitle</value>
+  </data>
+  <data name="ChatUnpin" xml:space="preserve">
+    <value>Sabitlemeyi kaldır</value>
+  </data>
+  <data name="ChatDeleteConversation" xml:space="preserve">
+    <value>Konuşmayı sil</value>
+  </data>
+  <data name="ChatDeleteConfirm" xml:space="preserve">
+    <value>Bu konuşmayı kalıcı olarak silmek istiyor musunuz?</value>
+  </data>
+  <data name="ChatGroupToday" xml:space="preserve">
+    <value>Bugün</value>
+  </data>
+  <data name="ChatGroupYesterday" xml:space="preserve">
+    <value>Dün</value>
+  </data>
+  <data name="ChatGroupWeek" xml:space="preserve">
+    <value>Son 7 gün</value>
+  </data>
+  <data name="ChatGroupOlder" xml:space="preserve">
+    <value>Daha önce</value>
+  </data>
+  <data name="ChatMessageCount" xml:space="preserve">
+    <value>{0} mesaj</value>
+  </data>
+  <data name="ChatCopy" xml:space="preserve">
+    <value>Kopyala</value>
+  </data>
+  <data name="ChatCopied" xml:space="preserve">
+    <value>Kopyalandı</value>
+  </data>
+  <data name="ChatRetry" xml:space="preserve">
+    <value>Tekrar sor</value>
+  </data>
+  <data name="ChatStop" xml:space="preserve">
+    <value>Durdur</value>
+  </data>
+  <data name="ChatToolActivity" xml:space="preserve">
+    <value>Yaptıklarım</value>
+  </data>
+  <data name="ChatToolApplied" xml:space="preserve">
+    <value>uygulandı</value>
+  </data>
+  <data name="ChatToolProposed" xml:space="preserve">
+    <value>önerildi</value>
+  </data>
+  <data name="ChatToolFailed" xml:space="preserve">
+    <value>başarısız oldu</value>
+  </data>
+  <data name="StageConnecting" xml:space="preserve">
+    <value>Bağlanıyor…</value>
+  </data>
+  <data name="StageThinking" xml:space="preserve">
+    <value>Düşünüyor…</value>
+  </data>
+  <data name="StageWriting" xml:space="preserve">
+    <value>Yazıyor…</value>
+  </data>
+  <data name="StageToolSchedule" xml:space="preserve">
+    <value>Takviminiz okunuyor…</value>
+  </data>
+  <data name="StageToolTasks" xml:space="preserve">
+    <value>Görevleriniz okunuyor…</value>
+  </data>
+  <data name="StageToolSlots" xml:space="preserve">
+    <value>Boş zaman aranıyor…</value>
+  </data>
+  <data name="StageToolAnalytics" xml:space="preserve">
+    <value>İstatistikleriniz okunuyor…</value>
+  </data>
+  <data name="StageToolMemory" xml:space="preserve">
+    <value>Bellek güncelleniyor…</value>
+  </data>
+  <data name="StageToolWrite" xml:space="preserve">
+    <value>Değişikliğe hazırlanılıyor…</value>
+  </data>
+  <data name="StageToolExternal" xml:space="preserve">
+    <value>Bir MCP aracı çağrılıyor…</value>
+  </data>
+  <data name="ChatMemory" xml:space="preserve">
+    <value>Bellek</value>
+  </data>
+  <data name="ChatMemoryHint" xml:space="preserve">
+    <value>Asistanın konuşmalar arasında tuttuğu bilgiler. Sadece bu bilgisayarda saklanır.</value>
+  </data>
+  <data name="ChatMemoryEmpty" xml:space="preserve">
+    <value>Henüz kaydedilen bir şey yok. Asistan, konuşurken not ekler.</value>
+  </data>
+  <data name="ChatMemoryAdd" xml:space="preserve">
+    <value>Not ekle</value>
+  </data>
+  <data name="ChatMemoryKeyPlaceholder" xml:space="preserve">
+    <value>Kısa anahtar, örn. derin-çalışma-penceresi</value>
+  </data>
+  <data name="ChatMemoryValuePlaceholder" xml:space="preserve">
+    <value>Ne hatırlanmalı?</value>
+  </data>
+  <data name="ChatMemoryClear" xml:space="preserve">
+    <value>Her şeyi unut</value>
+  </data>
+  <data name="ChatMemoryClearConfirm" xml:space="preserve">
+    <value>Kaydedilmiş tüm notlar silinsin mi?</value>
+  </data>
+  <data name="ChatMemoryFromAssistant" xml:space="preserve">
+    <value>asistan tarafından kaydedildi</value>
+  </data>
+  <data name="ChatMemoryFromUser" xml:space="preserve">
+    <value>sizin tarafınızdan eklendi</value>
+  </data>
+  <data name="ChatSuggestions" xml:space="preserve">
+    <value>Sormayı deneyin</value>
+  </data>
+  <data name="ChatIntroTitle" xml:space="preserve">
+    <value>Nereden başlayalım?</value>
+  </data>
+  <data name="ChatComposerHint" xml:space="preserve">
+    <value>Enter gönderir · Shift+Enter yeni satır</value>
+  </data>
+  <data name="SuggestPlanTomorrow" xml:space="preserve">
+    <value>Yarın için zaten rezerve edilmiş olanlara göre plan yap</value>
+  </data>
+  <data name="SuggestFreeTime" xml:space="preserve">
+    <value>Bu hafta iki saat boş zamanım nerede?</value>
+  </data>
+  <data name="SuggestOverdue" xml:space="preserve">
+    <value>Gecikmiş olan nedir ve neyi bırakmalıyım?</value>
+  </data>
+  <data name="SuggestBalance" xml:space="preserve">
+    <value>Haftam dengeli mi?</value>
+  </data>
+  <data name="SuggestBusyDay" xml:space="preserve">
+    <value>Bugün dolu görünüyor — neyi erteleyebilirim?</value>
+  </data>
+  <data name="SuggestEmptyDay" xml:space="preserve">
+    <value>Hiçbir şey planlanmadı — bana günü şekillendirmemde yardımcı ol</value>
+  </data>
+  <data name="SuggestFollowUp" xml:space="preserve">
+    <value>Devam et: {0}</value>
+  </data>
+  <data name="SuggestReview" xml:space="preserve">
+    <value>Geçen haftayı gözden geçir ve ne değişti söyle</value>
+  </data>
+  <data name="AiMemoryEnabled" xml:space="preserve">
+    <value>Asistanın benimle ilgili bilgileri hatırlamasına izin ver</value>
+  </data>
+  <data name="AiMemoryHint" xml:space="preserve">
+    <value>Notlar yerel veritabanında tutulur ve bağlam paylaşımı açık olduğunda yalnızca harici modele gönderilir.</value>
+  </data>
+  <data name="McpToolsEnabled" xml:space="preserve">
+    <value>Seçilen modele MCP sunucusunun araçlarını ver</value>
+  </data>
+  <data name="McpToolsHint" xml:space="preserve">
+    <value>Bu, MCP kullanmanın modern yoludur: model mantık yürütmeye devam eder ve sadece ek yetenekler kazanır. Bunun yerine MCP’yi sağlayıcı olarak seçmek, sunucunun sadece tek bir köprü aracı üzerinden kendi başına yanıt vermesini sağlar.</value>
+  </data>
+  <data name="ShowTools" xml:space="preserve">
+    <value>Mevcut araçları göster</value>
+  </data>
+  <data name="ToolsAvailable" xml:space="preserve">
+    <value>Modelin çağırabileceği araçlar</value>
+  </data>
+  <data name="ToolBuiltIn" xml:space="preserve">
+    <value>Dahili</value>
+  </data>
+  <data name="Analytics" xml:space="preserve">
+    <value>Analitik</value>
+  </data>
+  <data name="AnalyticsSubtitle" xml:space="preserve">
+    <value>Kendi geçmişinize dayanan anlaşılır veriler</value>
+  </data>
+  <data name="RangeWeek" xml:space="preserve">
+    <value>Hafta</value>
+  </data>
+  <data name="RangeMonth" xml:space="preserve">
+    <value>Ay</value>
+  </data>
+  <data name="RangeQuarter" xml:space="preserve">
+    <value>3 ay</value>
+  </data>
+  <data name="MetricScheduled" xml:space="preserve">
+    <value>Planlandı</value>
+  </data>
+  <data name="MetricFocus" xml:space="preserve">
+    <value>Odak zamanı</value>
+  </data>
+  <data name="MetricCompletion" xml:space="preserve">
+    <value>Tamamlama</value>
+  </data>
+  <data name="MetricAccuracy" xml:space="preserve">
+    <value>Plan doğruluğu</value>
+  </data>
+  <data name="MetricOnTime" xml:space="preserve">
+    <value>Zamanında başlandı</value>
+  </data>
+  <data name="MetricLoad" xml:space="preserve">
+    <value>Yük</value>
+  </data>
+  <data name="MetricStreak" xml:space="preserve">
+    <value>Aktif zincir</value>
+  </data>
+  <data name="MetricOverdue" xml:space="preserve">
+    <value>Gecikmiş görevler</value>
+  </data>
+  <data name="MetricDays" xml:space="preserve">
+    <value>{0} g</value>
+  </data>
+  <data name="MetricHours" xml:space="preserve">
+    <value>{0:0.#} s</value>
+  </data>
+  <data name="MetricNoSample" xml:space="preserve">
+    <value>yeterli veri yok</value>
+  </data>
+  <data name="MetricVsPrevious" xml:space="preserve">
+    <value>önceki dönemle karşılaştır</value>
+  </data>
+  <data name="ChartDailyLoad" xml:space="preserve">
+    <value>Gün gün</value>
+  </data>
+  <data name="ChartCategories" xml:space="preserve">
+    <value>Zaman nereye gidiyor</value>
+  </data>
+  <data name="ChartHours" xml:space="preserve">
+    <value>Günün saatleri</value>
+  </data>
+  <data name="ChartWeekdays" xml:space="preserve">
+    <value>Hafta gününe göre</value>
+  </data>
+  <data name="ChartScheduledLegend" xml:space="preserve">
+    <value>Planlandı</value>
+  </data>
+  <data name="ChartCompletedLegend" xml:space="preserve">
+    <value>Tamamlandı</value>
+  </data>
+  <data name="AnalyticsEmpty" xml:space="preserve">
+    <value>Henüz yeterli geçmiş yok. Birkaç gün planlayın ve bazı oturumları tamamlayın — rakamlar kendiliğinden görünecektir.</value>
+  </data>
+  <data name="AnalyticsInsights" xml:space="preserve">
+    <value>Verilerin gösterdikleri</value>
+  </data>
+  <data name="AnalyticsAskAi" xml:space="preserve">
+    <value>Bunu asistan ile tartışın</value>
+  </data>
+  <data name="AnalyticsAskAiPrompt" xml:space="preserve">
+    <value>Son {0} günün istatistiklerine bakın ve neyi değiştirmem gerektiğini söyleyin.</value>
+  </data>
+  <data name="AnalyticsAskAiPeriodPrompt" xml:space="preserve">
+    <value>{0} ile {1} arasındaki istatistiklerime bakın ve neyi değiştirmem gerektiğini söyleyin.</value>
+  </data>
+  <data name="InsightSample" xml:space="preserve">
+    <value>{0} gözlem · güven % {1}</value>
+  </data>
+  <data name="InsightEstimationBiasOver" xml:space="preserve">
+    <value>Oturumlar planlanandan ortalama {0}% daha uzun sürüyor</value>
+  </data>
+  <data name="InsightEstimationBiasUnder" xml:space="preserve">
+    <value>Oturumlar planlanandan ortalama {0}% daha erken bitiyor</value>
+  </data>
+  <data name="InsightStrongTimeOfDay" xml:space="preserve">
+    <value>{0}, bitirdiğiniz işin % {1}'ini taşıyor</value>
+  </data>
+  <data name="InsightScheduleFriction" xml:space="preserve">
+    <value>{0} bloktan {1}'i taşınmak zorunda kaldı</value>
+  </data>
+  <data name="InsightStartDelay" xml:space="preserve">
+    <value>{0} oturumdan {1}'i atlandı</value>
+  </data>
+  <data name="InsightOverload" xml:space="preserve">
+    <value>Takvim uyanık zamanınızın % {0}'ini alıyor</value>
+  </data>
+  <data name="InsightUnderuse" xml:space="preserve">
+    <value>Kullanılabilir zamanınızın sadece {0}%'i planlanmış</value>
+  </data>
+  <data name="InsightCategoryDominance" xml:space="preserve">
+    <value>{0}, planlanan zamanınızın {1}%'ini alıyor</value>
+  </data>
+  <data name="InsightConsistency" xml:space="preserve">
+    <value>Yükünüz günde yaklaşık {0} saat civarında dengede kalıyor</value>
+  </data>
+  <data name="PartOfDayMorning" xml:space="preserve">
+    <value>Sabah</value>
+  </data>
+  <data name="PartOfDayAfternoon" xml:space="preserve">
+    <value>Öğleden sonra</value>
+  </data>
+  <data name="PartOfDayEvening" xml:space="preserve">
+    <value>Akşam</value>
+  </data>
+  <data name="CategoryFocus" xml:space="preserve">
+    <value>Odak</value>
+  </data>
+  <data name="NowLabel" xml:space="preserve">
+    <value>Şimdi</value>
+  </data>
+  <data name="StartsIn" xml:space="preserve">
+    <value>{0} sonra</value>
+  </data>
+  <data name="EndsIn" xml:space="preserve">
+    <value>{0} kaldı</value>
+  </data>
+  <data name="DurationHoursMinutes" xml:space="preserve">
+    <value>{0} sa {1} dk</value>
+  </data>
+  <data name="DurationMinutes" xml:space="preserve">
+    <value>{0} dk</value>
+  </data>
+  <data name="OverdueBadge" xml:space="preserve">
+    <value>gecikmiş</value>
+  </data>
+  <data name="TodayBadge" xml:space="preserve">
+    <value>bugün</value>
+  </data>
+  <data name="TomorrowBadge" xml:space="preserve">
+    <value>yarın</value>
+  </data>
+  <data name="DayLoadLabel" xml:space="preserve">
+    <value>{0} meşgul</value>
+  </data>
+  <data name="ChatToolRead" xml:space="preserve">
+    <value>okunmuş</value>
+  </data>
+  <data name="MetricPeakHour" xml:space="preserve">
+    <value>Yoğun saat</value>
+  </data>
+  <data name="MemoryCategoryGeneral" xml:space="preserve">
+    <value>Genel</value>
+  </data>
+  <data name="MemoryCategoryPreference" xml:space="preserve">
+    <value>Tercih</value>
+  </data>
+  <data name="MemoryCategoryRoutine" xml:space="preserve">
+    <value>Rutın</value>
+  </data>
+  <data name="MemoryCategoryConstraint" xml:space="preserve">
+    <value>Kısıtlama</value>
+  </data>
+  <data name="MemoryCategoryGoal" xml:space="preserve">
+    <value>Hedef</value>
+  </data>
+  <data name="MemoryCategoryContext" xml:space="preserve">
+    <value>Bağlam</value>
+  </data>
+  <data name="LocalModelRoleGeneral" xml:space="preserve">
+    <value>Genel amaçlı ajan</value>
+  </data>
+  <data name="LocalModelRoleReasoning" xml:space="preserve">
+    <value>Mantık yürütme ve hızlı cevaplar</value>
+  </data>
+  <data name="LocalModelRoleToolUse" xml:space="preserve">
+    <value>Ayrıştırma ve araç kullanımı</value>
+  </data>
+  <data name="LocalModelRoleCustom" xml:space="preserve">
+    <value>Kendi GGUF dosyanız</value>
+  </data>
+  <data name="ExperimentalBadge" xml:space="preserve">
+    <value>gelişmiş</value>
+  </data>
+  <data name="CustomModelTitle" xml:space="preserve">
+    <value>Kendi modeliniz</value>
+  </data>
+  <data name="CustomModelHint" xml:space="preserve"><value>Diskteki bir GGUF dosyasını işaretleyin ve olduğu gibi kullanılır: hiçbir şey indirilmez, hiçbir şey kopyalanmaz. İki ayrı dosya söz konusu olabilir ve değiştirilemezler.</value></data>
+  <data name="CustomModelBadge" xml:space="preserve">
+    <value>özel</value>
+  </data>
+  <data name="CustomModelNotChosen" xml:space="preserve">
+    <value>Dosya seçilmedi</value>
+  </data>
+  <data name="PickModelFile" xml:space="preserve">
+    <value>GGUF seç</value>
+  </data>
+  <data name="PickProjectorFile" xml:space="preserve">
+    <value>Projektör seç</value>
+  </data>
+  <data name="ClearCustomModel" xml:space="preserve">
+    <value>Kaldır</value>
+  </data>
+  <data name="CustomModelDialogTitle" xml:space="preserve">
+    <value>Bir GGUF model dosyası seç</value>
+  </data>
+  <data name="ModelParameters" xml:space="preserve">
+    <value>Model parametreleri</value>
+  </data>
+  <data name="ParamOff" xml:space="preserve">
+    <value>kapalı</value>
+  </data>
+  <data name="ParamMinutes" xml:space="preserve">
+    <value>{0} dk</value>
+  </data>
+  <data name="ParamTemperature" xml:space="preserve">
+    <value>Sıcaklık</value>
+  </data>
+  <data name="ParamTemperatureHint" xml:space="preserve"><value>Modelin kelime seçimlerini ne kadar değiştirdiği. Düşük seviyede tarihler, saatler ve başlıklar kelimesi kelimesine tutulur, bu da planlama için gereklidir; yüksek seviyede ise ifadesi daha canlı ve daha az kesin olur. 0.3 varsayılandır.</value></data>
+  <data name="ParamMaxTokens" xml:space="preserve">
+    <value>Yanıt sınırı</value>
+  </data>
+  <data name="ParamMaxTokensHint" xml:space="preserve"><value>En uzun tek yanıt, token cinsinden – yaklaşık olarak her token üçte bir kelimeye eşittir. Çok düşükse uzun bir plan cümle ortasında kesilir; çok yüksekse model gerçekte o kadar yazmadıkça bir maliyeti yoktur. 4000, bir günlük plan için uygundur.</value></data>
+  <data name="ParamTopP" xml:space="preserve">
+    <value>Top-p</value>
+  </data>
+  <data name="ParamTopPHint" xml:space="preserve"><value>Aynı şey için ikinci, daha kaba bir sınır: 1.00’ın altında model yalnızca en olası kelimelerinden seçim yapabilir. 1.00 olarak bırakın ve bunun yerine sıcaklığı kullanın – 1.00’te isteğin tamamen dışında bırakılır.</value></data>
+  <data name="ParamToolIterations" xml:space="preserve">
+    <value>Araç adımları</value>
+  </data>
+  <data name="ParamToolIterationsHint" xml:space="preserve"><value>Asistanın bir şeye bakıp sonuç çıkarıp yeniden düşünmek zorunda kalmadan cevap vermeden önce kaç kez bu işlemi yapabileceği. Her adım bir tur gidip gelmeyi ifade eder. Düşük değer daha hızlıdır fakat katmanlı işlerde başarısız olur; 12 bir haftayı baştan sona planlamayı kapsar.</value></data>
+  <data name="ParamHistory" xml:space="preserve">
+    <value>Geçmiş derinliği</value>
+  </data>
+  <data name="ParamHistoryHint" xml:space="preserve"><value>Asistanın konuyu hatırlaması için kaç önceki mesajın tekrar gönderileceği. Bunun öncesi, konuşma içerisinde unutulur. Daha fazla bağlam, her mesajda biraz zaman ve token maliyeti getirir.</value></data>
+  <data name="ParamTimeout" xml:space="preserve">
+    <value>İstek zaman aşımı</value>
+  </data>
+  <data name="ParamTimeoutHint" xml:space="preserve"><value>Bir cevabı beklemek için ne kadar süre bekleyeceği, sonra vazgeçileceği. Bu bir güvenlik ağıdır, hız ayarı değildir – artırmak hiçbir şeyi yavaşlatmaz, azaltmak ise sadece yavaş cevabı hiç cevapsız bırakır.</value></data>
+  <data name="ParamExtraInstructions" xml:space="preserve">
+    <value>Ek talimatlar</value>
+  </data>
+  <data name="ParamExtraInstructionsPlaceholder" xml:space="preserve"><value>Örneğin: kısa cevap verin; asla 10:00'dan önce bir şey ayırtmayın; derin çalışmayı 'odak' olarak adlandırın.</value></data>
+  <data name="ResetParameters" xml:space="preserve">
+    <value>Varsayılana sıfırla</value>
+  </data>
+  <data name="LocalRuntimeSection" xml:space="preserve">
+    <value>Yerel motor</value>
+  </data>
+  <data name="ParamContext" xml:space="preserve">
+    <value>Bağlam penceresi</value>
+  </data>
+  <data name="ParamContextHint" xml:space="preserve">
+    <value>Llama-server'ın hafızada tuttuğu tokenler. Daha küçük olan daha hızlı ve hafiftir.</value>
+  </data>
+  <data name="ParamThreads" xml:space="preserve">
+    <value>İş parçacıkları</value>
+  </data>
+  <data name="ParamThreadsHint" xml:space="preserve">
+    <value>0, llama.cpp'nin karar vermesini sağlar. Fiziksel çekirdek sayısını ayarlamak genellikle daha hızlıdır.</value>
+  </data>
+  <data name="HideTools" xml:space="preserve">
+    <value>Gizle</value>
+  </data>
+  <data name="TrackSection" xml:space="preserve">
+    <value>Nasıl gitti?</value>
+  </data>
+  <data name="TrackStart" xml:space="preserve">
+    <value>Başlat</value>
+  </data>
+  <data name="TrackDone" xml:space="preserve">
+    <value>Tamamlandı</value>
+  </data>
+  <data name="TrackPartial" xml:space="preserve">
+    <value>Kısmen</value>
+  </data>
+  <data name="TrackSkip" xml:space="preserve">
+    <value>Atlandı</value>
+  </data>
+  <data name="TrackUndo" xml:space="preserve">
+    <value>Geri al</value>
+  </data>
+  <data name="TrackedStarted" xml:space="preserve">
+    <value>başlandı {0}</value>
+  </data>
+  <data name="TrackedDone" xml:space="preserve">
+    <value>tamamlandı · {0}</value>
+  </data>
+  <data name="TrackedPartial" xml:space="preserve">
+    <value>kısmen · {0}</value>
+  </data>
+  <data name="TrackedSkipped" xml:space="preserve">
+    <value>atlandı</value>
+  </data>
+  <data name="TrackHint" xml:space="preserve">
+    <value>Tamamlanma, plan doğruluğu ve zamanında başlama oranlarını analizlerde hesaplamak için etkinlikleri işaretleyin.</value>
+  </data>
+  <data name="PeekNothingToday" xml:space="preserve">
+    <value>Planlanmış bir şey yok</value>
+  </data>
+  <data name="PeekOpen" xml:space="preserve">
+    <value>DAYDRIVE’ı aç</value>
+  </data>
+  <data name="PeekBusyToday" xml:space="preserve">
+    <value>Bugün {0}</value>
+  </data>
+  <data name="PeekOverdue" xml:space="preserve">
+    <value>Gecikmiş {0}</value>
+  </data>
+  <data name="DurationLabelShort" xml:space="preserve">
+    <value>Dakikalar</value>
+  </data>
+  <data name="FinishedEvent" xml:space="preserve">
+    <value>Az önce tamamlandı</value>
+  </data>
+  <data name="SettingsTabAssistant" xml:space="preserve">
+    <value>AI bağlantıları</value>
+  </data>
+  <data name="SettingsTabModels" xml:space="preserve">
+    <value>Yerel AI</value>
+  </data>
+  <data name="VisualPalette" xml:space="preserve">
+    <value>Görsel palet</value>
+  </data>
+  <data name="VisualPaletteHint" xml:space="preserve">
+    <value>Grafikler, kategoriler ve öncelik işaretlerinde kullanılan renkleri kontrol eder.</value>
+  </data>
+  <data name="PaletteVibrant" xml:space="preserve">
+    <value>Canlı</value>
+  </data>
+  <data name="PaletteAccent" xml:space="preserve">
+    <value>Vurgu tonları</value>
+  </data>
+  <data name="PaletteMonochrome" xml:space="preserve">
+    <value>Tek renkli</value>
+  </data>
+  <data name="PalettePastel" xml:space="preserve">
+    <value>Pastel</value>
+  </data>
+  <data name="PaletteEarth" xml:space="preserve">
+    <value>Toprak</value>
+  </data>
+  <data name="PaletteNeon" xml:space="preserve">
+    <value>Neon</value>
+  </data>
+  <data name="PaletteColorBlind" xml:space="preserve">
+    <value>Erişilebilir</value>
+  </data>
+  <data name="RamLabel" xml:space="preserve">
+    <value>RAM</value>
+  </data>
+  <data name="CpuLabel" xml:space="preserve">
+    <value>CPU</value>
+  </data>
+  <data name="MetricPercentagePoints" xml:space="preserve">
+    <value>{0:0} pp</value>
+  </data>
+  <data name="InterfaceFont" xml:space="preserve"><value>Arayüz yazı tipi</value></data>
+  <data name="InterfaceFontHint" xml:space="preserve"><value>Paketlenmiş Kiril yazı tiplerinden birini seçin veya kendi TTF veya OTF dosyanızı ekleyin.</value></data>
+  <data name="FontPreview" xml:space="preserve"><value>İı Aa 0123 · Sakin odaklanma</value></data>
+  <data name="AddCustomFont" xml:space="preserve"><value>Özel yazı tipi ekle</value></data>
+  <data name="FontPickerTitle" xml:space="preserve"><value>Bir yazı tipi dosyası seçin</value></data>
+  <data name="FontAdded" xml:space="preserve"><value>“{0}” yazı tipi eklendi.</value></data>
+  <data name="FontInvalid" xml:space="preserve"><value>Bu yazı tipi dosyası okunamadı.</value></data>
+  <data name="CustomFontLabel" xml:space="preserve"><value>{0} · özel</value></data>
+  <data name="FontSystem" xml:space="preserve"><value>Sistem</value></data>
+  <data name="ActivityTimer" xml:space="preserve"><value>Aktivite zamanlayıcısı</value></data>
+  <data name="AiConnectionIntro" xml:space="preserve"><value>Yardımcıya kimlerin cevap vereceğini seçin: bu cihazdaki bir model, uyumlu bir API veya bir MCP sunucusu.</value></data>
+  <data name="LocalAiTitle" xml:space="preserve"><value>Yerel AI</value></data>
+  <data name="LocalAiConnectionHint" xml:space="preserve"><value>Model bu cihazda çalışır. İndirmeler, dosyalar ve yerel motor Yerel AI’da yönetilir.</value></data>
+  <data name="OpenLocalAi" xml:space="preserve"><value>Aç</value></data>
+  <data name="ApiConnectionTitle" xml:space="preserve"><value>API bağlantısı</value></data>
+  <data name="ApiConnectionHint" xml:space="preserve"><value>OpenAI uyumlu bir HTTP API bağlayın. Anahtar bu cihazda şifrelenir.</value></data>
+  <data name="McpConnectionTitle" xml:space="preserve"><value>MCP sunucusu</value></data>
+  <data name="McpConnectionHint" xml:space="preserve"><value>Sunucunun kendisi bir köprü aracı üzerinden yanıt verdiğinde sağlayıcı olarak MCP’yi kullanın.</value></data>
+  <data name="McpTransport" xml:space="preserve"><value>Taşıma</value></data>
+  <data name="McpCommandLabel" xml:space="preserve"><value>Sunucu komutu</value></data>
+  <data name="McpToolLabel" xml:space="preserve"><value>Köprü aracı</value></data>
+  <data name="AdvancedSettings" xml:space="preserve"><value>Gelişmiş</value></data>
+  <data name="AdvancedSettingsHint" xml:space="preserve"><value>Modelin nasıl yazdığı, kendi başına ne kadar ilerleyebileceği ve her zaman aklında bulundurması gerekenler.</value></data>
+  <data name="TrackEventTooltip" xml:space="preserve"><value>Bu olayda ne olduğunu kaydet</value></data>
+  <data name="TrackPartialTooltip" xml:space="preserve"><value>Kısmen tamamlandı — gerçekte ne kadar sürdüğüne sen karar ver</value></data>
+  <data name="UnmarkedEvents" xml:space="preserve"><value>{0} işaretlenmemiş</value></data>
+  <data name="PeekOpenPanel" xml:space="preserve"><value>Paneli aç</value></data>
+  <data name="AskAssistant" xml:space="preserve"><value>Asistanı sor</value></data>
+  <data name="AiProviderLocalSummary" xml:space="preserve"><value>Model bu bilgisayarda çalışıyor. Cihazdan hiçbir şey çıkmıyor ve motor aşağıdan indiriliyor ve yönetiliyor.</value></data>
+  <data name="AiProviderApiSummary" xml:space="preserve"><value>Ollama da dahil olmak üzere OpenAI uyumlu herhangi bir uç nokta. Programın ancak aşağıda izin verdiğinde gönderilir.</value></data>
+  <data name="AiProviderMcpSummary" xml:space="preserve"><value>Bir MCP sunucusu tek bir köprü aracı üzerinden yanıt verir. Görseller bu şekilde gönderilemez.</value></data>
+  <data name="AttachImage" xml:space="preserve"><value>Görsel…</value></data>
+  <data name="AttachDocument" xml:space="preserve"><value>Belge…</value></data>
+  <data name="AttachImagesFilter" xml:space="preserve"><value>Görseller</value></data>
+  <data name="AttachDocumentsFilter" xml:space="preserve"><value>Belgeler</value></data>
+  <data name="AttachUnsupported" xml:space="preserve"><value>Bu format okunamıyor. Görseller: PNG, JPEG, WebP, BMP, GIF. Belgeler: PDF, DOCX ve metin dosyaları.</value></data>
+  <data name="AttachTooLarge" xml:space="preserve"><value>Bu dosya {0} MB'dan büyük ve eklenemez.</value></data>
+  <data name="AttachImageNotSupported" xml:space="preserve"><value>Mevcut motor görselleri okuyamıyor. Sağlayıcıyı değiştirin veya yerel model için görsel girişini açın.</value></data>
+  <data name="SettingsTabData" xml:space="preserve"><value>Veri ve senkronizasyon</value></data>
+  <data name="SettingsTabAbout" xml:space="preserve"><value>Hakkında</value></data>
+  <data name="CloudSyncTitle" xml:space="preserve"><value>Bulut senkronizasyonu</value></data>
+  <data name="CloudSyncIntro" xml:space="preserve"><value>Verilerinizin bir kopyasını diğer bilgisayarlarınızın alabileceği bir yerde tutar. Görevler, etkinlikler, ilerleme, asistan sohbetleri ve belleği senkronize edilir; ayarlar her bilgisayarda ayrı kalır.</value></data>
+  <data name="CloudDestination" xml:space="preserve"><value>Hedef</value></data>
+  <data name="CloudProviderOff" xml:space="preserve"><value>Kapalı</value></data>
+  <data name="CloudProviderFolder" xml:space="preserve"><value>Senkronize edilen klasör</value></data>
+  <data name="CloudFolderHint" xml:space="preserve"><value>Zaten senkronize edilen Google Drive, OneDrive veya Dropbox istemcinizdeki bir klasöre işaret edin. Burada herhangi bir hesap veya anahtar gerekmez.</value></data>
+  <data name="CloudFolderPlaceholder" xml:space="preserve"><value>C:\Users\you\Google Drive</value></data>
+  <data name="CloudFolderDialogTitle" xml:space="preserve"><value>Senkronize edilmiş klasörü seçin</value></data>
+  <data name="Browse" xml:space="preserve"><value>Gözat…</value></data>
+  <data name="CloudGoogleHint" xml:space="preserve"><value>Dosyaları doğrudan Drive’ın gizli uygulama klasörüne yükler. Uygulama Drive’ınızın geri kalanını göremez.</value></data>
+  <data name="CloudGoogleSetupTitle" xml:space="preserve"><value>Tek seferlik kurulum</value></data>
+  <data name="CloudGoogleSetupSteps" xml:space="preserve"><value>Google Cloud Console’da yalnızca bir kez:
+1. Bir proje oluşturun ve içinde “Google Drive API”yi etkinleştirin.
+2. OAuth izin ekranında Harici’yi seçin ve Google adresinizi test kullanıcısı olarak ekleyin.
+3. Kimlik Bilgileri bölümünde türü “Masaüstü uygulaması” olan bir OAuth istemci kimliği oluşturun.
+4. İstemci kimliğini ve istemci gizli anahtarını aşağıya yapıştırıp “Google hesabını bağla”ya basın.</value></data>
+  <data name="CloudGoogleConsole" xml:space="preserve"><value>Google Cloud Console’u aç</value></data>
+  <data name="CloudGoogleClientId" xml:space="preserve"><value>OAuth istemci id’si</value></data>
+  <data name="CloudGoogleClientSecret" xml:space="preserve"><value>OAuth istemci sırrı</value></data>
+  <data name="CloudGoogleClientSecretPlaceholder" xml:space="preserve"><value>GOCSPX-…</value></data>
+  <data name="CloudGoogleClientSecretHint" xml:space="preserve"><value>Zorunlu. Google Cloud Console’da istemci kimliğinin yanında bulunur. Bu bilgisayarda şifreli saklanır ve yalnızca Google’a gönderilir.</value></data>
+  <data name="CloudGoogleConnect" xml:space="preserve"><value>Google hesabını bağla</value></data>
+  <data name="CloudGoogleDisconnect" xml:space="preserve"><value>Bağlantıyı kes</value></data>
+  <data name="CloudGoogleWaiting" xml:space="preserve"><value>Tarayıcınızda oturum açmayı tamamlayın…</value></data>
+  <data name="CloudGoogleDisconnected" xml:space="preserve"><value>Google hesabı bağlantısı kesildi. Bulut kopyası dokunulmadan bırakıldı.</value></data>
+  <data name="CloudDeviceName" xml:space="preserve"><value>Bu bilgisayarın adı</value></data>
+  <data name="CloudDeviceNamePlaceholder" xml:space="preserve"><value>Dizüstü Bilgisayar</value></data>
+  <data name="CloudDeviceNameHint" xml:space="preserve"><value>Hangi makinenin en son yüklediğini anlamanız için bir anlık görüntünün yanında gösterilir.</value></data>
+  <data name="CloudAutomatic" xml:space="preserve"><value>Kendi kendine senkronize et</value></data>
+  <data name="CloudAutomaticHint" xml:space="preserve"><value>Başlatıldıktan kısa bir süre sonra, her on beş dakikada bir ve çıkışta bir kez daha kontrol eder. Bu kapalıyken sadece düğme senkronize eder.</value></data>
+  <data name="CloudSyncNow" xml:space="preserve"><value>Şimdi senkronize et</value></data>
+  <data name="CloudCheck" xml:space="preserve"><value>Bulutu kontrol et</value></data>
+  <data name="CloudSyncRunning" xml:space="preserve"><value>Senkronize ediliyor…</value></data>
+  <data name="CloudNoSnapshot" xml:space="preserve"><value>Henüz hiçbir şey yüklenmedi.</value></data>
+  <data name="CloudSnapshotFormat" xml:space="preserve"><value>{0} kaydedildi</value></data>
+  <data name="CloudSnapshotDeviceFormat" xml:space="preserve"><value>“{1}” tarafından {0} kaydedildi</value></data>
+  <data name="CloudConflictTitle" xml:space="preserve"><value>Her iki kopya değişti</value></data>
+  <data name="CloudConflictHint" xml:space="preserve"><value>Bu bilgisayar ve bulut kopyası son senkronizasyondan beri her ikisi de düzenlendi. Birleştirme tahmin yapmak zorunda kalır, bu yüzden hangi kopyayı saklayacağını seçin. Diğer kopya değiştirilecektir.</value></data>
+  <data name="CloudKeepLocal" xml:space="preserve"><value>Bu bilgisayarı sakla</value></data>
+  <data name="CloudKeepCloud" xml:space="preserve"><value>Bulut kopyasını sakla</value></data>
+  <data name="CloudRestartHint" xml:space="preserve"><value>İndirilen kopya hazır ve DAYDRIVE yeniden başlatıldığında geçerli olur. Önceki verileriniz Backups klasörüne kaydedildi.</value></data>
+  <data name="LocalData" xml:space="preserve"><value>Bu bilgisayarda</value></data>
+  <data name="LocalDataHint" xml:space="preserve"><value>Burada her şey, yedekler ve yerel model dosyalarıyla birlikte tek bir SQLite veritabanında saklanır.</value></data>
+  <data name="OpenDataFolder" xml:space="preserve"><value>Klasörü aç</value></data>
+  <data name="CouldNotOpenFolder" xml:space="preserve"><value>Bu klasör açılamadı.</value></data>
+  <data name="CouldNotOpenLink" xml:space="preserve"><value>Tarayıcı {0} için açılamadı</value></data>
+  <data name="AboutVersionFormat" xml:space="preserve"><value>Sürüm {0}</value></data>
+  <data name="AboutTagline" xml:space="preserve"><value>Ekranınızın kenarında duran, yerel depolamaya öncelik veren kompakt bir planlayıcı ve takvim.</value></data>
+  <data name="AboutAuthorLabel" xml:space="preserve"><value>Tarafından yapıldı</value></data>
+  <data name="AboutOpenGitHub" xml:space="preserve"><value>GitHub</value></data>
+  <data name="AboutLinks" xml:space="preserve"><value>Bağlantılar</value></data>
+  <data name="AboutRepository" xml:space="preserve"><value>Kaynak kodu</value></data>
+  <data name="AboutIssues" xml:space="preserve"><value>Bir sorun bildir</value></data>
+  <data name="AboutReleases" xml:space="preserve"><value>Tüm sürümler</value></data>
+  <data name="UpdatesTitle" xml:space="preserve"><value>Güncellemeler</value></data>
+  <data name="GeneralIntro" xml:space="preserve"><value>Dil ve bilgisayar başladığında uygulamanın yaptığı işlemler.</value></data>
+  <data name="AppearanceIntro" xml:space="preserve"><value>Tema, renkler ve tür, ve masaüstünün ne kadarının göründüğü.</value></data>
+  <data name="BehaviorIntro" xml:space="preserve"><value>Kabuk ve hızlı widget'ın nasıl gelip gittiği.</value></data>
+  <data name="RemindersIntro" xml:space="preserve"><value>Bir etkinlik başlamadan veya bitmeden önce yaprağın dışına eğilen kartlar.</value></data>
+  <data name="UpdatesIntro" xml:space="preserve"><value>Günde bir kez arka planda kontrol edilir. Buradaki hiçbir şey çalışmanızı bölmez.</value></data>
+  <data name="UpdateChecking" xml:space="preserve"><value>Kontrol ediliyor…</value></data>
+  <data name="UpdateUpToDate" xml:space="preserve"><value>En son sürümdesiniz.</value></data>
+  <data name="UpdateAvailableFormat" xml:space="preserve"><value>Sürüm {0} mevcut.</value></data>
+  <data name="UpdateSkippedFormat" xml:space="preserve"><value>Sürüm {0} bir daha bahsedilmeyecek.</value></data>
+  <data name="UpdateSkip" xml:space="preserve"><value>Atla</value></data>
+  <data name="UpdateOpen" xml:space="preserve"><value>Yenilikler</value></data>
+  <data name="UpdateCheckEnabled" xml:space="preserve"><value>Bana yeni sürümler hakkında bilgi ver</value></data>
+  <data name="UpdateCheckHint" xml:space="preserve"><value>Günde bir kez GitHub'a sorar. Seninle ilgili hiçbir şey gönderilmez, hiçbir şekilde seni kesmez ve atladığın bir sürüm bir daha asla bahsedilmez.</value></data>
+  <data name="UpdateCheckNow" xml:space="preserve"><value>Şimdi kontrol et</value></data>
+  <data name="PeekOfPlanned" xml:space="preserve"><value>Planlanan {0}</value></data>
+  <data name="PeekUntilStart" xml:space="preserve"><value>Başlayana kadar</value></data>
+  <data name="PeekAllGood" xml:space="preserve"><value>Hepsi yolunda</value></data>
+  <data name="PeekNotStarted" xml:space="preserve"><value>Henüz başlanmadı</value></data>
+  <data name="PeekOverPlanned" xml:space="preserve"><value>Planın {0} fazlası</value></data>
+  <data name="HandleTooltipPanel" xml:space="preserve"><value>Sol tık — panel</value></data>
+  <data name="HandleTooltipWidget" xml:space="preserve"><value>Sağ tık — widget</value></data>
+  <data name="WidgetHideDelay" xml:space="preserve"><value>Widget gizleme gecikmesi</value></data>
+  <data name="WidgetHideDelayHint" xml:space="preserve"><value>İşaretçi ayrıldıktan sonra hızlı widget'ın ekranda ne kadar süre kalacağını belirler. Kenar tutamacına sağ tıklayarak açılır; sol düğme hâlâ paneli açar.</value></data>
+  <data name="WidgetKeepOpen" xml:space="preserve"><value>Widget'ı otomatik olarak gizleme</value></data>
+  <data name="WidgetKeepOpenHint" xml:space="preserve"><value>Hızlı widget kapatılana kadar ekranda kalır — kenar tutamağına ya da widget'ın kendisine sağ tıklayın. Hatırlatıcılar onu yine kendiliğinden getirip götürür.</value></data>
+  <data name="MascotColor" xml:space="preserve"><value>Widget maskotu</value></data>
+  <data name="MascotColorDynamic" xml:space="preserve"><value>Tema rengini takip et</value></data>
+  <data name="MascotColorHint" xml:space="preserve"><value>Hızlı widget'taki saatin yanındaki yaratık. Burada bir renk seçilmediği sürece mevcut temanın vurgu rengini alır.</value></data>
+  <data name="MascotShow" xml:space="preserve"><value>Maskotu göster</value></data>
+  <data name="SelectEvents" xml:space="preserve"><value>Seç</value></data>
+  <data name="SelectAllEvents" xml:space="preserve"><value>Tümü</value></data>
+  <data name="ClearSelectionAction" xml:space="preserve"><value>Temizle</value></data>
+  <data name="SelectionNone" xml:space="preserve"><value>Hiçbir şey seçilmedi</value></data>
+  <data name="SelectionCount" xml:space="preserve"><value>{0} seçildi · {1}</value></data>
+  <data name="SelectionEmptyHint" xml:space="preserve"><value>Önce istediğiniz etkinlikleri işaretleyin.</value></data>
+  <data name="SelectEventAction" xml:space="preserve"><value>Seç</value></data>
+  <data name="SelectionExit" xml:space="preserve"><value>Tamamlandı</value></data>
+  <data name="SelectionHint" xml:space="preserve"><value>Etkinlikleri birlikte taşımak veya kaldırmak için işaretleyin.</value></data>
+  <data name="SelectionDeleteConfirm" xml:space="preserve"><value>{0} silinsin mi?</value></data>
+  <data name="SelectionDeleted" xml:space="preserve"><value>Silindi: {0}</value></data>
+  <data name="DeleteSelected" xml:space="preserve"><value>Sil</value></data>
+  <data name="MoveEvent" xml:space="preserve"><value>Taşı…</value></data>
+  <data name="MoveSelected" xml:space="preserve"><value>Taşı</value></data>
+  <data name="MoveTitle" xml:space="preserve"><value>Etkinlikleri taşı</value></data>
+  <data name="MoveSubjectCount" xml:space="preserve"><value>{0} etkinlik</value></data>
+  <data name="MoveModeTime" xml:space="preserve"><value>Zamanına göre</value></data>
+  <data name="MoveModeDate" xml:space="preserve"><value>Bir tarihe</value></data>
+  <data name="MoveByHowMuch" xml:space="preserve"><value>Şuna göre taşı</value></data>
+  <data name="MoveEarlier" xml:space="preserve"><value>Daha erken</value></data>
+  <data name="MoveLater" xml:space="preserve"><value>Daha geç</value></data>
+  <data name="MovePreview" xml:space="preserve"><value>{0} — {1}, {2}</value></data>
+  <data name="MoveNothingToDo" xml:space="preserve"><value>Bu, her şeyi olduğu gibi bırakır.</value></data>
+  <data name="MoveCheck" xml:space="preserve"><value>Kontrol et ve taşı</value></data>
+  <data name="MoveApply" xml:space="preserve"><value>Taşı</value></data>
+  <data name="MoveAffects" xml:space="preserve"><value>Bu, diğer etkinlikleri etkiler</value></data>
+  <data name="MoveNoCollisions" xml:space="preserve"><value>Başka bir şey etkilenmez.</value></data>
+  <data name="MoveCollisionSummary" xml:space="preserve"><value>{0} örtüşüyor</value></data>
+  <data name="MoveConfirmClear" xml:space="preserve"><value>{0} taşınıyor. Başka bir şey etkilenmez — {1}</value></data>
+  <data name="MoveConfirmWithCollisions" xml:space="preserve"><value>{0} taşındığında {1} diğer etkinlikle örtüşecek. Yine de taşımak ister misiniz?</value></data>
+  <data name="MoveCompleted" xml:space="preserve"><value>Taşındı: {0}</value></data>
+  <data name="MoveCompletedWithCollisions" xml:space="preserve"><value>Taşındı: {0} · örtüşüyor: {1}</value></data>
+  <data name="CollisionWithExisting" xml:space="preserve"><value>«{0}» «{1}» ile örtüşecek</value></data>
+  <data name="CollisionWithinSelection" xml:space="preserve"><value>«{0}» ve «{1}» birbirleriyle örtüşecek</value></data>
+  <data name="MoveNudgeMinusHour" xml:space="preserve"><value>−1 sa</value></data>
+  <data name="MoveNudgeMinus15" xml:space="preserve"><value>−15 dk</value></data>
+  <data name="MoveNudgePlus15" xml:space="preserve"><value>+15 dk</value></data>
+  <data name="MoveNudgePlusHour" xml:space="preserve"><value>+1 sa</value></data>
+  <data name="DragEventHint" xml:space="preserve"><value>Bir etkinliği taşımak için başka bir saat veya güne sürükleyin.</value></data>
+  <data name="DayResultLabel" xml:space="preserve"><value>Gün sonucu</value></data>
+  <data name="DaySoFarLabel" xml:space="preserve"><value>Bugüne kadar</value></data>
+  <data name="DayAheadLabel" xml:space="preserve"><value>Gün planı</value></data>
+  <data name="DayReviewTitle" xml:space="preserve"><value>{1} üzerinden {0} tamamlandı</value></data>
+  <data name="DayReviewMeta" xml:space="preserve"><value>{1} üzerinden {0} · %{2}</value></data>
+  <data name="DayReviewEmpty" xml:space="preserve"><value>Hiçbir şey planlanmadı</value></data>
+  <data name="DayReviewEmptyHint" xml:space="preserve"><value>Bu günde etkinlik yok.</value></data>
+  <data name="DayAheadTitle" xml:space="preserve"><value>{0} · {1}</value></data>
+  <data name="DayChipDone" xml:space="preserve"><value>{0} tamamlandı</value></data>
+  <data name="DayChipPartial" xml:space="preserve"><value>{0} kısmen</value></data>
+  <data name="DayChipSkipped" xml:space="preserve"><value>{0} atlandı</value></data>
+  <data name="DayChipUnmarked" xml:space="preserve"><value>{0} işaretlenmedi</value></data>
+  <data name="DayChipUpcoming" xml:space="preserve"><value>{0} gelecek</value></data>
+  <data name="PeekUnmarked" xml:space="preserve"><value>{0} işaretlenmedi</value></data>
+  <data name="PeekSkipped" xml:space="preserve"><value>{0} atlandı</value></data>
+  <data name="PeekPartial" xml:space="preserve"><value>{0} sadece kısmen</value></data>
+  <data name="PeekDayDone" xml:space="preserve"><value>Gün kapandı · {0} tamamlandı</value></data>
+  <data name="PeekDaySummary" xml:space="preserve"><value>{1} üzerinden {0} tamamlandı</value></data>
+  <data name="TrackRunning" xml:space="preserve"><value>Çalışıyor</value></data>
+  <data name="RangeDetailDays" xml:space="preserve"><value>son {0} gün</value></data>
+  <data name="RangeDetailWeeks" xml:space="preserve"><value>son {0} hafta</value></data>
+  <data name="RangeDetailCalendarWeek" xml:space="preserve"><value>takvim haftası · Pzt–Paz</value></data>
+  <data name="RangeDetailCalendarMonth" xml:space="preserve"><value>takvim ayı · ilk–son gün</value></data>
+  <data name="RangeDetailCalendarQuarter" xml:space="preserve"><value>3 tam takvim ayı</value></data>
+  <data name="RangePickerTooltip" xml:space="preserve"><value>Gösterilen dönem</value></data>
+  <data name="AnalyticsCurrentWeek" xml:space="preserve"><value>Mevcut hafta</value></data>
+  <data name="AnalyticsPreviousWeek" xml:space="preserve"><value>Geçen hafta</value></data>
+  <data name="AnalyticsNextWeek" xml:space="preserve"><value>Gelecek hafta</value></data>
+  <data name="ChartPerDay" xml:space="preserve"><value>gün başına</value></data>
+  <data name="ChartPerWeek" xml:space="preserve"><value>hafta başına</value></data>
+  <data name="ChartTotal" xml:space="preserve"><value>toplam</value></data>
+  <data name="EventsCountOne" xml:space="preserve"><value>{0} etkinlik</value></data>
+  <data name="EventsCountFew" xml:space="preserve"><value>{0} etkinlik</value></data>
+  <data name="EventsCountMany" xml:space="preserve"><value>{0} etkinlik</value></data>
+  <data name="ChartWeeklyLoad" xml:space="preserve"><value>Haftaya göre</value></data>
+  <data name="ShiftMoreOptions" xml:space="preserve"><value>Daha fazla seçenek</value></data>
+  <data name="ShiftDays" xml:space="preserve"><value>Günler</value></data>
+  <data name="ShiftOnDate" xml:space="preserve"><value>Belirli bir tarihte</value></data>
+  <data name="ShiftDayDateConfirmation" xml:space="preserve"><value>{0} tarihindeki her şeyi {1} tarihine taşımak ister misiniz?</value></data>
+  <data name="VisionUnsupported" xml:space="preserve"><value>Bu modelin bir görüntü kodlayıcısı yok, bu nedenle görüntü girişi kapalı kalır. "Görüntüler" olarak işaretlenmiş bir model seçin.</value></data>
+  <data name="VisionReady" xml:space="preserve"><value>Görüntü girişi hazır. Bir resim ekleyin ve hakkında soru sorun.</value></data>
+  <data name="VisionNeedsProjector" xml:space="preserve"><value>Bu model için projektör henüz indirilmedi. Yukarıdaki butonu kullanın.</value></data>
+  <data name="VisionNeedsCustomProjector" xml:space="preserve"><value>Aşağıdan bu modelin mmproj dosyasını seçin, aksi takdirde görüntü girişi kapalı kalır.</value></data>
+  <data name="VisionBadge" xml:space="preserve"><value>Görüntüler</value></data>
+  <data name="CustomWeightsTitle" xml:space="preserve"><value>Model dosyası · GGUF</value></data>
+  <data name="CustomWeightsHint" xml:space="preserve"><value>Modelin kendisi: bildiği her şey ve yazabileceği her şey. Gerekli.</value></data>
+  <data name="CustomProjectorTitle" xml:space="preserve"><value>Görsel projektör · mmproj</value></data>
+  <data name="CustomProjectorHint" xml:space="preserve"><value>Yukarıdaki modelin okuyabileceği bir şeye resmi dönüştüren çok daha küçük ikinci bir dosya. Sadece görüntü girişi için ve yalnızca o modele ait mmproj dosyası için.</value></data>
+  <data name="CustomFileMissing" xml:space="preserve"><value>Seçilmedi</value></data>
+  <data name="McpEndpointHint" xml:space="preserve"><value>MCP sunucusunun kendi adresi. API adresinden ayrı tutulur: birini diğerinin yerine okumak, her mesajdan önce başarısız bir bağlantı girişimi anlamına geliyordu.</value></data>
+  <data name="AdvancedMcpNotice" xml:space="preserve"><value>MCP köprüsü kendi cevabını verir, bu yüzden bunların hiçbiri ona ulaşmaz. İstekleri şekillendirmek için yerel bir modele veya API bağlantısına geçin.</value></data>
+  <data name="ParamGroupSampling" xml:space="preserve"><value>Cevabın nasıl yazıldığı</value></data>
+  <data name="ParamGroupBudget" xml:space="preserve"><value>Ne kadar ileri gidebileceği</value></data>
+  <data name="ParamGroupStanding" xml:space="preserve"><value>Her konuşma</value></data>
+  <data name="AiActionSetTaskStatus" xml:space="preserve"><value>Görev durumunu değiştir</value></data>
+  <data name="AiActionCreateFocusBlock" xml:space="preserve"><value>Çalışma süresini ayır</value></data>
+  <data name="StageToolSearch" xml:space="preserve"><value>Takvim aranıyor…</value></data>
+  <data name="TaskStatusInbox" xml:space="preserve"><value>Gelen kutusu</value></data>
+  <data name="TaskStatusReady" xml:space="preserve"><value>Hazır</value></data>
+  <data name="TaskStatusScheduled" xml:space="preserve"><value>Planlandı</value></data>
+  <data name="TaskStatusInProgress" xml:space="preserve"><value>Devam ediyor</value></data>
+  <data name="TaskStatusDone" xml:space="preserve"><value>Tamamlandı</value></data>
+  <data name="TaskStatusCancelled" xml:space="preserve"><value>İptal edildi</value></data>
+  <data name="AiAccessConfirmAllShort" xml:space="preserve"><value>Onayla</value></data>
+  <data name="AiAccessAutoSafeShort" xml:space="preserve"><value>Otomatik güvenli</value></data>
+  <data name="AiAccessFullShort" xml:space="preserve"><value>Dolu</value></data>
+  <data name="SnapStep" xml:space="preserve"><value>{0} dk</value></data>
+  <data name="Reminders" xml:space="preserve"><value>Hatırlatmalar</value></data>
+  <data name="NotificationsEnabled" xml:space="preserve"><value>Hatırlatmaları göster</value></data>
+  <data name="NotificationsEnabledHint" xml:space="preserve"><value>Kenar tutamacının yanındaki hızlı widget’ta, bir etkinlik başlamadan veya bitmeden önce bir kart. Sisteme hiçbir şey verilmez.</value></data>
+  <data name="NotificationSound" xml:space="preserve"><value>Hatırlatma sesi</value></data>
+  <data name="NotificationSoundHint" xml:space="preserve"><value>Sistem ayarlarında seçilen bildirim sesini çalar, widget zaten açıkken sessiz olur.</value></data>
+  <data name="NotificationsOffHint" xml:space="preserve"><value>Hatırlatmalar kapalı.</value></data>
+  <data name="NotificationHide" xml:space="preserve"><value>Bildirimi gizle</value></data>
+  <data name="NotificationDismissAll" xml:space="preserve"><value>Tümünü kapat</value></data>
+  <data name="DoNotDisturb" xml:space="preserve"><value>Rahatsız etme</value></data>
+  <data name="DoNotDisturbUntil" xml:space="preserve"><value>{0} kadar sessiz</value></data>
+  <data name="DoNotDisturbEnd" xml:space="preserve"><value>Rahatsız Etme Modunu Kapat</value></data>
+  <data name="DoNotDisturbOffHint" xml:space="preserve"><value>Hatırlatmalar zamanı geldiğinde gelir.</value></data>
+  <data name="DoNotDisturbOffShort" xml:space="preserve"><value>Kapalı</value></data>
+  <data name="DoNotDisturbUntilResumedHint" xml:space="preserve"><value>Yeniden açana kadar sessiz.</value></data>
+  <data name="DoNotDisturbLength" xml:space="preserve"><value>Ne kadar süreyle</value></data>
+  <data name="QuietLengthMinutes" xml:space="preserve"><value>{0} dk</value></data>
+  <data name="QuietLengthHours" xml:space="preserve"><value>{0} sa</value></data>
+  <data name="QuietLengthUntilResumed" xml:space="preserve"><value>Yeniden açana kadar</value></data>
+  <data name="FocusMode" xml:space="preserve"><value>Odak modu</value></data>
+  <data name="FocusModeIntro" xml:space="preserve"><value>Bir oyun — ya da başka herhangi bir şey — ekranın tamamını kapladığı sürece kabuk geri çekilir: tuşların önünüzdekine ulaşması için masaüstünün tamamında tuttuğu kısayolları bırakır ve ekran yeniden sizin olana dek hatırlatmalarını bekletir.</value></data>
+  <data name="FocusModeManualOnlyHint" xml:space="preserve"><value>Bu masaüstü ekranda başka ne olduğunu söylemez, bu yüzden kendiliğinden hiçbir şey fark edilmez. Burada da elle açıldığında odak modu çalışır.</value></data>
+  <data name="FocusModeAuto" xml:space="preserve"><value>Tam ekran uygulamaları fark et</value></data>
+  <data name="FocusModeHold" xml:space="preserve"><value>Açık tut</value></data>
+  <data name="FocusModeHoldHint" xml:space="preserve"><value>Ekranda ne olursa olsun kapatılana kadar açık kalır. Yeniden başlatmadan sonra hatırlanmaz.</value></data>
+  <data name="FocusModeReleaseShortcuts" xml:space="preserve"><value>Kısayolları bırak</value></data>
+  <data name="FocusModeReleaseShortcutsHint" xml:space="preserve"><value>Bu uygulamanın tuttuğu bir bileşim, oyuna hiç ulaşmaz. DAYDRIVE'ın kendi pencerelerinde çalışmayı sürdürürler.</value></data>
+  <data name="FocusModeHoldReminders" xml:space="preserve"><value>Hatırlatmaları beklet</value></data>
+  <data name="FocusModeHoldRemindersHint" xml:space="preserve"><value>Ekranın üstüne hiçbir şey çizilmez. Zamanı gelmiş olanlar, odak modu biter bitmez birlikte gelir — hiçbiri kaybolmaz.</value></data>
+  <data name="FocusModeHideHandle" xml:space="preserve"><value>Şeridi ekrandan kaldır</value></data>
+  <data name="FocusModeHideHandleHint" xml:space="preserve"><value>Sağ kenardaki şerit artık tıklama almaz. Sistem tepsisindeki simge kabuğu açmaya devam eder ve odak modu biter bitmez şerit geri gelir.</value></data>
+  <data name="FocusModeIdleHint" xml:space="preserve"><value>Ekranın tamamını kaplayan bir şey yok. Kısayollar tutuluyor, hatırlatmalar geliyor.</value></data>
+  <data name="FocusModeOffHint" xml:space="preserve"><value>Ekranda ne olursa olsun kabuk olduğu gibi kalır.</value></data>
+  <data name="FocusModeHeldHint" xml:space="preserve"><value>Elle açıldı.</value></data>
+  <data name="FocusModeAppHint" xml:space="preserve"><value>Ekran {0} uygulamasında.</value></data>
+  <data name="FocusModeAnonHint" xml:space="preserve"><value>Bir şey ekranın tamamını kaplıyor.</value></data>
+  <data name="FocusModePresentingHint" xml:space="preserve"><value>Sunum modu açık.</value></data>
+  <data name="FocusModeOnShort" xml:space="preserve"><value>Açık</value></data>
+  <data name="FocusModeHeldTitle" xml:space="preserve"><value>Ekran meşgulken</value></data>
+  <data name="ShortcutsFocusHeld" xml:space="preserve"><value>Odak modu şimdilik bunları bıraktı — ekranın tamamını başka bir şey kaplıyor. DAYDRIVE'ın pencerelerinde çalışırlar.</value></data>
+  <data name="LocalModelGpu" xml:space="preserve"><value>Grafik kartını kullan</value></data>
+  <data name="LocalModelGpuOnHint" xml:space="preserve"><value>İşlemciye ek olarak motorun GPU sürümü yüklenmiştir ve uygun her katman bu karta aktarılır. Bu değiştiğinde model yeniden başlar.</value></data>
+  <data name="LocalModelGpuOffHint" xml:space="preserve"><value>Model tamamen işlemcide çalışır. Daha yavaş, ama kartı diğer her şey için boş bırakır.</value></data>
+  <data name="GpuLabel" xml:space="preserve"><value>GPU</value></data>
+  <data name="CpuOnlyLabel" xml:space="preserve"><value>CPU</value></data>
+  <data name="VramLabel" xml:space="preserve"><value>VRAM</value></data>
+  <data name="GpuOffloadDetail" xml:space="preserve"><value>Kartta {2} katmandan {0} · {1}</value></data>
+  <data name="CpuOnlyDetail" xml:space="preserve"><value>İşlemcide çalışıyor</value></data>
+  <data name="ResourceOfTotal" xml:space="preserve"><value>bilgisayardaki toplam {0} üzerinden</value></data>
+  <data name="ResourceNotInUse" xml:space="preserve"><value>kullanımda değil</value></data>
+  <data name="ResourceUnavailable" xml:space="preserve"><value>—</value></data>
+  <data name="StageLoadingModel" xml:space="preserve"><value>Model yükleniyor…</value></data>
+  <data name="TrackPause" xml:space="preserve"><value>Pause</value></data>
+  <data name="TrackResume" xml:space="preserve"><value>Resume</value></data>
+  <data name="TrackStop" xml:space="preserve"><value>Stop</value></data>
+  <data name="TrackPaused" xml:space="preserve"><value>Paused</value></data>
+  <data name="TrackWorked" xml:space="preserve"><value>Worked</value></data>
+  <data name="TrackPausedFor" xml:space="preserve"><value>{0} paused</value></data>
+  <data name="TrackPlanActual" xml:space="preserve"><value>plan {0} · actual {1}</value></data>
+  <data name="TrackOverPlan" xml:space="preserve"><value>{0} over plan</value></data>
+  <data name="TrackUnderPlan" xml:space="preserve"><value>{0} left of the plan</value></data>
+  <data name="TrackedPartialProgress" xml:space="preserve"><value>partly · {0}% · {1}</value></data>
+  <data name="SessionTimerTooltip" xml:space="preserve"><value>Work time. Pauses are counted separately and never added to it.</value></data>
+  <data name="PausePromptTitle" xml:space="preserve"><value>Still on this?</value></data>
+  <data name="PausePromptBody" xml:space="preserve"><value>Paused for {0}.</value></data>
+  <data name="PausePromptResume" xml:space="preserve"><value>Keep going</value></data>
+  <data name="PausePromptFinish" xml:space="preserve"><value>End session</value></data>
+  <data name="SessionResultTitle" xml:space="preserve"><value>How did it go?</value></data>
+  <data name="SessionResultDone" xml:space="preserve"><value>Done</value></data>
+  <data name="SessionResultPartial" xml:space="preserve"><value>Partly</value></data>
+  <data name="SessionResultMissed" xml:space="preserve"><value>Not done</value></data>
+  <data name="SessionMeasured" xml:space="preserve"><value>Worked {0} of {1} planned</value></data>
+  <data name="SessionMeasuredNoPlan" xml:space="preserve"><value>Worked {0}</value></data>
+  <data name="SessionProgressTitle" xml:space="preserve"><value>How far did it get?</value></data>
+  <data name="SessionNextStepTitle" xml:space="preserve"><value>What's left?</value></data>
+  <data name="SessionNextStepPlaceholder" xml:space="preserve"><value>Recheck the last three screens</value></data>
+  <data name="SessionSave" xml:space="preserve"><value>Save</value></data>
+  <data name="SessionLater" xml:space="preserve"><value>Not now</value></data>
+  <data name="NextStepChip" xml:space="preserve"><value>Next: {0}</value></data>
+  <data name="NextStepTooltip" xml:space="preserve"><value>Where to pick this up. Set when the event was left part-done.</value></data>
+  <data name="ChatWrapUp" xml:space="preserve"><value>Day wrap-up</value></data>
+  <data name="WrapUpTitle" xml:space="preserve"><value>Wrap up the day</value></data>
+  <data name="WrapUpHint" xml:space="preserve"><value>Sonuçsuz biten her şey — bugün ve önceki haftalar.</value></data>
+  <data name="WrapUpCount" xml:space="preserve"><value>{0} without a result</value></data>
+  <data name="WrapUpEmpty" xml:space="preserve"><value>Nothing left to answer for</value></data>
+  <data name="WrapUpEmptyHint" xml:space="preserve"><value>Biten her etkinliğin bir sonucu var.</value></data>
+  <data name="WrapUpDone" xml:space="preserve"><value>Done</value></data>
+  <data name="WrapUpMove" xml:space="preserve"><value>Move</value></data>
+  <data name="WrapUpSkip" xml:space="preserve"><value>Skip</value></data>
+  <data name="WrapUpMoveTooltip" xml:space="preserve"><value>Move to tomorrow, same time</value></data>
+  <data name="WrapUpAcceptAll" xml:space="preserve"><value>Accept all suggestions</value></data>
+  <data name="WrapUpHadActivity" xml:space="preserve"><value>timer ran {0}</value></data>
+  <data name="WrapUpNeverStarted" xml:space="preserve"><value>never started</value></data>
+  <data name="WrapUpSuggestion" xml:space="preserve"><value>suggested: {0}</value></data>
+  <data name="WrapUpResolvedDone" xml:space="preserve"><value>Marked done</value></data>
+  <data name="WrapUpResolvedSkipped" xml:space="preserve"><value>Skipped</value></data>
+  <data name="WrapUpResolvedMoved" xml:space="preserve"><value>Moved to {0}</value></data>
+  <data name="WrapUpOffer" xml:space="preserve"><value>{0} of today's events have no result yet.</value></data>
+  <data name="WrapUpOpen" xml:space="preserve"><value>Wrap up</value></data>
+  <data name="WrapUpLater" xml:space="preserve"><value>Later</value></data>
+  <data name="WrapUpBadge" xml:space="preserve"><value>{0}</value></data>
+  <data name="BlockerTitle" xml:space="preserve"><value>Moved {0} times now. What is in the way?</value></data>
+  <data name="BlockerNotEnoughTime" xml:space="preserve"><value>Not enough time</value></data>
+  <data name="BlockerTooBig" xml:space="preserve"><value>Too big</value></data>
+  <data name="BlockerUnclearStart" xml:space="preserve"><value>Unclear where to start</value></data>
+  <data name="BlockerNotRelevant" xml:space="preserve"><value>No longer relevant</value></data>
+  <data name="BlockerShorten" xml:space="preserve"><value>Make it shorter</value></data>
+  <data name="BlockerShortenHint" xml:space="preserve"><value>Halve the slot, to {0}.</value></data>
+  <data name="BlockerFirstStep" xml:space="preserve"><value>Give it a first step</value></data>
+  <data name="BlockerDrop" xml:space="preserve"><value>Drop it</value></data>
+  <data name="BlockerDropHint" xml:space="preserve"><value>Take it off the calendar.</value></data>
+  <data name="BlockerNoted" xml:space="preserve"><value>Noted.</value></data>
+  <data name="TrackedPausedAt" xml:space="preserve"><value>paused - {0} worked</value></data>
+  <data name="BlockerEarlier" xml:space="preserve"><value>Move it earlier</value></data>
+  <data name="BlockerEarlierHint" xml:space="preserve"><value>Put it first thing, at {0}, before the day fills up.</value></data>
+  <data name="MonitorPanel" xml:space="preserve"><value>İzleme</value></data>
+  <data name="MonitorIdle" xml:space="preserve"><value>Başlamadı</value></data>
+  <data name="NextStepCardTitle" xml:space="preserve"><value>Kalanlar</value></data>
+  <data name="NextStepFold" xml:space="preserve"><value>Notu gizle</value></data>
+  <data name="NextStepUnfold" xml:space="preserve"><value>Notu yeniden göster</value></data>
+  <data name="NextStepCollapse" xml:space="preserve"><value>Listeyi daralt</value></data>
+  <data name="NextStepExpand" xml:space="preserve"><value>Listeyi genişlet</value></data>
+  <data name="SessionDismiss" xml:space="preserve"><value>Vazgeç</value></data>
+  <data name="SessionNextStepAdd" xml:space="preserve"><value>Bu satırı ekle</value></data>
+  <data name="SessionNextStepAddHint" xml:space="preserve"><value>enter bir tane daha ekler</value></data>
+  <data name="SessionNextStepRemove" xml:space="preserve"><value>Listeden çıkar</value></data>
+  <data name="Shortcuts" xml:space="preserve"><value>Kısayollar</value></data>
+  <data name="ShortcutsIntro" xml:space="preserve"><value>Her uygulamadan çalışır. Değiştirmek için bir birleşime basın; Escape iptal eder, Backspace kapatır.</value></data>
+  <data name="ShortcutsWindowOnlyIntro" xml:space="preserve"><value>Bir DAYDRIVE penceresi öndeyken çalışır. Tuşları sistem genelinde ayırmak şimdilik yalnızca Windows'ta; macOS ve Wayland'de bunları sistem veya birleştirici ayarlarından tanımlayın.</value></data>
+  <data name="ShortcutsReset" xml:space="preserve"><value>Varsayılanlara dön</value></data>
+  <data name="ShortcutResetOne" xml:space="preserve"><value>Varsayılana dön</value></data>
+  <data name="ShortcutRebind" xml:space="preserve"><value>Değiştirmek için basın</value></data>
+  <data name="ShortcutPressKeys" xml:space="preserve"><value>Tuşlara basın…</value></data>
+  <data name="ShortcutClash" xml:space="preserve"><value>Bu birleşimi başka bir kısayol kullanıyor</value></data>
+  <data name="ShortcutRefused" xml:space="preserve"><value>Bu tuşları başka bir program kullanıyor</value></data>
+  <data name="ShortcutOff" xml:space="preserve"><value>Kapalı</value></data>
+  <data name="ShortcutToggleShell" xml:space="preserve"><value>Planlayıcıyı göster veya gizle</value></data>
+  <data name="ShortcutToggleWidget" xml:space="preserve"><value>Hızlı bileşeni göster veya gizle</value></data>
+  <data name="ShortcutToggleAssistant" xml:space="preserve"><value>Asistanı aç</value></data>
+  <data name="ShortcutStartOrPauseSession" xml:space="preserve"><value>Oturumu başlat veya duraklat</value></data>
+  <data name="ShortcutStopSession" xml:space="preserve"><value>Oturumu durdur</value></data>
+  <data name="ShortcutToggleDoNotDisturb" xml:space="preserve"><value>Rahatsız etmeyini aç veya kapat</value></data>
+  <data name="CloudStateOk" xml:space="preserve"><value>Her şey senkronize</value></data>
+  <data name="CloudStateOkHint" xml:space="preserve"><value>{0} kontrol edildi. Bu bilgisayarda ve bulutta aynı veriler var.</value></data>
+  <data name="CloudStatePending" xml:space="preserve"><value>Bazı değişiklikler henüz bulutta değil</value></data>
+  <data name="CloudStatePendingAuto" xml:space="preserve"><value>Yaklaşık {0} sularında kendiliğinden gönderilecek ya da “Şimdi senkronize et”e basın.</value></data>
+  <data name="CloudStatePendingManual" xml:space="preserve"><value>Otomatik senkronizasyon kapalı; göndermek için “Şimdi senkronize et”e basın.</value></data>
+  <data name="CloudStateNever" xml:space="preserve"><value>Henüz hiçbir şey senkronize edilmedi</value></data>
+  <data name="CloudStateNeverHint" xml:space="preserve"><value>İlk kopyayı buluta koymak için “Şimdi senkronize et”e basın.</value></data>
+  <data name="CloudStateSyncing" xml:space="preserve"><value>Senkronize ediliyor…</value></data>
+  <data name="CloudStateSyncingHint" xml:space="preserve"><value>Bu bilgisayar buluttaki kopyayla karşılaştırılıyor.</value></data>
+  <data name="CloudStateFailed" xml:space="preserve"><value>Son senkronizasyon başarısız oldu</value></data>
+  <data name="CloudStateRetryAuto" xml:space="preserve"><value>Bir sonraki deneme yaklaşık {0} sularında.</value></data>
+  <data name="CloudStateSetup" xml:space="preserve"><value>Kurulum tamamlanmadı</value></data>
+  <data name="CloudStateRestart" xml:space="preserve"><value>Buluttan bir kopya hazır</value></data>
+  <data name="CloudRestartNow" xml:space="preserve"><value>DAYDRIVE’ı yeniden başlat</value></data>
+  <data name="CloudRestartFailed" xml:space="preserve"><value>DAYDRIVE kendini yeniden başlatamadı. Tepsi simgesinden çıkıp yeniden açın.</value></data>
+  <data name="CloudFactLastSync" xml:space="preserve"><value>Son senkronizasyon</value></data>
+  <data name="CloudFactCloudCopy" xml:space="preserve"><value>Bulutta</value></data>
+  <data name="CloudFactThisComputer" xml:space="preserve"><value>Bu bilgisayar</value></data>
+  <data name="CloudFactAutomatic" xml:space="preserve"><value>Otomatik</value></data>
+  <data name="CloudFactNever" xml:space="preserve"><value>henüz yok</value></data>
+  <data name="CloudFactRemoteUnknown" xml:space="preserve"><value>henüz kontrol edilmedi</value></data>
+  <data name="CloudFactLocalClean" xml:space="preserve"><value>yeni değişiklik yok</value></data>
+  <data name="CloudFactLocalChanged" xml:space="preserve"><value>yeni değişiklikler var</value></data>
+  <data name="CloudFactLocalChangedSince" xml:space="preserve"><value>yeni değişiklikler var, sonuncusu {0}</value></data>
+  <data name="CloudFactScheduleAuto" xml:space="preserve"><value>açılışta, 15 dakikada bir ve çıkışta · sonraki yaklaşık {0}</value></data>
+  <data name="CloudFactScheduleManual" xml:space="preserve"><value>kapalı, yalnızca “Şimdi senkronize et”e bastığınızda</value></data>
+  <data name="CloudJournalTitle" xml:space="preserve"><value>Geçmiş</value></data>
+  <data name="CloudLogUploaded" xml:space="preserve"><value>Buluta gönderildi · {0}</value></data>
+  <data name="CloudLogDownloaded" xml:space="preserve"><value>Buluttaki kopya indirildi</value></data>
+  <data name="CloudLogDownloadedFrom" xml:space="preserve"><value>“{0}” kopyası indirildi</value></data>
+  <data name="CloudLogApplied" xml:space="preserve"><value>İndirilen kopya uygulandı</value></data>
+  <data name="CloudLogUpToDate" xml:space="preserve"><value>Kontrol edildi, senkronize edilecek bir şey yok</value></data>
+  <data name="CloudLogConflict" xml:space="preserve"><value>İki kopya da değişti, seçiminiz bekleniyor</value></data>
+  <data name="CloudLogConnected" xml:space="preserve"><value>Google hesabı bağlandı</value></data>
+  <data name="CloudLogConnectedAs" xml:space="preserve"><value>{0} olarak bağlandı</value></data>
+  <data name="CloudLogDisconnected" xml:space="preserve"><value>Google hesabının bağlantısı kesildi</value></data>
+  <data name="CloudLogFailed" xml:space="preserve"><value>Senkronize edilemedi: {0}</value></data>
+  <data name="CloudTriggerManual" xml:space="preserve"><value>elle</value></data>
+  <data name="CloudTriggerAutomatic" xml:space="preserve"><value>otomatik</value></data>
+  <data name="CloudTriggerStartup" xml:space="preserve"><value>açılışta</value></data>
+  <data name="CloudTriggerExit" xml:space="preserve"><value>çıkışta</value></data>
+  <data name="CloudJustNow" xml:space="preserve"><value>az önce</value></data>
+  <data name="CloudTodayAt" xml:space="preserve"><value>bugün {0}</value></data>
+  <data name="CloudYesterdayAt" xml:space="preserve"><value>dün {0}</value></data>
+  <data name="CloudDateAt" xml:space="preserve"><value>{0} {1}</value></data>
+  <data name="CloudIssueOff" xml:space="preserve"><value>Nereye senkronize edileceğini seçin.</value></data>
+  <data name="CloudIssueFolderNotChosen" xml:space="preserve"><value>Bulut uygulamanızın senkronize tuttuğu klasörü seçin.</value></data>
+  <data name="CloudIssueFolderMissing" xml:space="preserve"><value>Senkronizasyon klasörü bulunamadı. Sürücüsü çıkarılmış ya da klasör taşınmış olabilir.</value></data>
+  <data name="CloudIssueFolderNotWritable" xml:space="preserve"><value>DAYDRIVE senkronizasyon klasörüne yazamıyor. İzinlerini kontrol edin.</value></data>
+  <data name="CloudIssueGoogleClientIdMissing" xml:space="preserve"><value>Google Cloud Console’daki istemci kimliğini yapıştırın.</value></data>
+  <data name="CloudIssueGoogleClientSecretMissing" xml:space="preserve"><value>İstemci gizli anahtarını da yapıştırın. Google bunu “Masaüstü uygulaması” istemcileri için zorunlu tutar.</value></data>
+  <data name="CloudIssueGoogleNotConnected" xml:space="preserve"><value>Kurulumu bitirmek için “Google hesabını bağla”ya basın.</value></data>
+  <data name="CloudIssueGoogleReconnect" xml:space="preserve"><value>Google kayıtlı oturum açmayı artık kabul etmiyor: erişim iptal edilmiş ya da süresi dolmuş. Hesabı yeniden bağlayın.</value></data>
+  <data name="CloudIssueGoogleClientRejected" xml:space="preserve"><value>Google istemci kimliğini veya gizli anahtarı reddetti. İstemci türünün “Masaüstü uygulaması” olduğunu ve gizli anahtarın ona ait olduğunu kontrol edin.</value></data>
+  <data name="CloudIssueGoogleDriveApiDisabled" xml:space="preserve"><value>Google Cloud projenizde Google Drive API etkin değil. Etkinleştirin, bir dakika bekleyip yeniden deneyin.</value></data>
+  <data name="CloudIssueGoogleScopeMissing" xml:space="preserve"><value>Oturum açarken Google Drive erişimine izin verilmedi. Yeniden bağlanın ve Google Drive kutusunu işaretleyin.</value></data>
+  <data name="CloudIssueSignInCancelled" xml:space="preserve"><value>Oturum açma iptal edildi.</value></data>
+  <data name="CloudIssueSignInTimedOut" xml:space="preserve"><value>Oturum açma 5 dakika içinde tamamlanmadı. Yeniden deneyin.</value></data>
+  <data name="CloudIssueOffline" xml:space="preserve"><value>Buluta ulaşılamadı. İnternet bağlantısını kontrol edin.</value></data>
+  <data name="CloudIssueInterrupted" xml:space="preserve"><value>Senkronizasyon bitmeden kesildi.</value></data>
+  <data name="CloudIssueBusy" xml:space="preserve"><value>Zaten bir senkronizasyon çalışıyor.</value></data>
+  <data name="CloudIssueNothingInCloud" xml:space="preserve"><value>Bulutta henüz bir şey yok.</value></data>
+  <data name="CloudIssueNotADatabase" xml:space="preserve"><value>Buluttaki dosya DAYDRIVE verisi değil. Hiçbir şey değiştirilmedi.</value></data>
+  <data name="CloudIssueUnexpected" xml:space="preserve"><value>Beklenmeyen hata: {0}</value></data>
+  <data name="CloudGoogleConnectedNoEmail" xml:space="preserve"><value>Google hesabı bağlandı</value></data>
+  <data name="CloudGoogleSecretSaved" xml:space="preserve"><value>İstemci gizli anahtarı kaydedildi</value></data>
+  <data name="CloudTrayLabel" xml:space="preserve"><value>Bulut senkronizasyonu</value></data>
+  <data name="CloudTrayOk" xml:space="preserve"><value>{0} senkronize edildi</value></data>
+  <data name="CloudTrayPending" xml:space="preserve"><value>bekleyen değişiklikler</value></data>
+  <data name="CloudTraySyncing" xml:space="preserve"><value>senkronize ediliyor…</value></data>
+  <data name="CloudTrayError" xml:space="preserve"><value>senkronize edilemedi</value></data>
+  <data name="CloudTrayAttention" xml:space="preserve"><value>sizi bekliyor</value></data>
+  <data name="CloudStatusBarFailed" xml:space="preserve"><value>Bulut senkronizasyonu başarısız: {0}</value></data>
+  <data name="LocalQuantNote" xml:space="preserve"><value>Tüm modeller Q5_K_M olarak sunulur: sıradan bir bilgisayarın çalıştırabileceği boyutta neredeyse tam kalite.</value></data>
+  <data name="LocalModelLegacyFiles" xml:space="preserve"><value>Artık sunulmayan türlerdeki indirmeler ({0}) {1} yer kaplıyor.</value></data>
+  <data name="LocalModelLegacyDelete" xml:space="preserve"><value>Sil</value></data>
+  <data name="LocalModelLegacyDeleted" xml:space="preserve"><value>Eski model dosyaları silindi, {0} boşaltıldı.</value></data>
+  <data name="LocalHardwareTitle" xml:space="preserve"><value>Bu bilgisayar</value></data>
+  <data name="LocalHardwareHint" xml:space="preserve"><value>DAYDRIVE’ın bulduğu donanım ve modelin buna göre nasıl çalışacağı.</value></data>
+  <data name="LocalHardwareRescan" xml:space="preserve"><value>Yeniden kontrol et</value></data>
+  <data name="LocalHardwareCpu" xml:space="preserve"><value>İşlemci</value></data>
+  <data name="LocalHardwareMemory" xml:space="preserve"><value>Bellek</value></data>
+  <data name="LocalHardwareGpu" xml:space="preserve"><value>Ekran kartı</value></data>
+  <data name="LocalHardwareCpuValue" xml:space="preserve"><value>{0} çekirdek · {1} iş parçacığı</value></data>
+  <data name="LocalHardwareCpuHybrid" xml:space="preserve"><value>{0} performans + {1} verimlilik çekirdeği · {2} iş parçacığı</value></data>
+  <data name="LocalHardwareCpuThreads" xml:space="preserve"><value>{0} iş parçacığı</value></data>
+  <data name="LocalHardwareMemoryValue" xml:space="preserve"><value>{0} · şu an {1} boş</value></data>
+  <data name="LocalHardwareGpuValue" xml:space="preserve"><value>{0} · {1}</value></data>
+  <data name="LocalHardwareGpuFree" xml:space="preserve"><value>{0} · {1}, {2} boş</value></data>
+  <data name="LocalHardwareGpuIntegrated" xml:space="preserve"><value>yalnızca dahili grafik ({0}); model için kullanılmaz</value></data>
+  <data name="LocalHardwareGpuNone" xml:space="preserve"><value>ayrı ekran kartı yok</value></data>
+  <data name="LocalHardwareUnknown" xml:space="preserve"><value>okunamadı</value></data>
+  <data name="LocalHardwareDetecting" xml:space="preserve"><value>Bilgisayar kontrol ediliyor…</value></data>
+  <data name="LocalTuneFullGpu" xml:space="preserve"><value>Modelin tamamı ekran kartına sığıyor</value></data>
+  <data name="LocalTuneSplit" xml:space="preserve"><value>Modelin yaklaşık %{0} kadarı ekran kartında, kalanı işlemcide çalışır</value></data>
+  <data name="LocalTuneCpu" xml:space="preserve"><value>Ekran kartı yardımcı olamayacak kadar küçük, bu yüzden model işlemcide çalışır</value></data>
+  <data name="LocalTuneCpuNoCard" xml:space="preserve"><value>Model işlemcide çalışır</value></data>
+  <data name="LocalTuneSummary" xml:space="preserve"><value>Bağlam {0} token · {1} iş parçacığı · yanıtlar en fazla {2} token · son {3} mesajı hatırlar</value></data>
+  <data name="LocalTuneWarnMemory" xml:space="preserve"><value>Modelin yaklaşık {0} belleğe ihtiyacı var ama yalnızca yaklaşık {1} boş. Yavaş çalışacak ve diğer programları yavaşlatabilir; bazı programları kapatmak ya da daha küçük bir model seçmek yardımcı olur.</value></data>
+  <data name="LocalTuneManual" xml:space="preserve"><value>Otomatik seçim kapalı: bu yalnızca bir öneri; aşağıda ayarlanan değerler kullanılır.</value></data>
+  <data name="LocalAutoTune" xml:space="preserve"><value>Bu ayarları bu bilgisayar için otomatik seç</value></data>
+  <data name="LocalAutoTuneHint" xml:space="preserve"><value>Model ya da bilgisayar değiştiğinde yeniden hesaplanır. Değerleri kendiniz ayarlamak için kapatın.</value></data>
+  <data name="ParamsForLocal" xml:space="preserve"><value>Bu değerler yalnızca yerel model içindir; API’nin kendi değerleri vardır.</value></data>
+  <data name="ParamsForApi" xml:space="preserve"><value>Bu değerler yalnızca API isteklerinde gönderilir; yerel modelin kendi değerleri vardır.</value></data>
+  <data name="ParamsAutoBudget" xml:space="preserve"><value>Yanıt uzunluğu, geçmiş ve bekleme süresi bu bilgisayara göre seçildi. Değiştirmek için yukarıdaki otomatik seçimi kapatın.</value></data>
+  <data name="StepsCountOne" xml:space="preserve"><value>{0} adım</value></data>
+  <data name="StepsCountFew" xml:space="preserve"><value>{0} adım</value></data>
+  <data name="StepsCountMany" xml:space="preserve"><value>{0} adım</value></data>
+  <data name="ProjectProgress" xml:space="preserve"><value>{1} adımdan {0} tamam · {3} içinden {2}</value></data>
+  <data name="ProjectNoStepsYet" xml:space="preserve"><value>Henüz adım yok. İlkini aşağıya yazın, sonra ona bir süre ve gün verin.</value></data>
+  <data name="ProjectNextChip" xml:space="preserve"><value>sıradaki: {0}</value></data>
+  <data name="StepAfterDeadline" xml:space="preserve"><value>son günden sonra</value></data>
+  <data name="NewStepPlaceholder" xml:space="preserve"><value>Yeni adım…</value></data>
+  <data name="StepNoDay" xml:space="preserve"><value>Gün yok</value></data>
+  <data name="StepSchedule" xml:space="preserve"><value>saat belirle</value></data>
+  <data name="StepScheduleTooltip" xml:space="preserve"><value>Bu adımı takvime belirli bir saate koy</value></data>
+  <data name="StepScheduleHeading" xml:space="preserve"><value>Proje adımı için zaman</value></data>
+  <data name="StepMoveDay" xml:space="preserve"><value>Başka bir güne taşı</value></data>
+  <data name="StepDurationTooltip" xml:space="preserve"><value>Bu adım ne kadar sürer</value></data>
+  <data name="StepOpenEvent" xml:space="preserve"><value>Günde göster</value></data>
+  <data name="StepDelete" xml:space="preserve"><value>Adımı sil</value></data>
+  <data name="StepRenameHint" xml:space="preserve"><value>Yeniden adlandırmak için tıklayın</value></data>
+  <data name="StepToggleDone" xml:space="preserve"><value>Tamamlandı olarak işaretle ya da geri al</value></data>
+  <data name="DayStepsTitle" xml:space="preserve"><value>Bu gün için planlanan</value></data>
+  <data name="StepOverdueFrom" xml:space="preserve"><value>plan: {0}</value></data>
+  <data name="StepAddTooltip" xml:space="preserve"><value>Adım ekle (Enter)</value></data>
+  <data name="ProjectShowFinished" xml:space="preserve"><value>Biten günleri göster ({0})</value></data>
+  <data name="ProjectHideFinished" xml:space="preserve"><value>Biten günleri gizle</value></data>
+  <data name="DayStepsTitleToday" xml:space="preserve"><value>Bugün için planlanan</value></data>
+  <data name="StepsTitle" xml:space="preserve"><value>Adımlar</value></data>
+  <data name="StepsFold" xml:space="preserve"><value>Adımları gizle</value></data>
+  <data name="StepsChipTooltip" xml:space="preserve"><value>Tamamlanan adımlar — göstermek veya gizlemek için dokunun</value></data>
+  <data name="BreakIntoSteps" xml:space="preserve"><value>Adımlara böl</value></data>
+  <data name="OpenProject" xml:space="preserve"><value>Projeyi aç</value></data>
+  <data name="SittingPlanned" xml:space="preserve"><value>adımlar: {0} / {1}</value></data>
+  <data name="SittingOverflow" xml:space="preserve"><value>adımlar: {0} — etkinlikten {1} uzun</value></data>
+  <data name="SittingSeriesHint" xml:space="preserve"><value>Bu etkinliğin tüm tekrarları için tek liste; her gün ayrı işaretlenir.</value></data>
+  <data name="SittingLeft" xml:space="preserve"><value>{0} kaldı</value></data>
+  <data name="SittingNoStepsYet" xml:space="preserve"><value>Bu zamanın nelere gideceğini yazın. Adımları ilerledikçe işaretleyin — etkinliğin sonucu kendiliğinden kaydedilir.</value></data>
+  <data name="SessionSittingHint" xml:space="preserve"><value>Aşağıdaki adımlarda yaptıklarınızı işaretleyin — yüzde kendiliğinden ayarlanır. İşaretsiz kalanlar, kalan iştir.</value></data>
+  <data name="CarryHeading" xml:space="preserve"><value>Kalanı sürdür</value></data>
+  <data name="CarryToTime" xml:space="preserve"><value>Sürdür…</value></data>
+  <data name="CarryToTimeTooltip" xml:space="preserve"><value>Kalana yeni bir saat ver</value></data>
+  <data name="CarryToUnscheduled" xml:space="preserve"><value>Programlanmamışa</value></data>
+  <data name="CarryToUnscheduledTooltip" xml:space="preserve"><value>Kalanı günlere yayarak planlamak için göreve dönüştür</value></data>
+  <data name="StepsCarried" xml:space="preserve"><value>Kalan adımlar yeni saate taşındı</value></data>
+  <data name="StepsCarriedToUnscheduled" xml:space="preserve"><value>Kalan adımlar artık «Programlanmamış» altında bir görev</value></data>
+  <data name="StepsRemoved" xml:space="preserve"><value>Artık adım yok</value></data>
+  <data name="SittingAnsweredDone" xml:space="preserve"><value>Tüm adımlar tamamlandı — etkinlik tamamlandı olarak işaretlendi</value></data>
+  <data name="SittingReopened" xml:space="preserve"><value>Bir adım yeniden açıldı — etkinlik kısmen tamamlandı</value></data>
+  <data name="ProjectFinished" xml:space="preserve"><value>Tüm adımlar tamamlandı olarak işaretlendi</value></data>
+  <data name="ConfirmDeleteProjectTask" xml:space="preserve"><value>Görev tüm adımlarıyla silinsin mi? Adımlar için planlanan etkinlikler takvimde kalır.</value></data>
+  <data name="ConfirmDeleteEventSteps" xml:space="preserve"><value>Bu etkinlik adımlarıyla birlikte silinsin mi?</value></data>
+  <data name="ProjectCategoryTooltip" xml:space="preserve"><value>Projenin rengi — adımları için ayrılan saatler de bu rengi alır</value></data>
+  <data name="WindowedShellHint" xml:space="preserve"><value>Pencere konumunu masaüstünüz yönetir. DAYDRIVE panelleri yeniden boyutlandırılabilen tek bir pencerede gösterir; kenar ve pencere öğesi seçenekleri burada kullanılamaz.</value></data>
+  <data name="LocalHardwareGpuDetected" xml:space="preserve"><value>{0} · video belleği bilgisi kullanılamıyor</value></data>
+  <data name="ThemeColorAccent" xml:space="preserve"><value>Vurgu</value></data>
+  <data name="ThemeColorBackground" xml:space="preserve"><value>Pencere arka planı</value></data>
+  <data name="ThemeColorSurface" xml:space="preserve"><value>Paneller</value></data>
+  <data name="ThemeColorSurfaceAlt" xml:space="preserve"><value>Alanlar ve kartlar</value></data>
+  <data name="ThemeColorText" xml:space="preserve"><value>Metin</value></data>
+  <data name="ThemeColorMuted" xml:space="preserve"><value>İkincil metin</value></data>
+  <data name="ThemeColorStroke" xml:space="preserve"><value>Kenarlıklar</value></data>
+  <data name="ThemeColorSecondary" xml:space="preserve"><value>İkinci vurgu</value></data>
+  <data name="ThemeColorTertiary" xml:space="preserve"><value>Üçüncü vurgu</value></data>
+  <data name="ThemeColorSelection" xml:space="preserve"><value>Seçim</value></data>
+  <data name="ThemeColorSuccess" xml:space="preserve"><value>Başarı</value></data>
+  <data name="ThemeColorWarning" xml:space="preserve"><value>Uyarı</value></data>
+  <data name="ThemeColorDanger" xml:space="preserve"><value>Hata</value></data>
+  <data name="ThemeColorShadow" xml:space="preserve"><value>Gölgeler</value></data>
+  <data name="ThemeWindowRadius" xml:space="preserve"><value>Pencereler</value></data>
+  <data name="ThemeCardRadius" xml:space="preserve"><value>Kartlar</value></data>
+  <data name="ThemeItemRadius" xml:space="preserve"><value>Liste öğeleri</value></data>
+  <data name="ThemeControlRadius" xml:space="preserve"><value>Düğmeler ve alanlar</value></data>
+  <data name="ThemeTextScale" xml:space="preserve"><value>Metin ölçeği</value></data>
+  <data name="ThemeShadowStrength" xml:space="preserve"><value>Gölge yoğunluğu</value></data>
+  <data name="ThemeDetails" xml:space="preserve"><value>Diğer renkler</value></data>
+  <data name="ThemeGeometry" xml:space="preserve"><value>Şekil ve tipografi</value></data>
+  <data name="ThemeColorReset" xml:space="preserve"><value>Otomatik renk kullan</value></data>
+  <data name="ThemeColorInvalid" xml:space="preserve"><value>#RRGGBB veya #AARRGGBB girin.</value></data>
+  <data name="ImportTheme" xml:space="preserve"><value>Tema içe aktar</value></data>
+  <data name="ExportTheme" xml:space="preserve"><value>Tema dışa aktar</value></data>
+  <data name="ResetAppearance" xml:space="preserve"><value>Tüm görünümü sıfırla</value></data>
+  <data name="ThemeFileInvalid" xml:space="preserve"><value>Tema okunamadı veya kaydedilemedi. Dosya biçimini ve klasör erişimini kontrol edin.</value></data>
+  <data name="ThemeImported" xml:space="preserve"><value>Tema içe aktarıldı.</value></data>
+  <data name="ThemeExported" xml:space="preserve"><value>Tema dışa aktarıldı.</value></data>
+</root>

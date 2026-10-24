@@ -1,0 +1,153 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:icons="using:IntelligentScheduler.Desktop.Controls"
+             xmlns:vm="using:IntelligentScheduler.Desktop.ViewModels"
+             x:Class="IntelligentScheduler.Desktop.EventMoveView">
+  <!-- One sheet for every way of moving something: a ticked list from the day, a single event
+       from its row menu, or an event dropped somewhere else on the week board. All three end
+       up here so all three get the same conflict check and the same confirmation. -->
+  <Border Classes="surface eventMoveSheet" Padding="14,13" Width="384">
+    <StackPanel Spacing="10">
+      <Grid ColumnDefinitions="Auto,*,Auto" ColumnSpacing="10">
+        <Border Width="30" Height="30" CornerRadius="{DynamicResource ShellControlRadius}"
+                Background="{DynamicResource ShellAccentSoft}">
+          <icons:AnimatedIcon Data="{StaticResource IconRefresh}" Motion="Shift" Width="15"
+                              Foreground="{DynamicResource ShellAccent}" />
+        </Border>
+        <StackPanel Grid.Column="1" Spacing="1" VerticalAlignment="Center">
+          <TextBlock Text="{DynamicResource L.MoveTitle}" Classes="muted" FontSize="{DynamicResource MarelianFont10}" />
+          <TextBlock Text="{Binding MoveSubjectText}" FontSize="{DynamicResource MarelianFont14}" FontWeight="SemiBold"
+                     TextTrimming="CharacterEllipsis" />
+        </StackPanel>
+        <Button Grid.Column="2" Classes="icon quiet mini closeGlyph" Command="{Binding CloseMovePanelCommand}">
+          <icons:AnimatedIcon Data="{StaticResource IconClose}" Width="14" />
+        </Button>
+      </Grid>
+
+      <Border Classes="segmentHost" HorizontalAlignment="Stretch">
+        <Grid ColumnDefinitions="*,*" ColumnSpacing="2">
+          <Button Classes="segment" Classes.active="{Binding IsMoveByOffset}"
+                  HorizontalAlignment="Stretch" HorizontalContentAlignment="Center"
+                  Command="{Binding SetMoveByOffsetCommand}" Content="{DynamicResource L.MoveModeTime}" />
+          <Button Grid.Column="1" Classes="segment" Classes.active="{Binding IsMoveByDate}"
+                  HorizontalAlignment="Stretch" HorizontalContentAlignment="Center"
+                  Command="{Binding SetMoveByDateCommand}" Content="{DynamicResource L.MoveModeDate}" />
+        </Grid>
+      </Border>
+
+      <!-- By an amount of time. -->
+      <StackPanel Spacing="8" IsVisible="{Binding IsMoveByOffset}">
+        <Grid ColumnDefinitions="*,110,*" ColumnSpacing="6">
+          <Button Classes="shiftDirection" Classes.active="{Binding IsMoveEarlier}"
+                  Command="{Binding SetMoveEarlierCommand}">
+            <StackPanel Orientation="Horizontal" Spacing="5" HorizontalAlignment="Center">
+              <icons:AnimatedIcon Data="{StaticResource IconChevronLeft}" Motion="ArrowLeft" Width="12" Height="12" />
+              <TextBlock Text="{DynamicResource L.MoveEarlier}" />
+            </StackPanel>
+          </Button>
+          <Button Grid.Column="1" Classes="dayShiftTime" Command="{Binding OpenMoveAmountPickerCommand}"
+                  ToolTip.Tip="{DynamicResource L.ChooseTime}">
+            <StackPanel Orientation="Horizontal" Spacing="5" HorizontalAlignment="Center">
+              <icons:AnimatedIcon Data="{StaticResource IconClock}" Motion="Clock" Width="13" />
+              <TextBlock Text="{Binding MoveAmountLabel}" FontWeight="SemiBold" />
+            </StackPanel>
+          </Button>
+          <Button Grid.Column="2" Classes="shiftDirection" Classes.active="{Binding !IsMoveEarlier}"
+                  Command="{Binding SetMoveLaterCommand}">
+            <StackPanel Orientation="Horizontal" Spacing="5" HorizontalAlignment="Center">
+              <TextBlock Text="{DynamicResource L.MoveLater}" />
+              <icons:AnimatedIcon Data="{StaticResource IconChevronRight}" Motion="ArrowRight" Width="12" Height="12" />
+            </StackPanel>
+          </Button>
+        </Grid>
+
+        <!-- Most moves are "a bit later", so the common answers are one press away. -->
+        <Grid ColumnDefinitions="*,*,*,*" ColumnSpacing="5">
+          <Button Classes="nudgeChip" Command="{Binding NudgeMoveCommand}" CommandParameter="-60"
+                  Content="{DynamicResource L.MoveNudgeMinusHour}" />
+          <Button Grid.Column="1" Classes="nudgeChip" Command="{Binding NudgeMoveCommand}" CommandParameter="-15"
+                  Content="{DynamicResource L.MoveNudgeMinus15}" />
+          <Button Grid.Column="2" Classes="nudgeChip" Command="{Binding NudgeMoveCommand}" CommandParameter="15"
+                  Content="{DynamicResource L.MoveNudgePlus15}" />
+          <Button Grid.Column="3" Classes="nudgeChip" Command="{Binding NudgeMoveCommand}" CommandParameter="60"
+                  Content="{DynamicResource L.MoveNudgePlusHour}" />
+        </Grid>
+      </StackPanel>
+
+      <!-- Onto another day, keeping every event at its own time. -->
+      <StackPanel Spacing="5" IsVisible="{Binding IsMoveByDate}">
+        <TextBlock Text="{DynamicResource L.Date}" Classes="label" />
+        <Button Classes="fieldButton eventDateField" Command="{Binding OpenMoveDateCalendarCommand}">
+          <Grid ColumnDefinitions="Auto,*" ColumnSpacing="8">
+            <icons:AnimatedIcon Data="{StaticResource IconCalendar}" Width="15" />
+            <TextBlock Grid.Column="1" Text="{Binding MoveTargetDateLabel}" HorizontalAlignment="Left"
+                       TextTrimming="CharacterEllipsis" />
+          </Grid>
+        </Button>
+      </StackPanel>
+
+      <Border Classes="movePreview">
+        <StackPanel Spacing="2">
+          <TextBlock Text="{DynamicResource L.MoveByHowMuch}" Classes="muted" FontSize="{DynamicResource MarelianFont9_5}" />
+          <TextBlock Text="{Binding MovePreviewText}" FontSize="{DynamicResource MarelianFont12_5}" FontWeight="SemiBold"
+                     TextWrapping="Wrap" />
+        </StackPanel>
+      </Border>
+
+      <!-- The notification the schedule never gave: what this lands on, before it lands. -->
+      <Border Classes="collisionCard" IsVisible="{Binding HasMoveCollisions}">
+        <StackPanel Spacing="7">
+          <Grid ColumnDefinitions="Auto,*,Auto" ColumnSpacing="8">
+            <icons:AnimatedIcon Data="?" Motion="Help" Width="13" Height="13"
+                                Foreground="{DynamicResource ShellDanger}" VerticalAlignment="Center" />
+            <TextBlock Grid.Column="1" Text="{DynamicResource L.MoveAffects}" FontSize="{DynamicResource MarelianFont11_5}"
+                       FontWeight="SemiBold" VerticalAlignment="Center" />
+            <TextBlock Grid.Column="2" Text="{Binding MoveCollisionSummary}" FontSize="{DynamicResource MarelianFont10}"
+                       Foreground="{DynamicResource ShellMuted}" VerticalAlignment="Center" />
+          </Grid>
+          <ItemsControl ItemsSource="{Binding MoveCollisions}">
+            <ItemsControl.ItemsPanel><ItemsPanelTemplate><StackPanel Spacing="4" /></ItemsPanelTemplate></ItemsControl.ItemsPanel>
+            <ItemsControl.ItemTemplate>
+              <DataTemplate DataType="vm:ScheduleCollisionViewModel">
+                <Grid ColumnDefinitions="Auto,*,Auto" ColumnSpacing="7">
+                  <Border Width="4" Height="4" CornerRadius="2" VerticalAlignment="Center"
+                          Background="{DynamicResource ShellDanger}" />
+                  <TextBlock Grid.Column="1" Text="{Binding Text}" FontSize="{DynamicResource MarelianFont10_5}" TextWrapping="Wrap" />
+                  <TextBlock Grid.Column="2" Text="{Binding Overlap}" FontSize="{DynamicResource MarelianFont10}"
+                             Foreground="{DynamicResource ShellMuted}" VerticalAlignment="Center" />
+                </Grid>
+              </DataTemplate>
+            </ItemsControl.ItemTemplate>
+          </ItemsControl>
+        </StackPanel>
+      </Border>
+
+      <Border Background="{DynamicResource ShellAccentSoft}" CornerRadius="{DynamicResource ShellControlRadius}"
+              Padding="9,6" IsVisible="{Binding HasMoveValidationError}">
+        <TextBlock Text="{Binding MoveValidationMessage}" Foreground="{DynamicResource ShellDanger}"
+                   FontSize="{DynamicResource MarelianFont11}" TextWrapping="Wrap" TextAlignment="Center" />
+      </Border>
+
+      <Grid ColumnDefinitions="*,*" ColumnSpacing="8" IsVisible="{Binding !IsMoveConfirmationVisible}">
+        <Button Classes="secondary compactAction" HorizontalAlignment="Stretch"
+                HorizontalContentAlignment="Center"
+                Command="{Binding CloseMovePanelCommand}" Content="{DynamicResource L.Cancel}" />
+        <Button Grid.Column="1" Classes="primary compactAction" HorizontalAlignment="Stretch"
+                HorizontalContentAlignment="Center"
+                Command="{Binding PreviewMoveCommand}" Content="{DynamicResource L.MoveCheck}" />
+      </Grid>
+
+      <Border Classes="confirmation" IsVisible="{Binding IsMoveConfirmationVisible}">
+        <StackPanel Spacing="9">
+          <TextBlock Text="{Binding MoveConfirmationText}" TextWrapping="Wrap" TextAlignment="Center" />
+          <Grid ColumnDefinitions="92,92" ColumnSpacing="8" HorizontalAlignment="Center">
+            <Button Width="92" Classes="secondary compactAction" Command="{Binding CancelMoveConfirmationCommand}"
+                    Content="{DynamicResource L.Cancel}" />
+            <Button Grid.Column="1" Width="92" Classes="primary compactAction" Command="{Binding ConfirmMoveCommand}"
+                    Content="{DynamicResource L.MoveApply}" IsEnabled="{Binding !IsBusy}" />
+          </Grid>
+        </StackPanel>
+      </Border>
+    </StackPanel>
+  </Border>
+</UserControl>

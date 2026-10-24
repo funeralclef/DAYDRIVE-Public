@@ -1,0 +1,43 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="IntelligentScheduler.Desktop.WorkspaceWindow"
+        Title="DAYDRIVE" Width="1280" Height="820" MinWidth="600" MinHeight="480"
+        CanResize="True" ShowInTaskbar="True" Topmost="False"
+        Background="{DynamicResource ShellBackground}"
+        Classes.reduceMotion="{Binding ReduceMotion}"
+        Classes.motion="{Binding !ReduceMotion}">
+  <Grid RowDefinitions="Auto,Auto,*">
+    <Border Name="WorkspaceToolbar" Padding="12,8" BorderThickness="0,0,0,1" BorderBrush="{DynamicResource ShellStroke}">
+      <WrapPanel Orientation="Horizontal">
+        <Button Name="PlannerButton" Content="{DynamicResource L.Schedule}" Click="Planner_OnClick" Classes="quiet" Margin="0,0,6,0" />
+        <Button Name="CalendarButton" Content="{DynamicResource L.Calendar}" Command="{Binding ToggleCalendarCommand}" Classes="quiet" Margin="0,0,6,0" />
+        <Button Name="AnalyticsButton" Content="{DynamicResource L.Analytics}" Command="{Binding ToggleAnalyticsCommand}" Classes="quiet" Margin="0,0,6,0" />
+        <Button Name="AssistantButton" Content="{DynamicResource L.AssistantTitle}" Click="Assistant_OnClick" Classes="quiet" Margin="0,0,6,0" />
+        <Button Name="SettingsButton" Content="{DynamicResource L.SettingsTitle}" Command="{Binding ShowSettingsCommand}" Classes="quiet" />
+      </WrapPanel>
+    </Border>
+    <Border Name="ReminderBanner" Grid.Row="1" Padding="16,8" Background="{DynamicResource ShellSurfaceAlt}"
+            IsVisible="{Binding Notifications.IsPresenting}">
+      <Grid ColumnDefinitions="*,Auto">
+        <Button Classes="quiet" Click="Reminder_OnClick" HorizontalContentAlignment="Left">
+          <StackPanel>
+            <TextBlock Text="{Binding Notifications.Current.Title}" FontWeight="SemiBold" />
+            <TextBlock Text="{Binding Notifications.Current.Body}" TextWrapping="Wrap" />
+          </StackPanel>
+        </Button>
+        <Button Grid.Column="1" Content="×" Click="DismissReminder_OnClick" Classes="quiet" />
+      </Grid>
+    </Border>
+    <Grid Grid.Row="2">
+      <Grid Name="WorkspaceBody" ColumnDefinitions="444,*" Margin="8">
+        <ContentControl Name="PlannerContent" HorizontalAlignment="Center" Width="444" />
+        <ScrollViewer Name="SectionScroll" Grid.Column="1" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Disabled" Margin="8,0,0,0">
+          <ContentControl Name="SectionContent" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" />
+        </ScrollViewer>
+      </Grid>
+      <Border Name="PickerBackdrop" IsVisible="False" Background="#80000000" PointerPressed="Backdrop_OnPointerPressed">
+        <ContentControl Name="PickerContent" HorizontalAlignment="Center" VerticalAlignment="Center" />
+      </Border>
+    </Grid>
+  </Grid>
+</Window>

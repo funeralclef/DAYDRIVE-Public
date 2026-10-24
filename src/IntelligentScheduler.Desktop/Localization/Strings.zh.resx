@@ -1,0 +1,2094 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="AppName" xml:space="preserve">
+    <value>DAYDRIVE</value>
+  </data>
+  <data name="StatusReady" xml:space="preserve">
+    <value>准备好</value>
+  </data>
+  <data name="NavPlan" xml:space="preserve">
+    <value>计划</value>
+  </data>
+  <data name="NavTasks" xml:space="preserve">
+    <value>任务</value>
+  </data>
+  <data name="NavAssistant" xml:space="preserve">
+    <value>助理</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>设置</value>
+  </data>
+  <data name="Hide" xml:space="preserve">
+    <value>隐藏面板</value>
+  </data>
+  <data name="PlanTitle" xml:space="preserve">
+    <value>你的一天</value>
+  </data>
+  <data name="PlanSubtitle" xml:space="preserve">
+    <value>固定日程保持不变，任务会围绕它们灵活调整</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>下一步</value>
+  </data>
+  <data name="Adjust" xml:space="preserve">
+    <value>调整</value>
+  </data>
+  <data name="Schedule" xml:space="preserve">
+    <value>时间表</value>
+  </data>
+  <data name="Calendar" xml:space="preserve">
+    <value>日历</value>
+  </data>
+  <data name="AddEvent" xml:space="preserve">
+    <value>添加事件</value>
+  </data>
+  <data name="EventTitle" xml:space="preserve">
+    <value>发生了什么事？</value>
+  </data>
+  <data name="SaveChanges" xml:space="preserve">
+    <value>保存更改</value>
+  </data>
+  <data name="TasksTitle" xml:space="preserve">
+    <value>任务</value>
+  </data>
+  <data name="TasksSubtitle" xml:space="preserve">
+    <value>一份专注的任务清单，会在一天中找到合适的时间</value>
+  </data>
+  <data name="EditTask" xml:space="preserve">
+    <value>编辑任务</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>编辑</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="QuickTaskPlaceholder" xml:space="preserve">
+    <value>用自然语言添加任务...</value>
+  </data>
+  <data name="AssistantTitle" xml:space="preserve">
+    <value>助理</value>
+  </data>
+  <data name="AssistantIntro" xml:space="preserve">
+    <value>我能把你的想法变成切实可行的一日计划。请自然地描述需求。</value>
+  </data>
+  <data name="AssistantPrivacy" xml:space="preserve">
+    <value>本地或通过您选择的 AI</value>
+  </data>
+  <data name="AssistantPlaceholder" xml:space="preserve">
+    <value>例如：让明天的安排轻松一些</value>
+  </data>
+  <data name="Ask" xml:space="preserve">
+    <value>询问</value>
+  </data>
+  <data name="SettingsTitle" xml:space="preserve">
+    <value>设置</value>
+  </data>
+  <data name="SettingsSubtitle" xml:space="preserve">
+    <value>更改会自动保存</value>
+  </data>
+  <data name="General" xml:space="preserve">
+    <value>一般</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>语言</value>
+  </data>
+  <data name="StartHidden" xml:space="preserve">
+    <value>开始隐藏</value>
+  </data>
+  <data name="KeepOnTop" xml:space="preserve">
+    <value>保持在其他窗口上方</value>
+  </data>
+  <data name="Appearance" xml:space="preserve">
+    <value>外观</value>
+  </data>
+  <data name="Design" xml:space="preserve">
+    <value>设计</value>
+  </data>
+  <data name="ColorSource" xml:space="preserve">
+    <value>强调色来源</value>
+  </data>
+  <data name="Accent" xml:space="preserve">
+    <value>口音</value>
+  </data>
+  <data name="Background" xml:space="preserve">
+    <value>背景</value>
+  </data>
+  <data name="ThemeMode" xml:space="preserve">
+    <value>模式</value>
+  </data>
+  <data name="ThemeModeDark" xml:space="preserve">
+    <value>深色</value>
+  </data>
+  <data name="ThemeModeLight" xml:space="preserve">
+    <value>浅色</value>
+  </data>
+  <data name="ThemePreviewTitle" xml:space="preserve">
+    <value>MARELIAN</value>
+  </data>
+  <data name="ThemePreviewHint" xml:space="preserve">
+    <value>浅色和深色模式分别保存颜色和形状。</value>
+  </data>
+  <data name="ColorCustomization" xml:space="preserve">
+    <value>你的颜色</value>
+  </data>
+  <data name="ColorCustomizationHint" xml:space="preserve">
+    <value>留空使用自动颜色。点击色块选择颜色。</value>
+  </data>
+  <data name="ColorPickerHint" xml:space="preserve">
+    <value>拖动选择</value>
+  </data>
+  <data name="ResetThemeColors" xml:space="preserve">
+    <value>重置此模式</value>
+  </data>
+  <data name="Transparency" xml:space="preserve">
+    <value>透明度和模糊</value>
+  </data>
+  <data name="ReduceMotion" xml:space="preserve">
+    <value>禁用界面动画</value>
+  </data>
+  <data name="Behavior" xml:space="preserve">
+    <value>行为</value>
+  </data>
+  <data name="PanelReveal" xml:space="preserve">
+    <value>显示面板</value>
+  </data>
+  <data name="PinOpen" xml:space="preserve">
+    <value>不自动隐藏</value>
+  </data>
+  <data name="AiConnection" xml:space="preserve">
+    <value>人工智能连接</value>
+  </data>
+  <data name="Provider" xml:space="preserve">
+    <value>提供商</value>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>地址</value>
+  </data>
+  <data name="Model" xml:space="preserve">
+    <value>模型</value>
+  </data>
+  <data name="ApiKey" xml:space="preserve">
+    <value>API 密钥（在此设备上加密）</value>
+  </data>
+  <data name="ApiKeyPlaceholder" xml:space="preserve">
+    <value>留空以保留保存的密钥</value>
+  </data>
+  <data name="RemoveKey" xml:space="preserve">
+    <value>删除已保存的密钥</value>
+  </data>
+  <data name="TestConnection" xml:space="preserve">
+    <value>保存并测试连接</value>
+  </data>
+  <data name="SettingsSaved" xml:space="preserve">
+    <value>已保存</value>
+  </data>
+  <data name="SettingsSaving" xml:space="preserve">
+    <value>正在保存...</value>
+  </data>
+  <data name="SettingsError" xml:space="preserve">
+    <value>无法保存设置</value>
+  </data>
+  <data name="FreeDay" xml:space="preserve">
+    <value>空闲日</value>
+  </data>
+  <data name="EmptyPlan" xml:space="preserve">
+    <value>你的计划是空的</value>
+  </data>
+  <data name="EmptyPlanHint" xml:space="preserve">
+    <value>在一行中添加任务</value>
+  </data>
+  <data name="MinutesShort" xml:space="preserve">
+    <value>分钟</value>
+  </data>
+  <data name="EventKind" xml:space="preserve">
+    <value>事件</value>
+  </data>
+  <data name="TaskKind" xml:space="preserve">
+    <value>任务</value>
+  </data>
+  <data name="DoneKind" xml:space="preserve">
+    <value>完成</value>
+  </data>
+  <data name="Focus" xml:space="preserve">
+    <value>专注</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>添加</value>
+  </data>
+  <data name="Added" xml:space="preserve">
+    <value>添加</value>
+  </data>
+  <data name="SuggestedByAssistant" xml:space="preserve">
+    <value>助理建议</value>
+  </data>
+  <data name="Priority" xml:space="preserve">
+    <value>优先级</value>
+  </data>
+  <data name="OptionCustom">
+    <value>自定义</value>
+  </data>
+  <data name="OptionPreset">
+    <value>预设</value>
+  </data>
+  <data name="OptionSystemAccent">
+    <value>系统重音</value>
+  </data>
+  <data name="OptionWallpaper">
+    <value>桌面壁纸</value>
+  </data>
+  <data name="OptionHover">
+    <value>悬停时</value>
+  </data>
+  <data name="OptionClick">
+    <value>点击时</value>
+  </data>
+  <data name="TaskAdded">
+    <value>任务已添加</value>
+  </data>
+  <data name="TaskRestored">
+    <value>任务已恢复</value>
+  </data>
+  <data name="TaskUpdated">
+    <value>任务已更新</value>
+  </data>
+  <data name="TaskDeleted">
+    <value>任务已删除</value>
+  </data>
+  <data name="BlockCompleted">
+    <value>焦点块完成</value>
+  </data>
+  <data name="EventAdded">
+    <value>已添加事件</value>
+  </data>
+  <data name="EventUpdated">
+    <value>活动已更新</value>
+  </data>
+  <data name="EventDeleted">
+    <value>活动已删除</value>
+  </data>
+  <data name="Thinking">
+    <value>思考……</value>
+  </data>
+  <data name="SecondsShort">
+    <value>s</value>
+  </data>
+  <data name="ReplyReady">
+    <value>回复准备好了</value>
+  </data>
+  <data name="ReviewSuggestions">
+    <value>添加前查看建议</value>
+  </data>
+  <data name="RequestCancelled">
+    <value>请求已取消</value>
+  </data>
+  <data name="ReplyFailed">
+    <value>无法得到回复：{0}</value>
+  </data>
+  <data name="ConnectionError">
+    <value>连接错误</value>
+  </data>
+  <data name="SuggestionAdded">
+    <value>已添加建议</value>
+  </data>
+  <data name="OpenApp">
+    <value>打开 DAYDRIVE</value>
+  </data>
+  <data name="QuickAdd">
+    <value>快速添加</value>
+  </data>
+  <data name="Exit">
+    <value>退出</value>
+  </data>
+  <data name="CalendarToday">
+    <value>今天</value>
+  </data>
+  <data name="ComposerTask">
+    <value>任务</value>
+  </data>
+  <data name="ComposerAgent">
+    <value>代理</value>
+  </data>
+  <data name="NewEvent">
+    <value>新活动</value>
+  </data>
+  <data name="Date">
+    <value>日期</value>
+  </data>
+  <data name="Time">
+    <value>时间</value>
+  </data>
+  <data name="Duration">
+    <value>持续时间</value>
+  </data>
+  <data name="NoDeadline">
+    <value>没有截止日期</value>
+  </data>
+  <data name="InvalidInput">
+    <value>检查输入的日期、时间和数字</value>
+  </data>
+  <data name="ActiveTasks">
+    <value>任务</value>
+  </data>
+  <data name="NoAgenda">
+    <value>今天没有安排</value>
+  </data>
+  <data name="DueDate">
+    <value>截止日期</value>
+  </data>
+  <data name="PriorityLabel">
+    <value>优先</value>
+  </data>
+  <data name="AgentConversation">
+    <value>对话</value>
+  </data>
+  <data name="Send">
+    <value>发送</value>
+  </data>
+  <data name="TimeFrom">
+    <value>来自</value>
+  </data>
+  <data name="TimeTo">
+    <value>至</value>
+  </data>
+  <data name="WeekNavigationHint">
+    <value>滚动或拖动以切换周</value>
+  </data>
+  <data name="Attachment">
+    <value>附件</value>
+  </data>
+  <data name="Attach">
+    <value>附加文件</value>
+  </data>
+  <data name="ChooseDate">
+    <value>选择日期</value>
+  </data>
+  <data name="EditEvent">
+    <value>编辑事件</value>
+  </data>
+  <data name="Confirm">
+    <value>确认</value>
+  </data>
+  <data name="ConfirmChanges">
+    <value>应用这些更改？</value>
+  </data>
+  <data name="ConfirmDeleteEvent">
+    <value>删除此活动？</value>
+  </data>
+  <data name="ConfirmDeleteTask">
+    <value>删除该任务？</value>
+  </data>
+  <data name="DragToCreateHint">
+    <value>在空闲时间拖动以创建事件</value>
+  </data>
+  <data name="DaySummaryFormat">
+    <value>{0} 今日商品 · {1} 最低计划</value>
+  </data>
+  <data name="Use24HourClock">
+    <value>使用 24 小时时间</value>
+  </data>
+  <data name="ChooseStartTime">
+    <value>开始时间</value>
+  </data>
+  <data name="ChooseEndTime">
+    <value>结束时间</value>
+  </data>
+  <data name="TimePickerHint">
+    <value>5 分钟步数</value>
+  </data>
+  <data name="TransparencyIntensity">
+    <value>透明度强度</value>
+  </data>
+  <data name="ChooseTime">
+    <value>选择时间</value>
+  </data>
+  <data name="Hours">
+    <value>小时</value>
+  </data>
+  <data name="Minutes">
+    <value>分钟</value>
+  </data>
+  <data name="EventTitleRequired">
+    <value>输入活动标题</value>
+  </data>
+  <data name="EventDateTimeRequired">
+    <value>选择日期、开始时间和结束时间</value>
+  </data>
+  <data name="EventTimeRangeRequired">
+    <value>开始和结束时间不能相同</value>
+  </data>
+  <data name="EventSaveFailed">
+    <value>无法保存事件。再试一次。</value>
+  </data>
+  <data name="AttachDialogTitle">
+    <value>附加文件</value>
+  </data>
+  <data name="McpArgumentsPlaceholder">
+    <value>MCP 服务器参数</value>
+  </data>
+  <data name="McpToolPlaceholder">
+    <value>MCP 工具名称</value>
+  </data>
+  <data name="ScheduledBlock">
+    <value>预定区块</value>
+  </data>
+  <data name="StartingSoon">
+    <value>即将开始</value>
+  </data>
+  <data name="StartsInMinutes">
+    <value>{0} 在 {1} 分钟内启动。</value>
+  </data>
+  <data name="StartupFailed">
+    <value>DAYDRIVE 无法启动</value>
+  </data>
+  <data name="CrashLogSaved">
+    <value>详细信息已保存到应用程序数据文件夹中的 daydrive-crash.log 中。</value>
+  </data>
+  <data name="OptionProviderLocal">
+    <value>本地模型（GGUF）</value>
+  </data>
+  <data name="OptionProviderOpenAi">
+    <value>自定义 API</value>
+  </data>
+  <data name="OptionTransportHttp">
+    <value>HTTP 服务器</value>
+  </data>
+  <data name="OptionTransportStdio">
+    <value>本地命令（stdio）</value>
+  </data>
+  <data name="ScrollToAdjust">
+    <value>滚动调整</value>
+  </data>
+  <data name="NewTask">
+    <value>新任务</value>
+  </data>
+  <data name="AddTask">
+    <value>添加任务</value>
+  </data>
+  <data name="TaskTitle">
+    <value>需要做什么？</value>
+  </data>
+  <data name="EmptyPlanTaskHint">
+    <value>创建任务或事件</value>
+  </data>
+  <data name="LaunchAtStartup">
+    <value>系统启动时启动</value>
+  </data>
+  <data name="AutostartFailed">
+    <value>无法更改系统启动设置</value>
+  </data>
+  <data name="PriorityLow">
+    <value>低</value>
+  </data>
+  <data name="PriorityNormal">
+    <value>正常</value>
+  </data>
+  <data name="PriorityHigh">
+    <value>高</value>
+  </data>
+  <data name="PriorityUrgent">
+    <value>紧急</value>
+  </data>
+  <data name="PreferredAny">
+    <value>任何时间</value>
+  </data>
+  <data name="PreferredMorning">
+    <value>早上</value>
+  </data>
+  <data name="PreferredAfternoon">
+    <value>下午</value>
+  </data>
+  <data name="PreferredEvening">
+    <value>晚上</value>
+  </data>
+  <data name="Notes">
+    <value>注释</value>
+  </data>
+  <data name="NotesPlaceholder">
+    <value>上下文或下一步</value>
+  </data>
+  <data name="AdvancedPlanning">
+    <value>规划选项</value>
+  </data>
+  <data name="EarliestStart">
+    <value>开始时间不早于</value>
+  </data>
+  <data name="AnyDate">
+    <value>无限制</value>
+  </data>
+  <data name="PreferredTime">
+    <value>首选时间</value>
+  </data>
+  <data name="SplitTask">
+    <value>允许分割成块</value>
+  </data>
+  <data name="MinBlock">
+    <value>最小块，分钟</value>
+  </data>
+  <data name="MaxSplits">
+    <value>最大块数</value>
+  </data>
+  <data name="ManageTaskBlock">
+    <value>任务块</value>
+  </data>
+  <data name="PlannedInterval">
+    <value>计划间隔</value>
+  </data>
+  <data name="CompletedMinutes">
+    <value>已完成，分钟</value>
+  </data>
+  <data name="CompleteWork">
+    <value>完成</value>
+  </data>
+  <data name="OpenTask">
+    <value>开放任务</value>
+  </data>
+  <data name="NotToday">
+    <value>今天不行</value>
+  </data>
+  <data name="Unschedule">
+    <value>取消安排</value>
+  </data>
+  <data name="LockTime">
+    <value>锁定此时间</value>
+  </data>
+  <data name="ConfirmTaskBlockChange">
+    <value>保存新的间隔和块选项吗？</value>
+  </data>
+  <data name="ConfirmTaskBlockComplete">
+    <value>记录输入的完成时间？</value>
+  </data>
+  <data name="ConfirmTaskBlockUnschedule">
+    <value>从日程表中删除此块吗？任务将保留。</value>
+  </data>
+  <data name="ConfirmTaskBlockNotToday">
+    <value>将此任务排除在今天的日程安排之外吗？</value>
+  </data>
+  <data name="TaskBlockMinutesInvalid">
+    <value>输入从 1 分钟到区块持续时间</value>
+  </data>
+  <data name="TaskBlockMoved">
+    <value>任务块已移动并锁定</value>
+  </data>
+  <data name="TaskBlockUpdated">
+    <value>已保存块选项</value>
+  </data>
+  <data name="TaskBlockUnscheduled">
+    <value>块从时间表中删除</value>
+  </data>
+  <data name="TaskBlockDeferred">
+    <value>任务推迟到另一天</value>
+  </data>
+  <data name="TaskBlockPartiallyCompleted">
+    <value>记录了部分工作；其余部分将返回计划</value>
+  </data>
+  <data name="TaskBlockConflict">
+    <value>此间隔与另一个事件或块重叠</value>
+  </data>
+  <data name="LocalModelIntro">
+    <value>选择一个模型。DAYDRIVE 会下载 GGUF 和 llama.cpp，并仅在此设备上运行全部内容。</value>
+  </data>
+  <data name="LocalModelRoleLite">
+    <value>快速命令解析和任务捕获</value>
+  </data>
+  <data name="LocalModelRoleBalanced">
+    <value>日常规划和助手——推荐</value>
+  </data>
+  <data name="LocalModelRoleSmart">
+    <value>每周分析和复杂的代理请求</value>
+  </data>
+  <data name="Recommended">
+    <value>推荐</value>
+  </data>
+  <data name="LocalEngine">
+    <value>本地引擎</value>
+  </data>
+  <data name="DownloadModel">
+    <value>下载</value>
+  </data>
+  <data name="DownloadVisionSupport">
+    <value>添加视野</value>
+  </data>
+  <data name="StartModel">
+    <value>开始</value>
+  </data>
+  <data name="StopModel">
+    <value>停止</value>
+  </data>
+  <data name="VisionSupport">
+    <value>图像输入</value>
+  </data>
+  <data name="VisionSupportHint" xml:space="preserve"><value>让模型读取附加的图片。它需要第二个文件——视觉投影仪——与模型一起下载。</value></data>
+  <data name="IdleSleep">
+    <value>空闲时释放内存</value>
+  </data>
+  <data name="IdleFiveMinutes">
+    <value>5分钟后</value>
+  </data>
+  <data name="IdleTenMinutes">
+    <value>10 分钟后</value>
+  </data>
+  <data name="IdleThirtyMinutes">
+    <value>30 分钟后</value>
+  </data>
+  <data name="IdleNever">
+    <value>从不自动释放</value>
+  </data>
+  <data name="LocalModelArchitectureHint">
+    <value>AI 接收未计划的任务和固定事件作为只读上下文。该模型没有数据库访问权限，并且从不自动预留时间。</value>
+  </data>
+  <data name="DownloadingEngine">
+    <value>正在下载 llama.cpp...</value>
+  </data>
+  <data name="ExtractingEngine">
+    <value>正在安装llama.cpp…</value>
+  </data>
+  <data name="DownloadingModel">
+    <value>正在下载 GGUF 模型...</value>
+  </data>
+  <data name="DownloadingVision">
+    <value>正在下载视觉投影仪...</value>
+  </data>
+  <data name="StartingLocalModel">
+    <value>正在将模型加载到内存中...</value>
+  </data>
+  <data name="LocalModelRunning">
+    <value>本地运行</value>
+  </data>
+  <data name="LocalModelSleeping">
+    <value>睡眠 — 根据要求再次启动</value>
+  </data>
+  <data name="LocalModelStopped">
+    <value>已停止 — 需要时自动启动</value>
+  </data>
+  <data name="LocalModelNotInstalled">
+    <value>未下载</value>
+  </data>
+  <data name="LocalModelInstalled">
+    <value>本地模型已准备就绪</value>
+  </data>
+  <data name="LocalModelDeleted">
+    <value>本地模型已删除</value>
+  </data>
+  <data name="LocalModelError">
+    <value>本地模型错误</value>
+  </data>
+  <data name="DownloadCancelled">
+    <value>下载已暂停；可以稍后恢复</value>
+  </data>
+  <data name="QuickPromptPlan">
+    <value>计划我的一天</value>
+  </data>
+  <data name="QuickPromptToday">
+    <value>今天有什么计划？</value>
+  </data>
+  <data name="QuickPromptTask">
+    <value>创建今晚的任务</value>
+  </data>
+  <data name="SwitchModelConfirmTitle">
+    <value>开关型号</value>
+  </data>
+  <data name="SwitchModelConfirmText">
+    <value>型号“{0}”正在运行。停止它并切换到“{1}”？</value>
+  </data>
+  <data name="SwitchAndStart">
+    <value>停止和启动</value>
+  </data>
+  <data name="SwitchOnly">
+    <value>仅开关</value>
+  </data>
+  <data name="StopAndSwitch">
+    <value>停止并切换</value>
+  </data>
+  <data name="KeepRunning">
+    <value>保持在后台</value>
+  </data>
+  <data name="SwitchProviderConfirmText">
+    <value>本地模型“{0}”正在运行。在切换到 {1} 之前停止它吗？</value>
+  </data>
+  <data name="ItemsCountOne">
+    <value>{0} 项</value>
+  </data>
+  <data name="ItemsCountFew">
+    <value>{0} 项</value>
+  </data>
+  <data name="ItemsCountMany">
+    <value>{0} 项</value>
+  </data>
+  <data name="UnscheduledTasks">
+    <value>计划外</value>
+  </data>
+  <data name="CurrentEvent">
+    <value>当前事件</value>
+  </data>
+  <data name="NextEvent">
+    <value>下一个活动</value>
+  </data>
+  <data name="NoEventsTitle">
+    <value>没有安排活动</value>
+  </data>
+  <data name="NoEventsHint">
+    <value>创建活动以预留时间</value>
+  </data>
+  <data name="NoEventsForDay">
+    <value>今天没有安排活动</value>
+  </data>
+  <data name="EventDaySummaryFormat">
+    <value>{0} 事件 · {1} 最小占用</value>
+  </data>
+  <data name="EndingSoon">
+    <value>即将结束</value>
+  </data>
+  <data name="EndsInMinutes">
+    <value>{0} 以 {1} 分钟结束。</value>
+  </data>
+  <data name="EventCategory" xml:space="preserve">
+    <value>类别</value>
+  </data>
+  <data name="EventPriority" xml:space="preserve">
+    <value>优先</value>
+  </data>
+  <data name="EventRepeat" xml:space="preserve">
+    <value>重复</value>
+  </data>
+  <data name="EventCategoryGeneral" xml:space="preserve">
+    <value>一般</value>
+  </data>
+  <data name="EventCategoryWork" xml:space="preserve">
+    <value>工作</value>
+  </data>
+  <data name="EventCategoryPersonal" xml:space="preserve">
+    <value>个人</value>
+  </data>
+  <data name="EventCategoryStudy" xml:space="preserve">
+    <value>研究</value>
+  </data>
+  <data name="EventCategoryHealth" xml:space="preserve">
+    <value>健康</value>
+  </data>
+  <data name="EventCategorySocial" xml:space="preserve">
+    <value>社交</value>
+  </data>
+  <data name="EventCategoryErrands" xml:space="preserve">
+    <value>杂务</value>
+  </data>
+  <data name="EventCategoryTravel" xml:space="preserve">
+    <value>出行</value>
+  </data>
+  <data name="EventCategoryRest" xml:space="preserve">
+    <value>休息</value>
+  </data>
+  <data name="EventPriorityNormal" xml:space="preserve">
+    <value>正常</value>
+  </data>
+  <data name="EventPriorityHigh" xml:space="preserve">
+    <value>高</value>
+  </data>
+  <data name="EventPriorityCritical" xml:space="preserve">
+    <value>严重</value>
+  </data>
+  <data name="RepeatNever" xml:space="preserve">
+    <value>不重复</value>
+  </data>
+  <data name="RepeatDaily" xml:space="preserve">
+    <value>每天</value>
+  </data>
+  <data name="RepeatWeekdays" xml:space="preserve">
+    <value>平日</value>
+  </data>
+  <data name="RepeatWeekly" xml:space="preserve">
+    <value>每周</value>
+  </data>
+  <data name="RepeatMonthly" xml:space="preserve">
+    <value>每个月</value>
+  </data>
+  <data name="ScopeOccurrence" xml:space="preserve">
+    <value>仅此事件</value>
+  </data>
+  <data name="ScopeFollowing" xml:space="preserve">
+    <value>这和以下</value>
+  </data>
+  <data name="ScopeSeries" xml:space="preserve">
+    <value>整个系列</value>
+  </data>
+  <data name="DayActions" xml:space="preserve">
+    <value>日行动</value>
+  </data>
+  <data name="CopyToTomorrow" xml:space="preserve">
+    <value>复制到明天</value>
+  </data>
+  <data name="CopyToNextWeek" xml:space="preserve">
+    <value>复制到下周</value>
+  </data>
+  <data name="Copy" xml:space="preserve">
+    <value>复制</value>
+  </data>
+  <data name="CopyDayConfirmation" xml:space="preserve">
+    <value>将此时间表复制到 {0} 吗？</value>
+  </data>
+  <data name="CopyDayCompleted" xml:space="preserve">
+    <value>复制的事件：{0}</value>
+  </data>
+  <data name="CopyEventConfirmation" xml:space="preserve">
+    <value>将“{0}”复制到{1}？</value>
+  </data>
+  <data name="ClearDay" xml:space="preserve">
+    <value>今天清除</value>
+  </data>
+  <data name="CopySchedule" xml:space="preserve">
+    <value>复制时间表</value>
+  </data>
+  <data name="DayActionsShort" xml:space="preserve">
+    <value>日计划</value>
+  </data>
+  <data name="CopyToDate" xml:space="preserve">
+    <value>选择另一个日期</value>
+  </data>
+  <data name="DayPlanning" xml:space="preserve">
+    <value>日计划</value>
+  </data>
+  <data name="EventCopied" xml:space="preserve">
+    <value>事件复制到 {0}</value>
+  </data>
+  <data name="DayPlanningHint" xml:space="preserve">
+    <value>复制或清除预定事件</value>
+  </data>
+  <data name="ClearDayConfirmation" xml:space="preserve">
+    <value>删除{0}上的所有事件吗？</value>
+  </data>
+  <data name="CopyEvent" xml:space="preserve">
+    <value>复制事件</value>
+  </data>
+  <data name="ClearDayCompleted" xml:space="preserve">
+    <value>删除的事件：{0}</value>
+  </data>
+  <data name="ShiftEarlier" xml:space="preserve">
+    <value>早些时候</value>
+  </data>
+  <data name="EventActions" xml:space="preserve">
+    <value>事件操作</value>
+  </data>
+  <data name="ShiftLater" xml:space="preserve">
+    <value>稍后</value>
+  </data>
+  <data name="Shift" xml:space="preserve">
+    <value>转变</value>
+  </data>
+  <data name="ShiftDayConfirmation" xml:space="preserve">
+    <value>通过 {1} 移动 {0} 上的所有事件？</value>
+  </data>
+  <data name="ShiftSchedule" xml:space="preserve">
+    <value>轮班时间表</value>
+  </data>
+  <data name="ShiftDayCompleted" xml:space="preserve">
+    <value>移位事件：{0}</value>
+  </data>
+  <data name="ShiftDayAmountRequired" xml:space="preserve">
+    <value>输入轮班持续时间</value>
+  </data>
+  <data name="AiActionCopyDay" xml:space="preserve">
+    <value>复制日程表</value>
+  </data>
+  <data name="AiActionDeleteEvent" xml:space="preserve">
+    <value>删除事件</value>
+  </data>
+  <data name="AiActionUpdateEvent" xml:space="preserve">
+    <value>更新事件</value>
+  </data>
+  <data name="AiActionTargetMissing" xml:space="preserve">
+    <value>请求的事件或任务不再存在。</value>
+  </data>
+  <data name="AiActionShiftDay" xml:space="preserve">
+    <value>轮班时间表</value>
+  </data>
+  <data name="AiActionInvalid" xml:space="preserve">
+    <value>辅助操作缺少必需的信息。</value>
+  </data>
+  <data name="ShareExternalContextHint" xml:space="preserve">
+    <value>允许 API 或 MCP 提供商接收最近的对话和日历详细信息。默认关闭。</value>
+  </data>
+  <data name="AiActionCreateTask" xml:space="preserve">
+    <value>创建计划外任务</value>
+  </data>
+  <data name="AiAccessConfirmAll" xml:space="preserve">
+    <value>确认每项操作</value>
+  </data>
+  <data name="AiActionUpdateTask" xml:space="preserve">
+    <value>更新计划外任务</value>
+  </data>
+  <data name="AiAccessFull" xml:space="preserve">
+    <value>完整时间表访问</value>
+  </data>
+  <data name="AiAccessAutoSafe" xml:space="preserve">
+    <value>自动应用安全操作</value>
+  </data>
+  <data name="AiActionFailed" xml:space="preserve">
+    <value>无法申请</value>
+  </data>
+  <data name="AiActionApplied" xml:space="preserve">
+    <value>应用</value>
+  </data>
+  <data name="AiActionCreateEvent" xml:space="preserve">
+    <value>创建事件</value>
+  </data>
+  <data name="AiActionDismissed" xml:space="preserve">
+    <value>被驳回</value>
+  </data>
+  <data name="ShareExternalContext" xml:space="preserve">
+    <value>与外部人工智能共享日程上下文</value>
+  </data>
+  <data name="AiAccessHint" xml:space="preserve"><value>允许 AI 进行的更改。</value></data>
+  <data name="AiActionDeleteTask" xml:space="preserve">
+    <value>删除计划外任务</value>
+  </data>
+  <data name="AiAccess" xml:space="preserve">
+    <value>人工智能权限</value>
+  </data>
+  <data name="ClearConversation" xml:space="preserve">
+    <value>清晰的对话</value>
+  </data>
+  <data name="Dismiss" xml:space="preserve">
+    <value>驳回</value>
+  </data>
+  <data name="AiActionReady" xml:space="preserve">
+    <value>行动已准备好接受审查</value>
+  </data>
+  <data name="AiAccessConfirmAllHint" xml:space="preserve">
+    <value>确认每次更改。</value>
+  </data>
+  <data name="AiAccessAutoSafeHint" xml:space="preserve">
+    <value>删除和整日更改需确认。</value>
+  </data>
+  <data name="AiAccessFullHint" xml:space="preserve">
+    <value>所有更改无需确认。</value>
+  </data>
+  <data name="AiActionCopyEvent" xml:space="preserve">
+    <value>复制事件</value>
+  </data>
+  <data name="ChatNewChat" xml:space="preserve">
+    <value>新聊天</value>
+  </data>
+  <data name="ChatExpand" xml:space="preserve">
+    <value>打开宽视图</value>
+  </data>
+  <data name="ChatCollapse" xml:space="preserve">
+    <value>返回紧凑视图</value>
+  </data>
+  <data name="ChatHistory" xml:space="preserve">
+    <value>历史</value>
+  </data>
+  <data name="ChatSearchPlaceholder" xml:space="preserve">
+    <value>搜索对话</value>
+  </data>
+  <data name="ChatNoConversations" xml:space="preserve">
+    <value>尚未保存对话</value>
+  </data>
+  <data name="ChatNoSearchResults" xml:space="preserve">
+    <value>没有与该搜索匹配的内容</value>
+  </data>
+  <data name="ChatPin" xml:space="preserve">
+    <value>针</value>
+  </data>
+  <data name="ChatUnpin" xml:space="preserve">
+    <value>取消固定</value>
+  </data>
+  <data name="ChatDeleteConversation" xml:space="preserve">
+    <value>删除对话</value>
+  </data>
+  <data name="ChatDeleteConfirm" xml:space="preserve">
+    <value>永久删除此对话吗？</value>
+  </data>
+  <data name="ChatGroupToday" xml:space="preserve">
+    <value>今天</value>
+  </data>
+  <data name="ChatGroupYesterday" xml:space="preserve">
+    <value>昨天</value>
+  </data>
+  <data name="ChatGroupWeek" xml:space="preserve">
+    <value>前 7 天</value>
+  </data>
+  <data name="ChatGroupOlder" xml:space="preserve">
+    <value>早些时候</value>
+  </data>
+  <data name="ChatMessageCount" xml:space="preserve">
+    <value>{0} 消息</value>
+  </data>
+  <data name="ChatCopy" xml:space="preserve">
+    <value>复制</value>
+  </data>
+  <data name="ChatCopied" xml:space="preserve">
+    <value>已复制</value>
+  </data>
+  <data name="ChatRetry" xml:space="preserve">
+    <value>再问一次</value>
+  </data>
+  <data name="ChatStop" xml:space="preserve">
+    <value>停止</value>
+  </data>
+  <data name="ChatToolActivity" xml:space="preserve">
+    <value>我做了什么</value>
+  </data>
+  <data name="ChatToolApplied" xml:space="preserve">
+    <value>已应用</value>
+  </data>
+  <data name="ChatToolProposed" xml:space="preserve">
+    <value>提议</value>
+  </data>
+  <data name="ChatToolFailed" xml:space="preserve">
+    <value>失败</value>
+  </data>
+  <data name="StageConnecting" xml:space="preserve">
+    <value>正在连接...</value>
+  </data>
+  <data name="StageThinking" xml:space="preserve">
+    <value>思考……</value>
+  </data>
+  <data name="StageWriting" xml:space="preserve">
+    <value>写作……</value>
+  </data>
+  <data name="StageToolSchedule" xml:space="preserve">
+    <value>正在阅读你的日历......</value>
+  </data>
+  <data name="StageToolTasks" xml:space="preserve">
+    <value>正在阅读您的任务...</value>
+  </data>
+  <data name="StageToolSlots" xml:space="preserve">
+    <value>寻找空闲时间......</value>
+  </data>
+  <data name="StageToolAnalytics" xml:space="preserve">
+    <value>正在阅读您的统计数据......</value>
+  </data>
+  <data name="StageToolMemory" xml:space="preserve">
+    <value>正在更新内存...</value>
+  </data>
+  <data name="StageToolWrite" xml:space="preserve">
+    <value>准备改变......</value>
+  </data>
+  <data name="StageToolExternal" xml:space="preserve">
+    <value>调用 MCP 工具...</value>
+  </data>
+  <data name="ChatMemory" xml:space="preserve">
+    <value>内存</value>
+  </data>
+  <data name="ChatMemoryHint" xml:space="preserve">
+    <value>助理在对话之间保留的事实。仅存储在本计算机上。</value>
+  </data>
+  <data name="ChatMemoryEmpty" xml:space="preserve">
+    <value>尚未保存任何内容。助理会在您讲话时添加注释。</value>
+  </data>
+  <data name="ChatMemoryAdd" xml:space="preserve">
+    <value>添加注释</value>
+  </data>
+  <data name="ChatMemoryKeyPlaceholder" xml:space="preserve">
+    <value>快捷键，例如深度工作窗口</value>
+  </data>
+  <data name="ChatMemoryValuePlaceholder" xml:space="preserve">
+    <value>应该记住什么？</value>
+  </data>
+  <data name="ChatMemoryClear" xml:space="preserve">
+    <value>忘记一切</value>
+  </data>
+  <data name="ChatMemoryClearConfirm" xml:space="preserve">
+    <value>删除所有存储的笔记？</value>
+  </data>
+  <data name="ChatMemoryFromAssistant" xml:space="preserve">
+    <value>由助手保存</value>
+  </data>
+  <data name="ChatMemoryFromUser" xml:space="preserve">
+    <value>由您添加</value>
+  </data>
+  <data name="ChatSuggestions" xml:space="preserve">
+    <value>尝试询问</value>
+  </data>
+  <data name="ChatIntroTitle" xml:space="preserve">
+    <value>从哪里开始？</value>
+  </data>
+  <data name="ChatComposerHint" xml:space="preserve">
+    <value>Enter 发送 · Shift+Enter 换行</value>
+  </data>
+  <data name="SuggestPlanTomorrow" xml:space="preserve">
+    <value>围绕已预订的内容计划明天</value>
+  </data>
+  <data name="SuggestFreeTime" xml:space="preserve">
+    <value>这周我在哪里有两个空闲时间？</value>
+  </data>
+  <data name="SuggestOverdue" xml:space="preserve">
+    <value>什么是逾期的以及我应该放弃什么？</value>
+  </data>
+  <data name="SuggestBalance" xml:space="preserve">
+    <value>我的一周平衡吗？</value>
+  </data>
+  <data name="SuggestBusyDay" xml:space="preserve">
+    <value>今天看起来很拥挤——什么可以移动？</value>
+  </data>
+  <data name="SuggestEmptyDay" xml:space="preserve">
+    <value>没有任何计划——帮助我塑造这一天</value>
+  </data>
+  <data name="SuggestFollowUp" xml:space="preserve">
+    <value>继续：{0}</value>
+  </data>
+  <data name="SuggestReview" xml:space="preserve">
+    <value>回顾上周并告诉我发生了什么变化</value>
+  </data>
+  <data name="AiMemoryEnabled" xml:space="preserve">
+    <value>让助理记住我的事实</value>
+  </data>
+  <data name="AiMemoryHint" xml:space="preserve">
+    <value>注释保留在本地数据库中，并且仅当上下文共享打开时才会发送到外部模型。</value>
+  </data>
+  <data name="McpToolsEnabled" xml:space="preserve">
+    <value>为所选模型提供 MCP 服务器工具</value>
+  </data>
+  <data name="McpToolsHint" xml:space="preserve">
+    <value>这是使用 MCP 的现代方式：模型不断推理并简单地获得额外的功能。选择 MCP 作为提供程序会使服务器通过单个桥接工具自行应答。</value>
+  </data>
+  <data name="ShowTools" xml:space="preserve">
+    <value>显示可用工具</value>
+  </data>
+  <data name="ToolsAvailable" xml:space="preserve">
+    <value>模型可以调用的工具</value>
+  </data>
+  <data name="ToolBuiltIn" xml:space="preserve">
+    <value>内置</value>
+  </data>
+  <data name="Analytics" xml:space="preserve">
+    <value>分析</value>
+  </data>
+  <data name="AnalyticsSubtitle" xml:space="preserve">
+    <value>基于你个人历史、依据清晰的数据</value>
+  </data>
+  <data name="RangeWeek" xml:space="preserve">
+    <value>周</value>
+  </data>
+  <data name="RangeMonth" xml:space="preserve">
+    <value>月</value>
+  </data>
+  <data name="RangeQuarter" xml:space="preserve">
+    <value>3个月</value>
+  </data>
+  <data name="MetricScheduled" xml:space="preserve">
+    <value>预定</value>
+  </data>
+  <data name="MetricFocus" xml:space="preserve">
+    <value>聚焦时间</value>
+  </data>
+  <data name="MetricCompletion" xml:space="preserve">
+    <value>完成</value>
+  </data>
+  <data name="MetricAccuracy" xml:space="preserve">
+    <value>计划准确性</value>
+  </data>
+  <data name="MetricOnTime" xml:space="preserve">
+    <value>准时开始</value>
+  </data>
+  <data name="MetricLoad" xml:space="preserve">
+    <value>加载</value>
+  </data>
+  <data name="MetricStreak" xml:space="preserve">
+    <value>连续活跃</value>
+  </data>
+  <data name="MetricOverdue" xml:space="preserve">
+    <value>逾期任务</value>
+  </data>
+  <data name="MetricDays" xml:space="preserve">
+    <value>{0}d</value>
+  </data>
+  <data name="MetricHours" xml:space="preserve">
+    <value>{0:0.#} h</value>
+  </data>
+  <data name="MetricNoSample" xml:space="preserve">
+    <value>数据不足</value>
+  </data>
+  <data name="MetricVsPrevious" xml:space="preserve">
+    <value>与上一期相比</value>
+  </data>
+  <data name="ChartDailyLoad" xml:space="preserve">
+    <value>日复一日</value>
+  </data>
+  <data name="ChartCategories" xml:space="preserve">
+    <value>时间都去哪儿了</value>
+  </data>
+  <data name="ChartHours" xml:space="preserve">
+    <value>一天中的时间</value>
+  </data>
+  <data name="ChartWeekdays" xml:space="preserve">
+    <value>按工作日</value>
+  </data>
+  <data name="ChartScheduledLegend" xml:space="preserve">
+    <value>预定</value>
+  </data>
+  <data name="ChartCompletedLegend" xml:space="preserve">
+    <value>已完成</value>
+  </data>
+  <data name="AnalyticsEmpty" xml:space="preserve">
+    <value>还没有足够的历史记录。计划几天并完成一些课程——数字会自行出现。</value>
+  </data>
+  <data name="AnalyticsInsights" xml:space="preserve">
+    <value>数据显示什么</value>
+  </data>
+  <data name="AnalyticsAskAi" xml:space="preserve">
+    <value>与助理讨论此事</value>
+  </data>
+  <data name="AnalyticsAskAiPrompt" xml:space="preserve">
+    <value>查看我最近 {0} 天的统计数据，然后告诉我要更改哪些内容。</value>
+  </data>
+  <data name="AnalyticsAskAiPeriodPrompt" xml:space="preserve">
+    <value>查看我从 {0} 到 {1} 的统计数据，并告诉我要更改哪些内容。</value>
+  </data>
+  <data name="InsightSample" xml:space="preserve">
+    <value>{0} 观测值·置信度 {1}%</value>
+  </data>
+  <data name="InsightEstimationBiasOver" xml:space="preserve">
+    <value>会话运行时间比计划时间长约 {0}%</value>
+  </data>
+  <data name="InsightEstimationBiasUnder" xml:space="preserve">
+    <value>会议比计划提前完成约 {0}%</value>
+  </data>
+  <data name="InsightStrongTimeOfDay" xml:space="preserve">
+    <value>{0} 承载 {1}% 的已完成工作</value>
+  </data>
+  <data name="InsightScheduleFriction" xml:space="preserve">
+    <value>必须移动 {1} 块中的 {0}</value>
+  </data>
+  <data name="InsightStartDelay" xml:space="preserve">
+    <value>已跳过 {1} 会话中的 {0}</value>
+  </data>
+  <data name="InsightOverload" xml:space="preserve">
+    <value>日历占用了您起床时间的 {0}%</value>
+  </data>
+  <data name="InsightUnderuse" xml:space="preserve">
+    <value>仅计划了 {0}% 的可用时间</value>
+  </data>
+  <data name="InsightCategoryDominance" xml:space="preserve">
+    <value>{0} 占用了您计划时间的 {1}%</value>
+  </data>
+  <data name="InsightConsistency" xml:space="preserve">
+    <value>您的负载保持在每天大约 {0} 小时左右</value>
+  </data>
+  <data name="PartOfDayMorning" xml:space="preserve">
+    <value>早上</value>
+  </data>
+  <data name="PartOfDayAfternoon" xml:space="preserve">
+    <value>下午</value>
+  </data>
+  <data name="PartOfDayEvening" xml:space="preserve">
+    <value>晚上</value>
+  </data>
+  <data name="CategoryFocus" xml:space="preserve">
+    <value>焦点</value>
+  </data>
+  <data name="NowLabel" xml:space="preserve">
+    <value>现在</value>
+  </data>
+  <data name="StartsIn" xml:space="preserve">
+    <value>{0}后</value>
+  </data>
+  <data name="EndsIn" xml:space="preserve">
+    <value>{0} 左</value>
+  </data>
+  <data name="DurationHoursMinutes" xml:space="preserve">
+    <value>{0} h {1} 最小值</value>
+  </data>
+  <data name="DurationMinutes" xml:space="preserve">
+    <value>{0} 最小值</value>
+  </data>
+  <data name="OverdueBadge" xml:space="preserve">
+    <value>逾期</value>
+  </data>
+  <data name="TodayBadge" xml:space="preserve">
+    <value>今天</value>
+  </data>
+  <data name="TomorrowBadge" xml:space="preserve">
+    <value>明天</value>
+  </data>
+  <data name="DayLoadLabel" xml:space="preserve">
+    <value>{0} 忙</value>
+  </data>
+  <data name="ChatToolRead" xml:space="preserve">
+    <value>读</value>
+  </data>
+  <data name="MetricPeakHour" xml:space="preserve">
+    <value>高峰时段</value>
+  </data>
+  <data name="MemoryCategoryGeneral" xml:space="preserve">
+    <value>一般</value>
+  </data>
+  <data name="MemoryCategoryPreference" xml:space="preserve">
+    <value>偏好</value>
+  </data>
+  <data name="MemoryCategoryRoutine" xml:space="preserve">
+    <value>例行公事</value>
+  </data>
+  <data name="MemoryCategoryConstraint" xml:space="preserve">
+    <value>约束</value>
+  </data>
+  <data name="MemoryCategoryGoal" xml:space="preserve">
+    <value>目标</value>
+  </data>
+  <data name="MemoryCategoryContext" xml:space="preserve">
+    <value>上下文</value>
+  </data>
+  <data name="LocalModelRoleGeneral" xml:space="preserve">
+    <value>通用代理</value>
+  </data>
+  <data name="LocalModelRoleReasoning" xml:space="preserve">
+    <value>推理和快速答案</value>
+  </data>
+  <data name="LocalModelRoleToolUse" xml:space="preserve">
+    <value>分解与工具使用</value>
+  </data>
+  <data name="LocalModelRoleCustom" xml:space="preserve">
+    <value>你自己的 GGUF 文件</value>
+  </data>
+  <data name="ExperimentalBadge" xml:space="preserve">
+    <value>高级</value>
+  </data>
+  <data name="CustomModelTitle" xml:space="preserve">
+    <value>你自己的模型</value>
+  </data>
+  <data name="CustomModelHint" xml:space="preserve"><value>指向磁盘上的 GGUF，它按原样使用：不下载任何内容，也不复制任何内容。可能涉及两个单独的文件，并且它们不可互换。</value></data>
+  <data name="CustomModelBadge" xml:space="preserve">
+    <value>自定义</value>
+  </data>
+  <data name="CustomModelNotChosen" xml:space="preserve">
+    <value>未选择文件</value>
+  </data>
+  <data name="PickModelFile" xml:space="preserve">
+    <value>选择GGUF</value>
+  </data>
+  <data name="PickProjectorFile" xml:space="preserve">
+    <value>选择投影仪</value>
+  </data>
+  <data name="ClearCustomModel" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="CustomModelDialogTitle" xml:space="preserve">
+    <value>选择 GGUF 模型文件</value>
+  </data>
+  <data name="ModelParameters" xml:space="preserve">
+    <value>型号参数</value>
+  </data>
+  <data name="ParamOff" xml:space="preserve">
+    <value>关闭</value>
+  </data>
+  <data name="ParamMinutes" xml:space="preserve">
+    <value>{0} 最小值</value>
+  </data>
+  <data name="ParamTemperature" xml:space="preserve">
+    <value>温度</value>
+  </data>
+  <data name="ParamTemperatureHint" xml:space="preserve"><value>模型的措辞有多少变化。 Low 保留日期、时间和标题的字面意思，这正是日程安排所需要的；高则更活泼，但不太精确。 0.3 是默认值。</value></data>
+  <data name="ParamMaxTokens" xml:space="preserve">
+    <value>回答限制</value>
+  </data>
+  <data name="ParamMaxTokensHint" xml:space="preserve"><value>最长的单个回复，以标记为单位——每个大约四分之三的单词。太低了，一个很长的计划就被打断了；太高不会产生任何成本，除非模型实际上写了那么多。 4000适合一整天的计划。</value></data>
+  <data name="ParamTopP" xml:space="preserve">
+    <value>顶p</value>
+  </data>
+  <data name="ParamTopPHint" xml:space="preserve"><value>对同一事物的第二个更生硬的限制：低于 1.00，模型可能只能从最可能的单词中进行选择。将其保留在 1.00 并使用温度来代替 – 在 1.00 时，它完全被排除在请求之外。</value></data>
+  <data name="ParamToolIterations" xml:space="preserve">
+    <value>工具步骤</value>
+  </data>
+  <data name="ParamToolIterationsHint" xml:space="preserve"><value>助理在必须回答之前可能会查找、采取行动并再次思考多少次。每一步都是一个往返。低速度更快，但放弃任何分层； 12 涵盖了一周的计划。</value></data>
+  <data name="ParamHistory" xml:space="preserve">
+    <value>历史深度</value>
+  </data>
+  <data name="ParamHistoryHint" xml:space="preserve"><value>再次发送多少条较早的消息，以便助手记住该线程。之前的一切都在谈话中被遗忘了。更多的上下文需要花费代币和每条消息花费一点时间。</value></data>
+  <data name="ParamTimeout" xml:space="preserve">
+    <value>请求超时</value>
+  </data>
+  <data name="ParamTimeoutHint" xml:space="preserve"><value>在放弃之前等待一个答案需要多长时间。这是一个安全网，而不是速度设置——提高它不会使任何事情变慢，而降低它只会使缓慢的答案变成无答案。</value></data>
+  <data name="ParamExtraInstructions" xml:space="preserve">
+    <value>额外说明</value>
+  </data>
+  <data name="ParamExtraInstructionsPlaceholder" xml:space="preserve"><value>例如：简单回答；切勿在 10:00 之前预订任何东西；将深度工作称为“专注”。</value></data>
+  <data name="ResetParameters" xml:space="preserve">
+    <value>重置为默认值</value>
+  </data>
+  <data name="LocalRuntimeSection" xml:space="preserve">
+    <value>本地引擎</value>
+  </data>
+  <data name="ParamContext" xml:space="preserve">
+    <value>上下文窗口</value>
+  </data>
+  <data name="ParamContextHint" xml:space="preserve">
+    <value>llama-server 保存在内存中的令牌。更小则更快、更轻。</value>
+  </data>
+  <data name="ParamThreads" xml:space="preserve">
+    <value>话题</value>
+  </data>
+  <data name="ParamThreadsHint" xml:space="preserve">
+    <value>0 让 llama.cpp 决定。设置物理核心的数量通常会更快。</value>
+  </data>
+  <data name="HideTools" xml:space="preserve">
+    <value>隐藏</value>
+  </data>
+  <data name="TrackSection" xml:space="preserve">
+    <value>进展如何？</value>
+  </data>
+  <data name="TrackStart" xml:space="preserve">
+    <value>开始</value>
+  </data>
+  <data name="TrackDone" xml:space="preserve">
+    <value>完成</value>
+  </data>
+  <data name="TrackPartial" xml:space="preserve">
+    <value>部分</value>
+  </data>
+  <data name="TrackSkip" xml:space="preserve">
+    <value>已跳过</value>
+  </data>
+  <data name="TrackUndo" xml:space="preserve">
+    <value>撤消</value>
+  </data>
+  <data name="TrackedStarted" xml:space="preserve">
+    <value>开始于 {0}</value>
+  </data>
+  <data name="TrackedDone" xml:space="preserve">
+    <value>完成·{0}</value>
+  </data>
+  <data name="TrackedPartial" xml:space="preserve">
+    <value>部分·{0}</value>
+  </data>
+  <data name="TrackedSkipped" xml:space="preserve">
+    <value>已跳过</value>
+  </data>
+  <data name="TrackHint" xml:space="preserve">
+    <value>标记日程后，分析才能计算完成率、计划准确度和准时开始率。</value>
+  </data>
+  <data name="PeekNothingToday" xml:space="preserve">
+    <value>没有安排</value>
+  </data>
+  <data name="PeekOpen" xml:space="preserve">
+    <value>打开 DAYDRIVE</value>
+  </data>
+  <data name="PeekBusyToday" xml:space="preserve">
+    <value>今天{0}</value>
+  </data>
+  <data name="PeekOverdue" xml:space="preserve">
+    <value>{0} 逾期</value>
+  </data>
+  <data name="DurationLabelShort" xml:space="preserve">
+    <value>分钟</value>
+  </data>
+  <data name="FinishedEvent" xml:space="preserve">
+    <value>刚刚完成</value>
+  </data>
+  <data name="SettingsTabAssistant" xml:space="preserve">
+    <value>人工智能连接</value>
+  </data>
+  <data name="SettingsTabModels" xml:space="preserve">
+    <value>本地人工智能</value>
+  </data>
+  <data name="VisualPalette" xml:space="preserve">
+    <value>视觉调色板</value>
+  </data>
+  <data name="VisualPaletteHint" xml:space="preserve">
+    <value>控制图表、类别和优先级标记使用的颜色。</value>
+  </data>
+  <data name="PaletteVibrant" xml:space="preserve">
+    <value>充满活力</value>
+  </data>
+  <data name="PaletteAccent" xml:space="preserve">
+    <value>重音</value>
+  </data>
+  <data name="PaletteMonochrome" xml:space="preserve">
+    <value>单色</value>
+  </data>
+  <data name="PalettePastel" xml:space="preserve">
+    <value>粉彩</value>
+  </data>
+  <data name="PaletteEarth" xml:space="preserve">
+    <value>地球</value>
+  </data>
+  <data name="PaletteNeon" xml:space="preserve">
+    <value>霓虹灯</value>
+  </data>
+  <data name="PaletteColorBlind" xml:space="preserve">
+    <value>无障碍</value>
+  </data>
+  <data name="RamLabel" xml:space="preserve">
+    <value>内存</value>
+  </data>
+  <data name="CpuLabel" xml:space="preserve">
+    <value>CPU</value>
+  </data>
+  <data name="MetricPercentagePoints" xml:space="preserve">
+    <value>{0:0} pp</value>
+  </data>
+  <data name="InterfaceFont" xml:space="preserve"><value>界面字体</value></data>
+  <data name="InterfaceFontHint" xml:space="preserve"><value>选择捆绑的西里尔字体或添加您自己的 TTF 或 OTF 文件。</value></data>
+  <data name="FontPreview" xml:space="preserve"><value>中文 Aa 0123 · 从容专注</value></data>
+  <data name="AddCustomFont" xml:space="preserve"><value>添加自定义字体</value></data>
+  <data name="FontPickerTitle" xml:space="preserve"><value>选择字体文件</value></data>
+  <data name="FontAdded" xml:space="preserve"><value>添加字体“{0}”。</value></data>
+  <data name="FontInvalid" xml:space="preserve"><value>无法读取该字体文件。</value></data>
+  <data name="CustomFontLabel" xml:space="preserve"><value>{0}·定制</value></data>
+  <data name="FontSystem" xml:space="preserve"><value>系统</value></data>
+  <data name="ActivityTimer" xml:space="preserve"><value>活动计时器</value></data>
+  <data name="AiConnectionIntro" xml:space="preserve"><value>选择谁回答助理：此设备上的型号、兼容的 API 或 MCP 服务器。</value></data>
+  <data name="LocalAiTitle" xml:space="preserve"><value>本地人工智能</value></data>
+  <data name="LocalAiConnectionHint" xml:space="preserve"><value>该模型在此设备上运行。下载、文件和本地引擎在 Local AI 中进行管理。</value></data>
+  <data name="OpenLocalAi" xml:space="preserve"><value>打开</value></data>
+  <data name="ApiConnectionTitle" xml:space="preserve"><value>API连接</value></data>
+  <data name="ApiConnectionHint" xml:space="preserve"><value>连接 OpenAI 兼容的 HTTP API。密钥在此设备上加密。</value></data>
+  <data name="McpConnectionTitle" xml:space="preserve"><value>MCP服务器</value></data>
+  <data name="McpConnectionHint" xml:space="preserve"><value>当服务器本身应通过一个桥接工具应答时，请使用 MCP 作为提供者。</value></data>
+  <data name="McpTransport" xml:space="preserve"><value>运输</value></data>
+  <data name="McpCommandLabel" xml:space="preserve"><value>服务器命令</value></data>
+  <data name="McpToolLabel" xml:space="preserve"><value>桥接工具</value></data>
+  <data name="AdvancedSettings" xml:space="preserve"><value>高级</value></data>
+  <data name="AdvancedSettingsHint" xml:space="preserve"><value>模型如何编写，它自己可以走多远，以及它应该始终记住什么。</value></data>
+  <data name="TrackEventTooltip" xml:space="preserve"><value>记录一下这个事件发生了什么</value></data>
+  <data name="TrackPartialTooltip" xml:space="preserve"><value>部分完成 - 您选择实际花费的时间</value></data>
+  <data name="UnmarkedEvents" xml:space="preserve"><value>{0} 未标记</value></data>
+  <data name="PeekOpenPanel" xml:space="preserve"><value>打开面板</value></data>
+  <data name="AskAssistant" xml:space="preserve"><value>问助理</value></data>
+  <data name="AiProviderLocalSummary" xml:space="preserve"><value>该模型在此计算机上运行。没有任何东西离开设备，引擎在下面下载和管理。</value></data>
+  <data name="AiProviderApiSummary" xml:space="preserve"><value>任何 OpenAI 兼容端点，包括 Ollama。仅当您在下方允许时，才会发送您的日程安排。</value></data>
+  <data name="AiProviderMcpSummary" xml:space="preserve"><value>MCP 服务器通过单个桥接工具进行应答。无法以这种方式发送图像。</value></data>
+  <data name="AttachImage" xml:space="preserve"><value>图像...</value></data>
+  <data name="AttachDocument" xml:space="preserve"><value>文件...</value></data>
+  <data name="AttachImagesFilter" xml:space="preserve"><value>图像</value></data>
+  <data name="AttachDocumentsFilter" xml:space="preserve"><value>文件</value></data>
+  <data name="AttachUnsupported" xml:space="preserve"><value>无法读取该格式。图片：PNG、JPEG、WebP、BMP、GIF。文档：PDF、DOCX 和文本文件。</value></data>
+  <data name="AttachTooLarge" xml:space="preserve"><value>该文件超过 {0} MB，无法附加。</value></data>
+  <data name="AttachImageNotSupported" xml:space="preserve"><value>当前引擎无法读取图像。切换提供程序，或打开本地模型的图像输入。</value></data>
+  <data name="SettingsTabData" xml:space="preserve"><value>数据和同步</value></data>
+  <data name="SettingsTabAbout" xml:space="preserve"><value>关于</value></data>
+  <data name="CloudSyncTitle" xml:space="preserve"><value>云同步</value></data>
+  <data name="CloudSyncIntro" xml:space="preserve"><value>把数据的副本放在其他电脑也能取到的地方。同步的内容包括任务、事件、进度、助手对话和记忆；设置在每台电脑上各自独立。</value></data>
+  <data name="CloudDestination" xml:space="preserve"><value>目的地</value></data>
+  <data name="CloudProviderOff" xml:space="preserve"><value>关闭</value></data>
+  <data name="CloudProviderFolder" xml:space="preserve"><value>已同步文件夹</value></data>
+  <data name="CloudFolderHint" xml:space="preserve"><value>选择一个已由 Google Drive、OneDrive 或 Dropbox 客户端同步的文件夹。此处无需帐户或密钥。</value></data>
+  <data name="CloudFolderPlaceholder" xml:space="preserve"><value>C:\Users\you\Google Drive</value></data>
+  <data name="CloudFolderDialogTitle" xml:space="preserve"><value>选择同步文件夹</value></data>
+  <data name="Browse" xml:space="preserve"><value>浏览...</value></data>
+  <data name="CloudGoogleHint" xml:space="preserve"><value>直接上传到云端硬盘的隐藏应用程序文件夹。该应用程序永远无法看到您云端硬盘的其余部分。</value></data>
+  <data name="CloudGoogleSetupTitle" xml:space="preserve"><value>一次性设置</value></data>
+  <data name="CloudGoogleSetupSteps" xml:space="preserve"><value>只需在 Google Cloud Console 中设置一次：
+1. 创建一个项目，并在其中启用“Google Drive API”。
+2. 在“OAuth 同意屏幕”中选择“外部”，然后把你的 Google 地址添加为测试用户。
+3. 在“凭据”中创建类型为“桌面应用”的 OAuth 客户端 ID。
+4. 把它的客户端 ID 和客户端密钥粘贴到下方，然后点击“连接Google帐户”。</value></data>
+  <data name="CloudGoogleConsole" xml:space="preserve"><value>打开 Google Cloud Console</value></data>
+  <data name="CloudGoogleClientId" xml:space="preserve"><value>OAuth 客户端 ID</value></data>
+  <data name="CloudGoogleClientSecret" xml:space="preserve"><value>OAuth 客户端密钥</value></data>
+  <data name="CloudGoogleClientSecretPlaceholder" xml:space="preserve"><value>GOCSPX-…</value></data>
+  <data name="CloudGoogleClientSecretHint" xml:space="preserve"><value>必填。它就在 Google Cloud Console 中客户端 ID 的旁边。在这台电脑上加密保存，只会发送给 Google。</value></data>
+  <data name="CloudGoogleConnect" xml:space="preserve"><value>连接Google帐户</value></data>
+  <data name="CloudGoogleDisconnect" xml:space="preserve"><value>断开连接</value></data>
+  <data name="CloudGoogleWaiting" xml:space="preserve"><value>在浏览器中完成登录...</value></data>
+  <data name="CloudGoogleDisconnected" xml:space="preserve"><value>Google 帐户已断开连接。云副本保持不变。</value></data>
+  <data name="CloudDeviceName" xml:space="preserve"><value>这台计算机称为</value></data>
+  <data name="CloudDeviceNamePlaceholder" xml:space="preserve"><value>笔记本电脑</value></data>
+  <data name="CloudDeviceNameHint" xml:space="preserve"><value>显示在快照旁边，以便您可以知道最后上传的是哪台计算机。</value></data>
+  <data name="CloudAutomatic" xml:space="preserve"><value>自行同步</value></data>
+  <data name="CloudAutomaticHint" xml:space="preserve"><value>发射后不久检查一次，每十五分钟一次，并在退出时再次检查一次。关闭此功能后，只有按钮同步。</value></data>
+  <data name="CloudSyncNow" xml:space="preserve"><value>立即同步</value></data>
+  <data name="CloudCheck" xml:space="preserve"><value>查云</value></data>
+  <data name="CloudSyncRunning" xml:space="preserve"><value>正在同步...</value></data>
+  <data name="CloudNoSnapshot" xml:space="preserve"><value>尚未上传任何内容。</value></data>
+  <data name="CloudSnapshotFormat" xml:space="preserve"><value>保存于{0}</value></data>
+  <data name="CloudSnapshotDeviceFormat" xml:space="preserve"><value>由“{1}”保存于{0}</value></data>
+  <data name="CloudConflictTitle" xml:space="preserve"><value>两份副本均已更改</value></data>
+  <data name="CloudConflictHint" xml:space="preserve"><value>自上次同步以来，这台计算机和云副本都已被编辑。合并就必须猜测，所以选择保留哪一个。另一个被替换了。</value></data>
+  <data name="CloudKeepLocal" xml:space="preserve"><value>保留这台计算机</value></data>
+  <data name="CloudKeepCloud" xml:space="preserve"><value>保留云副本</value></data>
+  <data name="CloudRestartHint" xml:space="preserve"><value>下载的副本已准备就绪，将在 DAYDRIVE 重启后生效。原有数据已保存到 Backups 文件夹。</value></data>
+  <data name="LocalData" xml:space="preserve"><value>在这台计算机上</value></data>
+  <data name="LocalDataHint" xml:space="preserve"><value>所有数据都保存在此处的一个 SQLite 数据库中，备份和本地模型文件也存放在这里。</value></data>
+  <data name="OpenDataFolder" xml:space="preserve"><value>打开文件夹</value></data>
+  <data name="CouldNotOpenFolder" xml:space="preserve"><value>无法打开该文件夹。</value></data>
+  <data name="CouldNotOpenLink" xml:space="preserve"><value>{0}浏览器打不开</value></data>
+  <data name="AboutVersionFormat" xml:space="preserve"><value>版本 {0}</value></data>
+  <data name="AboutTagline" xml:space="preserve"><value>一个紧凑的本地优先计划器和日历，位于屏幕边缘。</value></data>
+  <data name="AboutAuthorLabel" xml:space="preserve"><value>由</value></data>
+  <data name="AboutOpenGitHub" xml:space="preserve"><value>GitHub</value></data>
+  <data name="AboutLinks" xml:space="preserve"><value>链接</value></data>
+  <data name="AboutRepository" xml:space="preserve"><value>源代码</value></data>
+  <data name="AboutIssues" xml:space="preserve"><value>报告问题</value></data>
+  <data name="AboutReleases" xml:space="preserve"><value>所有版本</value></data>
+  <data name="UpdatesTitle" xml:space="preserve"><value>更新</value></data>
+  <data name="GeneralIntro" xml:space="preserve"><value>语言，以及应用程序在计算机启动时执行的操作。</value></data>
+  <data name="AppearanceIntro" xml:space="preserve"><value>主题、颜色和类型，以及桌面的显示量。</value></data>
+  <data name="BehaviorIntro" xml:space="preserve"><value>shell 和快速小部件如何出现和消失。</value></data>
+  <data name="RemindersIntro" xml:space="preserve"><value>在事件开始或结束之前从花瓣中探出的卡片。</value></data>
+  <data name="UpdatesIntro" xml:space="preserve"><value>每天在后台检查一次。这里没有什么可以打扰。</value></data>
+  <data name="UpdateChecking" xml:space="preserve"><value>检查...</value></data>
+  <data name="UpdateUpToDate" xml:space="preserve"><value>您使用的是最新版本。</value></data>
+  <data name="UpdateAvailableFormat" xml:space="preserve"><value>版本 {0} 可用。</value></data>
+  <data name="UpdateSkippedFormat" xml:space="preserve"><value>{0}版本不再提及。</value></data>
+  <data name="UpdateSkip" xml:space="preserve"><value>跳过</value></data>
+  <data name="UpdateOpen" xml:space="preserve"><value>有什么新内容</value></data>
+  <data name="UpdateCheckEnabled" xml:space="preserve"><value>告诉我有关新版本的信息</value></data>
+  <data name="UpdateCheckHint" xml:space="preserve"><value>每天询问 GitHub 一次。不会发送任何有关您的信息，不会打扰您，也不会再提及您跳过的版本。</value></data>
+  <data name="UpdateCheckNow" xml:space="preserve"><value>立即查看</value></data>
+  <data name="PeekOfPlanned" xml:space="preserve"><value>{0} 计划</value></data>
+  <data name="PeekUntilStart" xml:space="preserve"><value>直到开始</value></data>
+  <data name="PeekAllGood" xml:space="preserve"><value>一切步入正轨</value></data>
+  <data name="PeekNotStarted" xml:space="preserve"><value>尚未开始</value></data>
+  <data name="PeekOverPlanned" xml:space="preserve"><value>{0} 超计划</value></data>
+  <data name="HandleTooltipPanel" xml:space="preserve"><value>左键单击 — 面板</value></data>
+  <data name="HandleTooltipWidget" xml:space="preserve"><value>右键单击 — 小部件</value></data>
+  <data name="WidgetHideDelay" xml:space="preserve"><value>小部件隐藏延迟</value></data>
+  <data name="WidgetHideDelayHint" xml:space="preserve"><value>指针离开后快速小部件在屏幕上停留的时间。右键单击边缘手柄将其打开；左侧按钮仍然打开面板。</value></data>
+  <data name="WidgetKeepOpen" xml:space="preserve"><value>不要自动隐藏小部件</value></data>
+  <data name="WidgetKeepOpenHint" xml:space="preserve"><value>快捷小部件会一直留在屏幕上，直到被关闭 —— 右键单击边缘拉手或小部件本身。提醒仍会自行弹出并收回它。</value></data>
+  <data name="MascotColor" xml:space="preserve"><value>小工具吉祥物</value></data>
+  <data name="MascotColorDynamic" xml:space="preserve"><value>遵循主题色</value></data>
+  <data name="MascotColorHint" xml:space="preserve"><value>快速小部件中时钟旁边的生物。除非在这里为其选择颜色，否则它将采用当前主题的强调色。</value></data>
+  <data name="MascotShow" xml:space="preserve"><value>展示吉祥物</value></data>
+  <data name="SelectEvents" xml:space="preserve"><value>选择</value></data>
+  <data name="SelectAllEvents" xml:space="preserve"><value>全部</value></data>
+  <data name="ClearSelectionAction" xml:space="preserve"><value>清除</value></data>
+  <data name="SelectionNone" xml:space="preserve"><value>未选择任何内容</value></data>
+  <data name="SelectionCount" xml:space="preserve"><value>{0} 已选中 · {1}</value></data>
+  <data name="SelectionEmptyHint" xml:space="preserve"><value>先勾选你想要的事件。</value></data>
+  <data name="SelectEventAction" xml:space="preserve"><value>选择</value></data>
+  <data name="SelectionExit" xml:space="preserve"><value>完成</value></data>
+  <data name="SelectionHint" xml:space="preserve"><value>勾选事件以将它们一起移动或删除。</value></data>
+  <data name="SelectionDeleteConfirm" xml:space="preserve"><value>删除{0}？</value></data>
+  <data name="SelectionDeleted" xml:space="preserve"><value>已删除：{0}</value></data>
+  <data name="DeleteSelected" xml:space="preserve"><value>删除</value></data>
+  <data name="MoveEvent" xml:space="preserve"><value>移动……</value></data>
+  <data name="MoveSelected" xml:space="preserve"><value>移动</value></data>
+  <data name="MoveTitle" xml:space="preserve"><value>移动事件</value></data>
+  <data name="MoveSubjectCount" xml:space="preserve"><value>{0}事件</value></data>
+  <data name="MoveModeTime" xml:space="preserve"><value>按时间</value></data>
+  <data name="MoveModeDate" xml:space="preserve"><value>到一个日期</value></data>
+  <data name="MoveByHowMuch" xml:space="preserve"><value>移动</value></data>
+  <data name="MoveEarlier" xml:space="preserve"><value>早些时候</value></data>
+  <data name="MoveLater" xml:space="preserve"><value>稍后</value></data>
+  <data name="MovePreview" xml:space="preserve"><value>{0} — {1}、{2}</value></data>
+  <data name="MoveNothingToDo" xml:space="preserve"><value>这将使一切保持原样。</value></data>
+  <data name="MoveCheck" xml:space="preserve"><value>检查并移动</value></data>
+  <data name="MoveApply" xml:space="preserve"><value>移动</value></data>
+  <data name="MoveAffects" xml:space="preserve"><value>这会影响其他事件</value></data>
+  <data name="MoveNoCollisions" xml:space="preserve"><value>没有其他受到影响。</value></data>
+  <data name="MoveCollisionSummary" xml:space="preserve"><value>{0} 重叠</value></data>
+  <data name="MoveConfirmClear" xml:space="preserve"><value>移动{0}。其他均不受影响 — {1}</value></data>
+  <data name="MoveConfirmWithCollisions" xml:space="preserve"><value>移动 {0} 会与 {1} 其他事件重叠。还是搬走吧？</value></data>
+  <data name="MoveCompleted" xml:space="preserve"><value>已移动：{0}</value></data>
+  <data name="MoveCompletedWithCollisions" xml:space="preserve"><value>已移动：{0}·重叠：{1}</value></data>
+  <data name="CollisionWithExisting" xml:space="preserve"><value>«{0}» 会重叠 «{1}»</value></data>
+  <data name="CollisionWithinSelection" xml:space="preserve"><value>«{0}» 和 «{1}» 会相互重叠</value></data>
+  <data name="MoveNudgeMinusHour" xml:space="preserve"><value>-1 小时</value></data>
+  <data name="MoveNudgeMinus15" xml:space="preserve"><value>−15分钟</value></data>
+  <data name="MoveNudgePlus15" xml:space="preserve"><value>+15 分钟</value></data>
+  <data name="MoveNudgePlusHour" xml:space="preserve"><value>+1 小时</value></data>
+  <data name="DragEventHint" xml:space="preserve"><value>将事件拖至另一小时或另一天以将其移动。</value></data>
+  <data name="DayResultLabel" xml:space="preserve"><value>当天结果</value></data>
+  <data name="DaySoFarLabel" xml:space="preserve"><value>今天到目前为止</value></data>
+  <data name="DayAheadLabel" xml:space="preserve"><value>未来一天</value></data>
+  <data name="DayReviewTitle" xml:space="preserve"><value>{1} 的 {0} 完成</value></data>
+  <data name="DayReviewMeta" xml:space="preserve"><value>{0} 之 {1} · {2}%</value></data>
+  <data name="DayReviewEmpty" xml:space="preserve"><value>没有计划</value></data>
+  <data name="DayReviewEmptyHint" xml:space="preserve"><value>这一天没有事件。</value></data>
+  <data name="DayAheadTitle" xml:space="preserve"><value>{0} · {1}</value></data>
+  <data name="DayChipDone" xml:space="preserve"><value>{0} 完成</value></data>
+  <data name="DayChipPartial" xml:space="preserve"><value>{0}部分</value></data>
+  <data name="DayChipSkipped" xml:space="preserve"><value>{0} 已跳过</value></data>
+  <data name="DayChipUnmarked" xml:space="preserve"><value>{0} 未标记</value></data>
+  <data name="DayChipUpcoming" xml:space="preserve"><value>{0}即将到来</value></data>
+  <data name="PeekUnmarked" xml:space="preserve"><value>{0} 未标记</value></data>
+  <data name="PeekSkipped" xml:space="preserve"><value>{0} 已跳过</value></data>
+  <data name="PeekPartial" xml:space="preserve"><value>{0} 仅部分</value></data>
+  <data name="PeekDayDone" xml:space="preserve"><value>休息日 · {0} 已完成</value></data>
+  <data name="PeekDaySummary" xml:space="preserve"><value>{1}的{0}完成</value></data>
+  <data name="TrackRunning" xml:space="preserve"><value>运行</value></data>
+  <data name="RangeDetailDays" xml:space="preserve"><value>最后 {0} 天</value></data>
+  <data name="RangeDetailWeeks" xml:space="preserve"><value>最后 {0} 周</value></data>
+  <data name="RangeDetailCalendarWeek" xml:space="preserve"><value>日历周 · 周一至周日</value></data>
+  <data name="RangeDetailCalendarMonth" xml:space="preserve"><value>日历月·第一天到最后一天</value></data>
+  <data name="RangeDetailCalendarQuarter" xml:space="preserve"><value>3 个完整的日历月</value></data>
+  <data name="RangePickerTooltip" xml:space="preserve"><value>显示期间</value></data>
+  <data name="AnalyticsCurrentWeek" xml:space="preserve"><value>本周</value></data>
+  <data name="AnalyticsPreviousWeek" xml:space="preserve"><value>上周</value></data>
+  <data name="AnalyticsNextWeek" xml:space="preserve"><value>下周</value></data>
+  <data name="ChartPerDay" xml:space="preserve"><value>每天</value></data>
+  <data name="ChartPerWeek" xml:space="preserve"><value>每周</value></data>
+  <data name="ChartTotal" xml:space="preserve"><value>总计</value></data>
+  <data name="EventsCountOne" xml:space="preserve"><value>{0} 个日程</value></data>
+  <data name="EventsCountFew" xml:space="preserve"><value>{0} 个日程</value></data>
+  <data name="EventsCountMany" xml:space="preserve"><value>{0} 个日程</value></data>
+  <data name="ChartWeeklyLoad" xml:space="preserve"><value>一周又一周</value></data>
+  <data name="ShiftMoreOptions" xml:space="preserve"><value>更多选项</value></data>
+  <data name="ShiftDays" xml:space="preserve"><value>天</value></data>
+  <data name="ShiftOnDate" xml:space="preserve"><value>约会</value></data>
+  <data name="ShiftDayDateConfirmation" xml:space="preserve"><value>将 {0} 上的所有内容移动到 {1} 上？</value></data>
+  <data name="VisionUnsupported" xml:space="preserve"><value>该模型没有图像编码器，因此图像输入保持关闭状态。选择标记为“图像”的模型。</value></data>
+  <data name="VisionReady" xml:space="preserve"><value>图像输入已准备就绪。附上图片，询问一下。</value></data>
+  <data name="VisionNeedsProjector" xml:space="preserve"><value>该型号的投影仪尚未下载。使用上面的按钮。</value></data>
+  <data name="VisionNeedsCustomProjector" xml:space="preserve"><value>选择下面该模型的 mmproj 文件，否则图像输入将保持关闭状态。</value></data>
+  <data name="VisionBadge" xml:space="preserve"><value>图像</value></data>
+  <data name="CustomWeightsTitle" xml:space="preserve"><value>模型文件·GGUF</value></data>
+  <data name="CustomWeightsHint" xml:space="preserve"><value>模型本身：它知道的一切和它能写的一切。必需的。</value></data>
+  <data name="CustomProjectorTitle" xml:space="preserve"><value>视觉投影仪·mmproj</value></data>
+  <data name="CustomProjectorHint" xml:space="preserve"><value>第二个小得多的文件，将图片转换为上面的模型可以读取的内容。仅适用于图像输入，并且仅适用于属于该确切模型的 mmproj 文件。</value></data>
+  <data name="CustomFileMissing" xml:space="preserve"><value>未选择</value></data>
+  <data name="McpEndpointHint" xml:space="preserve"><value>MCP 服务器自己的地址。与 API 地址分开：读取一个作为另一个意味着在每条消息之前都会进行一次注定失败的连接尝试。</value></data>
+  <data name="AdvancedMcpNotice" xml:space="preserve"><value>MCP 网桥会自行回答，因此这些设置不会传递给它。若要调整请求，请切换到本地模型或 API 连接。</value></data>
+  <data name="ParamGroupSampling" xml:space="preserve"><value>答案怎么写</value></data>
+  <data name="ParamGroupBudget" xml:space="preserve"><value>还能走多远</value></data>
+  <data name="ParamGroupStanding" xml:space="preserve"><value>每次谈话</value></data>
+  <data name="AiActionSetTaskStatus" xml:space="preserve"><value>更改任务状态</value></data>
+  <data name="AiActionCreateFocusBlock" xml:space="preserve"><value>预留工作时间</value></data>
+  <data name="StageToolSearch" xml:space="preserve"><value>搜索时间表...</value></data>
+  <data name="TaskStatusInbox" xml:space="preserve"><value>收件箱</value></data>
+  <data name="TaskStatusReady" xml:space="preserve"><value>准备好了</value></data>
+  <data name="TaskStatusScheduled" xml:space="preserve"><value>预定</value></data>
+  <data name="TaskStatusInProgress" xml:space="preserve"><value>进行中</value></data>
+  <data name="TaskStatusDone" xml:space="preserve"><value>完成</value></data>
+  <data name="TaskStatusCancelled" xml:space="preserve"><value>已取消</value></data>
+  <data name="AiAccessConfirmAllShort" xml:space="preserve"><value>确认</value></data>
+  <data name="AiAccessAutoSafeShort" xml:space="preserve"><value>自动安全</value></data>
+  <data name="AiAccessFullShort" xml:space="preserve"><value>满</value></data>
+  <data name="SnapStep" xml:space="preserve"><value>{0} 最小值</value></data>
+  <data name="Reminders" xml:space="preserve"><value>提醒</value></data>
+  <data name="NotificationsEnabled" xml:space="preserve"><value>显示提醒</value></data>
+  <data name="NotificationsEnabledHint" xml:space="preserve"><value>在事件开始或结束之前，边缘手柄旁边的快速小部件中的一张卡片。没有任何内容交给系统。</value></data>
+  <data name="NotificationSound" xml:space="preserve"><value>提醒声</value></data>
+  <data name="NotificationSoundHint" xml:space="preserve"><value>当小部件已打开时，安静地播放系统设置中选择的通知声音。</value></data>
+  <data name="NotificationsOffHint" xml:space="preserve"><value>提醒已关闭。</value></data>
+  <data name="NotificationHide" xml:space="preserve"><value>隐藏通知</value></data>
+  <data name="NotificationDismissAll" xml:space="preserve"><value>全部驳回</value></data>
+  <data name="DoNotDisturb" xml:space="preserve"><value>请勿打扰</value></data>
+  <data name="DoNotDisturbUntil" xml:space="preserve"><value>安静直到{0}</value></data>
+  <data name="DoNotDisturbEnd" xml:space="preserve"><value>结束请勿打扰</value></data>
+  <data name="DoNotDisturbOffHint" xml:space="preserve"><value>提醒按时到达。</value></data>
+  <data name="DoNotDisturbOffShort" xml:space="preserve"><value>关闭</value></data>
+  <data name="DoNotDisturbUntilResumedHint" xml:space="preserve"><value>保持安静，直到您重新打开它。</value></data>
+  <data name="DoNotDisturbLength" xml:space="preserve"><value>多久</value></data>
+  <data name="QuietLengthMinutes" xml:space="preserve"><value>{0} 最小值</value></data>
+  <data name="QuietLengthHours" xml:space="preserve"><value>{0} h</value></data>
+  <data name="QuietLengthUntilResumed" xml:space="preserve"><value>直到我重新打开它</value></data>
+  <data name="FocusMode" xml:space="preserve"><value>专注模式</value></data>
+  <data name="FocusModeIntro" xml:space="preserve"><value>只要游戏——或别的任何东西——占满整个屏幕，外壳就退到一旁：它放开在整个桌面上占用的快捷键，让按键落到眼前的程序上，并把提醒先收着，等屏幕重新归你再说。</value></data>
+  <data name="FocusModeManualOnlyHint" xml:space="preserve"><value>这个桌面不会告知屏幕上还有什么，所以它自己察觉不到。在这里，手动打开后专注模式一样有效。</value></data>
+  <data name="FocusModeAuto" xml:space="preserve"><value>察觉全屏程序</value></data>
+  <data name="FocusModeHold" xml:space="preserve"><value>一直开着</value></data>
+  <data name="FocusModeHoldHint" xml:space="preserve"><value>无论屏幕上是什么都保持开启，直到再次关掉。重启后不会记住。</value></data>
+  <data name="FocusModeReleaseShortcuts" xml:space="preserve"><value>放开快捷键</value></data>
+  <data name="FocusModeReleaseShortcutsHint" xml:space="preserve"><value>本应用占住的组合键，游戏根本收不到。在 DAYDRIVE 自己的窗口里它们照常有效。</value></data>
+  <data name="FocusModeHoldReminders" xml:space="preserve"><value>先压住提醒</value></data>
+  <data name="FocusModeHoldRemindersHint" xml:space="preserve"><value>不在屏幕上画任何东西。到点的提醒会在专注模式结束时一并送到，不会丢失。</value></data>
+  <data name="FocusModeHideHandle" xml:space="preserve"><value>把屏幕边缘的细条收起</value></data>
+  <data name="FocusModeHideHandleHint" xml:space="preserve"><value>右边缘的细条不再接收点击。托盘图标照旧可以打开界面，专注模式一结束细条就回来。</value></data>
+  <data name="FocusModeIdleHint" xml:space="preserve"><value>眼下没有程序占满屏幕。快捷键已占用，提醒照常送达。</value></data>
+  <data name="FocusModeOffHint" xml:space="preserve"><value>无论屏幕上是什么，外壳都照旧。</value></data>
+  <data name="FocusModeHeldHint" xml:space="preserve"><value>已手动开启。</value></data>
+  <data name="FocusModeAppHint" xml:space="preserve"><value>屏幕归 {0}。</value></data>
+  <data name="FocusModeAnonHint" xml:space="preserve"><value>有程序占满了整个屏幕。</value></data>
+  <data name="FocusModePresentingHint" xml:space="preserve"><value>演示模式已开启。</value></data>
+  <data name="FocusModeOnShort" xml:space="preserve"><value>开</value></data>
+  <data name="FocusModeHeldTitle" xml:space="preserve"><value>屏幕被占用期间</value></data>
+  <data name="ShortcutsFocusHeld" xml:space="preserve"><value>专注模式暂时放开了它们——别的程序占满了屏幕。在 DAYDRIVE 自己的窗口里仍然有效。</value></data>
+  <data name="LocalModelGpu" xml:space="preserve"><value>使用显卡</value></data>
+  <data name="LocalModelGpuOnHint" xml:space="preserve"><value>除 CPU 版本外，还会安装 GPU 版引擎，并将显存容得下的所有层转移到显卡。更改此设置后模型会重启。</value></data>
+  <data name="LocalModelGpuOffHint" xml:space="preserve"><value>该模型完全在处理器上运行。速度较慢，但​​它把卡留给了其他一切。</value></data>
+  <data name="GpuLabel" xml:space="preserve"><value>GPU</value></data>
+  <data name="CpuOnlyLabel" xml:space="preserve"><value>CPU</value></data>
+  <data name="VramLabel" xml:space="preserve"><value>显存</value></data>
+  <data name="GpuOffloadDetail" xml:space="preserve"><value>{0} · {2} 卡上层数 {1}</value></data>
+  <data name="CpuOnlyDetail" xml:space="preserve"><value>在处理器上运行</value></data>
+  <data name="ResourceOfTotal" xml:space="preserve"><value>设备共有 {0}</value></data>
+  <data name="ResourceNotInUse" xml:space="preserve"><value>未使用</value></data>
+  <data name="ResourceUnavailable" xml:space="preserve"><value>——</value></data>
+  <data name="StageLoadingModel" xml:space="preserve"><value>加载模型...</value></data>
+  <data name="TrackPause" xml:space="preserve"><value>Pause</value></data>
+  <data name="TrackResume" xml:space="preserve"><value>Resume</value></data>
+  <data name="TrackStop" xml:space="preserve"><value>Stop</value></data>
+  <data name="TrackPaused" xml:space="preserve"><value>Paused</value></data>
+  <data name="TrackWorked" xml:space="preserve"><value>Worked</value></data>
+  <data name="TrackPausedFor" xml:space="preserve"><value>{0} paused</value></data>
+  <data name="TrackPlanActual" xml:space="preserve"><value>plan {0} · actual {1}</value></data>
+  <data name="TrackOverPlan" xml:space="preserve"><value>{0} over plan</value></data>
+  <data name="TrackUnderPlan" xml:space="preserve"><value>{0} left of the plan</value></data>
+  <data name="TrackedPartialProgress" xml:space="preserve"><value>partly · {0}% · {1}</value></data>
+  <data name="SessionTimerTooltip" xml:space="preserve"><value>Work time. Pauses are counted separately and never added to it.</value></data>
+  <data name="PausePromptTitle" xml:space="preserve"><value>Still on this?</value></data>
+  <data name="PausePromptBody" xml:space="preserve"><value>Paused for {0}.</value></data>
+  <data name="PausePromptResume" xml:space="preserve"><value>Keep going</value></data>
+  <data name="PausePromptFinish" xml:space="preserve"><value>End session</value></data>
+  <data name="SessionResultTitle" xml:space="preserve"><value>How did it go?</value></data>
+  <data name="SessionResultDone" xml:space="preserve"><value>Done</value></data>
+  <data name="SessionResultPartial" xml:space="preserve"><value>Partly</value></data>
+  <data name="SessionResultMissed" xml:space="preserve"><value>Not done</value></data>
+  <data name="SessionMeasured" xml:space="preserve"><value>Worked {0} of {1} planned</value></data>
+  <data name="SessionMeasuredNoPlan" xml:space="preserve"><value>Worked {0}</value></data>
+  <data name="SessionProgressTitle" xml:space="preserve"><value>How far did it get?</value></data>
+  <data name="SessionNextStepTitle" xml:space="preserve"><value>What's left?</value></data>
+  <data name="SessionNextStepPlaceholder" xml:space="preserve"><value>Recheck the last three screens</value></data>
+  <data name="SessionSave" xml:space="preserve"><value>Save</value></data>
+  <data name="SessionLater" xml:space="preserve"><value>Not now</value></data>
+  <data name="NextStepChip" xml:space="preserve"><value>Next: {0}</value></data>
+  <data name="NextStepTooltip" xml:space="preserve"><value>Where to pick this up. Set when the event was left part-done.</value></data>
+  <data name="ChatWrapUp" xml:space="preserve"><value>Day wrap-up</value></data>
+  <data name="WrapUpTitle" xml:space="preserve"><value>Wrap up the day</value></data>
+  <data name="WrapUpHint" xml:space="preserve"><value>所有已结束但没有结果的安排——今天以及此前几周。</value></data>
+  <data name="WrapUpCount" xml:space="preserve"><value>{0} without a result</value></data>
+  <data name="WrapUpEmpty" xml:space="preserve"><value>Nothing left to answer for</value></data>
+  <data name="WrapUpEmptyHint" xml:space="preserve"><value>每个已结束的日程都有结果。</value></data>
+  <data name="WrapUpDone" xml:space="preserve"><value>Done</value></data>
+  <data name="WrapUpMove" xml:space="preserve"><value>Move</value></data>
+  <data name="WrapUpSkip" xml:space="preserve"><value>Skip</value></data>
+  <data name="WrapUpMoveTooltip" xml:space="preserve"><value>Move to tomorrow, same time</value></data>
+  <data name="WrapUpAcceptAll" xml:space="preserve"><value>Accept all suggestions</value></data>
+  <data name="WrapUpHadActivity" xml:space="preserve"><value>timer ran {0}</value></data>
+  <data name="WrapUpNeverStarted" xml:space="preserve"><value>never started</value></data>
+  <data name="WrapUpSuggestion" xml:space="preserve"><value>suggested: {0}</value></data>
+  <data name="WrapUpResolvedDone" xml:space="preserve"><value>Marked done</value></data>
+  <data name="WrapUpResolvedSkipped" xml:space="preserve"><value>Skipped</value></data>
+  <data name="WrapUpResolvedMoved" xml:space="preserve"><value>Moved to {0}</value></data>
+  <data name="WrapUpOffer" xml:space="preserve"><value>{0} of today's events have no result yet.</value></data>
+  <data name="WrapUpOpen" xml:space="preserve"><value>Wrap up</value></data>
+  <data name="WrapUpLater" xml:space="preserve"><value>Later</value></data>
+  <data name="WrapUpBadge" xml:space="preserve"><value>{0}</value></data>
+  <data name="BlockerTitle" xml:space="preserve"><value>Moved {0} times now. What is in the way?</value></data>
+  <data name="BlockerNotEnoughTime" xml:space="preserve"><value>Not enough time</value></data>
+  <data name="BlockerTooBig" xml:space="preserve"><value>Too big</value></data>
+  <data name="BlockerUnclearStart" xml:space="preserve"><value>Unclear where to start</value></data>
+  <data name="BlockerNotRelevant" xml:space="preserve"><value>No longer relevant</value></data>
+  <data name="BlockerShorten" xml:space="preserve"><value>Make it shorter</value></data>
+  <data name="BlockerShortenHint" xml:space="preserve"><value>Halve the slot, to {0}.</value></data>
+  <data name="BlockerFirstStep" xml:space="preserve"><value>Give it a first step</value></data>
+  <data name="BlockerDrop" xml:space="preserve"><value>Drop it</value></data>
+  <data name="BlockerDropHint" xml:space="preserve"><value>Take it off the calendar.</value></data>
+  <data name="BlockerNoted" xml:space="preserve"><value>Noted.</value></data>
+  <data name="TrackedPausedAt" xml:space="preserve"><value>paused - {0} worked</value></data>
+  <data name="BlockerEarlier" xml:space="preserve"><value>Move it earlier</value></data>
+  <data name="BlockerEarlierHint" xml:space="preserve"><value>Put it first thing, at {0}, before the day fills up.</value></data>
+  <data name="MonitorPanel" xml:space="preserve"><value>监控</value></data>
+  <data name="MonitorIdle" xml:space="preserve"><value>未开始</value></data>
+  <data name="NextStepCardTitle" xml:space="preserve"><value>剩下的事</value></data>
+  <data name="NextStepFold" xml:space="preserve"><value>收起这条备注</value></data>
+  <data name="NextStepUnfold" xml:space="preserve"><value>重新显示备注</value></data>
+  <data name="NextStepCollapse" xml:space="preserve"><value>收起列表</value></data>
+  <data name="NextStepExpand" xml:space="preserve"><value>展开列表</value></data>
+  <data name="SessionDismiss" xml:space="preserve"><value>忽略</value></data>
+  <data name="SessionNextStepAdd" xml:space="preserve"><value>添加这一条</value></data>
+  <data name="SessionNextStepAddHint" xml:space="preserve"><value>回车再加一条</value></data>
+  <data name="SessionNextStepRemove" xml:space="preserve"><value>从列表中移除</value></data>
+  <data name="Shortcuts" xml:space="preserve"><value>快捷键</value></data>
+  <data name="ShortcutsIntro" xml:space="preserve"><value>在任何应用中都可使用。按下组合键即可重新绑定；Escape 取消，退格键关闭。</value></data>
+  <data name="ShortcutsWindowOnlyIntro" xml:space="preserve"><value>在 DAYDRIVE 窗口获得焦点时可用。全局占用按键目前仅支持 Windows；在 macOS 和 Wayland 上，请在系统或合成器设置中绑定。</value></data>
+  <data name="ShortcutsReset" xml:space="preserve"><value>恢复默认</value></data>
+  <data name="ShortcutResetOne" xml:space="preserve"><value>恢复为默认</value></data>
+  <data name="ShortcutRebind" xml:space="preserve"><value>按此重新绑定</value></data>
+  <data name="ShortcutPressKeys" xml:space="preserve"><value>请按下按键…</value></data>
+  <data name="ShortcutClash" xml:space="preserve"><value>该组合已被其他快捷键占用</value></data>
+  <data name="ShortcutRefused" xml:space="preserve"><value>这些按键已被其他程序占用</value></data>
+  <data name="ShortcutOff" xml:space="preserve"><value>已关闭</value></data>
+  <data name="ShortcutToggleShell" xml:space="preserve"><value>显示或隐藏计划面板</value></data>
+  <data name="ShortcutToggleWidget" xml:space="preserve"><value>显示或隐藏快捷小组件</value></data>
+  <data name="ShortcutToggleAssistant" xml:space="preserve"><value>打开助手</value></data>
+  <data name="ShortcutStartOrPauseSession" xml:space="preserve"><value>开始或暂停计时</value></data>
+  <data name="ShortcutStopSession" xml:space="preserve"><value>停止计时</value></data>
+  <data name="ShortcutToggleDoNotDisturb" xml:space="preserve"><value>开启或关闭免打扰</value></data>
+  <data name="CloudStateOk" xml:space="preserve"><value>全部已同步</value></data>
+  <data name="CloudStateOkHint" xml:space="preserve"><value>检查于{0}。这台电脑和云端的数据相同。</value></data>
+  <data name="CloudStatePending" xml:space="preserve"><value>有些更改还没有同步到云端</value></data>
+  <data name="CloudStatePendingAuto" xml:space="preserve"><value>它们会在 {0} 左右自动发送，也可以点击“立即同步”。</value></data>
+  <data name="CloudStatePendingManual" xml:space="preserve"><value>自动同步已关闭，请点击“立即同步”发送这些更改。</value></data>
+  <data name="CloudStateNever" xml:space="preserve"><value>尚未同步任何内容</value></data>
+  <data name="CloudStateNeverHint" xml:space="preserve"><value>点击“立即同步”，把第一份副本放到云端。</value></data>
+  <data name="CloudStateSyncing" xml:space="preserve"><value>正在同步…</value></data>
+  <data name="CloudStateSyncingHint" xml:space="preserve"><value>正在比较这台电脑与云端副本。</value></data>
+  <data name="CloudStateFailed" xml:space="preserve"><value>上次同步未能完成</value></data>
+  <data name="CloudStateRetryAuto" xml:space="preserve"><value>下次尝试大约在 {0}。</value></data>
+  <data name="CloudStateSetup" xml:space="preserve"><value>设置尚未完成</value></data>
+  <data name="CloudStateRestart" xml:space="preserve"><value>云端副本已准备好</value></data>
+  <data name="CloudRestartNow" xml:space="preserve"><value>重新启动 DAYDRIVE</value></data>
+  <data name="CloudRestartFailed" xml:space="preserve"><value>DAYDRIVE 无法自行重启。请从托盘图标退出后重新打开。</value></data>
+  <data name="CloudFactLastSync" xml:space="preserve"><value>上次同步</value></data>
+  <data name="CloudFactCloudCopy" xml:space="preserve"><value>云端</value></data>
+  <data name="CloudFactThisComputer" xml:space="preserve"><value>这台电脑</value></data>
+  <data name="CloudFactAutomatic" xml:space="preserve"><value>自动</value></data>
+  <data name="CloudFactNever" xml:space="preserve"><value>从未</value></data>
+  <data name="CloudFactRemoteUnknown" xml:space="preserve"><value>尚未检查</value></data>
+  <data name="CloudFactLocalClean" xml:space="preserve"><value>没有新的更改</value></data>
+  <data name="CloudFactLocalChanged" xml:space="preserve"><value>有新的更改</value></data>
+  <data name="CloudFactLocalChangedSince" xml:space="preserve"><value>有新的更改，最近一次在{0}</value></data>
+  <data name="CloudFactScheduleAuto" xml:space="preserve"><value>启动时、每 15 分钟一次以及退出时 · 下次约在 {0}</value></data>
+  <data name="CloudFactScheduleManual" xml:space="preserve"><value>已关闭，只在点击“立即同步”时同步</value></data>
+  <data name="CloudJournalTitle" xml:space="preserve"><value>历史记录</value></data>
+  <data name="CloudLogUploaded" xml:space="preserve"><value>已发送到云端 · {0}</value></data>
+  <data name="CloudLogDownloaded" xml:space="preserve"><value>已下载云端副本</value></data>
+  <data name="CloudLogDownloadedFrom" xml:space="preserve"><value>已下载来自“{0}”的副本</value></data>
+  <data name="CloudLogApplied" xml:space="preserve"><value>已应用下载的副本</value></data>
+  <data name="CloudLogUpToDate" xml:space="preserve"><value>已检查，无需同步</value></data>
+  <data name="CloudLogConflict" xml:space="preserve"><value>两份副本都有更改，等待你的选择</value></data>
+  <data name="CloudLogConnected" xml:space="preserve"><value>已连接 Google 帐户</value></data>
+  <data name="CloudLogConnectedAs" xml:space="preserve"><value>已连接为 {0}</value></data>
+  <data name="CloudLogDisconnected" xml:space="preserve"><value>已断开 Google 帐户</value></data>
+  <data name="CloudLogFailed" xml:space="preserve"><value>未同步：{0}</value></data>
+  <data name="CloudTriggerManual" xml:space="preserve"><value>手动</value></data>
+  <data name="CloudTriggerAutomatic" xml:space="preserve"><value>自动</value></data>
+  <data name="CloudTriggerStartup" xml:space="preserve"><value>启动时</value></data>
+  <data name="CloudTriggerExit" xml:space="preserve"><value>退出时</value></data>
+  <data name="CloudJustNow" xml:space="preserve"><value>刚刚</value></data>
+  <data name="CloudTodayAt" xml:space="preserve"><value>今天 {0}</value></data>
+  <data name="CloudYesterdayAt" xml:space="preserve"><value>昨天 {0}</value></data>
+  <data name="CloudDateAt" xml:space="preserve"><value>{0} {1}</value></data>
+  <data name="CloudIssueOff" xml:space="preserve"><value>请选择同步到哪里。</value></data>
+  <data name="CloudIssueFolderNotChosen" xml:space="preserve"><value>请选择云盘应用正在同步的文件夹。</value></data>
+  <data name="CloudIssueFolderMissing" xml:space="preserve"><value>找不到同步文件夹。可能是所在的磁盘已断开，或者文件夹被移动了。</value></data>
+  <data name="CloudIssueFolderNotWritable" xml:space="preserve"><value>DAYDRIVE 无法写入同步文件夹。请检查它的权限。</value></data>
+  <data name="CloudIssueGoogleClientIdMissing" xml:space="preserve"><value>请粘贴 Google Cloud Console 中的客户端 ID。</value></data>
+  <data name="CloudIssueGoogleClientSecretMissing" xml:space="preserve"><value>还需要粘贴客户端密钥。Google 要求“桌面应用”类型的客户端提供它。</value></data>
+  <data name="CloudIssueGoogleNotConnected" xml:space="preserve"><value>点击“连接Google帐户”完成设置。</value></data>
+  <data name="CloudIssueGoogleReconnect" xml:space="preserve"><value>Google 不再接受已保存的登录：访问权限已被撤销或已过期。请重新连接帐户。</value></data>
+  <data name="CloudIssueGoogleClientRejected" xml:space="preserve"><value>Google 拒绝了客户端 ID 或密钥。请确认客户端类型是“桌面应用”，并且密钥属于这个客户端。</value></data>
+  <data name="CloudIssueGoogleDriveApiDisabled" xml:space="preserve"><value>你的 Google Cloud 项目中没有启用 Google Drive API。请启用它，等一分钟后再试。</value></data>
+  <data name="CloudIssueGoogleScopeMissing" xml:space="preserve"><value>登录时没有允许访问 Google 云端硬盘。请重新连接，并勾选 Google 云端硬盘的选项。</value></data>
+  <data name="CloudIssueSignInCancelled" xml:space="preserve"><value>登录已取消。</value></data>
+  <data name="CloudIssueSignInTimedOut" xml:space="preserve"><value>5 分钟内没有完成登录。请再试一次。</value></data>
+  <data name="CloudIssueOffline" xml:space="preserve"><value>无法连接到云端。请检查网络连接。</value></data>
+  <data name="CloudIssueInterrupted" xml:space="preserve"><value>同步在完成前被中断。</value></data>
+  <data name="CloudIssueBusy" xml:space="preserve"><value>已经有同步正在进行。</value></data>
+  <data name="CloudIssueNothingInCloud" xml:space="preserve"><value>云端还没有任何内容。</value></data>
+  <data name="CloudIssueNotADatabase" xml:space="preserve"><value>云端的文件不是 DAYDRIVE 数据。没有做任何更改。</value></data>
+  <data name="CloudIssueUnexpected" xml:space="preserve"><value>意外错误：{0}</value></data>
+  <data name="CloudGoogleConnectedNoEmail" xml:space="preserve"><value>已连接 Google 帐户</value></data>
+  <data name="CloudGoogleSecretSaved" xml:space="preserve"><value>客户端密钥已保存</value></data>
+  <data name="CloudTrayLabel" xml:space="preserve"><value>云同步</value></data>
+  <data name="CloudTrayOk" xml:space="preserve"><value>已同步 {0}</value></data>
+  <data name="CloudTrayPending" xml:space="preserve"><value>有待同步的更改</value></data>
+  <data name="CloudTraySyncing" xml:space="preserve"><value>正在同步…</value></data>
+  <data name="CloudTrayError" xml:space="preserve"><value>同步失败</value></data>
+  <data name="CloudTrayAttention" xml:space="preserve"><value>需要你处理</value></data>
+  <data name="CloudStatusBarFailed" xml:space="preserve"><value>云同步未能完成：{0}</value></data>
+  <data name="LocalQuantNote" xml:space="preserve"><value>所有模型都采用 Q5_K_M：接近完整的质量，普通电脑也能运行的大小。</value></data>
+  <data name="LocalModelLegacyFiles" xml:space="preserve"><value>已不再提供的版本（{0}）的下载文件占用了 {1}。</value></data>
+  <data name="LocalModelLegacyDelete" xml:space="preserve"><value>删除</value></data>
+  <data name="LocalModelLegacyDeleted" xml:space="preserve"><value>已删除旧模型文件，释放了 {0}。</value></data>
+  <data name="LocalHardwareTitle" xml:space="preserve"><value>这台电脑</value></data>
+  <data name="LocalHardwareHint" xml:space="preserve"><value>DAYDRIVE 检测到的硬件，以及模型因此会如何运行。</value></data>
+  <data name="LocalHardwareRescan" xml:space="preserve"><value>重新检测</value></data>
+  <data name="LocalHardwareCpu" xml:space="preserve"><value>处理器</value></data>
+  <data name="LocalHardwareMemory" xml:space="preserve"><value>内存</value></data>
+  <data name="LocalHardwareGpu" xml:space="preserve"><value>显卡</value></data>
+  <data name="LocalHardwareCpuValue" xml:space="preserve"><value>{0} 核 · {1} 线程</value></data>
+  <data name="LocalHardwareCpuHybrid" xml:space="preserve"><value>{0} 个性能核 + {1} 个能效核 · {2} 线程</value></data>
+  <data name="LocalHardwareCpuThreads" xml:space="preserve"><value>{0} 线程</value></data>
+  <data name="LocalHardwareMemoryValue" xml:space="preserve"><value>{0} · 当前可用 {1}</value></data>
+  <data name="LocalHardwareGpuValue" xml:space="preserve"><value>{0} · {1}</value></data>
+  <data name="LocalHardwareGpuFree" xml:space="preserve"><value>{0} · {1}，可用 {2}</value></data>
+  <data name="LocalHardwareGpuIntegrated" xml:space="preserve"><value>只有集成显卡（{0}），不用于运行模型</value></data>
+  <data name="LocalHardwareGpuNone" xml:space="preserve"><value>没有独立显卡</value></data>
+  <data name="LocalHardwareUnknown" xml:space="preserve"><value>无法读取</value></data>
+  <data name="LocalHardwareDetecting" xml:space="preserve"><value>正在检测这台电脑…</value></data>
+  <data name="LocalTuneFullGpu" xml:space="preserve"><value>整个模型都能放进显卡</value></data>
+  <data name="LocalTuneSplit" xml:space="preserve"><value>约 {0}% 的模型放在显卡上，其余在处理器上</value></data>
+  <data name="LocalTuneCpu" xml:space="preserve"><value>显卡太小帮不上忙，所以模型在处理器上运行</value></data>
+  <data name="LocalTuneCpuNoCard" xml:space="preserve"><value>模型在处理器上运行</value></data>
+  <data name="LocalTuneSummary" xml:space="preserve"><value>上下文 {0} 个 token · {1} 个线程 · 回答最多 {2} 个 token · 记住最近 {3} 条消息</value></data>
+  <data name="LocalTuneWarnMemory" xml:space="preserve"><value>模型大约需要 {0}，但只有约 {1} 可用。它会运行得很慢，也可能拖慢其他程序；关闭一些程序或选择更小的模型会有帮助。</value></data>
+  <data name="LocalTuneManual" xml:space="preserve"><value>自动选择已关闭：这只是建议，实际使用下面设置的数值。</value></data>
+  <data name="LocalAutoTune" xml:space="preserve"><value>根据这台电脑自动选择这些设置</value></data>
+  <data name="LocalAutoTuneHint" xml:space="preserve"><value>更换模型或硬件时会重新计算。关闭后可以自己设置数值。</value></data>
+  <data name="ParamsForLocal" xml:space="preserve"><value>这些数值只用于本地模型；API 有自己的一套。</value></data>
+  <data name="ParamsForApi" xml:space="preserve"><value>这些数值只随发往 API 的请求发送；本地模型有自己的一套。</value></data>
+  <data name="ParamsAutoBudget" xml:space="preserve"><value>回答长度、历史记录和等待时间已按这台电脑选定。要修改，请关闭上面的自动选择。</value></data>
+  <data name="StepsCountOne" xml:space="preserve"><value>{0} 个步骤</value></data>
+  <data name="StepsCountFew" xml:space="preserve"><value>{0} 个步骤</value></data>
+  <data name="StepsCountMany" xml:space="preserve"><value>{0} 个步骤</value></data>
+  <data name="ProjectProgress" xml:space="preserve"><value>已完成 {0}/{1} · {2}/{3}</value></data>
+  <data name="ProjectNoStepsYet" xml:space="preserve"><value>还没有步骤。在下方写下第一步，再为它设置时长和日期。</value></data>
+  <data name="ProjectNextChip" xml:space="preserve"><value>下一步：{0}</value></data>
+  <data name="StepAfterDeadline" xml:space="preserve"><value>晚于截止日期</value></data>
+  <data name="NewStepPlaceholder" xml:space="preserve"><value>新步骤…</value></data>
+  <data name="StepNoDay" xml:space="preserve"><value>未定日期</value></data>
+  <data name="StepSchedule" xml:space="preserve"><value>安排时间</value></data>
+  <data name="StepScheduleTooltip" xml:space="preserve"><value>把这一步放进日程的具体时间</value></data>
+  <data name="StepScheduleHeading" xml:space="preserve"><value>为项目步骤安排时间</value></data>
+  <data name="StepMoveDay" xml:space="preserve"><value>移到另一天</value></data>
+  <data name="StepDurationTooltip" xml:space="preserve"><value>这一步需要多长时间</value></data>
+  <data name="StepOpenEvent" xml:space="preserve"><value>在当天中显示</value></data>
+  <data name="StepDelete" xml:space="preserve"><value>删除步骤</value></data>
+  <data name="StepRenameHint" xml:space="preserve"><value>点击以重命名</value></data>
+  <data name="StepToggleDone" xml:space="preserve"><value>标记为完成或取消</value></data>
+  <data name="DayStepsTitle" xml:space="preserve"><value>当天计划的步骤</value></data>
+  <data name="StepOverdueFrom" xml:space="preserve"><value>原定 {0}</value></data>
+  <data name="StepAddTooltip" xml:space="preserve"><value>添加步骤（Enter）</value></data>
+  <data name="ProjectShowFinished" xml:space="preserve"><value>显示已完成的日子（{0}）</value></data>
+  <data name="ProjectHideFinished" xml:space="preserve"><value>隐藏已完成的日子</value></data>
+  <data name="DayStepsTitleToday" xml:space="preserve"><value>今天计划的步骤</value></data>
+  <data name="StepsTitle" xml:space="preserve"><value>步骤</value></data>
+  <data name="StepsFold" xml:space="preserve"><value>收起步骤</value></data>
+  <data name="StepsChipTooltip" xml:space="preserve"><value>已完成的步骤——点击显示或隐藏</value></data>
+  <data name="BreakIntoSteps" xml:space="preserve"><value>拆分为步骤</value></data>
+  <data name="OpenProject" xml:space="preserve"><value>打开项目</value></data>
+  <data name="SittingPlanned" xml:space="preserve"><value>步骤 {0} / {1}</value></data>
+  <data name="SittingOverflow" xml:space="preserve"><value>步骤 {0}——比活动长 {1}</value></data>
+  <data name="SittingSeriesHint" xml:space="preserve"><value>该活动的每次重复共用一份清单；每天的勾选各自记录。</value></data>
+  <data name="SittingLeft" xml:space="preserve"><value>还剩 {0}</value></data>
+  <data name="SittingNoStepsYet" xml:space="preserve"><value>写下这段时间要做的事。边做边勾选步骤——活动的结果会自动记录。</value></data>
+  <data name="SessionSittingHint" xml:space="preserve"><value>在下方的步骤中勾选已完成的部分——百分比会自动跟上。未勾选的就是剩下的事。</value></data>
+  <data name="CarryHeading" xml:space="preserve"><value>继续剩下的事</value></data>
+  <data name="CarryToTime" xml:space="preserve"><value>继续…</value></data>
+  <data name="CarryToTimeTooltip" xml:space="preserve"><value>给剩下的事安排新的时间</value></data>
+  <data name="CarryToUnscheduled" xml:space="preserve"><value>转到计划外</value></data>
+  <data name="CarryToUnscheduledTooltip" xml:space="preserve"><value>把剩下的事变成任务，按天安排</value></data>
+  <data name="StepsCarried" xml:space="preserve"><value>剩下的步骤已移到新的时间</value></data>
+  <data name="StepsCarriedToUnscheduled" xml:space="preserve"><value>剩下的步骤现在是“计划外”中的一个任务</value></data>
+  <data name="StepsRemoved" xml:space="preserve"><value>已没有步骤</value></data>
+  <data name="SittingAnsweredDone" xml:space="preserve"><value>所有步骤已完成——活动已标记为完成</value></data>
+  <data name="SittingReopened" xml:space="preserve"><value>有步骤重新打开——活动为部分完成</value></data>
+  <data name="ProjectFinished" xml:space="preserve"><value>所有步骤已标记为完成</value></data>
+  <data name="ConfirmDeleteProjectTask" xml:space="preserve"><value>删除该任务及其所有步骤？为这些步骤安排的活动会保留在日历中。</value></data>
+  <data name="ConfirmDeleteEventSteps" xml:space="preserve"><value>删除此活动及其步骤？</value></data>
+  <data name="ProjectCategoryTooltip" xml:space="preserve"><value>项目的颜色——为其步骤安排的时间也使用这个颜色</value></data>
+  <data name="WindowedShellHint" xml:space="preserve"><value>桌面负责管理窗口位置。DAYDRIVE 将各面板放在一个可调整大小的窗口中；此模式下无法使用屏幕边缘和小组件选项。</value></data>
+  <data name="LocalHardwareGpuDetected" xml:space="preserve"><value>{0} · 显存容量不可用</value></data>
+  <data name="ThemeColorAccent" xml:space="preserve"><value>强调色</value></data>
+  <data name="ThemeColorBackground" xml:space="preserve"><value>窗口背景</value></data>
+  <data name="ThemeColorSurface" xml:space="preserve"><value>面板</value></data>
+  <data name="ThemeColorSurfaceAlt" xml:space="preserve"><value>输入框和卡片</value></data>
+  <data name="ThemeColorText" xml:space="preserve"><value>文本</value></data>
+  <data name="ThemeColorMuted" xml:space="preserve"><value>次要文本</value></data>
+  <data name="ThemeColorStroke" xml:space="preserve"><value>边框</value></data>
+  <data name="ThemeColorSecondary" xml:space="preserve"><value>次要强调色</value></data>
+  <data name="ThemeColorTertiary" xml:space="preserve"><value>第三强调色</value></data>
+  <data name="ThemeColorSelection" xml:space="preserve"><value>选中状态</value></data>
+  <data name="ThemeColorSuccess" xml:space="preserve"><value>成功</value></data>
+  <data name="ThemeColorWarning" xml:space="preserve"><value>警告</value></data>
+  <data name="ThemeColorDanger" xml:space="preserve"><value>错误</value></data>
+  <data name="ThemeColorShadow" xml:space="preserve"><value>阴影</value></data>
+  <data name="ThemeWindowRadius" xml:space="preserve"><value>窗口</value></data>
+  <data name="ThemeCardRadius" xml:space="preserve"><value>卡片</value></data>
+  <data name="ThemeItemRadius" xml:space="preserve"><value>列表项</value></data>
+  <data name="ThemeControlRadius" xml:space="preserve"><value>按钮和输入框</value></data>
+  <data name="ThemeTextScale" xml:space="preserve"><value>文字缩放</value></data>
+  <data name="ThemeShadowStrength" xml:space="preserve"><value>阴影强度</value></data>
+  <data name="ThemeDetails" xml:space="preserve"><value>更多颜色</value></data>
+  <data name="ThemeGeometry" xml:space="preserve"><value>形状与字体</value></data>
+  <data name="ThemeColorReset" xml:space="preserve"><value>使用自动颜色</value></data>
+  <data name="ThemeColorInvalid" xml:space="preserve"><value>请输入 #RRGGBB 或 #AARRGGBB。</value></data>
+  <data name="ImportTheme" xml:space="preserve"><value>导入主题</value></data>
+  <data name="ExportTheme" xml:space="preserve"><value>导出主题</value></data>
+  <data name="ResetAppearance" xml:space="preserve"><value>重置所有外观设置</value></data>
+  <data name="ThemeFileInvalid" xml:space="preserve"><value>无法读取或保存主题。请检查文件格式和文件夹访问权限。</value></data>
+  <data name="ThemeImported" xml:space="preserve"><value>主题已导入。</value></data>
+  <data name="ThemeExported" xml:space="preserve"><value>主题已导出。</value></data>
+</root>

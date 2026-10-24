@@ -1,0 +1,5 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <ProjectReference Include="../IntelligentScheduler.Domain/IntelligentScheduler.Domain.csproj" />
+  </ItemGroup>
+</Project>

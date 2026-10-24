@@ -1,0 +1,29 @@
+# Build results
+[Bb]in/
+[Oo]bj/
+artifacts/
+TestResults/
+.build/
+__pycache__/
+*.pyc
+
+# IDE and Editor files
+.DS_Store
+.vs/
+.idea/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Database & Runtime logs
+*.db
+*.db-shm
+*.db-wal
+*.log
+daydrive-*.log
+local-ai/
+
+# Temporary / Scratch / Excluded docs
+scratch/
+

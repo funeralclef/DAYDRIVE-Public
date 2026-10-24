@@ -1,0 +1,405 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:icons="using:IntelligentScheduler.Desktop.Controls"
+        xmlns:vm="using:IntelligentScheduler.Desktop.ViewModels"
+        xmlns:primitives="using:Avalonia.Controls.Primitives"
+        x:Class="IntelligentScheduler.Desktop.AnalyticsView" Background="Transparent"
+        Classes.reduceMotion="{Binding ReduceMotion}"
+        Classes.motion="{Binding !ReduceMotion}">
+  <Border Background="{DynamicResource ShellBackground}"
+          BorderBrush="{DynamicResource ShellStroke}"
+          BorderThickness="1"
+          CornerRadius="{DynamicResource ShellWindowRadius}"
+          ClipToBounds="True">
+    <Grid RowDefinitions="Auto,*">
+
+      <!-- Header -->
+      <Grid Margin="18,15,13,10" ColumnDefinitions="*,Auto,Auto,Auto,Auto,Auto" ColumnSpacing="6">
+        <StackPanel Spacing="2" VerticalAlignment="Center">
+          <TextBlock Text="{DynamicResource L.Analytics}" Classes="title" />
+          <TextBlock Text="{Binding AnalyticsRangeLabel}" Classes="muted" />
+        </StackPanel>
+
+        <!-- A week is a named calendar period, so it can be walked through like the week
+             board. The next arrow stops at the current week; its button returns in one click. -->
+        <Button Grid.Column="1" Classes="quiet compact" Command="{Binding CurrentAnalyticsWeekCommand}"
+                Content="{DynamicResource L.AnalyticsCurrentWeek}"
+                IsVisible="{Binding IsViewingHistoricalAnalyticsWeek}" />
+        <Button Grid.Column="2" Classes="icon quiet nudgeLeft" Command="{Binding PreviousAnalyticsWeekCommand}"
+                IsVisible="{Binding IsRangeWeek}" ToolTip.Tip="{DynamicResource L.AnalyticsPreviousWeek}">
+          <icons:AnimatedIcon Data="{StaticResource IconChevronLeft}" Width="15" Height="15" />
+        </Button>
+        <Button Grid.Column="3" Classes="icon quiet nudgeRight" Command="{Binding NextAnalyticsWeekCommand}"
+                IsVisible="{Binding IsRangeWeek}" ToolTip.Tip="{DynamicResource L.AnalyticsNextWeek}">
+          <icons:AnimatedIcon Data="{StaticResource IconChevronRight}" Width="15" Height="15" />
+        </Button>
+
+        <!-- The window the figures cover. Three buttons reading "7 days / 28 days / 90 days"
+             made the reader do the translating; the list says week, month, three months and
+             keeps the span underneath, where it belongs. -->
+        <Button Grid.Column="4" Classes="rangePicker" Classes.open="{Binding IsAnalyticsRangeListOpen}"
+                Command="{Binding ToggleAnalyticsRangeListCommand}" VerticalAlignment="Center"
+                IsEnabled="{Binding !IsAnalyticsLoading}">
+          <Grid ColumnDefinitions="Auto,*,Auto" ColumnSpacing="8">
+            <icons:AnimatedIcon Data="{StaticResource IconCalendar}" Width="13" Height="13"
+                                Foreground="{DynamicResource ShellAccent}" VerticalAlignment="Center" />
+            <TextBlock Grid.Column="1" Text="{Binding AnalyticsRangeName}" FontSize="{DynamicResource MarelianFont11_5}" FontWeight="SemiBold"
+                       VerticalAlignment="Center" />
+            <icons:AnimatedIcon Grid.Column="2" Data="{StaticResource IconChevronRight}" Width="9" Height="9"
+                                Classes="expandChevron" Classes.expanded="{Binding IsAnalyticsRangeListOpen}"
+                                Foreground="{DynamicResource ShellMuted}" VerticalAlignment="Center" />
+          </Grid>
+        </Button>
+
+        <Button Grid.Column="5" Classes="icon quiet closeGlyph" Command="{Binding CloseAnalyticsCommand}">
+          <icons:AnimatedIcon Data="{StaticResource IconClose}" Width="17" />
+        </Button>
+      </Grid>
+
+      <ScrollViewer Grid.Row="1" Classes="modernScroll" Margin="14,0,4,14" BringIntoViewOnFocusChange="False">
+        <StackPanel Spacing="11">
+
+          <!-- Empty state -->
+          <Border Classes="emptyHint" IsVisible="{Binding !HasAnalyticsData}" Margin="0,20,5,0">
+            <StackPanel Spacing="9" HorizontalAlignment="Center">
+              <icons:AnimatedIcon Data="{StaticResource IconChart}" Width="26" Height="26"
+                        Foreground="{DynamicResource ShellMuted}" HorizontalAlignment="Center" />
+              <TextBlock Text="{DynamicResource L.AnalyticsEmpty}" Classes="muted" MaxWidth="380"
+                         TextWrapping="Wrap" TextAlignment="Center" />
+            </StackPanel>
+          </Border>
+
+          <StackPanel Spacing="11" IsVisible="{Binding HasAnalyticsData}">
+
+            <!-- Headline metrics -->
+            <!-- Compensates the per-tile gutter on the final column so this grid reaches
+                 the same right content edge as the cards below it. -->
+            <ItemsControl ItemsSource="{Binding AnalyticsMetrics}" Margin="0,0,-7,0">
+              <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate><primitives:UniformGrid Columns="3" /></ItemsPanelTemplate>
+              </ItemsControl.ItemsPanel>
+              <ItemsControl.ItemTemplate>
+                <DataTemplate DataType="vm:AnalyticsMetricViewModel">
+                  <Border Classes="metricTile" Margin="0,0,7,7">
+                    <StackPanel Spacing="3">
+                      <TextBlock Text="{Binding Label}" Classes="muted" FontSize="{DynamicResource MarelianFont10_5}"
+                                 TextTrimming="CharacterEllipsis" />
+                      <StackPanel Orientation="Horizontal" Spacing="3" VerticalAlignment="Bottom">
+                        <TextBlock Text="{Binding Value}" FontSize="{DynamicResource MarelianFont24}" FontWeight="SemiBold" LineHeight="27" />
+                        <TextBlock Text="{Binding Unit}" FontSize="{DynamicResource MarelianFont12}" Foreground="{DynamicResource ShellMuted}"
+                                   VerticalAlignment="Bottom" Margin="0,0,0,4" IsVisible="{Binding HasUnit}" />
+                      </StackPanel>
+                      <StackPanel Orientation="Horizontal" Spacing="4" IsVisible="{Binding HasTrend}">
+                        <TextBlock Text="{Binding TrendGlyph}" FontSize="{DynamicResource MarelianFont9}" Foreground="{Binding TrendBrush}"
+                                   VerticalAlignment="Center" />
+                        <TextBlock Text="{Binding TrendText}" FontSize="{DynamicResource MarelianFont10}" Foreground="{Binding TrendBrush}" />
+                        <TextBlock Text="{Binding ComparisonText}" FontSize="{DynamicResource MarelianFont9_5}" Foreground="{DynamicResource ShellMuted}"
+                                   TextTrimming="CharacterEllipsis" />
+                      </StackPanel>
+                      <TextBlock Text="{Binding NoSampleText}" FontSize="{DynamicResource MarelianFont9_5}" Foreground="{DynamicResource ShellMuted}"
+                                 IsVisible="{Binding !HasSample}" />
+                    </StackPanel>
+                  </Border>
+                </DataTemplate>
+              </ItemsControl.ItemTemplate>
+            </ItemsControl>
+
+            <!-- Secondary figures -->
+            <Grid ColumnDefinitions="*,*,*" ColumnSpacing="7">
+              <Border Classes="factChip">
+                <StackPanel Spacing="1">
+                  <TextBlock Text="{DynamicResource L.MetricStreak}" Classes="muted" FontSize="{DynamicResource MarelianFont10}" />
+                  <TextBlock Text="{Binding AnalyticsStreakText}" FontSize="{DynamicResource MarelianFont14}" FontWeight="SemiBold" />
+                </StackPanel>
+              </Border>
+              <Border Grid.Column="1" Classes="factChip">
+                <StackPanel Spacing="1">
+                  <TextBlock Text="{DynamicResource L.MetricPeakHour}" Classes="muted" FontSize="{DynamicResource MarelianFont10}" />
+                  <TextBlock Text="{Binding AnalyticsBusiestHourText}" FontSize="{DynamicResource MarelianFont14}" FontWeight="SemiBold" />
+                </StackPanel>
+              </Border>
+              <Border Grid.Column="2" Classes="factChip">
+                <StackPanel Spacing="1">
+                  <TextBlock Text="{DynamicResource L.MetricOverdue}" Classes="muted" FontSize="{DynamicResource MarelianFont10}" />
+                  <TextBlock Text="{Binding AnalyticsOverdueText}" FontSize="{DynamicResource MarelianFont14}" FontWeight="SemiBold" />
+                </StackPanel>
+              </Border>
+            </Grid>
+
+            <!-- Day by day. One column is a day on the short ranges and a whole week on the
+                 long one, which is what stopped ninety-one bars fighting for six pixels each. -->
+            <Border Classes="chartCard">
+              <StackPanel Spacing="11">
+                <Grid ColumnDefinitions="Auto,Auto,*,Auto,Auto" ColumnSpacing="9">
+                  <TextBlock Text="{Binding AnalyticsLoadTitle}" Classes="section" FontSize="{DynamicResource MarelianFont13}"
+                             VerticalAlignment="Center" />
+                  <Border Grid.Column="1" Classes="chartUnitChip" VerticalAlignment="Center">
+                    <TextBlock Text="{Binding AnalyticsColumnUnitText}" FontSize="{DynamicResource MarelianFont9_5}"
+                               Foreground="{DynamicResource ShellMuted}" />
+                  </Border>
+                  <StackPanel Grid.Column="3" Orientation="Horizontal" Spacing="5" VerticalAlignment="Center">
+                    <Border Classes="legendSwatch scheduled" />
+                    <TextBlock Text="{DynamicResource L.ChartScheduledLegend}" Classes="muted" FontSize="{DynamicResource MarelianFont10}" />
+                  </StackPanel>
+                  <StackPanel Grid.Column="4" Orientation="Horizontal" Spacing="5" VerticalAlignment="Center">
+                    <Border Classes="legendSwatch completed" />
+                    <TextBlock Text="{DynamicResource L.ChartCompletedLegend}" Classes="muted" FontSize="{DynamicResource MarelianFont10}" />
+                  </StackPanel>
+                </Grid>
+
+                <!-- Matches AnalyticsGeometry.ColumnHeight, which scales the bar heights. -->
+                <Panel Height="116">
+                  <!-- The rules the bars are read against. Without them a bar is a shape; with
+                       them it is a quantity. -->
+                  <ItemsControl ItemsSource="{Binding AnalyticsGridlines}" IsHitTestVisible="False">
+                    <ItemsControl.ItemsPanel>
+                      <ItemsPanelTemplate><primitives:UniformGrid Columns="1" /></ItemsPanelTemplate>
+                    </ItemsControl.ItemsPanel>
+                    <ItemsControl.ItemTemplate>
+                      <DataTemplate>
+                        <Grid ColumnDefinitions="40,*" ColumnSpacing="6" VerticalAlignment="Top">
+                          <TextBlock Text="{Binding}" Classes="gridlineLabel" />
+                          <Border Grid.Column="1" Classes="chartGridline" VerticalAlignment="Center" />
+                        </Grid>
+                      </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                  </ItemsControl>
+
+                  <Grid ColumnDefinitions="40,*" ColumnSpacing="6">
+                    <ItemsControl Grid.Column="1" ItemsSource="{Binding AnalyticsColumns}" VerticalAlignment="Bottom">
+                      <ItemsControl.ItemsPanel>
+                        <ItemsPanelTemplate><primitives:UniformGrid Rows="1" /></ItemsPanelTemplate>
+                      </ItemsControl.ItemsPanel>
+                      <ItemsControl.ItemTemplate>
+                        <DataTemplate DataType="vm:AnalyticsColumnViewModel">
+                          <Grid Height="116" VerticalAlignment="Bottom" Background="Transparent"
+                                ToolTip.Tip="{Binding Tooltip}">
+                            <!-- Planned behind, done in front: the green is literally how far
+                                 into the plan the day actually got. -->
+                            <Panel Width="{Binding BarWidth}" HorizontalAlignment="Center" VerticalAlignment="Bottom">
+                              <Border Classes="chartBar scheduled" Classes.today="{Binding IsToday}"
+                                      Height="{Binding ScheduledHeight}" VerticalAlignment="Bottom" />
+                              <Border Classes="chartBar completed" Height="{Binding CompletedHeight}"
+                                      IsVisible="{Binding HasCompleted}" VerticalAlignment="Bottom" />
+                            </Panel>
+                          </Grid>
+                        </DataTemplate>
+                      </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                    <Border Grid.Column="1" Classes="chartBaseline" VerticalAlignment="Bottom" />
+                  </Grid>
+                </Panel>
+
+                <Grid ColumnDefinitions="40,*" ColumnSpacing="6">
+                  <ItemsControl Grid.Column="1" ItemsSource="{Binding AnalyticsColumns}">
+                    <ItemsControl.ItemsPanel>
+                      <ItemsPanelTemplate><primitives:UniformGrid Rows="1" /></ItemsPanelTemplate>
+                    </ItemsControl.ItemsPanel>
+                    <ItemsControl.ItemTemplate>
+                      <DataTemplate DataType="vm:AnalyticsColumnViewModel">
+                        <StackPanel Spacing="0" IsVisible="{Binding HasLabel}" HorizontalAlignment="Center">
+                          <TextBlock Text="{Binding Label}" FontSize="{DynamicResource MarelianFont9}" HorizontalAlignment="Center"
+                                     Classes.todayTick="{Binding IsToday}"
+                                     Foreground="{DynamicResource ShellMuted}" />
+                          <TextBlock Text="{Binding Caption}" FontSize="{DynamicResource MarelianFont8}" HorizontalAlignment="Center"
+                                     IsVisible="{Binding HasCaption}" Opacity="0.62"
+                                     Foreground="{DynamicResource ShellMuted}" />
+                        </StackPanel>
+                      </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                  </ItemsControl>
+                </Grid>
+              </StackPanel>
+            </Border>
+
+            <!-- Where the time goes -->
+            <Border Classes="chartCard">
+              <StackPanel Spacing="11">
+                <TextBlock Text="{DynamicResource L.ChartCategories}" Classes="section" FontSize="{DynamicResource MarelianFont13}" />
+                <!-- The readings mirror around the ring. On the left they run hours, category,
+                     share; on the right share, category, hours. The colour swatch belongs inside
+                     the category cell instead of sitting against the donut, which keeps it from
+                     touching the outer arc at compact scales. -->
+                <Grid ColumnDefinitions="*,138,*" ColumnSpacing="14" IsVisible="{Binding HasAnalyticsSlices}">
+                  <ItemsControl ItemsSource="{Binding AnalyticsSlicesLeft}" VerticalAlignment="Center">
+                    <ItemsControl.ItemsPanel><ItemsPanelTemplate><StackPanel Spacing="8" /></ItemsPanelTemplate></ItemsControl.ItemsPanel>
+                    <ItemsControl.ItemTemplate>
+                      <DataTemplate DataType="vm:AnalyticsSliceViewModel">
+                        <Grid ColumnDefinitions="56,*,32" ColumnSpacing="7">
+                          <Border Classes="sliceHours">
+                            <TextBlock Text="{Binding HoursText}" Classes="sliceHoursText" />
+                          </Border>
+                          <Grid Grid.Column="1" ColumnDefinitions="*,Auto" ColumnSpacing="5">
+                            <TextBlock Text="{Binding Label}" Classes="sliceLabel"
+                                       MaxWidth="86" TextAlignment="Right" />
+                            <Border Grid.Column="1" Classes="sliceSwatch" Background="{Binding Brush}" />
+                          </Grid>
+                          <TextBlock Grid.Column="2" Text="{Binding PercentText}" Classes="slicePercent"
+                                     TextAlignment="Right" />
+                        </Grid>
+                      </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                  </ItemsControl>
+
+                  <Panel Grid.Column="1" Width="{Binding DonutSize}" Height="{Binding DonutSize}"
+                         HorizontalAlignment="Center">
+                    <ItemsControl ItemsSource="{Binding AnalyticsSlices}">
+                      <ItemsControl.ItemsPanel><ItemsPanelTemplate><Panel /></ItemsPanelTemplate></ItemsControl.ItemsPanel>
+                      <ItemsControl.ItemTemplate>
+                        <DataTemplate DataType="vm:AnalyticsSliceViewModel">
+                          <Path Classes="donutSlice" Data="{Binding PathData}" Fill="{Binding Brush}"
+                                Opacity="{Binding SliceOpacity}" />
+                        </DataTemplate>
+                      </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                    <!-- The hole in the middle was empty and the total was nowhere. -->
+                    <StackPanel Spacing="0" HorizontalAlignment="Center" VerticalAlignment="Center">
+                      <TextBlock Text="{Binding AnalyticsCategoryTotalText}" FontSize="{DynamicResource MarelianFont15}" FontWeight="SemiBold"
+                                 HorizontalAlignment="Center" />
+                      <TextBlock Text="{DynamicResource L.ChartTotal}" FontSize="{DynamicResource MarelianFont9}" Opacity="0.7"
+                                 HorizontalAlignment="Center" Foreground="{DynamicResource ShellMuted}" />
+                    </StackPanel>
+                  </Panel>
+
+                  <ItemsControl Grid.Column="2" ItemsSource="{Binding AnalyticsSlicesRight}" VerticalAlignment="Center">
+                    <ItemsControl.ItemsPanel><ItemsPanelTemplate><StackPanel Spacing="8" /></ItemsPanelTemplate></ItemsControl.ItemsPanel>
+                    <ItemsControl.ItemTemplate>
+                      <DataTemplate DataType="vm:AnalyticsSliceViewModel">
+                        <Grid ColumnDefinitions="32,*,56" ColumnSpacing="7">
+                          <TextBlock Text="{Binding PercentText}" Classes="slicePercent" />
+                          <Grid Grid.Column="1" ColumnDefinitions="Auto,*" ColumnSpacing="5">
+                            <Border Classes="sliceSwatch" Background="{Binding Brush}" />
+                            <TextBlock Grid.Column="1" Text="{Binding Label}" Classes="sliceLabel" MaxWidth="86" />
+                          </Grid>
+                          <Border Grid.Column="2" Classes="sliceHours">
+                            <TextBlock Text="{Binding HoursText}" Classes="sliceHoursText" />
+                          </Border>
+                        </Grid>
+                      </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                  </ItemsControl>
+                </Grid>
+              </StackPanel>
+            </Border>
+
+            <!-- Weekdays -->
+            <Border Classes="chartCard">
+              <StackPanel Spacing="10">
+                <TextBlock Text="{DynamicResource L.ChartWeekdays}" Classes="section" FontSize="{DynamicResource MarelianFont13}" />
+                <ItemsControl ItemsSource="{Binding AnalyticsWeekdays}">
+                  <ItemsControl.ItemsPanel><ItemsPanelTemplate><StackPanel Spacing="7" /></ItemsPanelTemplate></ItemsControl.ItemsPanel>
+                  <ItemsControl.ItemTemplate>
+                    <DataTemplate DataType="vm:AnalyticsWeekdayViewModel">
+                      <Grid ColumnDefinitions="46,*,64" ColumnSpacing="7">
+                        <TextBlock Text="{Binding Label}" FontSize="{DynamicResource MarelianFont10_5}" Foreground="{DynamicResource ShellMuted}"
+                                   VerticalAlignment="Center" />
+                        <Border Grid.Column="1" Classes="weekdayTrack">
+                          <Border Classes="weekdayBar" Classes.busiest="{Binding IsBusiest}"
+                                  Width="{Binding Width}" HorizontalAlignment="Left" />
+                        </Border>
+                        <TextBlock Grid.Column="2" Text="{Binding ValueText}" FontSize="{DynamicResource MarelianFont10_5}"
+                                   HorizontalAlignment="Right" VerticalAlignment="Center" />
+                      </Grid>
+                    </DataTemplate>
+                  </ItemsControl.ItemTemplate>
+                </ItemsControl>
+              </StackPanel>
+            </Border>
+
+            <!-- Hours of the day -->
+            <Border Classes="chartCard">
+              <StackPanel Spacing="10">
+                <TextBlock Text="{DynamicResource L.ChartHours}" Classes="section" FontSize="{DynamicResource MarelianFont13}" />
+                <ItemsControl ItemsSource="{Binding AnalyticsHours}">
+                  <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate><primitives:UniformGrid Rows="1" /></ItemsPanelTemplate>
+                  </ItemsControl.ItemsPanel>
+                  <ItemsControl.ItemTemplate>
+                    <DataTemplate DataType="vm:AnalyticsHourViewModel">
+                      <StackPanel Spacing="5" Margin="1,0" Background="Transparent" ToolTip.Tip="{Binding Tooltip}">
+                        <!-- Matches AnalyticsGeometry.HourStripHeight. -->
+                        <Grid Height="52" VerticalAlignment="Bottom">
+                          <Border Classes="hourBar" Classes.busiest="{Binding IsBusiest}"
+                                  Height="{Binding Height}" Opacity="{Binding Intensity}"
+                                  VerticalAlignment="Bottom" />
+                        </Grid>
+                        <TextBlock Text="{Binding Label}" FontSize="{DynamicResource MarelianFont8_5}" HorizontalAlignment="Center"
+                                   Foreground="{DynamicResource ShellMuted}" IsVisible="{Binding HasLabel}" />
+                      </StackPanel>
+                    </DataTemplate>
+                  </ItemsControl.ItemTemplate>
+                </ItemsControl>
+              </StackPanel>
+            </Border>
+
+            <!-- Insights -->
+            <StackPanel Spacing="7" IsVisible="{Binding HasAnalyticsInsights}">
+              <TextBlock Text="{DynamicResource L.AnalyticsInsights}" Classes="section" FontSize="{DynamicResource MarelianFont13}" Margin="3,3,0,0" />
+              <ItemsControl ItemsSource="{Binding AnalyticsInsights}">
+                <ItemsControl.ItemsPanel><ItemsPanelTemplate><StackPanel Spacing="6" /></ItemsPanelTemplate></ItemsControl.ItemsPanel>
+                <ItemsControl.ItemTemplate>
+                  <DataTemplate DataType="vm:AnalyticsInsightViewModel">
+                    <Border Classes="insightCard" Classes.positive="{Binding IsPositive}">
+                      <Grid ColumnDefinitions="Auto,*,Auto" ColumnSpacing="10">
+                        <Border Classes="insightGlyph" Classes.positive="{Binding IsPositive}">
+                          <TextBlock Text="{Binding Glyph}" FontSize="{DynamicResource MarelianFont12}" FontWeight="Bold"
+                                     HorizontalAlignment="Center" VerticalAlignment="Center" />
+                        </Border>
+                        <StackPanel Grid.Column="1" Spacing="2" VerticalAlignment="Center">
+                          <TextBlock Text="{Binding Text}" FontSize="{DynamicResource MarelianFont12}" TextWrapping="Wrap" />
+                          <TextBlock Text="{Binding Sample}" Classes="muted" FontSize="{DynamicResource MarelianFont9_5}" />
+                        </StackPanel>
+                        <Button Grid.Column="2" Classes="quiet compact" Command="{Binding DiscussCommand}"
+                                VerticalAlignment="Center">
+                          <icons:AnimatedIcon Data="{StaticResource IconChat}" Width="13" Height="13" />
+                        </Button>
+                      </Grid>
+                    </Border>
+                  </DataTemplate>
+                </ItemsControl.ItemTemplate>
+              </ItemsControl>
+            </StackPanel>
+
+            <Button Classes="secondary" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center"
+                    Command="{Binding DiscussAnalyticsCommand}" Margin="0,2,5,4">
+              <StackPanel Orientation="Horizontal" Spacing="7">
+                <icons:AnimatedIcon Data="{StaticResource IconSparkle}" Width="14" Height="14"
+                          Foreground="{DynamicResource ShellAccent}" />
+                <TextBlock Text="{DynamicResource L.AnalyticsAskAi}" />
+              </StackPanel>
+            </Button>
+          </StackPanel>
+        </StackPanel>
+      </ScrollViewer>
+
+      <!-- The range list itself, dropped over the header it belongs to. -->
+      <Grid Grid.RowSpan="2" ZIndex="30" IsVisible="{Binding IsAnalyticsRangeListOpen}"
+            IsHitTestVisible="{Binding IsAnalyticsRangeListOpen}">
+        <Button Classes="overlayDismiss" Command="{Binding CloseAnalyticsRangeListCommand}" />
+        <Border Classes="rangeList" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,52,52,0">
+          <!-- Every layer in this shell is slightly see-through by design. Two of them stacked
+               is what makes a menu solid enough to read a metric tile out from under. -->
+          <Border Background="{DynamicResource ShellPopup}" CornerRadius="8">
+          <ItemsControl ItemsSource="{Binding AnalyticsRangeOptions}">
+            <ItemsControl.ItemsPanel><ItemsPanelTemplate><StackPanel Spacing="2" /></ItemsPanelTemplate></ItemsControl.ItemsPanel>
+            <ItemsControl.ItemTemplate>
+              <DataTemplate DataType="vm:AnalyticsRangeOptionViewModel">
+                <Button Classes="rangeOption" Classes.active="{Binding IsSelected}" Command="{Binding SelectCommand}">
+                  <Grid ColumnDefinitions="*,Auto" ColumnSpacing="14">
+                    <StackPanel Spacing="1">
+                      <TextBlock Text="{Binding Label}" FontSize="{DynamicResource MarelianFont12_5}" FontWeight="SemiBold" />
+                      <TextBlock Text="{Binding Detail}" FontSize="{DynamicResource MarelianFont9_5}" Foreground="{DynamicResource ShellMuted}" />
+                    </StackPanel>
+                    <TextBlock Grid.Column="1" Text="✓" FontSize="{DynamicResource MarelianFont12}" VerticalAlignment="Center"
+                               Foreground="{DynamicResource ShellAccent}" IsVisible="{Binding IsSelected}" />
+                  </Grid>
+                </Button>
+              </DataTemplate>
+            </ItemsControl.ItemTemplate>
+          </ItemsControl>
+          </Border>
+        </Border>
+      </Grid>
+    </Grid>
+  </Border>
+</UserControl>

@@ -1,0 +1,43 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:icons="using:IntelligentScheduler.Desktop.Controls"
+             x:Class="IntelligentScheduler.Desktop.AssistantPermissionsView">
+  <StackPanel Spacing="6">
+    <Button Classes="accessOption" Classes.selected="{Binding IsAccessConfirmAll}"
+            Command="{Binding SetAssistantAccessCommand}" CommandParameter="ConfirmAll">
+      <Grid ColumnDefinitions="Auto,*,12" ColumnSpacing="10">
+        <icons:AnimatedIcon Data="{StaticResource IconCheck}" Width="14" Height="14" VerticalAlignment="Center" />
+        <StackPanel Grid.Column="1" Spacing="3">
+          <TextBlock Text="{DynamicResource L.AiAccessConfirmAll}" Classes="accessOptionTitle" />
+          <TextBlock Text="{DynamicResource L.AiAccessConfirmAllHint}" Classes="accessOptionHint" />
+        </StackPanel>
+        <icons:AnimatedIcon Grid.Column="2" Data="{StaticResource IconCheck}" Width="12" Height="12"
+                            IsVisible="{Binding IsAccessConfirmAll}" VerticalAlignment="Center" />
+      </Grid>
+    </Button>
+    <Button Classes="accessOption" Classes.selected="{Binding IsAccessAutoSafe}"
+            Command="{Binding SetAssistantAccessCommand}" CommandParameter="AutoSafe">
+      <Grid ColumnDefinitions="Auto,*,12" ColumnSpacing="10">
+        <icons:AnimatedIcon Data="{StaticResource IconSparkle}" Width="14" Height="14" VerticalAlignment="Center" />
+        <StackPanel Grid.Column="1" Spacing="3">
+          <TextBlock Text="{DynamicResource L.AiAccessAutoSafe}" Classes="accessOptionTitle" />
+          <TextBlock Text="{DynamicResource L.AiAccessAutoSafeHint}" Classes="accessOptionHint" />
+        </StackPanel>
+        <icons:AnimatedIcon Grid.Column="2" Data="{StaticResource IconCheck}" Width="12" Height="12"
+                            IsVisible="{Binding IsAccessAutoSafe}" VerticalAlignment="Center" />
+      </Grid>
+    </Button>
+    <Button Classes="accessOption" Classes.selected="{Binding IsAccessFullAccess}"
+            Command="{Binding SetAssistantAccessCommand}" CommandParameter="FullAccess">
+      <Grid ColumnDefinitions="Auto,*,12" ColumnSpacing="10">
+        <icons:AnimatedIcon Data="{StaticResource IconPower}" Width="14" Height="14" VerticalAlignment="Center" />
+        <StackPanel Grid.Column="1" Spacing="3">
+          <TextBlock Text="{DynamicResource L.AiAccessFull}" Classes="accessOptionTitle" />
+          <TextBlock Text="{DynamicResource L.AiAccessFullHint}" Classes="accessOptionHint" />
+        </StackPanel>
+        <icons:AnimatedIcon Grid.Column="2" Data="{StaticResource IconCheck}" Width="12" Height="12"
+                            IsVisible="{Binding IsAccessFullAccess}" VerticalAlignment="Center" />
+      </Grid>
+    </Button>
+  </StackPanel>
+</UserControl>

@@ -1,0 +1,16 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="using:IntelligentScheduler.Desktop"
+        x:Class="IntelligentScheduler.Desktop.ChatWindow"
+        Title="{DynamicResource L.AppName}" Width="749" Height="748"
+        CanResize="False" ShowInTaskbar="False" Topmost="True"
+        WindowDecorations="None" Background="Transparent"
+        WindowStartupLocation="Manual"
+        TransparencyLevelHint="Transparent,AcrylicBlur,Mica,Blur"
+        ExtendClientAreaToDecorationsHint="True"
+        Classes.reduceMotion="{Binding ReduceMotion}"
+        Classes.motion="{Binding !ReduceMotion}">
+  <Border Background="{StaticResource ShellInputSurface}" Padding="0,0,9,0">
+    <local:AssistantView x:Name="View" Width="740" HorizontalAlignment="Left" />
+  </Border>
+</Window>

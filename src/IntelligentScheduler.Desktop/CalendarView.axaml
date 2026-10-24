@@ -1,0 +1,192 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:icons="using:IntelligentScheduler.Desktop.Controls"
+        xmlns:vm="using:IntelligentScheduler.Desktop.ViewModels"
+        xmlns:local="using:IntelligentScheduler.Desktop"
+        xmlns:primitives="using:Avalonia.Controls.Primitives"
+        x:Class="IntelligentScheduler.Desktop.CalendarView" Background="Transparent"
+        Classes.reduceMotion="{Binding ReduceMotion}"
+        Classes.motion="{Binding !ReduceMotion}">
+  <Border Background="{DynamicResource ShellBackground}"
+          BorderBrush="{DynamicResource ShellStroke}"
+          BorderThickness="1"
+          CornerRadius="{DynamicResource ShellWindowRadius}"
+          ClipToBounds="True">
+    <Grid>
+      <!-- Full weekly task scheduler. -->
+      <Grid RowDefinitions="Auto,*">
+        <Grid Margin="18,14,14,10" ColumnDefinitions="*,Auto,Auto,Auto,Auto" ColumnSpacing="5"
+              PointerWheelChanged="Scheduler_OnPointerWheelChanged">
+          <StackPanel Spacing="2" VerticalAlignment="Center">
+            <TextBlock Text="{DynamicResource L.Calendar}" Classes="title" />
+            <TextBlock Text="{Binding SchedulerWeekTitle}" Classes="muted" />
+          </StackPanel>
+          <Button Grid.Column="1" Classes="quiet compact" Command="{Binding CalendarTodayCommand}" Content="{DynamicResource L.CalendarToday}" />
+          <Button Grid.Column="2" Classes="icon quiet nudgeLeft" Command="{Binding PreviousWeekCommand}">
+            <icons:AnimatedIcon Data="{StaticResource IconChevronLeft}" Width="15" Height="15" />
+          </Button>
+          <Button Grid.Column="3" Classes="icon quiet nudgeRight" Command="{Binding NextWeekCommand}">
+            <icons:AnimatedIcon Data="{StaticResource IconChevronRight}" Width="15" Height="15" />
+          </Button>
+          <Button Grid.Column="4" Classes="icon quiet closeGlyph" Command="{Binding CloseCalendarCommand}">
+            <icons:AnimatedIcon Data="{StaticResource IconClose}" Width="17" />
+          </Button>
+        </Grid>
+
+        <Grid Grid.Row="1" Margin="14,0,14,14" ColumnDefinitions="222,*" ColumnSpacing="12">
+          <Border Classes="surface schedulerSidebar" Padding="12">
+            <Grid RowDefinitions="Auto,Auto,Auto,*">
+              <Grid ColumnDefinitions="*,Auto,Auto" Margin="2,0,2,9">
+                <TextBlock Text="{Binding CalendarMonthTitle}" FontSize="{DynamicResource MarelianFont14}" FontWeight="SemiBold" VerticalAlignment="Center" />
+                <Button Grid.Column="1" Classes="icon quiet mini nudgeLeft" Command="{Binding PreviousCalendarMonthCommand}">
+                  <icons:AnimatedIcon Data="{StaticResource IconChevronLeft}" Width="13" Height="13" />
+                </Button>
+                <Button Grid.Column="2" Classes="icon quiet mini nudgeRight" Command="{Binding NextCalendarMonthCommand}">
+                  <icons:AnimatedIcon Data="{StaticResource IconChevronRight}" Width="13" Height="13" />
+                </Button>
+              </Grid>
+              <ItemsControl Grid.Row="1" ItemsSource="{Binding CalendarWeekDays}">
+                <ItemsControl.ItemsPanel><ItemsPanelTemplate><primitives:UniformGrid Columns="7" Rows="1" /></ItemsPanelTemplate></ItemsControl.ItemsPanel>
+                <ItemsControl.ItemTemplate><DataTemplate><TextBlock Text="{Binding}" Classes="calendarWeekday" /></DataTemplate></ItemsControl.ItemTemplate>
+              </ItemsControl>
+              <ItemsControl x:Name="MiniCalendarDaysControl" Grid.Row="2" ItemsSource="{Binding CalendarDays}" Margin="0,2,0,0">
+                <ItemsControl.ItemsPanel><ItemsPanelTemplate><primitives:UniformGrid Columns="7" Rows="6" /></ItemsPanelTemplate></ItemsControl.ItemsPanel>
+                <ItemsControl.ItemTemplate>
+                  <DataTemplate DataType="vm:CalendarDayViewModel">
+                    <Button Classes="calendarDayMini" Classes.outside="{Binding IsOutsideMonth}"
+                            Classes.selected="{Binding IsSelected}" Classes.today="{Binding IsToday}"
+                            Command="{Binding SelectCommand}">
+                      <Grid RowDefinitions="*,Auto" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <TextBlock Text="{Binding Number}" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                        <Border Grid.Row="1" Width="3" Height="3" CornerRadius="2" Background="{DynamicResource ShellAccent}"
+                                HorizontalAlignment="Center" IsVisible="{Binding HasItems}" Margin="0,1,0,0" />
+                      </Grid>
+                    </Button>
+                  </DataTemplate>
+                </ItemsControl.ItemTemplate>
+              </ItemsControl>
+              <StackPanel Grid.Row="3" VerticalAlignment="Bottom" Spacing="7" Margin="2,12,2,0">
+                <Separator />
+                <TextBlock Text="{Binding SelectedDateLabel}" Classes="muted" HorizontalAlignment="Center" />
+                <TextBlock Text="{DynamicResource L.DragToCreateHint}" Classes="muted" TextWrapping="Wrap" TextAlignment="Center" />
+              </StackPanel>
+            </Grid>
+          </Border>
+
+          <Border Grid.Column="1" Classes="surface schedulerBoard" Padding="0" ClipToBounds="True">
+            <Grid RowDefinitions="58,*">
+              <Border BorderBrush="{DynamicResource ShellStroke}" BorderThickness="0,0,0,1">
+                <Grid ColumnDefinitions="52,546,10">
+                  <TextBlock Text="{DynamicResource L.Time}" Classes="muted" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                  <ItemsControl Grid.Column="1" ItemsSource="{Binding SchedulerWeekDays}">
+                  <ItemsControl.ItemsPanel><ItemsPanelTemplate><primitives:UniformGrid Columns="7" Rows="1" /></ItemsPanelTemplate></ItemsControl.ItemsPanel>
+                  <ItemsControl.ItemTemplate>
+                    <DataTemplate DataType="vm:SchedulerDayViewModel">
+                      <Button Classes="schedulerDay" Classes.selected="{Binding IsSelected}" Classes.today="{Binding IsToday}" Command="{Binding SelectCommand}">
+                        <StackPanel Spacing="2" HorizontalAlignment="Center">
+                          <TextBlock Text="{Binding Day}" FontSize="{DynamicResource MarelianFont10}" HorizontalAlignment="Center" />
+                          <TextBlock Text="{Binding Number}" FontSize="{DynamicResource MarelianFont15}" FontWeight="SemiBold" HorizontalAlignment="Center" />
+                        </StackPanel>
+                      </Button>
+                    </DataTemplate>
+                  </ItemsControl.ItemTemplate>
+                  </ItemsControl>
+                </Grid>
+              </Border>
+
+              <ScrollViewer x:Name="SchedulerScroll" Grid.Row="1" Classes="modernScroll" VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Disabled"
+                            BringIntoViewOnFocusChange="False" ScrollChanged="SchedulerScrollViewer_OnScrollChanged">
+                <Grid Height="3744" ColumnDefinitions="52,546">
+                  <ItemsControl Grid.ColumnSpan="2" ItemsSource="{Binding SchedulerHours}" IsHitTestVisible="False">
+                    <ItemsControl.ItemsPanel><ItemsPanelTemplate><Canvas Width="598" Height="3744" /></ItemsPanelTemplate></ItemsControl.ItemsPanel>
+                    <ItemsControl.Styles>
+                      <Style Selector="ContentPresenter"><Setter Property="Canvas.Top" Value="{Binding Top}" /></Style>
+                    </ItemsControl.Styles>
+                    <ItemsControl.ItemTemplate>
+                      <DataTemplate DataType="vm:SchedulerHourViewModel">
+                        <Grid Width="598" Height="52" ColumnDefinitions="52,*">
+                          <TextBlock Text="{Binding Label}" Classes="schedulerHour" />
+                          <Border Grid.Column="1" BorderBrush="{DynamicResource ShellStroke}" BorderThickness="0,1,0,0" Opacity="0.62" />
+                        </Grid>
+                      </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                  </ItemsControl>
+
+                  <ItemsControl Grid.Column="1" Width="546" IsHitTestVisible="False">
+                    <ItemsControl.ItemsPanel><ItemsPanelTemplate><primitives:UniformGrid Columns="7" Rows="1" Width="546" /></ItemsPanelTemplate></ItemsControl.ItemsPanel>
+                    <ItemsControl.Items>
+                      <Border Classes="schedulerColumn" /><Border Classes="schedulerColumn" /><Border Classes="schedulerColumn" />
+                      <Border Classes="schedulerColumn" /><Border Classes="schedulerColumn" /><Border Classes="schedulerColumn" />
+                      <Border Classes="schedulerColumn" />
+                    </ItemsControl.Items>
+                  </ItemsControl>
+
+                  <!-- Blank grid area stays interactive; event blocks remain clickable above it. -->
+                  <Canvas x:Name="SchedulerSelectionSurface" Grid.Column="1" Width="546" Height="3744"
+                          Background="Transparent" ClipToBounds="True"
+                          PointerPressed="SchedulerSelection_OnPointerPressed"
+                          PointerMoved="SchedulerSelection_OnPointerMoved"
+                          PointerReleased="SchedulerSelection_OnPointerReleased"
+                          PointerCaptureLost="SchedulerSelection_OnPointerCaptureLost">
+                    <Canvas x:Name="SchedulerSelectionPreviewLayer" Width="546" Height="3744" IsHitTestVisible="False" />
+                  </Canvas>
+
+                  <ItemsControl Grid.Column="1" Width="546" ItemsSource="{Binding SchedulerBlocks}" ClipToBounds="True">
+                    <ItemsControl.ItemsPanel><ItemsPanelTemplate><Canvas Width="546" Height="3744" /></ItemsPanelTemplate></ItemsControl.ItemsPanel>
+                    <ItemsControl.Styles>
+                      <Style Selector="ContentPresenter">
+                        <Setter Property="Canvas.Left" Value="{Binding Left}" />
+                        <Setter Property="Canvas.Top" Value="{Binding Top}" />
+                      </Style>
+                    </ItemsControl.Styles>
+                    <ItemsControl.ItemTemplate>
+                      <DataTemplate DataType="vm:SchedulerBlockViewModel">
+                        <Button Classes="schedulerBlock" ClipToBounds="True" Width="{Binding Width}" Height="{Binding Height}"
+                                Background="{Binding Surface}" Opacity="{Binding BodyOpacity}" Command="{Binding EditCommand}"
+                                PointerPressed="TaskBlock_OnPointerPressed"
+                                PointerMoved="TaskBlock_OnPointerMoved"
+                                PointerReleased="TaskBlock_OnPointerReleased"
+                                PointerCaptureLost="TaskBlock_OnPointerCaptureLost">
+                          <Grid ColumnDefinitions="3,*">
+                            <!-- The solid accent stays on a rail so the body can stay readable. -->
+                            <Border Background="{Binding Accent}" CornerRadius="2" Margin="-4,-3,0,-3" />
+                            <Grid Grid.Column="1" RowDefinitions="*,Auto" Margin="4,0,0,0">
+                              <StackPanel Spacing="1" VerticalAlignment="Top">
+                                <TextBlock Text="{Binding Title}" FontSize="{DynamicResource MarelianFont10}" FontWeight="SemiBold"
+                                           TextTrimming="CharacterEllipsis" />
+                                <TextBlock Text="{Binding StartText}" FontSize="{DynamicResource MarelianFont9}" Opacity="0.78"
+                                           IsVisible="{Binding ShowTime}" />
+                              </StackPanel>
+                              <Border Grid.Row="1" Width="18" Height="2" CornerRadius="1" Background="#A8FFFFFF"
+                                      HorizontalAlignment="Center" Margin="0,2,0,0" IsVisible="{Binding CanDrag}" />
+                            </Grid>
+                          </Grid>
+                        </Button>
+                      </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                  </ItemsControl>
+
+                  <Canvas x:Name="SchedulerNowLayer" Grid.Column="1" Width="546" Height="3744" IsHitTestVisible="False" />
+
+                  <Canvas Grid.Column="1" Width="546" Height="3744" IsHitTestVisible="False">
+                    <Border x:Name="TaskBlockDragPreview" IsVisible="False" Classes="schedulerSelection" Width="74" Opacity="0.78">
+                      <TextBlock x:Name="TaskBlockDragLabel" FontSize="{DynamicResource MarelianFont10}" FontWeight="SemiBold" Margin="5,4" TextWrapping="Wrap" />
+                    </Border>
+                    <Border x:Name="TaskBlockDragNextDayPreview" IsVisible="False" Classes="schedulerSelection" Width="74" Opacity="0.78">
+                      <TextBlock x:Name="TaskBlockDragNextDayLabel" FontSize="{DynamicResource MarelianFont10}" FontWeight="SemiBold" Margin="5,4" TextWrapping="Wrap" />
+                    </Border>
+                  </Canvas>
+                </Grid>
+              </ScrollViewer>
+            </Grid>
+          </Border>
+        </Grid>
+      </Grid>
+
+      <Grid ZIndex="20" IsVisible="{Binding IsTaskBlockEditorVisible}" Background="#68000000">
+        <local:TaskBlockEditorView HorizontalAlignment="Center" VerticalAlignment="Center" />
+      </Grid>
+
+    </Grid>
+  </Border>
+</UserControl>

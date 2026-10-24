@@ -1,0 +1,2094 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="AppName">
+    <value>DAYDRIVE</value>
+  </data>
+  <data name="StatusReady">
+    <value>Klar</value>
+  </data>
+  <data name="NavPlan">
+    <value>Plan</value>
+  </data>
+  <data name="NavTasks">
+    <value>Oppgaver</value>
+  </data>
+  <data name="NavAssistant">
+    <value>Assistent</value>
+  </data>
+  <data name="Settings">
+    <value>Innstillinger</value>
+  </data>
+  <data name="Hide">
+    <value>Skjul panelet</value>
+  </data>
+  <data name="PlanTitle">
+    <value>Dagen din</value>
+  </data>
+  <data name="PlanSubtitle">
+    <value>Faste avtaler blir stående; oppgaver tilpasses rundt dem</value>
+  </data>
+  <data name="Next">
+    <value>Neste</value>
+  </data>
+  <data name="Adjust">
+    <value>Tilpass</value>
+  </data>
+  <data name="Schedule">
+    <value>Tidsplan</value>
+  </data>
+  <data name="Calendar">
+    <value>Kalender</value>
+  </data>
+  <data name="AddEvent">
+    <value>Legg til avtale</value>
+  </data>
+  <data name="EventTitle">
+    <value>Hva skal skje?</value>
+  </data>
+  <data name="SaveChanges">
+    <value>Lagre endringer</value>
+  </data>
+  <data name="TasksTitle">
+    <value>Oppgaver</value>
+  </data>
+  <data name="TasksSubtitle">
+    <value>En fokusert liste som finner plass i dagen din</value>
+  </data>
+  <data name="EditTask">
+    <value>Rediger oppgave</value>
+  </data>
+  <data name="Save">
+    <value>Lagre</value>
+  </data>
+  <data name="Cancel">
+    <value>Avbryt</value>
+  </data>
+  <data name="Edit">
+    <value>Rediger</value>
+  </data>
+  <data name="Delete">
+    <value>Slett</value>
+  </data>
+  <data name="QuickTaskPlaceholder">
+    <value>Legg til en oppgave med vanlig språk…</value>
+  </data>
+  <data name="AssistantTitle">
+    <value>Assistent</value>
+  </data>
+  <data name="AssistantIntro">
+    <value>Jeg kan gjøre intensjoner om til en realistisk dag. Skriv naturlig.</value>
+  </data>
+  <data name="AssistantPrivacy">
+    <value>lokalt eller via valgt KI</value>
+  </data>
+  <data name="AssistantPlaceholder">
+    <value>For eksempel: gjør morgendagen mindre travel</value>
+  </data>
+  <data name="Ask">
+    <value>Spør</value>
+  </data>
+  <data name="SettingsTitle">
+    <value>Innstillinger</value>
+  </data>
+  <data name="SettingsSubtitle">
+    <value>Endringer lagres automatisk</value>
+  </data>
+  <data name="General">
+    <value>Generelt</value>
+  </data>
+  <data name="Language">
+    <value>Språk</value>
+  </data>
+  <data name="StartHidden">
+    <value>Start skjult</value>
+  </data>
+  <data name="KeepOnTop">
+    <value>Hold over andre vinduer</value>
+  </data>
+  <data name="Appearance">
+    <value>Utseende</value>
+  </data>
+  <data name="Design">
+    <value>Design</value>
+  </data>
+  <data name="ColorSource">
+    <value>Aksentkilde</value>
+  </data>
+  <data name="Accent">
+    <value>Aksent</value>
+  </data>
+  <data name="Background">
+    <value>Bakgrunn</value>
+  </data>
+  <data name="ThemeMode">
+    <value>Modus</value>
+  </data>
+  <data name="ThemeModeDark">
+    <value>Mørk</value>
+  </data>
+  <data name="ThemeModeLight">
+    <value>Lys</value>
+  </data>
+  <data name="ThemePreviewTitle">
+    <value>MARELIAN</value>
+  </data>
+  <data name="ThemePreviewHint">
+    <value>Lys og mørk modus har egne farger og former.</value>
+  </data>
+  <data name="ColorCustomization">
+    <value>Egne farger</value>
+  </data>
+  <data name="ColorCustomizationHint">
+    <value>Tomme felt bruker automatisk farge. Klikk fargeprøven for å velge en farge.</value>
+  </data>
+  <data name="ColorPickerHint">
+    <value>Velg farge</value>
+  </data>
+  <data name="ResetThemeColors">
+    <value>Tilbakestill denne modusen</value>
+  </data>
+  <data name="Transparency">
+    <value>Gjennomsiktighet og uskarphet</value>
+  </data>
+  <data name="ReduceMotion">
+    <value>Slå av grensesnittanimasjoner</value>
+  </data>
+  <data name="Behavior">
+    <value>Virkemåte</value>
+  </data>
+  <data name="PanelReveal">
+    <value>Vis panel</value>
+  </data>
+  <data name="PinOpen">
+    <value>Ikke skjul automatisk</value>
+  </data>
+  <data name="AiConnection">
+    <value>KI-tilkobling</value>
+  </data>
+  <data name="Provider">
+    <value>Leverandør</value>
+  </data>
+  <data name="Address">
+    <value>Adresse</value>
+  </data>
+  <data name="Model">
+    <value>Modell</value>
+  </data>
+  <data name="ApiKey">
+    <value>API-nøkkel (kryptert på denne enheten)</value>
+  </data>
+  <data name="ApiKeyPlaceholder">
+    <value>La stå tomt for å beholde lagret nøkkel</value>
+  </data>
+  <data name="RemoveKey">
+    <value>Fjern lagret nøkkel</value>
+  </data>
+  <data name="TestConnection">
+    <value>Lagre og test tilkobling</value>
+  </data>
+  <data name="SettingsSaved">
+    <value>Lagret</value>
+  </data>
+  <data name="SettingsSaving">
+    <value>Lagrer…</value>
+  </data>
+  <data name="SettingsError">
+    <value>Kunne ikke lagre innstillingene</value>
+  </data>
+  <data name="FreeDay">
+    <value>Åpen dag</value>
+  </data>
+  <data name="EmptyPlan">
+    <value>Planen er tom</value>
+  </data>
+  <data name="EmptyPlanHint">
+    <value>Legg til en oppgave på én linje</value>
+  </data>
+  <data name="MinutesShort">
+    <value>min</value>
+  </data>
+  <data name="EventKind">
+    <value>Avtale</value>
+  </data>
+  <data name="TaskKind">
+    <value>Oppgave</value>
+  </data>
+  <data name="DoneKind">
+    <value>Ferdig</value>
+  </data>
+  <data name="Focus">
+    <value>Fokus</value>
+  </data>
+  <data name="Add">
+    <value>Legg til</value>
+  </data>
+  <data name="Added">
+    <value>Lagt til</value>
+  </data>
+  <data name="SuggestedByAssistant">
+    <value>Foreslått av assistenten</value>
+  </data>
+  <data name="Priority">
+    <value>prioritet</value>
+  </data>
+  <data name="OptionCustom">
+    <value>Egendefinert</value>
+  </data>
+  <data name="OptionPreset">
+    <value>Temafarge</value>
+  </data>
+  <data name="OptionSystemAccent">
+    <value>Systemfarge</value>
+  </data>
+  <data name="OptionWallpaper">
+    <value>Skrivebordsbakgrunn</value>
+  </data>
+  <data name="OptionHover">
+    <value>Ved pekerbevegelse</value>
+  </data>
+  <data name="OptionClick">
+    <value>Ved klikk</value>
+  </data>
+  <data name="TaskAdded">
+    <value>Oppgave lagt til</value>
+  </data>
+  <data name="TaskRestored">
+    <value>Oppgave gjenopprettet</value>
+  </data>
+  <data name="TaskUpdated">
+    <value>Oppgave oppdatert</value>
+  </data>
+  <data name="TaskDeleted">
+    <value>Oppgave slettet</value>
+  </data>
+  <data name="BlockCompleted">
+    <value>Fokusblokk fullført</value>
+  </data>
+  <data name="EventAdded">
+    <value>Avtale lagt til</value>
+  </data>
+  <data name="EventUpdated">
+    <value>Avtale oppdatert</value>
+  </data>
+  <data name="EventDeleted">
+    <value>Avtale slettet</value>
+  </data>
+  <data name="Thinking">
+    <value>Tenker…</value>
+  </data>
+  <data name="SecondsShort">
+    <value>s</value>
+  </data>
+  <data name="ReplyReady">
+    <value>Svaret er klart</value>
+  </data>
+  <data name="ReviewSuggestions">
+    <value>Se gjennom forslagene før du legger dem til</value>
+  </data>
+  <data name="RequestCancelled">
+    <value>Forespørsel avbrutt</value>
+  </data>
+  <data name="ReplyFailed">
+    <value>Kunne ikke hente svar: {0}</value>
+  </data>
+  <data name="ConnectionError">
+    <value>Tilkoblingsfeil</value>
+  </data>
+  <data name="SuggestionAdded">
+    <value>Forslag lagt til</value>
+  </data>
+  <data name="OpenApp">
+    <value>Åpne DAYDRIVE</value>
+  </data>
+  <data name="QuickAdd">
+    <value>Hurtigoppgave</value>
+  </data>
+  <data name="Exit">
+    <value>Avslutt</value>
+  </data>
+  <data name="CalendarToday">
+    <value>I dag</value>
+  </data>
+  <data name="ComposerTask">
+    <value>Oppgave</value>
+  </data>
+  <data name="ComposerAgent">
+    <value>Agent</value>
+  </data>
+  <data name="NewEvent">
+    <value>Ny avtale</value>
+  </data>
+  <data name="Date">
+    <value>Dato</value>
+  </data>
+  <data name="Time">
+    <value>Tid</value>
+  </data>
+  <data name="Duration">
+    <value>Varighet</value>
+  </data>
+  <data name="NoDeadline">
+    <value>Ingen frist</value>
+  </data>
+  <data name="InvalidInput">
+    <value>Kontroller dato, tid og tallverdier</value>
+  </data>
+  <data name="ActiveTasks">
+    <value>Oppgaver</value>
+  </data>
+  <data name="NoAgenda">
+    <value>Ingenting er planlagt denne dagen</value>
+  </data>
+  <data name="DueDate">
+    <value>Frist</value>
+  </data>
+  <data name="PriorityLabel">
+    <value>Prioritet</value>
+  </data>
+  <data name="AgentConversation">
+    <value>Samtale</value>
+  </data>
+  <data name="Send">
+    <value>Send</value>
+  </data>
+  <data name="TimeFrom">
+    <value>Fra</value>
+  </data>
+  <data name="TimeTo">
+    <value>Til</value>
+  </data>
+  <data name="WeekNavigationHint">
+    <value>Rull eller dra for å bytte uke</value>
+  </data>
+  <data name="Attachment">
+    <value>Vedlegg</value>
+  </data>
+  <data name="Attach">
+    <value>Legg ved fil</value>
+  </data>
+  <data name="ChooseDate">
+    <value>Velg dato</value>
+  </data>
+  <data name="EditEvent">
+    <value>Rediger avtale</value>
+  </data>
+  <data name="Confirm">
+    <value>Bekreft</value>
+  </data>
+  <data name="ConfirmChanges">
+    <value>Bruke disse endringene?</value>
+  </data>
+  <data name="ConfirmDeleteEvent">
+    <value>Slette denne avtalen?</value>
+  </data>
+  <data name="ConfirmDeleteTask">
+    <value>Slette denne oppgaven?</value>
+  </data>
+  <data name="DragToCreateHint">
+    <value>Dra over ledig tid for å opprette en avtale</value>
+  </data>
+  <data name="DaySummaryFormat">
+    <value>I dag: {0} · Planlagt: {1} min</value>
+  </data>
+  <data name="Use24HourClock">
+    <value>Bruk 24-timers klokke</value>
+  </data>
+  <data name="ChooseStartTime">
+    <value>Starttid</value>
+  </data>
+  <data name="ChooseEndTime">
+    <value>Sluttid</value>
+  </data>
+  <data name="TimePickerHint">
+    <value>5-minutters trinn</value>
+  </data>
+  <data name="TransparencyIntensity">
+    <value>Gjennomsiktighetsnivå</value>
+  </data>
+  <data name="ChooseTime">
+    <value>Velg tidspunkt</value>
+  </data>
+  <data name="Hours">
+    <value>Timer</value>
+  </data>
+  <data name="Minutes">
+    <value>Minutter</value>
+  </data>
+  <data name="EventTitleRequired">
+    <value>Skriv inn en tittel for avtalen</value>
+  </data>
+  <data name="EventDateTimeRequired">
+    <value>Velg dato, starttid og sluttid</value>
+  </data>
+  <data name="EventTimeRangeRequired">
+    <value>Start- og sluttid kan ikke være like</value>
+  </data>
+  <data name="EventSaveFailed">
+    <value>Avtalen kunne ikke lagres. Prøv igjen.</value>
+  </data>
+  <data name="AttachDialogTitle">
+    <value>Legg ved fil</value>
+  </data>
+  <data name="McpArgumentsPlaceholder">
+    <value>Argumenter for MCP-server</value>
+  </data>
+  <data name="McpToolPlaceholder">
+    <value>Navn på MCP-verktøy</value>
+  </data>
+  <data name="ScheduledBlock">
+    <value>Planlagt blokk</value>
+  </data>
+  <data name="StartingSoon">
+    <value>Starter snart</value>
+  </data>
+  <data name="StartsInMinutes">
+    <value>{0} starter om {1} min.</value>
+  </data>
+  <data name="StartupFailed">
+    <value>DAYDRIVE kunne ikke starte</value>
+  </data>
+  <data name="CrashLogSaved">
+    <value>Detaljer ble lagret i daydrive-crash.log i programmets datamappe.</value>
+  </data>
+  <data name="OptionProviderLocal">
+    <value>Lokal modell (GGUF)</value>
+  </data>
+  <data name="OptionProviderOpenAi">
+    <value>Egendefinert API</value>
+  </data>
+  <data name="OptionTransportHttp">
+    <value>HTTP-server</value>
+  </data>
+  <data name="OptionTransportStdio">
+    <value>Lokal kommando (stdio)</value>
+  </data>
+  <data name="ScrollToAdjust">
+    <value>Rull for å endre</value>
+  </data>
+  <data name="NewTask">
+    <value>Ny oppgave</value>
+  </data>
+  <data name="AddTask">
+    <value>Legg til oppgave</value>
+  </data>
+  <data name="TaskTitle">
+    <value>Hva skal gjøres?</value>
+  </data>
+  <data name="EmptyPlanTaskHint">
+    <value>Opprett en oppgave eller avtale</value>
+  </data>
+  <data name="LaunchAtStartup">
+    <value>Start ved systemoppstart</value>
+  </data>
+  <data name="AutostartFailed">
+    <value>Kunne ikke endre systemoppstart</value>
+  </data>
+  <data name="PriorityLow">
+    <value>Lav</value>
+  </data>
+  <data name="PriorityNormal">
+    <value>Normal</value>
+  </data>
+  <data name="PriorityHigh">
+    <value>Høy</value>
+  </data>
+  <data name="PriorityUrgent">
+    <value>Haster</value>
+  </data>
+  <data name="PreferredAny">
+    <value>Når som helst</value>
+  </data>
+  <data name="PreferredMorning">
+    <value>Morgen</value>
+  </data>
+  <data name="PreferredAfternoon">
+    <value>Ettermiddag</value>
+  </data>
+  <data name="PreferredEvening">
+    <value>Kveld</value>
+  </data>
+  <data name="Notes">
+    <value>Notater</value>
+  </data>
+  <data name="NotesPlaceholder">
+    <value>Kontekst eller neste steg</value>
+  </data>
+  <data name="AdvancedPlanning">
+    <value>Planleggingsvalg</value>
+  </data>
+  <data name="EarliestStart">
+    <value>Start tidligst</value>
+  </data>
+  <data name="AnyDate">
+    <value>Ingen begrensning</value>
+  </data>
+  <data name="PreferredTime">
+    <value>Foretrukket tid</value>
+  </data>
+  <data name="SplitTask">
+    <value>Tillat oppdeling i blokker</value>
+  </data>
+  <data name="MinBlock">
+    <value>Minste blokk, min.</value>
+  </data>
+  <data name="MaxSplits">
+    <value>Maksimalt antall blokker</value>
+  </data>
+  <data name="ManageTaskBlock">
+    <value>Oppgaveblokk</value>
+  </data>
+  <data name="PlannedInterval">
+    <value>Planlagt intervall</value>
+  </data>
+  <data name="CompletedMinutes">
+    <value>Fullført, min.</value>
+  </data>
+  <data name="CompleteWork">
+    <value>Fullfør</value>
+  </data>
+  <data name="OpenTask">
+    <value>Åpne oppgave</value>
+  </data>
+  <data name="NotToday">
+    <value>Ikke i dag</value>
+  </data>
+  <data name="Unschedule">
+    <value>Fjern fra planen</value>
+  </data>
+  <data name="LockTime">
+    <value>Lås dette tidspunktet</value>
+  </data>
+  <data name="ConfirmTaskBlockChange">
+    <value>Lagre nytt intervall og blokkvalg?</value>
+  </data>
+  <data name="ConfirmTaskBlockComplete">
+    <value>Registrere den angitte fullførte tiden?</value>
+  </data>
+  <data name="ConfirmTaskBlockUnschedule">
+    <value>Fjerne blokken fra planen? Oppgaven beholdes.</value>
+  </data>
+  <data name="ConfirmTaskBlockNotToday">
+    <value>Holde oppgaven ute av planen denne dagen?</value>
+  </data>
+  <data name="TaskBlockMinutesInvalid">
+    <value>Angi fra 1 minutt til blokkens varighet</value>
+  </data>
+  <data name="TaskBlockMoved">
+    <value>Oppgaveblokken er flyttet og låst</value>
+  </data>
+  <data name="TaskBlockUpdated">
+    <value>Blokkvalgene er lagret</value>
+  </data>
+  <data name="TaskBlockUnscheduled">
+    <value>Blokken er fjernet fra planen</value>
+  </data>
+  <data name="TaskBlockDeferred">
+    <value>Oppgaven er utsatt til en annen dag</value>
+  </data>
+  <data name="TaskBlockPartiallyCompleted">
+    <value>Delarbeid registrert; resten går tilbake til planen</value>
+  </data>
+  <data name="TaskBlockConflict">
+    <value>Intervallet overlapper en annen avtale eller blokk</value>
+  </data>
+  <data name="LocalModelIntro">
+    <value>Velg én modell. DAYDRIVE laster ned GGUF og llama.cpp og kjører alt bare på denne enheten.</value>
+  </data>
+  <data name="LocalModelRoleLite">
+    <value>Rask kommandotolking og oppgaveoppretting</value>
+  </data>
+  <data name="LocalModelRoleBalanced">
+    <value>Daglig planlegging og assistent — anbefalt</value>
+  </data>
+  <data name="LocalModelRoleSmart">
+    <value>Ukeanalyse og komplekse agentforespørsler</value>
+  </data>
+  <data name="Recommended">
+    <value>Anbefalt</value>
+  </data>
+  <data name="LocalEngine">
+    <value>Lokal motor</value>
+  </data>
+  <data name="DownloadModel">
+    <value>Last ned</value>
+  </data>
+  <data name="DownloadVisionSupport">
+    <value>Legg til bilde</value>
+  </data>
+  <data name="StartModel">
+    <value>Start</value>
+  </data>
+  <data name="StopModel">
+    <value>Stopp</value>
+  </data>
+  <data name="VisionSupport">
+    <value>Bildeinndata</value>
+  </data>
+  <data name="VisionSupportHint" xml:space="preserve"><value>Lar modellen tolke vedlagte bilder. Det krever en ekstra fil – bildeprojektoren – som lastes ned sammen med modellen.</value></data>
+  <data name="IdleSleep">
+    <value>Frigjør minne ved inaktivitet</value>
+  </data>
+  <data name="IdleFiveMinutes">
+    <value>Etter 5 minutter</value>
+  </data>
+  <data name="IdleTenMinutes">
+    <value>Etter 10 minutter</value>
+  </data>
+  <data name="IdleThirtyMinutes">
+    <value>Etter 30 minutter</value>
+  </data>
+  <data name="IdleNever">
+    <value>Aldri automatisk</value>
+  </data>
+  <data name="LocalModelArchitectureHint">
+    <value>KI får uplanlagte oppgaver og faste avtaler som skrivebeskyttet kontekst. Modellen har ikke tilgang til databasen og reserverer aldri tid automatisk.</value>
+  </data>
+  <data name="DownloadingEngine">
+    <value>Laster ned llama.cpp…</value>
+  </data>
+  <data name="ExtractingEngine">
+    <value>Installerer llama.cpp…</value>
+  </data>
+  <data name="DownloadingModel">
+    <value>Laster ned GGUF-modell…</value>
+  </data>
+  <data name="DownloadingVision">
+    <value>Laster ned bildeprojektor…</value>
+  </data>
+  <data name="StartingLocalModel">
+    <value>Laster modellen inn i minnet…</value>
+  </data>
+  <data name="LocalModelRunning">
+    <value>Kjører lokalt</value>
+  </data>
+  <data name="LocalModelSleeping">
+    <value>Hviler — starter ved neste forespørsel</value>
+  </data>
+  <data name="LocalModelStopped">
+    <value>Stoppet — starter automatisk ved behov</value>
+  </data>
+  <data name="LocalModelNotInstalled">
+    <value>Ikke lastet ned</value>
+  </data>
+  <data name="LocalModelInstalled">
+    <value>Lokal modell er klar</value>
+  </data>
+  <data name="LocalModelDeleted">
+    <value>Lokal modell slettet</value>
+  </data>
+  <data name="LocalModelError">
+    <value>Feil i lokal modell</value>
+  </data>
+  <data name="DownloadCancelled">
+    <value>Nedlasting satt på pause — kan fortsettes senere</value>
+  </data>
+  <data name="QuickPromptPlan">
+    <value>Planlegg dagen min</value>
+  </data>
+  <data name="QuickPromptToday">
+    <value>Hva er planlagt for i dag?</value>
+  </data>
+  <data name="QuickPromptTask">
+    <value>Opprett en oppgave i kveld</value>
+  </data>
+  <data name="SwitchModelConfirmTitle">
+    <value>Bytt modell</value>
+  </data>
+  <data name="SwitchModelConfirmText">
+    <value>Modell «{0}» kjører. Stoppe den for å bytte til «{1}»?</value>
+  </data>
+  <data name="SwitchAndStart">
+    <value>Stopp og start</value>
+  </data>
+  <data name="SwitchOnly">
+    <value>Kun bytt</value>
+  </data>
+  <data name="StopAndSwitch">
+    <value>Stopp og bytt</value>
+  </data>
+  <data name="KeepRunning">
+    <value>La kjøre i bakgrunnen</value>
+  </data>
+  <data name="SwitchProviderConfirmText">
+    <value>Lokal modell «{0}» kjører. Stoppe den før du bytter til {1}?</value>
+  </data>
+  <data name="ItemsCountOne">
+    <value>{0} element</value>
+  </data>
+  <data name="ItemsCountFew">
+    <value>{0} elementer</value>
+  </data>
+  <data name="ItemsCountMany">
+    <value>{0} elementer</value>
+  </data>
+  <data name="UnscheduledTasks">
+    <value>Ikke planlagt</value>
+  </data>
+  <data name="CurrentEvent">
+    <value>Pågående avtale</value>
+  </data>
+  <data name="NextEvent">
+    <value>Neste avtale</value>
+  </data>
+  <data name="NoEventsTitle">
+    <value>Ingen avtaler planlagt</value>
+  </data>
+  <data name="NoEventsHint">
+    <value>Opprett en avtale for å reservere tid</value>
+  </data>
+  <data name="NoEventsForDay">
+    <value>Ingen avtaler er planlagt denne dagen</value>
+  </data>
+  <data name="EventDaySummaryFormat">
+    <value>{0} avtaler · {1} min opptatt</value>
+  </data>
+  <data name="EndingSoon">
+    <value>Slutter snart</value>
+  </data>
+  <data name="EndsInMinutes">
+    <value>{0} slutter om {1} min.</value>
+  </data>
+  <data name="EventCategory">
+    <value>Kategori</value>
+  </data>
+  <data name="EventPriority">
+    <value>Prioritet</value>
+  </data>
+  <data name="EventRepeat">
+    <value>Gjenta</value>
+  </data>
+  <data name="EventCategoryGeneral">
+    <value>Generelt</value>
+  </data>
+  <data name="EventCategoryWork">
+    <value>Arbeid</value>
+  </data>
+  <data name="EventCategoryPersonal">
+    <value>Personlig</value>
+  </data>
+  <data name="EventCategoryStudy">
+    <value>Studier</value>
+  </data>
+  <data name="EventCategoryHealth">
+    <value>Helse</value>
+  </data>
+  <data name="EventCategorySocial">
+    <value>Sosialt</value>
+  </data>
+  <data name="EventCategoryErrands">
+    <value>Ærend</value>
+  </data>
+  <data name="EventCategoryTravel">
+    <value>Reise</value>
+  </data>
+  <data name="EventCategoryRest">
+    <value>Hvile</value>
+  </data>
+  <data name="EventPriorityNormal">
+    <value>Normal</value>
+  </data>
+  <data name="EventPriorityHigh">
+    <value>Viktig</value>
+  </data>
+  <data name="EventPriorityCritical">
+    <value>Kritisk</value>
+  </data>
+  <data name="RepeatNever">
+    <value>Gjentas ikke</value>
+  </data>
+  <data name="RepeatDaily">
+    <value>Hver dag</value>
+  </data>
+  <data name="RepeatWeekdays">
+    <value>På hverdager</value>
+  </data>
+  <data name="RepeatWeekly">
+    <value>Hver uke</value>
+  </data>
+  <data name="RepeatMonthly">
+    <value>Hver måned</value>
+  </data>
+  <data name="ScopeOccurrence">
+    <value>Bare denne avtalen</value>
+  </data>
+  <data name="ScopeFollowing">
+    <value>Denne og følgende</value>
+  </data>
+  <data name="ScopeSeries">
+    <value>Hele serien</value>
+  </data>
+  <data name="DayActions">
+    <value>Dagsvalg</value>
+  </data>
+  <data name="CopyToTomorrow">
+    <value>Kopier til i morgen</value>
+  </data>
+  <data name="CopyToNextWeek">
+    <value>Kopier til neste uke</value>
+  </data>
+  <data name="Copy">
+    <value>Kopier</value>
+  </data>
+  <data name="CopyDayConfirmation">
+    <value>Kopiere denne planen til {0}?</value>
+  </data>
+  <data name="CopyDayCompleted">
+    <value>Kopierte avtaler: {0}</value>
+  </data>
+  <data name="CopyEventConfirmation" xml:space="preserve">
+    <value>Kopiere «{0}» til {1}?</value>
+  </data>
+  <data name="ClearDay" xml:space="preserve">
+    <value>Tøm denne dagen</value>
+  </data>
+  <data name="CopySchedule" xml:space="preserve">
+    <value>Kopier planen</value>
+  </data>
+  <data name="DayActionsShort" xml:space="preserve">
+    <value>Dagsplan</value>
+  </data>
+  <data name="CopyToDate" xml:space="preserve">
+    <value>Velg en annen dato</value>
+  </data>
+  <data name="DayPlanning" xml:space="preserve">
+    <value>Dagsplanlegging</value>
+  </data>
+  <data name="EventCopied" xml:space="preserve">
+    <value>Avtalen ble kopiert til {0}</value>
+  </data>
+  <data name="DayPlanningHint" xml:space="preserve">
+    <value>Kopier eller fjern avtaler</value>
+  </data>
+  <data name="ClearDayConfirmation" xml:space="preserve">
+    <value>Slette alle avtaler den {0}?</value>
+  </data>
+  <data name="CopyEvent" xml:space="preserve">
+    <value>Kopier avtale</value>
+  </data>
+  <data name="ClearDayCompleted" xml:space="preserve">
+    <value>Fjernede avtaler: {0}</value>
+  </data>
+  <data name="ShiftEarlier" xml:space="preserve">
+    <value>Tidligere</value>
+  </data>
+  <data name="EventActions" xml:space="preserve">
+    <value>Avtalehandlinger</value>
+  </data>
+  <data name="ShiftLater" xml:space="preserve">
+    <value>Senere</value>
+  </data>
+  <data name="Shift" xml:space="preserve">
+    <value>Flytt</value>
+  </data>
+  <data name="ShiftDayConfirmation" xml:space="preserve">
+    <value>Flytte alle avtaler den {0} med {1}?</value>
+  </data>
+  <data name="ShiftSchedule" xml:space="preserve">
+    <value>Flytt dagsplanen</value>
+  </data>
+  <data name="ShiftDayCompleted" xml:space="preserve">
+    <value>Flyttede avtaler: {0}</value>
+  </data>
+  <data name="ShiftDayAmountRequired" xml:space="preserve">
+    <value>Angi hvor mye planen skal flyttes</value>
+  </data>
+  <data name="AiActionCopyDay" xml:space="preserve">
+    <value>Kopier dagsplan</value>
+  </data>
+  <data name="AiActionDeleteEvent" xml:space="preserve">
+    <value>Slett avtale</value>
+  </data>
+  <data name="AiActionUpdateEvent" xml:space="preserve">
+    <value>Endre avtale</value>
+  </data>
+  <data name="AiActionTargetMissing" xml:space="preserve">
+    <value>Avtalen eller oppgaven finnes ikke lenger.</value>
+  </data>
+  <data name="AiActionShiftDay" xml:space="preserve">
+    <value>Flytt dagsplan</value>
+  </data>
+  <data name="AiActionInvalid" xml:space="preserve">
+    <value>KI-handlingen mangler nødvendig informasjon.</value>
+  </data>
+  <data name="ShareExternalContextHint" xml:space="preserve">
+    <value>Lar API- eller MCP-leverandører motta nylig samtale og kalenderdata. Av som standard.</value>
+  </data>
+  <data name="AiActionCreateTask" xml:space="preserve">
+    <value>Opprett uplanlagt oppgave</value>
+  </data>
+  <data name="AiAccessConfirmAll" xml:space="preserve">
+    <value>Bekreft alle handlinger</value>
+  </data>
+  <data name="AiActionUpdateTask" xml:space="preserve">
+    <value>Endre uplanlagt oppgave</value>
+  </data>
+  <data name="AiAccessFull" xml:space="preserve">
+    <value>Full kalendertilgang</value>
+  </data>
+  <data name="AiAccessAutoSafe" xml:space="preserve">
+    <value>Utfør trygge handlinger automatisk</value>
+  </data>
+  <data name="AiActionFailed" xml:space="preserve">
+    <value>Kunne ikke utføres</value>
+  </data>
+  <data name="AiActionApplied" xml:space="preserve">
+    <value>Utført</value>
+  </data>
+  <data name="AiActionCreateEvent" xml:space="preserve">
+    <value>Opprett avtale</value>
+  </data>
+  <data name="AiActionDismissed" xml:space="preserve">
+    <value>Avvist</value>
+  </data>
+  <data name="ShareExternalContext" xml:space="preserve">
+    <value>Del kontekst med ekstern KI</value>
+  </data>
+  <data name="AiAccessHint" xml:space="preserve"><value>Tillatte KI-endringer.</value></data>
+  <data name="AiActionDeleteTask" xml:space="preserve">
+    <value>Slett uplanlagt oppgave</value>
+  </data>
+  <data name="AiAccess" xml:space="preserve">
+    <value>KI-tillatelser</value>
+  </data>
+  <data name="ClearConversation" xml:space="preserve">
+    <value>Tøm samtalen</value>
+  </data>
+  <data name="Dismiss" xml:space="preserve">
+    <value>Avvis</value>
+  </data>
+  <data name="AiActionReady" xml:space="preserve">
+    <value>Handlingen venter på gjennomgang</value>
+  </data>
+  <data name="AiAccessConfirmAllHint" xml:space="preserve">
+    <value>Bekreft hver endring.</value>
+  </data>
+  <data name="AiAccessAutoSafeHint" xml:space="preserve">
+    <value>Bekreft sletting og endringer for hele dagen.</value>
+  </data>
+  <data name="AiAccessFullHint" xml:space="preserve">
+    <value>Alle endringer uten bekreftelse.</value>
+  </data>
+  <data name="AiActionCopyEvent" xml:space="preserve">
+    <value>Kopier avtale</value>
+  </data>
+  <data name="ChatNewChat" xml:space="preserve">
+    <value>Ny samtale</value>
+  </data>
+  <data name="ChatExpand" xml:space="preserve">
+    <value>Åpne den brede visningen</value>
+  </data>
+  <data name="ChatCollapse" xml:space="preserve">
+    <value>Tilbake til den kompakte visningen</value>
+  </data>
+  <data name="ChatHistory" xml:space="preserve">
+    <value>Historikk</value>
+  </data>
+  <data name="ChatSearchPlaceholder" xml:space="preserve">
+    <value>Søk i samtaler</value>
+  </data>
+  <data name="ChatNoConversations" xml:space="preserve">
+    <value>Ingen lagrede samtaler ennå</value>
+  </data>
+  <data name="ChatNoSearchResults" xml:space="preserve">
+    <value>Ingen treff</value>
+  </data>
+  <data name="ChatPin" xml:space="preserve">
+    <value>Fest</value>
+  </data>
+  <data name="ChatUnpin" xml:space="preserve">
+    <value>Løsne</value>
+  </data>
+  <data name="ChatDeleteConversation" xml:space="preserve">
+    <value>Slett samtale</value>
+  </data>
+  <data name="ChatDeleteConfirm" xml:space="preserve">
+    <value>Slette denne samtalen permanent?</value>
+  </data>
+  <data name="ChatGroupToday" xml:space="preserve">
+    <value>I dag</value>
+  </data>
+  <data name="ChatGroupYesterday" xml:space="preserve">
+    <value>I går</value>
+  </data>
+  <data name="ChatGroupWeek" xml:space="preserve">
+    <value>Siste 7 dager</value>
+  </data>
+  <data name="ChatGroupOlder" xml:space="preserve">
+    <value>Tidligere</value>
+  </data>
+  <data name="ChatMessageCount" xml:space="preserve">
+    <value>{0} meldinger</value>
+  </data>
+  <data name="ChatCopy" xml:space="preserve">
+    <value>Kopier</value>
+  </data>
+  <data name="ChatCopied" xml:space="preserve">
+    <value>Kopiert</value>
+  </data>
+  <data name="ChatRetry" xml:space="preserve">
+    <value>Spør på nytt</value>
+  </data>
+  <data name="ChatStop" xml:space="preserve">
+    <value>Stopp</value>
+  </data>
+  <data name="ChatToolActivity" xml:space="preserve">
+    <value>Hva jeg gjorde</value>
+  </data>
+  <data name="ChatToolApplied" xml:space="preserve">
+    <value>utført</value>
+  </data>
+  <data name="ChatToolProposed" xml:space="preserve">
+    <value>foreslått</value>
+  </data>
+  <data name="ChatToolFailed" xml:space="preserve">
+    <value>feilet</value>
+  </data>
+  <data name="StageConnecting" xml:space="preserve">
+    <value>Kobler til…</value>
+  </data>
+  <data name="StageThinking" xml:space="preserve">
+    <value>Tenker…</value>
+  </data>
+  <data name="StageWriting" xml:space="preserve">
+    <value>Skriver…</value>
+  </data>
+  <data name="StageToolSchedule" xml:space="preserve">
+    <value>Leser kalenderen din…</value>
+  </data>
+  <data name="StageToolTasks" xml:space="preserve">
+    <value>Leser oppgavene dine…</value>
+  </data>
+  <data name="StageToolSlots" xml:space="preserve">
+    <value>Ser etter ledig tid…</value>
+  </data>
+  <data name="StageToolAnalytics" xml:space="preserve">
+    <value>Leser statistikken din…</value>
+  </data>
+  <data name="StageToolMemory" xml:space="preserve">
+    <value>Oppdaterer minnet…</value>
+  </data>
+  <data name="StageToolWrite" xml:space="preserve">
+    <value>Forbereder endringen…</value>
+  </data>
+  <data name="StageToolExternal" xml:space="preserve">
+    <value>Kaller et MCP-verktøy…</value>
+  </data>
+  <data name="ChatMemory" xml:space="preserve">
+    <value>Minne</value>
+  </data>
+  <data name="ChatMemoryHint" xml:space="preserve">
+    <value>Fakta assistenten husker mellom samtaler. Lagres bare på denne maskinen.</value>
+  </data>
+  <data name="ChatMemoryEmpty" xml:space="preserve">
+    <value>Ingenting lagret ennå. Assistenten legger til notater underveis.</value>
+  </data>
+  <data name="ChatMemoryAdd" xml:space="preserve">
+    <value>Legg til notat</value>
+  </data>
+  <data name="ChatMemoryKeyPlaceholder" xml:space="preserve">
+    <value>Kort nøkkel, f.eks. deep-work-window</value>
+  </data>
+  <data name="ChatMemoryValuePlaceholder" xml:space="preserve">
+    <value>Hva skal huskes?</value>
+  </data>
+  <data name="ChatMemoryClear" xml:space="preserve">
+    <value>Glem alt</value>
+  </data>
+  <data name="ChatMemoryClearConfirm" xml:space="preserve">
+    <value>Slette alle lagrede notater?</value>
+  </data>
+  <data name="ChatMemoryFromAssistant" xml:space="preserve">
+    <value>lagret av assistenten</value>
+  </data>
+  <data name="ChatMemoryFromUser" xml:space="preserve">
+    <value>lagt til av deg</value>
+  </data>
+  <data name="ChatSuggestions" xml:space="preserve">
+    <value>Prøv å spørre</value>
+  </data>
+  <data name="ChatIntroTitle" xml:space="preserve">
+    <value>Hvor skal vi begynne?</value>
+  </data>
+  <data name="ChatComposerHint" xml:space="preserve">
+    <value>Enter sender · Shift+Enter gir ny linje</value>
+  </data>
+  <data name="SuggestPlanTomorrow" xml:space="preserve">
+    <value>Planlegg i morgen rundt det som allerede er booket</value>
+  </data>
+  <data name="SuggestFreeTime" xml:space="preserve">
+    <value>Hvor har jeg to ledige timer denne uken?</value>
+  </data>
+  <data name="SuggestOverdue" xml:space="preserve">
+    <value>Hva er forfalt, og hva bør jeg droppe?</value>
+  </data>
+  <data name="SuggestBalance" xml:space="preserve">
+    <value>Er uken min balansert?</value>
+  </data>
+  <data name="SuggestBusyDay" xml:space="preserve">
+    <value>I dag er tettpakket — hva kan flyttes?</value>
+  </data>
+  <data name="SuggestEmptyDay" xml:space="preserve">
+    <value>Ingenting er planlagt — hjelp meg å forme dagen</value>
+  </data>
+  <data name="SuggestFollowUp" xml:space="preserve">
+    <value>Fortsett: {0}</value>
+  </data>
+  <data name="SuggestReview" xml:space="preserve">
+    <value>Se på forrige uke og fortell hva som endret seg</value>
+  </data>
+  <data name="AiMemoryEnabled" xml:space="preserve">
+    <value>La assistenten huske fakta om meg</value>
+  </data>
+  <data name="AiMemoryHint" xml:space="preserve">
+    <value>Notater blir i den lokale databasen og sendes til en ekstern modell bare når kontekstdeling er på.</value>
+  </data>
+  <data name="McpToolsEnabled" xml:space="preserve">
+    <value>Gi den valgte modellen MCP-serverens verktøy</value>
+  </data>
+  <data name="McpToolsHint" xml:space="preserve">
+    <value>Dette er den moderne bruken av MCP: modellen resonnerer videre og får bare flere evner. Velges MCP som leverandør i stedet, svarer serveren selv gjennom ett bro-verktøy.</value>
+  </data>
+  <data name="ShowTools" xml:space="preserve">
+    <value>Vis tilgjengelige verktøy</value>
+  </data>
+  <data name="ToolsAvailable" xml:space="preserve">
+    <value>Verktøy modellen kan bruke</value>
+  </data>
+  <data name="ToolBuiltIn" xml:space="preserve">
+    <value>innebygd</value>
+  </data>
+  <data name="Analytics" xml:space="preserve">
+    <value>Analyse</value>
+  </data>
+  <data name="AnalyticsSubtitle" xml:space="preserve">
+    <value>Forståelig statistikk basert på historikken din</value>
+  </data>
+  <data name="RangeWeek" xml:space="preserve">
+    <value>Uke</value>
+  </data>
+  <data name="RangeMonth" xml:space="preserve">
+    <value>Måned</value>
+  </data>
+  <data name="RangeQuarter" xml:space="preserve">
+    <value>3 måneder</value>
+  </data>
+  <data name="MetricScheduled" xml:space="preserve">
+    <value>Planlagt</value>
+  </data>
+  <data name="MetricFocus" xml:space="preserve">
+    <value>Fokustid</value>
+  </data>
+  <data name="MetricCompletion" xml:space="preserve">
+    <value>Fullføring</value>
+  </data>
+  <data name="MetricAccuracy" xml:space="preserve">
+    <value>Plannøyaktighet</value>
+  </data>
+  <data name="MetricOnTime" xml:space="preserve">
+    <value>Startet i tide</value>
+  </data>
+  <data name="MetricLoad" xml:space="preserve">
+    <value>Belastning</value>
+  </data>
+  <data name="MetricStreak" xml:space="preserve">
+    <value>Aktiv rekke</value>
+  </data>
+  <data name="MetricOverdue" xml:space="preserve">
+    <value>Forfalte oppgaver</value>
+  </data>
+  <data name="MetricDays" xml:space="preserve">
+    <value>{0} d</value>
+  </data>
+  <data name="MetricHours" xml:space="preserve">
+    <value>{0:0.#} t</value>
+  </data>
+  <data name="MetricNoSample" xml:space="preserve">
+    <value>for lite data</value>
+  </data>
+  <data name="MetricVsPrevious" xml:space="preserve">
+    <value>mot forrige periode</value>
+  </data>
+  <data name="ChartDailyLoad" xml:space="preserve">
+    <value>Dag for dag</value>
+  </data>
+  <data name="ChartCategories" xml:space="preserve">
+    <value>Hvor tiden går</value>
+  </data>
+  <data name="ChartHours" xml:space="preserve">
+    <value>Timer i døgnet</value>
+  </data>
+  <data name="ChartWeekdays" xml:space="preserve">
+    <value>Etter ukedag</value>
+  </data>
+  <data name="ChartScheduledLegend" xml:space="preserve">
+    <value>Planlagt</value>
+  </data>
+  <data name="ChartCompletedLegend" xml:space="preserve">
+    <value>Fullført</value>
+  </data>
+  <data name="AnalyticsEmpty" xml:space="preserve">
+    <value>Ikke nok historikk ennå. Planlegg noen dager og fullfør et par økter — tallene kommer av seg selv.</value>
+  </data>
+  <data name="AnalyticsInsights" xml:space="preserve">
+    <value>Hva dataene viser</value>
+  </data>
+  <data name="AnalyticsAskAi" xml:space="preserve">
+    <value>Diskuter dette med assistenten</value>
+  </data>
+  <data name="AnalyticsAskAiPrompt" xml:space="preserve">
+    <value>Se på statistikken min for de siste {0} dagene og fortell hva jeg bør endre.</value>
+  </data>
+  <data name="AnalyticsAskAiPeriodPrompt" xml:space="preserve">
+    <value>Se på statistikken min fra {0} til {1} og fortell hva jeg bør endre.</value>
+  </data>
+  <data name="InsightSample" xml:space="preserve">
+    <value>{0} observasjoner · sikkerhet {1}%</value>
+  </data>
+  <data name="InsightEstimationBiasOver" xml:space="preserve">
+    <value>Øktene varer omtrent {0}% lenger enn planlagt</value>
+  </data>
+  <data name="InsightEstimationBiasUnder" xml:space="preserve">
+    <value>Øktene blir ferdig omtrent {0}% tidligere enn planlagt</value>
+  </data>
+  <data name="InsightStrongTimeOfDay" xml:space="preserve">
+    <value>{0} står for {1}% av fullført arbeid</value>
+  </data>
+  <data name="InsightScheduleFriction" xml:space="preserve">
+    <value>{0} av {1} blokker måtte flyttes</value>
+  </data>
+  <data name="InsightStartDelay" xml:space="preserve">
+    <value>{0} av {1} økter ble hoppet over</value>
+  </data>
+  <data name="InsightOverload" xml:space="preserve">
+    <value>Kalenderen tar {0}% av våken tid</value>
+  </data>
+  <data name="InsightUnderuse" xml:space="preserve">
+    <value>Bare {0}% av tilgjengelig tid er planlagt</value>
+  </data>
+  <data name="InsightCategoryDominance" xml:space="preserve">
+    <value>{0} tar {1}% av planlagt tid</value>
+  </data>
+  <data name="InsightConsistency" xml:space="preserve">
+    <value>Belastningen holder seg jevn på rundt {0} t per dag</value>
+  </data>
+  <data name="PartOfDayMorning" xml:space="preserve">
+    <value>Morgen</value>
+  </data>
+  <data name="PartOfDayAfternoon" xml:space="preserve">
+    <value>Ettermiddag</value>
+  </data>
+  <data name="PartOfDayEvening" xml:space="preserve">
+    <value>Kveld</value>
+  </data>
+  <data name="CategoryFocus" xml:space="preserve">
+    <value>Fokus</value>
+  </data>
+  <data name="NowLabel" xml:space="preserve">
+    <value>Nå</value>
+  </data>
+  <data name="StartsIn" xml:space="preserve">
+    <value>om {0}</value>
+  </data>
+  <data name="EndsIn" xml:space="preserve">
+    <value>{0} igjen</value>
+  </data>
+  <data name="DurationHoursMinutes" xml:space="preserve">
+    <value>{0} t {1} min</value>
+  </data>
+  <data name="DurationMinutes" xml:space="preserve">
+    <value>{0} min</value>
+  </data>
+  <data name="OverdueBadge" xml:space="preserve">
+    <value>forfalt</value>
+  </data>
+  <data name="TodayBadge" xml:space="preserve">
+    <value>i dag</value>
+  </data>
+  <data name="TomorrowBadge" xml:space="preserve">
+    <value>i morgen</value>
+  </data>
+  <data name="DayLoadLabel" xml:space="preserve">
+    <value>{0} opptatt</value>
+  </data>
+  <data name="ChatToolRead" xml:space="preserve">
+    <value>lest</value>
+  </data>
+  <data name="MetricPeakHour" xml:space="preserve">
+    <value>Topptime</value>
+  </data>
+  <data name="MemoryCategoryGeneral" xml:space="preserve">
+    <value>Generelt</value>
+  </data>
+  <data name="MemoryCategoryPreference" xml:space="preserve">
+    <value>Preferanse</value>
+  </data>
+  <data name="MemoryCategoryRoutine" xml:space="preserve">
+    <value>Rutine</value>
+  </data>
+  <data name="MemoryCategoryConstraint" xml:space="preserve">
+    <value>Begrensning</value>
+  </data>
+  <data name="MemoryCategoryGoal" xml:space="preserve">
+    <value>Mål</value>
+  </data>
+  <data name="MemoryCategoryContext" xml:space="preserve">
+    <value>Kontekst</value>
+  </data>
+  <data name="LocalModelRoleGeneral" xml:space="preserve">
+    <value>Universell agent</value>
+  </data>
+  <data name="LocalModelRoleReasoning" xml:space="preserve">
+    <value>Resonnering og raske svar</value>
+  </data>
+  <data name="LocalModelRoleToolUse" xml:space="preserve">
+    <value>Dekomponering og verktøybruk</value>
+  </data>
+  <data name="LocalModelRoleCustom" xml:space="preserve">
+    <value>Din egen GGUF-fil</value>
+  </data>
+  <data name="ExperimentalBadge" xml:space="preserve">
+    <value>avansert</value>
+  </data>
+  <data name="CustomModelTitle" xml:space="preserve">
+    <value>Egen modell</value>
+  </data>
+  <data name="CustomModelHint" xml:space="preserve"><value>Pek på en GGUF på disken, og den brukes som den er: ingenting lastes ned, ingenting kopieres. Det kan være to filer, og de er ikke utbyttbare.</value></data>
+  <data name="CustomModelBadge" xml:space="preserve">
+    <value>egen</value>
+  </data>
+  <data name="CustomModelNotChosen" xml:space="preserve">
+    <value>Ingen fil valgt</value>
+  </data>
+  <data name="PickModelFile" xml:space="preserve">
+    <value>Velg GGUF</value>
+  </data>
+  <data name="PickProjectorFile" xml:space="preserve">
+    <value>Velg projektor</value>
+  </data>
+  <data name="ClearCustomModel" xml:space="preserve">
+    <value>Fjern</value>
+  </data>
+  <data name="CustomModelDialogTitle" xml:space="preserve">
+    <value>Velg en GGUF-modellfil</value>
+  </data>
+  <data name="ModelParameters" xml:space="preserve">
+    <value>Modellparametere</value>
+  </data>
+  <data name="ParamOff" xml:space="preserve">
+    <value>av</value>
+  </data>
+  <data name="ParamMinutes" xml:space="preserve">
+    <value>{0} min</value>
+  </data>
+  <data name="ParamTemperature" xml:space="preserve">
+    <value>Temperatur</value>
+  </data>
+  <data name="ParamTemperatureHint" xml:space="preserve"><value>Hvor mye modellen varierer ordvalget. Lavt holder datoer, klokkeslett og titler bokstavelige – det er det planlegging trenger; høyt er livligere og mindre presist. Standard er 0,3.</value></data>
+  <data name="ParamMaxTokens" xml:space="preserve">
+    <value>Svargrense</value>
+  </data>
+  <data name="ParamMaxTokensHint" xml:space="preserve"><value>Maksimal lengde på ett svar, målt i tokens. Ett token tilsvarer omtrent tre fjerdedeler av et ord. Er grensen for lav, kuttes en lang plan midt i en setning; en høy grense bruker ikke noe ekstra før modellen faktisk skriver så mye. 4000 tokens holder til en hel dagsplan.</value></data>
+  <data name="ParamTopP" xml:space="preserve">
+    <value>Top-p</value>
+  </data>
+  <data name="ParamTopPHint" xml:space="preserve"><value>En andre, grovere grense for det samme: under 1,00 velger modellen bare blant de mest sannsynlige ordene. La den stå på 1,00 og bruk temperatur i stedet – ved 1,00 utelates parameteren helt.</value></data>
+  <data name="ParamToolIterations" xml:space="preserve">
+    <value>Verktøysteg</value>
+  </data>
+  <data name="ParamToolIterationsHint" xml:space="preserve"><value>Hvor mange ganger assistenten kan slå opp, handle og tenke igjen før den må svare. Hvert steg er én rundtur. Lavt er raskere, men gir opp på alt sammensatt; 12 dekker å planlegge en hel uke.</value></data>
+  <data name="ParamHistory" xml:space="preserve">
+    <value>Historikkdybde</value>
+  </data>
+  <data name="ParamHistoryHint" xml:space="preserve"><value>Hvor mange tidligere meldinger som sendes på nytt så assistenten husker tråden. Alt før det er glemt inne i samtalen. Mer kontekst koster tokens og litt tid på hver melding.</value></data>
+  <data name="ParamTimeout" xml:space="preserve">
+    <value>Tidsgrense</value>
+  </data>
+  <data name="ParamTimeoutHint" xml:space="preserve"><value>Hvor lenge assistenten skal vente på ett svar før den gir opp. Dette er et sikkerhetsnett, ikke en hastighetsinnstilling: En høyere verdi gjør ingenting tregere, mens en lavere verdi bare kan avbryte et langsomt svar.</value></data>
+  <data name="ParamExtraInstructions" xml:space="preserve">
+    <value>Ekstra instruksjoner</value>
+  </data>
+  <data name="ParamExtraInstructionsPlaceholder" xml:space="preserve"><value>For eksempel: svar kort; book aldri noe før 10:00; kall dypt arbeid «fokus».</value></data>
+  <data name="ResetParameters" xml:space="preserve">
+    <value>Tilbakestill til standard</value>
+  </data>
+  <data name="LocalRuntimeSection" xml:space="preserve">
+    <value>Lokal motor</value>
+  </data>
+  <data name="ParamContext" xml:space="preserve">
+    <value>Kontekstvindu</value>
+  </data>
+  <data name="ParamContextHint" xml:space="preserve">
+    <value>Tokens llama-server holder i minnet. Mindre er raskere og lettere.</value>
+  </data>
+  <data name="ParamThreads" xml:space="preserve">
+    <value>Tråder</value>
+  </data>
+  <data name="ParamThreadsHint" xml:space="preserve">
+    <value>0 lar llama.cpp bestemme. Det er som regel raskere å angi antallet fysiske kjerner.</value>
+  </data>
+  <data name="HideTools" xml:space="preserve">
+    <value>Skjul</value>
+  </data>
+  <data name="TrackSection" xml:space="preserve">
+    <value>Hvordan gikk det?</value>
+  </data>
+  <data name="TrackStart" xml:space="preserve">
+    <value>Start</value>
+  </data>
+  <data name="TrackDone" xml:space="preserve">
+    <value>Ferdig</value>
+  </data>
+  <data name="TrackPartial" xml:space="preserve">
+    <value>Delvis</value>
+  </data>
+  <data name="TrackSkip" xml:space="preserve">
+    <value>Hoppet over</value>
+  </data>
+  <data name="TrackUndo" xml:space="preserve">
+    <value>Angre</value>
+  </data>
+  <data name="TrackedStarted" xml:space="preserve">
+    <value>startet {0}</value>
+  </data>
+  <data name="TrackedDone" xml:space="preserve">
+    <value>ferdig · {0}</value>
+  </data>
+  <data name="TrackedPartial" xml:space="preserve">
+    <value>delvis · {0}</value>
+  </data>
+  <data name="TrackedSkipped" xml:space="preserve">
+    <value>hoppet over</value>
+  </data>
+  <data name="TrackHint" xml:space="preserve">
+    <value>Registrer hvordan avtalene gikk. Disse dataene brukes til å beregne fullføring, plannøyaktighet og punktlig start.</value>
+  </data>
+  <data name="PeekNothingToday" xml:space="preserve">
+    <value>Ingenting planlagt</value>
+  </data>
+  <data name="PeekOpen" xml:space="preserve">
+    <value>Åpne DAYDRIVE</value>
+  </data>
+  <data name="PeekBusyToday" xml:space="preserve">
+    <value>i dag {0}</value>
+  </data>
+  <data name="PeekOverdue" xml:space="preserve">
+    <value>{0} forfalt</value>
+  </data>
+  <data name="DurationLabelShort" xml:space="preserve">
+    <value>Minutter</value>
+  </data>
+  <data name="FinishedEvent" xml:space="preserve">
+    <value>Nettopp ferdig</value>
+  </data>
+  <data name="SettingsTabAssistant" xml:space="preserve">
+    <value>KI-tilkoblinger</value>
+  </data>
+  <data name="SettingsTabModels" xml:space="preserve">
+    <value>Lokal KI</value>
+  </data>
+  <data name="VisualPalette" xml:space="preserve">
+    <value>Datapalett</value>
+  </data>
+  <data name="VisualPaletteHint" xml:space="preserve">
+    <value>Farger for diagrammer, kategorier og prioritetsmarkører.</value>
+  </data>
+  <data name="PaletteVibrant" xml:space="preserve">
+    <value>Livlig</value>
+  </data>
+  <data name="PaletteAccent" xml:space="preserve">
+    <value>Aksenttoner</value>
+  </data>
+  <data name="PaletteMonochrome" xml:space="preserve">
+    <value>Monokrom</value>
+  </data>
+  <data name="PalettePastel" xml:space="preserve">
+    <value>Pastell</value>
+  </data>
+  <data name="PaletteEarth" xml:space="preserve">
+    <value>Jord</value>
+  </data>
+  <data name="PaletteNeon" xml:space="preserve">
+    <value>Neon</value>
+  </data>
+  <data name="PaletteColorBlind" xml:space="preserve">
+    <value>Tilgjengelig</value>
+  </data>
+  <data name="RamLabel" xml:space="preserve">
+    <value>RAM</value>
+  </data>
+  <data name="CpuLabel" xml:space="preserve">
+    <value>CPU</value>
+  </data>
+  <data name="MetricPercentagePoints" xml:space="preserve">
+    <value>{0:0} pp</value>
+  </data>
+  <data name="InterfaceFont" xml:space="preserve"><value>Skrift i grensesnittet</value></data>
+  <data name="InterfaceFontHint" xml:space="preserve"><value>Velg en medfølgende kyrillisk skrift, eller legg til din egen TTF- eller OTF-fil.</value></data>
+  <data name="FontPreview" xml:space="preserve"><value>Аа Aa 0123 · Rolig fokus</value></data>
+  <data name="AddCustomFont" xml:space="preserve"><value>Legg til egen skrift</value></data>
+  <data name="FontPickerTitle" xml:space="preserve"><value>Velg en skriftfil</value></data>
+  <data name="FontAdded" xml:space="preserve"><value>Skriften «{0}» ble lagt til.</value></data>
+  <data name="FontInvalid" xml:space="preserve"><value>Denne skriftfilen kunne ikke leses.</value></data>
+  <data name="CustomFontLabel" xml:space="preserve"><value>{0} · egen</value></data>
+  <data name="FontSystem" xml:space="preserve"><value>System</value></data>
+  <data name="ActivityTimer" xml:space="preserve"><value>Aktivitetstidtaker</value></data>
+  <data name="AiConnectionIntro" xml:space="preserve"><value>Velg hvem som svarer i assistenten: en modell på denne enheten, et kompatibelt API eller en MCP-server.</value></data>
+  <data name="LocalAiTitle" xml:space="preserve"><value>Lokal KI</value></data>
+  <data name="LocalAiConnectionHint" xml:space="preserve"><value>Modellen kjører på denne enheten. Nedlastinger, filer og motor administreres under Lokal KI.</value></data>
+  <data name="OpenLocalAi" xml:space="preserve"><value>Åpne</value></data>
+  <data name="ApiConnectionTitle" xml:space="preserve"><value>API-tilkobling</value></data>
+  <data name="ApiConnectionHint" xml:space="preserve"><value>Koble til et OpenAI-kompatibelt HTTP-API. Nøkkelen krypteres på denne enheten.</value></data>
+  <data name="McpConnectionTitle" xml:space="preserve"><value>MCP-server</value></data>
+  <data name="McpConnectionHint" xml:space="preserve"><value>Velg MCP som leverandør når serveren selv skal svare gjennom ett broverktøy.</value></data>
+  <data name="McpTransport" xml:space="preserve"><value>Transport</value></data>
+  <data name="McpCommandLabel" xml:space="preserve"><value>Serverkommando</value></data>
+  <data name="McpToolLabel" xml:space="preserve"><value>Broverktøy</value></data>
+  <data name="AdvancedSettings" xml:space="preserve"><value>Avansert</value></data>
+  <data name="AdvancedSettingsHint" xml:space="preserve"><value>Hvordan modellen skriver, hvor langt den kan gå på egen hånd, og hva den alltid skal ha i bakhodet.</value></data>
+  <data name="TrackEventTooltip" xml:space="preserve"><value>Registrer hvordan denne avtalen gikk</value></data>
+  <data name="TrackPartialTooltip" xml:space="preserve"><value>Delvis gjort – du velger hvor lang tid det faktisk tok</value></data>
+  <data name="UnmarkedEvents" xml:space="preserve"><value>{0} uten merking</value></data>
+  <data name="PeekOpenPanel" xml:space="preserve"><value>Åpne panelet</value></data>
+  <data name="AskAssistant" xml:space="preserve"><value>Spør assistenten</value></data>
+  <data name="AiProviderLocalSummary" xml:space="preserve"><value>Modellen kjører på denne maskinen. Ingenting forlater enheten, og motoren lastes ned og styres nedenfor.</value></data>
+  <data name="AiProviderApiSummary" xml:space="preserve"><value>Et hvilket som helst OpenAI-kompatibelt endepunkt, inkludert Ollama. Timeplanen sendes bare hvis du tillater det nedenfor.</value></data>
+  <data name="AiProviderMcpSummary" xml:space="preserve"><value>En MCP-server svarer gjennom ett broverktøy. Bilder kan ikke sendes på denne måten.</value></data>
+  <data name="AttachImage" xml:space="preserve"><value>Bilde…</value></data>
+  <data name="AttachDocument" xml:space="preserve"><value>Dokument…</value></data>
+  <data name="AttachImagesFilter" xml:space="preserve"><value>Bilder</value></data>
+  <data name="AttachDocumentsFilter" xml:space="preserve"><value>Dokumenter</value></data>
+  <data name="AttachUnsupported" xml:space="preserve"><value>Det formatet kan ikke leses. Bilder: PNG, JPEG, WebP, BMP, GIF. Dokumenter: PDF, DOCX og tekstfiler.</value></data>
+  <data name="AttachTooLarge" xml:space="preserve"><value>Filen er over {0} MB og kan ikke legges ved.</value></data>
+  <data name="AttachImageNotSupported" xml:space="preserve"><value>Den valgte motoren kan ikke lese bilder. Bytt leverandør, eller slå på bildeinndata for den lokale modellen.</value></data>
+  <data name="SettingsTabData" xml:space="preserve"><value>Data og synkronisering</value></data>
+  <data name="SettingsTabAbout" xml:space="preserve"><value>Om</value></data>
+  <data name="CloudSyncTitle" xml:space="preserve"><value>Skysynkronisering</value></data>
+  <data name="CloudSyncIntro" xml:space="preserve"><value>Holder en kopi av dataene dine der de andre datamaskinene dine kan hente den. Oppgaver, hendelser, fremdrift, assistentsamtaler og minne synkroniseres; innstillinger er egne på hver datamaskin.</value></data>
+  <data name="CloudDestination" xml:space="preserve"><value>Mål</value></data>
+  <data name="CloudProviderOff" xml:space="preserve"><value>Av</value></data>
+  <data name="CloudProviderFolder" xml:space="preserve"><value>Synkronisert mappe</value></data>
+  <data name="CloudFolderHint" xml:space="preserve"><value>Pek på en mappe som Google Drive-, OneDrive- eller Dropbox-klienten din allerede synkroniserer. Ingen konto eller nøkkel trengs.</value></data>
+  <data name="CloudFolderPlaceholder" xml:space="preserve"><value>C:\Users\navn\Google Drive</value></data>
+  <data name="CloudFolderDialogTitle" xml:space="preserve"><value>Velg den synkroniserte mappen</value></data>
+  <data name="Browse" xml:space="preserve"><value>Bla gjennom…</value></data>
+  <data name="CloudGoogleHint" xml:space="preserve"><value>Laster opp rett til Drives skjulte appmappe. Appen ser aldri resten av Drive-en din.</value></data>
+  <data name="CloudGoogleSetupTitle" xml:space="preserve"><value>Engangsoppsett</value></data>
+  <data name="CloudGoogleSetupSteps" xml:space="preserve"><value>Én gang, i Google Cloud Console:
+1. Opprett et prosjekt og slå på «Google Drive API» i det.
+2. På OAuth-samtykkeskjermen velger du Ekstern og legger til Google-adressen din som testbruker.
+3. Under Legitimasjon oppretter du en OAuth-klient-ID av typen «Datamaskinapp».
+4. Lim inn klient-ID-en og klienthemmeligheten nedenfor og trykk «Koble til Google-konto».</value></data>
+  <data name="CloudGoogleConsole" xml:space="preserve"><value>Åpne Google Cloud Console</value></data>
+  <data name="CloudGoogleClientId" xml:space="preserve"><value>OAuth-klient-id</value></data>
+  <data name="CloudGoogleClientSecret" xml:space="preserve"><value>OAuth-klienthemmelighet</value></data>
+  <data name="CloudGoogleClientSecretPlaceholder" xml:space="preserve"><value>GOCSPX-…</value></data>
+  <data name="CloudGoogleClientSecretHint" xml:space="preserve"><value>Påkrevd. Den står ved siden av klient-ID-en i Google Cloud Console. Lagres kryptert på denne datamaskinen og sendes bare til Google.</value></data>
+  <data name="CloudGoogleConnect" xml:space="preserve"><value>Koble til Google-konto</value></data>
+  <data name="CloudGoogleDisconnect" xml:space="preserve"><value>Koble fra</value></data>
+  <data name="CloudGoogleWaiting" xml:space="preserve"><value>Fullfør innloggingen i nettleseren…</value></data>
+  <data name="CloudGoogleDisconnected" xml:space="preserve"><value>Google-kontoen ble koblet fra. Kopien i skyen ble ikke rørt.</value></data>
+  <data name="CloudDeviceName" xml:space="preserve"><value>Denne maskinen heter</value></data>
+  <data name="CloudDeviceNamePlaceholder" xml:space="preserve"><value>Bærbar</value></data>
+  <data name="CloudDeviceNameHint" xml:space="preserve"><value>Vises ved siden av et øyeblikksbilde, så du ser hvilken maskin som lastet opp sist.</value></data>
+  <data name="CloudAutomatic" xml:space="preserve"><value>Synkroniser av seg selv</value></data>
+  <data name="CloudAutomaticHint" xml:space="preserve"><value>Sjekker kort tid etter oppstart, hvert femtende minutt og én gang til når programmet avsluttes. Når dette er av, kan du bare synkronisere med knappen.</value></data>
+  <data name="CloudSyncNow" xml:space="preserve"><value>Synkroniser nå</value></data>
+  <data name="CloudCheck" xml:space="preserve"><value>Sjekk skyen</value></data>
+  <data name="CloudSyncRunning" xml:space="preserve"><value>Synkroniserer…</value></data>
+  <data name="CloudNoSnapshot" xml:space="preserve"><value>Ingenting er lastet opp ennå.</value></data>
+  <data name="CloudSnapshotFormat" xml:space="preserve"><value>lagret {0}</value></data>
+  <data name="CloudSnapshotDeviceFormat" xml:space="preserve"><value>lagret {0} fra «{1}»</value></data>
+  <data name="CloudConflictTitle" xml:space="preserve"><value>Begge kopiene er endret</value></data>
+  <data name="CloudConflictHint" xml:space="preserve"><value>Både denne maskinen og skykopien er endret siden forrige synkronisering. En fletting måtte gjettet, så velg hvilken du beholder. Den andre erstattes.</value></data>
+  <data name="CloudKeepLocal" xml:space="preserve"><value>Behold denne maskinen</value></data>
+  <data name="CloudKeepCloud" xml:space="preserve"><value>Behold skykopien</value></data>
+  <data name="CloudRestartHint" xml:space="preserve"><value>Den nedlastede kopien er klar og tas i bruk når DAYDRIVE starter på nytt. De forrige dataene ble lagret i Backups-mappen.</value></data>
+  <data name="LocalData" xml:space="preserve"><value>På denne maskinen</value></data>
+  <data name="LocalDataHint" xml:space="preserve"><value>Alt ligger i én SQLite-database her, sammen med sikkerhetskopier og filene til den lokale modellen.</value></data>
+  <data name="OpenDataFolder" xml:space="preserve"><value>Åpne mappen</value></data>
+  <data name="CouldNotOpenFolder" xml:space="preserve"><value>Mappen kunne ikke åpnes.</value></data>
+  <data name="CouldNotOpenLink" xml:space="preserve"><value>Nettleseren kunne ikke åpnes for {0}</value></data>
+  <data name="AboutVersionFormat" xml:space="preserve"><value>Versjon {0}</value></data>
+  <data name="AboutTagline" xml:space="preserve"><value>En kompakt planlegger og kalender som lagrer alt lokalt og alltid er tilgjengelig i skjermkanten.</value></data>
+  <data name="AboutAuthorLabel" xml:space="preserve"><value>Laget av</value></data>
+  <data name="AboutOpenGitHub" xml:space="preserve"><value>GitHub</value></data>
+  <data name="AboutLinks" xml:space="preserve"><value>Lenker</value></data>
+  <data name="AboutRepository" xml:space="preserve"><value>Kildekode</value></data>
+  <data name="AboutIssues" xml:space="preserve"><value>Meld fra om et problem</value></data>
+  <data name="AboutReleases" xml:space="preserve"><value>Alle utgivelser</value></data>
+  <data name="UpdatesTitle" xml:space="preserve"><value>Oppdateringer</value></data>
+  <data name="GeneralIntro" xml:space="preserve"><value>Språk og hva programmet gjør når maskinen starter.</value></data>
+  <data name="AppearanceIntro" xml:space="preserve"><value>Tema, farger og skrift, samt hvor mye av skrivebordet som er synlig gjennom vinduene.</value></data>
+  <data name="BehaviorIntro" xml:space="preserve"><value>Hvordan panelet og hurtigwidgeten vises og skjules.</value></data>
+  <data name="RemindersIntro" xml:space="preserve"><value>Kort som vises ved kantfanen før en avtale starter eller slutter.</value></data>
+  <data name="UpdatesIntro" xml:space="preserve"><value>Sjekkes én gang om dagen i bakgrunnen. Ingenting her avbryter.</value></data>
+  <data name="UpdateChecking" xml:space="preserve"><value>Sjekker…</value></data>
+  <data name="UpdateUpToDate" xml:space="preserve"><value>Du har den nyeste versjonen.</value></data>
+  <data name="UpdateAvailableFormat" xml:space="preserve"><value>Versjon {0} er tilgjengelig.</value></data>
+  <data name="UpdateSkippedFormat" xml:space="preserve"><value>Versjon {0} nevnes ikke igjen.</value></data>
+  <data name="UpdateSkip" xml:space="preserve"><value>Hopp over</value></data>
+  <data name="UpdateOpen" xml:space="preserve"><value>Hva er nytt</value></data>
+  <data name="UpdateCheckEnabled" xml:space="preserve"><value>Fortell meg om nye versjoner</value></data>
+  <data name="UpdateCheckHint" xml:space="preserve"><value>Spør GitHub én gang om dagen. Ingenting om deg sendes, ingenting avbryter deg, og en versjon du hopper over nevnes aldri igjen.</value></data>
+  <data name="UpdateCheckNow" xml:space="preserve"><value>Sjekk nå</value></data>
+  <data name="PeekOfPlanned" xml:space="preserve"><value>av {0} planlagt</value></data>
+  <data name="PeekUntilStart" xml:space="preserve"><value>til start</value></data>
+  <data name="PeekAllGood" xml:space="preserve"><value>Alt i rute</value></data>
+  <data name="PeekNotStarted" xml:space="preserve"><value>ikke startet ennå</value></data>
+  <data name="PeekOverPlanned" xml:space="preserve"><value>{0} over planen</value></data>
+  <data name="HandleTooltipPanel" xml:space="preserve"><value>Venstre — panel</value></data>
+  <data name="HandleTooltipWidget" xml:space="preserve"><value>Høyre — widget</value></data>
+  <data name="WidgetHideDelay" xml:space="preserve"><value>Forsinkelse før widgeten forsvinner</value></data>
+  <data name="WidgetHideDelayHint" xml:space="preserve"><value>Hvor lenge widgeten blir stående etter at pekeren forlater den. Høyreklikk på kanten åpner den; venstre knapp åpner fortsatt panelet.</value></data>
+  <data name="WidgetKeepOpen" xml:space="preserve"><value>Ikke skjul widgeten automatisk</value></data>
+  <data name="WidgetKeepOpenHint" xml:space="preserve"><value>Hurtigwidgeten blir stående på skjermen til den lukkes — høyre knapp på kanthendelen eller på selve widgeten. Påminnelser henter den fortsatt fram og tar den med seg selv.</value></data>
+  <data name="MascotColor" xml:space="preserve"><value>Widget-maskot</value></data>
+  <data name="MascotColorDynamic" xml:space="preserve"><value>Følg temafargen</value></data>
+  <data name="MascotColorHint" xml:space="preserve"><value>Skapningen ved siden av klokken i hurtigwidgeten. Den tar temaets aksentfarge inntil en egen farge velges her.</value></data>
+  <data name="MascotShow" xml:space="preserve"><value>Vis maskoten</value></data>
+  <data name="SelectEvents" xml:space="preserve"><value>Velg</value></data>
+  <data name="SelectAllEvents" xml:space="preserve"><value>Alle</value></data>
+  <data name="ClearSelectionAction" xml:space="preserve"><value>Nullstill</value></data>
+  <data name="SelectionNone" xml:space="preserve"><value>Ingenting valgt</value></data>
+  <data name="SelectionCount" xml:space="preserve"><value>{0} valgt · {1}</value></data>
+  <data name="SelectionEmptyHint" xml:space="preserve"><value>Merk først av avtalene du vil endre.</value></data>
+  <data name="SelectEventAction" xml:space="preserve"><value>Velg</value></data>
+  <data name="SelectionExit" xml:space="preserve"><value>Ferdig</value></data>
+  <data name="SelectionHint" xml:space="preserve"><value>Merk av avtaler for å flytte eller slette dem samlet.</value></data>
+  <data name="SelectionDeleteConfirm" xml:space="preserve"><value>Slette {0}?</value></data>
+  <data name="SelectionDeleted" xml:space="preserve"><value>Slettet: {0}</value></data>
+  <data name="DeleteSelected" xml:space="preserve"><value>Slett</value></data>
+  <data name="MoveEvent" xml:space="preserve"><value>Flytt…</value></data>
+  <data name="MoveSelected" xml:space="preserve"><value>Flytt</value></data>
+  <data name="MoveTitle" xml:space="preserve"><value>Flytt avtaler</value></data>
+  <data name="MoveSubjectCount" xml:space="preserve"><value>{0} avtaler</value></data>
+  <data name="MoveModeTime" xml:space="preserve"><value>Med tid</value></data>
+  <data name="MoveModeDate" xml:space="preserve"><value>Til en dato</value></data>
+  <data name="MoveByHowMuch" xml:space="preserve"><value>Flytt med</value></data>
+  <data name="MoveEarlier" xml:space="preserve"><value>Tidligere</value></data>
+  <data name="MoveLater" xml:space="preserve"><value>Senere</value></data>
+  <data name="MovePreview" xml:space="preserve"><value>{0} — {1}, {2}</value></data>
+  <data name="MoveNothingToDo" xml:space="preserve"><value>Da endres ingenting.</value></data>
+  <data name="MoveCheck" xml:space="preserve"><value>Sjekk og flytt</value></data>
+  <data name="MoveApply" xml:space="preserve"><value>Flytt</value></data>
+  <data name="MoveAffects" xml:space="preserve"><value>Dette berører andre avtaler</value></data>
+  <data name="MoveNoCollisions" xml:space="preserve"><value>Ingenting annet berøres.</value></data>
+  <data name="MoveCollisionSummary" xml:space="preserve"><value>{0} overlapp</value></data>
+  <data name="MoveConfirmClear" xml:space="preserve"><value>Flytter {0}. Ingenting annet berøres — {1}</value></data>
+  <data name="MoveConfirmWithCollisions" xml:space="preserve"><value>Hvis du flytter {0}, vil de overlappe {1} andre avtaler. Vil du flytte dem likevel?</value></data>
+  <data name="MoveCompleted" xml:space="preserve"><value>Flyttet: {0}</value></data>
+  <data name="MoveCompletedWithCollisions" xml:space="preserve"><value>Flyttet: {0} · overlapp: {1}</value></data>
+  <data name="CollisionWithExisting" xml:space="preserve"><value>«{0}» overlapper «{1}»</value></data>
+  <data name="CollisionWithinSelection" xml:space="preserve"><value>«{0}» og «{1}» overlapper hverandre</value></data>
+  <data name="MoveNudgeMinusHour" xml:space="preserve"><value>−1 t</value></data>
+  <data name="MoveNudgeMinus15" xml:space="preserve"><value>−15 min</value></data>
+  <data name="MoveNudgePlus15" xml:space="preserve"><value>+15 min</value></data>
+  <data name="MoveNudgePlusHour" xml:space="preserve"><value>+1 t</value></data>
+  <data name="DragEventHint" xml:space="preserve"><value>Dra en avtale til et annet tidspunkt eller en annen dag for å flytte den.</value></data>
+  <data name="DayResultLabel" xml:space="preserve"><value>Dagens resultat</value></data>
+  <data name="DaySoFarLabel" xml:space="preserve"><value>Så langt i dag</value></data>
+  <data name="DayAheadLabel" xml:space="preserve"><value>Dagen som kommer</value></data>
+  <data name="DayReviewTitle" xml:space="preserve"><value>{0} av {1} fullført</value></data>
+  <data name="DayReviewMeta" xml:space="preserve"><value>{0} av {1} · {2}%</value></data>
+  <data name="DayReviewEmpty" xml:space="preserve"><value>Ingenting var planlagt</value></data>
+  <data name="DayReviewEmptyHint" xml:space="preserve"><value>Denne dagen har ingen avtaler.</value></data>
+  <data name="DayAheadTitle" xml:space="preserve"><value>{0} · {1}</value></data>
+  <data name="DayChipDone" xml:space="preserve"><value>{0} fullført</value></data>
+  <data name="DayChipPartial" xml:space="preserve"><value>{0} delvis</value></data>
+  <data name="DayChipSkipped" xml:space="preserve"><value>{0} hoppet over</value></data>
+  <data name="DayChipUnmarked" xml:space="preserve"><value>{0} uten svar</value></data>
+  <data name="DayChipUpcoming" xml:space="preserve"><value>{0} gjenstår</value></data>
+  <data name="PeekUnmarked" xml:space="preserve"><value>{0} uten svar</value></data>
+  <data name="PeekSkipped" xml:space="preserve"><value>{0} hoppet over</value></data>
+  <data name="PeekPartial" xml:space="preserve"><value>{0} bare delvis</value></data>
+  <data name="PeekDayDone" xml:space="preserve"><value>Dagen er ferdig · {0} fullført</value></data>
+  <data name="PeekDaySummary" xml:space="preserve"><value>{0} av {1} fullført</value></data>
+  <data name="TrackRunning" xml:space="preserve"><value>Pågår</value></data>
+  <data name="RangeDetailDays" xml:space="preserve"><value>siste {0} dager</value></data>
+  <data name="RangeDetailWeeks" xml:space="preserve"><value>siste {0} uker</value></data>
+  <data name="RangeDetailCalendarWeek" xml:space="preserve"><value>kalenderuke · man–søn</value></data>
+  <data name="RangeDetailCalendarMonth" xml:space="preserve"><value>kalendermåned · første–siste dag</value></data>
+  <data name="RangeDetailCalendarQuarter" xml:space="preserve"><value>3 hele kalendermåneder</value></data>
+  <data name="RangePickerTooltip" xml:space="preserve"><value>Vist periode</value></data>
+  <data name="AnalyticsCurrentWeek" xml:space="preserve"><value>Denne uken</value></data>
+  <data name="AnalyticsPreviousWeek" xml:space="preserve"><value>Forrige uke</value></data>
+  <data name="AnalyticsNextWeek" xml:space="preserve"><value>Neste uke</value></data>
+  <data name="ChartPerDay" xml:space="preserve"><value>per dag</value></data>
+  <data name="ChartPerWeek" xml:space="preserve"><value>per uke</value></data>
+  <data name="ChartTotal" xml:space="preserve"><value>totalt</value></data>
+  <data name="EventsCountOne" xml:space="preserve"><value>{0} avtale</value></data>
+  <data name="EventsCountFew" xml:space="preserve"><value>{0} avtaler</value></data>
+  <data name="EventsCountMany" xml:space="preserve"><value>{0} avtaler</value></data>
+  <data name="ChartWeeklyLoad" xml:space="preserve"><value>Uke for uke</value></data>
+  <data name="ShiftMoreOptions" xml:space="preserve"><value>Flere valg</value></data>
+  <data name="ShiftDays" xml:space="preserve"><value>Dager</value></data>
+  <data name="ShiftOnDate" xml:space="preserve"><value>Til en dato</value></data>
+  <data name="ShiftDayDateConfirmation" xml:space="preserve"><value>Flytte alt den {0} til {1}?</value></data>
+  <data name="VisionUnsupported" xml:space="preserve"><value>Denne modellen har ingen bildeenkoder, så bildeinndata er deaktivert. Velg en modell merket «Bilder».</value></data>
+  <data name="VisionReady" xml:space="preserve"><value>Bildeinndata er klar. Legg ved et bilde og spør om det.</value></data>
+  <data name="VisionNeedsProjector" xml:space="preserve"><value>Projektoren for denne modellen er ikke lastet ned ennå. Bruk knappen over.</value></data>
+  <data name="VisionNeedsCustomProjector" xml:space="preserve"><value>Velg mmproj-filen til denne modellen nedenfor, ellers forblir bildeinndata av.</value></data>
+  <data name="VisionBadge" xml:space="preserve"><value>Bilder</value></data>
+  <data name="CustomWeightsTitle" xml:space="preserve"><value>Modellfil · GGUF</value></data>
+  <data name="CustomWeightsHint" xml:space="preserve"><value>Selve modellen: alt den vet og alt den kan skrive. Påkrevd.</value></data>
+  <data name="CustomProjectorTitle" xml:space="preserve"><value>Bildeprojektor · mmproj</value></data>
+  <data name="CustomProjectorHint" xml:space="preserve"><value>En andre, mye mindre fil som gjør et bilde om til noe modellen over kan lese. Bare for bildeinndata, og bare mmproj-filen som hører til akkurat den modellen.</value></data>
+  <data name="CustomFileMissing" xml:space="preserve"><value>Ikke valgt</value></data>
+  <data name="McpEndpointHint" xml:space="preserve"><value>MCP-serverens egen adresse. Den holdes atskilt fra API-adressen fordi en forveksling førte til et mislykket tilkoblingsforsøk før hver melding.</value></data>
+  <data name="AdvancedMcpNotice" xml:space="preserve"><value>MCP-broen svarer på egen hånd, så ingenting av dette når den. Bytt til en lokal modell eller en API-tilkobling for å forme forespørsler.</value></data>
+  <data name="ParamGroupSampling" xml:space="preserve"><value>Hvordan svaret skrives</value></data>
+  <data name="ParamGroupBudget" xml:space="preserve"><value>Hvor langt den kan gå</value></data>
+  <data name="ParamGroupStanding" xml:space="preserve"><value>Hver samtale</value></data>
+  <data name="AiActionSetTaskStatus" xml:space="preserve"><value>Endre oppgavestatus</value></data>
+  <data name="AiActionCreateFocusBlock" xml:space="preserve"><value>Sett av arbeidstid</value></data>
+  <data name="StageToolSearch" xml:space="preserve"><value>Søker i planen…</value></data>
+  <data name="TaskStatusInbox" xml:space="preserve"><value>Innboks</value></data>
+  <data name="TaskStatusReady" xml:space="preserve"><value>Klar</value></data>
+  <data name="TaskStatusScheduled" xml:space="preserve"><value>Planlagt</value></data>
+  <data name="TaskStatusInProgress" xml:space="preserve"><value>Pågår</value></data>
+  <data name="TaskStatusDone" xml:space="preserve"><value>Ferdig</value></data>
+  <data name="TaskStatusCancelled" xml:space="preserve"><value>Avbrutt</value></data>
+  <data name="AiAccessConfirmAllShort" xml:space="preserve"><value>Bekreft</value></data>
+  <data name="AiAccessAutoSafeShort" xml:space="preserve"><value>Trygt</value></data>
+  <data name="AiAccessFullShort" xml:space="preserve"><value>Full</value></data>
+  <data name="SnapStep" xml:space="preserve"><value>{0} min</value></data>
+  <data name="Reminders" xml:space="preserve"><value>Påminnelser</value></data>
+  <data name="NotificationsEnabled" xml:space="preserve"><value>Vis påminnelser</value></data>
+  <data name="NotificationsEnabledHint" xml:space="preserve"><value>Et kort i hurtigwidgeten ved kantfanen før en avtale starter eller slutter. Ingen data sendes til systemets varslingstjeneste.</value></data>
+  <data name="NotificationSound" xml:space="preserve"><value>Påminnelseslyd</value></data>
+  <data name="NotificationSoundHint" xml:space="preserve"><value>Spiller varsellyden som er valgt i systeminnstillingene, dempet når widgeten alt er åpen.</value></data>
+  <data name="NotificationsOffHint" xml:space="preserve"><value>Påminnelser er av.</value></data>
+  <data name="NotificationHide" xml:space="preserve"><value>Skjul varsel</value></data>
+  <data name="NotificationDismissAll" xml:space="preserve"><value>Lukk alle</value></data>
+  <data name="DoNotDisturb" xml:space="preserve"><value>Ikke forstyrr</value></data>
+  <data name="DoNotDisturbUntil" xml:space="preserve"><value>Stille til {0}</value></data>
+  <data name="DoNotDisturbEnd" xml:space="preserve"><value>Avslutt ikke forstyrr</value></data>
+  <data name="DoNotDisturbOffHint" xml:space="preserve"><value>Påminnelser kommer som planlagt.</value></data>
+  <data name="DoNotDisturbOffShort" xml:space="preserve"><value>Av</value></data>
+  <data name="DoNotDisturbUntilResumedHint" xml:space="preserve"><value>Stille til du slår det på igjen.</value></data>
+  <data name="DoNotDisturbLength" xml:space="preserve"><value>Hvor lenge</value></data>
+  <data name="QuietLengthMinutes" xml:space="preserve"><value>{0} min</value></data>
+  <data name="QuietLengthHours" xml:space="preserve"><value>{0} t</value></data>
+  <data name="QuietLengthUntilResumed" xml:space="preserve"><value>Til jeg slår det på igjen</value></data>
+  <data name="FocusMode" xml:space="preserve"><value>Fokusmodus</value></data>
+  <data name="FocusModeIntro" xml:space="preserve"><value>Så lenge et spill — eller hva som helst annet — har hele skjermen, trekker skallet seg tilbake: det slipper hurtigtastene det har tatt på hele skrivebordet, slik at tastene når det som er foran deg, og holder på påminnelsene til skjermen er din igjen.</value></data>
+  <data name="FocusModeManualOnlyHint" xml:space="preserve"><value>Dette skrivebordet sier ikke hva annet som er på skjermen, så ingenting merkes av seg selv. Her virker fokusmodus når den slås på for hånd.</value></data>
+  <data name="FocusModeAuto" xml:space="preserve"><value>Merk fullskjermprogrammer</value></data>
+  <data name="FocusModeHold" xml:space="preserve"><value>Hold den på</value></data>
+  <data name="FocusModeHoldHint" xml:space="preserve"><value>Blir stående på uansett hva som er på skjermen, til den slås av igjen. Huskes ikke etter omstart.</value></data>
+  <data name="FocusModeReleaseShortcuts" xml:space="preserve"><value>Slipp hurtigtastene</value></data>
+  <data name="FocusModeReleaseShortcutsHint" xml:space="preserve"><value>En kombinasjon dette programmet holder, får spillet aldri se. Inne i DAYDRIVEs egne vinduer virker de fortsatt.</value></data>
+  <data name="FocusModeHoldReminders" xml:space="preserve"><value>Hold igjen påminnelser</value></data>
+  <data name="FocusModeHoldRemindersHint" xml:space="preserve"><value>Ingenting tegnes over skjermen. Det som forfalt, kommer samlet så snart fokusmodus tar slutt — ingenting går tapt.</value></data>
+  <data name="FocusModeHideHandle" xml:space="preserve"><value>Ta stripen bort fra skjermen</value></data>
+  <data name="FocusModeHideHandleHint" xml:space="preserve"><value>Stripen ved høyre kant tar ikke lenger imot klikk. Ikonet i systemkurven åpner skallet som før, og stripen er tilbake så snart fokusmodus tar slutt.</value></data>
+  <data name="FocusModeIdleHint" xml:space="preserve"><value>Ingenting har hele skjermen. Hurtigtastene er tatt, og påminnelser kommer fram.</value></data>
+  <data name="FocusModeOffHint" xml:space="preserve"><value>Skallet er som det er, uansett hva annet som er på skjermen.</value></data>
+  <data name="FocusModeHeldHint" xml:space="preserve"><value>Slått på for hånd.</value></data>
+  <data name="FocusModeAppHint" xml:space="preserve"><value>{0} har skjermen.</value></data>
+  <data name="FocusModeAnonHint" xml:space="preserve"><value>Noe har hele skjermen.</value></data>
+  <data name="FocusModePresentingHint" xml:space="preserve"><value>Presentasjonsmodus er på.</value></data>
+  <data name="FocusModeOnShort" xml:space="preserve"><value>På</value></data>
+  <data name="FocusModeHeldTitle" xml:space="preserve"><value>Mens skjermen var opptatt</value></data>
+  <data name="ShortcutsFocusHeld" xml:space="preserve"><value>Fokusmodus har sluppet dem for nå — noe annet har hele skjermen. Inne i DAYDRIVEs vinduer virker de fortsatt.</value></data>
+  <data name="LocalModelGpu" xml:space="preserve"><value>Bruk skjermkortet</value></data>
+  <data name="LocalModelGpuOnHint" xml:space="preserve"><value>En GPU-versjon av motoren installeres ved siden av prosessorversjonen, og alt som får plass flyttes dit. Modellen starter på nytt ved endring.</value></data>
+  <data name="LocalModelGpuOffHint" xml:space="preserve"><value>Modellen kjører helt på prosessoren. Tregere, men skjermkortet forblir ledig.</value></data>
+  <data name="GpuLabel" xml:space="preserve"><value>GPU</value></data>
+  <data name="CpuOnlyLabel" xml:space="preserve"><value>CPU</value></data>
+  <data name="VramLabel" xml:space="preserve"><value>VRAM</value></data>
+  <data name="GpuOffloadDetail" xml:space="preserve"><value>{0} · {1} av {2} lag på kortet</value></data>
+  <data name="CpuOnlyDetail" xml:space="preserve"><value>Kjører på prosessoren</value></data>
+  <data name="ResourceOfTotal" xml:space="preserve"><value>av {0} i maskinen</value></data>
+  <data name="ResourceNotInUse" xml:space="preserve"><value>ikke i bruk</value></data>
+  <data name="ResourceUnavailable" xml:space="preserve"><value>—</value></data>
+  <data name="StageLoadingModel" xml:space="preserve"><value>Laster modellen…</value></data>
+  <data name="TrackPause" xml:space="preserve"><value>Pause</value></data>
+  <data name="TrackResume" xml:space="preserve"><value>Resume</value></data>
+  <data name="TrackStop" xml:space="preserve"><value>Stop</value></data>
+  <data name="TrackPaused" xml:space="preserve"><value>Paused</value></data>
+  <data name="TrackWorked" xml:space="preserve"><value>Worked</value></data>
+  <data name="TrackPausedFor" xml:space="preserve"><value>{0} paused</value></data>
+  <data name="TrackPlanActual" xml:space="preserve"><value>plan {0} · actual {1}</value></data>
+  <data name="TrackOverPlan" xml:space="preserve"><value>{0} over plan</value></data>
+  <data name="TrackUnderPlan" xml:space="preserve"><value>{0} left of the plan</value></data>
+  <data name="TrackedPartialProgress" xml:space="preserve"><value>partly · {0}% · {1}</value></data>
+  <data name="SessionTimerTooltip" xml:space="preserve"><value>Work time. Pauses are counted separately and never added to it.</value></data>
+  <data name="PausePromptTitle" xml:space="preserve"><value>Still on this?</value></data>
+  <data name="PausePromptBody" xml:space="preserve"><value>Paused for {0}.</value></data>
+  <data name="PausePromptResume" xml:space="preserve"><value>Keep going</value></data>
+  <data name="PausePromptFinish" xml:space="preserve"><value>End session</value></data>
+  <data name="SessionResultTitle" xml:space="preserve"><value>How did it go?</value></data>
+  <data name="SessionResultDone" xml:space="preserve"><value>Done</value></data>
+  <data name="SessionResultPartial" xml:space="preserve"><value>Partly</value></data>
+  <data name="SessionResultMissed" xml:space="preserve"><value>Not done</value></data>
+  <data name="SessionMeasured" xml:space="preserve"><value>Worked {0} of {1} planned</value></data>
+  <data name="SessionMeasuredNoPlan" xml:space="preserve"><value>Worked {0}</value></data>
+  <data name="SessionProgressTitle" xml:space="preserve"><value>How far did it get?</value></data>
+  <data name="SessionNextStepTitle" xml:space="preserve"><value>What's left?</value></data>
+  <data name="SessionNextStepPlaceholder" xml:space="preserve"><value>Recheck the last three screens</value></data>
+  <data name="SessionSave" xml:space="preserve"><value>Save</value></data>
+  <data name="SessionLater" xml:space="preserve"><value>Not now</value></data>
+  <data name="NextStepChip" xml:space="preserve"><value>Next: {0}</value></data>
+  <data name="NextStepTooltip" xml:space="preserve"><value>Where to pick this up. Set when the event was left part-done.</value></data>
+  <data name="ChatWrapUp" xml:space="preserve"><value>Day wrap-up</value></data>
+  <data name="WrapUpTitle" xml:space="preserve"><value>Wrap up the day</value></data>
+  <data name="WrapUpHint" xml:space="preserve"><value>Alt som ble avsluttet uten resultat – i dag og ukene før.</value></data>
+  <data name="WrapUpCount" xml:space="preserve"><value>{0} without a result</value></data>
+  <data name="WrapUpEmpty" xml:space="preserve"><value>Nothing left to answer for</value></data>
+  <data name="WrapUpEmptyHint" xml:space="preserve"><value>Hver avsluttet hendelse har et resultat.</value></data>
+  <data name="WrapUpDone" xml:space="preserve"><value>Done</value></data>
+  <data name="WrapUpMove" xml:space="preserve"><value>Move</value></data>
+  <data name="WrapUpSkip" xml:space="preserve"><value>Skip</value></data>
+  <data name="WrapUpMoveTooltip" xml:space="preserve"><value>Move to tomorrow, same time</value></data>
+  <data name="WrapUpAcceptAll" xml:space="preserve"><value>Accept all suggestions</value></data>
+  <data name="WrapUpHadActivity" xml:space="preserve"><value>timer ran {0}</value></data>
+  <data name="WrapUpNeverStarted" xml:space="preserve"><value>never started</value></data>
+  <data name="WrapUpSuggestion" xml:space="preserve"><value>suggested: {0}</value></data>
+  <data name="WrapUpResolvedDone" xml:space="preserve"><value>Marked done</value></data>
+  <data name="WrapUpResolvedSkipped" xml:space="preserve"><value>Skipped</value></data>
+  <data name="WrapUpResolvedMoved" xml:space="preserve"><value>Moved to {0}</value></data>
+  <data name="WrapUpOffer" xml:space="preserve"><value>{0} of today's events have no result yet.</value></data>
+  <data name="WrapUpOpen" xml:space="preserve"><value>Wrap up</value></data>
+  <data name="WrapUpLater" xml:space="preserve"><value>Later</value></data>
+  <data name="WrapUpBadge" xml:space="preserve"><value>{0}</value></data>
+  <data name="BlockerTitle" xml:space="preserve"><value>Moved {0} times now. What is in the way?</value></data>
+  <data name="BlockerNotEnoughTime" xml:space="preserve"><value>Not enough time</value></data>
+  <data name="BlockerTooBig" xml:space="preserve"><value>Too big</value></data>
+  <data name="BlockerUnclearStart" xml:space="preserve"><value>Unclear where to start</value></data>
+  <data name="BlockerNotRelevant" xml:space="preserve"><value>No longer relevant</value></data>
+  <data name="BlockerShorten" xml:space="preserve"><value>Make it shorter</value></data>
+  <data name="BlockerShortenHint" xml:space="preserve"><value>Halve the slot, to {0}.</value></data>
+  <data name="BlockerFirstStep" xml:space="preserve"><value>Give it a first step</value></data>
+  <data name="BlockerDrop" xml:space="preserve"><value>Drop it</value></data>
+  <data name="BlockerDropHint" xml:space="preserve"><value>Take it off the calendar.</value></data>
+  <data name="BlockerNoted" xml:space="preserve"><value>Noted.</value></data>
+  <data name="TrackedPausedAt" xml:space="preserve"><value>paused - {0} worked</value></data>
+  <data name="BlockerEarlier" xml:space="preserve"><value>Move it earlier</value></data>
+  <data name="BlockerEarlierHint" xml:space="preserve"><value>Put it first thing, at {0}, before the day fills up.</value></data>
+  <data name="MonitorPanel" xml:space="preserve"><value>Overvåking</value></data>
+  <data name="MonitorIdle" xml:space="preserve"><value>Ikke startet</value></data>
+  <data name="NextStepCardTitle" xml:space="preserve"><value>Det som gjenstår</value></data>
+  <data name="NextStepFold" xml:space="preserve"><value>Legg bort notatet</value></data>
+  <data name="NextStepUnfold" xml:space="preserve"><value>Hent notatet fram</value></data>
+  <data name="NextStepCollapse" xml:space="preserve"><value>Slå sammen listen</value></data>
+  <data name="NextStepExpand" xml:space="preserve"><value>Vis listen igjen</value></data>
+  <data name="SessionDismiss" xml:space="preserve"><value>Avvis</value></data>
+  <data name="SessionNextStepAdd" xml:space="preserve"><value>Legg til linjen</value></data>
+  <data name="SessionNextStepAddHint" xml:space="preserve"><value>enter legger til en til</value></data>
+  <data name="SessionNextStepRemove" xml:space="preserve"><value>Ta det av listen</value></data>
+  <data name="Shortcuts" xml:space="preserve"><value>Hurtigtaster</value></data>
+  <data name="ShortcutsIntro" xml:space="preserve"><value>Virker fra alle programmer. Trykk en kombinasjon for å binde den om; Escape avbryter, rettetast slår av.</value></data>
+  <data name="ShortcutsWindowOnlyIntro" xml:space="preserve"><value>Virker mens et DAYDRIVE-vindu har fokus. Å ta taster for hele skrivebordet er foreløpig bare mulig i Windows; i macOS og Wayland setter du dem i system- eller kompositorinnstillingene.</value></data>
+  <data name="ShortcutsReset" xml:space="preserve"><value>Tilbakestill til standard</value></data>
+  <data name="ShortcutResetOne" xml:space="preserve"><value>Tilbake til standard</value></data>
+  <data name="ShortcutRebind" xml:space="preserve"><value>Trykk for å binde om</value></data>
+  <data name="ShortcutPressKeys" xml:space="preserve"><value>Trykk tastene …</value></data>
+  <data name="ShortcutClash" xml:space="preserve"><value>En annen hurtigtast bruker denne kombinasjonen</value></data>
+  <data name="ShortcutRefused" xml:space="preserve"><value>Et annet program har disse tastene</value></data>
+  <data name="ShortcutOff" xml:space="preserve"><value>Av</value></data>
+  <data name="ShortcutToggleShell" xml:space="preserve"><value>Vis eller skjul planleggeren</value></data>
+  <data name="ShortcutToggleWidget" xml:space="preserve"><value>Vis eller skjul hurtigvinduet</value></data>
+  <data name="ShortcutToggleAssistant" xml:space="preserve"><value>Åpne assistenten</value></data>
+  <data name="ShortcutStartOrPauseSession" xml:space="preserve"><value>Start eller sett økten på pause</value></data>
+  <data name="ShortcutStopSession" xml:space="preserve"><value>Stopp økten</value></data>
+  <data name="ShortcutToggleDoNotDisturb" xml:space="preserve"><value>Slå «ikke forstyrr» av eller på</value></data>
+  <data name="CloudStateOk" xml:space="preserve"><value>Alt er synkronisert</value></data>
+  <data name="CloudStateOkHint" xml:space="preserve"><value>Sjekket {0}. Denne datamaskinen og skyen har de samme dataene.</value></data>
+  <data name="CloudStatePending" xml:space="preserve"><value>Noen endringer er ikke i skyen ennå</value></data>
+  <data name="CloudStatePendingAuto" xml:space="preserve"><value>De sendes av seg selv rundt {0}, eller trykk «Synkroniser nå».</value></data>
+  <data name="CloudStatePendingManual" xml:space="preserve"><value>Automatisk synkronisering er av, så trykk «Synkroniser nå» for å sende dem.</value></data>
+  <data name="CloudStateNever" xml:space="preserve"><value>Ingenting er synkronisert ennå</value></data>
+  <data name="CloudStateNeverHint" xml:space="preserve"><value>Trykk «Synkroniser nå» for å legge den første kopien i skyen.</value></data>
+  <data name="CloudStateSyncing" xml:space="preserve"><value>Synkroniserer…</value></data>
+  <data name="CloudStateSyncingHint" xml:space="preserve"><value>Sammenligner denne datamaskinen med kopien i skyen.</value></data>
+  <data name="CloudStateFailed" xml:space="preserve"><value>Den siste synkroniseringen mislyktes</value></data>
+  <data name="CloudStateRetryAuto" xml:space="preserve"><value>Neste forsøk er rundt {0}.</value></data>
+  <data name="CloudStateSetup" xml:space="preserve"><value>Oppsettet er ikke fullført</value></data>
+  <data name="CloudStateRestart" xml:space="preserve"><value>En kopi fra skyen er klar</value></data>
+  <data name="CloudRestartNow" xml:space="preserve"><value>Start DAYDRIVE på nytt</value></data>
+  <data name="CloudRestartFailed" xml:space="preserve"><value>DAYDRIVE klarte ikke å starte seg selv på nytt. Avslutt fra ikonet i systemstatusfeltet og åpne det igjen.</value></data>
+  <data name="CloudFactLastSync" xml:space="preserve"><value>Siste synkronisering</value></data>
+  <data name="CloudFactCloudCopy" xml:space="preserve"><value>I skyen</value></data>
+  <data name="CloudFactThisComputer" xml:space="preserve"><value>Denne datamaskinen</value></data>
+  <data name="CloudFactAutomatic" xml:space="preserve"><value>Automatisk</value></data>
+  <data name="CloudFactNever" xml:space="preserve"><value>aldri</value></data>
+  <data name="CloudFactRemoteUnknown" xml:space="preserve"><value>ikke sjekket ennå</value></data>
+  <data name="CloudFactLocalClean" xml:space="preserve"><value>ingen nye endringer</value></data>
+  <data name="CloudFactLocalChanged" xml:space="preserve"><value>har nye endringer</value></data>
+  <data name="CloudFactLocalChangedSince" xml:space="preserve"><value>nye endringer, den siste {0}</value></data>
+  <data name="CloudFactScheduleAuto" xml:space="preserve"><value>ved oppstart, hvert 15. minutt og ved avslutning · neste rundt {0}</value></data>
+  <data name="CloudFactScheduleManual" xml:space="preserve"><value>av, bare når du trykker «Synkroniser nå»</value></data>
+  <data name="CloudJournalTitle" xml:space="preserve"><value>Historikk</value></data>
+  <data name="CloudLogUploaded" xml:space="preserve"><value>Sendt til skyen · {0}</value></data>
+  <data name="CloudLogDownloaded" xml:space="preserve"><value>Lastet ned kopien fra skyen</value></data>
+  <data name="CloudLogDownloadedFrom" xml:space="preserve"><value>Lastet ned kopien fra «{0}»</value></data>
+  <data name="CloudLogApplied" xml:space="preserve"><value>Den nedlastede kopien er tatt i bruk</value></data>
+  <data name="CloudLogUpToDate" xml:space="preserve"><value>Sjekket, ingenting å synkronisere</value></data>
+  <data name="CloudLogConflict" xml:space="preserve"><value>Begge kopiene er endret – venter på valget ditt</value></data>
+  <data name="CloudLogConnected" xml:space="preserve"><value>Google-kontoen er koblet til</value></data>
+  <data name="CloudLogConnectedAs" xml:space="preserve"><value>Koblet til som {0}</value></data>
+  <data name="CloudLogDisconnected" xml:space="preserve"><value>Google-kontoen er koblet fra</value></data>
+  <data name="CloudLogFailed" xml:space="preserve"><value>Ikke synkronisert: {0}</value></data>
+  <data name="CloudTriggerManual" xml:space="preserve"><value>manuelt</value></data>
+  <data name="CloudTriggerAutomatic" xml:space="preserve"><value>automatisk</value></data>
+  <data name="CloudTriggerStartup" xml:space="preserve"><value>ved oppstart</value></data>
+  <data name="CloudTriggerExit" xml:space="preserve"><value>ved avslutning</value></data>
+  <data name="CloudJustNow" xml:space="preserve"><value>akkurat nå</value></data>
+  <data name="CloudTodayAt" xml:space="preserve"><value>i dag kl. {0}</value></data>
+  <data name="CloudYesterdayAt" xml:space="preserve"><value>i går kl. {0}</value></data>
+  <data name="CloudDateAt" xml:space="preserve"><value>{0} kl. {1}</value></data>
+  <data name="CloudIssueOff" xml:space="preserve"><value>Velg hvor det skal synkroniseres.</value></data>
+  <data name="CloudIssueFolderNotChosen" xml:space="preserve"><value>Velg mappen som skyappen din holder synkronisert.</value></data>
+  <data name="CloudIssueFolderMissing" xml:space="preserve"><value>Fant ikke synkroniseringsmappen. Stasjonen kan være frakoblet, eller mappen er flyttet.</value></data>
+  <data name="CloudIssueFolderNotWritable" xml:space="preserve"><value>DAYDRIVE kan ikke skrive til synkroniseringsmappen. Sjekk tillatelsene.</value></data>
+  <data name="CloudIssueGoogleClientIdMissing" xml:space="preserve"><value>Lim inn klient-ID-en fra Google Cloud Console.</value></data>
+  <data name="CloudIssueGoogleClientSecretMissing" xml:space="preserve"><value>Lim også inn klienthemmeligheten. Google krever den for klienter av typen «Datamaskinapp».</value></data>
+  <data name="CloudIssueGoogleNotConnected" xml:space="preserve"><value>Trykk «Koble til Google-konto» for å fullføre oppsettet.</value></data>
+  <data name="CloudIssueGoogleReconnect" xml:space="preserve"><value>Google godtar ikke lenger den lagrede påloggingen: tilgangen er trukket tilbake eller utløpt. Koble til kontoen på nytt.</value></data>
+  <data name="CloudIssueGoogleClientRejected" xml:space="preserve"><value>Google avviste klient-ID-en eller hemmeligheten. Sjekk at klienttypen er «Datamaskinapp» og at hemmeligheten hører til den.</value></data>
+  <data name="CloudIssueGoogleDriveApiDisabled" xml:space="preserve"><value>Google Drive API er ikke slått på i Google Cloud-prosjektet ditt. Slå den på, vent et minutt og prøv igjen.</value></data>
+  <data name="CloudIssueGoogleScopeMissing" xml:space="preserve"><value>Tilgang til Google Disk ble ikke tillatt ved pålogging. Koble til på nytt og huk av for Google Disk.</value></data>
+  <data name="CloudIssueSignInCancelled" xml:space="preserve"><value>Påloggingen ble avbrutt.</value></data>
+  <data name="CloudIssueSignInTimedOut" xml:space="preserve"><value>Påloggingen ble ikke fullført innen 5 minutter. Prøv igjen.</value></data>
+  <data name="CloudIssueOffline" xml:space="preserve"><value>Fikk ikke kontakt med skyen. Sjekk internettforbindelsen.</value></data>
+  <data name="CloudIssueInterrupted" xml:space="preserve"><value>Synkroniseringen ble avbrutt før den var ferdig.</value></data>
+  <data name="CloudIssueBusy" xml:space="preserve"><value>En synkronisering pågår allerede.</value></data>
+  <data name="CloudIssueNothingInCloud" xml:space="preserve"><value>Det er ingenting i skyen ennå.</value></data>
+  <data name="CloudIssueNotADatabase" xml:space="preserve"><value>Filen i skyen er ikke DAYDRIVE-data. Ingenting ble endret.</value></data>
+  <data name="CloudIssueUnexpected" xml:space="preserve"><value>Uventet feil: {0}</value></data>
+  <data name="CloudGoogleConnectedNoEmail" xml:space="preserve"><value>Google-kontoen er koblet til</value></data>
+  <data name="CloudGoogleSecretSaved" xml:space="preserve"><value>Klienthemmeligheten er lagret</value></data>
+  <data name="CloudTrayLabel" xml:space="preserve"><value>Skysynkronisering</value></data>
+  <data name="CloudTrayOk" xml:space="preserve"><value>synkronisert {0}</value></data>
+  <data name="CloudTrayPending" xml:space="preserve"><value>endringer venter</value></data>
+  <data name="CloudTraySyncing" xml:space="preserve"><value>synkroniserer…</value></data>
+  <data name="CloudTrayError" xml:space="preserve"><value>mislyktes</value></data>
+  <data name="CloudTrayAttention" xml:space="preserve"><value>trenger deg</value></data>
+  <data name="CloudStatusBarFailed" xml:space="preserve"><value>Skysynkroniseringen mislyktes: {0}</value></data>
+  <data name="LocalQuantNote" xml:space="preserve"><value>Alle modellene leveres i Q5_K_M: nesten full kvalitet i en størrelse en vanlig datamaskin klarer.</value></data>
+  <data name="LocalModelLegacyFiles" xml:space="preserve"><value>Nedlastinger i varianter som ikke tilbys lenger ({0}) tar opp {1}.</value></data>
+  <data name="LocalModelLegacyDelete" xml:space="preserve"><value>Slett</value></data>
+  <data name="LocalModelLegacyDeleted" xml:space="preserve"><value>Gamle modellfiler er slettet, {0} frigjort.</value></data>
+  <data name="LocalHardwareTitle" xml:space="preserve"><value>Denne datamaskinen</value></data>
+  <data name="LocalHardwareHint" xml:space="preserve"><value>Hva DAYDRIVE fant, og hvordan modellen derfor kjøres.</value></data>
+  <data name="LocalHardwareRescan" xml:space="preserve"><value>Sjekk på nytt</value></data>
+  <data name="LocalHardwareCpu" xml:space="preserve"><value>Prosessor</value></data>
+  <data name="LocalHardwareMemory" xml:space="preserve"><value>Minne</value></data>
+  <data name="LocalHardwareGpu" xml:space="preserve"><value>Skjermkort</value></data>
+  <data name="LocalHardwareCpuValue" xml:space="preserve"><value>{0} kjerner · {1} tråder</value></data>
+  <data name="LocalHardwareCpuHybrid" xml:space="preserve"><value>{0} ytelses- + {1} effektivitetskjerner · {2} tråder</value></data>
+  <data name="LocalHardwareCpuThreads" xml:space="preserve"><value>{0} tråder</value></data>
+  <data name="LocalHardwareMemoryValue" xml:space="preserve"><value>{0} · {1} ledig nå</value></data>
+  <data name="LocalHardwareGpuValue" xml:space="preserve"><value>{0} · {1}</value></data>
+  <data name="LocalHardwareGpuFree" xml:space="preserve"><value>{0} · {1}, {2} ledig</value></data>
+  <data name="LocalHardwareGpuIntegrated" xml:space="preserve"><value>bare innebygd grafikk ({0}); den brukes ikke til modellen</value></data>
+  <data name="LocalHardwareGpuNone" xml:space="preserve"><value>ikke noe eget skjermkort</value></data>
+  <data name="LocalHardwareUnknown" xml:space="preserve"><value>kunne ikke leses</value></data>
+  <data name="LocalHardwareDetecting" xml:space="preserve"><value>Sjekker datamaskinen…</value></data>
+  <data name="LocalTuneFullGpu" xml:space="preserve"><value>Hele modellen får plass på skjermkortet</value></data>
+  <data name="LocalTuneSplit" xml:space="preserve"><value>Omtrent {0} % av modellen kjøres på skjermkortet, resten på prosessoren</value></data>
+  <data name="LocalTuneCpu" xml:space="preserve"><value>Skjermkortet er for lite til å hjelpe, så modellen kjøres på prosessoren</value></data>
+  <data name="LocalTuneCpuNoCard" xml:space="preserve"><value>Modellen kjøres på prosessoren</value></data>
+  <data name="LocalTuneSummary" xml:space="preserve"><value>Kontekst {0} tokens · {1} tråder · svar på opptil {2} tokens · husker de siste {3} meldingene</value></data>
+  <data name="LocalTuneWarnMemory" xml:space="preserve"><value>Modellen trenger omtrent {0}, men bare omtrent {1} er ledig. Den vil gå sakte og kan gjøre andre programmer trege; det hjelper å lukke programmer eller velge en mindre modell.</value></data>
+  <data name="LocalTuneManual" xml:space="preserve"><value>Automatisk valg er av: dette er bare en anbefaling, og verdiene nedenfor brukes slik de er satt.</value></data>
+  <data name="LocalAutoTune" xml:space="preserve"><value>Velg innstillingene for denne datamaskinen automatisk</value></data>
+  <data name="LocalAutoTuneHint" xml:space="preserve"><value>Regnes ut på nytt når modellen eller datamaskinen endres. Slå av for å sette tallene selv.</value></data>
+  <data name="ParamsForLocal" xml:space="preserve"><value>Disse verdiene gjelder bare den lokale modellen; API-et har sine egne.</value></data>
+  <data name="ParamsForApi" xml:space="preserve"><value>Disse verdiene sendes bare med forespørsler til API-et; den lokale modellen har sine egne.</value></data>
+  <data name="ParamsAutoBudget" xml:space="preserve"><value>Svarlengde, historikk og ventetid er valgt for denne datamaskinen. Slå av det automatiske valget ovenfor for å endre dem.</value></data>
+  <data name="StepsCountOne" xml:space="preserve"><value>{0} steg</value></data>
+  <data name="StepsCountFew" xml:space="preserve"><value>{0} steg</value></data>
+  <data name="StepsCountMany" xml:space="preserve"><value>{0} steg</value></data>
+  <data name="ProjectProgress" xml:space="preserve"><value>{0} av {1} ferdig · {2} av {3}</value></data>
+  <data name="ProjectNoStepsYet" xml:space="preserve"><value>Ingen steg ennå. Skriv det første nedenfor, og gi det en varighet og en dag.</value></data>
+  <data name="ProjectNextChip" xml:space="preserve"><value>neste: {0}</value></data>
+  <data name="StepAfterDeadline" xml:space="preserve"><value>etter fristen</value></data>
+  <data name="NewStepPlaceholder" xml:space="preserve"><value>Nytt steg…</value></data>
+  <data name="StepNoDay" xml:space="preserve"><value>Uten dag</value></data>
+  <data name="StepSchedule" xml:space="preserve"><value>sett tidspunkt</value></data>
+  <data name="StepScheduleTooltip" xml:space="preserve"><value>Legg dette steget i kalenderen på et bestemt tidspunkt</value></data>
+  <data name="StepScheduleHeading" xml:space="preserve"><value>Tid til et prosjektsteg</value></data>
+  <data name="StepMoveDay" xml:space="preserve"><value>Flytt til en annen dag</value></data>
+  <data name="StepDurationTooltip" xml:space="preserve"><value>Hvor lang tid steget tar</value></data>
+  <data name="StepOpenEvent" xml:space="preserve"><value>Vis i dagen</value></data>
+  <data name="StepDelete" xml:space="preserve"><value>Slett steg</value></data>
+  <data name="StepRenameHint" xml:space="preserve"><value>Klikk for å gi nytt navn</value></data>
+  <data name="StepToggleDone" xml:space="preserve"><value>Merk som ferdig eller angre</value></data>
+  <data name="DayStepsTitle" xml:space="preserve"><value>Planlagt for denne dagen</value></data>
+  <data name="StepOverdueFrom" xml:space="preserve"><value>planlagt {0}</value></data>
+  <data name="StepAddTooltip" xml:space="preserve"><value>Legg til steg (Enter)</value></data>
+  <data name="ProjectShowFinished" xml:space="preserve"><value>Vis ferdige dager ({0})</value></data>
+  <data name="ProjectHideFinished" xml:space="preserve"><value>Skjul ferdige dager</value></data>
+  <data name="DayStepsTitleToday" xml:space="preserve"><value>Planlagt for i dag</value></data>
+  <data name="StepsTitle" xml:space="preserve"><value>Steg</value></data>
+  <data name="StepsFold" xml:space="preserve"><value>Skjul stegene</value></data>
+  <data name="StepsChipTooltip" xml:space="preserve"><value>Fullførte steg – trykk for å vise eller skjule dem</value></data>
+  <data name="BreakIntoSteps" xml:space="preserve"><value>Del opp i steg</value></data>
+  <data name="OpenProject" xml:space="preserve"><value>Åpne prosjektet</value></data>
+  <data name="SittingPlanned" xml:space="preserve"><value>steg: {0} av {1}</value></data>
+  <data name="SittingOverflow" xml:space="preserve"><value>steg: {0} – {1} lenger enn avtalen</value></data>
+  <data name="SittingSeriesHint" xml:space="preserve"><value>Én liste for alle gjentakelser av avtalen; hver dag krysses av for seg.</value></data>
+  <data name="SittingLeft" xml:space="preserve"><value>{0} igjen</value></data>
+  <data name="SittingNoStepsYet" xml:space="preserve"><value>Skriv ned hva denne tiden skal gå til. Kryss av stegene underveis – resultatet av avtalen føres av seg selv.</value></data>
+  <data name="SessionSittingHint" xml:space="preserve"><value>Kryss av i stegene nedenfor det du rakk – prosenten følger. Det som står uavkrysset, er det som gjenstår.</value></data>
+  <data name="CarryHeading" xml:space="preserve"><value>Fortsett med resten</value></data>
+  <data name="CarryToTime" xml:space="preserve"><value>Fortsett…</value></data>
+  <data name="CarryToTimeTooltip" xml:space="preserve"><value>Gi resten et nytt tidspunkt</value></data>
+  <data name="CarryToUnscheduled" xml:space="preserve"><value>Til ikke planlagt</value></data>
+  <data name="CarryToUnscheduledTooltip" xml:space="preserve"><value>Gjør resten til en oppgave som kan planlegges over dager</value></data>
+  <data name="StepsCarried" xml:space="preserve"><value>Resten er flyttet til det nye tidspunktet</value></data>
+  <data name="StepsCarriedToUnscheduled" xml:space="preserve"><value>Resten er nå en oppgave under «Ikke planlagt»</value></data>
+  <data name="StepsRemoved" xml:space="preserve"><value>Ingen steg igjen</value></data>
+  <data name="SittingAnsweredDone" xml:space="preserve"><value>Alle steg er fullført – avtalen er merket som ferdig</value></data>
+  <data name="SittingReopened" xml:space="preserve"><value>Et steg er åpent igjen – avtalen er delvis ferdig</value></data>
+  <data name="ProjectFinished" xml:space="preserve"><value>Alle steg merket som ferdige</value></data>
+  <data name="ConfirmDeleteProjectTask" xml:space="preserve"><value>Slette oppgaven med alle stegene? Avtaler satt opp for dem blir liggende i kalenderen.</value></data>
+  <data name="ConfirmDeleteEventSteps" xml:space="preserve"><value>Slette denne avtalen med stegene?</value></data>
+  <data name="ProjectCategoryTooltip" xml:space="preserve"><value>Prosjektets farge – den får også timene som er satt av til stegene</value></data>
+  <data name="WindowedShellHint" xml:space="preserve"><value>Skrivebordet styrer vindusplasseringen. DAYDRIVE viser panelene i ett vindu som kan endres i størrelse; innstillinger for skjermkant og widget er ikke tilgjengelige her.</value></data>
+  <data name="LocalHardwareGpuDetected" xml:space="preserve"><value>{0} · videominne er ikke tilgjengelig</value></data>
+  <data name="ThemeColorAccent" xml:space="preserve"><value>Aksent</value></data>
+  <data name="ThemeColorBackground" xml:space="preserve"><value>Vindusbakgrunn</value></data>
+  <data name="ThemeColorSurface" xml:space="preserve"><value>Paneler</value></data>
+  <data name="ThemeColorSurfaceAlt" xml:space="preserve"><value>Felt og kort</value></data>
+  <data name="ThemeColorText" xml:space="preserve"><value>Tekst</value></data>
+  <data name="ThemeColorMuted" xml:space="preserve"><value>Sekundær tekst</value></data>
+  <data name="ThemeColorStroke" xml:space="preserve"><value>Kanter</value></data>
+  <data name="ThemeColorSecondary" xml:space="preserve"><value>Andre aksent</value></data>
+  <data name="ThemeColorTertiary" xml:space="preserve"><value>Tredje aksent</value></data>
+  <data name="ThemeColorSelection" xml:space="preserve"><value>Utvalg</value></data>
+  <data name="ThemeColorSuccess" xml:space="preserve"><value>Suksess</value></data>
+  <data name="ThemeColorWarning" xml:space="preserve"><value>Advarsel</value></data>
+  <data name="ThemeColorDanger" xml:space="preserve"><value>Feil</value></data>
+  <data name="ThemeColorShadow" xml:space="preserve"><value>Skygger</value></data>
+  <data name="ThemeWindowRadius" xml:space="preserve"><value>Vinduer</value></data>
+  <data name="ThemeCardRadius" xml:space="preserve"><value>Kort</value></data>
+  <data name="ThemeItemRadius" xml:space="preserve"><value>Listeelementer</value></data>
+  <data name="ThemeControlRadius" xml:space="preserve"><value>Knapper og felt</value></data>
+  <data name="ThemeTextScale" xml:space="preserve"><value>Tekstskalering</value></data>
+  <data name="ThemeShadowStrength" xml:space="preserve"><value>Skyggestyrke</value></data>
+  <data name="ThemeDetails" xml:space="preserve"><value>Flere farger</value></data>
+  <data name="ThemeGeometry" xml:space="preserve"><value>Form og typografi</value></data>
+  <data name="ThemeColorReset" xml:space="preserve"><value>Automatisk farge</value></data>
+  <data name="ThemeColorInvalid" xml:space="preserve"><value>Skriv #RRGGBB eller #AARRGGBB.</value></data>
+  <data name="ImportTheme" xml:space="preserve"><value>Importer tema</value></data>
+  <data name="ExportTheme" xml:space="preserve"><value>Eksporter tema</value></data>
+  <data name="ResetAppearance" xml:space="preserve"><value>Tilbakestill alt utseende</value></data>
+  <data name="ThemeFileInvalid" xml:space="preserve"><value>Kunne ikke lese eller lagre temaet. Kontroller filformat og mappetilgang.</value></data>
+  <data name="ThemeImported" xml:space="preserve"><value>Tema importert.</value></data>
+  <data name="ThemeExported" xml:space="preserve"><value>Tema eksportert.</value></data>
+</root>

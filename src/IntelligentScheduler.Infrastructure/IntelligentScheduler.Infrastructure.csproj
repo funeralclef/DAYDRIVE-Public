@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <InternalsVisibleTo Include="IntelligentScheduler.Infrastructure.Tests" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="../IntelligentScheduler.Domain/IntelligentScheduler.Domain.csproj" />
+    <ProjectReference Include="../IntelligentScheduler.Application/IntelligentScheduler.Application.csproj" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" />
+    <PackageReference Include="ModelContextProtocol.Core" />
+    <PackageReference Include="PdfPig" />
+    <PackageReference Include="SkiaSharp" />
+    <PackageReference Include="SQLitePCLRaw.bundle_e_sqlite3" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,19 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:icons="using:IntelligentScheduler.Desktop.Controls"
+        xmlns:vm="using:IntelligentScheduler.Desktop.ViewModels"
+        xmlns:local="using:IntelligentScheduler.Desktop"
+        xmlns:primitives="using:Avalonia.Controls.Primitives"
+        x:Class="IntelligentScheduler.Desktop.MainWindow"
+        Title="{DynamicResource L.AppName}" Width="450" Height="748" MinWidth="450" MinHeight="620"
+        CanResize="False" ShowInTaskbar="False" ShowActivated="False" Topmost="True"
+        WindowDecorations="None" Background="Transparent"
+        TransparencyLevelHint="Transparent,AcrylicBlur,Mica,Blur"
+        ExtendClientAreaToDecorationsHint="True"
+        Classes.reduceMotion="{Binding ReduceMotion}"
+        Classes.motion="{Binding !ReduceMotion}"
+        Classes.glass="{Binding IsChatSheetOpen}">
+  <Border Background="{StaticResource ShellInputSurface}" Padding="0,0,6,0">
+    <local:PlannerView x:Name="View" Width="444" HorizontalAlignment="Left" />
+  </Border>
+</Window>

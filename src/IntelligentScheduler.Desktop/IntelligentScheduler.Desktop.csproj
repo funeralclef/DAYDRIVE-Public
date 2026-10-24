@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <AssemblyName>DAYDRIVE</AssemblyName>
+    <Product>DAYDRIVE</Product>
+    <Version>0.1.2</Version>
+    <AvaloniaUseCompiledBindingsByDefault>false</AvaloniaUseCompiledBindingsByDefault>
+    <ApplicationIcon />
+    <!-- The Linux layer host implements Avalonia's platform interfaces. Keep Avalonia pinned
+         in Directory.Packages.props and run native WM checks when changing that version. -->
+    <AvaloniaAccessUnstablePrivateApis>true</AvaloniaAccessUnstablePrivateApis>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+  <ItemGroup>
+    <InternalsVisibleTo Include="IntelligentScheduler.Desktop.Tests" />
+    <ProjectReference Include="../IntelligentScheduler.Domain/IntelligentScheduler.Domain.csproj" />
+    <ProjectReference Include="../IntelligentScheduler.Application/IntelligentScheduler.Application.csproj" />
+    <ProjectReference Include="../IntelligentScheduler.Infrastructure/IntelligentScheduler.Infrastructure.csproj" />
+    <PackageReference Include="Avalonia.Desktop" />
+    <PackageReference Include="Avalonia.Headless" />
+    <PackageReference Include="Avalonia.Themes.Fluent" />
+    <PackageReference Include="Avalonia.Fonts.Inter" />
+    <PackageReference Include="CommunityToolkit.Mvvm" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" />
+    <PackageReference Include="SkiaSharp" />
+  </ItemGroup>
+  <ItemGroup>
+    <AvaloniaResource Include="Assets\Fonts\**\*" />
+    <None Include="Assets\Fonts\**\OFL.txt" CopyToPublishDirectory="PreserveNewest" />
+    <AvaloniaResource Include="Assets\Icons\Phosphor\Phosphor.ttf" />
+    <None Include="Assets\Icons\LucideAnimated\LICENSE.txt" CopyToPublishDirectory="PreserveNewest" />
+    <None Include="Assets\Icons\LucideAnimated\SOURCE.md" CopyToPublishDirectory="PreserveNewest" />
+    <None Include="Assets\Icons\Phosphor\LICENSE" CopyToPublishDirectory="PreserveNewest" />
+    <None Include="../../README.md" Link="README.md" CopyToPublishDirectory="PreserveNewest" />
+    <None Include="../../docs/USER-MANUAL.md" Link="docs/USER-MANUAL.md" CopyToPublishDirectory="PreserveNewest" />
+    <None Include="../../docs/LINUX-WINDOW-MANAGERS.md" Link="docs/LINUX-WINDOW-MANAGERS.md" CopyToPublishDirectory="PreserveNewest" />
+    <None Include="../../THIRD-PARTY-NOTICES.md" Link="THIRD-PARTY-NOTICES.md" CopyToPublishDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>

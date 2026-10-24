@@ -1,0 +1,1280 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:icons="using:IntelligentScheduler.Desktop.Controls"
+        xmlns:vm="using:IntelligentScheduler.Desktop.ViewModels"
+        xmlns:local="using:IntelligentScheduler.Desktop"
+        x:Class="IntelligentScheduler.Desktop.SettingsView" Background="Transparent"
+        Classes.reduceMotion="{Binding ReduceMotion}"
+        Classes.motion="{Binding !ReduceMotion}">
+  <UserControl.Resources>
+    <DataTemplate x:Key="ThemeColorEditorTemplate" DataType="vm:ThemeColorEditorViewModel">
+      <StackPanel Spacing="6" Margin="0,3">
+        <Grid ColumnDefinitions="32,*,104,28" ColumnSpacing="7">
+          <Button Classes="quiet" Width="32" Height="32" Padding="0" Command="{Binding ToggleCommand}"
+                  AutomationProperties.Name="{Binding Label}">
+            <Border Width="28" Height="28" CornerRadius="{DynamicResource ShellControlRadius}" Background="{Binding Brush}"
+                    BorderBrush="{DynamicResource ShellStroke}" BorderThickness="1" />
+          </Button>
+          <TextBlock Grid.Column="1" Text="{Binding Label}" Classes="label" TextWrapping="Wrap" VerticalAlignment="Center" />
+          <TextBox Grid.Column="2" Classes="colorHexInput" Classes.invalid="{Binding IsInvalid}" MaxLength="9"
+                   Text="{Binding Value, Mode=TwoWay}" PlaceholderText="{Binding AutomaticValue}"
+                   AutomationProperties.Name="{Binding Label}" VerticalContentAlignment="Center" />
+          <Button Grid.Column="3" Classes="icon quiet mini" Command="{Binding ResetCommand}"
+                  ToolTip.Tip="{DynamicResource L.ThemeColorReset}" AutomationProperties.Name="{DynamicResource L.ThemeColorReset}">
+            <icons:AnimatedIcon Data="{StaticResource IconRefresh}" Width="12" Height="12" />
+          </Button>
+        </Grid>
+        <TextBlock Text="{DynamicResource L.ThemeColorInvalid}" IsVisible="{Binding IsInvalid}"
+                   Foreground="{DynamicResource ShellDanger}" FontSize="{DynamicResource MarelianFont10}" TextWrapping="Wrap" />
+        <Border Classes="themeColorSpectrumFrame" IsVisible="{Binding IsExpanded}">
+          <icons:ThemeColorPicker SelectedColor="{Binding SelectedColor, Mode=TwoWay}" />
+        </Border>
+      </StackPanel>
+    </DataTemplate>
+  </UserControl.Resources>
+  <Grid ColumnDefinitions="20,424">
+    <StackPanel Grid.Column="0" VerticalAlignment="Center" Spacing="8" ZIndex="5"
+                Background="{StaticResource ShellInputSurface}">
+      <Button Classes="petalTab settingsSectionTab" Classes.active="{Binding IsSettingsGeneral}"
+              Command="{Binding SelectSettingsSectionCommand}" CommandParameter="general"
+              ToolTip.Tip="{DynamicResource L.General}">
+        <icons:AnimatedIcon Data="{StaticResource IconTune}" Motion="Sliders" Width="14" Height="14" />
+      </Button>
+      <Button Classes="petalTab settingsSectionTab" Classes.active="{Binding IsSettingsAppearance}"
+              Command="{Binding SelectSettingsSectionCommand}" CommandParameter="appearance"
+              ToolTip.Tip="{DynamicResource L.Appearance}">
+        <icons:AnimatedIcon Data="{StaticResource IconSparkle}" Motion="Palette" Width="14" Height="14" />
+      </Button>
+      <Button Classes="petalTab settingsSectionTab" Classes.active="{Binding IsSettingsAssistant}"
+              Command="{Binding SelectSettingsSectionCommand}" CommandParameter="ai"
+              ToolTip.Tip="{DynamicResource L.SettingsTabAssistant}">
+        <icons:AnimatedIcon Data="{StaticResource IconChat}" Motion="Bot" Width="14" Height="14" />
+      </Button>
+      <Button Classes="petalTab settingsSectionTab" Classes.active="{Binding IsSettingsData}"
+              Command="{Binding SelectSettingsSectionCommand}" CommandParameter="data"
+              ToolTip.Tip="{DynamicResource L.SettingsTabData}">
+        <icons:AnimatedIcon Data="{StaticResource IconMemory}" Motion="Brain" Width="14" Height="14" />
+      </Button>
+      <!-- A newer release puts a quiet dot here and nowhere else. -->
+      <Panel>
+        <Button Classes="petalTab settingsSectionTab" Classes.active="{Binding IsSettingsAbout}"
+                Command="{Binding SelectSettingsSectionCommand}" CommandParameter="about"
+                ToolTip.Tip="{DynamicResource L.SettingsTabAbout}">
+          <icons:AnimatedIcon Data="?" Motion="Help" Width="14" Height="14" />
+        </Button>
+        <Border Classes="updateDot" IsVisible="{Binding HasUpdate}" />
+      </Panel>
+    </StackPanel>
+
+    <Border Grid.Column="1" Background="{DynamicResource ShellBackground}"
+            BorderBrush="{DynamicResource ShellStroke}"
+            BorderThickness="1"
+            CornerRadius="{DynamicResource ShellWindowRadius}"
+            ClipToBounds="True">
+      <Grid RowDefinitions="Auto,*">
+      <Grid Margin="18,15,14,11" ColumnDefinitions="*,Auto" Panel.ZIndex="2">
+        <StackPanel Spacing="2">
+          <TextBlock Text="{DynamicResource L.SettingsTitle}" Classes="title" />
+          <TextBlock Text="{DynamicResource L.SettingsSubtitle}" Classes="muted" />
+          <TextBlock Text="{Binding SettingsSaveState}" Foreground="{DynamicResource ShellAccent}" FontSize="{DynamicResource MarelianFont11}" Margin="0,3,0,0" />
+        </StackPanel>
+        <Button Grid.Column="1" Classes="icon quiet closeGlyph" Command="{Binding CloseSettingsCommand}">
+          <icons:AnimatedIcon Data="{StaticResource IconClose}" Width="18" />
+        </Button>
+      </Grid>
+
+      <ScrollViewer Grid.Row="1" Classes="modernScroll" Margin="15,0,5,15" BringIntoViewOnFocusChange="False" ClipToBounds="True">
+        <StackPanel Classes="settingsPanel" Spacing="11">
+
+        <Border Classes="settingCard" IsVisible="{Binding IsSettingsGeneral}"><StackPanel Spacing="9">
+          <StackPanel Classes="cardHeading">
+            <TextBlock Text="{DynamicResource L.General}" Classes="section" />
+            <TextBlock Text="{DynamicResource L.GeneralIntro}" Classes="hint" TextWrapping="Wrap" />
+            <TextBlock Text="{DynamicResource L.WindowedShellHint}" Classes="hint" TextWrapping="Wrap" IsVisible="{Binding IsWindowedShell}" />
+          </StackPanel>
+          <StackPanel Spacing="4">
+            <TextBlock Text="{DynamicResource L.Language}" Classes="label" />
+            <ComboBox ItemsSource="{Binding LanguageOptions}" SelectedItem="{Binding SelectedLanguage}" />
+          </StackPanel>
+          <StackPanel Classes="checkList">
+            <CheckBox IsChecked="{Binding AutostartEnabled}" IsEnabled="{Binding IsAutostartSupported}" Content="{DynamicResource L.LaunchAtStartup}" />
+            <CheckBox IsChecked="{Binding StartHidden}" IsEnabled="{Binding IsEdgeShell}" Content="{DynamicResource L.StartHidden}" />
+            <CheckBox IsChecked="{Binding KeepOnTop}" IsEnabled="{Binding IsEdgeShell}" Content="{DynamicResource L.KeepOnTop}" />
+            <CheckBox IsChecked="{Binding Use24HourClock}" Content="{DynamicResource L.Use24HourClock}" />
+          </StackPanel>
+        </StackPanel></Border>
+
+        <!-- Shortcuts. A card of its own rather than four more lines under "general": these are
+             the only settings on the page that are pressed rather than chosen, and a row is a
+             sentence and a key that answers back when you press it.
+
+             The defaults are all Ctrl+Alt, which is the one family Windows, macOS, niri and
+             Hyprland all leave alone — see ShellShortcuts. What they cannot know is what else
+             is installed on this machine, so a combination the system refuses says so on its
+             own row, where it can be changed. -->
+        <Border Classes="settingCard" IsVisible="{Binding IsSettingsGeneral}"><StackPanel Spacing="9">
+          <StackPanel Classes="cardHeading">
+            <TextBlock Text="{DynamicResource L.Shortcuts}" Classes="section" />
+            <TextBlock Text="{Binding ShortcutsHint}" Classes="hint" TextWrapping="Wrap" />
+          </StackPanel>
+          <ItemsControl ItemsSource="{Binding Shortcuts}">
+            <ItemsControl.ItemTemplate>
+              <DataTemplate DataType="vm:ShortcutBindingViewModel">
+                <Grid Classes="shortcutRow" ColumnDefinitions="*,Auto,Auto" ColumnSpacing="8">
+                  <StackPanel Spacing="1" VerticalAlignment="Center">
+                    <TextBlock Text="{Binding Label}" TextWrapping="Wrap" />
+                    <!-- Why this row is not going to work, said only when it is not. -->
+                    <TextBlock Text="{DynamicResource L.ShortcutClash}" Classes="shortcutProblem"
+                               IsVisible="{Binding HasClash}" />
+                    <TextBlock Text="{DynamicResource L.ShortcutRefused}" Classes="shortcutProblem"
+                               IsVisible="{Binding IsRefused}" />
+                  </StackPanel>
+                  <!-- The key itself is the button: press it, then press what you want. -->
+                  <Button Grid.Column="1" Classes="shortcutKey" Classes.listening="{Binding IsCapturing}"
+                          Classes.wrong="{Binding HasProblem}"
+                          Command="{Binding BeginCaptureCommand}"
+                          ToolTip.Tip="{DynamicResource L.ShortcutRebind}">
+                    <Panel>
+                      <TextBlock Text="{Binding GestureText}" IsVisible="{Binding !IsCapturing}" />
+                      <TextBlock Text="{DynamicResource L.ShortcutPressKeys}" IsVisible="{Binding IsCapturing}" />
+                    </Panel>
+                  </Button>
+                  <Button Grid.Column="2" Classes="icon quiet" Command="{Binding ResetCommand}"
+                          ToolTip.Tip="{DynamicResource L.ShortcutResetOne}">
+                    <icons:AnimatedIcon Data="{StaticResource IconRefresh}" Motion="Refresh" Width="13" Height="13" />
+                  </Button>
+                </Grid>
+              </DataTemplate>
+            </ItemsControl.ItemTemplate>
+          </ItemsControl>
+          <Button Classes="secondary" Command="{Binding ResetShortcutsCommand}"
+                  Content="{DynamicResource L.ShortcutsReset}" HorizontalAlignment="Left" />
+        </StackPanel></Border>
+
+        <Border Classes="settingCard" IsVisible="{Binding IsSettingsAppearance}"><StackPanel Spacing="10">
+          <StackPanel Classes="cardHeading">
+            <TextBlock Text="{DynamicResource L.Appearance}" Classes="section" />
+            <TextBlock Text="{DynamicResource L.AppearanceIntro}" Classes="hint" TextWrapping="Wrap" />
+          </StackPanel>
+          <Border Classes="themePreview">
+            <Grid ColumnDefinitions="Auto,*" ColumnSpacing="11">
+              <Border Width="46" Height="46" CornerRadius="{DynamicResource ShellControlRadius}" Background="{DynamicResource ShellSurfaceAlt}"
+                      BorderBrush="{DynamicResource ShellStroke}" BorderThickness="1">
+                <Border Width="20" Height="20" CornerRadius="10" Background="{DynamicResource ShellAccent}"
+                        HorizontalAlignment="Center" VerticalAlignment="Center">
+                  <icons:AnimatedIcon Data="{StaticResource IconSparkle}" Motion="Palette" Width="11" Height="11"
+                                      Classes="onAccent" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                </Border>
+              </Border>
+              <StackPanel Grid.Column="1" Spacing="3" VerticalAlignment="Center">
+                <TextBlock Text="{DynamicResource L.ThemePreviewTitle}" FontWeight="SemiBold" />
+                <TextBlock Text="{DynamicResource L.ThemePreviewHint}" Classes="hint" TextWrapping="Wrap" />
+              </StackPanel>
+            </Grid>
+          </Border>
+          <StackPanel Spacing="5">
+            <TextBlock Text="{DynamicResource L.ThemeMode}" Classes="label" />
+            <Border Classes="themeModeSelector">
+              <Grid ColumnDefinitions="*,*" ColumnSpacing="3">
+                <Button Grid.Column="0" Classes="themeModeChoice" Classes.active="{Binding IsDarkThemeMode}"
+                        Command="{Binding SelectThemeModeCommand}" CommandParameter="Dark">
+                  <StackPanel Orientation="Horizontal" Spacing="6" HorizontalAlignment="Center">
+                    <icons:AnimatedIcon Motion="Moon" Width="13" Height="13" />
+                    <TextBlock Text="{DynamicResource L.ThemeModeDark}" />
+                  </StackPanel>
+                </Button>
+                <Button Grid.Column="1" Classes="themeModeChoice" Classes.active="{Binding IsLightThemeMode}"
+                        Command="{Binding SelectThemeModeCommand}" CommandParameter="Light">
+                  <StackPanel Orientation="Horizontal" Spacing="6" HorizontalAlignment="Center">
+                    <icons:AnimatedIcon Motion="Sun" Width="13" Height="13" />
+                    <TextBlock Text="{DynamicResource L.ThemeModeLight}" />
+                  </StackPanel>
+                </Button>
+              </Grid>
+            </Border>
+          </StackPanel>
+          <StackPanel Spacing="4">
+            <TextBlock Text="{DynamicResource L.ColorSource}" Classes="label" />
+            <ComboBox ItemsSource="{Binding ColorSourceOptions}" SelectedItem="{Binding SelectedColorSourceOption}" />
+          </StackPanel>
+          <Border Classes="colorCustomization">
+            <StackPanel Spacing="8">
+              <TextBlock Text="{DynamicResource L.ColorCustomizationHint}" Classes="hint" TextWrapping="Wrap" />
+              <ItemsControl ItemsSource="{Binding PrimaryThemeColors}" ItemTemplate="{StaticResource ThemeColorEditorTemplate}" />
+              <Expander Name="ThemeDetailsExpander" Classes="appearanceDetails" Header="{DynamicResource L.ThemeDetails}" HorizontalAlignment="Stretch">
+                <ItemsControl ItemsSource="{Binding DetailThemeColors}" ItemTemplate="{StaticResource ThemeColorEditorTemplate}" />
+              </Expander>
+            </StackPanel>
+          </Border>
+          <Expander Name="ThemeGeometryExpander" Classes="appearanceDetails" Header="{DynamicResource L.ThemeGeometry}" HorizontalAlignment="Stretch">
+            <StackPanel Spacing="10" Margin="0,6,0,0">
+                <StackPanel Spacing="3">
+                  <Grid ColumnDefinitions="*,Auto" ColumnSpacing="8">
+                    <TextBlock Text="{DynamicResource L.ThemeWindowRadius}" Classes="label" />
+                    <TextBlock Grid.Column="1" Text="{Binding ThemeWindowRadius, StringFormat={}{0:0}}" Classes="muted" />
+                  </Grid>
+                  <Slider Minimum="0" Maximum="40" TickFrequency="1" IsSnapToTickEnabled="True" Value="{Binding ThemeWindowRadius, Mode=TwoWay}" />
+                </StackPanel>
+                <StackPanel Spacing="3">
+                  <Grid ColumnDefinitions="*,Auto" ColumnSpacing="8">
+                    <TextBlock Text="{DynamicResource L.ThemeCardRadius}" Classes="label" />
+                    <TextBlock Grid.Column="1" Text="{Binding ThemeCardRadius, StringFormat={}{0:0}}" Classes="muted" />
+                  </Grid>
+                  <Slider Minimum="0" Maximum="24" TickFrequency="1" IsSnapToTickEnabled="True" Value="{Binding ThemeCardRadius, Mode=TwoWay}" />
+                </StackPanel>
+                <StackPanel Spacing="3">
+                  <Grid ColumnDefinitions="*,Auto" ColumnSpacing="8">
+                    <TextBlock Text="{DynamicResource L.ThemeItemRadius}" Classes="label" />
+                    <TextBlock Grid.Column="1" Text="{Binding ThemeItemRadius, StringFormat={}{0:0}}" Classes="muted" />
+                  </Grid>
+                  <Slider Minimum="0" Maximum="20" TickFrequency="1" IsSnapToTickEnabled="True" Value="{Binding ThemeItemRadius, Mode=TwoWay}" />
+                </StackPanel>
+                <StackPanel Spacing="3">
+                  <Grid ColumnDefinitions="*,Auto" ColumnSpacing="8">
+                    <TextBlock Text="{DynamicResource L.ThemeControlRadius}" Classes="label" />
+                    <TextBlock Grid.Column="1" Text="{Binding ThemeControlRadius, StringFormat={}{0:0}}" Classes="muted" />
+                  </Grid>
+                  <Slider Minimum="0" Maximum="20" TickFrequency="1" IsSnapToTickEnabled="True" Value="{Binding ThemeControlRadius, Mode=TwoWay}" />
+                </StackPanel>
+                <StackPanel Spacing="3">
+                  <Grid ColumnDefinitions="*,Auto" ColumnSpacing="8">
+                    <TextBlock Text="{DynamicResource L.ThemeTextScale}" Classes="label" />
+                    <TextBlock Grid.Column="1" Text="{Binding ThemeTextScale, StringFormat={}{0:0\%}}" Classes="muted" />
+                  </Grid>
+                  <Slider Minimum="80" Maximum="125" TickFrequency="1" IsSnapToTickEnabled="True" Value="{Binding ThemeTextScale, Mode=TwoWay}" />
+                </StackPanel>
+                <StackPanel Spacing="3">
+                  <Grid ColumnDefinitions="*,Auto" ColumnSpacing="8">
+                    <TextBlock Text="{DynamicResource L.ThemeShadowStrength}" Classes="label" />
+                    <TextBlock Grid.Column="1" Text="{Binding ThemeShadowStrength, StringFormat={}{0:0\%}}" Classes="muted" />
+                  </Grid>
+                  <Slider Minimum="0" Maximum="200" TickFrequency="1" IsSnapToTickEnabled="True" Value="{Binding ThemeShadowStrength, Mode=TwoWay}" />
+                </StackPanel>
+            </StackPanel>
+          </Expander>
+          <Grid ColumnDefinitions="*,*" RowDefinitions="Auto,Auto" ColumnSpacing="8" RowSpacing="8">
+            <Button Classes="secondary themeAction" Command="{Binding ImportThemeCommand}" Content="{DynamicResource L.ImportTheme}" />
+            <Button Grid.Column="1" Classes="secondary themeAction" Command="{Binding ExportThemeCommand}" Content="{DynamicResource L.ExportTheme}" />
+            <Button Grid.Row="1" Classes="secondary themeAction" Command="{Binding ResetThemeColorsCommand}"
+                    Content="{DynamicResource L.ResetThemeColors}" />
+            <Button Grid.Row="1" Grid.Column="1" Classes="secondary themeAction" Command="{Binding ResetAppearanceCommand}"
+                    Content="{DynamicResource L.ResetAppearance}" />
+          </Grid>
+          <TextBlock Text="{Binding AppearanceStatus}" Classes="hint" TextWrapping="Wrap" />
+          <StackPanel Spacing="4">
+            <TextBlock Text="{DynamicResource L.VisualPalette}" Classes="label" />
+            <ComboBox ItemsSource="{Binding VisualPaletteOptions}" SelectedItem="{Binding SelectedVisualPaletteOption}" />
+            <TextBlock Text="{DynamicResource L.VisualPaletteHint}" Classes="hint" />
+          </StackPanel>
+          <StackPanel Spacing="6">
+            <TextBlock Text="{DynamicResource L.InterfaceFont}" Classes="label" />
+            <Grid ColumnDefinitions="*,38" ColumnSpacing="7">
+              <ComboBox ItemsSource="{Binding FontOptions}" SelectedItem="{Binding SelectedFontOption}" />
+              <Button Grid.Column="1" Classes="icon secondary" Command="{Binding PickCustomFontCommand}"
+                      ToolTip.Tip="{DynamicResource L.AddCustomFont}">
+                <icons:AnimatedIcon Data="{StaticResource IconPlus}" Motion="Plus" Width="14" Height="14" />
+              </Button>
+            </Grid>
+            <Border Classes="fontPreview">
+              <TextBlock Text="{DynamicResource L.FontPreview}" FontSize="{DynamicResource MarelianFont15}" FontWeight="Medium"
+                         TextWrapping="Wrap" />
+            </Border>
+            <TextBlock Text="{DynamicResource L.InterfaceFontHint}" Classes="hint" />
+          </StackPanel>
+          <!-- The mascot follows the theme by default, so this whole group is one checkbox
+               until somebody wants it to be something else. The creature itself is the preview:
+               it is the only place in the settings where the colour is seen on the thing it
+               will actually paint. -->
+          <StackPanel Spacing="6">
+            <TextBlock Text="{DynamicResource L.MascotColor}" Classes="label" />
+            <Border Classes="settingGroup">
+              <StackPanel Spacing="9">
+                <!-- The creature is optional. Everything below is about what colour it is, so
+                     none of it has anything to say once there is no creature. -->
+                <CheckBox IsChecked="{Binding ShowMascot}" Content="{DynamicResource L.MascotShow}" />
+                <Grid ColumnDefinitions="Auto,*" ColumnSpacing="11" IsVisible="{Binding ShowMascot}">
+                  <Border Width="62" Height="62" CornerRadius="{DynamicResource ShellCardRadius}"
+                          Background="{DynamicResource ShellBackground}"
+                          BorderBrush="{DynamicResource ShellStroke}" BorderThickness="1">
+                    <icons:MascotView Width="42" Height="42" Mood="{Binding PeekMascotMood}"
+                                      Accent="{DynamicResource ShellAccent}"
+                                      AccentOverride="{Binding MascotAccentBrush}"
+                                      IsAnimated="{Binding !ReduceMotion}" />
+                  </Border>
+                  <StackPanel Grid.Column="1" Spacing="7" VerticalAlignment="Center">
+                    <CheckBox IsChecked="{Binding UseThemeMascotColor}"
+                              Content="{DynamicResource L.MascotColorDynamic}" />
+                    <Button Classes="themeColorButton" Classes.active="{Binding IsMascotColorPickerOpen}"
+                            Command="{Binding ToggleMascotColorPickerCommand}"
+                            IsVisible="{Binding !UseThemeMascotColor}">
+                      <Grid ColumnDefinitions="26,*,Auto" ColumnSpacing="8">
+                        <Border Width="26" Height="26" CornerRadius="{DynamicResource ShellControlRadius}"
+                                Background="{Binding MascotColorBrush}"
+                                BorderBrush="{DynamicResource ShellStroke}" BorderThickness="1" />
+                        <TextBlock Grid.Column="1" Text="{Binding MascotColor}" Classes="colorHex"
+                                   VerticalAlignment="Center" />
+                        <icons:AnimatedIcon Grid.Column="2" Data="{StaticResource IconChevronDown}"
+                                            Width="12" Classes="muted" />
+                      </Grid>
+                    </Button>
+                  </StackPanel>
+                </Grid>
+                <Border Classes="themeColorEditor" IsVisible="{Binding IsMascotColorPickerOpen}">
+                  <StackPanel Spacing="10">
+                    <Grid ColumnDefinitions="34,*,94,28" ColumnSpacing="8">
+                      <Border Width="34" Height="34" CornerRadius="{DynamicResource ShellControlRadius}"
+                              Background="{Binding MascotColorBrush}"
+                              BorderBrush="{DynamicResource ShellStroke}" BorderThickness="1" />
+                      <StackPanel Grid.Column="1" VerticalAlignment="Center" Spacing="1">
+                        <TextBlock Text="{DynamicResource L.MascotColor}" FontWeight="SemiBold" />
+                        <TextBlock Text="{DynamicResource L.ColorPickerHint}" Classes="hint" FontSize="{DynamicResource MarelianFont9}" />
+                      </StackPanel>
+                      <TextBox Grid.Column="2" Classes="colorHexInput" Text="{Binding MascotColor, Mode=TwoWay}"
+                               VerticalContentAlignment="Center" />
+                      <Button Grid.Column="3" Classes="icon quiet mini closeGlyph"
+                              Command="{Binding ToggleMascotColorPickerCommand}">
+                        <icons:AnimatedIcon Data="{StaticResource IconClose}" Motion="Close" Width="12" Height="12" />
+                      </Button>
+                    </Grid>
+                    <Border Classes="themeColorSpectrumFrame">
+                      <icons:ThemeColorPicker SelectedColor="{Binding MascotColorValue, Mode=TwoWay}" />
+                    </Border>
+                  </StackPanel>
+                </Border>
+                <TextBlock Text="{DynamicResource L.MascotColorHint}" Classes="hint" TextWrapping="Wrap" />
+              </StackPanel>
+            </Border>
+          </StackPanel>
+          <Border Classes="cardRule" />
+          <CheckBox IsChecked="{Binding EnableTransparency}" Content="{DynamicResource L.Transparency}" />
+          <StackPanel Spacing="5" IsEnabled="{Binding EnableTransparency}">
+            <Grid ColumnDefinitions="*,Auto">
+              <TextBlock Text="{DynamicResource L.TransparencyIntensity}" Classes="label" VerticalAlignment="Center" />
+              <TextBlock Grid.Column="1" Text="{Binding TransparencyIntensityText}" Foreground="{DynamicResource ShellAccent}" FontSize="{DynamicResource MarelianFont11}" />
+            </Grid>
+            <Slider Minimum="0" Maximum="80" TickFrequency="5" IsSnapToTickEnabled="True"
+                    Value="{Binding TransparencyIntensity}" />
+          </StackPanel>
+          <CheckBox IsChecked="{Binding ReduceMotion}" Content="{DynamicResource L.ReduceMotion}" />
+        </StackPanel></Border>
+
+        <Border Classes="settingCard" IsVisible="{Binding IsSettingsGeneral}"><StackPanel Spacing="9">
+          <StackPanel Classes="cardHeading">
+            <TextBlock Text="{DynamicResource L.Behavior}" Classes="section" />
+            <TextBlock Text="{DynamicResource L.BehaviorIntro}" Classes="hint" TextWrapping="Wrap" />
+          </StackPanel>
+          <CheckBox IsChecked="{Binding PinOpen}" IsEnabled="{Binding IsEdgeShell}" Content="{DynamicResource L.PinOpen}" />
+          <!-- The widget's own answer to "how long is long enough?", and the answer that says
+               the question does not apply. The delay is switched off rather than hidden while
+               nothing waits on it: what it is set to is still worth seeing, because turning the
+               hold back off returns the widget to exactly that. -->
+          <CheckBox IsChecked="{Binding WidgetKeepOpen}" IsEnabled="{Binding IsEdgeShell}" Content="{DynamicResource L.WidgetKeepOpen}" />
+          <TextBlock Text="{DynamicResource L.WidgetKeepOpenHint}" Classes="hint" TextWrapping="Wrap" />
+          <StackPanel Spacing="5" IsEnabled="{Binding !WidgetKeepOpen}">
+            <Grid ColumnDefinitions="*,Auto">
+              <TextBlock Text="{DynamicResource L.WidgetHideDelay}" Classes="label" VerticalAlignment="Center" />
+              <TextBlock Grid.Column="1" Text="{Binding WidgetHideDelayText}"
+                         Foreground="{DynamicResource ShellAccent}" FontSize="{DynamicResource MarelianFont11}" />
+            </Grid>
+            <Slider IsEnabled="{Binding IsEdgeShell}" Minimum="400" Maximum="6000" TickFrequency="100" IsSnapToTickEnabled="True"
+                    Value="{Binding WidgetHideDelayMs}" />
+            <TextBlock Text="{DynamicResource L.WidgetHideDelayHint}" Classes="hint" TextWrapping="Wrap" />
+          </StackPanel>
+        </StackPanel></Border>
+
+        <!-- Reminders belong to the application now, so the two questions the system used to
+             answer for us are asked here: whether they make a sound, and whether they should
+             arrive at all right now. -->
+        <Border Classes="settingCard" IsVisible="{Binding IsSettingsGeneral}"><StackPanel Spacing="9">
+          <StackPanel Classes="cardHeading">
+            <TextBlock Text="{DynamicResource L.Reminders}" Classes="section" />
+            <TextBlock Text="{DynamicResource L.RemindersIntro}" Classes="hint" TextWrapping="Wrap" />
+          </StackPanel>
+          <StackPanel Classes="settingRow">
+            <CheckBox IsChecked="{Binding NotificationsEnabled}" Content="{DynamicResource L.NotificationsEnabled}" />
+            <TextBlock Text="{DynamicResource L.NotificationsEnabledHint}" Classes="hint indented" TextWrapping="Wrap" />
+          </StackPanel>
+          <StackPanel Classes="settingRow" IsEnabled="{Binding NotificationsEnabled}">
+            <CheckBox IsChecked="{Binding NotificationSoundEnabled}" Content="{DynamicResource L.NotificationSound}" />
+            <TextBlock Text="{DynamicResource L.NotificationSoundHint}" Classes="hint indented" TextWrapping="Wrap" />
+          </StackPanel>
+
+          <!-- "Do not disturb" and "for how long" are one question asked twice, so they are one
+               group: the switch, the sentence saying what that switch currently means, and the
+               list of lengths it will use. The lengths were four buttons in a row, which had no
+               room for the fifth — the one that is a sentence rather than a number. -->
+          <Border Classes="settingGroup" IsEnabled="{Binding NotificationsEnabled}">
+            <StackPanel Spacing="8">
+              <Grid ColumnDefinitions="Auto,*" ColumnSpacing="9">
+                <Border Classes="aiConnectionIcon">
+                  <icons:AnimatedIcon Data="{StaticResource IconClock}" Motion="Moon" Width="15" Height="15" />
+                </Border>
+                <StackPanel Grid.Column="1" Spacing="2" VerticalAlignment="Center">
+                  <CheckBox IsChecked="{Binding IsDoNotDisturb, Mode=OneWay}" Command="{Binding ToggleDoNotDisturbCommand}"
+                            Content="{DynamicResource L.DoNotDisturb}" />
+                  <TextBlock Text="{Binding NotificationsSummary}" Classes="hint" TextWrapping="Wrap" />
+                </StackPanel>
+              </Grid>
+              <StackPanel Spacing="4">
+                <TextBlock Text="{DynamicResource L.DoNotDisturbLength}" Classes="label" />
+                <ComboBox ItemsSource="{Binding DoNotDisturbLengthOptions}"
+                          SelectedItem="{Binding SelectedDoNotDisturbLengthOption}">
+                  <ComboBox.ItemTemplate>
+                    <DataTemplate DataType="vm:QuietLengthOptionViewModel">
+                      <TextBlock Text="{Binding Label}" />
+                    </DataTemplate>
+                  </ComboBox.ItemTemplate>
+                </ComboBox>
+              </StackPanel>
+            </StackPanel>
+          </Border>
+        </StackPanel></Border>
+
+        <!-- Focus mode: the shell getting out of the way while something else has the whole
+             screen. A card of its own rather than a row inside reminders, because only half of
+             it is about reminders — the other half is the desktop-wide shortcuts, which have a
+             page of their own and would never be found from there. -->
+        <Border Classes="settingCard" IsVisible="{Binding IsSettingsGeneral}"><StackPanel Spacing="9">
+          <StackPanel Classes="cardHeading">
+            <TextBlock Text="{DynamicResource L.FocusMode}" Classes="section" />
+            <TextBlock Text="{Binding FocusModeHint}" Classes="hint" TextWrapping="Wrap" />
+          </StackPanel>
+
+          <!-- The switch, and the sentence saying what that switch currently means — which for
+               this one is not a setting at all but the state of the screen, named where it can
+               be checked against what the user can see. -->
+          <Border Classes="settingGroup">
+            <StackPanel Spacing="8">
+              <Grid ColumnDefinitions="Auto,*" ColumnSpacing="9">
+                <Border Classes="aiConnectionIcon">
+                  <icons:AnimatedIcon Data="{StaticResource IconPlay}" Motion="Play" Width="15" Height="15" />
+                </Border>
+                <StackPanel Grid.Column="1" Spacing="2" VerticalAlignment="Center">
+                  <CheckBox IsChecked="{Binding FocusModeEnabled}" Content="{DynamicResource L.FocusModeAuto}"
+                            IsEnabled="{Binding AreFullScreenAppsDetected}" />
+                  <TextBlock Text="{Binding FocusModeSummary}" Classes="hint" TextWrapping="Wrap" />
+                </StackPanel>
+              </Grid>
+              <StackPanel Classes="settingRow">
+                <CheckBox IsChecked="{Binding IsFocusModeHeld}" Content="{DynamicResource L.FocusModeHold}" />
+                <TextBlock Text="{DynamicResource L.FocusModeHoldHint}" Classes="hint indented" TextWrapping="Wrap" />
+              </StackPanel>
+            </StackPanel>
+          </Border>
+
+          <!-- What standing back actually consists of. Three answers rather than one: somebody
+               who starts and stops a session between rounds wants the shortcuts and not the
+               cards, and somebody with no tray icon on their desktop wants to keep the one
+               strip of screen that gets them back in. -->
+          <StackPanel Classes="settingRow" IsEnabled="{Binding CanFocusModeEverHappen}">
+            <CheckBox IsChecked="{Binding FocusModeReleasesShortcuts}"
+                      Content="{DynamicResource L.FocusModeReleaseShortcuts}" />
+            <TextBlock Text="{DynamicResource L.FocusModeReleaseShortcutsHint}" Classes="hint indented"
+                       TextWrapping="Wrap" />
+          </StackPanel>
+          <StackPanel Classes="settingRow" IsEnabled="{Binding CanFocusModeEverHappen}">
+            <CheckBox IsChecked="{Binding FocusModeHoldsReminders}"
+                      Content="{DynamicResource L.FocusModeHoldReminders}" />
+            <TextBlock Text="{DynamicResource L.FocusModeHoldRemindersHint}" Classes="hint indented"
+                       TextWrapping="Wrap" />
+          </StackPanel>
+          <!-- The one the other two cannot do anything about: the shortcuts and the cards are
+               what the shell sends, and this is what it still occupies. -->
+          <StackPanel Classes="settingRow" IsEnabled="{Binding CanFocusModeEverHappen}">
+            <CheckBox IsChecked="{Binding FocusModeHidesHandle}" IsEnabled="{Binding IsEdgeShell}"
+                      Content="{DynamicResource L.FocusModeHideHandle}" />
+            <TextBlock Text="{DynamicResource L.FocusModeHideHandleHint}" Classes="hint indented"
+                       TextWrapping="Wrap" />
+          </StackPanel>
+        </StackPanel></Border>
+
+        <Border Classes="settingCard" IsVisible="{Binding IsSettingsAssistant}"><StackPanel Spacing="11">
+          <StackPanel Classes="cardHeading">
+            <TextBlock Text="{DynamicResource L.AiConnection}" Classes="section" />
+            <TextBlock Text="{DynamicResource L.AiConnectionIntro}" Classes="hint" TextWrapping="Wrap" />
+          </StackPanel>
+
+          <!-- Three engines, one choice, and the settings for that choice directly below it.
+               Splitting connection and local model across two tabs meant picking "local" here
+               and then having to find the download somewhere else. -->
+          <StackPanel Spacing="6">
+            <TextBlock Text="{DynamicResource L.Provider}" Classes="label" />
+            <Grid ColumnDefinitions="*,*,*" ColumnSpacing="6">
+              <Button Classes="providerCard" Classes.active="{Binding IsLocalProviderActive}"
+                      Command="{Binding SelectAssistantProviderCommand}" CommandParameter="Local">
+                <StackPanel Spacing="5" HorizontalAlignment="Center">
+                  <icons:AnimatedIcon Data="{StaticResource IconMemory}" Motion="Brain" Width="17" Height="17"
+                                      HorizontalAlignment="Center" />
+                  <TextBlock Text="{DynamicResource L.OptionProviderLocal}" FontSize="{DynamicResource MarelianFont10_5}"
+                             TextAlignment="Center" TextWrapping="Wrap" MaxLines="2" />
+                </StackPanel>
+              </Button>
+              <Button Grid.Column="1" Classes="providerCard" Classes.active="{Binding IsExternalProviderActive}"
+                      Command="{Binding SelectAssistantProviderCommand}" CommandParameter="OpenAiCompatible">
+                <StackPanel Spacing="5" HorizontalAlignment="Center">
+                  <icons:AnimatedIcon Data="{StaticResource IconChat}" Motion="Bot" Width="17" Height="17"
+                                      HorizontalAlignment="Center" />
+                  <TextBlock Text="{DynamicResource L.OptionProviderOpenAi}" FontSize="{DynamicResource MarelianFont10_5}"
+                             TextAlignment="Center" TextWrapping="Wrap" MaxLines="2" />
+                </StackPanel>
+              </Button>
+              <Button Grid.Column="2" Classes="providerCard" Classes.active="{Binding IsMcpProviderActive}"
+                      Command="{Binding SelectAssistantProviderCommand}" CommandParameter="Mcp">
+                <StackPanel Spacing="5" HorizontalAlignment="Center">
+                  <icons:AnimatedIcon Data="{StaticResource IconTune}" Motion="Sliders" Width="17" Height="17"
+                                      HorizontalAlignment="Center" />
+                  <TextBlock Text="MCP" FontSize="{DynamicResource MarelianFont10_5}" TextAlignment="Center" />
+                </StackPanel>
+              </Button>
+            </Grid>
+            <TextBlock Text="{Binding AssistantProviderSummary}" Classes="hint" TextWrapping="Wrap" />
+          </StackPanel>
+
+        <Border Classes="aiConnectionCard local" IsVisible="{Binding ShowLocalModelSettings}"><StackPanel Spacing="11">
+          <Grid ColumnDefinitions="Auto,*" ColumnSpacing="9">
+            <Border Classes="aiConnectionIcon"><icons:AnimatedIcon Data="{StaticResource IconMemory}" Motion="Brain" Width="16" Height="16" /></Border>
+            <StackPanel Grid.Column="1" Spacing="2">
+              <TextBlock Text="{DynamicResource L.LocalAiTitle}" FontWeight="SemiBold" />
+              <TextBlock Text="{DynamicResource L.LocalModelIntro}" Classes="hint" TextWrapping="Wrap" />
+            </StackPanel>
+          </Grid>
+
+          <!-- One precision for every model, so there is nothing to choose here any more. -->
+          <TextBlock Text="{DynamicResource L.LocalQuantNote}" Classes="hint" TextWrapping="Wrap" />
+
+          <!-- What earlier releases downloaded in the precisions that are gone. Nothing runs from
+               it now, and a 7 GB file nobody uses is worth a line and a button. -->
+          <Border Classes="confirmation save" IsVisible="{Binding HasRetiredModelFiles}" Padding="10,8">
+            <Grid ColumnDefinitions="*,Auto" ColumnSpacing="8">
+              <TextBlock Text="{Binding RetiredModelFilesText}" FontSize="{DynamicResource MarelianFont10_5}" TextWrapping="Wrap" VerticalAlignment="Center" />
+              <Button Grid.Column="1" Classes="quiet compact danger" Command="{Binding DeleteRetiredModelFilesCommand}"
+                      Content="{DynamicResource L.LocalModelLegacyDelete}" VerticalAlignment="Center" />
+            </Grid>
+          </Border>
+
+          <ItemsControl ItemsSource="{Binding LocalModelOptions}">
+            <ItemsControl.ItemsPanel><ItemsPanelTemplate><StackPanel Spacing="6" /></ItemsPanelTemplate></ItemsControl.ItemsPanel>
+            <ItemsControl.ItemTemplate>
+              <DataTemplate DataType="vm:LocalModelOptionViewModel">
+                <Button Classes="modelCard" Classes.selected="{Binding IsSelected}" Command="{Binding SelectCommand}">
+                  <Grid ColumnDefinitions="3,*,Auto" ColumnSpacing="10">
+                    <Border CornerRadius="2" Background="{DynamicResource ShellAccent}" IsVisible="{Binding IsSelected}" />
+                    <StackPanel Grid.Column="1" Spacing="3">
+                      <StackPanel Orientation="Horizontal" Spacing="6">
+                        <TextBlock Text="{Binding DisplayName}" FontWeight="SemiBold" TextTrimming="CharacterEllipsis" />
+                        <Border Classes="tierBadge" Padding="5,0" VerticalAlignment="Center" IsVisible="{Binding HasBadge}">
+                          <TextBlock Text="{Binding Badge}" Foreground="{DynamicResource ShellAccent}" FontSize="{DynamicResource MarelianFont8_5}" />
+                        </Border>
+                      </StackPanel>
+                      <TextBlock Text="{Binding Role}" Classes="muted" FontSize="{DynamicResource MarelianFont10_5}" TextWrapping="Wrap" />
+                      <StackPanel Orientation="Horizontal" Spacing="5">
+                        <Border Classes="rowTag durationPill">
+                          <TextBlock Text="{Binding QuantTag}" Foreground="{DynamicResource ShellMuted}" />
+                        </Border>
+                        <Border Classes="rowTag durationPill">
+                          <TextBlock Text="{Binding Size}" Foreground="{DynamicResource ShellMuted}" />
+                        </Border>
+                        <icons:AnimatedIcon Data="{StaticResource IconCheck}" Width="11" Height="11"
+                                  Foreground="{DynamicResource ShellSuccess}" VerticalAlignment="Center" IsVisible="{Binding IsInstalled}" />
+                      </StackPanel>
+                    </StackPanel>
+                    <TextBlock Grid.Column="2" Text="{Binding Tier}" Classes="muted" FontSize="{DynamicResource MarelianFont10}"
+                               VerticalAlignment="Top" />
+                  </Grid>
+                </Button>
+              </DataTemplate>
+            </ItemsControl.ItemTemplate>
+          </ItemsControl>
+
+          <Border Classes="confirmation save" IsVisible="{Binding IsSwitchModelConfirmationOpen}" Padding="10,8">
+            <StackPanel Spacing="6">
+              <TextBlock Text="{Binding SwitchModelConfirmationTitle}" FontWeight="SemiBold" FontSize="{DynamicResource MarelianFont11_5}" Foreground="{DynamicResource ShellAccent}" />
+              <TextBlock Text="{Binding SwitchModelConfirmationMessage}" FontSize="{DynamicResource MarelianFont10_5}" TextWrapping="Wrap" />
+              <StackPanel Orientation="Horizontal" Spacing="6" HorizontalAlignment="Right">
+                <Button Classes="quiet compact" Command="{Binding CancelSwitchModelConfirmationCommand}" Content="{DynamicResource L.Cancel}" />
+                <Button Classes="secondary compact" Command="{Binding ConfirmSwitchOnlyModelCommand}" Content="{DynamicResource L.SwitchOnly}" />
+                <Button Classes="primary compact" Command="{Binding ConfirmSwitchAndStartModelCommand}" Content="{DynamicResource L.SwitchAndStart}"
+                        IsVisible="{Binding SwitchModelIsTargetInstalled}" />
+              </StackPanel>
+            </StackPanel>
+          </Border>
+
+          <Border Classes="surface" Padding="11,9">
+            <StackPanel Spacing="7">
+              <Grid ColumnDefinitions="*,Auto">
+                <StackPanel Spacing="2">
+                  <TextBlock Text="{DynamicResource L.LocalEngine}" FontWeight="SemiBold" FontSize="{DynamicResource MarelianFont12}" />
+                  <TextBlock Text="{Binding LocalModelStateText}" Classes="muted" FontSize="{DynamicResource MarelianFont10_5}" TextWrapping="Wrap" />
+                </StackPanel>
+                <TextBlock Grid.Column="1" Text="{Binding LocalModelTransferText}" Classes="muted" FontSize="{DynamicResource MarelianFont10}" VerticalAlignment="Bottom" />
+              </Grid>
+              <ProgressBar Minimum="0" Maximum="100" Height="4" Value="{Binding LocalModelProgress}" IsVisible="{Binding IsLocalModelTransferring}" />
+              <StackPanel Orientation="Horizontal" Spacing="6">
+                <Button Classes="primary compact" Command="{Binding DownloadLocalModelCommand}" Content="{Binding LocalModelDownloadActionText}"
+                        IsVisible="{Binding CanDownloadLocalModel}" IsEnabled="{Binding !IsLocalModelTransferring}" />
+                <Button Classes="quiet compact" Command="{Binding CancelLocalModelDownloadCommand}" Content="{DynamicResource L.Cancel}"
+                        IsVisible="{Binding IsLocalModelTransferring}" />
+                <Button Classes="quiet compact" Command="{Binding StartLocalModelCommand}" Content="{DynamicResource L.StartModel}" IsEnabled="{Binding CanStartLocalModel}" />
+                <Button Classes="quiet compact danger" Command="{Binding StopLocalModelCommand}" Content="{DynamicResource L.StopModel}" IsVisible="{Binding CanStopLocalModel}" />
+                <Button Classes="quiet compact danger" Command="{Binding DeleteLocalModelCommand}" Content="{DynamicResource L.Delete}" IsVisible="{Binding CanDeleteLocalModel}" />
+              </StackPanel>
+            </StackPanel>
+          </Border>
+
+          <Border Classes="surface" Padding="11,9">
+            <StackPanel Spacing="7">
+              <TextBlock Text="{DynamicResource L.CustomModelTitle}" FontWeight="SemiBold" FontSize="{DynamicResource MarelianFont12}" />
+              <TextBlock Text="{DynamicResource L.CustomModelHint}" Classes="hint" TextWrapping="Wrap" />
+
+              <!-- Two buttons that both said "choose a .gguf file" and did entirely different
+                   things. They are the same format and nothing else: one is the model, the
+                   other is the little encoder that lets it see a picture, and picking the
+                   wrong one for either slot produces an engine that will not start. So each
+                   now stands under its own heading, with the sentence that tells them apart,
+                   and the projector is only asked for when images are actually switched on. -->
+              <StackPanel Spacing="5">
+                <TextBlock Text="{DynamicResource L.CustomWeightsTitle}" Classes="label" />
+                <TextBlock Text="{DynamicResource L.CustomWeightsHint}" Classes="hint" TextWrapping="Wrap" />
+                <Border Classes="attachmentChip">
+                  <Grid ColumnDefinitions="Auto,*,Auto" ColumnSpacing="6">
+                    <icons:AnimatedIcon Data="{StaticResource IconAttach}" Width="12" VerticalAlignment="Center" />
+                    <TextBlock Grid.Column="1" Text="{Binding CustomModelFileName}" IsVisible="{Binding HasCustomModel}"
+                               TextTrimming="CharacterEllipsis" VerticalAlignment="Center" />
+                    <TextBlock Grid.Column="1" Text="{DynamicResource L.CustomFileMissing}" IsVisible="{Binding !HasCustomModel}"
+                               Classes="muted" VerticalAlignment="Center" />
+                    <Button Grid.Column="2" Classes="secondary compact" Command="{Binding PickCustomModelCommand}"
+                            Content="{DynamicResource L.PickModelFile}" />
+                  </Grid>
+                </Border>
+              </StackPanel>
+
+              <StackPanel Spacing="5" IsVisible="{Binding ShowProjectorPicker}">
+                <TextBlock Text="{DynamicResource L.CustomProjectorTitle}" Classes="label" />
+                <TextBlock Text="{DynamicResource L.CustomProjectorHint}" Classes="hint" TextWrapping="Wrap" />
+                <Border Classes="attachmentChip">
+                  <Grid ColumnDefinitions="Auto,*,Auto" ColumnSpacing="6">
+                    <icons:AnimatedIcon Data="{StaticResource IconSparkle}" Width="12" VerticalAlignment="Center" />
+                    <TextBlock Grid.Column="1" Text="{Binding CustomProjectorFileName}" IsVisible="{Binding HasCustomProjector}"
+                               TextTrimming="CharacterEllipsis" VerticalAlignment="Center" />
+                    <TextBlock Grid.Column="1" Text="{DynamicResource L.CustomFileMissing}" IsVisible="{Binding !HasCustomProjector}"
+                               Classes="muted" VerticalAlignment="Center" />
+                    <Button Grid.Column="2" Classes="quiet compact" Command="{Binding PickCustomProjectorCommand}"
+                            Content="{DynamicResource L.PickProjectorFile}" />
+                  </Grid>
+                </Border>
+              </StackPanel>
+
+              <Button Classes="quiet compact danger" Command="{Binding ClearCustomModelCommand}"
+                      Content="{DynamicResource L.ClearCustomModel}" HorizontalAlignment="Left"
+                      IsVisible="{Binding HasCustomModel}" />
+            </StackPanel>
+          </Border>
+
+          <!-- The switch that makes the projector matter. It is disabled outright for a model
+               that ships none, because turning it on there used to leave the engine waiting
+               forever on a file that does not exist. -->
+          <StackPanel Classes="settingRow">
+            <CheckBox IsChecked="{Binding LocalModelVisionEnabled}" Content="{DynamicResource L.VisionSupport}"
+                      IsEnabled="{Binding SelectedModelSupportsVision}" />
+            <TextBlock Text="{DynamicResource L.VisionSupportHint}" Classes="hint indented" TextWrapping="Wrap" />
+            <TextBlock Text="{Binding VisionRequirementText}" Classes="hint indented" TextWrapping="Wrap"
+                       Foreground="{DynamicResource ShellAccent}"
+                       IsVisible="{Binding LocalModelVisionEnabled}" />
+          </StackPanel>
+
+          <!-- This machine, and what the engine is asked for because of it. These numbers used to
+               be one fixed set for every computer; they are worked out from the hardware now, and
+               the card says what was found so the choice can be checked rather than trusted. -->
+          <Border Classes="surface" Padding="11,9">
+            <StackPanel Spacing="8">
+              <Grid ColumnDefinitions="*,Auto" ColumnSpacing="8">
+                <StackPanel Spacing="2">
+                  <TextBlock Text="{DynamicResource L.LocalHardwareTitle}" FontWeight="SemiBold" FontSize="{DynamicResource MarelianFont12}" />
+                  <TextBlock Text="{DynamicResource L.LocalHardwareHint}" Classes="hint" TextWrapping="Wrap" />
+                </StackPanel>
+                <Button Grid.Column="1" Classes="quiet compact" Command="{Binding DetectHardwareCommand}"
+                        IsEnabled="{Binding !IsDetectingHardware}" Content="{DynamicResource L.LocalHardwareRescan}"
+                        VerticalAlignment="Top" />
+              </Grid>
+              <Grid ColumnDefinitions="Auto,*" RowDefinitions="Auto,Auto,Auto" ColumnSpacing="12" RowSpacing="4">
+                <TextBlock Text="{DynamicResource L.LocalHardwareCpu}" Classes="muted" FontSize="{DynamicResource MarelianFont10_5}" />
+                <TextBlock Grid.Column="1" Text="{Binding HardwareCpuText}" FontSize="{DynamicResource MarelianFont10_5}" TextWrapping="Wrap" />
+                <TextBlock Grid.Row="1" Text="{DynamicResource L.LocalHardwareMemory}" Classes="muted" FontSize="{DynamicResource MarelianFont10_5}" />
+                <TextBlock Grid.Row="1" Grid.Column="1" Text="{Binding HardwareMemoryText}" FontSize="{DynamicResource MarelianFont10_5}" TextWrapping="Wrap" />
+                <TextBlock Grid.Row="2" Text="{DynamicResource L.LocalHardwareGpu}" Classes="muted" FontSize="{DynamicResource MarelianFont10_5}" />
+                <TextBlock Grid.Row="2" Grid.Column="1" Text="{Binding HardwareGpuText}" FontSize="{DynamicResource MarelianFont10_5}" TextWrapping="Wrap" />
+              </Grid>
+              <Border Classes="confirmation save" Padding="10,8">
+                <StackPanel Spacing="3">
+                  <TextBlock Text="{Binding LocalTuningTitle}" FontWeight="SemiBold" FontSize="{DynamicResource MarelianFont11_5}" TextWrapping="Wrap" />
+                  <TextBlock Text="{Binding LocalTuningSummary}" FontSize="{DynamicResource MarelianFont10_5}" TextWrapping="Wrap"
+                             IsVisible="{Binding LocalTuningSummary, Converter={x:Static StringConverters.IsNotNullOrEmpty}}" />
+                  <TextBlock Text="{Binding LocalTuningWarning}" FontSize="{DynamicResource MarelianFont10_5}" TextWrapping="Wrap"
+                             Foreground="{DynamicResource ShellWarning}"
+                             IsVisible="{Binding LocalTuningWarning, Converter={x:Static StringConverters.IsNotNullOrEmpty}}" />
+                  <TextBlock Text="{Binding LocalTuningNote}" Classes="hint" TextWrapping="Wrap"
+                             IsVisible="{Binding LocalTuningNote, Converter={x:Static StringConverters.IsNotNullOrEmpty}}" />
+                </StackPanel>
+              </Border>
+              <StackPanel Classes="settingRow">
+                <CheckBox IsChecked="{Binding LocalModelAutoTune}" Content="{DynamicResource L.LocalAutoTune}" />
+                <TextBlock Text="{DynamicResource L.LocalAutoTuneHint}" Classes="hint indented" TextWrapping="Wrap" />
+              </StackPanel>
+            </StackPanel>
+          </Border>
+
+          <!-- The numbers themselves: shown either way, so the automatic choice can be read, and
+               offered for editing only once it is switched off. -->
+          <StackPanel Spacing="9" IsEnabled="{Binding IsLocalModelManual}">
+            <StackPanel Classes="settingRow">
+              <CheckBox IsChecked="{Binding LocalModelGpuEnabled}" Content="{DynamicResource L.LocalModelGpu}" />
+              <TextBlock Text="{Binding LocalModelAcceleratorHint}" Classes="hint indented" TextWrapping="Wrap" />
+            </StackPanel>
+
+            <StackPanel Classes="settingRow">
+              <TextBlock Text="{DynamicResource L.IdleSleep}" Classes="label" />
+              <ComboBox ItemsSource="{Binding LocalModelIdleOptions}" SelectedItem="{Binding SelectedLocalModelIdleOption}" />
+            </StackPanel>
+
+            <Grid ColumnDefinitions="*,*" ColumnSpacing="8">
+              <StackPanel Classes="settingRow">
+                <TextBlock Text="{DynamicResource L.ParamContext}" Classes="label" />
+                <TextBox Text="{Binding LocalModelContextText}" PlaceholderText="8192" />
+              </StackPanel>
+              <StackPanel Grid.Column="1" Classes="settingRow">
+                <TextBlock Text="{DynamicResource L.ParamThreads}" Classes="label" />
+                <TextBox Text="{Binding LocalModelThreadsText}" PlaceholderText="0" />
+              </StackPanel>
+            </Grid>
+            <TextBlock Text="{DynamicResource L.ParamContextHint}" Classes="hint" />
+            <TextBlock Text="{DynamicResource L.ParamThreadsHint}" Classes="hint" />
+          </StackPanel>
+          <TextBlock Text="{DynamicResource L.LocalModelArchitectureHint}" Classes="hint" />
+        </StackPanel></Border>
+
+          <Border Classes="aiConnectionCard api" IsVisible="{Binding ShowApiSettings}">
+            <StackPanel Spacing="9">
+              <Grid ColumnDefinitions="Auto,*" ColumnSpacing="9">
+                <Border Classes="aiConnectionIcon"><icons:AnimatedIcon Data="{StaticResource IconChat}" Width="16" Height="16" /></Border>
+                <StackPanel Grid.Column="1" Spacing="2">
+                  <TextBlock Text="{DynamicResource L.ApiConnectionTitle}" FontWeight="SemiBold" />
+                  <TextBlock Text="{DynamicResource L.ApiConnectionHint}" Classes="hint" TextWrapping="Wrap" />
+                </StackPanel>
+              </Grid>
+              <StackPanel Classes="settingRow">
+                <TextBlock Text="{DynamicResource L.Address}" Classes="label" />
+                <TextBox Text="{Binding AssistantEndpoint}" PlaceholderText="https://api.openai.com/v1" />
+              </StackPanel>
+              <StackPanel Classes="settingRow">
+                <TextBlock Text="{DynamicResource L.Model}" Classes="label" />
+                <TextBox Text="{Binding AssistantModel}" PlaceholderText="gpt-4o-mini" />
+              </StackPanel>
+              <StackPanel Classes="settingRow">
+                <TextBlock Text="{DynamicResource L.ApiKey}" Classes="label" />
+                <TextBox Text="{Binding AssistantApiKey}" PasswordChar="●" PlaceholderText="{DynamicResource L.ApiKeyPlaceholder}" />
+                <Button Classes="quiet compact" Command="{Binding ClearApiKeyCommand}" Content="{DynamicResource L.RemoveKey}"
+                        IsVisible="{Binding HasSavedApiKey}" HorizontalAlignment="Left" />
+              </StackPanel>
+            </StackPanel>
+          </Border>
+
+          <Border Classes="aiConnectionCard mcp" IsVisible="{Binding ShowMcpSettings}">
+            <StackPanel Spacing="9">
+              <Grid ColumnDefinitions="Auto,*" ColumnSpacing="9">
+                <Border Classes="aiConnectionIcon"><icons:AnimatedIcon Data="{StaticResource IconTune}" Width="16" Height="16" /></Border>
+                <StackPanel Grid.Column="1" Spacing="2">
+                  <TextBlock Text="{DynamicResource L.McpConnectionTitle}" FontWeight="SemiBold" />
+                  <TextBlock Text="{DynamicResource L.McpConnectionHint}" Classes="hint" TextWrapping="Wrap" />
+                </StackPanel>
+              </Grid>
+              <StackPanel Classes="settingRow">
+                <TextBlock Text="{DynamicResource L.McpTransport}" Classes="label" />
+                <ComboBox ItemsSource="{Binding McpTransportOptions}" SelectedItem="{Binding SelectedMcpTransportOption}" />
+              </StackPanel>
+              <StackPanel Classes="settingRow" IsVisible="{Binding ShowMcpHttpSettings}">
+                <TextBlock Text="{DynamicResource L.Address}" Classes="label" />
+                <TextBox Text="{Binding McpEndpoint}" PlaceholderText="http://localhost:3000/mcp" />
+                <TextBlock Text="{DynamicResource L.McpEndpointHint}" Classes="hint" TextWrapping="Wrap" />
+              </StackPanel>
+              <StackPanel Classes="settingRow" IsVisible="{Binding ShowStdioSettings}">
+                <TextBlock Text="{DynamicResource L.McpCommandLabel}" Classes="label" />
+                <TextBox Text="{Binding McpCommand}" PlaceholderText="npx" />
+                <TextBox Text="{Binding McpArguments}" PlaceholderText="{DynamicResource L.McpArgumentsPlaceholder}" />
+              </StackPanel>
+              <StackPanel Classes="settingRow">
+                <TextBlock Text="{DynamicResource L.McpToolLabel}" Classes="label" />
+                <TextBox Text="{Binding McpToolName}" PlaceholderText="{DynamicResource L.McpToolPlaceholder}" />
+              </StackPanel>
+              <StackPanel Classes="settingRow">
+                <CheckBox IsChecked="{Binding McpToolsEnabled}" Content="{DynamicResource L.McpToolsEnabled}" />
+                <TextBlock Text="{DynamicResource L.McpToolsHint}" Classes="hint indented" />
+              </StackPanel>
+            </StackPanel>
+          </Border>
+
+          <Border Classes="cardRule" />
+          <!-- The same permission options are offered in the chat picker. -->
+          <StackPanel Classes="settingRow">
+            <TextBlock Text="{DynamicResource L.AiAccess}" Classes="label" />
+            <local:AssistantPermissionsView Margin="0,5,0,0" />
+          </StackPanel>
+          <StackPanel Classes="settingRow" IsVisible="{Binding ShowExternalContextConsent}">
+            <CheckBox IsChecked="{Binding ShareContextWithExternalAi}" Content="{DynamicResource L.ShareExternalContext}" />
+            <TextBlock Text="{DynamicResource L.ShareExternalContextHint}" Classes="hint indented" />
+          </StackPanel>
+          <StackPanel Classes="settingRow">
+            <CheckBox IsChecked="{Binding AssistantMemoryEnabled}" Content="{DynamicResource L.AiMemoryEnabled}" />
+            <TextBlock Text="{DynamicResource L.AiMemoryHint}" Classes="hint indented" />
+          </StackPanel>
+          <Button Classes="primary" Command="{Binding TestAssistantCommand}" Content="{DynamicResource L.TestConnection}"
+                  IsVisible="{Binding ShowExternalContextConsent}" IsEnabled="{Binding !IsBusy}"
+                  HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" />
+        </StackPanel></Border>
+
+        <!-- Advanced request shaping, intentionally collapsed by default -->
+        <Border Classes="settingCard" IsVisible="{Binding IsSettingsAssistant}"><StackPanel Spacing="11">
+          <Button Classes="sectionToggle" Command="{Binding ToggleAssistantAdvancedCommand}"
+                  HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch">
+            <Grid ColumnDefinitions="*,Auto" ColumnSpacing="10">
+              <StackPanel Classes="cardHeading" Margin="0">
+                <TextBlock Text="{DynamicResource L.AdvancedSettings}" Classes="section" />
+                <TextBlock Text="{DynamicResource L.AdvancedSettingsHint}" Classes="hint" TextWrapping="Wrap" />
+              </StackPanel>
+              <icons:AnimatedIcon Grid.Column="1" Data="{StaticResource IconChevronDown}" Classes="expandChevron"
+                                  Classes.expanded="{Binding IsAssistantAdvancedOpen}" Width="12" Height="12" VerticalAlignment="Center" />
+            </Grid>
+          </Button>
+
+          <StackPanel Spacing="11" IsVisible="{Binding IsAssistantAdvancedOpen}">
+            <Grid ColumnDefinitions="*,Auto" ColumnSpacing="8">
+              <TextBlock Text="{DynamicResource L.ModelParameters}" Classes="label" VerticalAlignment="Center" />
+              <Button Grid.Column="1" Classes="quiet compact" Command="{Binding ResetAssistantParametersCommand}"
+                      Content="{DynamicResource L.ResetParameters}" />
+            </Grid>
+            <!-- The local model and the API each keep their own values; this says whose these are. -->
+            <TextBlock Text="{Binding ActiveParametersHint}" Classes="hint" TextWrapping="Wrap"
+                       IsVisible="{Binding ShowSamplingParameters}" />
+            <TextBlock Text="{DynamicResource L.ParamsAutoBudget}" Classes="hint" TextWrapping="Wrap"
+                       Foreground="{DynamicResource ShellAccent}"
+                       IsVisible="{Binding ActiveParameters.IsBudgetAutomatic}" />
+
+            <!-- Said once, where nine controls used to sit doing nothing. The MCP bridge is
+                 handed a prompt and writes its own answer; not one of these numbers travels
+                 with it, so offering them there was a page of settings that changed nothing.
+                 They stay for the local model, which speaks the same chat protocol the hosted
+                 endpoints do and honours every one of them. -->
+            <TextBlock Text="{DynamicResource L.AdvancedMcpNotice}" Classes="hint" TextWrapping="Wrap"
+                       IsVisible="{Binding ShowMcpAdvancedNotice}" />
+
+          <StackPanel Spacing="11" IsVisible="{Binding ShowSamplingParameters}">
+            <TextBlock Text="{DynamicResource L.ParamGroupSampling}" Classes="label"
+                       Foreground="{DynamicResource ShellAccent}" />
+
+          <StackPanel Classes="settingRow">
+            <Grid ColumnDefinitions="*,Auto">
+              <TextBlock Text="{DynamicResource L.ParamTemperature}" Classes="label" VerticalAlignment="Center" />
+              <TextBlock Grid.Column="1" Text="{Binding ActiveParameters.TemperatureText}" Classes="paramValue" />
+            </Grid>
+            <Slider Minimum="0" Maximum="2" TickFrequency="0.1" IsSnapToTickEnabled="True" Value="{Binding ActiveParameters.Temperature}" />
+            <TextBlock Text="{DynamicResource L.ParamTemperatureHint}" Classes="hint" TextWrapping="Wrap" />
+          </StackPanel>
+
+          <StackPanel Classes="settingRow">
+            <Grid ColumnDefinitions="*,Auto">
+              <TextBlock Text="{DynamicResource L.ParamTopP}" Classes="label" VerticalAlignment="Center" />
+              <TextBlock Grid.Column="1" Text="{Binding ActiveParameters.TopPText}" Classes="paramValue" />
+            </Grid>
+            <Slider Minimum="0.05" Maximum="1" TickFrequency="0.05" IsSnapToTickEnabled="True" Value="{Binding ActiveParameters.TopP}" />
+            <TextBlock Text="{DynamicResource L.ParamTopPHint}" Classes="hint" TextWrapping="Wrap" />
+          </StackPanel>
+          </StackPanel>
+
+          <StackPanel Spacing="11" IsVisible="{Binding ShowToolLoopParameters}">
+            <TextBlock Text="{DynamicResource L.ParamGroupBudget}" Classes="label"
+                       Foreground="{DynamicResource ShellAccent}" />
+
+          <StackPanel Classes="settingRow" IsEnabled="{Binding ActiveParameters.IsBudgetEditable}">
+            <TextBlock Text="{DynamicResource L.ParamMaxTokens}" Classes="label" />
+            <TextBox Text="{Binding ActiveParameters.MaxTokensText}" PlaceholderText="4000" />
+            <TextBlock Text="{DynamicResource L.ParamMaxTokensHint}" Classes="hint" TextWrapping="Wrap" />
+          </StackPanel>
+
+          <StackPanel Classes="settingRow">
+            <Grid ColumnDefinitions="*,Auto">
+              <TextBlock Text="{DynamicResource L.ParamToolIterations}" Classes="label" VerticalAlignment="Center" />
+              <TextBlock Grid.Column="1" Text="{Binding ActiveParameters.MaxToolIterationsText}" Classes="paramValue" />
+            </Grid>
+            <Slider Minimum="1" Maximum="16" TickFrequency="1" IsSnapToTickEnabled="True" Value="{Binding ActiveParameters.MaxToolIterations}" />
+            <TextBlock Text="{DynamicResource L.ParamToolIterationsHint}" Classes="hint" TextWrapping="Wrap" />
+          </StackPanel>
+          </StackPanel>
+
+          <TextBlock Text="{DynamicResource L.ParamGroupStanding}" Classes="label"
+                     Foreground="{DynamicResource ShellAccent}" />
+
+          <StackPanel Classes="settingRow" IsEnabled="{Binding ActiveParameters.IsBudgetEditable}">
+            <Grid ColumnDefinitions="*,Auto">
+              <TextBlock Text="{DynamicResource L.ParamHistory}" Classes="label" VerticalAlignment="Center" />
+              <TextBlock Grid.Column="1" Text="{Binding ActiveParameters.HistoryTurnsText}" Classes="paramValue" />
+            </Grid>
+            <Slider Minimum="2" Maximum="64" TickFrequency="2" IsSnapToTickEnabled="True" Value="{Binding ActiveParameters.HistoryTurns}" />
+            <TextBlock Text="{DynamicResource L.ParamHistoryHint}" Classes="hint" TextWrapping="Wrap" />
+          </StackPanel>
+
+          <StackPanel Classes="settingRow" IsEnabled="{Binding ActiveParameters.IsBudgetEditable}">
+            <Grid ColumnDefinitions="*,Auto">
+              <TextBlock Text="{DynamicResource L.ParamTimeout}" Classes="label" VerticalAlignment="Center" />
+              <TextBlock Grid.Column="1" Text="{Binding ActiveParameters.TimeoutMinutesText}" Classes="paramValue" />
+            </Grid>
+            <Slider Minimum="1" Maximum="30" TickFrequency="1" IsSnapToTickEnabled="True" Value="{Binding ActiveParameters.TimeoutMinutes}" />
+            <TextBlock Text="{DynamicResource L.ParamTimeoutHint}" Classes="hint" TextWrapping="Wrap" />
+          </StackPanel>
+
+          <StackPanel Classes="settingRow">
+            <TextBlock Text="{DynamicResource L.ParamExtraInstructions}" Classes="label" />
+            <TextBox Text="{Binding AssistantExtraInstructions}" AcceptsReturn="True" TextWrapping="Wrap" MinHeight="60" MaxHeight="110"
+                     PlaceholderText="{DynamicResource L.ParamExtraInstructionsPlaceholder}" />
+          </StackPanel>
+
+            <Border Classes="cardRule" />
+            <StackPanel Classes="settingRow">
+              <Button Classes="quiet compact" Command="{Binding ToggleToolsVisibilityCommand}"
+                      Content="{Binding ToolsToggleText}" HorizontalAlignment="Left" />
+              <Border Classes="surface" Padding="4" MaxHeight="220" IsVisible="{Binding AreToolsVisible}">
+                <ScrollViewer Classes="modernScroll" VerticalScrollBarVisibility="Auto">
+                  <ItemsControl ItemsSource="{Binding AvailableTools}">
+                    <ItemsControl.ItemsPanel><ItemsPanelTemplate><StackPanel Spacing="3" /></ItemsPanelTemplate></ItemsControl.ItemsPanel>
+                    <ItemsControl.ItemTemplate>
+                      <DataTemplate DataType="vm:AssistantToolProbeViewModel">
+                        <Grid ColumnDefinitions="*,Auto" ColumnSpacing="7" Margin="6,3">
+                          <StackPanel Spacing="1">
+                            <TextBlock Text="{Binding Name}" FontSize="{DynamicResource MarelianFont11}" FontWeight="Medium" />
+                            <TextBlock Text="{Binding Description}" Classes="muted" FontSize="{DynamicResource MarelianFont9_5}"
+                                       TextWrapping="Wrap" MaxLines="2" TextTrimming="CharacterEllipsis" />
+                          </StackPanel>
+                          <Border Grid.Column="1" Classes="tierBadge" VerticalAlignment="Center" Padding="6,1">
+                            <TextBlock Text="{Binding Badge}" Foreground="{DynamicResource ShellAccent}" FontSize="{DynamicResource MarelianFont8_5}" />
+                          </Border>
+                        </Grid>
+                      </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                  </ItemsControl>
+                </ScrollViewer>
+              </Border>
+            </StackPanel>
+          </StackPanel>
+        </StackPanel></Border>
+
+
+        <!-- ===================== Data: where a second copy lives ===================== -->
+        <Border Classes="settingCard" IsVisible="{Binding IsSettingsData}"><StackPanel Spacing="11">
+          <StackPanel Classes="cardHeading">
+            <TextBlock Text="{DynamicResource L.CloudSyncTitle}" Classes="section" />
+            <TextBlock Text="{DynamicResource L.CloudSyncIntro}" Classes="hint" TextWrapping="Wrap" />
+          </StackPanel>
+
+          <!-- Where things stand, before anything else on the page: one sentence of state, one of
+               what to do about it, and the four facts a person asks when their data is supposed
+               to be in two places at once. The page used to offer a button and a line of English
+               that changed only when the button was pressed. -->
+          <Border Classes="surface" Padding="12,10" IsVisible="{Binding !IsCloudSyncOff}">
+            <StackPanel Spacing="9">
+              <Grid ColumnDefinitions="Auto,*" ColumnSpacing="10">
+                <Border Classes="syncDot" Margin="0,4,0,0" VerticalAlignment="Top"
+                        Classes.ok="{Binding IsCloudStatusOk}" Classes.pending="{Binding IsCloudStatusPending}"
+                        Classes.busy="{Binding IsCloudStatusBusy}" Classes.error="{Binding IsCloudStatusError}"
+                        Classes.attention="{Binding IsCloudStatusAttention}" />
+                <StackPanel Grid.Column="1" Spacing="2">
+                  <TextBlock Text="{Binding CloudStatusTitle}" FontWeight="SemiBold" FontSize="{DynamicResource MarelianFont12_5}" TextWrapping="Wrap" />
+                  <TextBlock Text="{Binding CloudStatusDetail}" Classes="hint" TextWrapping="Wrap"
+                             IsVisible="{Binding CloudStatusDetail, Converter={x:Static StringConverters.IsNotNullOrEmpty}}" />
+                </StackPanel>
+              </Grid>
+
+              <Grid ColumnDefinitions="Auto,*" RowDefinitions="Auto,Auto,Auto,Auto" ColumnSpacing="12" RowSpacing="5">
+                <TextBlock Text="{DynamicResource L.CloudFactLastSync}" Classes="muted" FontSize="{DynamicResource MarelianFont10_5}" />
+                <TextBlock Grid.Column="1" Text="{Binding CloudLastSyncText}" FontSize="{DynamicResource MarelianFont10_5}" TextWrapping="Wrap" />
+                <TextBlock Grid.Row="1" Text="{DynamicResource L.CloudFactCloudCopy}" Classes="muted" FontSize="{DynamicResource MarelianFont10_5}" />
+                <TextBlock Grid.Row="1" Grid.Column="1" Text="{Binding CloudRemoteText}" FontSize="{DynamicResource MarelianFont10_5}" TextWrapping="Wrap" />
+                <TextBlock Grid.Row="2" Text="{DynamicResource L.CloudFactThisComputer}" Classes="muted" FontSize="{DynamicResource MarelianFont10_5}" />
+                <TextBlock Grid.Row="2" Grid.Column="1" Text="{Binding CloudLocalText}" FontSize="{DynamicResource MarelianFont10_5}" TextWrapping="Wrap" />
+                <TextBlock Grid.Row="3" Text="{DynamicResource L.CloudFactAutomatic}" Classes="muted" FontSize="{DynamicResource MarelianFont10_5}" />
+                <TextBlock Grid.Row="3" Grid.Column="1" Text="{Binding CloudScheduleText}" FontSize="{DynamicResource MarelianFont10_5}" TextWrapping="Wrap" />
+              </Grid>
+
+              <StackPanel Orientation="Horizontal" Spacing="6">
+                <Button Classes="primary compact" Command="{Binding SyncNowCommand}"
+                        IsEnabled="{Binding !IsCloudSyncBusy}" Content="{DynamicResource L.CloudSyncNow}" />
+                <Button Classes="quiet compact" Command="{Binding RefreshCloudSnapshotCommand}"
+                        IsEnabled="{Binding !IsCloudSyncBusy}" Content="{DynamicResource L.CloudCheck}" />
+              </StackPanel>
+
+              <!-- Both sides moved. The app refuses to guess and asks which copy wins. -->
+              <Border Classes="confirmation save" IsVisible="{Binding IsCloudConflict}" Padding="10,8">
+                <StackPanel Spacing="6">
+                  <TextBlock Text="{DynamicResource L.CloudConflictHint}" FontSize="{DynamicResource MarelianFont10_5}" TextWrapping="Wrap" />
+                  <StackPanel Orientation="Horizontal" Spacing="6" HorizontalAlignment="Right">
+                    <Button Classes="secondary compact" Command="{Binding SyncUploadCommand}"
+                            Content="{DynamicResource L.CloudKeepLocal}" />
+                    <Button Classes="quiet compact danger" Command="{Binding SyncDownloadCommand}"
+                            Content="{DynamicResource L.CloudKeepCloud}" />
+                  </StackPanel>
+                </StackPanel>
+              </Border>
+
+              <Border Classes="confirmation save" IsVisible="{Binding IsCloudRestartPending}" Padding="10,8">
+                <StackPanel Spacing="7">
+                  <TextBlock Text="{DynamicResource L.CloudRestartHint}" FontSize="{DynamicResource MarelianFont10_5}" TextWrapping="Wrap" />
+                  <Button Classes="primary compact" Command="{Binding RestartToApplyCloudCopyCommand}"
+                          Content="{DynamicResource L.CloudRestartNow}" HorizontalAlignment="Right" />
+                </StackPanel>
+              </Border>
+            </StackPanel>
+          </Border>
+
+          <StackPanel Spacing="6">
+            <TextBlock Text="{DynamicResource L.CloudDestination}" Classes="label" />
+            <ComboBox ItemsSource="{Binding CloudProviderOptions}" SelectedItem="{Binding SelectedCloudProviderOption}" />
+          </StackPanel>
+
+          <!-- Folder: whatever desktop client already mirrors that directory does the upload. -->
+          <Border Classes="aiConnectionCard local" IsVisible="{Binding IsFolderSync}">
+            <StackPanel Spacing="9">
+              <Grid ColumnDefinitions="Auto,*" ColumnSpacing="9">
+                <Border Classes="aiConnectionIcon"><icons:AnimatedIcon Data="{StaticResource IconAttach}" Motion="Attach" Width="16" Height="16" /></Border>
+                <StackPanel Grid.Column="1" Spacing="2">
+                  <TextBlock Text="{DynamicResource L.CloudProviderFolder}" FontWeight="SemiBold" />
+                  <TextBlock Text="{DynamicResource L.CloudFolderHint}" Classes="hint" TextWrapping="Wrap" />
+                </StackPanel>
+              </Grid>
+              <Grid ColumnDefinitions="*,Auto" ColumnSpacing="6">
+                <TextBox Text="{Binding CloudSyncFolderPath}" PlaceholderText="{DynamicResource L.CloudFolderPlaceholder}" />
+                <Button Grid.Column="1" Classes="secondary compact" Command="{Binding PickCloudFolderCommand}"
+                        Content="{DynamicResource L.Browse}" VerticalAlignment="Bottom" />
+              </Grid>
+            </StackPanel>
+          </Border>
+
+          <!-- Google Drive: the app only ever sees its own hidden folder, never the user's files. -->
+          <Border Classes="aiConnectionCard api" IsVisible="{Binding IsGoogleDriveSync}">
+            <StackPanel Spacing="9">
+              <Grid ColumnDefinitions="Auto,*" ColumnSpacing="9">
+                <Border Classes="aiConnectionIcon"><icons:AnimatedIcon Data="{StaticResource IconMemory}" Motion="Brain" Width="16" Height="16" /></Border>
+                <StackPanel Grid.Column="1" Spacing="2">
+                  <TextBlock Text="Google Drive" FontWeight="SemiBold" />
+                  <TextBlock Text="{DynamicResource L.CloudGoogleHint}" Classes="hint" TextWrapping="Wrap" />
+                </StackPanel>
+              </Grid>
+
+              <Border Classes="surface" Padding="10,8" IsVisible="{Binding !IsGoogleConnected}">
+                <StackPanel Spacing="7">
+                  <TextBlock Text="{DynamicResource L.CloudGoogleSetupTitle}" FontWeight="SemiBold" FontSize="{DynamicResource MarelianFont11_5}" />
+                  <TextBlock Text="{DynamicResource L.CloudGoogleSetupSteps}" Classes="hint" TextWrapping="Wrap" />
+                  <Button Classes="secondary compact" Command="{Binding OpenGoogleConsoleCommand}"
+                          Content="{DynamicResource L.CloudGoogleConsole}" HorizontalAlignment="Left" />
+                </StackPanel>
+              </Border>
+
+              <!-- The client's two halves are only asked for until an account is connected. -->
+              <StackPanel Classes="settingRow" IsVisible="{Binding !IsGoogleConnected}">
+                <TextBlock Text="{DynamicResource L.CloudGoogleClientId}" Classes="label" />
+                <TextBox Text="{Binding GoogleDriveClientId}" PlaceholderText="1234567890-abc.apps.googleusercontent.com" />
+              </StackPanel>
+              <StackPanel Classes="settingRow" IsVisible="{Binding !IsGoogleConnected}">
+                <TextBlock Text="{DynamicResource L.CloudGoogleClientSecret}" Classes="label" />
+                <TextBox Text="{Binding GoogleDriveClientSecret}" PasswordChar="&#x25CF;"
+                         PlaceholderText="{DynamicResource L.CloudGoogleClientSecretPlaceholder}" />
+                <!-- The field empties itself once the secret is stored, which on its own looked
+                     exactly like a secret that was never entered. -->
+                <StackPanel Orientation="Horizontal" Spacing="5" IsVisible="{Binding HasGoogleClientSecret}">
+                  <icons:AnimatedIcon Data="{StaticResource IconCheck}" Width="11" Height="11"
+                                      Foreground="{DynamicResource ShellSuccess}" VerticalAlignment="Center" />
+                  <TextBlock Text="{DynamicResource L.CloudGoogleSecretSaved}" Classes="hint" VerticalAlignment="Center" />
+                </StackPanel>
+                <TextBlock Text="{DynamicResource L.CloudGoogleClientSecretHint}" Classes="hint" TextWrapping="Wrap" />
+              </StackPanel>
+
+              <Border Classes="attachmentChip" IsVisible="{Binding IsGoogleConnected}">
+                <Grid ColumnDefinitions="Auto,*" ColumnSpacing="6">
+                  <icons:AnimatedIcon Data="{StaticResource IconCheck}" Motion="Check" Width="12"
+                                      Foreground="{DynamicResource ShellSuccess}" />
+                  <TextBlock Grid.Column="1" Text="{Binding GoogleAccountText}" TextTrimming="CharacterEllipsis"
+                             VerticalAlignment="Center" />
+                </Grid>
+              </Border>
+              <StackPanel Orientation="Horizontal" Spacing="6">
+                <Button Classes="primary compact" Command="{Binding ConnectGoogleDriveCommand}"
+                        IsEnabled="{Binding !IsGoogleConnecting}"
+                        Content="{DynamicResource L.CloudGoogleConnect}" IsVisible="{Binding !IsGoogleConnected}" />
+                <Button Classes="quiet compact danger" Command="{Binding DisconnectGoogleDriveCommand}"
+                        Content="{DynamicResource L.CloudGoogleDisconnect}" IsVisible="{Binding IsGoogleConnected}" />
+              </StackPanel>
+              <TextBlock Text="{Binding CloudSyncStatusText}" FontSize="{DynamicResource MarelianFont10_5}" TextWrapping="Wrap"
+                         Foreground="{DynamicResource ShellAccent}"
+                         IsVisible="{Binding CloudSyncStatusText, Converter={x:Static StringConverters.IsNotNullOrEmpty}}" />
+            </StackPanel>
+          </Border>
+
+          <StackPanel Spacing="9" IsVisible="{Binding !IsCloudSyncOff}">
+            <Border Classes="cardRule" />
+            <StackPanel Classes="settingRow">
+              <TextBlock Text="{DynamicResource L.CloudDeviceName}" Classes="label" />
+              <TextBox Text="{Binding CloudSyncDeviceName}" PlaceholderText="{DynamicResource L.CloudDeviceNamePlaceholder}" />
+              <TextBlock Text="{DynamicResource L.CloudDeviceNameHint}" Classes="hint" TextWrapping="Wrap" />
+            </StackPanel>
+            <StackPanel Classes="settingRow">
+              <CheckBox IsChecked="{Binding CloudSyncAutomatic}" Content="{DynamicResource L.CloudAutomatic}" />
+              <TextBlock Text="{DynamicResource L.CloudAutomaticHint}" Classes="hint indented" TextWrapping="Wrap" />
+            </StackPanel>
+
+            <!-- Every exchange this computer made, newest first, so "did it sync?" has an answer
+                 with a time on it rather than a guess. -->
+            <StackPanel Spacing="6" IsVisible="{Binding HasCloudJournal}">
+              <TextBlock Text="{DynamicResource L.CloudJournalTitle}" Classes="label" />
+              <Border Classes="surface" Padding="11,8">
+                <ItemsControl ItemsSource="{Binding CloudJournal}">
+                  <ItemsControl.ItemsPanel><ItemsPanelTemplate><StackPanel Spacing="6" /></ItemsPanelTemplate></ItemsControl.ItemsPanel>
+                  <ItemsControl.ItemTemplate>
+                    <DataTemplate DataType="vm:CloudJournalItemViewModel">
+                      <Grid ColumnDefinitions="Auto,Auto,*" ColumnSpacing="8">
+                        <Border Classes="syncDot small" Margin="0,5,0,0" VerticalAlignment="Top"
+                                Classes.ok="{Binding IsOk}" Classes.error="{Binding IsError}"
+                                Classes.attention="{Binding IsAttention}" />
+                        <TextBlock Grid.Column="1" Text="{Binding When}" Classes="muted" FontSize="{DynamicResource MarelianFont10_5}" MinWidth="40" />
+                        <StackPanel Grid.Column="2" Spacing="1">
+                          <TextBlock Text="{Binding Text}" FontSize="{DynamicResource MarelianFont10_5}" TextWrapping="Wrap" />
+                          <TextBlock Text="{Binding Trigger}" Classes="muted" FontSize="{DynamicResource MarelianFont9_5}" />
+                        </StackPanel>
+                      </Grid>
+                    </DataTemplate>
+                  </ItemsControl.ItemTemplate>
+                </ItemsControl>
+              </Border>
+            </StackPanel>
+          </StackPanel>
+        </StackPanel></Border>
+
+        <Border Classes="settingCard" IsVisible="{Binding IsSettingsData}"><StackPanel Spacing="9">
+          <StackPanel Classes="cardHeading">
+            <TextBlock Text="{DynamicResource L.LocalData}" Classes="section" />
+            <TextBlock Text="{DynamicResource L.LocalDataHint}" Classes="hint" TextWrapping="Wrap" />
+          </StackPanel>
+          <Border Classes="attachmentChip">
+            <TextBlock Text="{Binding DataDirectoryPath}" FontSize="{DynamicResource MarelianFont10}" TextTrimming="CharacterEllipsis"
+                       ToolTip.Tip="{Binding DataDirectoryPath}" />
+          </Border>
+          <Button Classes="secondary compact" Command="{Binding OpenDataFolderCommand}"
+                  Content="{DynamicResource L.OpenDataFolder}" HorizontalAlignment="Left" />
+        </StackPanel></Border>
+
+        <!-- ===================== About ===================== -->
+        <Border Classes="settingCard aboutCard" IsVisible="{Binding IsSettingsAbout}"><StackPanel Spacing="13">
+          <Border Classes="aboutHero">
+            <StackPanel Spacing="9" HorizontalAlignment="Center">
+              <Border Classes="aboutMark">
+                <icons:AnimatedIcon Data="{StaticResource IconSparkle}" Motion="Sparkles" Width="24" Height="24"
+                                    Classes="onAccent" HorizontalAlignment="Center" VerticalAlignment="Center" />
+              </Border>
+              <StackPanel Spacing="3" HorizontalAlignment="Center">
+                <TextBlock Text="{Binding AppName}" Classes="aboutTitle" HorizontalAlignment="Center" />
+                <TextBlock Text="{Binding AppVersionText}" Classes="muted" FontSize="{DynamicResource MarelianFont11}" HorizontalAlignment="Center" />
+              </StackPanel>
+              <TextBlock Text="{DynamicResource L.AboutTagline}" Classes="hint" FontSize="{DynamicResource MarelianFont11}"
+                         TextAlignment="Center" TextWrapping="Wrap" MaxWidth="290" />
+            </StackPanel>
+          </Border>
+
+          <Border Classes="aboutAuthor">
+            <Grid ColumnDefinitions="Auto,*,Auto" ColumnSpacing="10">
+              <Border Classes="aboutAvatar">
+                <TextBlock Text="f" FontSize="{DynamicResource MarelianFont18}" FontWeight="SemiBold" Foreground="{DynamicResource ShellOnAccent}"
+                           HorizontalAlignment="Center" VerticalAlignment="Center" />
+              </Border>
+              <StackPanel Grid.Column="1" Spacing="2" VerticalAlignment="Center">
+                <TextBlock Text="{DynamicResource L.AboutAuthorLabel}" Classes="label" />
+                <TextBlock Text="{Binding AppAuthor}" FontWeight="SemiBold" FontSize="{DynamicResource MarelianFont13}" />
+              </StackPanel>
+              <Button Grid.Column="2" Classes="primary compact" Command="{Binding OpenAuthorProfileCommand}"
+                      VerticalAlignment="Center" Content="{DynamicResource L.AboutOpenGitHub}" />
+            </Grid>
+          </Border>
+
+          <StackPanel Spacing="6">
+            <TextBlock Text="{DynamicResource L.AboutLinks}" Classes="label" />
+            <Button Classes="aboutLink" Command="{Binding OpenRepositoryCommand}">
+              <Grid ColumnDefinitions="Auto,*,Auto" ColumnSpacing="9">
+                <icons:AnimatedIcon Data="{StaticResource IconCompose}" Motion="Edit" Width="14" Height="14" />
+                <StackPanel Grid.Column="1" Spacing="1">
+                  <TextBlock Text="{DynamicResource L.AboutRepository}" FontSize="{DynamicResource MarelianFont11_5}" FontWeight="Medium" />
+                  <TextBlock Text="{Binding AppRepositoryUrl}" Classes="muted" FontSize="{DynamicResource MarelianFont9_5}"
+                             TextTrimming="CharacterEllipsis" />
+                </StackPanel>
+                <icons:AnimatedIcon Grid.Column="2" Data="{StaticResource IconChevronRight}" Width="11" Height="11" />
+              </Grid>
+            </Button>
+            <Button Classes="aboutLink" Command="{Binding OpenIssuesCommand}">
+              <Grid ColumnDefinitions="Auto,*,Auto" ColumnSpacing="9">
+                <icons:AnimatedIcon Data="?" Motion="Help" Width="14" Height="14" />
+                <TextBlock Grid.Column="1" Text="{DynamicResource L.AboutIssues}" FontSize="{DynamicResource MarelianFont11_5}"
+                           FontWeight="Medium" VerticalAlignment="Center" />
+                <icons:AnimatedIcon Grid.Column="2" Data="{StaticResource IconChevronRight}" Width="11" Height="11" />
+              </Grid>
+            </Button>
+            <Button Classes="aboutLink" Command="{Binding OpenReleasesCommand}">
+              <Grid ColumnDefinitions="Auto,*,Auto" ColumnSpacing="9">
+                <icons:AnimatedIcon Data="{StaticResource IconHistory}" Motion="History" Width="14" Height="14" />
+                <TextBlock Grid.Column="1" Text="{DynamicResource L.AboutReleases}" FontSize="{DynamicResource MarelianFont11_5}"
+                           FontWeight="Medium" VerticalAlignment="Center" />
+                <icons:AnimatedIcon Grid.Column="2" Data="{StaticResource IconChevronRight}" Width="11" Height="11" />
+              </Grid>
+            </Button>
+          </StackPanel>
+        </StackPanel></Border>
+
+        <!-- Release checks. Nothing here ever interrupts; the banner only appears when there
+             genuinely is a newer version and the user has not dismissed it. -->
+        <Border Classes="settingCard" IsVisible="{Binding IsSettingsAbout}"><StackPanel Spacing="10">
+          <StackPanel Classes="cardHeading">
+            <TextBlock Text="{DynamicResource L.UpdatesTitle}" Classes="section" />
+            <TextBlock Text="{DynamicResource L.UpdatesIntro}" Classes="hint" TextWrapping="Wrap" />
+          </StackPanel>
+
+          <Border Classes="updateBanner" IsVisible="{Binding HasUpdate}">
+            <StackPanel Spacing="8">
+              <Grid ColumnDefinitions="Auto,*" ColumnSpacing="9">
+                <Border Classes="updatePulse" VerticalAlignment="Top" Margin="0,4,0,0" />
+                <StackPanel Grid.Column="1" Spacing="3">
+                  <TextBlock Text="{Binding AvailableUpdateName}" FontWeight="SemiBold" FontSize="{DynamicResource MarelianFont12_5}"
+                             TextTrimming="CharacterEllipsis" />
+                  <TextBlock Text="{Binding AvailableUpdateNotes}" Classes="hint" FontSize="{DynamicResource MarelianFont10_5}"
+                             TextWrapping="Wrap" MaxLines="4" TextTrimming="CharacterEllipsis" />
+                </StackPanel>
+              </Grid>
+              <StackPanel Orientation="Horizontal" Spacing="6" HorizontalAlignment="Right">
+                <Button Classes="quiet compact" Command="{Binding SkipUpdateCommand}"
+                        Content="{DynamicResource L.UpdateSkip}" />
+                <Button Classes="primary compact" Command="{Binding OpenUpdatePageCommand}"
+                        Content="{DynamicResource L.UpdateOpen}" />
+              </StackPanel>
+            </StackPanel>
+          </Border>
+
+          <StackPanel Classes="settingRow">
+            <CheckBox IsChecked="{Binding UpdateCheckEnabled}" Content="{DynamicResource L.UpdateCheckEnabled}" />
+            <TextBlock Text="{DynamicResource L.UpdateCheckHint}" Classes="hint indented" TextWrapping="Wrap" />
+          </StackPanel>
+
+          <Grid ColumnDefinitions="Auto,*" ColumnSpacing="9">
+            <Button Classes="secondary compact" Command="{Binding CheckForUpdatesNowCommand}"
+                    IsEnabled="{Binding !IsCheckingForUpdate}" Content="{DynamicResource L.UpdateCheckNow}" />
+            <TextBlock Grid.Column="1" Text="{Binding UpdateStatusText}" Classes="muted" FontSize="{DynamicResource MarelianFont10_5}"
+                       VerticalAlignment="Center" TextWrapping="Wrap" />
+          </Grid>
+        </StackPanel></Border>
+
+        </StackPanel>
+      </ScrollViewer>
+      </Grid>
+    </Border>
+  </Grid>
+</UserControl>

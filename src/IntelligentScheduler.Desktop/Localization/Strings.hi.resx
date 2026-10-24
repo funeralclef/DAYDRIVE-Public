@@ -1,0 +1,2094 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="AppName" xml:space="preserve">
+    <value>DAYDRIVE</value>
+  </data>
+  <data name="StatusReady" xml:space="preserve">
+    <value>तैयार</value>
+  </data>
+  <data name="NavPlan" xml:space="preserve">
+    <value>योजना</value>
+  </data>
+  <data name="NavTasks" xml:space="preserve">
+    <value>कार्य</value>
+  </data>
+  <data name="NavAssistant" xml:space="preserve">
+    <value>सहायक</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>सेटिंग्स</value>
+  </data>
+  <data name="Hide" xml:space="preserve">
+    <value>पैनल छुपाएँ</value>
+  </data>
+  <data name="PlanTitle" xml:space="preserve">
+    <value>आपका दिन</value>
+  </data>
+  <data name="PlanSubtitle" xml:space="preserve">
+    <value>निश्चित घटनाएँ अपनी जगह स्थिर रहती हैं; कार्य उनके चारों ओर अनुकूलित होते हैं</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>अगला</value>
+  </data>
+  <data name="Adjust" xml:space="preserve">
+    <value>समायोजित करें</value>
+  </data>
+  <data name="Schedule" xml:space="preserve">
+    <value>अनुसूची</value>
+  </data>
+  <data name="Calendar" xml:space="preserve">
+    <value>कैलेंडर</value>
+  </data>
+  <data name="AddEvent" xml:space="preserve">
+    <value>घटना जोड़ें</value>
+  </data>
+  <data name="EventTitle" xml:space="preserve">
+    <value>क्या हो रहा है?</value>
+  </data>
+  <data name="SaveChanges" xml:space="preserve">
+    <value>परिवर्तन सहेजें</value>
+  </data>
+  <data name="TasksTitle" xml:space="preserve">
+    <value>कार्य</value>
+  </data>
+  <data name="TasksSubtitle" xml:space="preserve">
+    <value>एक केंद्रित कार्य-सूची, जो आपके दिन में सही जगह ढूँढती है</value>
+  </data>
+  <data name="EditTask" xml:space="preserve">
+    <value>कार्य संपादित करें</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>सहेजें</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>रद्द करें</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>संपादित करें</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>हटाएँ</value>
+  </data>
+  <data name="QuickTaskPlaceholder" xml:space="preserve">
+    <value>प्राकृतिक भाषा में एक कार्य जोड़ें…</value>
+  </data>
+  <data name="AssistantTitle" xml:space="preserve">
+    <value>सहायक</value>
+  </data>
+  <data name="AssistantIntro" xml:space="preserve">
+    <value>मैं इरादों को एक वास्तविक दिन में बदल सकता हूँ। स्वाभाविक रूप से लिखें।</value>
+  </data>
+  <data name="AssistantPrivacy" xml:space="preserve">
+    <value>स्थानीय या आपकी चुनी हुई एआई के माध्यम से</value>
+  </data>
+  <data name="AssistantPlaceholder" xml:space="preserve">
+    <value>उदाहरण: कल का कार्यक्रम थोड़ा हल्का रखें</value>
+  </data>
+  <data name="Ask" xml:space="preserve">
+    <value>पूछें</value>
+  </data>
+  <data name="SettingsTitle" xml:space="preserve">
+    <value>सेटिंग्स</value>
+  </data>
+  <data name="SettingsSubtitle" xml:space="preserve">
+    <value>परिवर्तन अपने आप सहेज लिए जाते हैं</value>
+  </data>
+  <data name="General" xml:space="preserve">
+    <value>सामान्य</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>भाषा</value>
+  </data>
+  <data name="StartHidden" xml:space="preserve">
+    <value>छुपाकर शुरू करें</value>
+  </data>
+  <data name="KeepOnTop" xml:space="preserve">
+    <value>अन्य विंडोज़ के ऊपर रखें</value>
+  </data>
+  <data name="Appearance" xml:space="preserve">
+    <value>उपस्थिति</value>
+  </data>
+  <data name="Design" xml:space="preserve">
+    <value>डिज़ाइन</value>
+  </data>
+  <data name="ColorSource" xml:space="preserve">
+    <value>मुख्य रंग का स्रोत</value>
+  </data>
+  <data name="Accent" xml:space="preserve">
+    <value>एकेंट</value>
+  </data>
+  <data name="Background" xml:space="preserve">
+    <value>पृष्ठभूमि</value>
+  </data>
+  <data name="ThemeMode" xml:space="preserve">
+    <value>मोड</value>
+  </data>
+  <data name="ThemeModeDark" xml:space="preserve">
+    <value>डार्क</value>
+  </data>
+  <data name="ThemeModeLight" xml:space="preserve">
+    <value>लाइट</value>
+  </data>
+  <data name="ThemePreviewTitle" xml:space="preserve">
+    <value>MARELIAN</value>
+  </data>
+  <data name="ThemePreviewHint" xml:space="preserve">
+    <value>हल्के और गहरे मोड के रंग और आकार अलग सहेजे जाते हैं।</value>
+  </data>
+  <data name="ColorCustomization" xml:space="preserve">
+    <value>आपके रंग</value>
+  </data>
+  <data name="ColorCustomizationHint" xml:space="preserve">
+    <value>स्वचालित रंग के लिए फ़ील्ड खाली छोड़ें। रंग चुनने के लिए नमूने पर क्लिक करें।</value>
+  </data>
+  <data name="ColorPickerHint" xml:space="preserve">
+    <value>चुनने के लिए खींचें</value>
+  </data>
+  <data name="ResetThemeColors" xml:space="preserve">
+    <value>इस मोड को रीसेट करें</value>
+  </data>
+  <data name="Transparency" xml:space="preserve">
+    <value>पारदर्शिता और धुंधलापन</value>
+  </data>
+  <data name="ReduceMotion" xml:space="preserve">
+    <value>इंटरफ़ेस एनिमेशन अक्षम करें</value>
+  </data>
+  <data name="Behavior" xml:space="preserve">
+    <value>व्यवहार</value>
+  </data>
+  <data name="PanelReveal" xml:space="preserve">
+    <value>पैनल दिखाएँ</value>
+  </data>
+  <data name="PinOpen" xml:space="preserve">
+    <value>स्वतः छुपाएँ नहीं</value>
+  </data>
+  <data name="AiConnection" xml:space="preserve">
+    <value>एआई कनेक्शन</value>
+  </data>
+  <data name="Provider" xml:space="preserve">
+    <value>प्रदाता</value>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>पता</value>
+  </data>
+  <data name="Model" xml:space="preserve">
+    <value>मॉडल</value>
+  </data>
+  <data name="ApiKey" xml:space="preserve">
+    <value>एपीआई कुंजी (इस डिवाइस पर एन्क्रिप्टेड)</value>
+  </data>
+  <data name="ApiKeyPlaceholder" xml:space="preserve">
+    <value>सहेजी गई कुंजी रखने के लिए खाली छोड़ें</value>
+  </data>
+  <data name="RemoveKey" xml:space="preserve">
+    <value>सहेजी गई कुंजी हटाएँ</value>
+  </data>
+  <data name="TestConnection" xml:space="preserve">
+    <value>कनेक्शन सहेजें और परीक्षण करें</value>
+  </data>
+  <data name="SettingsSaved" xml:space="preserve">
+    <value>सहेजा गया</value>
+  </data>
+  <data name="SettingsSaving" xml:space="preserve">
+    <value>सहेजा जा रहा है…</value>
+  </data>
+  <data name="SettingsError" xml:space="preserve">
+    <value>सेटिंग्स सहेजी नहीं जा सकीं</value>
+  </data>
+  <data name="FreeDay" xml:space="preserve">
+    <value>खाली दिन</value>
+  </data>
+  <data name="EmptyPlan" xml:space="preserve">
+    <value>आपकी योजना खाली है</value>
+  </data>
+  <data name="EmptyPlanHint" xml:space="preserve">
+    <value>एक पंक्ति में कार्य जोड़ें</value>
+  </data>
+  <data name="MinutesShort" xml:space="preserve">
+    <value>मिनट</value>
+  </data>
+  <data name="EventKind" xml:space="preserve">
+    <value>घटना</value>
+  </data>
+  <data name="TaskKind" xml:space="preserve">
+    <value>कार्य</value>
+  </data>
+  <data name="DoneKind" xml:space="preserve">
+    <value>हो गया</value>
+  </data>
+  <data name="Focus" xml:space="preserve">
+    <value>ध्यान केंद्रित</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>जोड़ें</value>
+  </data>
+  <data name="Added" xml:space="preserve">
+    <value>जोड़ा गया</value>
+  </data>
+  <data name="SuggestedByAssistant" xml:space="preserve">
+    <value>सहायक द्वारा सुझाया गया</value>
+  </data>
+  <data name="Priority" xml:space="preserve">
+    <value>प्राथमिकता</value>
+  </data>
+  <data name="OptionCustom">
+    <value>अनुकूलित</value>
+  </data>
+  <data name="OptionPreset">
+    <value>पूर्वनिर्धारित</value>
+  </data>
+  <data name="OptionSystemAccent">
+    <value>सिस्टम उच्चारण</value>
+  </data>
+  <data name="OptionWallpaper">
+    <value>डेस्कटॉप वॉलपेपर</value>
+  </data>
+  <data name="OptionHover">
+    <value>होवर पर</value>
+  </data>
+  <data name="OptionClick">
+    <value>क्लिक पर</value>
+  </data>
+  <data name="TaskAdded">
+    <value>कार्य जोड़ा गया</value>
+  </data>
+  <data name="TaskRestored">
+    <value>कार्य पुनर्स्थापित किया गया</value>
+  </data>
+  <data name="TaskUpdated">
+    <value>कार्य अपडेट किया गया</value>
+  </data>
+  <data name="TaskDeleted">
+    <value>कार्य हटाया गया</value>
+  </data>
+  <data name="BlockCompleted">
+    <value>ध्यान अवरुद्ध पूरा हुआ</value>
+  </data>
+  <data name="EventAdded">
+    <value>घटना जोड़ी गई</value>
+  </data>
+  <data name="EventUpdated">
+    <value>घटना अपडेट की गई</value>
+  </data>
+  <data name="EventDeleted">
+    <value>घटना हटाई गई</value>
+  </data>
+  <data name="Thinking">
+    <value>सोच रहा हूँ…</value>
+  </data>
+  <data name="SecondsShort">
+    <value>स</value>
+  </data>
+  <data name="ReplyReady">
+    <value>उत्तर तैयार है</value>
+  </data>
+  <data name="ReviewSuggestions">
+    <value>जोड़ने से पहले सुझावों की समीक्षा करें</value>
+  </data>
+  <data name="RequestCancelled">
+    <value>अनुरोध रद्द किया गया</value>
+  </data>
+  <data name="ReplyFailed">
+    <value>उत्तर नहीं मिल सका: {0}</value>
+  </data>
+  <data name="ConnectionError">
+    <value>कनेक्शन त्रुटि</value>
+  </data>
+  <data name="SuggestionAdded">
+    <value>सुझाव जोड़ा गया</value>
+  </data>
+  <data name="OpenApp">
+    <value>DAYDRIVE खोलें</value>
+  </data>
+  <data name="QuickAdd">
+    <value>जल्दी जोड़ें</value>
+  </data>
+  <data name="Exit">
+    <value>बाहर निकलें</value>
+  </data>
+  <data name="CalendarToday">
+    <value>आज</value>
+  </data>
+  <data name="ComposerTask">
+    <value>कार्य</value>
+  </data>
+  <data name="ComposerAgent">
+    <value>एजेंट</value>
+  </data>
+  <data name="NewEvent">
+    <value>नया ईवेंट</value>
+  </data>
+  <data name="Date">
+    <value>दिनांक</value>
+  </data>
+  <data name="Time">
+    <value>समय</value>
+  </data>
+  <data name="Duration">
+    <value>अवधि</value>
+  </data>
+  <data name="NoDeadline">
+    <value>कोई समय सीमा नहीं</value>
+  </data>
+  <data name="InvalidInput">
+    <value>दर्ज किए गए दिनांक, समय और संख्याओं की जाँच करें</value>
+  </data>
+  <data name="ActiveTasks">
+    <value>कार्य</value>
+  </data>
+  <data name="NoAgenda">
+    <value>इस दिन के लिए कुछ भी निर्धारित नहीं है</value>
+  </data>
+  <data name="DueDate">
+    <value>अंतिम तिथि</value>
+  </data>
+  <data name="PriorityLabel">
+    <value>प्राथमिकता</value>
+  </data>
+  <data name="AgentConversation">
+    <value>वार्ता</value>
+  </data>
+  <data name="Send">
+    <value>भेजें</value>
+  </data>
+  <data name="TimeFrom">
+    <value>से</value>
+  </data>
+  <data name="TimeTo">
+    <value>को</value>
+  </data>
+  <data name="WeekNavigationHint">
+    <value>सप्ताह बदलने के लिए स्क्रॉल या खींचें</value>
+  </data>
+  <data name="Attachment">
+    <value>संलग्नक</value>
+  </data>
+  <data name="Attach">
+    <value>फ़ाइल संलग्न करें</value>
+  </data>
+  <data name="ChooseDate">
+    <value>दिनांक चुनें</value>
+  </data>
+  <data name="EditEvent">
+    <value>ईवेंट संपादित करें</value>
+  </data>
+  <data name="Confirm">
+    <value>पुष्टि करें</value>
+  </data>
+  <data name="ConfirmChanges">
+    <value>क्या आप इन परिवर्तनों को लागू करना चाहते हैं?</value>
+  </data>
+  <data name="ConfirmDeleteEvent">
+    <value>क्या आप इस घटना को हटाना चाहते हैं?</value>
+  </data>
+  <data name="ConfirmDeleteTask">
+    <value>क्या आप इस कार्य को हटाना चाहते हैं?</value>
+  </data>
+  <data name="DragToCreateHint">
+    <value>घटना बनाने के लिए खाली समय पर खींचें</value>
+  </data>
+  <data name="DaySummaryFormat">
+    <value>आज {0} आइटम · {1} मिनट योजना बनाई गई</value>
+  </data>
+  <data name="Use24HourClock">
+    <value>24-घंटे का समय प्रयोग करें</value>
+  </data>
+  <data name="ChooseStartTime">
+    <value>प्रारंभ समय</value>
+  </data>
+  <data name="ChooseEndTime">
+    <value>समाप्त समय</value>
+  </data>
+  <data name="TimePickerHint">
+    <value>5-मिनट के अंतराल</value>
+  </data>
+  <data name="TransparencyIntensity">
+    <value>पारदर्शिता तीव्रता</value>
+  </data>
+  <data name="ChooseTime">
+    <value>समय चुनें</value>
+  </data>
+  <data name="Hours">
+    <value>घंटे</value>
+  </data>
+  <data name="Minutes">
+    <value>मिनट</value>
+  </data>
+  <data name="EventTitleRequired">
+    <value>एक घटना का शीर्षक दर्ज करें</value>
+  </data>
+  <data name="EventDateTimeRequired">
+    <value>एक तारीख, प्रारंभ समय और समाप्त समय चुनें</value>
+  </data>
+  <data name="EventTimeRangeRequired">
+    <value>प्रारंभ और समाप्त समय समान नहीं हो सकता</value>
+  </data>
+  <data name="EventSaveFailed">
+    <value>घटना सहेजी नहीं जा सकी। फिर से प्रयास करें।</value>
+  </data>
+  <data name="AttachDialogTitle">
+    <value>फ़ाइल संलग्न करें</value>
+  </data>
+  <data name="McpArgumentsPlaceholder">
+    <value>MCP सर्वर तर्क</value>
+  </data>
+  <data name="McpToolPlaceholder">
+    <value>MCP टूल का नाम</value>
+  </data>
+  <data name="ScheduledBlock">
+    <value>निर्धारित ब्लॉक</value>
+  </data>
+  <data name="StartingSoon">
+    <value>जल्द शुरू हो रहा है</value>
+  </data>
+  <data name="StartsInMinutes">
+    <value>{0} {1} मिनट में शुरू होता है।</value>
+  </data>
+  <data name="StartupFailed">
+    <value>DAYDRIVE शुरू नहीं हो सका</value>
+  </data>
+  <data name="CrashLogSaved">
+    <value>विवरण एप्लिकेशन डेटा फ़ोल्डर में daydrive-crash.log में सहेजे गए थे।</value>
+  </data>
+  <data name="OptionProviderLocal">
+    <value>स्थानीय मॉडल (GGUF)</value>
+  </data>
+  <data name="OptionProviderOpenAi">
+    <value>कस्टम API</value>
+  </data>
+  <data name="OptionTransportHttp">
+    <value>HTTP सर्वर</value>
+  </data>
+  <data name="OptionTransportStdio">
+    <value>स्थानीय कमांड (stdio)</value>
+  </data>
+  <data name="ScrollToAdjust">
+    <value>समायोजित करने के लिए स्क्रॉल करें</value>
+  </data>
+  <data name="NewTask">
+    <value>नया कार्य</value>
+  </data>
+  <data name="AddTask">
+    <value>कार्य जोड़ें</value>
+  </data>
+  <data name="TaskTitle">
+    <value>क्या करना है?</value>
+  </data>
+  <data name="EmptyPlanTaskHint">
+    <value>एक कार्य या घटना बनाएँ</value>
+  </data>
+  <data name="LaunchAtStartup">
+    <value>सिस्टम स्टार्टअप पर लॉन्च करें</value>
+  </data>
+  <data name="AutostartFailed">
+    <value>सिस्टम स्टार्टअप सेटिंग्स बदल नहीं सकी</value>
+  </data>
+  <data name="PriorityLow">
+    <value>कम</value>
+  </data>
+  <data name="PriorityNormal">
+    <value>सामान्य</value>
+  </data>
+  <data name="PriorityHigh">
+    <value>उच्च</value>
+  </data>
+  <data name="PriorityUrgent">
+    <value>अत्यावश्यक</value>
+  </data>
+  <data name="PreferredAny">
+    <value>कभी भी</value>
+  </data>
+  <data name="PreferredMorning">
+    <value>सुबह</value>
+  </data>
+  <data name="PreferredAfternoon">
+    <value>दोपहर</value>
+  </data>
+  <data name="PreferredEvening">
+    <value>शाम</value>
+  </data>
+  <data name="Notes">
+    <value>नोट्स</value>
+  </data>
+  <data name="NotesPlaceholder">
+    <value>संदर्भ या अगला कदम</value>
+  </data>
+  <data name="AdvancedPlanning">
+    <value>योजना विकल्प</value>
+  </data>
+  <data name="EarliestStart">
+    <value>पहले से शुरू न करें</value>
+  </data>
+  <data name="AnyDate">
+    <value>कोई प्रतिबंध नहीं</value>
+  </data>
+  <data name="PreferredTime">
+    <value>पसंदीदा समय</value>
+  </data>
+  <data name="SplitTask">
+    <value>ब्लॉकों में विभाजित करने की अनुमति दें</value>
+  </data>
+  <data name="MinBlock">
+    <value>न्यूनतम ब्लॉक, न्यूनतम</value>
+  </data>
+  <data name="MaxSplits">
+    <value>अधिकतम ब्लॉक</value>
+  </data>
+  <data name="ManageTaskBlock">
+    <value>कार्य ब्लॉक</value>
+  </data>
+  <data name="PlannedInterval">
+    <value>योजना अंतराल</value>
+  </data>
+  <data name="CompletedMinutes">
+    <value>पूरा हुआ, न्यूनतम</value>
+  </data>
+  <data name="CompleteWork">
+    <value>पूरा करें</value>
+  </data>
+  <data name="OpenTask">
+    <value>खुला कार्य</value>
+  </data>
+  <data name="NotToday">
+    <value>आज नहीं</value>
+  </data>
+  <data name="Unschedule">
+    <value>अनुसूची से निकालें</value>
+  </data>
+  <data name="LockTime">
+    <value>इस समय को लॉक करें</value>
+  </data>
+  <data name="ConfirmTaskBlockChange">
+    <value>नया अंतराल और ब्लॉक विकल्प सहेजें?</value>
+  </data>
+  <data name="ConfirmTaskBlockComplete">
+    <value>दर्ज किया गया पूरा समय रिकॉर्ड करें?</value>
+  </data>
+  <data name="ConfirmTaskBlockUnschedule">
+    <value>इस ब्लॉक को अनुसूची से हटाएँ? कार्य रहेगा.</value>
+  </data>
+  <data name="ConfirmTaskBlockNotToday">
+    <value>इस दिन के लिए इस कार्य को कार्यक्रम से बाहर रखें?</value>
+  </data>
+  <data name="TaskBlockMinutesInvalid">
+    <value>1 मिनट से लेकर ब्लॉक की अवधि तक दर्ज करें</value>
+  </data>
+  <data name="TaskBlockMoved">
+    <value>कार्य ब्लॉक स्थानांतरित और लॉक किया गया</value>
+  </data>
+  <data name="TaskBlockUpdated">
+    <value>ब्लॉक विकल्प सहेजे गए</value>
+  </data>
+  <data name="TaskBlockUnscheduled">
+    <value>ब्लॉक को कार्यक्रम से हटा दिया गया</value>
+  </data>
+  <data name="TaskBlockDeferred">
+    <value>कार्य को किसी अन्य दिन के लिए स्थगित किया गया</value>
+  </data>
+  <data name="TaskBlockPartiallyCompleted">
+    <value>आंशिक कार्य रिकॉर्ड किया गया; शेष योजना में वापस जाएगा</value>
+  </data>
+  <data name="TaskBlockConflict">
+    <value>यह अंतराल किसी अन्य घटना या ब्लॉक के साथ ओवरलैप करता है</value>
+  </data>
+  <data name="LocalModelIntro">
+    <value>एक मॉडल चुनें। DAYDRIVE GGUF और llama.cpp डाउनलोड करता है, फिर सब कुछ केवल इस डिवाइस पर चलाता है।</value>
+  </data>
+  <data name="LocalModelRoleLite">
+    <value>तेज़ कमांड पार्सिंग और कार्य कैप्चर</value>
+  </data>
+  <data name="LocalModelRoleBalanced">
+    <value>रोज़ाना योजना और सहायक — अनुशंसित</value>
+  </data>
+  <data name="LocalModelRoleSmart">
+    <value>साप्ताहिक विश्लेषण और जटिल एजेंट अनुरोध</value>
+  </data>
+  <data name="Recommended">
+    <value>अनुशंसित</value>
+  </data>
+  <data name="LocalEngine">
+    <value>स्थानीय इंजन</value>
+  </data>
+  <data name="DownloadModel">
+    <value>डाउनलोड</value>
+  </data>
+  <data name="DownloadVisionSupport">
+    <value>विज़न जोड़ें</value>
+  </data>
+  <data name="StartModel">
+    <value>शुरू करें</value>
+  </data>
+  <data name="StopModel">
+    <value>बंद करें</value>
+  </data>
+  <data name="VisionSupport">
+    <value>छवि इनपुट</value>
+  </data>
+  <data name="VisionSupportHint" xml:space="preserve"><value>मॉडल को संलग्न चित्र पढ़ने देता है। इसे एक दूसरी फ़ाइल की आवश्यकता है – विज़न प्रोजेक्टर – जो मॉडल के साथ डाउनलोड होती है।</value></data>
+  <data name="IdleSleep">
+    <value>निष्क्रिय होने पर मेमोरी छोड़ें</value>
+  </data>
+  <data name="IdleFiveMinutes">
+    <value>5 मिनट के बाद</value>
+  </data>
+  <data name="IdleTenMinutes">
+    <value>10 मिनट के बाद</value>
+  </data>
+  <data name="IdleThirtyMinutes">
+    <value>30 मिनट के बाद</value>
+  </data>
+  <data name="IdleNever">
+    <value>स्वतः कभी नहीं</value>
+  </data>
+  <data name="LocalModelArchitectureHint">
+    <value>एआई असूचीबद्ध कार्य और निश्चित घटनाओं को केवल-पढ़ने वाली संदर्भ के रूप में प्राप्त करता है। मॉडल को किसी डेटाबेस तक पहुँच नहीं है और यह कभी भी स्वचालित रूप से समय आरक्षित नहीं करता।</value>
+  </data>
+  <data name="DownloadingEngine">
+    <value>llama.cpp डाउनलोड हो रहा है...</value>
+  </data>
+  <data name="ExtractingEngine">
+    <value>llama.cpp इंस्टॉल हो रहा है...</value>
+  </data>
+  <data name="DownloadingModel">
+    <value>GGUF मॉडल डाउनलोड हो रहा है...</value>
+  </data>
+  <data name="DownloadingVision">
+    <value>विज़न प्रोजेक्टर डाउनलोड हो रहा है...</value>
+  </data>
+  <data name="StartingLocalModel">
+    <value>मॉडल को मेमोरी में लोड कर रहा है…</value>
+  </data>
+  <data name="LocalModelRunning">
+    <value>स्थानीय रूप से चल रहा है</value>
+  </data>
+  <data name="LocalModelSleeping">
+    <value>सो रहा है — अनुरोध पर फिर से शुरू होगा</value>
+  </data>
+  <data name="LocalModelStopped">
+    <value>रुका हुआ — आवश्यकता होने पर स्वचालित रूप से शुरू होगा</value>
+  </data>
+  <data name="LocalModelNotInstalled">
+    <value>डाउनलोड नहीं किया गया</value>
+  </data>
+  <data name="LocalModelInstalled">
+    <value>स्थानीय मॉडल तैयार है</value>
+  </data>
+  <data name="LocalModelDeleted">
+    <value>स्थानीय मॉडल हटा दिया गया</value>
+  </data>
+  <data name="LocalModelError">
+    <value>स्थानीय मॉडल त्रुटि</value>
+  </data>
+  <data name="DownloadCancelled">
+    <value>डाउनलोड रुका हुआ; इसे बाद में फिर से शुरू किया जा सकता है</value>
+  </data>
+  <data name="QuickPromptPlan">
+    <value>मेरे दिन की योजना बनाओ</value>
+  </data>
+  <data name="QuickPromptToday">
+    <value>आज क्या योजना है?</value>
+  </data>
+  <data name="QuickPromptTask">
+    <value>इस शाम के लिए एक कार्य बनाएँ</value>
+  </data>
+  <data name="SwitchModelConfirmTitle">
+    <value>मॉडल बदलें</value>
+  </data>
+  <data name="SwitchModelConfirmText">
+    <value>मॉडल "{0}" चल रहा है। इसे रोकें और "{1}" को बदलें?</value>
+  </data>
+  <data name="SwitchAndStart">
+    <value>रोकें और शुरू करें</value>
+  </data>
+  <data name="SwitchOnly">
+    <value>केवल बदलें</value>
+  </data>
+  <data name="StopAndSwitch">
+    <value>रोकें और बदलें</value>
+  </data>
+  <data name="KeepRunning">
+    <value>पृष्ठभूमि में रखें</value>
+  </data>
+  <data name="SwitchProviderConfirmText">
+    <value>स्थानीय मॉडल "{0}" चल रहा है। {1} में स्विच करने से पहले इसे रोकें?</value>
+  </data>
+  <data name="ItemsCountOne">
+    <value>{0} आइटम</value>
+  </data>
+  <data name="ItemsCountFew">
+    <value>{0} आइटम</value>
+  </data>
+  <data name="ItemsCountMany">
+    <value>{0} आइटम</value>
+  </data>
+  <data name="UnscheduledTasks">
+    <value>अनियोजित</value>
+  </data>
+  <data name="CurrentEvent">
+    <value>वर्तमान घटना</value>
+  </data>
+  <data name="NextEvent">
+    <value>अगली घटना</value>
+  </data>
+  <data name="NoEventsTitle">
+    <value>कोई घटनाएँ निर्धारित नहीं हैं</value>
+  </data>
+  <data name="NoEventsHint">
+    <value>समय आरक्षित करने के लिए एक घटना बनाएं</value>
+  </data>
+  <data name="NoEventsForDay">
+    <value>इस दिन के लिए कोई घटनाएँ निर्धारित नहीं हैं</value>
+  </data>
+  <data name="EventDaySummaryFormat">
+    <value>{0} घटनाएँ · {1} मिनट व्यस्त</value>
+  </data>
+  <data name="EndingSoon">
+    <value>समाप्त होने वाली है</value>
+  </data>
+  <data name="EndsInMinutes">
+    <value>{0} {1} मिनट में समाप्त हो रही है।</value>
+  </data>
+  <data name="EventCategory" xml:space="preserve">
+    <value>श्रेणी</value>
+  </data>
+  <data name="EventPriority" xml:space="preserve">
+    <value>प्राथमिकता</value>
+  </data>
+  <data name="EventRepeat" xml:space="preserve">
+    <value>दोहराएँ</value>
+  </data>
+  <data name="EventCategoryGeneral" xml:space="preserve">
+    <value>सामान्य</value>
+  </data>
+  <data name="EventCategoryWork" xml:space="preserve">
+    <value>कार्य</value>
+  </data>
+  <data name="EventCategoryPersonal" xml:space="preserve">
+    <value>व्यक्तिगत</value>
+  </data>
+  <data name="EventCategoryStudy" xml:space="preserve">
+    <value>अध्ययन</value>
+  </data>
+  <data name="EventCategoryHealth" xml:space="preserve">
+    <value>स्वास्थ्य</value>
+  </data>
+  <data name="EventCategorySocial" xml:space="preserve">
+    <value>सामाजिक</value>
+  </data>
+  <data name="EventCategoryErrands" xml:space="preserve">
+    <value>कामकाज</value>
+  </data>
+  <data name="EventCategoryTravel" xml:space="preserve">
+    <value>यात्रा</value>
+  </data>
+  <data name="EventCategoryRest" xml:space="preserve">
+    <value>विश्राम</value>
+  </data>
+  <data name="EventPriorityNormal" xml:space="preserve">
+    <value>सामान्य</value>
+  </data>
+  <data name="EventPriorityHigh" xml:space="preserve">
+    <value>उच्च</value>
+  </data>
+  <data name="EventPriorityCritical" xml:space="preserve">
+    <value>गंभीर</value>
+  </data>
+  <data name="RepeatNever" xml:space="preserve">
+    <value>दोहराता नहीं</value>
+  </data>
+  <data name="RepeatDaily" xml:space="preserve">
+    <value>हर दिन</value>
+  </data>
+  <data name="RepeatWeekdays" xml:space="preserve">
+    <value>सप्ताह के दिन</value>
+  </data>
+  <data name="RepeatWeekly" xml:space="preserve">
+    <value>हर सप्ताह</value>
+  </data>
+  <data name="RepeatMonthly" xml:space="preserve">
+    <value>हर महीने</value>
+  </data>
+  <data name="ScopeOccurrence" xml:space="preserve">
+    <value>केवल यह घटना</value>
+  </data>
+  <data name="ScopeFollowing" xml:space="preserve">
+    <value>यह और आगे की</value>
+  </data>
+  <data name="ScopeSeries" xml:space="preserve">
+    <value>पूरी श्रृंखला</value>
+  </data>
+  <data name="DayActions" xml:space="preserve">
+    <value>दिन की क्रियाएं</value>
+  </data>
+  <data name="CopyToTomorrow" xml:space="preserve">
+    <value>कल को कॉपी करें</value>
+  </data>
+  <data name="CopyToNextWeek" xml:space="preserve">
+    <value>अगले सप्ताह को कॉपी करें</value>
+  </data>
+  <data name="Copy" xml:space="preserve">
+    <value>कॉपी करें</value>
+  </data>
+  <data name="CopyDayConfirmation" xml:space="preserve">
+    <value>क्या इस कार्यक्रम को {0} में कॉपी करें?</value>
+  </data>
+  <data name="CopyDayCompleted" xml:space="preserve">
+    <value>कॉपी की गई घटनाएँ: {0}</value>
+  </data>
+  <data name="CopyEventConfirmation" xml:space="preserve">
+    <value>क्या "{0}" को {1} में कॉपी करें?</value>
+  </data>
+  <data name="ClearDay" xml:space="preserve">
+    <value>इस दिन को साफ़ करें</value>
+  </data>
+  <data name="CopySchedule" xml:space="preserve">
+    <value>कार्यक्रम कॉपी करें</value>
+  </data>
+  <data name="DayActionsShort" xml:space="preserve">
+    <value>दिन योजना</value>
+  </data>
+  <data name="CopyToDate" xml:space="preserve">
+    <value>कोई अन्य दिनांक चुनें</value>
+  </data>
+  <data name="DayPlanning" xml:space="preserve">
+    <value>दिन की योजना बनाना</value>
+  </data>
+  <data name="EventCopied" xml:space="preserve">
+    <value>इवेंट को {0} में कॉपी किया गया</value>
+  </data>
+  <data name="DayPlanningHint" xml:space="preserve">
+    <value>अनुसूचित घटनाओं को कॉपी या साफ़ करें</value>
+  </data>
+  <data name="ClearDayConfirmation" xml:space="preserve">
+    <value>क्या {0} पर सभी घटनाओं को हटाएं?</value>
+  </data>
+  <data name="CopyEvent" xml:space="preserve">
+    <value>इवेंट कॉपी करें</value>
+  </data>
+  <data name="ClearDayCompleted" xml:space="preserve">
+    <value>हटाई गई घटनाएँ: {0}</value>
+  </data>
+  <data name="ShiftEarlier" xml:space="preserve">
+    <value>पहले</value>
+  </data>
+  <data name="EventActions" xml:space="preserve">
+    <value>इवेंट क्रियाएँ</value>
+  </data>
+  <data name="ShiftLater" xml:space="preserve">
+    <value>बाद में</value>
+  </data>
+  <data name="Shift" xml:space="preserve">
+    <value>शिफ्ट</value>
+  </data>
+  <data name="ShiftDayConfirmation" xml:space="preserve">
+    <value>{0} पर सभी ईवेंट्स को {1} द्वारा शिफ्ट करें?</value>
+  </data>
+  <data name="ShiftSchedule" xml:space="preserve">
+    <value>शेड्यूल शिफ्ट करें</value>
+  </data>
+  <data name="ShiftDayCompleted" xml:space="preserve">
+    <value>शिफ्ट किए गए ईवेंट्स: {0}</value>
+  </data>
+  <data name="ShiftDayAmountRequired" xml:space="preserve">
+    <value>शिफ्ट अवधि दर्ज करें</value>
+  </data>
+  <data name="AiActionCopyDay" xml:space="preserve">
+    <value>दिन का शेड्यूल कॉपी करें</value>
+  </data>
+  <data name="AiActionDeleteEvent" xml:space="preserve">
+    <value>ईवेंट हटाएँ</value>
+  </data>
+  <data name="AiActionUpdateEvent" xml:space="preserve">
+    <value>ईवेंट अपडेट करें</value>
+  </data>
+  <data name="AiActionTargetMissing" xml:space="preserve">
+    <value>अनुरोधित ईवेंट या कार्य अब मौजूद नहीं है।</value>
+  </data>
+  <data name="AiActionShiftDay" xml:space="preserve">
+    <value>दिन का शेड्यूल शिफ्ट करें</value>
+  </data>
+  <data name="AiActionInvalid" xml:space="preserve">
+    <value>सहायक क्रिया में आवश्यक जानकारी गायब है।</value>
+  </data>
+  <data name="ShareExternalContextHint" xml:space="preserve">
+    <value>API या MCP प्रदाताओं को हाल की बातचीत और कैलेंडर विवरण प्राप्त करने की अनुमति देता है। डिफ़ॉल्ट रूप से बंद।</value>
+  </data>
+  <data name="AiActionCreateTask" xml:space="preserve">
+    <value>गैर-निर्धारित कार्य बनाएं</value>
+  </data>
+  <data name="AiAccessConfirmAll" xml:space="preserve">
+    <value>प्रत्येक क्रिया की पुष्टि करें</value>
+  </data>
+  <data name="AiActionUpdateTask" xml:space="preserve">
+    <value>गैर-निर्धारित कार्य अपडेट करें</value>
+  </data>
+  <data name="AiAccessFull" xml:space="preserve">
+    <value>पूर्ण शेड्यूल एक्सेस</value>
+  </data>
+  <data name="AiAccessAutoSafe" xml:space="preserve">
+    <value>सुरक्षित क्रियाओं को स्वचालित रूप से लागू करें</value>
+  </data>
+  <data name="AiActionFailed" xml:space="preserve">
+    <value>लागू नहीं किया जा सका</value>
+  </data>
+  <data name="AiActionApplied" xml:space="preserve">
+    <value>लागू किया गया</value>
+  </data>
+  <data name="AiActionCreateEvent" xml:space="preserve">
+    <value>घटना बनाएँ</value>
+  </data>
+  <data name="AiActionDismissed" xml:space="preserve">
+    <value>खारिज कर दिया गया</value>
+  </data>
+  <data name="ShareExternalContext" xml:space="preserve">
+    <value>बाहरी एआई के साथ अनुसूची संदर्भ साझा करें</value>
+  </data>
+  <data name="AiAccessHint" xml:space="preserve"><value>AI को अनुमत बदलाव।</value></data>
+  <data name="AiActionDeleteTask" xml:space="preserve">
+    <value>अनियोजित कार्य को हटाएँ</value>
+  </data>
+  <data name="AiAccess" xml:space="preserve">
+    <value>एआई अनुमतियाँ</value>
+  </data>
+  <data name="ClearConversation" xml:space="preserve">
+    <value>बातचीत साफ़ करें</value>
+  </data>
+  <data name="Dismiss" xml:space="preserve">
+    <value>खारिज करें</value>
+  </data>
+  <data name="AiActionReady" xml:space="preserve">
+    <value>क्रिया समीक्षा के लिए तैयार है</value>
+  </data>
+  <data name="AiAccessConfirmAllHint" xml:space="preserve">
+    <value>हर बदलाव की पुष्टि करें।</value>
+  </data>
+  <data name="AiAccessAutoSafeHint" xml:space="preserve">
+    <value>मिटाने और पूरे दिन के बदलावों की पुष्टि करें।</value>
+  </data>
+  <data name="AiAccessFullHint" xml:space="preserve">
+    <value>सभी बदलाव बिना पुष्टि के लागू करें।</value>
+  </data>
+  <data name="AiActionCopyEvent" xml:space="preserve">
+    <value>घटना की प्रतिलिपि बनाएँ</value>
+  </data>
+  <data name="ChatNewChat" xml:space="preserve">
+    <value>नई चैट</value>
+  </data>
+  <data name="ChatExpand" xml:space="preserve">
+    <value>चौड़ा दृश्य खोलें</value>
+  </data>
+  <data name="ChatCollapse" xml:space="preserve">
+    <value>संक्षिप्त दृश्य पर लौटें</value>
+  </data>
+  <data name="ChatHistory" xml:space="preserve">
+    <value>इतिहास</value>
+  </data>
+  <data name="ChatSearchPlaceholder" xml:space="preserve">
+    <value>वार्तालाप खोजें</value>
+  </data>
+  <data name="ChatNoConversations" xml:space="preserve">
+    <value>अभी तक कोई सहेजा गया वार्तालाप नहीं</value>
+  </data>
+  <data name="ChatNoSearchResults" xml:space="preserve">
+    <value>उस खोज से मेल कुछ नहीं खाता</value>
+  </data>
+  <data name="ChatPin" xml:space="preserve">
+    <value>पिन करें</value>
+  </data>
+  <data name="ChatUnpin" xml:space="preserve">
+    <value>पिन हटाएँ</value>
+  </data>
+  <data name="ChatDeleteConversation" xml:space="preserve">
+    <value>वार्तालाप हटाएँ</value>
+  </data>
+  <data name="ChatDeleteConfirm" xml:space="preserve">
+    <value>इस वार्तालाप को स्थायी रूप से हटाना है?</value>
+  </data>
+  <data name="ChatGroupToday" xml:space="preserve">
+    <value>आज</value>
+  </data>
+  <data name="ChatGroupYesterday" xml:space="preserve">
+    <value>कल</value>
+  </data>
+  <data name="ChatGroupWeek" xml:space="preserve">
+    <value>पिछले 7 दिन</value>
+  </data>
+  <data name="ChatGroupOlder" xml:space="preserve">
+    <value>पहले</value>
+  </data>
+  <data name="ChatMessageCount" xml:space="preserve">
+    <value>{0} संदेश</value>
+  </data>
+  <data name="ChatCopy" xml:space="preserve">
+    <value>कॉपी करें</value>
+  </data>
+  <data name="ChatCopied" xml:space="preserve">
+    <value>कॉपी किया गया</value>
+  </data>
+  <data name="ChatRetry" xml:space="preserve">
+    <value>फिर से पूछें</value>
+  </data>
+  <data name="ChatStop" xml:space="preserve">
+    <value>बंद करें</value>
+  </data>
+  <data name="ChatToolActivity" xml:space="preserve">
+    <value>मैंने क्या किया</value>
+  </data>
+  <data name="ChatToolApplied" xml:space="preserve">
+    <value>लागू किया</value>
+  </data>
+  <data name="ChatToolProposed" xml:space="preserve">
+    <value>प्रस्तावित किया</value>
+  </data>
+  <data name="ChatToolFailed" xml:space="preserve">
+    <value>असफल</value>
+  </data>
+  <data name="StageConnecting" xml:space="preserve">
+    <value>कनेक्ट हो रहा है…</value>
+  </data>
+  <data name="StageThinking" xml:space="preserve">
+    <value>सोच रहा हूँ…</value>
+  </data>
+  <data name="StageWriting" xml:space="preserve">
+    <value>लिख रहा हूँ…</value>
+  </data>
+  <data name="StageToolSchedule" xml:space="preserve">
+    <value>आपके कैलेंडर को पढ़ रहा हूँ…</value>
+  </data>
+  <data name="StageToolTasks" xml:space="preserve">
+    <value>आपके कार्यों को पढ़ रहा हूँ…</value>
+  </data>
+  <data name="StageToolSlots" xml:space="preserve">
+    <value>फुर्सत का समय खोज रहे हैं…</value>
+  </data>
+  <data name="StageToolAnalytics" xml:space="preserve">
+    <value>आपकी आँकड़े पढ़ रहे हैं…</value>
+  </data>
+  <data name="StageToolMemory" xml:space="preserve">
+    <value>मेमोरी अपडेट कर रहे हैं…</value>
+  </data>
+  <data name="StageToolWrite" xml:space="preserve">
+    <value>परिवर्तन की तैयारी कर रहे हैं…</value>
+  </data>
+  <data name="StageToolExternal" xml:space="preserve">
+    <value>MCP टूल कॉल कर रहे हैं…</value>
+  </data>
+  <data name="ChatMemory" xml:space="preserve">
+    <value>मेमोरी</value>
+  </data>
+  <data name="ChatMemoryHint" xml:space="preserve">
+    <value>तथ्य जिन्हें सहायक बातचीतों के बीच याद रखता है। केवल इस कंप्यूटर पर संग्रहीत।</value>
+  </data>
+  <data name="ChatMemoryEmpty" xml:space="preserve">
+    <value>अभी तक कुछ भी सहेजा नहीं गया। सहायक आपके बात करने के दौरान नोट जोड़ता है।</value>
+  </data>
+  <data name="ChatMemoryAdd" xml:space="preserve">
+    <value>नोट जोड़ें</value>
+  </data>
+  <data name="ChatMemoryKeyPlaceholder" xml:space="preserve">
+    <value>शॉर्ट की, उदाहरण के लिए deep-work-window</value>
+  </data>
+  <data name="ChatMemoryValuePlaceholder" xml:space="preserve">
+    <value>क्या याद रखा जाना चाहिए?</value>
+  </data>
+  <data name="ChatMemoryClear" xml:space="preserve">
+    <value>सब कुछ भूल जाएँ</value>
+  </data>
+  <data name="ChatMemoryClearConfirm" xml:space="preserve">
+    <value>हर सहेजा गया नोट हटाएँ?</value>
+  </data>
+  <data name="ChatMemoryFromAssistant" xml:space="preserve">
+    <value>सहायक द्वारा सहेजा गया</value>
+  </data>
+  <data name="ChatMemoryFromUser" xml:space="preserve">
+    <value>आपके द्वारा जोड़ा गया</value>
+  </data>
+  <data name="ChatSuggestions" xml:space="preserve">
+    <value>पूछकर देखें</value>
+  </data>
+  <data name="ChatIntroTitle" xml:space="preserve">
+    <value>कहाँ से शुरू करें?</value>
+  </data>
+  <data name="ChatComposerHint" xml:space="preserve">
+    <value>Enter भेजता है · Shift+Enter नई पंक्ति</value>
+  </data>
+  <data name="SuggestPlanTomorrow" xml:space="preserve">
+    <value>कल की योजना पहले से बुक किए गए अनुसार बनाएं</value>
+  </data>
+  <data name="SuggestFreeTime" xml:space="preserve">
+    <value>इस सप्ताह मेरे पास दो खाली घंटे कहाँ हैं?</value>
+  </data>
+  <data name="SuggestOverdue" xml:space="preserve">
+    <value>क्या अवधि समाप्त हो गई है और मुझे क्या छोड़ देना चाहिए?</value>
+  </data>
+  <data name="SuggestBalance" xml:space="preserve">
+    <value>क्या मेरा सप्ताह संतुलित है?</value>
+  </data>
+  <data name="SuggestBusyDay" xml:space="preserve">
+    <value>आज का दिन व्यस्त लग रहा है — क्या स्थानांतरित किया जा सकता है?</value>
+  </data>
+  <data name="SuggestEmptyDay" xml:space="preserve">
+    <value>कुछ भी योजना में नहीं है — दिन को आकार देने में मेरी मदद करें</value>
+  </data>
+  <data name="SuggestFollowUp" xml:space="preserve">
+    <value>जारी रखें: {0}</value>
+  </data>
+  <data name="SuggestReview" xml:space="preserve">
+    <value>पिछले सप्ताह की समीक्षा करें और मुझे बताएं कि क्या बदल गया है</value>
+  </data>
+  <data name="AiMemoryEnabled" xml:space="preserve">
+    <value>सहायक को मेरे बारे में तथ्य याद रखने दें</value>
+  </data>
+  <data name="AiMemoryHint" xml:space="preserve">
+    <value>नोट्स स्थानीय डेटाबेस में रहते हैं और केवल तब बाहरी मॉडल को भेजे जाते हैं जब संदर्भ साझा करना चालू हो।</value>
+  </data>
+  <data name="McpToolsEnabled" xml:space="preserve">
+    <value>चयनित मॉडल को MCP सर्वर के उपकरण दें</value>
+  </data>
+  <data name="McpToolsHint" xml:space="preserve">
+    <value>MCP का उपयोग करने का आधुनिक तरीका यह है: मॉडल तर्क करता रहता है और बस अतिरिक्त क्षमताएँ प्राप्त करता है। इसके बजाय प्रदाता के रूप में MCP चुनने पर सर्वर केवल एकल ब्रिज टूल के माध्यम से स्वयं उत्तर देता है।</value>
+  </data>
+  <data name="ShowTools" xml:space="preserve">
+    <value>उपलब्ध उपकरण दिखाएँ</value>
+  </data>
+  <data name="ToolsAvailable" xml:space="preserve">
+    <value>मॉडल के कॉल कर सकने वाले टूल्स</value>
+  </data>
+  <data name="ToolBuiltIn" xml:space="preserve">
+    <value>इनबिल्ट</value>
+  </data>
+  <data name="Analytics" xml:space="preserve">
+    <value>एनालिटिक्स</value>
+  </data>
+  <data name="AnalyticsSubtitle" xml:space="preserve">
+    <value>आपके इतिहास पर आधारित स्पष्ट आँकड़े</value>
+  </data>
+  <data name="RangeWeek" xml:space="preserve">
+    <value>सप्ताह</value>
+  </data>
+  <data name="RangeMonth" xml:space="preserve">
+    <value>महीना</value>
+  </data>
+  <data name="RangeQuarter" xml:space="preserve">
+    <value>3 महीने</value>
+  </data>
+  <data name="MetricScheduled" xml:space="preserve">
+    <value>निर्धारित</value>
+  </data>
+  <data name="MetricFocus" xml:space="preserve">
+    <value>फोकस समय</value>
+  </data>
+  <data name="MetricCompletion" xml:space="preserve">
+    <value>पूर्णता</value>
+  </data>
+  <data name="MetricAccuracy" xml:space="preserve">
+    <value>योजना की सटीकता</value>
+  </data>
+  <data name="MetricOnTime" xml:space="preserve">
+    <value>समय पर शुरू किया</value>
+  </data>
+  <data name="MetricLoad" xml:space="preserve">
+    <value>लोड</value>
+  </data>
+  <data name="MetricStreak" xml:space="preserve">
+    <value>सक्रिय श्रृंखला</value>
+  </data>
+  <data name="MetricOverdue" xml:space="preserve">
+    <value>समय पर न किए गए कार्य</value>
+  </data>
+  <data name="MetricDays" xml:space="preserve">
+    <value>{0} दिन</value>
+  </data>
+  <data name="MetricHours" xml:space="preserve">
+    <value>{0:0.#} घंटे</value>
+  </data>
+  <data name="MetricNoSample" xml:space="preserve">
+    <value>पर्याप्त डेटा नहीं</value>
+  </data>
+  <data name="MetricVsPrevious" xml:space="preserve">
+    <value>पिछले अवधि के मुकाबले</value>
+  </data>
+  <data name="ChartDailyLoad" xml:space="preserve">
+    <value>दिन दर दिन</value>
+  </data>
+  <data name="ChartCategories" xml:space="preserve">
+    <value>समय कहाँ जाता है</value>
+  </data>
+  <data name="ChartHours" xml:space="preserve">
+    <value>दिन के घंटे</value>
+  </data>
+  <data name="ChartWeekdays" xml:space="preserve">
+    <value>सप्ताह के दिन के अनुसार</value>
+  </data>
+  <data name="ChartScheduledLegend" xml:space="preserve">
+    <value>निर्धारित</value>
+  </data>
+  <data name="ChartCompletedLegend" xml:space="preserve">
+    <value>पूर्ण किया गया</value>
+  </data>
+  <data name="AnalyticsEmpty" xml:space="preserve">
+    <value>अभी पर्याप्त इतिहास नहीं है। कुछ दिन योजना बनाएं और कुछ सत्र पूरे करें — नंबर अपने आप दिखाई देंगे।</value>
+  </data>
+  <data name="AnalyticsInsights" xml:space="preserve">
+    <value>डेटा क्या दिखाता है</value>
+  </data>
+  <data name="AnalyticsAskAi" xml:space="preserve">
+    <value>इसे सहायक के साथ चर्चा करें</value>
+  </data>
+  <data name="AnalyticsAskAiPrompt" xml:space="preserve">
+    <value>पिछले {0} दिनों के लिए मेरी सांख्यिकी देखें और मुझे बताएं कि क्या बदलना है।</value>
+  </data>
+  <data name="AnalyticsAskAiPeriodPrompt" xml:space="preserve">
+    <value>{0} से {1} तक मेरी सांख्यिकी देखें और मुझे बताएं कि क्या बदलना है।</value>
+  </data>
+  <data name="InsightSample" xml:space="preserve">
+    <value>{0} अवलोकन · विश्वास स्तर {1}%</value>
+  </data>
+  <data name="InsightEstimationBiasOver" xml:space="preserve">
+    <value>सत्र योजना की तुलना में लगभग {0}% लंबा चलता है</value>
+  </data>
+  <data name="InsightEstimationBiasUnder" xml:space="preserve">
+    <value>सत्र योजना की तुलना में लगभग {0}% जल्दी समाप्त होते हैं</value>
+  </data>
+  <data name="InsightStrongTimeOfDay" xml:space="preserve">
+    <value>{0} आपके पूरे किए गए कार्य का {1}% लेता है</value>
+  </data>
+  <data name="InsightScheduleFriction" xml:space="preserve">
+    <value>{1} ब्लॉकों में से {0} को स्थानांतरित करना पड़ा</value>
+  </data>
+  <data name="InsightStartDelay" xml:space="preserve">
+    <value>{1} सत्रों में से {0} छोड़ दिए गए</value>
+  </data>
+  <data name="InsightOverload" xml:space="preserve">
+    <value>कैलेंडर आपकी जागृत समय का {0}% लेता है</value>
+  </data>
+  <data name="InsightUnderuse" xml:space="preserve">
+    <value>केवल {0}% आपका उपलब्ध समय योजनाबद्ध है</value>
+  </data>
+  <data name="InsightCategoryDominance" xml:space="preserve">
+    <value>{0} आपके निर्धारित समय का {1}% लेता है</value>
+  </data>
+  <data name="InsightConsistency" xml:space="preserve">
+    <value>आपका काम लगभग {0} घंटे प्रति दिन स्थिर रहता है</value>
+  </data>
+  <data name="PartOfDayMorning" xml:space="preserve">
+    <value>सुबह</value>
+  </data>
+  <data name="PartOfDayAfternoon" xml:space="preserve">
+    <value>दोपहर</value>
+  </data>
+  <data name="PartOfDayEvening" xml:space="preserve">
+    <value>शाम</value>
+  </data>
+  <data name="CategoryFocus" xml:space="preserve">
+    <value>ध्यान</value>
+  </data>
+  <data name="NowLabel" xml:space="preserve">
+    <value>अभी</value>
+  </data>
+  <data name="StartsIn" xml:space="preserve">
+    <value>{0} में</value>
+  </data>
+  <data name="EndsIn" xml:space="preserve">
+    <value>{0} बचे हैं</value>
+  </data>
+  <data name="DurationHoursMinutes" xml:space="preserve">
+    <value>{0} घंटे {1} मिनट</value>
+  </data>
+  <data name="DurationMinutes" xml:space="preserve">
+    <value>{0} मिनट</value>
+  </data>
+  <data name="OverdueBadge" xml:space="preserve">
+    <value>निर्धारित समय से अधिक</value>
+  </data>
+  <data name="TodayBadge" xml:space="preserve">
+    <value>आज</value>
+  </data>
+  <data name="TomorrowBadge" xml:space="preserve">
+    <value>कल</value>
+  </data>
+  <data name="DayLoadLabel" xml:space="preserve">
+    <value>{0} व्यस्त</value>
+  </data>
+  <data name="ChatToolRead" xml:space="preserve">
+    <value>पढ़ें</value>
+  </data>
+  <data name="MetricPeakHour" xml:space="preserve">
+    <value>पीक आवर</value>
+  </data>
+  <data name="MemoryCategoryGeneral" xml:space="preserve">
+    <value>सामान्य</value>
+  </data>
+  <data name="MemoryCategoryPreference" xml:space="preserve">
+    <value>प्राथमिकता</value>
+  </data>
+  <data name="MemoryCategoryRoutine" xml:space="preserve">
+    <value>दिनचर्या</value>
+  </data>
+  <data name="MemoryCategoryConstraint" xml:space="preserve">
+    <value>प्रतिबंध</value>
+  </data>
+  <data name="MemoryCategoryGoal" xml:space="preserve">
+    <value>लक्ष्य</value>
+  </data>
+  <data name="MemoryCategoryContext" xml:space="preserve">
+    <value>संदर्भ</value>
+  </data>
+  <data name="LocalModelRoleGeneral" xml:space="preserve">
+    <value>सामान्य प्रयोजन एजेंट</value>
+  </data>
+  <data name="LocalModelRoleReasoning" xml:space="preserve">
+    <value>तर्क और तेज़ उत्तर</value>
+  </data>
+  <data name="LocalModelRoleToolUse" xml:space="preserve">
+    <value>विघटन और उपकरण उपयोग</value>
+  </data>
+  <data name="LocalModelRoleCustom" xml:space="preserve">
+    <value>आपकी अपनी GGUF फ़ाइल</value>
+  </data>
+  <data name="ExperimentalBadge" xml:space="preserve">
+    <value>उन्नत</value>
+  </data>
+  <data name="CustomModelTitle" xml:space="preserve">
+    <value>आपका अपना मॉडल</value>
+  </data>
+  <data name="CustomModelHint" xml:space="preserve"><value>डिस्क पर GGUF फ़ाइल की ओर इशारा करें और इसे जैसे का तैसा उपयोग किया जाएगा: कुछ डाउनलोड नहीं किया जाएगा, कुछ कॉपी नहीं किया जाएगा। दो अलग फाइलें शामिल हो सकती हैं, और वे परस्पर बदलने योग्य नहीं हैं।</value></data>
+  <data name="CustomModelBadge" xml:space="preserve">
+    <value>कस्टम</value>
+  </data>
+  <data name="CustomModelNotChosen" xml:space="preserve">
+    <value>कोई फ़ाइल चयनित नहीं</value>
+  </data>
+  <data name="PickModelFile" xml:space="preserve">
+    <value>GGUF चुनें</value>
+  </data>
+  <data name="PickProjectorFile" xml:space="preserve">
+    <value>प्रोजेक्टर चुनें</value>
+  </data>
+  <data name="ClearCustomModel" xml:space="preserve">
+    <value>निकालें</value>
+  </data>
+  <data name="CustomModelDialogTitle" xml:space="preserve">
+    <value>GGUF मॉडल फ़ाइल चुनें</value>
+  </data>
+  <data name="ModelParameters" xml:space="preserve">
+    <value>मॉडल पैरामीटर</value>
+  </data>
+  <data name="ParamOff" xml:space="preserve">
+    <value>बंद</value>
+  </data>
+  <data name="ParamMinutes" xml:space="preserve">
+    <value>{0} मिनट</value>
+  </data>
+  <data name="ParamTemperature" xml:space="preserve">
+    <value>तापमान</value>
+  </data>
+  <data name="ParamTemperatureHint" xml:space="preserve"><value>मॉडल अपने शब्दों के चयन में कितना भिन्नता रखता है। कम होने पर दिनांक, समय और शीर्षक अक्षरशः रखे जाते हैं, जो शेड्यूलिंग के लिए आवश्यक है; अधिक होने पर यह अधिक जीवंत और कम सटीक होता है। 0.3 डिफ़ॉल्ट है।</value></data>
+  <data name="ParamMaxTokens" xml:space="preserve">
+    <value>उत्तर सीमा</value>
+  </data>
+  <data name="ParamMaxTokensHint" xml:space="preserve"><value>सबसे लंबा एकल उत्तर, टोकनों में – लगभग हर शब्द का तीन-चौथाई। बहुत कम होने पर लंबी योजना बीच में काट दी जाती है; बहुत अधिक होने पर कोई लागत नहीं होती जब तक मॉडल वास्तव में इतनी लंबी नहीं लिखता। 4000 पूरे दिन की योजना के लिए उपयुक्त है।</value></data>
+  <data name="ParamTopP" xml:space="preserve">
+    <value>टॉप-पी</value>
+  </data>
+  <data name="ParamTopPHint" xml:space="preserve"><value>उसी चीज़ पर एक दूसरी, कठोर सीमा: 1.00 से कम होने पर मॉडल केवल अपने सबसे संभावित शब्दों में से चुन सकता है। इसे 1.00 पर रखें और इसके बजाय तापमान का उपयोग करें – 1.00 पर यह अनुरोध में पूरी तरह से शामिल नहीं होता।</value></data>
+  <data name="ParamToolIterations" xml:space="preserve">
+    <value>टूल कदम</value>
+  </data>
+  <data name="ParamToolIterationsHint" xml:space="preserve"><value>सहायक को कुछ देखने, कार्य करने और फिर से सोचने की कितनी बार अनुमति है इससे पहले कि उसे उत्तर देना पड़े। प्रत्येक कदम एक राउंड ट्रिप है। कम होना तेज़ है लेकिन किसी भी परतदर परत चीज़ पर बल छोड़ देता है; 12 सप्ताह के अंत तक योजना बनाने को कवर करता है।</value></data>
+  <data name="ParamHistory" xml:space="preserve">
+    <value>इतिहास गहराई</value>
+  </data>
+  <data name="ParamHistoryHint" xml:space="preserve"><value>कितने पहले के संदेश फिर से भेजे जाते हैं ताकि सहायक धागे को याद रख सके। उस से पहले की हर चीज़ बातचीत के भीतर भूल जाती है। अधिक संदर्भ का खर्च टोकन और प्रत्येक संदेश पर थोड़ा समय होता है।</value></data>
+  <data name="ParamTimeout" xml:space="preserve">
+    <value>अनुरोध समय सीमा</value>
+  </data>
+  <data name="ParamTimeoutHint" xml:space="preserve"><value>एक उत्तर के लिए कितनी देर इंतजार करना चाहिए इससे पहले कि उस पर छोड़ दिया जाए। यह एक सुरक्षा जाल है, गति सेटिंग नहीं – इसे बढ़ाने से कुछ भी कभी धीमा नहीं होता, और इसे कम करने से केवल एक धीमा उत्तर बिना उत्तर में बदल जाता है।</value></data>
+  <data name="ParamExtraInstructions" xml:space="preserve">
+    <value>अतिरिक्त निर्देश</value>
+  </data>
+  <data name="ParamExtraInstructionsPlaceholder" xml:space="preserve"><value>उदाहरण के लिए: संक्षेप में उत्तर दें; कभी भी 10:00 से पहले कोई भी बुकिंग न करें; गहरी कार्य को 'फोकस' कहें।</value></data>
+  <data name="ResetParameters" xml:space="preserve">
+    <value>डिफ़ॉल्ट पर रीसेट करें</value>
+  </data>
+  <data name="LocalRuntimeSection" xml:space="preserve">
+    <value>स्थानीय इंजन</value>
+  </data>
+  <data name="ParamContext" xml:space="preserve">
+    <value>संदर्भ विंडो</value>
+  </data>
+  <data name="ParamContextHint" xml:space="preserve">
+    <value>टोकन जो लैमा-सर्वर मेमोरी में रखता है। छोटा होना तेज़ और हल्का होता है।</value>
+  </data>
+  <data name="ParamThreads" xml:space="preserve">
+    <value>थ्रेड्स</value>
+  </data>
+  <data name="ParamThreadsHint" xml:space="preserve">
+    <value>0 लैमा.cpp को निर्णय करने देता है। भौतिक कोर की संख्या सेट करना आमतौर पर तेज़ होता है।</value>
+  </data>
+  <data name="HideTools" xml:space="preserve">
+    <value>छुपाएँ</value>
+  </data>
+  <data name="TrackSection" xml:space="preserve">
+    <value>यह कैसा रहा?</value>
+  </data>
+  <data name="TrackStart" xml:space="preserve">
+    <value>शुरू करें</value>
+  </data>
+  <data name="TrackDone" xml:space="preserve">
+    <value>पूरा हुआ</value>
+  </data>
+  <data name="TrackPartial" xml:space="preserve">
+    <value>आंशिक रूप से</value>
+  </data>
+  <data name="TrackSkip" xml:space="preserve">
+    <value>छोड़ दिया गया</value>
+  </data>
+  <data name="TrackUndo" xml:space="preserve">
+    <value>पूर्ववत करें</value>
+  </data>
+  <data name="TrackedStarted" xml:space="preserve">
+    <value>शुरू हुआ {0} पर</value>
+  </data>
+  <data name="TrackedDone" xml:space="preserve">
+    <value>पूरा · {0}</value>
+  </data>
+  <data name="TrackedPartial" xml:space="preserve">
+    <value>आंशिक · {0}</value>
+  </data>
+  <data name="TrackedSkipped" xml:space="preserve">
+    <value>छोड़ दिया गया</value>
+  </data>
+  <data name="TrackHint" xml:space="preserve">
+    <value>इवेंट दर्ज करने पर विश्लेषण में पूर्णता, योजना की सटीकता और समय पर शुरुआत की गणना होती है।</value>
+  </data>
+  <data name="PeekNothingToday" xml:space="preserve">
+    <value>कुछ भी निर्धारित नहीं</value>
+  </data>
+  <data name="PeekOpen" xml:space="preserve">
+    <value>DAYDRIVE खोलें</value>
+  </data>
+  <data name="PeekBusyToday" xml:space="preserve">
+    <value>आज {0}</value>
+  </data>
+  <data name="PeekOverdue" xml:space="preserve">
+    <value>{0} देरी हो गई</value>
+  </data>
+  <data name="DurationLabelShort" xml:space="preserve">
+    <value>मिनट</value>
+  </data>
+  <data name="FinishedEvent" xml:space="preserve">
+    <value>अभी समाप्त हुआ</value>
+  </data>
+  <data name="SettingsTabAssistant" xml:space="preserve">
+    <value>एआई कनेक्शन</value>
+  </data>
+  <data name="SettingsTabModels" xml:space="preserve">
+    <value>स्थानीय एआई</value>
+  </data>
+  <data name="VisualPalette" xml:space="preserve">
+    <value>विज़ुअल पैलेट</value>
+  </data>
+  <data name="VisualPaletteHint" xml:space="preserve">
+    <value>चार्ट, श्रेणियों और प्राथमिकता संकेतकों द्वारा उपयोग किए जाने वाले रंगों को नियंत्रित करता है।</value>
+  </data>
+  <data name="PaletteVibrant" xml:space="preserve">
+    <value>जीवंत</value>
+  </data>
+  <data name="PaletteAccent" xml:space="preserve">
+    <value>हाइलाइट टोन</value>
+  </data>
+  <data name="PaletteMonochrome" xml:space="preserve">
+    <value>मोनोक्रोम</value>
+  </data>
+  <data name="PalettePastel" xml:space="preserve">
+    <value>पेस्टल</value>
+  </data>
+  <data name="PaletteEarth" xml:space="preserve">
+    <value>अर्थ</value>
+  </data>
+  <data name="PaletteNeon" xml:space="preserve">
+    <value>नीयन</value>
+  </data>
+  <data name="PaletteColorBlind" xml:space="preserve">
+    <value>सुलभ</value>
+  </data>
+  <data name="RamLabel" xml:space="preserve">
+    <value>रैम</value>
+  </data>
+  <data name="CpuLabel" xml:space="preserve">
+    <value>सीपीयू</value>
+  </data>
+  <data name="MetricPercentagePoints" xml:space="preserve">
+    <value>{0:0} पीपी</value>
+  </data>
+  <data name="InterfaceFont" xml:space="preserve"><value>इंटरफेस फ़ॉन्ट</value></data>
+  <data name="InterfaceFontHint" xml:space="preserve"><value>एक बंडल किए गए सिरिलिक फ़ॉन्ट का चयन करें या अपना खुद का TTF या OTF फ़ाइल जोड़ें।</value></data>
+  <data name="FontPreview" xml:space="preserve"><value>अ आ Aa 0123 · शांत एकाग्रता</value></data>
+  <data name="AddCustomFont" xml:space="preserve"><value>कस्टम फ़ॉन्ट जोड़ें</value></data>
+  <data name="FontPickerTitle" xml:space="preserve"><value>एक फ़ॉन्ट फ़ाइल चुनें</value></data>
+  <data name="FontAdded" xml:space="preserve"><value>फ़ॉन्ट “{0}” जोड़ दिया गया।</value></data>
+  <data name="FontInvalid" xml:space="preserve"><value>इस फ़ॉन्ट फ़ाइल को पढ़ा नहीं जा सका।</value></data>
+  <data name="CustomFontLabel" xml:space="preserve"><value>{0} · कस्टम</value></data>
+  <data name="FontSystem" xml:space="preserve"><value>सिस्टम</value></data>
+  <data name="ActivityTimer" xml:space="preserve"><value>गतिविधि टाइमर</value></data>
+  <data name="AiConnectionIntro" xml:space="preserve"><value>चुनें कि सहायक कौन उत्तर देगा: इस डिवाइस का एक मॉडल, एक संगत API, या एक MCP सर्वर।</value></data>
+  <data name="LocalAiTitle" xml:space="preserve"><value>स्थानीय एआई</value></data>
+  <data name="LocalAiConnectionHint" xml:space="preserve"><value>मॉडल इस डिवाइस पर चलता है। डाउनलोड, फ़ाइलें और स्थानीय इंजन को स्थानीय एआई में प्रबंधित किया जाता है।</value></data>
+  <data name="OpenLocalAi" xml:space="preserve"><value>खोलें</value></data>
+  <data name="ApiConnectionTitle" xml:space="preserve"><value>API कनेक्शन</value></data>
+  <data name="ApiConnectionHint" xml:space="preserve"><value>एक OpenAI-संगत HTTP API कनेक्ट करें। कुंजी इस डिवाइस पर एन्क्रिप्ट की जाती है।</value></data>
+  <data name="McpConnectionTitle" xml:space="preserve"><value>MCP सर्वर</value></data>
+  <data name="McpConnectionHint" xml:space="preserve"><value>MCP का उपयोग प्रदाता के रूप में करें जब सर्वर खुद एक ब्रिज टूल के माध्यम से उत्तर देना चाहिए।</value></data>
+  <data name="McpTransport" xml:space="preserve"><value>परिवहन</value></data>
+  <data name="McpCommandLabel" xml:space="preserve"><value>सर्वर कमांड</value></data>
+  <data name="McpToolLabel" xml:space="preserve"><value>ब्रिज टूल</value></data>
+  <data name="AdvancedSettings" xml:space="preserve"><value>उन्नत</value></data>
+  <data name="AdvancedSettingsHint" xml:space="preserve"><value>मॉडल कैसे लिखता है, यह अपने आप कितनी दूर जा सकता है, और इसे हमेशा क्या ध्यान में रखना चाहिए।</value></data>
+  <data name="TrackEventTooltip" xml:space="preserve"><value>इस घटना में क्या हुआ, इसका रिकॉर्ड रखें</value></data>
+  <data name="TrackPartialTooltip" xml:space="preserve"><value>आंशिक रूप से किया गया — आप चुनते हैं कि वास्तव में इसमें कितना समय लगा</value></data>
+  <data name="UnmarkedEvents" xml:space="preserve"><value>{0} का कोई निशान नहीं</value></data>
+  <data name="PeekOpenPanel" xml:space="preserve"><value>पैनल खोलें</value></data>
+  <data name="AskAssistant" xml:space="preserve"><value>सहायक से पूछें</value></data>
+  <data name="AiProviderLocalSummary" xml:space="preserve"><value>यह मॉडल इस कंप्यूटर पर चलता है। कुछ भी डिवाइस से बाहर नहीं जाता, और इंजन नीचे डाउनलोड और प्रबंधित किया जाता है।</value></data>
+  <data name="AiProviderApiSummary" xml:space="preserve"><value>कोई भी OpenAI-संगत एंडपॉइंट, जिसमें Ollama शामिल है। आपका शेड्यूल केवल तभी भेजा जाता है जब आप इसे नीचे अनुमति दें।</value></data>
+  <data name="AiProviderMcpSummary" xml:space="preserve"><value>एक MCP सर्वर केवल एक ब्रिज टूल के माध्यम से उत्तर देता है। इस तरीके से छवियां नहीं भेजी जा सकतीं।</value></data>
+  <data name="AttachImage" xml:space="preserve"><value>छवि…</value></data>
+  <data name="AttachDocument" xml:space="preserve"><value>दस्तावेज़…</value></data>
+  <data name="AttachImagesFilter" xml:space="preserve"><value>छवियां</value></data>
+  <data name="AttachDocumentsFilter" xml:space="preserve"><value>दस्तावेज़</value></data>
+  <data name="AttachUnsupported" xml:space="preserve"><value>उस फ़ॉर्मेट को पढ़ा नहीं जा सकता। इमेजेस: PNG, JPEG, WebP, BMP, GIF। दस्तावेज़: PDF, DOCX और टेक्स्ट फाइलें।</value></data>
+  <data name="AttachTooLarge" xml:space="preserve"><value>वह फ़ाइल {0} MB से अधिक है और इसे संलग्न नहीं किया जा सकता।</value></data>
+  <data name="AttachImageNotSupported" xml:space="preserve"><value>वर्तमान इंजन इमेजेस को नहीं पढ़ सकता। प्रदाता बदलें, या स्थानीय मॉडल के लिए इमेज इनपुट चालू करें।</value></data>
+  <data name="SettingsTabData" xml:space="preserve"><value>डेटा और सिंक</value></data>
+  <data name="SettingsTabAbout" xml:space="preserve"><value>बारे में</value></data>
+  <data name="CloudSyncTitle" xml:space="preserve"><value>क्लाउड सिंक</value></data>
+  <data name="CloudSyncIntro" xml:space="preserve"><value>आपके डेटा की एक प्रति ऐसी जगह रखता है जहाँ से आपके दूसरे कंप्यूटर उसे ले सकें। कार्य, इवेंट, प्रगति, सहायक की बातचीत और मेमोरी सिंक होते हैं; सेटिंग्स हर कंप्यूटर पर अलग रहती हैं।</value></data>
+  <data name="CloudDestination" xml:space="preserve"><value>गंतव्य</value></data>
+  <data name="CloudProviderOff" xml:space="preserve"><value>बंद</value></data>
+  <data name="CloudProviderFolder" xml:space="preserve"><value>सिंक की गई फ़ोल्डर</value></data>
+  <data name="CloudFolderHint" xml:space="preserve"><value>उस फ़ोल्डर को इंगित करें जिसे आपका Google Drive, OneDrive या Dropbox क्लाइंट पहले से ही सिंक में रखता है। यहाँ किसी खाते या कुंजी की आवश्यकता नहीं है।</value></data>
+  <data name="CloudFolderPlaceholder" xml:space="preserve"><value>C:\Users\you\Google Drive</value></data>
+  <data name="CloudFolderDialogTitle" xml:space="preserve"><value>सिंक किए गए फ़ोल्डर का चयन करें</value></data>
+  <data name="Browse" xml:space="preserve"><value>ब्राउज़ करें…</value></data>
+  <data name="CloudGoogleHint" xml:space="preserve"><value>सीधे ड्राइव के छिपे हुए एप्लिकेशन फ़ोल्डर में अपलोड करता है। ऐप आपके ड्राइव के बाकी हिस्सों को कभी नहीं देख सकता।</value></data>
+  <data name="CloudGoogleSetupTitle" xml:space="preserve"><value>एक बार का सेटअप</value></data>
+  <data name="CloudGoogleSetupSteps" xml:space="preserve"><value>Google Cloud Console में सिर्फ़ एक बार:
+1. एक प्रोजेक्ट बनाएँ और उसमें “Google Drive API” चालू करें।
+2. OAuth consent screen पर External चुनें और अपना Google पता test user के रूप में जोड़ें।
+3. Credentials में “Desktop app” प्रकार का OAuth client ID बनाएँ।
+4. उसका client ID और client secret नीचे चिपकाएँ और “Google खाता कनेक्ट करें” दबाएँ।</value></data>
+  <data name="CloudGoogleConsole" xml:space="preserve"><value>Google Cloud Console खोलें</value></data>
+  <data name="CloudGoogleClientId" xml:space="preserve"><value>OAuth क्लाइंट आईडी</value></data>
+  <data name="CloudGoogleClientSecret" xml:space="preserve"><value>OAuth क्लाइंट सीक्रेट</value></data>
+  <data name="CloudGoogleClientSecretPlaceholder" xml:space="preserve"><value>GOCSPX-…</value></data>
+  <data name="CloudGoogleClientSecretHint" xml:space="preserve"><value>ज़रूरी है। यह Google Cloud Console में client ID के बगल में होता है। इस कंप्यूटर पर एन्क्रिप्ट करके रखा जाता है और सिर्फ़ Google को भेजा जाता है।</value></data>
+  <data name="CloudGoogleConnect" xml:space="preserve"><value>Google खाता कनेक्ट करें</value></data>
+  <data name="CloudGoogleDisconnect" xml:space="preserve"><value>डिस्कनेक्ट करें</value></data>
+  <data name="CloudGoogleWaiting" xml:space="preserve"><value>अपने ब्राउज़र में साइन इन पूरा करें…</value></data>
+  <data name="CloudGoogleDisconnected" xml:space="preserve"><value>Google खाता डिसकनेक्ट किया गया। क्लाउड कॉपी को अप्रभावित छोड़ दिया गया।</value></data>
+  <data name="CloudDeviceName" xml:space="preserve"><value>इस कंप्यूटर का नाम है</value></data>
+  <data name="CloudDeviceNamePlaceholder" xml:space="preserve"><value>लैपटॉप</value></data>
+  <data name="CloudDeviceNameHint" xml:space="preserve"><value>एक स्नैपशॉट के पास दिखाया गया ताकि आप बता सकें कि कौन सा मशीन आखिरी बार अपलोड किया।</value></data>
+  <data name="CloudAutomatic" xml:space="preserve"><value>अपने आप सिंक करें</value></data>
+  <data name="CloudAutomaticHint" xml:space="preserve"><value>लॉन्च के तुरंत बाद, हर पंद्रह मिनट में, और बाहर जाते समय एक बार और जांच करता है। इसे बंद करने पर, केवल बटन ही सिंक करता है।</value></data>
+  <data name="CloudSyncNow" xml:space="preserve"><value>अभी सिंक करें</value></data>
+  <data name="CloudCheck" xml:space="preserve"><value>क्लाउड जांचें</value></data>
+  <data name="CloudSyncRunning" xml:space="preserve"><value>सिंक हो रहा है…</value></data>
+  <data name="CloudNoSnapshot" xml:space="preserve"><value>अभी तक कुछ भी अपलोड नहीं हुआ है।</value></data>
+  <data name="CloudSnapshotFormat" xml:space="preserve"><value>{0} सहेजी गई</value></data>
+  <data name="CloudSnapshotDeviceFormat" xml:space="preserve"><value>“{1}” से {0} सहेजी गई</value></data>
+  <data name="CloudConflictTitle" xml:space="preserve"><value>दोनों कॉपी बदल दी गईं</value></data>
+  <data name="CloudConflictHint" xml:space="preserve"><value>इस कंप्यूटर और क्लाउड कॉपी दोनों को अंतिम सिंक के बाद संपादित किया गया था। मर्जिंग को अनुमान लगाना पड़ेगा, इसलिए तय करें कि किसे रखना है। दूसरी कॉपी बदल दी जाएगी।</value></data>
+  <data name="CloudKeepLocal" xml:space="preserve"><value>इस कंप्यूटर को रखें</value></data>
+  <data name="CloudKeepCloud" xml:space="preserve"><value>क्लाउड कॉपी को रखें</value></data>
+  <data name="CloudRestartHint" xml:space="preserve"><value>डाउनलोड की गई कॉपी तैयार है और DAYDRIVE के पुनरारंभ होने पर लागू होती है। आपका पिछला डेटा बैकअप फ़ोल्डर में सहेजा गया था।</value></data>
+  <data name="LocalData" xml:space="preserve"><value>इस कंप्यूटर पर</value></data>
+  <data name="LocalDataHint" xml:space="preserve"><value>सब कुछ यहां एक SQLite डेटाबेस में रहता है, साथ ही बैकअप और स्थानीय मॉडल फ़ाइलें भी।</value></data>
+  <data name="OpenDataFolder" xml:space="preserve"><value>फ़ोल्डर खोलें</value></data>
+  <data name="CouldNotOpenFolder" xml:space="preserve"><value>उस फ़ोल्डर को नहीं खोला जा सका।</value></data>
+  <data name="CouldNotOpenLink" xml:space="preserve"><value>{0} के लिए ब्राउज़र नहीं खोला जा सका</value></data>
+  <data name="AboutVersionFormat" xml:space="preserve"><value>संस्करण {0}</value></data>
+  <data name="AboutTagline" xml:space="preserve"><value>एक कॉम्पैक्ट लोकल-फ़र्स्ट प्लानर और कैलेंडर जो आपके स्क्रीन के किनारे पर रहता है।</value></data>
+  <data name="AboutAuthorLabel" xml:space="preserve"><value>द्वारा निर्मित</value></data>
+  <data name="AboutOpenGitHub" xml:space="preserve"><value>GitHub</value></data>
+  <data name="AboutLinks" xml:space="preserve"><value>लिंक</value></data>
+  <data name="AboutRepository" xml:space="preserve"><value>स्रोत कोड</value></data>
+  <data name="AboutIssues" xml:space="preserve"><value>समस्या रिपोर्ट करें</value></data>
+  <data name="AboutReleases" xml:space="preserve"><value>सभी रिलीज़</value></data>
+  <data name="UpdatesTitle" xml:space="preserve"><value>अपडेट</value></data>
+  <data name="GeneralIntro" xml:space="preserve"><value>भाषा, और कंप्यूटर चालू होने पर एप्लिकेशन क्या करता है।</value></data>
+  <data name="AppearanceIntro" xml:space="preserve"><value>विषय, रंग और प्रकार, और कितनी डेस्कटॉप दिखाई देती है।</value></data>
+  <data name="BehaviorIntro" xml:space="preserve"><value>शेल और क्विक विजेट कैसे आते और जाते हैं।</value></data>
+  <data name="RemindersIntro" xml:space="preserve"><value>कार्ड जो किसी घटना के शुरू या समाप्त होने से पहले पंखुड़ी से बाहर झुकते हैं।</value></data>
+  <data name="UpdatesIntro" xml:space="preserve"><value>दिन में एक बार पृष्ठभूमि में जाँच की जाती है। यहाँ कुछ भी कभी बाधित नहीं करता।</value></data>
+  <data name="UpdateChecking" xml:space="preserve"><value>जाँच हो रही है…</value></data>
+  <data name="UpdateUpToDate" xml:space="preserve"><value>आप नवीनतम संस्करण पर हैं।</value></data>
+  <data name="UpdateAvailableFormat" xml:space="preserve"><value>संस्करण {0} उपलब्ध है।</value></data>
+  <data name="UpdateSkippedFormat" xml:space="preserve"><value>संस्करण {0} का पुनः उल्लेख नहीं किया जाएगा।</value></data>
+  <data name="UpdateSkip" xml:space="preserve"><value>छोड़ें</value></data>
+  <data name="UpdateOpen" xml:space="preserve"><value>क्या नया है</value></data>
+  <data name="UpdateCheckEnabled" xml:space="preserve"><value>मुझे नई संस्करणों के बारे में बताओ</value></data>
+  <data name="UpdateCheckHint" xml:space="preserve"><value>प्रति दिन एक बार GitHub से पूछता है। आपके बारे में कुछ भी नहीं भेजा जाता, कुछ भी आपको बाधित नहीं करता, और जो संस्करण आप छोड़ देंगे वह कभी फिर से नहीं बताया जाएगा।</value></data>
+  <data name="UpdateCheckNow" xml:space="preserve"><value>अभी जांचें</value></data>
+  <data name="PeekOfPlanned" xml:space="preserve"><value>{0} में से योजना बनाई गई</value></data>
+  <data name="PeekUntilStart" xml:space="preserve"><value>शुरू होने तक</value></data>
+  <data name="PeekAllGood" xml:space="preserve"><value>सब कुछ ट्रैक पर है</value></data>
+  <data name="PeekNotStarted" xml:space="preserve"><value>अभी तक शुरू नहीं हुआ है</value></data>
+  <data name="PeekOverPlanned" xml:space="preserve"><value>योजना से {0} ज्यादा</value></data>
+  <data name="HandleTooltipPanel" xml:space="preserve"><value>बायाँ क्लिक — पैनल</value></data>
+  <data name="HandleTooltipWidget" xml:space="preserve"><value>दायाँ क्लिक — विजेट</value></data>
+  <data name="WidgetHideDelay" xml:space="preserve"><value>विजेट छुपाने की देरी</value></data>
+  <data name="WidgetHideDelayHint" xml:space="preserve"><value>पॉइंटर के छोड़ने के बाद क्विक विजेट स्क्रीन पर कितनी देर रहता है। इसे एज हैंडल पर राइट क्लिक करके खोलें; लेफ्ट बटन अभी भी पैनल खोलता है।</value></data>
+  <data name="WidgetKeepOpen" xml:space="preserve"><value>विजेट को स्वतः न छिपाएँ</value></data>
+  <data name="WidgetKeepOpenHint" xml:space="preserve"><value>त्वरित विजेट तब तक स्क्रीन पर रहता है जब तक उसे बंद न किया जाए — किनारे के हैंडल पर या खुद विजेट पर दायाँ बटन। अनुस्मारक अब भी उसे खुद लाते और हटाते हैं।</value></data>
+  <data name="MascotColor" xml:space="preserve"><value>विजेट मस्कट</value></data>
+  <data name="MascotColorDynamic" xml:space="preserve"><value>थीम रंग का पालन करें</value></data>
+  <data name="MascotColorHint" xml:space="preserve"><value>क्विक विजेट में घड़ी के पास की प्राणी। यह वर्तमान थीम के ऐक्सेंट रंग को लेता है जब तक कि इसे यहाँ किसी रंग का चयन न किया जाए।</value></data>
+  <data name="MascotShow" xml:space="preserve"><value>मैस्कॉट दिखाएँ</value></data>
+  <data name="SelectEvents" xml:space="preserve"><value>चयन करें</value></data>
+  <data name="SelectAllEvents" xml:space="preserve"><value>सभी</value></data>
+  <data name="ClearSelectionAction" xml:space="preserve"><value>साफ़ करें</value></data>
+  <data name="SelectionNone" xml:space="preserve"><value>कुछ भी चयनित नहीं</value></data>
+  <data name="SelectionCount" xml:space="preserve"><value>{0} चयनित · {1}</value></data>
+  <data name="SelectionEmptyHint" xml:space="preserve"><value>पहले वे इवेंट चुनें जिन पर आप कार्रवाई करना चाहते हैं।</value></data>
+  <data name="SelectEventAction" xml:space="preserve"><value>चयन करें</value></data>
+  <data name="SelectionExit" xml:space="preserve"><value>पूरा</value></data>
+  <data name="SelectionHint" xml:space="preserve"><value>घटनाओं को एक साथ स्थानांतरित या हटाने के लिए टिक करें।</value></data>
+  <data name="SelectionDeleteConfirm" xml:space="preserve"><value>{0} हटाएं?</value></data>
+  <data name="SelectionDeleted" xml:space="preserve"><value>हटाया गया: {0}</value></data>
+  <data name="DeleteSelected" xml:space="preserve"><value>हटाएँ</value></data>
+  <data name="MoveEvent" xml:space="preserve"><value>स्थानांतरित करें…</value></data>
+  <data name="MoveSelected" xml:space="preserve"><value>स्थानांतरित करें</value></data>
+  <data name="MoveTitle" xml:space="preserve"><value>घटनाओं को स्थानांतरित करें</value></data>
+  <data name="MoveSubjectCount" xml:space="preserve"><value>{0} घटनाएँ</value></data>
+  <data name="MoveModeTime" xml:space="preserve"><value>समय के अनुसार</value></data>
+  <data name="MoveModeDate" xml:space="preserve"><value>किसी दिनांक पर</value></data>
+  <data name="MoveByHowMuch" xml:space="preserve"><value>द्वारा स्थानांतरित करें</value></data>
+  <data name="MoveEarlier" xml:space="preserve"><value>पहले</value></data>
+  <data name="MoveLater" xml:space="preserve"><value>बाद में</value></data>
+  <data name="MovePreview" xml:space="preserve"><value>{0} — {1}, {2}</value></data>
+  <data name="MoveNothingToDo" xml:space="preserve"><value>इससे सब कुछ वैसा ही रह जाएगा जैसा है।</value></data>
+  <data name="MoveCheck" xml:space="preserve"><value>जांचें और स्थानांतरित करें</value></data>
+  <data name="MoveApply" xml:space="preserve"><value>स्थानांतरित करें</value></data>
+  <data name="MoveAffects" xml:space="preserve"><value>इससे अन्य घटनाओं पर प्रभाव पड़ता है</value></data>
+  <data name="MoveNoCollisions" xml:space="preserve"><value>अन्य कुछ प्रभावित नहीं होता।</value></data>
+  <data name="MoveCollisionSummary" xml:space="preserve"><value>{0} ओवरलैप करता है</value></data>
+  <data name="MoveConfirmClear" xml:space="preserve"><value>{0} को स्थानांतरित किया जा रहा है। अन्य कुछ प्रभावित नहीं होता — {1}</value></data>
+  <data name="MoveConfirmWithCollisions" xml:space="preserve"><value>{0} को स्थानांतरित करने से {1} अन्य घटनाओं के साथ ओवरलैप होगा। फिर भी स्थानांतरित करें?</value></data>
+  <data name="MoveCompleted" xml:space="preserve"><value>स्थानांतरित हुआ: {0}</value></data>
+  <data name="MoveCompletedWithCollisions" xml:space="preserve"><value>स्थानांतरित हुआ: {0} · ओवरलैप: {1}</value></data>
+  <data name="CollisionWithExisting" xml:space="preserve"><value>«{0}» «{1}» के साथ ओवरलैप करेगा</value></data>
+  <data name="CollisionWithinSelection" xml:space="preserve"><value>«{0}» और «{1}» एक-दूसरे के साथ ओवरलैप करेंगे</value></data>
+  <data name="MoveNudgeMinusHour" xml:space="preserve"><value>−1 घंटा</value></data>
+  <data name="MoveNudgeMinus15" xml:space="preserve"><value>−15 मिनट</value></data>
+  <data name="MoveNudgePlus15" xml:space="preserve"><value>+15 मिनट</value></data>
+  <data name="MoveNudgePlusHour" xml:space="preserve"><value>+1 घंटा</value></data>
+  <data name="DragEventHint" xml:space="preserve"><value>किसी घटना को दूसरी घंटा या दिन में स्थानांतरित करने के लिए खींचें।</value></data>
+  <data name="DayResultLabel" xml:space="preserve"><value>दिन का परिणाम</value></data>
+  <data name="DaySoFarLabel" xml:space="preserve"><value>अब तक आज</value></data>
+  <data name="DayAheadLabel" xml:space="preserve"><value>आने वाला दिन</value></data>
+  <data name="DayReviewTitle" xml:space="preserve"><value>{1} में से {0} पूरा हुआ</value></data>
+  <data name="DayReviewMeta" xml:space="preserve"><value>{1} में से {0} · {2}%</value></data>
+  <data name="DayReviewEmpty" xml:space="preserve"><value>कुछ भी योजना नहीं बनाई गई थी</value></data>
+  <data name="DayReviewEmptyHint" xml:space="preserve"><value>इस दिन कोई घटना नहीं है।</value></data>
+  <data name="DayAheadTitle" xml:space="preserve"><value>{0} · {1}</value></data>
+  <data name="DayChipDone" xml:space="preserve"><value>{0} पूरा हुआ</value></data>
+  <data name="DayChipPartial" xml:space="preserve"><value>{0} आंशिक रूप से</value></data>
+  <data name="DayChipSkipped" xml:space="preserve"><value>{0} छोड़ दिया गया</value></data>
+  <data name="DayChipUnmarked" xml:space="preserve"><value>{0} चिह्नित नहीं किया गया</value></data>
+  <data name="DayChipUpcoming" xml:space="preserve"><value>{0} आने वाला है</value></data>
+  <data name="PeekUnmarked" xml:space="preserve"><value>{0} चिह्नित नहीं किया गया</value></data>
+  <data name="PeekSkipped" xml:space="preserve"><value>{0} छोड़ दिया गया</value></data>
+  <data name="PeekPartial" xml:space="preserve"><value>{0} केवल आंशिक रूप से</value></data>
+  <data name="PeekDayDone" xml:space="preserve"><value>दिन बंद · {0} पूरा हुआ</value></data>
+  <data name="PeekDaySummary" xml:space="preserve"><value>{1} में से {0} पूरा हुआ</value></data>
+  <data name="TrackRunning" xml:space="preserve"><value>चल रहा है</value></data>
+  <data name="RangeDetailDays" xml:space="preserve"><value>पिछले {0} दिन</value></data>
+  <data name="RangeDetailWeeks" xml:space="preserve"><value>पिछले {0} सप्ताह</value></data>
+  <data name="RangeDetailCalendarWeek" xml:space="preserve"><value>कैलेंडर सप्ताह · सोम–रवि</value></data>
+  <data name="RangeDetailCalendarMonth" xml:space="preserve"><value>कैलेंडर माह · पहले–अंतिम दिन</value></data>
+  <data name="RangeDetailCalendarQuarter" xml:space="preserve"><value>3 पूर्ण कैलेंडर महीने</value></data>
+  <data name="RangePickerTooltip" xml:space="preserve"><value>प्रदर्शित अवधि</value></data>
+  <data name="AnalyticsCurrentWeek" xml:space="preserve"><value>वर्तमान सप्ताह</value></data>
+  <data name="AnalyticsPreviousWeek" xml:space="preserve"><value>पिछला सप्ताह</value></data>
+  <data name="AnalyticsNextWeek" xml:space="preserve"><value>अगला सप्ताह</value></data>
+  <data name="ChartPerDay" xml:space="preserve"><value>प्रति दिन</value></data>
+  <data name="ChartPerWeek" xml:space="preserve"><value>प्रति सप्ताह</value></data>
+  <data name="ChartTotal" xml:space="preserve"><value>कुल</value></data>
+  <data name="EventsCountOne" xml:space="preserve"><value>{0} इवेंट</value></data>
+  <data name="EventsCountFew" xml:space="preserve"><value>{0} इवेंट</value></data>
+  <data name="EventsCountMany" xml:space="preserve"><value>{0} इवेंट</value></data>
+  <data name="ChartWeeklyLoad" xml:space="preserve"><value>सप्ताह दर सप्ताह</value></data>
+  <data name="ShiftMoreOptions" xml:space="preserve"><value>और विकल्प</value></data>
+  <data name="ShiftDays" xml:space="preserve"><value>दिन</value></data>
+  <data name="ShiftOnDate" xml:space="preserve"><value>किसी तारीख को</value></data>
+  <data name="ShiftDayDateConfirmation" xml:space="preserve"><value>क्या {0} पर मौजूद सब कुछ {1} में स्थानांतरित करें?</value></data>
+  <data name="VisionUnsupported" xml:space="preserve"><value>इस मॉडल में कोई छवि एन्कोडर नहीं है, इसलिए इसकी छवि इनपुट बंद रहेगा। "इमेजेस" अंकित मॉडल चुनें।</value></data>
+  <data name="VisionReady" xml:space="preserve"><value>छवि इनपुट तैयार है। एक तस्वीर संलग्न करें और इसके बारे में पूछें।</value></data>
+  <data name="VisionNeedsProjector" xml:space="preserve"><value>इस मॉडल के लिए प्रोजेक्टर अभी डाउनलोड नहीं हुआ है। ऊपर दिए बटन का उपयोग करें।</value></data>
+  <data name="VisionNeedsCustomProjector" xml:space="preserve"><value>इस मॉडल की mmproj फ़ाइल नीचे चुनें, अन्यथा छवि इनपुट बंद रहेगा।</value></data>
+  <data name="VisionBadge" xml:space="preserve"><value>छवियाँ</value></data>
+  <data name="CustomWeightsTitle" xml:space="preserve"><value>मॉडल फ़ाइल · GGUF</value></data>
+  <data name="CustomWeightsHint" xml:space="preserve"><value>मॉडल ही: वह सब कुछ जो वह जानता है और वह सब कुछ जो वह लिख सकता है। आवश्यक।</value></data>
+  <data name="CustomProjectorTitle" xml:space="preserve"><value>विजन प्रोजेक्टर · एमएमपीआरओजे</value></data>
+  <data name="CustomProjectorHint" xml:space="preserve"><value>एक दूसरी, बहुत छोटी फ़ाइल जो एक तस्वीर को किसी ऐसी चीज़ में बदल देती है जिसे ऊपर दिया गया मॉडल पढ़ सकता है। केवल छवि इनपुट के लिए, और केवल उस सटीक मॉडल से संबंधित mmproj फ़ाइल।</value></data>
+  <data name="CustomFileMissing" xml:space="preserve"><value>नहीं चुना गया</value></data>
+  <data name="McpEndpointHint" xml:space="preserve"><value>एमसीपी सर्वर का अपना पता। एपीआई पते से अलग रखा गया: एक को दूसरे के रूप में पढ़ने का मतलब हर संदेश से पहले एक बर्बाद कनेक्शन प्रयास था।</value></data>
+  <data name="AdvancedMcpNotice" xml:space="preserve"><value>MCP ब्रिज स्वयं उत्तर देता है, इसलिए ये सेटिंग उस तक नहीं पहुँचतीं। अनुरोधों को बदलने के लिए स्थानीय मॉडल या API कनेक्शन चुनें।</value></data>
+  <data name="ParamGroupSampling" xml:space="preserve"><value>उत्तर कैसे लिखा जाता है</value></data>
+  <data name="ParamGroupBudget" xml:space="preserve"><value>यह कितनी दूर जा सकता है</value></data>
+  <data name="ParamGroupStanding" xml:space="preserve"><value>हर बातचीत</value></data>
+  <data name="AiActionSetTaskStatus" xml:space="preserve"><value>कार्य स्थिति परिवर्तित करें</value></data>
+  <data name="AiActionCreateFocusBlock" xml:space="preserve"><value>कार्य समय रिज़र्व करें</value></data>
+  <data name="StageToolSearch" xml:space="preserve"><value>अनुसूची खोजी जा रही है…</value></data>
+  <data name="TaskStatusInbox" xml:space="preserve"><value>इनबॉक्स</value></data>
+  <data name="TaskStatusReady" xml:space="preserve"><value>तैयार</value></data>
+  <data name="TaskStatusScheduled" xml:space="preserve"><value>अनुसूचित</value></data>
+  <data name="TaskStatusInProgress" xml:space="preserve"><value>प्रगति में</value></data>
+  <data name="TaskStatusDone" xml:space="preserve"><value>पूरा</value></data>
+  <data name="TaskStatusCancelled" xml:space="preserve"><value>रद्द किया गया</value></data>
+  <data name="AiAccessConfirmAllShort" xml:space="preserve"><value>पुष्टि करें</value></data>
+  <data name="AiAccessAutoSafeShort" xml:space="preserve"><value>ऑटो-सेफ</value></data>
+  <data name="AiAccessFullShort" xml:space="preserve"><value>पूर्ण</value></data>
+  <data name="SnapStep" xml:space="preserve"><value>{0} मिनट</value></data>
+  <data name="Reminders" xml:space="preserve"><value>अनुस्मारक</value></data>
+  <data name="NotificationsEnabled" xml:space="preserve"><value>अनुस्मारक दिखाएँ</value></data>
+  <data name="NotificationsEnabledHint" xml:space="preserve"><value>एज हैंडल के पास त्वरित विजेट में एक कार्ड, एक इवेंट शुरू होने या खत्म होने से पहले। कुछ भी सिस्टम को सौंपा नहीं जाता।</value></data>
+  <data name="NotificationSound" xml:space="preserve"><value>अनुस्मारक ध्वनि</value></data>
+  <data name="NotificationSoundHint" xml:space="preserve"><value>सिस्टम सेटिंग्स में चुनी गई सूचनाओं की ध्वनि चलाता है, जब विजेट पहले से खुला हो तो धीरे से।</value></data>
+  <data name="NotificationsOffHint" xml:space="preserve"><value>अनुस्मारक बंद हैं।</value></data>
+  <data name="NotificationHide" xml:space="preserve"><value>सूचना छिपाएँ</value></data>
+  <data name="NotificationDismissAll" xml:space="preserve"><value>सभी को खारिज करें</value></data>
+  <data name="DoNotDisturb" xml:space="preserve"><value>परेशान न करें</value></data>
+  <data name="DoNotDisturbUntil" xml:space="preserve"><value>{0} तक शांत</value></data>
+  <data name="DoNotDisturbEnd" xml:space="preserve"><value>अंत में डिस्टर्ब न करें</value></data>
+  <data name="DoNotDisturbOffHint" xml:space="preserve"><value>रिमाइंडर समय पर आते हैं।</value></data>
+  <data name="DoNotDisturbOffShort" xml:space="preserve"><value>बंद</value></data>
+  <data name="DoNotDisturbUntilResumedHint" xml:space="preserve"><value>इसे वापस चालू करने तक शांत रहें।</value></data>
+  <data name="DoNotDisturbLength" xml:space="preserve"><value>कितने समय के लिए</value></data>
+  <data name="QuietLengthMinutes" xml:space="preserve"><value>{0} मिनट</value></data>
+  <data name="QuietLengthHours" xml:space="preserve"><value>{0} घंटा</value></data>
+  <data name="QuietLengthUntilResumed" xml:space="preserve"><value>जब तक मैं इसे वापस चालू न कर दूँ</value></data>
+  <data name="FocusMode" xml:space="preserve"><value>फ़ोकस मोड</value></data>
+  <data name="FocusModeIntro" xml:space="preserve"><value>जब तक कोई गेम — या और कुछ भी — पूरी स्क्रीन घेरे हुए है, शेल पीछे हट जाता है: वह पूरे डेस्कटॉप पर पकड़े शॉर्टकट छोड़ देता है ताकि कुंजियाँ सामने वाली चीज़ तक पहुँचें, और अपने अनुस्मारक तब तक रोके रखता है जब तक स्क्रीन दोबारा आपकी न हो जाए।</value></data>
+  <data name="FocusModeManualOnlyHint" xml:space="preserve"><value>यह डेस्कटॉप नहीं बताता कि स्क्रीन पर और क्या है, इसलिए अपने आप कुछ नहीं पहचाना जाता। यहाँ हाथ से चालू करने पर फ़ोकस मोड काम करता है।</value></data>
+  <data name="FocusModeAuto" xml:space="preserve"><value>पूर्ण-स्क्रीन ऐप्लिकेशन पहचानें</value></data>
+  <data name="FocusModeHold" xml:space="preserve"><value>चालू रखें</value></data>
+  <data name="FocusModeHoldHint" xml:space="preserve"><value>स्क्रीन पर चाहे जो हो, बंद करने तक चालू रहता है। पुनः आरंभ के बाद याद नहीं रखा जाता।</value></data>
+  <data name="FocusModeReleaseShortcuts" xml:space="preserve"><value>शॉर्टकट छोड़ दें</value></data>
+  <data name="FocusModeReleaseShortcutsHint" xml:space="preserve"><value>यह ऐप्लिकेशन जो संयोजन पकड़े रखता है, वह गेम तक कभी नहीं पहुँचता। DAYDRIVE की अपनी विंडो में वे पहले की तरह चलते हैं।</value></data>
+  <data name="FocusModeHoldReminders" xml:space="preserve"><value>अनुस्मारक रोके रखें</value></data>
+  <data name="FocusModeHoldRemindersHint" xml:space="preserve"><value>स्क्रीन के ऊपर कुछ नहीं बनाया जाता। जो देय हो चुका था वह फ़ोकस मोड हटते ही एक साथ आ जाता है — कुछ खोता नहीं।</value></data>
+  <data name="FocusModeHideHandle" xml:space="preserve"><value>स्क्रीन के किनारे की पट्टी हटाएँ</value></data>
+  <data name="FocusModeHideHandleHint" xml:space="preserve"><value>दाएँ किनारे की पट्टी अब क्लिक नहीं लेती। ट्रे का आइकन पहले की तरह शेल खोलता है, और फ़ोकस मोड हटते ही पट्टी लौट आती है।</value></data>
+  <data name="FocusModeIdleHint" xml:space="preserve"><value>अभी कोई पूरी स्क्रीन नहीं घेरे है। शॉर्टकट पकड़े हुए हैं और अनुस्मारक आ रहे हैं।</value></data>
+  <data name="FocusModeOffHint" xml:space="preserve"><value>स्क्रीन पर चाहे जो हो, शेल वैसा ही रहता है।</value></data>
+  <data name="FocusModeHeldHint" xml:space="preserve"><value>हाथ से चालू किया गया।</value></data>
+  <data name="FocusModeAppHint" xml:space="preserve"><value>स्क्रीन {0} के पास है।</value></data>
+  <data name="FocusModeAnonHint" xml:space="preserve"><value>कोई चीज़ पूरी स्क्रीन घेरे हुए है।</value></data>
+  <data name="FocusModePresentingHint" xml:space="preserve"><value>प्रस्तुति मोड चालू है।</value></data>
+  <data name="FocusModeOnShort" xml:space="preserve"><value>चालू</value></data>
+  <data name="FocusModeHeldTitle" xml:space="preserve"><value>जब स्क्रीन व्यस्त थी</value></data>
+  <data name="ShortcutsFocusHeld" xml:space="preserve"><value>फ़ोकस मोड ने इन्हें फ़िलहाल छोड़ दिया है — कुछ और पूरी स्क्रीन घेरे हुए है। DAYDRIVE की विंडो में ये चलते हैं।</value></data>
+  <data name="LocalModelGpu" xml:space="preserve"><value>ग्राफिक्स कार्ड का उपयोग करें</value></data>
+  <data name="LocalModelGpuOnHint" xml:space="preserve"><value>CPU संस्करण के साथ इंजन का GPU संस्करण भी इंस्टॉल होता है और जितनी लेयर समा सकती हैं, वे ग्राफ़िक्स कार्ड पर भेजी जाती हैं। यह सेटिंग बदलने पर मॉडल फिर शुरू होता है।</value></data>
+  <data name="LocalModelGpuOffHint" xml:space="preserve"><value>मॉडल पूरी तरह से प्रोसेसर पर चलता है। धीमा है, लेकिन यह कार्ड को बाकी सब कुछ के लिए छोड़ देता है।</value></data>
+  <data name="GpuLabel" xml:space="preserve"><value>GPU</value></data>
+  <data name="CpuOnlyLabel" xml:space="preserve"><value>CPU</value></data>
+  <data name="VramLabel" xml:space="preserve"><value>वीआरएएम</value></data>
+  <data name="GpuOffloadDetail" xml:space="preserve"><value>कार्ड पर {2} लेयर में से {0} · {1}</value></data>
+  <data name="CpuOnlyDetail" xml:space="preserve"><value>प्रोसेसर पर चल रहा है</value></data>
+  <data name="ResourceOfTotal" xml:space="preserve"><value>कंप्यूटर में उपलब्ध कुल {0} में से</value></data>
+  <data name="ResourceNotInUse" xml:space="preserve"><value>प्रयोग में नहीं</value></data>
+  <data name="ResourceUnavailable" xml:space="preserve"><value>—</value></data>
+  <data name="StageLoadingModel" xml:space="preserve"><value>मॉडल लोड हो रहा है…</value></data>
+  <data name="TrackPause" xml:space="preserve"><value>Pause</value></data>
+  <data name="TrackResume" xml:space="preserve"><value>Resume</value></data>
+  <data name="TrackStop" xml:space="preserve"><value>Stop</value></data>
+  <data name="TrackPaused" xml:space="preserve"><value>Paused</value></data>
+  <data name="TrackWorked" xml:space="preserve"><value>Worked</value></data>
+  <data name="TrackPausedFor" xml:space="preserve"><value>{0} paused</value></data>
+  <data name="TrackPlanActual" xml:space="preserve"><value>plan {0} · actual {1}</value></data>
+  <data name="TrackOverPlan" xml:space="preserve"><value>{0} over plan</value></data>
+  <data name="TrackUnderPlan" xml:space="preserve"><value>{0} left of the plan</value></data>
+  <data name="TrackedPartialProgress" xml:space="preserve"><value>partly · {0}% · {1}</value></data>
+  <data name="SessionTimerTooltip" xml:space="preserve"><value>Work time. Pauses are counted separately and never added to it.</value></data>
+  <data name="PausePromptTitle" xml:space="preserve"><value>Still on this?</value></data>
+  <data name="PausePromptBody" xml:space="preserve"><value>Paused for {0}.</value></data>
+  <data name="PausePromptResume" xml:space="preserve"><value>Keep going</value></data>
+  <data name="PausePromptFinish" xml:space="preserve"><value>End session</value></data>
+  <data name="SessionResultTitle" xml:space="preserve"><value>How did it go?</value></data>
+  <data name="SessionResultDone" xml:space="preserve"><value>Done</value></data>
+  <data name="SessionResultPartial" xml:space="preserve"><value>Partly</value></data>
+  <data name="SessionResultMissed" xml:space="preserve"><value>Not done</value></data>
+  <data name="SessionMeasured" xml:space="preserve"><value>Worked {0} of {1} planned</value></data>
+  <data name="SessionMeasuredNoPlan" xml:space="preserve"><value>Worked {0}</value></data>
+  <data name="SessionProgressTitle" xml:space="preserve"><value>How far did it get?</value></data>
+  <data name="SessionNextStepTitle" xml:space="preserve"><value>What's left?</value></data>
+  <data name="SessionNextStepPlaceholder" xml:space="preserve"><value>Recheck the last three screens</value></data>
+  <data name="SessionSave" xml:space="preserve"><value>Save</value></data>
+  <data name="SessionLater" xml:space="preserve"><value>Not now</value></data>
+  <data name="NextStepChip" xml:space="preserve"><value>Next: {0}</value></data>
+  <data name="NextStepTooltip" xml:space="preserve"><value>Where to pick this up. Set when the event was left part-done.</value></data>
+  <data name="ChatWrapUp" xml:space="preserve"><value>Day wrap-up</value></data>
+  <data name="WrapUpTitle" xml:space="preserve"><value>Wrap up the day</value></data>
+  <data name="WrapUpHint" xml:space="preserve"><value>बिना परिणाम के समाप्त हुआ सब कुछ — आज और पिछले हफ़्तों का।</value></data>
+  <data name="WrapUpCount" xml:space="preserve"><value>{0} without a result</value></data>
+  <data name="WrapUpEmpty" xml:space="preserve"><value>Nothing left to answer for</value></data>
+  <data name="WrapUpEmptyHint" xml:space="preserve"><value>हर समाप्त हो चुके इवेंट का परिणाम दर्ज है।</value></data>
+  <data name="WrapUpDone" xml:space="preserve"><value>Done</value></data>
+  <data name="WrapUpMove" xml:space="preserve"><value>Move</value></data>
+  <data name="WrapUpSkip" xml:space="preserve"><value>Skip</value></data>
+  <data name="WrapUpMoveTooltip" xml:space="preserve"><value>Move to tomorrow, same time</value></data>
+  <data name="WrapUpAcceptAll" xml:space="preserve"><value>Accept all suggestions</value></data>
+  <data name="WrapUpHadActivity" xml:space="preserve"><value>timer ran {0}</value></data>
+  <data name="WrapUpNeverStarted" xml:space="preserve"><value>never started</value></data>
+  <data name="WrapUpSuggestion" xml:space="preserve"><value>suggested: {0}</value></data>
+  <data name="WrapUpResolvedDone" xml:space="preserve"><value>Marked done</value></data>
+  <data name="WrapUpResolvedSkipped" xml:space="preserve"><value>Skipped</value></data>
+  <data name="WrapUpResolvedMoved" xml:space="preserve"><value>Moved to {0}</value></data>
+  <data name="WrapUpOffer" xml:space="preserve"><value>{0} of today's events have no result yet.</value></data>
+  <data name="WrapUpOpen" xml:space="preserve"><value>Wrap up</value></data>
+  <data name="WrapUpLater" xml:space="preserve"><value>Later</value></data>
+  <data name="WrapUpBadge" xml:space="preserve"><value>{0}</value></data>
+  <data name="BlockerTitle" xml:space="preserve"><value>Moved {0} times now. What is in the way?</value></data>
+  <data name="BlockerNotEnoughTime" xml:space="preserve"><value>Not enough time</value></data>
+  <data name="BlockerTooBig" xml:space="preserve"><value>Too big</value></data>
+  <data name="BlockerUnclearStart" xml:space="preserve"><value>Unclear where to start</value></data>
+  <data name="BlockerNotRelevant" xml:space="preserve"><value>No longer relevant</value></data>
+  <data name="BlockerShorten" xml:space="preserve"><value>Make it shorter</value></data>
+  <data name="BlockerShortenHint" xml:space="preserve"><value>Halve the slot, to {0}.</value></data>
+  <data name="BlockerFirstStep" xml:space="preserve"><value>Give it a first step</value></data>
+  <data name="BlockerDrop" xml:space="preserve"><value>Drop it</value></data>
+  <data name="BlockerDropHint" xml:space="preserve"><value>Take it off the calendar.</value></data>
+  <data name="BlockerNoted" xml:space="preserve"><value>Noted.</value></data>
+  <data name="TrackedPausedAt" xml:space="preserve"><value>paused - {0} worked</value></data>
+  <data name="BlockerEarlier" xml:space="preserve"><value>Move it earlier</value></data>
+  <data name="BlockerEarlierHint" xml:space="preserve"><value>Put it first thing, at {0}, before the day fills up.</value></data>
+  <data name="MonitorPanel" xml:space="preserve"><value>निगरानी</value></data>
+  <data name="MonitorIdle" xml:space="preserve"><value>शुरू नहीं हुआ</value></data>
+  <data name="NextStepCardTitle" xml:space="preserve"><value>क्या बाकी है</value></data>
+  <data name="NextStepFold" xml:space="preserve"><value>यह नोट छिपाएँ</value></data>
+  <data name="NextStepUnfold" xml:space="preserve"><value>नोट फिर दिखाएँ</value></data>
+  <data name="NextStepCollapse" xml:space="preserve"><value>सूची समेटें</value></data>
+  <data name="NextStepExpand" xml:space="preserve"><value>सूची खोलें</value></data>
+  <data name="SessionDismiss" xml:space="preserve"><value>खारिज करें</value></data>
+  <data name="SessionNextStepAdd" xml:space="preserve"><value>यह पंक्ति जोड़ें</value></data>
+  <data name="SessionNextStepAddHint" xml:space="preserve"><value>enter से एक और</value></data>
+  <data name="SessionNextStepRemove" xml:space="preserve"><value>सूची से हटाएँ</value></data>
+  <data name="Shortcuts" xml:space="preserve"><value>शॉर्टकट</value></data>
+  <data name="ShortcutsIntro" xml:space="preserve"><value>किसी भी ऐप से काम करते हैं। बदलने के लिए संयोजन दबाएँ; Escape रद्द करता है, Backspace बंद कर देता है।</value></data>
+  <data name="ShortcutsWindowOnlyIntro" xml:space="preserve"><value>जब DAYDRIVE की विंडो सक्रिय हो तब काम करते हैं। पूरे डेस्कटॉप से कुंजियाँ लेना फ़िलहाल सिर्फ़ Windows पर संभव है; macOS और Wayland में इन्हें सिस्टम या कंपोज़िटर सेटिंग्स में बाँधें।</value></data>
+  <data name="ShortcutsReset" xml:space="preserve"><value>डिफ़ॉल्ट पर लौटाएँ</value></data>
+  <data name="ShortcutResetOne" xml:space="preserve"><value>डिफ़ॉल्ट पर लौटें</value></data>
+  <data name="ShortcutRebind" xml:space="preserve"><value>बदलने के लिए दबाएँ</value></data>
+  <data name="ShortcutPressKeys" xml:space="preserve"><value>कुंजियाँ दबाएँ…</value></data>
+  <data name="ShortcutClash" xml:space="preserve"><value>यह संयोजन पहले से किसी और शॉर्टकट के पास है</value></data>
+  <data name="ShortcutRefused" xml:space="preserve"><value>ये कुंजियाँ कोई दूसरा प्रोग्राम इस्तेमाल कर रहा है</value></data>
+  <data name="ShortcutOff" xml:space="preserve"><value>बंद</value></data>
+  <data name="ShortcutToggleShell" xml:space="preserve"><value>प्लानर दिखाएँ या छिपाएँ</value></data>
+  <data name="ShortcutToggleWidget" xml:space="preserve"><value>क्विक विजेट दिखाएँ या छिपाएँ</value></data>
+  <data name="ShortcutToggleAssistant" xml:space="preserve"><value>सहायक खोलें</value></data>
+  <data name="ShortcutStartOrPauseSession" xml:space="preserve"><value>सत्र शुरू करें या रोकें</value></data>
+  <data name="ShortcutStopSession" xml:space="preserve"><value>सत्र बंद करें</value></data>
+  <data name="ShortcutToggleDoNotDisturb" xml:space="preserve"><value>परेशान न करें चालू या बंद करें</value></data>
+  <data name="CloudStateOk" xml:space="preserve"><value>सब कुछ सिंक है</value></data>
+  <data name="CloudStateOkHint" xml:space="preserve"><value>{0} जाँचा गया। इस कंप्यूटर और क्लाउड में एक जैसा डेटा है।</value></data>
+  <data name="CloudStatePending" xml:space="preserve"><value>कुछ बदलाव अभी क्लाउड में नहीं हैं</value></data>
+  <data name="CloudStatePendingAuto" xml:space="preserve"><value>ये लगभग {0} बजे अपने आप भेज दिए जाएँगे, या “अभी सिंक करें” दबाएँ।</value></data>
+  <data name="CloudStatePendingManual" xml:space="preserve"><value>अपने-आप सिंक बंद है, इसलिए इन्हें भेजने के लिए “अभी सिंक करें” दबाएँ।</value></data>
+  <data name="CloudStateNever" xml:space="preserve"><value>अभी तक कुछ भी सिंक नहीं हुआ</value></data>
+  <data name="CloudStateNeverHint" xml:space="preserve"><value>पहली प्रति क्लाउड में रखने के लिए “अभी सिंक करें” दबाएँ।</value></data>
+  <data name="CloudStateSyncing" xml:space="preserve"><value>सिंक हो रहा है…</value></data>
+  <data name="CloudStateSyncingHint" xml:space="preserve"><value>इस कंप्यूटर की तुलना क्लाउड की प्रति से की जा रही है।</value></data>
+  <data name="CloudStateFailed" xml:space="preserve"><value>पिछला सिंक पूरा नहीं हुआ</value></data>
+  <data name="CloudStateRetryAuto" xml:space="preserve"><value>अगली कोशिश लगभग {0} बजे होगी।</value></data>
+  <data name="CloudStateSetup" xml:space="preserve"><value>सेटअप पूरा नहीं हुआ है</value></data>
+  <data name="CloudStateRestart" xml:space="preserve"><value>क्लाउड की प्रति तैयार है</value></data>
+  <data name="CloudRestartNow" xml:space="preserve"><value>DAYDRIVE फिर से शुरू करें</value></data>
+  <data name="CloudRestartFailed" xml:space="preserve"><value>DAYDRIVE अपने आप फिर से शुरू नहीं हो सका। ट्रे आइकन से बाहर निकलें और इसे फिर खोलें।</value></data>
+  <data name="CloudFactLastSync" xml:space="preserve"><value>पिछला सिंक</value></data>
+  <data name="CloudFactCloudCopy" xml:space="preserve"><value>क्लाउड में</value></data>
+  <data name="CloudFactThisComputer" xml:space="preserve"><value>यह कंप्यूटर</value></data>
+  <data name="CloudFactAutomatic" xml:space="preserve"><value>अपने-आप</value></data>
+  <data name="CloudFactNever" xml:space="preserve"><value>अभी तक नहीं</value></data>
+  <data name="CloudFactRemoteUnknown" xml:space="preserve"><value>अभी जाँचा नहीं गया</value></data>
+  <data name="CloudFactLocalClean" xml:space="preserve"><value>कोई नया बदलाव नहीं</value></data>
+  <data name="CloudFactLocalChanged" xml:space="preserve"><value>नए बदलाव हैं</value></data>
+  <data name="CloudFactLocalChangedSince" xml:space="preserve"><value>नए बदलाव, आख़िरी {0}</value></data>
+  <data name="CloudFactScheduleAuto" xml:space="preserve"><value>शुरू होने पर, हर 15 मिनट और बंद होते समय · अगला लगभग {0} बजे</value></data>
+  <data name="CloudFactScheduleManual" xml:space="preserve"><value>बंद, सिर्फ़ “अभी सिंक करें” दबाने पर</value></data>
+  <data name="CloudJournalTitle" xml:space="preserve"><value>इतिहास</value></data>
+  <data name="CloudLogUploaded" xml:space="preserve"><value>क्लाउड में भेजा गया · {0}</value></data>
+  <data name="CloudLogDownloaded" xml:space="preserve"><value>क्लाउड की प्रति डाउनलोड की गई</value></data>
+  <data name="CloudLogDownloadedFrom" xml:space="preserve"><value>“{0}” से प्रति डाउनलोड की गई</value></data>
+  <data name="CloudLogApplied" xml:space="preserve"><value>डाउनलोड की गई प्रति लागू की गई</value></data>
+  <data name="CloudLogUpToDate" xml:space="preserve"><value>जाँचा गया, सिंक करने को कुछ नहीं</value></data>
+  <data name="CloudLogConflict" xml:space="preserve"><value>दोनों प्रतियाँ बदलीं, आपके चुनाव का इंतज़ार है</value></data>
+  <data name="CloudLogConnected" xml:space="preserve"><value>Google खाता कनेक्ट हुआ</value></data>
+  <data name="CloudLogConnectedAs" xml:space="preserve"><value>{0} के रूप में कनेक्ट हुआ</value></data>
+  <data name="CloudLogDisconnected" xml:space="preserve"><value>Google खाता डिस्कनेक्ट हुआ</value></data>
+  <data name="CloudLogFailed" xml:space="preserve"><value>सिंक नहीं हुआ: {0}</value></data>
+  <data name="CloudTriggerManual" xml:space="preserve"><value>आपके कहने पर</value></data>
+  <data name="CloudTriggerAutomatic" xml:space="preserve"><value>अपने-आप</value></data>
+  <data name="CloudTriggerStartup" xml:space="preserve"><value>शुरू होने पर</value></data>
+  <data name="CloudTriggerExit" xml:space="preserve"><value>बंद होते समय</value></data>
+  <data name="CloudJustNow" xml:space="preserve"><value>अभी-अभी</value></data>
+  <data name="CloudTodayAt" xml:space="preserve"><value>आज {0} बजे</value></data>
+  <data name="CloudYesterdayAt" xml:space="preserve"><value>कल {0} बजे</value></data>
+  <data name="CloudDateAt" xml:space="preserve"><value>{0}, {1} बजे</value></data>
+  <data name="CloudIssueOff" xml:space="preserve"><value>चुनें कि सिंक कहाँ करना है।</value></data>
+  <data name="CloudIssueFolderNotChosen" xml:space="preserve"><value>वह फ़ोल्डर चुनें जिसे आपका क्लाउड ऐप सिंक रखता है।</value></data>
+  <data name="CloudIssueFolderMissing" xml:space="preserve"><value>सिंक फ़ोल्डर नहीं मिला। शायद उसकी ड्राइव अलग हो गई है या फ़ोल्डर कहीं और ले जाया गया है।</value></data>
+  <data name="CloudIssueFolderNotWritable" xml:space="preserve"><value>DAYDRIVE सिंक फ़ोल्डर में लिख नहीं पा रहा है। उसकी अनुमतियाँ जाँचें।</value></data>
+  <data name="CloudIssueGoogleClientIdMissing" xml:space="preserve"><value>Google Cloud Console से client ID चिपकाएँ।</value></data>
+  <data name="CloudIssueGoogleClientSecretMissing" xml:space="preserve"><value>client secret भी चिपकाएँ। “Desktop app” क्लाइंट के लिए Google इसे ज़रूरी मानता है।</value></data>
+  <data name="CloudIssueGoogleNotConnected" xml:space="preserve"><value>सेटअप पूरा करने के लिए “Google खाता कनेक्ट करें” दबाएँ।</value></data>
+  <data name="CloudIssueGoogleReconnect" xml:space="preserve"><value>Google अब सहेजा हुआ साइन-इन स्वीकार नहीं करता: पहुँच वापस ले ली गई है या उसकी अवधि खत्म हो गई है। खाते को फिर से कनेक्ट करें।</value></data>
+  <data name="CloudIssueGoogleClientRejected" xml:space="preserve"><value>Google ने client ID या secret अस्वीकार कर दिया। जाँचें कि क्लाइंट का प्रकार “Desktop app” है और secret उसी का है।</value></data>
+  <data name="CloudIssueGoogleDriveApiDisabled" xml:space="preserve"><value>आपके Google Cloud प्रोजेक्ट में Google Drive API चालू नहीं है। इसे चालू करें, एक मिनट रुकें और फिर कोशिश करें।</value></data>
+  <data name="CloudIssueGoogleScopeMissing" xml:space="preserve"><value>साइन-इन के समय Google Drive की पहुँच की अनुमति नहीं दी गई। फिर से कनेक्ट करें और Google Drive वाला बॉक्स चुनें।</value></data>
+  <data name="CloudIssueSignInCancelled" xml:space="preserve"><value>साइन-इन रद्द कर दिया गया।</value></data>
+  <data name="CloudIssueSignInTimedOut" xml:space="preserve"><value>5 मिनट के भीतर साइन-इन पूरा नहीं हुआ। फिर से कोशिश करें।</value></data>
+  <data name="CloudIssueOffline" xml:space="preserve"><value>क्लाउड से संपर्क नहीं हो सका। इंटरनेट कनेक्शन जाँचें।</value></data>
+  <data name="CloudIssueInterrupted" xml:space="preserve"><value>सिंक पूरा होने से पहले रुक गया।</value></data>
+  <data name="CloudIssueBusy" xml:space="preserve"><value>एक सिंक पहले से चल रहा है।</value></data>
+  <data name="CloudIssueNothingInCloud" xml:space="preserve"><value>क्लाउड में अभी कुछ नहीं है।</value></data>
+  <data name="CloudIssueNotADatabase" xml:space="preserve"><value>क्लाउड की फ़ाइल DAYDRIVE का डेटा नहीं है। कुछ भी नहीं बदला गया।</value></data>
+  <data name="CloudIssueUnexpected" xml:space="preserve"><value>अनपेक्षित त्रुटि: {0}</value></data>
+  <data name="CloudGoogleConnectedNoEmail" xml:space="preserve"><value>Google खाता कनेक्ट हुआ</value></data>
+  <data name="CloudGoogleSecretSaved" xml:space="preserve"><value>client secret सहेजा गया</value></data>
+  <data name="CloudTrayLabel" xml:space="preserve"><value>क्लाउड सिंक</value></data>
+  <data name="CloudTrayOk" xml:space="preserve"><value>{0} सिंक हुआ</value></data>
+  <data name="CloudTrayPending" xml:space="preserve"><value>बदलाव बाकी हैं</value></data>
+  <data name="CloudTraySyncing" xml:space="preserve"><value>सिंक हो रहा है…</value></data>
+  <data name="CloudTrayError" xml:space="preserve"><value>सिंक नहीं हुआ</value></data>
+  <data name="CloudTrayAttention" xml:space="preserve"><value>आपकी ज़रूरत है</value></data>
+  <data name="CloudStatusBarFailed" xml:space="preserve"><value>क्लाउड सिंक नहीं हुआ: {0}</value></data>
+  <data name="LocalQuantNote" xml:space="preserve"><value>सभी मॉडल Q5_K_M में हैं: लगभग पूरी गुणवत्ता, और आकार ऐसा कि आम कंप्यूटर भी चला सके।</value></data>
+  <data name="LocalModelLegacyFiles" xml:space="preserve"><value>जो रूप अब उपलब्ध नहीं हैं ({0}), उनकी डाउनलोड की गई फ़ाइलें {1} जगह ले रही हैं।</value></data>
+  <data name="LocalModelLegacyDelete" xml:space="preserve"><value>हटाएँ</value></data>
+  <data name="LocalModelLegacyDeleted" xml:space="preserve"><value>पुरानी मॉडल फ़ाइलें हटाई गईं, {0} खाली हुआ।</value></data>
+  <data name="LocalHardwareTitle" xml:space="preserve"><value>यह कंप्यूटर</value></data>
+  <data name="LocalHardwareHint" xml:space="preserve"><value>DAYDRIVE को क्या मिला, और उसके हिसाब से मॉडल कैसे चलेगा।</value></data>
+  <data name="LocalHardwareRescan" xml:space="preserve"><value>फिर से जाँचें</value></data>
+  <data name="LocalHardwareCpu" xml:space="preserve"><value>प्रोसेसर</value></data>
+  <data name="LocalHardwareMemory" xml:space="preserve"><value>मेमोरी</value></data>
+  <data name="LocalHardwareGpu" xml:space="preserve"><value>ग्राफ़िक्स कार्ड</value></data>
+  <data name="LocalHardwareCpuValue" xml:space="preserve"><value>{0} कोर · {1} थ्रेड</value></data>
+  <data name="LocalHardwareCpuHybrid" xml:space="preserve"><value>{0} परफ़ॉर्मेंस + {1} एफ़िशिएंसी कोर · {2} थ्रेड</value></data>
+  <data name="LocalHardwareCpuThreads" xml:space="preserve"><value>{0} थ्रेड</value></data>
+  <data name="LocalHardwareMemoryValue" xml:space="preserve"><value>{0} · अभी {1} खाली</value></data>
+  <data name="LocalHardwareGpuValue" xml:space="preserve"><value>{0} · {1}</value></data>
+  <data name="LocalHardwareGpuFree" xml:space="preserve"><value>{0} · {1}, {2} खाली</value></data>
+  <data name="LocalHardwareGpuIntegrated" xml:space="preserve"><value>सिर्फ़ बिल्ट-इन ग्राफ़िक्स ({0}); मॉडल के लिए इसका उपयोग नहीं होता</value></data>
+  <data name="LocalHardwareGpuNone" xml:space="preserve"><value>अलग ग्राफ़िक्स कार्ड नहीं है</value></data>
+  <data name="LocalHardwareUnknown" xml:space="preserve"><value>पढ़ा नहीं जा सका</value></data>
+  <data name="LocalHardwareDetecting" xml:space="preserve"><value>यह कंप्यूटर जाँचा जा रहा है…</value></data>
+  <data name="LocalTuneFullGpu" xml:space="preserve"><value>पूरा मॉडल ग्राफ़िक्स कार्ड में आ जाता है</value></data>
+  <data name="LocalTuneSplit" xml:space="preserve"><value>मॉडल का लगभग {0}% ग्राफ़िक्स कार्ड पर, बाकी प्रोसेसर पर</value></data>
+  <data name="LocalTuneCpu" xml:space="preserve"><value>ग्राफ़िक्स कार्ड मदद के लिए बहुत छोटा है, इसलिए मॉडल प्रोसेसर पर चलता है</value></data>
+  <data name="LocalTuneCpuNoCard" xml:space="preserve"><value>मॉडल प्रोसेसर पर चलता है</value></data>
+  <data name="LocalTuneSummary" xml:space="preserve"><value>कॉन्टेक्स्ट {0} टोकन · {1} थ्रेड · जवाब अधिकतम {2} टोकन · पिछले {3} संदेश याद रहते हैं</value></data>
+  <data name="LocalTuneWarnMemory" xml:space="preserve"><value>मॉडल को लगभग {0} चाहिए, पर सिर्फ़ लगभग {1} खाली है। यह धीरे चलेगा और दूसरे प्रोग्राम भी धीमे कर सकता है; कुछ प्रोग्राम बंद करने या छोटा मॉडल चुनने से मदद मिलेगी।</value></data>
+  <data name="LocalTuneManual" xml:space="preserve"><value>अपने-आप चुनना बंद है: यह सिर्फ़ सुझाव है, और नीचे सेट किए गए मान ही इस्तेमाल होते हैं।</value></data>
+  <data name="LocalAutoTune" xml:space="preserve"><value>इस कंप्यूटर के लिए ये सेटिंग्स अपने-आप चुनें</value></data>
+  <data name="LocalAutoTuneHint" xml:space="preserve"><value>मॉडल या कंप्यूटर बदलने पर फिर से गणना होती है। मान खुद सेट करने के लिए इसे बंद करें।</value></data>
+  <data name="ParamsForLocal" xml:space="preserve"><value>ये मान सिर्फ़ लोकल मॉडल के लिए हैं; API के अपने मान हैं।</value></data>
+  <data name="ParamsForApi" xml:space="preserve"><value>ये मान सिर्फ़ API के अनुरोधों के साथ भेजे जाते हैं; लोकल मॉडल के अपने मान हैं।</value></data>
+  <data name="ParamsAutoBudget" xml:space="preserve"><value>जवाब की लंबाई, इतिहास और इंतज़ार का समय इस कंप्यूटर के हिसाब से चुने गए हैं। इन्हें बदलने के लिए ऊपर अपने-आप चुनना बंद करें।</value></data>
+  <data name="StepsCountOne" xml:space="preserve"><value>{0} चरण</value></data>
+  <data name="StepsCountFew" xml:space="preserve"><value>{0} चरण</value></data>
+  <data name="StepsCountMany" xml:space="preserve"><value>{0} चरण</value></data>
+  <data name="ProjectProgress" xml:space="preserve"><value>{1} में से {0} पूरे · {3} में से {2}</value></data>
+  <data name="ProjectNoStepsYet" xml:space="preserve"><value>अभी कोई चरण नहीं है। नीचे पहला चरण लिखें, फिर उसकी अवधि और दिन तय करें।</value></data>
+  <data name="ProjectNextChip" xml:space="preserve"><value>अगला: {0}</value></data>
+  <data name="StepAfterDeadline" xml:space="preserve"><value>समय-सीमा के बाद</value></data>
+  <data name="NewStepPlaceholder" xml:space="preserve"><value>नया चरण…</value></data>
+  <data name="StepNoDay" xml:space="preserve"><value>कोई दिन नहीं</value></data>
+  <data name="StepSchedule" xml:space="preserve"><value>समय तय करें</value></data>
+  <data name="StepScheduleTooltip" xml:space="preserve"><value>इस चरण को कैलेंडर में किसी तय समय पर रखें</value></data>
+  <data name="StepScheduleHeading" xml:space="preserve"><value>प्रोजेक्ट के चरण के लिए समय</value></data>
+  <data name="StepMoveDay" xml:space="preserve"><value>किसी और दिन पर ले जाएँ</value></data>
+  <data name="StepDurationTooltip" xml:space="preserve"><value>इस चरण में कितना समय लगेगा</value></data>
+  <data name="StepOpenEvent" xml:space="preserve"><value>उस दिन में दिखाएँ</value></data>
+  <data name="StepDelete" xml:space="preserve"><value>चरण हटाएँ</value></data>
+  <data name="StepRenameHint" xml:space="preserve"><value>नाम बदलने के लिए क्लिक करें</value></data>
+  <data name="StepToggleDone" xml:space="preserve"><value>पूरा चिह्नित करें या हटाएँ</value></data>
+  <data name="DayStepsTitle" xml:space="preserve"><value>इस दिन के लिए तय</value></data>
+  <data name="StepOverdueFrom" xml:space="preserve"><value>योजना: {0}</value></data>
+  <data name="StepAddTooltip" xml:space="preserve"><value>चरण जोड़ें (Enter)</value></data>
+  <data name="ProjectShowFinished" xml:space="preserve"><value>पूरे हुए दिन दिखाएँ ({0})</value></data>
+  <data name="ProjectHideFinished" xml:space="preserve"><value>पूरे हुए दिन छिपाएँ</value></data>
+  <data name="DayStepsTitleToday" xml:space="preserve"><value>आज के लिए तय</value></data>
+  <data name="StepsTitle" xml:space="preserve"><value>चरण</value></data>
+  <data name="StepsFold" xml:space="preserve"><value>चरण छिपाएँ</value></data>
+  <data name="StepsChipTooltip" xml:space="preserve"><value>पूरे हुए चरण — दिखाने या छिपाने के लिए दबाएँ</value></data>
+  <data name="BreakIntoSteps" xml:space="preserve"><value>चरणों में बाँटें</value></data>
+  <data name="OpenProject" xml:space="preserve"><value>प्रोजेक्ट खोलें</value></data>
+  <data name="SittingPlanned" xml:space="preserve"><value>चरण: {1} में से {0}</value></data>
+  <data name="SittingOverflow" xml:space="preserve"><value>चरण: {0} — ईवेंट से {1} ज़्यादा</value></data>
+  <data name="SittingSeriesHint" xml:space="preserve"><value>इस ईवेंट के सभी दोहरावों के लिए एक ही सूची; हर दिन अलग से टिक किया जाता है।</value></data>
+  <data name="SittingLeft" xml:space="preserve"><value>{0} बाकी</value></data>
+  <data name="SittingNoStepsYet" xml:space="preserve"><value>लिखें कि यह समय किन कामों में जाएगा। चलते-चलते चरण टिक करें — ईवेंट का नतीजा अपने आप दर्ज हो जाएगा।</value></data>
+  <data name="SessionSittingHint" xml:space="preserve"><value>नीचे चरणों में टिक करें कि क्या हो गया — प्रतिशत अपने आप बदल जाएगा। जो बिना टिक के रहे, वही बाकी है।</value></data>
+  <data name="CarryHeading" xml:space="preserve"><value>बचा हुआ काम जारी रखें</value></data>
+  <data name="CarryToTime" xml:space="preserve"><value>जारी रखें…</value></data>
+  <data name="CarryToTimeTooltip" xml:space="preserve"><value>बचे हुए काम को नया समय दें</value></data>
+  <data name="CarryToUnscheduled" xml:space="preserve"><value>अनियोजित में</value></data>
+  <data name="CarryToUnscheduledTooltip" xml:space="preserve"><value>बचे हुए काम को कार्य बनाएँ, ताकि उसे दिनों में बाँटा जा सके</value></data>
+  <data name="StepsCarried" xml:space="preserve"><value>बचे हुए चरण नए समय पर चले गए</value></data>
+  <data name="StepsCarriedToUnscheduled" xml:space="preserve"><value>बचे हुए चरण अब «अनियोजित» में एक कार्य हैं</value></data>
+  <data name="StepsRemoved" xml:space="preserve"><value>अब कोई चरण नहीं</value></data>
+  <data name="SittingAnsweredDone" xml:space="preserve"><value>सभी चरण पूरे — ईवेंट पूरा चिह्नित हुआ</value></data>
+  <data name="SittingReopened" xml:space="preserve"><value>एक चरण फिर खुला — ईवेंट आंशिक रूप से पूरा है</value></data>
+  <data name="ProjectFinished" xml:space="preserve"><value>सभी चरण पूरे चिह्नित</value></data>
+  <data name="ConfirmDeleteProjectTask" xml:space="preserve"><value>कार्य को उसके सभी चरणों के साथ हटाएँ? उनके लिए तय ईवेंट कैलेंडर में रहेंगे।</value></data>
+  <data name="ConfirmDeleteEventSteps" xml:space="preserve"><value>इस ईवेंट को उसके चरणों के साथ हटाएँ?</value></data>
+  <data name="ProjectCategoryTooltip" xml:space="preserve"><value>प्रोजेक्ट का रंग — उसके चरणों के लिए तय घंटे भी यही रंग लेते हैं</value></data>
+  <data name="WindowedShellHint" xml:space="preserve"><value>विंडो की स्थिति आपका डेस्कटॉप तय करता है। DAYDRIVE अपने पैनल एक ही विंडो में दिखाता है जिसका आकार बदला जा सकता है; यहाँ स्क्रीन के किनारे और विजेट के विकल्प उपलब्ध नहीं हैं।</value></data>
+  <data name="LocalHardwareGpuDetected" xml:space="preserve"><value>{0} · वीडियो मेमोरी की जानकारी उपलब्ध नहीं</value></data>
+  <data name="ThemeColorAccent" xml:space="preserve"><value>मुख्य रंग</value></data>
+  <data name="ThemeColorBackground" xml:space="preserve"><value>विंडो की पृष्ठभूमि</value></data>
+  <data name="ThemeColorSurface" xml:space="preserve"><value>पैनल</value></data>
+  <data name="ThemeColorSurfaceAlt" xml:space="preserve"><value>फ़ील्ड और कार्ड</value></data>
+  <data name="ThemeColorText" xml:space="preserve"><value>टेक्स्ट</value></data>
+  <data name="ThemeColorMuted" xml:space="preserve"><value>सहायक टेक्स्ट</value></data>
+  <data name="ThemeColorStroke" xml:space="preserve"><value>किनारे</value></data>
+  <data name="ThemeColorSecondary" xml:space="preserve"><value>दूसरा मुख्य रंग</value></data>
+  <data name="ThemeColorTertiary" xml:space="preserve"><value>तीसरा मुख्य रंग</value></data>
+  <data name="ThemeColorSelection" xml:space="preserve"><value>चयन</value></data>
+  <data name="ThemeColorSuccess" xml:space="preserve"><value>सफलता</value></data>
+  <data name="ThemeColorWarning" xml:space="preserve"><value>चेतावनी</value></data>
+  <data name="ThemeColorDanger" xml:space="preserve"><value>त्रुटि</value></data>
+  <data name="ThemeColorShadow" xml:space="preserve"><value>छाया</value></data>
+  <data name="ThemeWindowRadius" xml:space="preserve"><value>विंडो</value></data>
+  <data name="ThemeCardRadius" xml:space="preserve"><value>कार्ड</value></data>
+  <data name="ThemeItemRadius" xml:space="preserve"><value>सूची के आइटम</value></data>
+  <data name="ThemeControlRadius" xml:space="preserve"><value>बटन और फ़ील्ड</value></data>
+  <data name="ThemeTextScale" xml:space="preserve"><value>टेक्स्ट का आकार</value></data>
+  <data name="ThemeShadowStrength" xml:space="preserve"><value>छाया की तीव्रता</value></data>
+  <data name="ThemeDetails" xml:space="preserve"><value>अन्य रंग</value></data>
+  <data name="ThemeGeometry" xml:space="preserve"><value>आकार और टाइपोग्राफ़ी</value></data>
+  <data name="ThemeColorReset" xml:space="preserve"><value>स्वचालित रंग इस्तेमाल करें</value></data>
+  <data name="ThemeColorInvalid" xml:space="preserve"><value>#RRGGBB या #AARRGGBB लिखें।</value></data>
+  <data name="ImportTheme" xml:space="preserve"><value>थीम आयात करें</value></data>
+  <data name="ExportTheme" xml:space="preserve"><value>थीम निर्यात करें</value></data>
+  <data name="ResetAppearance" xml:space="preserve"><value>पूरा रूप रीसेट करें</value></data>
+  <data name="ThemeFileInvalid" xml:space="preserve"><value>थीम पढ़ी या सहेजी नहीं जा सकी। फ़ाइल प्रारूप और फ़ोल्डर की अनुमति जाँचें।</value></data>
+  <data name="ThemeImported" xml:space="preserve"><value>थीम आयात की गई।</value></data>
+  <data name="ThemeExported" xml:space="preserve"><value>थीम निर्यात की गई।</value></data>
+</root>

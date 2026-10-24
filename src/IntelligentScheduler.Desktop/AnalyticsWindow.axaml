@@ -1,0 +1,18 @@
+<Window xmlns:local="using:IntelligentScheduler.Desktop" xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:icons="using:IntelligentScheduler.Desktop.Controls"
+        xmlns:vm="using:IntelligentScheduler.Desktop.ViewModels"
+        xmlns:primitives="using:Avalonia.Controls.Primitives"
+        x:Class="IntelligentScheduler.Desktop.AnalyticsWindow"
+        Title="{DynamicResource L.AppName}" Width="651" Height="748"
+        CanResize="False" ShowInTaskbar="False" Topmost="True"
+        WindowDecorations="None" Background="Transparent"
+        WindowStartupLocation="Manual"
+        TransparencyLevelHint="Transparent,AcrylicBlur,Mica,Blur"
+        ExtendClientAreaToDecorationsHint="True"
+        Classes.reduceMotion="{Binding ReduceMotion}"
+        Classes.motion="{Binding !ReduceMotion}">
+  <Border Background="{StaticResource ShellInputSurface}" Padding="0,0,9,0">
+    <local:AnalyticsView x:Name="View" Width="642" HorizontalAlignment="Left" />
+  </Border>
+</Window>
